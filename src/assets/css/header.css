@@ -1,0 +1,363 @@
+/* Design Navbar in mobile  */
+.hamburger {
+  position: relative;
+  z-index: 999;
+  direction: rtl;
+  height: max-content;
+  cursor: pointer;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger div {
+  background:#4F4F4F;
+  border-radius: 1px;
+  height: 3px;
+}
+.hamburger .div1{
+  width: 25.11px;
+}
+.hamburger .div2 {
+  width: 12.63px;
+}
+.hamburger .div3{
+  width: 18.55px;
+}
+.hamburger div:not(:last-child) {
+  margin-bottom: 6px;
+}
+.nav-mobile {
+  background-color: #F9FAFC;
+  display: inline-block;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 9999;
+  top: 0;
+  font-family: 'Inter';
+  overflow-y: scroll;
+  padding: 24px;
+}
+.nav-mobile::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.nav-mobile::-webkit-scrollbar
+{
+  width: 3px;
+	background-color: #F5F5F5;
+}
+.nav-mobile::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+	background-color: #141CA4 ;
+}
+.nav-mobile .logo {
+  text-align: center;
+  width: 40%;
+  display: block;
+}
+.nav-mobile .fxLogo{margin-bottom:48px;}
+.nav-mobile .logo img {
+  border-radius: 50%;
+  width: 100%;
+}
+  .nav-mobile .links .fx-links{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+.nav-mobile .links .border{
+  height: 0.5px;
+  width: 100%;
+  background-color: #F3F3F3 ;
+}
+.nav-mobile .links a {
+  text-decoration: none;
+  color: #4F4F4F;
+  font-size: 1rem;
+}
+.nav-mobile a:hover ,
+.nav-mobile a span:hover {
+  	color: #000 ;
+}
+.nav-mobile .links .btnServicesMb .link{
+  color: #4F4F4F;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.nav-mobile .btnServicesMb .listServices {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0;
+}
+.nav-mobile .btnServicesMb .listServices.active {
+  max-height: 500px; /* Adjust based on content size */
+  padding: 10px 0;
+}
+
+.nav-mobile .btnServicesMb img.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.nav-mobile .btnServicesMb img {
+  transition: transform 0.3s ease;
+}
+.nav-mobile .listServices a{font-size: 14px;}
+.nav-mobile .links a.active{
+  background: linear-gradient(90deg, #E64A62 0%, #F9863D 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-mobile .links a svg{
+  width: 24px;
+}
+.nav-mobile button:hover{transform: scale(1);}
+#sidenav-active .navbar-mobile{display: block;}
+#sidenav-active .close-nav{ 
+  display: block;
+  background: none;
+  margin-top: 26px;
+  margin-left: 10px;
+}
+#sidenav-active .coverNav {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 5000;
+  transition: background-color 0.3s, transform 0.3s;
+  display: block;
+}
+ .hamburger, .coverNav {
+  transition: transform 0.3s;
+  display: none;
+}
+.nav-mobile.active {
+  transform: translateX(0px);
+  left: 0;
+}
+.navbar-mobile{
+  display: none;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+.navbar-mobile .btn-linearGradient{
+    height: 55px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.navbar-mobile .flex-head{
+  padding: 16px 20px;
+  box-shadow: 0px 12px 74px 0px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  display: flex;
+}
+.navbar-mobile .flex-head img{
+  width: 100%;
+  object-fit: contain;
+}
+#sidenav-active .navbar-mobile .flex-head{display: none;}
+/* Header */
+header .fx-header{
+  padding: 90px 0 0 0;
+  gap: 90px;
+  position: relative;
+}
+header .fx-header .links-header .linkStyle{
+  text-decoration: none;
+  color: #001C33;
+  font-size: 20px;
+}
+header .fx-header .links-header button{background: none;}
+header .fx-header .btn-header button{
+  border-radius: 5px;
+  height: 44px;
+  width: 164px;
+  font-size: 20px;
+}
+header .btnServicesHeader{
+      position: relative;
+  z-index: 1000;
+}
+header .btnServicesHeader .listServicesHeader{
+  padding: 24px;
+  border-radius: 10px;
+  background: #FFF;
+  gap: 30px;
+  left: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 1001;
+}
+header .btnServicesHeader:hover .listServicesHeader {
+  opacity: 1;
+  visibility: visible;
+}
+.coverBack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.coverBack.active {
+  opacity: 1;
+  visibility: visible;
+}
+header .btnServicesHeader:hover ~ .coverBackHeader {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+header .btnServicesHeader .listServicesHeader .listPart{
+  width:215px;
+}
+.header .btnServicesHeader .listServicesHeader .backService{
+  background-image: url(../images/back-listService.svg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 91px;
+  margin-bottom: 32px;
+  position: relative;
+  border-radius: 10px;
+}
+.header .btnServicesHeader .listServicesHeader .backService span{
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1rem;
+  color: #FFF;
+  font-size: 18px;
+}
+.header .btnServicesHeader .listServicesHeader .backServiceActive{
+  background-image: url(../images/backServiceActive.svg);
+}
+header .btnServicesHeader .fx-listServices a{
+  color: #4F4F4F;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+header .btnServicesHeader .fx-listServices a.active,
+header .btnServicesHeader .fx-listServices a:hover{
+  border-radius: 5px 0px 5px 5px;
+  background: #FDE0CE;
+  transform: scale(0.96);
+  padding: 8px;
+}
+
+/* header .btnServicesHeader .fx-listServices a:hover{
+  background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+/* header .btnServicesHeader .fx-listServices a.active{
+  background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.dropDownActive span{
+    background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+.dropDownActive img{
+    filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(3766%) hue-rotate(332deg) brightness(100%) contrast(96%);
+}
+@media (min-width:1706.67px) {
+  header .fx-header .links-header{gap: 20px;}
+  header .fx-header .btn-header button{height: 50px;font-size: 22px;width: 190px;}
+}
+@media (min-width:1920px) {
+  header .fx-header .links-header .linkStyle{font-size: 27px;}
+  header .fx-header .links-header{gap: 28px;}
+  header .fx-header .btn-header button{height: 60px;font-size: 24px;width: 210px;}
+}
+@media (min-width:2048px) {
+  header .fx-header .links-header .linkStyle{font-size: 29px;}
+  header .fx-header .links-header{gap: 32px;}
+  header .fx-header .btn-header button{height: 65px;font-size: 26px;width: 230px;}
+}
+@media (max-width:1396.36px) {
+  header .fx-header .links-header .linkStyle{font-size: 18px;}
+  header .fx-header .btn-header button{font-size: 18px;}
+  header .fx-header{padding: 70px 0 0px 0;}
+}
+@media (max-width:1228.8px) {
+  header .fx-header .links-header .linkStyle{font-size: 16px;}
+  header .fx-header .btn-header button{width: 130px;font-size: 16px;}
+  header .fx-header .logo-header img{width: 130px;}
+  header .fx-header{padding: 50px 0 0px 0;}
+  header .btnServicesHeader .listServicesHeader .listPart{width:185px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 12px;}
+  .header .btnServicesHeader .listServicesHeader .backService span{font-size: 15px;}
+  .header .btnServicesHeader .listServicesHeader .backService{height: 80px;margin-bottom: 16px;}
+  header .btnServicesHeader .listServicesHeader{gap: 25px;}
+  header .fx-header .links-header button img{width: 20px;}
+}
+@media (max-width:1024px) {
+  .hamburger{display: block;}
+  header .fx-header .links-header .linkStyle{font-size: 14px;}
+  header .fx-header .btn-header button{width: 100px;font-size: 14px;height: 32px;}
+  header .fx-header .logo-header img{width: 100px;}
+  header .fx-header{padding: 30px 0 0px 0;}
+  header .btnServicesHeader .listServicesHeader .listPart{width:160px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 10px;}
+  .header .btnServicesHeader .listServicesHeader .backService span{font-size: 13px;}
+  .header .btnServicesHeader .listServicesHeader .backService{height: 70px;}
+  header .btnServicesHeader .listServicesHeader{gap: 20px;}
+    header .fx-header .links-header button img{width: 15px;}
+}
+@media (max-width:877.71px) {
+  header .fx-header .links-header .linkStyle{font-size: 12px;}
+  header .fx-header .btn-header button{width: 80px;font-size: 13px;height: 32px;}
+  header .fx-header .logo-header img{width: 80px;}
+  header .fx-header{gap: 70px;}
+  header .btnServicesHeader .listServicesHeader .listPart{width: 125px;}
+  .header .btnServicesHeader .listServicesHeader .backService span{font-size: 11px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 9px;}
+  header .btnServicesHeader .listServicesHeader{gap: 15px;}
+}
+@media (max-width:768px) {
+  header .fx-header .links-header .linkStyle{font-size: 10px;}
+}
+@media (max-width:614.40px) {
+  header{display: none;}
+  .navbar-mobile{display: block;}
+  #sidenav-active .navbar-mobile .flex-head{display: flex;}
+}

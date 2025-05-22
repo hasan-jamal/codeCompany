@@ -1,0 +1,68 @@
+/* our Service Flow Style */
+.ourServiceFlow{margin: 128px 0 54px 0;}
+.ourServiceFlow .fx-ourServiceFlow{margin-top: 48px;gap: 24px;}
+.ourServiceFlow .ourServiceFlow-titles{
+    width: 60%;
+    margin: auto;
+}
+.ourServiceFlow .fx-ourServiceFlow .box{
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 0px);
+    gap: 16px;
+    border-radius: 15px;
+    padding: 23px 0px;
+    height: 159px;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ourServiceFlow .fx-ourServiceFlow .box:hover{
+    transform: scale(0.97);
+}
+.ourServiceFlow .fx-ourServiceFlow .boxBack1 {
+    background-image: url('../../images/Research-back.svg');
+}
+.ourServiceFlow .fx-ourServiceFlow .boxBack1 h3{color: #D51C38;}
+.ourServiceFlow .fx-ourServiceFlow .boxBack2 {
+    background-image: url('../../images/Brainstorm-back.svg');
+}
+.ourServiceFlow .fx-ourServiceFlow .boxBack2 h3{color: #F9853D;}
+.ourServiceFlow .fx-ourServiceFlow .boxBack3 {
+    background-image: url('../../images/Development-back.svg');
+}
+.ourServiceFlow .fx-ourServiceFlow .boxBack3 h3{color: #00AAC8;}
+.ourServiceFlow .fx-ourServiceFlow .boxBack4 {
+     background-image: url('../../images/Delivery-back.svg');
+}
+.ourServiceFlow .fx-ourServiceFlow .boxBack4 h3{color: #006DC6;}
+@media (min-width:1706.67px) {
+    .ourServiceFlow .fx-ourServiceFlow .box{height: 170px;}
+}
+@media (min-width:1920px) {
+    .ourServiceFlow .fx-ourServiceFlow .box{height: 210px;gap: 20px;}
+    .ourServiceFlow .fx-ourServiceFlow .box img{width: 75px;}
+}
+@media (min-width:2048px) { 
+    .ourServiceFlow .fx-ourServiceFlow .box{height: 240px;}
+}
+@media (max-width:1396.36px) {
+     .ourServiceFlow .ourServiceFlow-titles{width: 65%;}
+}
+@media (max-width:1228.8px) {}
+@media (max-width:1024px) {
+    .ourServiceFlow .fx-ourServiceFlow .box img{width: 50px;}
+    .ourServiceFlow .fx-ourServiceFlow .box{height:140px;}
+}
+@media (max-width:768px) {
+    .ourServiceFlow{margin-top: 70px;}
+    .ourServiceFlow .ourServiceFlow-titles{width:80%;}
+}
+@media (max-width:614.4px) {
+    .ourServiceFlow .fx-ourServiceFlow .box{
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 0px);
+    }
+    .ourServiceFlow .fx-ourServiceFlow .box h3{font-size: 14px;}
+    .ourServiceFlow .ourServiceFlow-titles{width: 100%;}
+}

@@ -1,0 +1,115 @@
+<section class="ourDatacenterPartnersS1">
+    <div class="ourDatacenterPartnersS1-container px-120">
+        <div class="d-flex fx-ourDatacenterPartnersS1">
+            <div class="d-flex box" *ngFor="let box of boxes; let i = index" [ngClass]="{'active': activeIndex === i}"
+                [ngStyle]="{'background': box.background}" (click)="setActiveBox(i)">
+                <div class="d-flex align-items-center part1">
+                    <p class="font-medium mb-0 rotate-p colorWhite">{{ box.title }}</p>
+                </div>
+                <div class="part2" [class.show]="activeIndex === i">
+                    <h1 class="font-bold subtitle48px" data-aos="fade-down">{{ box.heading }}</h1>
+                    <p class="style-font subtitle24px" [innerHTML]="box.text"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="ourDatacenterPartnersS2">
+    <div class="ourDatacenterPartnersS2-container px-120">
+        <div class="ourDatacenterPartnersS2-titles">
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">Success
+                Partners</span>
+            <h1 class="font-bold subtitle48px colorOne mb16 aos-init text-center" data-aos="fade-down">Explore
+                our <span class="color-linearGradient">data center partners</span>
+            </h1>
+            <p class="style-font text-center colorTwo subtitle24px p-head mb-0">You can see how we leading
+                organizations to solve complex IT <br> challenges & enhance their systems.</p>
+        </div>
+        <div class="d-flex fx-ourDatacenterPartnersS2 fxGeneral-cards">
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img1.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img2.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img3.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img4.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img5.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img6.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img7.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img8.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img9.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img10.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img11.svg"
+                    alt="partner logo"></div>
+            <div class="logoBack"><img src="../../../../assets/images/centerPartners/partner-img12.svg"
+                    alt="partner logo"></div>
+        </div>
+    </div>
+</section>
+<section class="ourServiceFlow">
+    <div class="ourServiceFlow-container px-120">
+        <div class="ourServiceFlow-titles">
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">Our Service
+                Flow</span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">Our
+                Step-by-Step Work Process <br>at <span class="color-linearGradient">Code</span> from start to
+                finish
+            </h1>
+            <p class="style-font text-center colorTwo subtitle24px p-head">At CODE, we follow a structured and
+                efficient workflow to ensure the highest quality of service for our customers</p>
+        </div>
+        <div class="d-flex fx-ourServiceFlow fxGeneral-cards">
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack1">
+                <img src="../../../../assets/images/Research-icon.svg" alt="Research icon">
+                <h3 class="font-medium subtitle20px">Research</h3>
+            </div>
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack2">
+                <img src="../../../../assets/images/Brainstorm-icon.svg" alt="Brainstorm icon">
+                <h3 class="font-medium subtitle20px">Brainstorm</h3>
+            </div>
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack3">
+                <img src="../../../../assets/images/Development-icon.svg" alt="Development icon">
+                <h3 class="font-medium subtitle20px">Development</h3>
+            </div>
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack4">
+                <img src="../../../../assets/images/Delivery-icon.svg" alt="Delivery icon">
+                <h3 class="font-medium subtitle20px">Delivery</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="contactSection">
+    <img src="../../../../assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+    <div class="contactSection-container px-120">
+        <div class="contactSection-div d-flex">
+            <div class="contactSection-texts">
+                <span class="subtitle24px d-block color-linearGradient font-medium mb24">Work with us</span>
+                <h1 class=" subtitle48px font-bold mb-0" data-aos="fade-down">Ready to <span
+                        class="color-linearGradient">join us
+                    </span>& <span class="color-linearGradient"><br> level up</span> your
+                    skills</h1>
+            </div>
+            <div class="contactSection-buttons d-flex">
+                <button class="btn-linearGradient" type="button" onclick="window.location.href=''">
+                    <span class="font-semiBold colorWhite subtitle20px">Contact us</span>
+                    <img src="../../../../assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                </button>
+            </div>
+        </div>
+        <p class="mb-0 colorTwo style-font">DB Consulting specializes in SQL Server, our tutorial and training
+            is founded
+            on
+            real-life
+            experience, and we practice
+            what we preach! In addition to training courses and workshops, we offer</p>
+    </div>
+</section>

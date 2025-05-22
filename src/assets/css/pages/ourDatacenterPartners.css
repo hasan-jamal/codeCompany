@@ -1,0 +1,207 @@
+/* our Datacenter Partners S1 Style */
+.ourDatacenterPartnersS1{margin-bottom: 75px;}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1{
+    margin-top: 55px;
+    gap: 20px;
+    cursor: pointer;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box{
+    align-items: center;
+    gap: 44px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack1{
+    background: linear-gradient(0deg, rgba(43, 45, 67, 0.70) 0%, rgba(43, 45, 67, 0.70) 100%), ../../assets/images/imageAI-1.png) lightgray top / cover no-repeat;
+} 
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack2{
+    background: linear-gradient(0deg, rgba(43, 45, 67, 0.70) 0%, rgba(43, 45, 67, 0.70) 100%), ../../assets/images/imageAI-2.png) lightgray top / cover no-repeat;
+} 
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack3{
+    background: linear-gradient(0deg, rgba(43, 45, 67, 0.70) 0%, rgba(43, 45, 67, 0.70) 100%), ../../assets/images/WhoisCode2.png) lightgray top / cover no-repeat;
+} 
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack4{
+    background: linear-gradient(0deg, rgba(43, 45, 67, 0.70) 0%, rgba(43, 45, 67, 0.70) 100%), ../../assets/images/servicesS3-img5.png) lightgray top / cover no-repeat;
+} 
+.scale-animation {
+  transform: scale(1.05);
+  background-color: #f0f0f0; /* Change the background color as desired */
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{
+    width: 135px;
+    height: 572px;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 24px 0;
+    justify-content: end;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 p{
+    font-size: 36px;
+    width: max-content;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 .rotate-p{
+    position: relative;
+    writing-mode: sideways-lr; /* Rotates text vertically (right to left) */
+    text-orientation: mixed;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part2{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    animation: slideFadeIn 0.6s ease forwards;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part2 h1{
+    margin-bottom: 16px;
+    color: #FFF;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part2 p{
+    margin-bottom: 42px;
+    color: #FFF;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part2 button{
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    height: 51px;
+    width: 118px;
+    background: none;
+    transition: 0.3s;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part2 button:hover{
+    transform: scale(1.07);
+    background-color: #FFF;
+    color: #E64A62;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active{
+    border-radius: 20px;
+    padding: 24px 42px;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active .part1{background: none;width: 44px;padding: 0;height: 100%;}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active .part1 p{color: #fff;}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active .part2{   
+    display: flex !important;
+    opacity: 1;
+    flex-direction: column;
+}
+/* Animation for .part2 */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width:1706.67px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 170px;height: 620px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box{gap: 40px;}
+}
+@media (min-width:1920px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box{gap: 50px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 190px;height: 650px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part2 button{    height: 60px;width: 158px;font-size: 18px;}
+}
+@media (min-width:2048px) { 
+     .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 220px;height:700px;}
+}
+@media (max-width:1228.8px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active{padding: 40px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 p{font-size: 28px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 115px;height: 480px;}
+}
+@media (max-width:1024px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 100px;height: 420px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 p{font-size: 24px;}
+}
+@media (max-width:877.71px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active{padding: 30px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 90px;height: 390px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 p{font-size: 20px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1{gap: 16px;}
+}
+@media (max-width:768px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1{flex-direction: column;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{width: 100%;height: 90px;flex-direction: row;padding: 0 30px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active{flex-direction: column;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active .part1{width: 100%;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 .rotate-p{transform: rotate(0);bottom: 0;}
+}
+@media (max-width:614.4px) {
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 .rotate-p{   
+         writing-mode:inherit;
+}
+.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box{padding: 0 24px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1{height: 70px;justify-content: start;padding: 0;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .box.active .part2 p{line-height: 22px;}
+    .ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .part1 p{font-size: 18px;}
+}
+@media (max-width:512px) {}
+/* our Datacenter Partners S2 Style */
+.ourDatacenterPartnersS2{
+    margin-top: 64px;
+}
+.ourDatacenterPartnersS2 .ourDatacenterPartnersS2-titles{
+    width: 70%;
+    margin: auto;
+}
+.ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2{
+    padding: 20px;
+    background-color: #E6F5FE;
+    gap: 10px;
+    border-radius: 20px;
+    margin-top: 65px;
+}
+.ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 19px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    flex: 1 1 calc(25% - 10px);
+    transition: 0.3s;
+    max-width: calc(25% - 0px);
+    cursor: pointer;
+}
+.ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack:hover{transform: scale(0.96);}
+.ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack img{width: 100%;height: 100%;}
+  @media (min-width:1706.67px) {
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack{height: 180px;}
+  }
+  @media (min-width:1920px) {
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2{gap: 20px;}
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack{
+        height: 220px;
+        flex: 1 1 calc(25% - 20px);
+        max-width: calc(25% - 0px);
+        padding: 25px 50px;
+    }
+  }
+  @media (min-width:2048px) { }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {}
+  @media (max-width:1228.8px) {
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack{height: 130px;padding: 19px 30px;}
+  }
+  @media (max-width:1024px) {}
+  @media (max-width:877.71px) {
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack{height: 100px;padding: 16px 20px;}
+  }
+  @media (max-width:768px) {}
+  @media (max-width:614.4px) {
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2 .logoBack{
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 0px);
+    }
+    .ourDatacenterPartnersS2 .fx-ourDatacenterPartnersS2{padding: 10px;margin-top: 32px;}
+    .ourDatacenterPartnersS2 .ourDatacenterPartnersS2-titles{width: 100%;}
+  }
+  @media (max-width:512px) {}

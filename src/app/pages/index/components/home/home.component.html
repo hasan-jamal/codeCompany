@@ -1,0 +1,272 @@
+<section class="sectionOne">
+    <div class="sectionOne-container px-120">
+        <h1 class="font-bold text-center">Welcome to <span class="color-linearGradient">Code</span></h1>
+        <p class=" font-medium p-head text-center">Inspire your
+            vision</p>
+        <div class="d-flex fx-sectionOne">
+            <div class="d-flex justify-content-between align-items-end part1-sectionOne">
+                <img src="../../../../../../assets/images/img-sectionOne.png" alt="img section One"
+                    class="img-sectionOne">
+                <div class="texts-side">
+                    <div class="d-flex fxHead-texts align-items-center">
+                        <span class="font-medium">Our story</span>
+                        <div class="border"></div>
+                    </div>
+                    <p class="style-font subtitle20px colorBlack">We live in a world where competition in the
+                        business world</p>
+                    <div class="d-flex fxLast-texts">
+                        <img src="../../../../../../assets/images/arrow-linear.svg" alt="arrow linear"
+                            class="arrow-linear">
+                        <p class="mb-0 style-font subtitle20px colorBlack">is constantly rising and the need to
+                            be the best is greater
+                            than ever
+                            before.</p>
+                    </div>
+                </div>
+                <div class="button-side">
+                    <button class="btn-linearGradient" type="button">
+                        <span class="font-semiBold colorWhite subtitle20px">Know more</span>
+                        <img src="../../../../../../assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex part2-sectionOne">
+                <div class="d-flex flex-column fxBox-num">
+                    <div class="d-flex fx-number">
+                        <h2 class="font-semiBold subtitle48px">16</h2>
+                        <img src="../../../../../../assets/images/plusLinear.svg" alt="plusLinear icon" class="">
+                    </div>
+                    <p class="font-light mb-0 subtitle16px colorBlack">years of experience</p>
+                </div>
+                <div class="d-flex flex-column fxBox-num">
+                    <div class="d-flex fx-number">
+                        <h2 class="font-semiBold subtitle48px">53</h2>
+                        <img src="../../../../../../assets/images/plusLinear.svg" alt="plusLinear icon" class="">
+                    </div>
+                    <p class="font-light mb-0 subtitle16px colorBlack">Projects done</p>
+                </div>
+                <div class="d-flex flex-column fxBox-num">
+                    <div class="d-flex fx-number">
+                        <h2 class="font-semiBold subtitle48px">97</h2>
+                        <img src="../../../../../../assets/images/plusLinear.svg" alt="plusLinear icon" class="">
+                    </div>
+                    <p class="font-light mb-0 subtitle16px colorBlack">Happy clients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sectionTwo">
+    <div class="sectionTwo-container px-120">
+        <div class="d-flex fx-sectionTwo">
+            <div class="part1-sectionTwo">
+                <h4 class="font-medium color-linearGradient subtitle24px">Who we are?</h4>
+                <h1 class="font-bold mb-0 subtitle48px" data-aos="fade-down">We are Code bring your imagination
+                    to life with <span class="color-linearGradient">AI power</span></h1>
+            </div>
+            <p class="style-font mb-0 subtitle24px">CODE is a leading partner for many heavy weight companies in
+                the ICT
+                sector, most notably Cisco, as it contributes to a large portion of Cisco’s business in Saudi
+                Arabia. <br> <br>
+                We live in a world where competition in the business world is constantly rising and the need to
+                be the best is greater than ever before.</p>
+        </div>
+        <div class="fx-sectionTwoImgs d-flex align-items-center">
+            <img src="../../../../../../assets/images/sectionTwo-img1.png" alt="Who we are img" class="sectionTwo-img1"
+                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+            <img src="../../../../../../assets/images/sectionTwo-img2.png" alt="Who we are img" class="sectionTwo-img2"
+                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <div class="d-flex justify-content-center  fx-columnImages">
+                <img src="../../../../../../assets/images/sectionTwo-img3.png" alt="Who we are img"
+                    class="sectionTwo-img3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <img src="../../../../../../assets/images/sectionTwo-img4.png" alt="Who we are img"
+                    class="sectionTwo-img4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sectionThree">
+    <div class="sectionThree-container px-120">
+        <div class="d-flex flex-column gap24">
+            <span class="font-medium text-center subtitle24px color-linearGradient">What we do?</span>
+            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Bring your imagination to life
+                <br> with AI power
+            </h1>
+            <p class="mb-0 text-center subtitle24px style-font">We love helping you bring ideas to life.</p>
+        </div>
+        <div class="d-flex fx-sectionThree">
+            <div *ngFor="let box of boxes; let i = index" class="d-flex sectionThree-box"
+                [ngClass]="{'active': box.isActive}" (click)="onBoxClick(box)">
+                <div class="d-flex align-items-center justify-content-between sectionThree-part1">
+                    <p class="font-medium mb-0">{{ i + 1 }}</p>
+                    <p class="font-medium mb-0 rotate-p">ICT Services</p>
+                </div>
+                <div class="sectionThree-part2" *ngIf="box.showPart2" [ngClass]="{'animate-part2': box.isAnimating}">
+                    <h1 class="font-bold subtitle48px" data-aos="fade-down">
+                        The AI power at Code innovate every thing.
+                    </h1>
+                    <p class="style-font subtitle24px">
+                        We love helping you bring ideas to life. We focus on creating value by providing modern IT
+                        solutions.
+                    </p>
+                    <button type="button" class="font-medium d-flex align-items-center justify-content-center">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sectionVideos">
+    <div class="sectionVideos-container ">
+        <div class="divTitles">
+            <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">Our Trend solution
+                with AI Power</span>
+            <h1 class="text-center font-bold subtitle48px h1-head"><span class="color-linearGradient">AI Digital </span>
+                In video</h1>
+            <p class="mb-0 text-center subtitle24px style-font">Design the digital twin architecture tailored to the
+                specific needs of the buildings.</p>
+        </div>
+        <div class="divVideo px-120">
+            <img src="../../../../../assets/images/AL-POWER.svg" alt="AL POWER Word" class="AL-POWER">
+            <div class="fx-Videos">
+                <div class="divMainVideo" *ngIf="mainVideo">
+                    <div class="mainVideo-text">
+                        <h3 class="subtitle36px font-bold color-two">{{ mainVideo.title }}</h3>
+                        <p class="subtitle16px style-font color-two">{{ mainVideo.subTitle }}</p>
+                    </div>
+
+                    <video #videoPlayer class="mainVideo" [attr.src]="mainVideo.src" controls muted
+                        crossorigin="anonymous">
+                        Your browser does not support the video tag. </video>
+                    <!-- <video #videoPlayer class="mainVideo" controls muted crossorigin="anonymous">
+                        <source [attr.src]="mainVideo.src" [attr.type]="mainVideo.type">
+                        Your browser does not support the video tag.
+                    </video> -->
+
+                </div>
+                <!-- Thumbnails -->
+                <div class="d-flex video-thumbnails fxGeneral-cards">
+                    <div class="thumbnail" *ngFor="let video of plyrList" (click)="changeVideo(video)">
+                        <img src="../../../../../assets/images/play-button.svg" alt="play-button" class="play-button">
+                        <img [src]="video.img" alt="{{ video.title }}" class="imgVideo">
+                        <div class="thumbnail-text">
+                            <h3 class="subtitle16px font-bold colorWhite">{{ video.title }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="sectionFive">
+    <div class="sectionFive-container">
+        <h1 class="text-center font-bold subtitle48px">Our
+            integration <span class="color-linearGradient">Partners</span></h1>
+        <ngx-slick-carousel class="sliderLogos sliderLogos1 m-sliderLogos" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let logo of logos" class="slide">
+                <img [src]="logo" alt="logo" />
+            </div>
+        </ngx-slick-carousel>
+
+        <ngx-slick-carousel class="sliderLogos sliderLogos2" [config]="slideConfiglogos2">
+            <div ngxSlickItem *ngFor="let logo of logos2" class="slide">
+                <img [src]="logo" alt="logo" />
+            </div>
+        </ngx-slick-carousel>
+
+    </div>
+</section>
+<section class="sectionSix">
+    <div class="sectionSix-container px-120">
+        <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">What people are
+            saying?</span>
+        <h1 class="text-center font-bold subtitle48px h1-head">We brought <span class="color-linearGradient">their
+                ideas</span>
+            to life</h1>
+        <ngx-slick-carousel #slickPeopleSaying [config]="sliderpeopleSaying">
+            <div ngxSlickItem *ngFor="let say of peopleSaying" class="sliderpeopleSaying">
+                <div class="slide">
+                    <div class="card-sectionSix" [style.background-color]="say.backgroundColor">
+                        <div class="divTextOne">
+                            <img src="../../../../../assets/images/Quote-card.svg" alt="Quote-card.svg">
+                            <h5 class="colorBlack font-medium subtitle18px mb-0">{{say.text}}</h5>
+                        </div>
+                        <div class="divTextTwo">
+                            <h3 class="colorBlack font-semiBold subtitle18px">{{say.fullName}}</h3>
+                            <span class="colorGrey style-font">{{say.jobTitle}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </ngx-slick-carousel>
+    </div>
+</section>
+<section class="sectionFour">
+    <div class="sectionFour-container px-120">
+        <div class="d-flex fx-sectionFour">
+            <div class="sectionFour-part1">
+                <img [src]="slidesBlogs[0].img" #imgActive alt="Active Slide Image" class="slideActive imgActive"
+                    id="imgActive">
+            </div>
+            <div class="sectionFour-part2">
+                <span class="color-linearGradient font-medium subtitle24px">Explore our AI blog</span>
+                <h1 class="font-bold subtitle48px" #slideTitle id="slideTitle">
+                    {{ slidesBlogs[0].title }}
+                </h1>
+                <ngx-slick-carousel #slickModalBlogs="slick-carousel" class="sliderBlogs" [config]="slideBlog"
+                    (beforeChange)="onBeforeChange($event)">
+                    <div ngxSlickItem *ngFor="let slide of slidesBlogs">
+                        <div class="slide">
+                            <img [src]="slide.img" alt="Blog image" class="slideImage" />
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+
+                <div class="d-flex fxTexts align-items-start mt-3">
+                    <div class="fxTexts-part1">
+                        <p class="style-font mb-0" #slideText id="slideText" (click)="onReadMoreClick($event)">
+                            {{ slidesBlogs[0].shortText }}
+                            <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">Read more</b>
+                        </p>
+                    </div>
+                    <div class="arrows-blogs d-flex align-items-center ms-3">
+                        <img src="../../../../../assets/images/rightBlog.svg" alt="Next Slide"
+                            class="rightBlog transition3s ms-2" style="cursor:pointer;" (click)="prevSlideBlog()">
+                        <img src="../../../../../assets/images/leftBlog.svg" alt="Previous Slide"
+                            class="leftBlog transition3s" style="cursor:pointer;" (click)="nextSlideBlog()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sectionSeven">
+    <div class="sectionSeven-container px-120">
+        <div class="d-flex fx-sectionSeven">
+            <div class="sectionSeven-part1">
+                <span class="font-medium color-linearGradient subtitle24px d-block">You ask. We answer</span>
+                <h1 class="subtitle48px font-bold" data-aos=" fade-down">Frequently Asked Questions</h1>
+            </div>
+            <div class="d-flex flex-column gap24 sectionSeven-part2">
+                <div *ngFor="let faq of faqs; let i = index" class="faqBox" [class.active]="activeIndex === i">
+                    <div class="d-flex justify-content-between faqBox-head transition3s" (click)="toggleFaq(i)">
+                        <h4 class="subtitle24px font-semiBold">{{ faq.question }}</h4>
+                        <img [src]="activeIndex === i ? 'assets/images/minus-circle.svg' : 'assets/images/plus-circle.svg'"
+                            alt="icon" class="faq-icon"
+                            [style.transform]="activeIndex === i ? 'rotate(180deg)' : 'rotate(0deg)'" />
+                    </div>
+                    <div class="boxText" *ngIf="activeIndex === i">
+                        <p class="style-font mb-0">{{ faq.answer }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- @slideFade -->

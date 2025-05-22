@@ -1,0 +1,26 @@
+[
+    {
+        "Country": "United Arab Emirates",
+        "Function": "1-345---",
+        "LOCODE": "AEAUH",
+        "Name": "Abu Dhabi",
+        "NameWoDiac": "Abu Dhabi",
+        "Status": "AI",
+        "outflows": 41597.142852,
+        "lat": 24.466666666666665,
+        "long": 54.36666666666667,
+        "image": "../images/Partners logos/India (2).png"
+    },
+    {
+        "Country": "United States",
+        "Function": "1-345---",
+        "LOCODE": "USNYC",
+        "Name": "New York",
+        "NameWoDiac": "New York",
+        "Status": "AI",
+        "outflows": 51234.56789,
+        "lat": 40.712776,
+        "long": -74.005974,
+        "image": "https://example.com/new-york.png"
+    }
+]

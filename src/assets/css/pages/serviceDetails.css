@@ -1,0 +1,205 @@
+/* Service Details Section 1 */
+.serviceDetailsS1{
+    margin: 100px 0 64px 0;
+}
+.serviceDetailsS1 img{
+    border-radius: 60px;
+    height: 243px;
+    object-fit: cover;
+    width: 100%;
+}
+.serviceDetailsS1 .fx-serviceDetailsS1{align-items: end;justify-content: space-between;}
+  @media (min-width:1706.67px) {
+    .serviceDetailsS1 img{height: 300px;}
+  }
+  @media (min-width:1920px) {
+    .serviceDetailsS1 img{height: 360px;}
+  }
+  @media (min-width:2048px) { }
+  @media (min-width:2304px) {}
+@media (max-width:1228.8px) {
+}
+@media (max-width:1024px) {
+}
+@media (max-width:614.4px) {
+    .serviceDetailsS1 .fx-serviceDetailsS1{flex-direction: column;align-items: start;gap: 12px;margin-bottom: 24px;}
+    .serviceDetailsS1 img{border-radius: 20px;}
+    .serviceDetailsS1{margin: 50px 0;}
+}
+/* Service Details Section 2 */
+.serviceDetailsS2{margin-bottom: 146px;}
+.serviceDetailsS2 .fx-serviceDetailsS2{
+    gap: 50px;
+    justify-content: space-between;
+}
+.serviceDetailsS2 .serviceDetailsS2-part1{width: 60%;}
+.serviceDetailsS2 .serviceDetailsS2-part1 .spanHead{margin-bottom: 24px;display: block;}
+.serviceDetailsS2 .serviceDetailsS2-part1 h1{margin-bottom: 16px;}
+.serviceDetailsS2 .serviceDetailsS2-part2{width:40%;}
+@media (max-width:1228.8px) {
+    .serviceDetailsS2 .serviceDetailsS2-part2{width: 50%;}
+    .serviceDetailsS2 .serviceDetailsS2-part1 h1 br{display: none;}
+}
+@media (max-width:1024px) {
+}
+@media (max-width:614.4px) {
+    .serviceDetailsS2 .fx-serviceDetailsS2{flex-direction: column;}
+    .serviceDetailsS2 .serviceDetailsS2-part1 h1 br{display: none;}
+    .serviceDetailsS2 .serviceDetailsS2-part1,
+    .serviceDetailsS2 .serviceDetailsS2-part2{width: 100%;}
+    .serviceDetailsS2{margin-bottom: 90px;}
+    .serviceDetailsS2 .fx-serviceDetailsS2{gap: 24px;}
+}
+/* Service Details Section 3 */
+.serviceDetailsS3 .serviceDetailsS3-titles{
+    width: 50%;
+    margin: auto;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3{
+    gap: 40px;
+    margin-top: 64px;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts{width: 50%;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs{width: 50%;position: relative;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    filter: brightness(80%);
+    z-index: 1;
+    position: relative;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop{
+    width: 100px;
+    height: 100px;
+    background: #f2f9ff;
+    border: 2px solid #f2f9ff;
+    position: absolute;
+    border-radius: 30px 0 30px 0;
+    z-index: 2;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    top: -1.5px;
+    right: -3rem;
+    transform: rotate(180deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f2f9ff;
+
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    bottom: -3rem;
+    left: -1.5px;
+    transform: rotate(180deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f2f9ff;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom{
+    width: 100px;
+    height: 100px;
+    background: #f2f9ff;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 30px 0 30px;
+    border: 2px solid #f2f9ff;
+    z-index: 2;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    bottom: -1.5px;
+    right: -3rem;
+    transform: rotate(90deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f2f9ff;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+top: -3rem;
+    left: -1.5px;
+    transform: rotate(90deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f2f9ff;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts h4{
+    margin-bottom: 10px;
+}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts p b{
+    margin-top: 10px;
+}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-texts{order: 2;}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs{order: 1;}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxTop{
+ right: 0;
+ border-radius: 0 0 0px 30px;
+}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxTop::after {
+top: auto;
+    bottom: -3rem;
+    right: -1.5px;
+    transform: rotate(-95deg);
+}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxTop::before {
+    bottom: auto;
+    top: -3.5px;
+    left: -3rem;
+    transform: rotate(-95deg);
+}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxBootom{
+    right: 0;
+    border-radius: 30px 0 0 0;
+}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxBootom::after {
+    top: -3rem;
+    left: auto;
+    transform: rotate(6deg);
+    right: 0;
+}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxBootom::before {
+    bottom: 0;
+    top: auto;
+    left: -3rem;
+    right: auto;
+    transform: rotate(-7deg);
+}
+  @media (min-width:1706.67px) {}
+  @media (min-width:1920px) {}
+  @media (min-width:2048px) { }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {}
+  @media (max-width:1228.8px) {}
+  @media (max-width:1024px) {}
+  @media (max-width:877.71px) {}
+  @media (max-width:768px) {}
+  @media (max-width:614.4px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3{flex-direction: column;gap:16px;margin-top: 48px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs{order: 1;height: 230px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts{order: 2;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts,
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs{width: 100%;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop,
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom {width: 70px;height: 70px;}
+.serviceDetailsS3 .serviceDetailsS3-titles{width: 95%;}
+  }
+  @media (max-width:512px) {}

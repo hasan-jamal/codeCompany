@@ -1,0 +1,47 @@
+header .btnServicesHeader .listAboutHeader{
+    padding: 24px;
+    border-radius: 10px;
+    background: #FFF;
+    gap: 8px;
+    width: 167px;
+    left: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    z-index: 1001;
+  }
+  header .btnServicesHeader:hover .listAboutHeader {
+    opacity: 1;
+    visibility: visible;
+  }
+  header .btnServicesHeader .listAboutHeader a{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E6E6E6;
+    text-decoration: none;
+    color: #4F4F4F;
+    padding: 8px;
+  }
+  header .btnServicesHeader .fx-listServices a {
+    color: #000;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  header .btnServicesHeader .listAboutHeader a.active,
+  header .btnServicesHeader .listAboutHeader a:hover{
+    border-radius: 5px 0px 5px 5px;
+    background: #FDE0CE;
+  }
+  header .btnServicesHeader .listAboutHeader a:last-child{
+    border-bottom: none;
+  }

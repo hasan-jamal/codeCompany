@@ -1,0 +1,79 @@
+<div class="navbar-mobile">
+    <div class=" align-items-center  justify-content-between  flex-head">
+        <a routerLink="/"><img src="../../../assets/images/logo.svg" class="logo-image" /></a>
+        <div class="hamburger" id="hamburger" (click)="toggleSidenav(true)">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+    </div>
+    <nav class="nav-mobile" [class.active]="isSidenavOpen">
+        <div class="links">
+            <div class="d-flex align-items-center justify-content-between fxLogo">
+                <img src="../../../assets/images/logo.svg" class="logo" />
+                <div class="hamburger" id="hamburger-inside" (click)="toggleSidenav(false)">
+                    <div class="div1"></div>
+                    <div class="div2"></div>
+                    <div class="div3"></div>
+                </div>
+            </div>
+            <div class="fx-links">
+                <a routerLink="/" routerLinkActive="active" class="font-medium " (click)="closeSidenav()"
+                    [routerLinkActiveOptions]="{exact:true}">Home</a>
+                <div class="border"></div>
+                <div class="btnServicesMb">
+                    <button type="button" class="link d-flex align-items-center justify-content-between w-100"
+                        (click)="toggleAboutUsList()" routerLink="aboutUs" routerLinkActive="dropDownActive">
+                        <span class="font-medium linkStyle" (click)="closeSidenav()">About us</span>
+                        <img src="../../../assets/images/arrowDown.svg" alt="arrowDown icon"
+                            [class.rotated]="aboutUsListOpen" />
+                    </button>
+                    <div class="listServices" [class.active]="aboutUsListOpen">
+                        <div class="listPart">
+                            <div class="d-flex flex-column fx-listServices gap20">
+                                <a class="font-medium" (click)="closeSidenav()">Our clients</a>
+                                <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium"
+                                    (click)="closeSidenav()">Our
+                                    partners</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border"></div>
+                <div class="btnServicesMb">
+                    <button type="button" class="link d-flex align-items-center justify-content-between w-100"
+                        (click)="toggleServicesList()" routerLink="/ourServices" routerLinkActive="dropDownActive">
+                        <span class="font-medium linkStyle" (click)="closeSidenav()">Our services</span>
+                        <img src="../../../assets/images/arrowDown.svg" alt="arrowDown icon"
+                            [class.rotated]="servicesListOpen" />
+                    </button>
+                    <div class="listServices" [class.active]="servicesListOpen">
+                        <div class="listPart">
+                            <div class="d-flex flex-column fx-listServices gap20">
+                                <a class="font-medium">Database Consulting</a>
+                                <a routerLink="/ourServices/serviceDetails/1" routerLinkActive="active"
+                                    class="font-medium" (click)="closeSidenav()">Cloud Integration Support</a>
+                                <a class="font-medium">Clouding Storage</a>
+                                <a class="font-medium">Remote Onsite Support</a>
+                                <a class="font-medium">IT Consulting</a>
+                                <a class="font-medium">Cyber Security</a>
+                                <a class="font-medium">Internet & voip</a>
+                                <a class="font-medium">Network Setup & Support</a>
+                                <a class="font-medium">System Management</a>
+                                <a class="font-medium">Disaster Recovery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border"></div>
+                <a routerLink="news" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">Our news</a>
+                <div class="border"></div>
+                <a routerLink="contactUs" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">Contact
+                    us</a>
+                <div class="border"></div>
+                <button routerLink="contactUs" routerLinkActive="active" class="btn-linearGradient colorWhite font-bold"
+                    (click)="closeSidenav()">Join us</button>
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,274 @@
+.servicesS1{
+    margin: 60px 0 40px 0;position: relative;
+}
+.servicesS1 .servicesS1-container{position: relative;}
+.servicesS1 .back-servicesS1 {
+    background-image:url('../../../../../assets/images//servicesS1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 81vh;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.servicesS1 .back-servicesS1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1; 
+}
+.servicesS1 .servicesS1-texts{
+    padding: 50px 24px 40px 0;
+    background-image: url('../../../../../assets/images/Home.svg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    position: relative;
+    border-radius: 0 0px 30px 0px;
+}
+.servicesS1 .servicesS1-texts::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    top: 0px;
+    right: -3rem;
+    transform: rotate(180deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f6fafd;
+}
+.servicesS1 .servicesS1-texts::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    bottom: -48px;
+    left: 0rem;
+    transform: rotate(180deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f6fafd;
+}
+.servicesS1 .servicesS1-texts h1{margin-bottom: 19px;}
+@media (min-width:1706.67px) {
+}
+@media (min-width:1920px) {
+    .servicesS1 .servicesS1-texts{padding: 32px 20px 30px 20px;}
+}
+@media (min-width:2048px) {
+ }
+ @media (min-width:2304px) {
+   .servicesS1 .servicesS1-texts h1{margin-bottom: 32px;}
+    .servicesS1 .servicesS1-texts {padding:50px 20px;}
+ }
+@media (min-width:3072px) {.servicesS1 .back-servicesS1 {height: 65vh;}}
+@media (min-width:4608px) {.servicesS1 .back-servicesS1 {height: 45vh;}}
+@media (min-width:6144px) {.servicesS1 .back-servicesS1 {height:25vh;}}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+}
+@media (max-width:1024px) {
+    .servicesS1 .servicesS1-texts{padding: 32px 20px 30px 0;}
+}
+@media (max-width:877.71px) {
+}
+@media (max-width:768px) {
+    .servicesS1 .servicesS1-texts{width: 45%}
+    .servicesS1 .back-servicesS1{height: 120vh;} 
+}
+@media (max-width:614.4px) {
+    .servicesS1{margin: 40px 0;}
+    .servicesS1 .servicesS1-texts{width: 85%;padding: 32px 20px 30px 10px;}
+    .servicesS1 .back-servicesS1{height: 45vh;}
+    .servicesS1 .servicesS1-texts::before {
+        border-radius: 0 0 20px 0;
+    }
+    .servicesS1 .servicesS1-texts::after {
+        border-radius: 0 0 20px 0;
+    }
+}
+/* Section Services 2 Style */
+.servicesS2 .fx-servicesS2{gap: 20px;}
+.servicesS2 .fx-servicesS2 .box{
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 0px);
+    gap: 16px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.07);
+    padding: 19px 0px;
+    height: 150px;
+    transition: 0.3s;
+}
+.servicesS2 .fx-servicesS2 .box img{
+        transition: opacity 0.3s ease-in-out;
+}
+.servicesS2 .fx-servicesS2 .boxColor1:hover{background: #006DC6;}
+.servicesS2 .fx-servicesS2 .boxColor1:hover img {
+    content: url('../../../../../assets/images/ICTSolutios-white.svg');
+}
+.servicesS2 .fx-servicesS2 .boxColor2:hover img {
+    content: url('../../../../../assets/images/DataSolutions-white.svg');
+}
+.servicesS2 .fx-servicesS2 .boxColor3:hover img {
+    content: url('../../../../../assets/images/ITSolutions-white.svg');
+}
+.servicesS2 .fx-servicesS2 .boxColor4:hover img {
+    content: url('../../../../../assets/images/AISolutions-white.svg');
+}
+.servicesS2 .fx-servicesS2 .boxColor2:hover{background: #00AAC8;}
+.servicesS2 .fx-servicesS2 .boxColor3:hover{background: #D51C38;}
+.servicesS2 .fx-servicesS2 .boxColor4:hover{background: #F9853D;}
+.servicesS2 .fx-servicesS2 .boxColor1 h3{color:#006DC6 ;}
+.servicesS2 .fx-servicesS2 .boxColor2 h3{color:#00AAC8 ;}
+.servicesS2 .fx-servicesS2 .boxColor3 h3{color:#D51C38 ;}
+.servicesS2 .fx-servicesS2 .boxColor4 h3{color:#F9853D ;}
+.servicesS2 .fx-servicesS2 .box:hover h3{color: #fff;}
+@media (min-width:1706.67px) {
+    .servicesS2 .fx-servicesS2 .box{height: 170px;}
+}
+@media (min-width:1920px) {
+    .servicesS2 .fx-servicesS2 .box{height: 210px;gap: 20px;}
+    .servicesS2 .fx-servicesS2 .box img{width: 75px;}
+}
+@media (min-width:2048px) { 
+    .servicesS2 .fx-servicesS2 .box{height: 240px;}
+}
+@media (max-width:614.4px) {
+    .servicesS2 .fx-servicesS2 .box{
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 0px);
+    }
+    .servicesS2 .fx-servicesS2 .box h3{font-size: 14px;}
+}
+/* Section Services 3 Style */
+.servicesS3{margin-top: 100px;}
+.servicesS3 .fx-servicesS3{gap: 20px;margin-top: 60px;}
+.servicesS3 .fx-servicesS3 .box{
+    background-position: top;
+    background-size: cover;
+    border-radius: 30px;
+    height: 285px;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 0px);
+    position: relative;
+}
+.servicesS3 .fx-servicesS3 .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0; 
+}
+.servicesS3 .fx-servicesS3 .box h3{
+    padding: 0 0 30px 24px;
+    position: relative;
+    z-index: 2;
+}
+.servicesS3 .fx-servicesS3 .box .divArrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+    background: #FFF;
+    border-radius: 30px 0px 0 0 ;
+    position: relative;
+}
+.servicesS3 .fx-servicesS3 .box .divArrow::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: 0px;
+    transform: rotate(-0deg);
+    left: -30px;
+    border-radius: 0 0 20px 0;
+    z-index: 1;
+    box-shadow: 7px 7px #FFF;
+}
+.servicesS3 .fx-servicesS3 .box .divArrow::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    top: -24px;
+    transform: rotate(-0deg);
+    right: -1.5px;
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 7px 7px #FFF;
+}
+.servicesS3 .fx-servicesS3 .box .divArrow button {background: transparent;}
+.servicesS3 .fx-servicesS3 .box .divArrow img{
+    width: 66px;
+    height: 66px;
+}
+  @media (min-width:1706.67px) {}
+  @media (min-width:1920px) {
+    .servicesS3 .fx-servicesS3 .box{height:320px;}
+    .servicesS3 .fx-servicesS3 .box .divArrow img{width: 88px;height: 88px;}
+  }
+  @media (min-width:2048px) { 
+    .servicesS3 .fx-servicesS3 .box{height:350px;}
+  }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {
+        .servicesS3 .fx-servicesS3 .box{height: 270px;}
+  }
+  @media (max-width:1228.8px) {
+    .servicesS3 .fx-servicesS3 .box{height: 240px;}
+    .servicesS3 .fx-servicesS3 .box .divArrow{padding: 12px;}
+    .servicesS3 .fx-servicesS3 .box .divArrow img{width: 55px;height: 55px;}
+  }
+  @media (max-width:1024px) {
+    .servicesS3 .fx-servicesS3 .box{height: 210px;}
+    .servicesS3 .fx-servicesS3 .box .divArrow img{width: 45px;height: 45px;}
+  }
+  @media (max-width:877.71px) {
+        .servicesS3 .fx-servicesS3 .box{height: 190px;}
+  }
+  @media (max-width:768px) {
+    .servicesS3{margin-top: 70px;}
+    .servicesS3 .fx-servicesS3 .box{
+        flex: 1 1 calc(33.3% - 20px);
+        max-width: calc(33.3% - 0px);
+    }
+    .servicesS3 .fx-servicesS3 .box{height:240px;}
+    .servicesS3 .fx-servicesS3 .box h3{font-size: 20px;}
+  }
+  @media (max-width:614.4px) {
+     .servicesS3 .fx-servicesS3{
+        gap: 24px;
+        width: 90%;
+        margin: auto;
+        margin-top: 32px;
+    }
+     .servicesS3 .fx-servicesS3 .box{background-position: center;}
+    .servicesS3 .fx-servicesS3 .box{
+        flex: 1 1 calc(100% - 16px);
+        max-width: calc(100% - 0px);
+    }
+    .servicesS3 .fx-servicesS3 .box h3{font-size: 24px;}
+    .servicesS3 .fx-servicesS3 .box{height:250px;}
+    .servicesS3 .fx-servicesS3 .box .divArrow img{width: 60px;height: 60px;}
+  }
+  @media (max-width:512px) {}
