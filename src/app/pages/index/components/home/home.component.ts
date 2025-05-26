@@ -121,7 +121,7 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
       if (!dots) return;
     
       let customNextArrow = dots.querySelector<HTMLButtonElement>('.custom-next-arrow');
-    
+  
       if (!customNextArrow) {
         customNextArrow = document.createElement('button');
         customNextArrow.classList.add('custom-next-arrow');
