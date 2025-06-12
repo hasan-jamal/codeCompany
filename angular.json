@@ -15,6 +15,7 @@
           "options": {
             "allowedCommonJsDependencies": ["lodash"],
             "outputPath": "dist/code-website",
+            "baseHref": "/new/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "prerender": false,
