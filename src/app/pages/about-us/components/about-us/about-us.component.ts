@@ -14,7 +14,8 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
   
 })
 export class AboutUsComponent {
-  @ViewChild('slickModallogos',{ static:false}) slickModallogos!:SlickCarouselComponent
+  @ViewChild('slickModallogos',{ static:false}) slickModallogos!:SlickCarouselComponent;
+  isHovered = false;
   // Second slider logos
  logos = [
   "../../../../../assets/images/Partners logos/Austria.png",
@@ -98,5 +99,33 @@ export class AboutUsComponent {
   }
   prevSlidelogo() {
     this.slickModallogos.slickPrev();
+  }
+
+
+  teamCards = [
+    {
+      id: 1,
+      isHovered: false,
+      name: "Ahmad Hassan",
+      role: "Data Analysis",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+      imageUrl: "../../../../../assets/images/person.jpeg"
+    },
+    {
+      id: 2,
+      isHovered: false,
+      name: "Sarah Johnson",
+      role: "UX Designer",
+      description: "Specializes in creating user-friendly interfaces with 5 years of experience in web and mobile applications...",
+      imageUrl: "../../../../../assets/images/person.jpeg"
+    }
+  ];
+
+  onMouseEnter(card: any) {
+    card.isHovered = true;
+  }
+
+  onMouseLeave(card: any) {
+    card.isHovered = false;
   }
 }

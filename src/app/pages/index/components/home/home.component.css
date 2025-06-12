@@ -293,7 +293,6 @@
     cursor: pointer;
 }
 .sectionThree .fx-sectionThree .sectionThree-box{
-    align-items: center;
     gap: 28px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -307,17 +306,20 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 58px 0;
+    position: relative;
     background: linear-gradient(0deg, #FDE0CE 0%, #F9D2D8 100%);
 }
 .sectionThree .fx-sectionThree .sectionThree-part1 p{
     color: #001C33;
-    font-size: 36px;
+    font-size: 32px;
     width: max-content;
 }
 .sectionThree .fx-sectionThree .sectionThree-part1 .rotate-p{
     transform: rotate(-90deg);
-    position: relative;
-    bottom: 4.5rem;
+    transform-origin: left top;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
 }
 .sectionThree .fx-sectionThree .sectionThree-part2{
     opacity: 0;
@@ -352,12 +354,26 @@
     background: linear-gradient(90deg, #E64A62 0%, #F19358 100%);
     padding: 58px;
 }
-.sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1{background: none;width: 44px;padding: 0;height: 100%;}
+.sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1{
+    background: none;
+    width: 44px;
+    padding: 0;
+    height: 100%;
+    justify-content: space-between;
+}
 .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1 p{color: #fff;}
+.sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1 .rotate-p{
+    left: 0;
+    bottom: -3rem;
+    display: none;
+}
 .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part2{   
     display: flex;
     opacity: 1;
     flex-direction: column;
+}
+.sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part2 h2{
+    margin-bottom: 24px;
 }
 .animate-part2 {
   transition: opacity 0.3s ease;
@@ -410,14 +426,30 @@
     .sectionThree .fx-sectionThree{flex-direction: column;}
     .sectionThree .fx-sectionThree .sectionThree-part1{width: 100%;height: 90px;flex-direction: row;padding: 0 30px;}
     .sectionThree .fx-sectionThree .sectionThree-box.active{flex-direction: column;}
-    .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1{width: 100%;}
+    .sectionThree .fx-sectionThree .sectionThreef-box.active .sectionThree-part1{width: 100%;}
     .sectionThree .fx-sectionThree .sectionThree-part1 .rotate-p{transform: rotate(0);bottom: 0;}
 }
 @media (max-width:614.4px) {
-    .sectionThree .fx-sectionThree .sectionThree-part1{height: 70px;}
+    .sectionThree .fx-sectionThree .sectionThree-part1{height: 70px;gap: 8px;}
     .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part2 p{line-height: 22px;}
     .sectionThree .fx-sectionThree .sectionThree-part1 p{font-size: 18px;}
     .sectionThree .sectionThree-titles{width: 100%;}
+    .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part2 h2{display: none;}
+    .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1{
+        justify-content: start;
+        width: 100%;
+        gap: 8px;
+    }
+    .sectionThree .fx-sectionThree .sectionThree-part1 .rotate-p{
+        position: relative;
+        left: 0;
+    }
+    .sectionThree .fx-sectionThree .sectionThree-box.active .sectionThree-part1 .rotate-p{
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
 }
 @media (max-width:512px) {}
 /* Section Four Style */

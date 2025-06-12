@@ -4,6 +4,7 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 import { trigger, transition, style, animate } from '@angular/animations';
 // import type Player from 'video.js/dist/types/player';
 import 'video.js/dist/video-js.css';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
@@ -142,10 +143,25 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
 
   // Start Section Three style
   boxes = [
-    { id: 1, showPart2: false, isAnimating: false, isActive: false },
-    { id: 2, showPart2: false, isAnimating: false, isActive: false },
-    { id: 3, showPart2: false, isAnimating: false, isActive: false },
-    { id: 4, showPart2: false, isAnimating: false, isActive: false },
+    { 
+      id: 1,
+       showPart2: false, 
+       isAnimating: false,
+        isActive: false,
+        title:"AI Digital Twin",
+        subTitle:"The AI power at Code  innovate every thing.",
+        content:"We love helping you bring ideas to life. We focus on creating value by providing modern ICT solutions" 
+      },
+    { id: 2, showPart2: false, isAnimating: false, isActive: false,
+      title:"AI Computer Vision ",
+      subTitle:"The AI power at Code  innovate every thing.",
+      content:"We love helping you bring ideas to life. We focus on creating value by providing modern ICT solutions" 
+     },
+    { id: 3, showPart2: false, isAnimating: false, isActive: false,
+      title:"AI Innovation Hub",
+      subTitle:"The AI power at Code  innovate every thing.",
+      content:"We love helping you bring ideas to life. We focus on creating value by providing modern ICT solutions" 
+     },
   ];
 
   activateFirstBox(): void {

@@ -95,19 +95,16 @@
         <div class="d-flex fx-sectionThree">
             <div *ngFor="let box of boxes; let i = index" class="d-flex sectionThree-box"
                 [ngClass]="{'active': box.isActive}" (click)="onBoxClick(box)">
-                <div class="d-flex align-items-center justify-content-between sectionThree-part1">
+                <div class="d-flex align-items-center sectionThree-part1">
                     <p class="font-medium mb-0">{{ i + 1 }}</p>
-                    <p class="font-medium mb-0 rotate-p">ICT Services</p>
+                    <p class="font-medium mb-0 rotate-p">{{box.title}}</p>
                 </div>
                 <div class="sectionThree-part2" *ngIf="box.showPart2" [ngClass]="{'animate-part2': box.isAnimating}">
-                    <h1 class="font-bold subtitle48px" data-aos="fade-down">
-                        The AI power at Code innovate every thing.
-                    </h1>
-                    <p class="style-font subtitle24px">
-                        We love helping you bring ideas to life. We focus on creating value by providing modern IT
-                        solutions.
-                    </p>
-                    <button type="button" class="font-medium d-flex align-items-center justify-content-center">
+                    <h2 class="font-medium subtitle32px colorWhite">{{box.title}}</h2>
+                    <h1 class="font-bold subtitle48px" data-aos="fade-down"> {{box.subTitle}} </h1>
+                    <p class="style-font subtitle24px">{{box.content}}</p>
+                    <button routerLink="" routerLinkActive="" type="button"
+                        class="font-medium d-flex align-items-center justify-content-center">
                         Search
                     </button>
                 </div>
