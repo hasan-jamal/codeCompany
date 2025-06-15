@@ -31,7 +31,8 @@
                     <div class="listServices" [class.active]="aboutUsListOpen">
                         <div class="listPart">
                             <div class="d-flex flex-column fx-listServices gap20">
-                                <a class="font-medium" (click)="closeSidenav()">Our clients</a>
+                                <a routerLink="/aboutUs/ourClients" routerLinkActive="active" class="font-medium"
+                                    (click)="closeSidenav()">Our clients</a>
                                 <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium"
                                     (click)="closeSidenav()">Our
                                     partners</a>
@@ -40,7 +41,9 @@
                     </div>
                 </div>
                 <div class="border"></div>
-                <div class="btnServicesMb">
+                <a routerLink="ourServices" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">our
+                    Services</a>
+                <!-- <div class="btnServicesMb">
                     <button type="button" class="link d-flex align-items-center justify-content-between w-100"
                         (click)="toggleServicesList()" routerLink="/ourServices" routerLinkActive="dropDownActive">
                         <span class="font-medium linkStyle" (click)="closeSidenav()">Our services</span>
@@ -64,15 +67,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="border"></div>
                 <a routerLink="news" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">Our news</a>
                 <div class="border"></div>
                 <a routerLink="contactUs" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">Contact
                     us</a>
                 <div class="border"></div>
-                <button routerLink="contactUs" routerLinkActive="active" class="btn-linearGradient colorWhite font-bold"
-                    (click)="closeSidenav()">Join us</button>
+                <button type="button" routerLink="contactUs" routerLinkActive="active"
+                    class="btn-linearGradient colorWhite font-bold" (click)="closeSidenav()">Join us</button>
             </div>
         </div>
     </nav>

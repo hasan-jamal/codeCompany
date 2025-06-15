@@ -1,0 +1,27 @@
+<section class="sectionSix">
+    <div class="sectionSix-container px-120">
+        <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">
+            What people are saying?
+        </span>
+        <h1 class="text-center font-bold subtitle48px h1-head">
+            We brought <span class="color-linearGradient">their ideas</span> to life
+        </h1>
+
+        <ngx-slick-carousel #slickPeopleSaying [config]="sliderpeopleSaying">
+            <div ngxSlickItem *ngFor="let say of peopleSaying" class="sliderpeopleSaying">
+                <div class="slide">
+                    <div class="card-sectionSix" [style.background-color]="say.backgroundColor">
+                        <div class="divTextOne">
+                            <img src="../../../../../assets/images/Quote-card.svg" alt="Quote-card.svg">
+                            <h5 class="colorBlack font-medium subtitle18px mb-0">{{say.text}}</h5>
+                        </div>
+                        <div class="divTextTwo">
+                            <h3 class="colorBlack font-semiBold subtitle18px">{{say.fullName}}</h3>
+                            <span class="colorGrey style-font">{{say.jobTitle}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</section>

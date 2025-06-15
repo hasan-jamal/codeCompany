@@ -45,3 +45,24 @@ header .btnServicesHeader .listAboutHeader{
   header .btnServicesHeader .listAboutHeader a:last-child{
     border-bottom: none;
   }
+  /* Just for copy */
+  @media (min-width:1706.67px) {
+    header .btnServicesHeader .listAboutHeader{width: 180px;}
+    header .btnServicesHeader .listAboutHeader a{padding: 12px;}
+  }
+  @media (min-width:1920px) {
+    header .btnServicesHeader .listAboutHeader{width: 210px;}
+    header .btnServicesHeader .listAboutHeader a{padding: 16px;}
+  }
+  @media (min-width:2048px) {
+    header .btnServicesHeader .listAboutHeader{width: 240px;}
+    header .btnServicesHeader .listAboutHeader a{padding: 18px;}
+   }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {}
+  @media (max-width:1228.8px) {}
+  @media (max-width:1024px) {}
+  @media (max-width:877.71px) {}
+  @media (max-width:768px) {}
+  @media (max-width:614.4px) {}
+  @media (max-width:512px) {}

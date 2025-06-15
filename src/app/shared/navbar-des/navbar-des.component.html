@@ -14,12 +14,15 @@
                     <img src="../../../assets/images/arrowDown.svg" alt="arrowDown icon">
                 </button>
                 <div class="listAboutHeader">
-                    <a class="font-medium subtitle16px  ">Our clients</a>
+                    <a routerLink="/aboutUs/ourClients" routerLinkActive="active" class="font-medium subtitle16px ">Our
+                        clients</a>
                     <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium subtitle16px">Our
                         partners</a>
                 </div>
             </div>
-            <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
+            <a routerLink="ourServices" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
+                services</a>
+            <!-- <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
                 <button type="button" class="link d-flex align-items-center" data-target="Industries-list"
                     routerLink="/ourServices" routerLinkActive="dropDownActive">
                     <span class="font-medium linkStyle">Our services</span>
@@ -72,14 +75,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <a routerLink="ourPartners" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
                 partners</a> -->
             <a routerLink="news" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our news</a>
             <a routerLink="contactUs" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Contact
                 us</a>
         </div>
-        <div class="btn-header"><button class="font-medium btn-linearGradient colorWhite" type="button">Join
+        <div class="btn-header"><button routerLink="contactUs" routerLinkActive="active"
+                class="font-medium btn-linearGradient colorWhite" type="button">Join
                 us</button></div>
     </div>
 </header>
