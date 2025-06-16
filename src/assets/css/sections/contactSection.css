@@ -7,7 +7,7 @@
 .contactSection-container{padding-top: 7rem;}
 .contactSection .contactSection-div{
     position: relative;
-    background-image: url("/assets/images/Subtract.png");
+    background-image: url("../../images/Subtract.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
