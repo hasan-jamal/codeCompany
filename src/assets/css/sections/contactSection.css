@@ -7,11 +7,11 @@
 .contactSection-container{padding-top: 7rem;}
 .contactSection .contactSection-div{
     position: relative;
-    background-image: url(../../../assets/images/Subtract.png);
+    background-image: url("/assets/images/Subtract.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 356px;
+    height: 456px;
     justify-content: space-between;
     border-radius: 30px;
 }
@@ -88,7 +88,7 @@
     width: 322px;
     height: 74px;
 }
-.contactSection p{font-size: 32px;margin-top: 36px;}
+.contactSection p{margin-top: 36px;}
 
 @media (min-width:1706.67px) {
     .contactSection .contactSection-div{height: 457px;}
@@ -130,7 +130,7 @@
     }
     .contactSection .contactSection-div .contactSection-texts{width: 70%;padding: 0 23px 27px 0;}
     .contactSection .contactSection-div .contactSection-buttons{height: max-content;}
-    .contactSection p{font-size: 16px;margin-top: 24px;}
+    .contactSection p{margin-top: 24px;}
     .contactSection-container{padding-top: 3rem;}
 }
 @media (max-width:512px) {}

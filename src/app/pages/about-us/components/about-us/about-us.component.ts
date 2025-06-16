@@ -18,28 +18,28 @@ export class AboutUsComponent {
   isHovered = false;
   // Second slider logos
  logos = [
-  "../../../../../assets/images/Partners logos/Austria.png",
-  "../../../../../assets/images/Partners logos/Germany (2).png",
-  "../../../../../assets/images/Partners logos/Germany.png",
-  "../../../../../assets/images/Partners logos/India (2).png",
-  "../../../../../assets/images/Partners logos/India (3).png",
-  "../../../../../assets/images/Partners logos/India (4).png",
-  "../../../../../assets/images/Partners logos/India (5).png",
-  "../../../../../assets/images/Partners logos/India.jpeg",
-  "../../../../../assets/images/Partners logos/India.png",
-  "../../../../../assets/images/Partners logos/Switzerland (2).png",
-  "../../../../../assets/images/Partners logos/Switzerland.png",
-  "../../../../../assets/images/Partners logos/Turkey.png",
-  "../../../../../assets/images/Partners logos/United Arab Emirates (UAE).png",
-  "../../../../../assets/images/Partners logos/United Arab Emirates..png",
-  "../../../../../assets/images/Partners logos/United Kingdom..png"
+  "assets/images/Partners logos/Austria.png",
+  "assets/images/Partners logos/Germany (2).png",
+  "assets/images/Partners logos/Germany.png",
+  "assets/images/Partners logos/India (2).png",
+  "assets/images/Partners logos/India (3).png",
+  "assets/images/Partners logos/India (4).png",
+  "assets/images/Partners logos/India (5).png",
+  "assets/images/Partners logos/India.jpeg",
+  "assets/images/Partners logos/India.png",
+  "assets/images/Partners logos/Switzerland (2).png",
+  "assets/images/Partners logos/Switzerland.png",
+  "assets/images/Partners logos/Turkey.png",
+  "assets/images/Partners logos/United Arab Emirates (UAE).png",
+  "assets/images/Partners logos/United Arab Emirates..png",
+  "assets/images/Partners logos/United Kingdom..png"
 ];
 
   slideConfig = {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     infinite: true,
     arrows: false,
     dots: false,
@@ -109,7 +109,7 @@ export class AboutUsComponent {
       name: "Ahmad Hassan",
       role: "Data Analysis",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-      imageUrl: "../../../../../assets/images/person.jpeg"
+      imageUrl: "assets/images/person.jpeg"
     },
     {
       id: 2,
@@ -117,7 +117,7 @@ export class AboutUsComponent {
       name: "Sarah Johnson",
       role: "UX Designer",
       description: "Specializes in creating user-friendly interfaces with 5 years of experience in web and mobile applications...",
-      imageUrl: "../../../../../assets/images/person.jpeg"
+      imageUrl: "assets/images/person.jpeg"
     }
   ];
 

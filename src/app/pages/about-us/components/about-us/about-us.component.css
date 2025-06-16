@@ -1,6 +1,6 @@
 .aboutSOne{margin-top: 60px;}
 .aboutSOne .aboutSOne-content{
-    background-image: url(../../../../../assets/images/aboutSection1.png);
+    background-image: url("/assets/images/aboutSection1.png");
     background-position: bottom;
     background-repeat: no-repeat;
     height: 525px;
@@ -22,7 +22,6 @@
     border-radius: 20px;
 }
 .aboutSOne .aboutSOne-content h1{
-    font-size: 64px;
     position: relative;
     z-index: 3;
 }
@@ -46,27 +45,22 @@
 }
 @media (min-width:2304px) {}
 @media (max-width:1396.36px) {
-    .aboutSOne .aboutSOne-content h1{font-size: 60px;}
 }
 @media (max-width:1228.8px) {
-    .aboutSOne .aboutSOne-content h1{font-size: 50px;}
     .aboutSOne .aboutSOne-content{height: 460px;}
      .aboutSOne .aboutSOne-content h2{font-size: 35px;}
 }
 @media (max-width:1024px) {
     .aboutSOne .aboutSOne-content{height: 400px;}
-    .aboutSOne .aboutSOne-content h1{font-size: 40px;}
     .aboutSOne{margin-top: 40px;}
 }
 @media (max-width:877.71px) {
-    .aboutSOne .aboutSOne-content h1{font-size:35px;}
     .aboutSOne .aboutSOne-content{height: 350px;}
     .aboutSOne{margin-top: 30px;}
 }
 @media (max-width:768px) {
     .aboutSOne .fx-aboutSOne{flex-wrap: wrap;}
     .aboutSOne .aboutSOne-content h1 br{display: none;}
-    .aboutSOne .aboutSOne-content h1{font-size: 32px;}
 }
 @media (max-width:614.4px) {
 
@@ -135,20 +129,29 @@
 @media (max-width:512px) {}
 /* About Section Three */
 .aboutSThree {margin: 116px 0 15rem 0;}
-.aboutSThree .fx-aboutSThree{justify-content: space-between;gap: 100px;}
+.aboutSThree .fx-aboutSThree{
+    justify-content: space-between;
+    gap: 100px;
+    align-items: normal;
+    margin-bottom: 1rem;
+}
 .aboutSThree .aboutSThree-texts{width: 50%;}
+.aboutSThree .aboutSThree-texts p{line-height: 150%;text-align:justify;}
 .aboutSThree .aboutSThree-imgs{
     width: 50%;
     position: relative;
     display: flex;
     text-align: end;
     gap: 24px;
+    height: 500px;
+   max-height: 100%;
 }
 .aboutSThree .aboutSThree-imgs .createdDate{
     padding-top: 0.5rem;
 }
 .aboutSThree .aboutSThree-imgs .aboutSThree-img1{
    width: 64%;
+   height: 100%;
 }
 .aboutSThree .aboutSThree-imgs .imgAbs{
     border-radius: 30px;
@@ -165,24 +168,29 @@
     height: 100%;
     border-radius: 30px;
 }
-@media (min-width:1706.67px) {}
+@media (min-width:1706.67px) {
+    .aboutSThree .aboutSThree-imgs{height: 550px;}
+}
 @media (min-width:1920px) {
-
+    .aboutSThree .aboutSThree-imgs{height: 650px;}
 }
 @media (min-width:2048px) { 
-       
+    .aboutSThree .aboutSThree-imgs{height: 700px;}
 }
 @media (min-width:2304px) {}
 @media (max-width:1396.36px) {
     .aboutSThree .aboutSThree-imgs .imgAbs{bottom: -6.2rem;right: 4.3rem;}
+    .aboutSThree .aboutSThree-imgs{height: 450px;}
 }
 @media (max-width:1228.8px) {
     .aboutSThree .aboutSThree-imgs .imgAbs{bottom: -5.5rem;right: 3.8rem;}
+    .aboutSThree .aboutSThree-imgs{height: 380px;}
 }
 @media (max-width:1024px) {
-    .aboutSThree .aboutSThree-imgs .imgAbs{bottom: -4.5rem;right: 3.3rem;}
+    .aboutSThree .aboutSThree-imgs .imgAbs{bottom: -4.5rem;right: 3.3rem;padding: 10px 0 0 10px;}
     .aboutSThree .aboutSThree-imgs .aboutSThree-img2,
     .aboutSThree .aboutSThree-imgs .imgAbs{border-radius: 15px;}
+    .aboutSThree .aboutSThree-imgs{height: 300px;}
 }
 @media (max-width:877.71px) {
     .aboutSThree .fx-aboutSThree{gap: 70px;}
@@ -201,39 +209,57 @@
     .aboutSThree .aboutSThree-imgs{width: 100%;}
 }
 @media (max-width:614.4px) {
-    .aboutSThree .aboutSThree-imgs .imgAbs {bottom: -2rem;right: 2.2rem;width: 52%;padding: 15px;}
+    .aboutSThree .aboutSThree-imgs .imgAbs {bottom: -2rem;right: 2.2rem;width: 52%;padding: 15px;padding-bottom: 0;}
     .aboutSThree{margin-bottom:100px;margin-top: 0px;}
     .aboutSThree .aboutSThree-imgs .aboutSThree-img2,
-    .aboutSThree .aboutSThree-imgs .imgAbs{border-radius: 10;}
+    .aboutSThree .aboutSThree-imgs .imgAbs{border-radius: 10px;}
     .aboutSThree .aboutSThree-imgs .aboutSThree-img1{width: 65%;}
     .aboutSThree .aboutSThree-imgs .createdDate{width: 35%;}
     .aboutSThree .aboutSThree-imgs{gap: 16px;}
+    .aboutSThree .fx-aboutSThree{margin-bottom: 3rem;}
 }
 @media (max-width:512px) {}
 /* About Section Four */
 .aboutSFour{margin-bottom: 100px;position: relative;padding-top: 6rem;}
 .aboutSFour .overviewBack{position: absolute;top: 0;left: 0;width: 100%;}
-.aboutSFour .fx-aboutSFour{gap: 50px;}
-.aboutSFour .aboutSFour-part{width: 50%;display: flex;flex-direction: column;gap: 24px;}
-.aboutSFour .aboutSFour-part img{object-fit: cover;border-radius: 30px;display: block; margin: auto;width: 100%;}
+.aboutSFour .fx-aboutSFour{gap: 50px;flex-direction: column;}
+.aboutSFour .aboutSFour-texts{width: 60%;}
+.aboutSFour .aboutSFour-img{width: 40%;}
+.aboutSFour .aboutSFour-part{
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.aboutSFour .aboutSFour-texts p{line-height: 140%;}
+.aboutSFour .aboutSFour-img img{object-fit: cover;border-radius: 30px;display: block; margin: auto;width: 100%;}
 .aboutSFour .aboutSFour-part .mt55{margin-top: 55px;}
 .aboutSFour .aboutSFour-part .mb55{margin-bottom: 55px;}
 @media (min-width:1706.67px) {}
 @media (min-width:1920px) {}
 @media (min-width:2048px) { }
 @media (min-width:2304px) {}
-@media (max-width:1396.36px) {}
-@media (max-width:1228.8px) {}
-@media (max-width:1024px) {}
-@media (max-width:877.71px) {}
+@media (max-width:1396.36px) {
+    .aboutSFour .aboutSFour-part{gap: 60px;}
+}
+@media (max-width:1228.8px) {
+    .aboutSFour .aboutSFour-part{gap: 40px;}
+}
+@media (max-width:1024px) {
+    .aboutSFour .aboutSFour-part{gap:32px;}
+}
+@media (max-width:877.71px) {
+    .aboutSFour .aboutSFour-part{gap: 24px;}
+}
 @media (max-width:768px) {}
 @media (max-width:614.4px) {
-    .aboutSFour .fx-aboutSFour{flex-direction: column;gap: 90px;}
-    .aboutSFour .aboutSFour-part{width: 100%;}
+    .aboutSFour .fx-aboutSFour{gap: 70px;}
+    .aboutSFour .aboutSFour-part{width: 100%;flex-direction: column;gap: 16px;}
     .aboutSFour .aboutSFour-part .mt55{order: 1;}
     .aboutSFour .aboutSFour-texts{order: 2;}
-    .aboutSFour .aboutSFour-part{gap: 16px;}
-    .aboutSFour {padding-top: 3rem;margin-bottom: 200px;}
+    .aboutSFour .aboutSFour-texts{width: 100%;}
+    .aboutSFour .aboutSFour-img{width: 100%;}
+    .aboutSFour {padding-top: 3rem;margin-bottom: 100px;}
 }
 @media (max-width:512px) {}
 /* About Section Five */

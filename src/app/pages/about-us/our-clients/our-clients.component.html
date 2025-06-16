@@ -1,0 +1,58 @@
+<section class="ourClientsS1">
+    <div class="ourClientsS1-container px-120">
+        <div class="ourClientsS1-content">
+            <h1 class="font-bold subtitle48px colorWhite text-center" data-aos="fade-down">Built for <span
+                    class="color-linearGradient">Impact. </span> Chosen for
+                <span class="color-linearGradient">Reliability.</span>
+            </h1>
+            <p class="mb-0 style-font text-center colorWhite subtitle20px p-head">CODE is the partner of choice for
+                institutions that demand performance, security, and
+                long-term value.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="tabsLogos">
+    <div class="tabsLogos-container px-120">
+        <!-- Tabs -->
+        <div class="justify-content-between fxBtns fxGeneral-cards">
+            <button *ngFor="let tab of tabs" type="button" class="tabItem colorFour font-medium subtitle24px fxCard"
+                [ngClass]="{ active: activeTab === tab.key }" [style.background]="tab.bgColor"
+                (click)="setActiveTab(tab.key)">
+                {{ tab.label }}
+            </button>
+        </div>
+        <!-- Logos Content -->
+        <div class="contentsTabs">
+            <div class="content fxGeneral-cards tab-content" *ngIf="tabContent[activeTab]">
+                <div class="boxLogo fxCard" *ngFor="let item of tabContent[activeTab]">
+                    <img [src]="item.image" [alt]="item.label + ' logo'" />
+                    <span class="colorGrey2 font-medium">{{ item.label }}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<app-people-saying></app-people-saying>
+
+<section class="contactSection">
+    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+    <div class="contactSection-container px-120">
+        <div class="contactSection-div d-flex">
+            <div class="contactSection-texts">
+                <span class="subtitle24px d-block color-linearGradient font-medium mb24" data-aos="fade-down"
+                    data-aos-easing="linear" data-aos-duration="1000"> Be always in touch</span>
+                <h1 class=" subtitle48px font-bold mb-0" data-aos="zoom-in-up">Let’s <span
+                        class="color-linearGradient">Empower</span> your <br> brand & business</h1>
+            </div>
+            <div class="contactSection-buttons d-flex">
+                <button class="btn-linearGradient" type="button">
+                    <span class="font-semiBold colorWhite subtitle20px">Contact us</span>
+                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                </button>
+            </div>
+        </div>
+        <p class="mb-0 colorTwo style-font subtitle20px">Let's talk about your needs for business IT services</p>
+    </div>
+</section>

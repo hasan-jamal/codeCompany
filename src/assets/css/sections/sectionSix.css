@@ -1,0 +1,129 @@
+/* Section Six Style  */
+.sectionSix{
+    margin: 125px 0 150px 0;
+    padding-top: 66px;
+    width: 100%;
+}
+.sectionSix .span-head{margin-bottom: 36px;}
+.sectionSix .h1-head{margin-bottom: 64px;}
+.sectionSix .card-sectionSix{border-radius: 15px;}
+.sectionSix .card-sectionSix .divTextOne{
+    padding: 24px;
+}
+.sliderpeopleSaying .slide{padding: 0 10px;}
+.sectionSix .card-sectionSix .divTextOne h5{
+    line-height:26px;
+}
+.sectionSix .card-sectionSix .divTextOne img{
+    margin-bottom: 6px;
+    display: block;
+    width: 15%;
+}
+.sectionSix .card-sectionSix .divTextTwo{
+    background: #fff;
+    border-radius: 0 15px 0 0;
+    width: max-content;
+    position: relative;
+    padding: 14px 18px 0px 0;
+}
+.sectionSix .card-sectionSix .divTextTwo h3{margin-bottom: 6px;}
+.sectionSix .card-sectionSix .divTextTwo span{font-size: 14px;}
+.sectionSix .card-sectionSix .divTextTwo::after {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    top: -38px;
+    left: 0px;
+    transform: rotate(90deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 7px 7px #fff;
+}
+.sectionSix .card-sectionSix .divTextTwo::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    bottom: 0px;
+    right: -3rem;
+    transform: rotate(90deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #fff;
+}
+.sectionSix .style-font{width: 85%;margin: auto;margin-bottom: 56px;}
+.sectionSix .margin12{margin-top: 12px;color: #8B8B8B;}
+.sectionSix .slick-dots{
+    position: relative;
+    bottom: 0;
+    margin-top: 33px;
+}
+.sectionSix .slick-dots li{
+    width: 40px;
+    height: 2px;
+    margin: 0 2px;
+    border-radius: 20px;
+    background: #FDE0CE;
+}
+.sectionSix .slick-dots li button{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0;
+}
+.sectionSix .slick-dots .slick-active{
+ height: 3px;
+ background: #FAA26B;
+}
+.slick-dots li button{display: none;}
+.slick-dots li button:before{display: none;}
+/* .slick-dots:after {
+  content: "";
+  display: inline-block;
+  background-image: url('../../../../../assets/images/arrow-peopleSaying.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+} */
+.custom-next-arrow {
+  /* background-image: url('../../../../../assets/images/arrow-peopleSaying.svg');
+  background-size: contain;
+  background-repeat: no-repeat; */
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+@media (min-width:1706.67px) {}
+@media (min-width:1920px) {}
+@media (min-width:2048px) { }
+@media (min-width:2304px) {}
+@media (max-width:1396.36px) {}
+@media (max-width:1228.8px) {
+    .sectionSix .card-sectionSix .divTextOne h5 {line-height: 22px;}
+}
+@media (max-width:1024px) {}
+@media (max-width:877.71px) {
+    .sectionSix {margin: 100px 0;}
+}
+@media (max-width:768px) {}
+@media (max-width:614.4px) {
+    .sectionSix .style-font{width: 100%;margin-bottom: 32px;}
+    .sectionSix {margin: 70px 0;}
+    .sectionSix .card-sectionSix .divTextOne h5{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media (max-width:512px) {}

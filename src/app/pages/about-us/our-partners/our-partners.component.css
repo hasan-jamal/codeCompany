@@ -216,3 +216,43 @@
     .ourDatacenterPartnersS2 .ourDatacenterPartnersS2-titles{width: 100%;}
   }
   @media (max-width:512px) {}
+  .mapSection .divTitles{
+    margin-bottom: 32px;
+  }
+  .mapSection #mapInLocation{
+     width: 80%;
+     margin: auto;
+     height: 700px;
+  }
+  .mapSection .divTitles p{width: 60%;margin: auto;}
+
+  /* Just for copy */
+  @media (min-width:1706.67px) {
+    .mapSection #mapInLocation{height: 750px;}
+  }
+  @media (min-width:1920px) {
+    .mapSection #mapInLocation{height: 800px;}
+  }
+  @media (min-width:2048px) {
+    .mapSection #mapInLocation{height: 850px;}
+
+   }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {
+    .mapSection #mapInLocation{height: 650px;}
+  }
+  @media (max-width:1228.8px) {
+    .mapSection #mapInLocation{height: 550px;}
+  }
+  @media (max-width:1024px) {
+    .mapSection #mapInLocation{height: 450px;}
+  }
+  @media (max-width:877.71px) {
+    .mapSection #mapInLocation{height: 400px;}
+  }
+  @media (max-width:768px) {
+    .mapSection #mapInLocation{height: 350px;}
+  }
+  @media (max-width:614.4px) {
+    .mapSection .divTitles p{width: 100%;}
+  }

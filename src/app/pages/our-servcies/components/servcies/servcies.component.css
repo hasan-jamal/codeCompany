@@ -3,7 +3,7 @@
 }
 .servicesS1 .servicesS1-container{position: relative;}
 .servicesS1 .back-servicesS1 {
-    background-image:url('../../../../../assets/images//servicesS1.png');
+    background-image:url("/assets/images/servicesS1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,11 +27,11 @@
 }
 .servicesS1 .servicesS1-texts{
     padding: 50px 24px 40px 0;
-    background-image: url('../../../../../assets/images/Home.svg');
+    background-image: url("/assets/images/Home.svg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 45%;
+    width: 50%;
     position: relative;
     border-radius: 0 0px 30px 0px;
 }
@@ -61,6 +61,7 @@
     z-index: 1;
     box-shadow: 9px 9px #f6fafd;
 }
+.servicesS1 .servicesS1-texts p{line-height: 140%;}
 .servicesS1 .servicesS1-texts h1{margin-bottom: 19px;}
 @media (min-width:1706.67px) {
 }
@@ -118,16 +119,16 @@
 }
 .servicesS2 .fx-servicesS2 .boxColor1:hover{background: #006DC6;}
 .servicesS2 .fx-servicesS2 .boxColor1:hover img {
-    content: url('../../../../../assets/images/ICTSolutios-white.svg');
+    content: url("/assets/images/ICTSolutios-white.svg");
 }
 .servicesS2 .fx-servicesS2 .boxColor2:hover img {
-    content: url('../../../../../assets/images/DataSolutions-white.svg');
+    content: url("/assets/images/DataSolutions-white.svg");
 }
 .servicesS2 .fx-servicesS2 .boxColor3:hover img {
-    content: url('../../../../../assets/images/ITSolutions-white.svg');
+    content: url("/assets/images/ITSolutions-white.svg");
 }
 .servicesS2 .fx-servicesS2 .boxColor4:hover img {
-    content: url('../../../../../assets/images/AISolutions-white.svg');
+    content: url("/assets/images/AISolutions-white.svg");
 }
 .servicesS2 .fx-servicesS2 .boxColor2:hover{background: #00AAC8;}
 .servicesS2 .fx-servicesS2 .boxColor3:hover{background: #D51C38;}

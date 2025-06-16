@@ -35,13 +35,18 @@
               "node_modules/slick-carousel/slick/slick.css",
               "node_modules/slick-carousel/slick/slick-theme.css",
               "src/styles.css",
-              "src/assets/css/general.css",
               "node_modules/video.js/dist/video-js.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/slick-carousel/slick/slick.min.js",
-              "node_modules/video.js/dist/video.js"
+              "node_modules/video.js/dist/video.js",
+              "src/assets/libs/anychart/anychart-base.min.js",
+              "src/assets/libs/anychart/anychart-map.min.js",
+              "src/assets/libs/anychart/anychart-data-adapter.min.js",
+              "src/assets/libs/anychart/world.js",
+              "src/assets/libs/anychart/proj4.js"
+            
             ],
             "server": "src/main.server.ts",
             "ssr": {

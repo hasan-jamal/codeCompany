@@ -1,0 +1,172 @@
+.ourClientsS1{margin-top: 60px;}
+.ourClientsS1 .ourClientsS1-content{
+    background-image: url("/assets/images/imageAI-2.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 525px;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.ourClientsS1 .ourClientsS1-content::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-radius: 20px;
+}
+.ourClientsS1 .ourClientsS1-content h1{
+    position: relative;
+    z-index: 3;
+    margin-bottom: 1rem;
+}
+.ourClientsS1 .ourClientsS1-content p{width: 50%;}
+.ourClientsS1 .ourClientsS1-content h2{
+    background: linear-gradient(270deg, #FDE0CE 0%, #FAA26B 33.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    padding-right: 73px;
+}
+.ourClientsS1 .ourClientsS1-content .fx-buttons{gap: 38px;align-items: end;}
+@media (min-width:1706.67px) {
+    .ourClientsS1 .ourClientsS1-content{height: 600px;}
+}
+@media (min-width:1920px) {
+    .ourClientsS1 .ourClientsS1-content{height: 650px;}
+}
+@media (min-width:2048px) { 
+    .ourClientsS1 .ourClientsS1-content{height: 740px;}
+}
+@media (min-width:2304px) {}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+    .ourClientsS1 .ourClientsS1-content{height: 460px;}
+     .ourClientsS1 .ourClientsS1-content h2{font-size: 35px;}
+}
+@media (max-width:1024px) {
+    .ourClientsS1 .ourClientsS1-content{height: 400px;}
+    .ourClientsS1{margin-top: 40px;}
+}
+@media (max-width:877.71px) {
+    .ourClientsS1 .ourClientsS1-content{height: 350px;}
+    .ourClientsS1{margin-top: 30px;}
+    .ourClientsS1 .ourClientsS1-content p{width: 60%;}
+}
+@media (max-width:768px) {
+    .ourClientsS1 .fx-ourClientsS1{flex-wrap: wrap;}
+    .ourClientsS1 .ourClientsS1-content h1 br{display: none;}
+}
+@media (max-width:614.4px) {
+    .ourClientsS1 .ourClientsS1-content{width: 100%;}
+    .ourClientsS1 .ourClientsS1-content p,
+    .ourClientsS1 .ourClientsS1-content h1{width: 90%;}
+}
+@media (max-width:512px) {}
+.tabsLogos{margin-top: 20px;}
+.tabsLogos .fxBtns{gap: 15px;margin-bottom: 48px;}
+.tabsLogos .fxBtns button{
+    flex: 1 1 calc(25% - 15px);
+    max-width: calc(25% - 0px);
+    height: 109px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.tabsLogos .fxBtns button.active{
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(61, 61, 61, 0.1);
+    transform: scale(1.03);
+}
+.tabsLogos .fxBtns button:hover{
+    transform: scale(0.97);
+    font-weight: 600;
+}
+.tabsLogos .contentsTabs .content{
+    display: flex;
+    justify-content: start;
+}
+.tabsLogos .contentsTabs .content .boxLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 30px;
+    flex: 1 1 calc(16.6% - 0px);
+    max-width: calc(16.6% - 0px);
+    border-right: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    background: #FFF;
+    margin: 0;
+}
+.tabsLogos .contentsTabs .content .boxLogo img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+.tabsLogos .contentsTabs .content span{
+    padding: 3px 9px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+   display: block;    
+   width: max-content;
+   font-size: 12px;
+}
+/* Just for copy */
+@media (min-width:1706.67px) {}
+@media (min-width:1920px) {
+    .tabsLogos .fxBtns button{height: 120px;}
+    .tabsLogos .contentsTabs .content .boxLogo img{width: 140px;height: 140px;}
+    .tabsLogos .contentsTabs .content span{font-size: 14px;}
+}
+@media (min-width:2048px) {
+    .tabsLogos .fxBtns button{height: 130px;}
+    .tabsLogos .contentsTabs .content .boxLogo img{width: 150px;height: 150px;}
+    .tabsLogos .contentsTabs .content span{font-size: 16px;}
+ }
+@media (min-width:2304px) {
+    .tabsLogos .fxBtns button{height: 140px;}
+}
+@media (max-width:1396.36px) {}
+@media (max-width:1228.8px) {
+    .tabsLogos .contentsTabs .content .boxLogo{
+        flex: 1 1 calc(20% - 0px);
+        max-width: calc(20% - 0px);
+    }
+    .tabsLogos .fxBtns{margin-bottom: 32px;}
+    .tabsLogos .fxBtns button{height: 95px;}
+}
+@media (max-width:1024px) {
+    .tabsLogos .fxBtns{margin-bottom: 24px;}
+    .tabsLogos .fxBtns button{height: 85px;}
+}
+@media (max-width:877.71px) {
+    .tabsLogos .contentsTabs .content .boxLogo img{width: 110px;height: 110px;}
+}
+@media (max-width:768px) {
+    .tabsLogos .contentsTabs .content .boxLogo{
+        flex: 1 1 calc(25% - 0px);
+        max-width: calc(25% - 0px);
+    }
+}
+@media (max-width:614.4px) {
+    .tabsLogos .fxBtns button {
+        flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 0px);
+    }
+    .tabsLogos .contentsTabs .content .boxLogo{
+        flex: 1 1 calc(50% - 0px);
+        max-width: calc(50% - 0px);
+        gap: 1rem;
+    }
+    .tabsLogos .fxBtns{gap: 8px;}
+    .tabsLogos .contentsTabs .content .boxLogo img{width: 90px;height: 90px;}
+}
+@media (max-width:512px) {}

@@ -4,20 +4,21 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 import { trigger, transition, style, animate } from '@angular/animations';
 // import type Player from 'video.js/dist/types/player';
 import 'video.js/dist/video-js.css';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-
+import { PeopleSayingComponent } from '../../../../shared/people-saying/people-saying.component';
 
 @Component({
   selector: 'app-home',
   standalone:true,
   imports: [
     CommonModule, 
-    SlickCarouselModule
+    SlickCarouselModule,
+    PeopleSayingComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css',
-                    '../../../../../assets/css/style.css'
-  ],
+                    '../../../../../assets/css/sections/sectionSix.css',
+                  '../../../../../assets/css/style.css'
+  ],  
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
  encapsulation: ViewEncapsulation.None,
   animations: [
@@ -35,7 +36,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HomeComponent  implements OnInit ,AfterViewInit{
 constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platformId: Object) {}
   @ViewChild('slickModalBlogs', { static: false }) slickModalBlogs!: SlickCarouselComponent;
-  @ViewChild('slickPeopleSaying', { static: false }) slickPeopleSaying!: SlickCarouselComponent;
   @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
 
   @ViewChild('sliderBlogs', { static: true }) sliderBlogs!: ElementRef;
@@ -107,38 +107,11 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
         this.videoPlayer.nativeElement.load();
         this.videoPlayer.nativeElement.play().catch(() => {}); // optional: handle autoplay error
       } 
-      
     });
   }
- 
+
   ngAfterViewInit() {
-
     this.updateSlideContent(0);
-    setTimeout(() => {
-      if (isPlatformBrowser(this.platformId)) {
-
-      const dots = document.querySelector('.sectionSix .slick-dots');
-    
-      if (!dots) return;
-    
-      let customNextArrow = dots.querySelector<HTMLButtonElement>('.custom-next-arrow');
-  
-      if (!customNextArrow) {
-        customNextArrow = document.createElement('button');
-        customNextArrow.classList.add('custom-next-arrow');
-    
-     dots.appendChild(customNextArrow);
-    
-      const arrowImg = document.createElement('img');
-        arrowImg.src = '../../assets/images/arrow-peopleSaying.svg';
-        customNextArrow.appendChild(arrowImg);
-    
-        customNextArrow.addEventListener('click', () => {
-          this.slickPeopleSaying.slickNext();
-        });
-      }
-    }
-    });
   }
 
   // Start Section Three style
@@ -149,18 +122,18 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
        isAnimating: false,
         isActive: false,
         title:"AI Digital Twin",
-        subTitle:"The AI power at Code  innovate every thing.",
-        content:"We love helping you bring ideas to life. We focus on creating value by providing modern ICT solutions" 
+        subTitle:"Monitor your facility in real time",
+        content:"Build a smart digital replica of your site to monitor performance, predict issues, and optimize efficiency powered by seamless integration of BIM, GIS, and IoT for instant insights and smarter decisions." 
       },
     { id: 2, showPart2: false, isAnimating: false, isActive: false,
-      title:"AI Computer Vision ",
-      subTitle:"The AI power at Code  innovate every thing.",
-      content:"We love helping you bring ideas to life. We focus on creating value by providing modern ICT solutions" 
+      title:"AI Computer Vision",
+      subTitle:"Smarter eyes. Better security.",
+      content:"Transform regular surveillance cameras into intelligent systems that analyze behavior, detect risks, and trigger real-time alerts including facial recognition, crowd analytics, and perimeter monitoring." 
      },
     { id: 3, showPart2: false, isAnimating: false, isActive: false,
       title:"AI Innovation Hub",
-      subTitle:"The AI power at Code  innovate every thing.",
-      content:"We love helping you bring ideas to life. We focus on creating value by providing modern ICT solutions" 
+      subTitle:"Intelligent spaces for innovation",
+      content:"Design immersive, AI-driven environments for training, planning, and showcasing ideas tailored to your needs and optimized for local deployment." 
      },
   ];
 
@@ -203,29 +176,44 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
   activeIndex = 1; 
   faqs = [
     {
-      question: 'How can I request a consultation or a quote?',
+      question: 'What does CODE do?',
       answer:
-        'You can contact us directly via the contact form on our website or send an email to email@code.com...',
+        'CODE is a Saudi technology company delivering AI-powered solutions for smart infrastructure. We specialize in real-time systems like Digital Twin and Computer Vision to help organizations operate more intelligently, securely, and efficiently.',
     },
     {
-      question: 'How can I request a consultation or a quote?',
+      question: 'What is an AI Digital Twin?',
       answer:
-        'You can contact us directly via the contact form on our website or send an email to email@code.com...',
+        'An AI Digital Twin is a real-time, virtual replica of a physical environment. It provides live operational visibility, predictive analytics, and automated control — allowing organizations to monitor, simulate, and optimize performance instantly.',
     },
     {
-      question: 'How can I request a consultation or a quote?',
+      question: 'How does Computer Vision work in your solutions?',
       answer:
-        'You can contact us directly via the contact form on our website or send an email to email@code.com...',
+        'Our AI Computer Vision systems turn ordinary cameras into intelligent sensors. They detect safety risks, analyze behavior patterns, and automate surveillance — enhancing situational awareness across facilities.',
     },
     {
-      question: 'How can I request a consultation or a quote?',
+      question: 'Who are CODE’s solutions designed for?',
       answer:
-        'You can contact us directly via the contact form on our website or send an email to email@code.com...',
+        'We work with government entities, public institutions, and enterprise organizations that require scalable, secure, and high-performing systems — especially those aligned with Vision 2030 initiatives.',
     },
     {
-      question: 'How can I request a consultation or a quote?',
+      question: 'What makes CODE different from other AI providers?',
       answer:
-        'You can contact us directly via the contact form on our website or send an email to email@code.com...',
+        'CODE combines local insight with global technology standards. We offer end-to-end delivery — from strategy and deployment to long-term support — with a track record of performance in mission-critical environments.',
+    },
+    {
+      question: 'How scalable are CODE’s solutions?',
+      answer:
+        'Our platforms are designed to scale — from a single building to nationwide infrastructure. Whether you’re managing a campus, hospital, or city-wide system, CODE delivers solutions that grow with your operations.',
+    },
+    {
+      question: 'Can CODE integrate with our existing systems?',
+      answer:
+        'Yes. CODE’s solutions are designed for integration with legacy platforms and modern infrastructure alike — using open standards and modular architecture for smooth deployment.',
+    },
+    {
+      question: 'Can CODE integrate with our existing systems?',
+      answer:
+        'Reach out to our team to discuss your goals. We’ll assess your environment, recommend the right AI solutions, and support you through every stage — from planning to rollout and beyond.',
     },
   ];
   toggleFaq(index: number) {
@@ -431,68 +419,5 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
     }
   // End Slider Blog
 
-  // Slider What people are saying?
-    peopleSaying = [
-    {
-      text: "The AI-powered data analysis services from Code helped us gain deeper insights into our customers and make smarter decisions.",
-      fullName: "Jenny Wilson",
-      jobTitle: "CEO of Growtime",
-      backgroundColor:"#D9D9D9"
-    },
-    {
-      text: "The AI-powered data analysis services from Code helped us gain deeper insights into our customers and make smarter decisions.",
-      fullName: "Jenny Wilson",
-      jobTitle: "CEO of Growtime",
-      backgroundColor:"#FEEFE6"
-    },
 
-        {
-      text: "The AI-powered data analysis services from Code helped us gain deeper insights into our customers and make smarter decisions.",
-      fullName: "Jenny Wilson",
-      jobTitle: "CEO of Growtime",
-      backgroundColor:"#D9D9D9"
-    },
-        {
-      text: "The AI-powered data analysis services from Code helped us gain deeper insights into our customers and make smarter decisions.",
-      fullName: "Jenny Wilson",
-      jobTitle: "CEO of Growtime",
-      backgroundColor:"#FEEFE6"
-    },
-        {
-      text: "The AI-powered data analysis services from Code helped us gain deeper insights into our customers and make smarter decisions.",
-      fullName: "Jenny Wilson",
-      jobTitle: "CEO of Growtime",
-      backgroundColor:"#D9D9D9"
-    }
-  ];
-    sliderpeopleSaying = {
-    slidesToShow:4,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    infinite: true,
-    arrows: false,
-    dots: true,
-    rtl: false,
-    responsive: [
-      {
-        breakpoint: 1229,
-        settings: {
-          slidesToShow: 3.5
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3.2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  };
   }

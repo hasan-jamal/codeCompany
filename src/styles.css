@@ -54,3 +54,7 @@ app-root{
     height: 100%;
   }
 }
+.swal2-title{font-weight: 500;font-family: 'Inter Medium';}
+.swal2-html-container{
+  font-weight: 400;font-family: 'Inter';
+}
