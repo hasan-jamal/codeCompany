@@ -110,7 +110,7 @@
                         turning <b> interest into impact. </b></p>
                 </div>
                 <div class="boxContact-form">
-                    <form (submit)="onSubmit(); $event.preventDefault()" #contactForm="ngForm">
+                    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
                         <div class="form-group">
                             <input type="text" name="fullName" [(ngModel)]="formData.fullName" #fullName="ngModel"
                                 class="style-font subtitle16px" placeholder="Your Name" required />

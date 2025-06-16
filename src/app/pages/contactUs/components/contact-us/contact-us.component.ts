@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 
@@ -25,7 +25,7 @@ export class ContactUsComponent {
     message: ''
   };
     
-  onSubmit() {
+  onSubmit(form: NgForm) {
     if (
       !this.formData.fullName ||
       !this.formData.email ||
@@ -39,7 +39,7 @@ export class ContactUsComponent {
       });
       return;
     }
-    console.log(this.formData);
+  
     this.loading = true;
   
     const serviceID = 'service_c3x8icv';
@@ -55,28 +55,24 @@ export class ContactUsComponent {
           email: this.formData.email,
           subject: 'ContactUsEmail from ' + this.formData.fullName,
           message: this.formData.message,
-          reply_to: this.formData.email,  // <-- مهم عشان الرد يروح للمستخدم
+          reply_to: this.formData.email,
         },
         userID
       )
       .then(
-        (response) => {
+        () => {
           Swal.fire({
             title: `Thank you, ${this.formData.fullName}!`,
             text: 'Your message has been sent successfully.',
             icon: 'success',
           });
   
-          this.formData = {
-            fullName: '',
-            email: '',
-            subject: '',
-            message: ''
-          };
+          // Reset form data and validation state
+          form.resetForm(); // <--- هذا السطر مهم جداً
   
           this.loading = false;
         },
-        (error) => {
+        () => {
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -87,5 +83,6 @@ export class ContactUsComponent {
         }
       );
   }
+  
   
 }
