@@ -53,7 +53,7 @@ export class ContactUsComponent {
         {
           fullName: this.formData.fullName,
           email: this.formData.email,
-          subject: 'ContactUsEmail from ' + this.formData.fullName,
+          subject: this.formData.fullName,
           message: this.formData.message,
           reply_to: this.formData.email,
         },
