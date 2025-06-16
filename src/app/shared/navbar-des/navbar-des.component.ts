@@ -1,4 +1,4 @@
-import { Component, Renderer2, OnInit, OnDestroy } from '@angular/core';
+import { Component, Renderer2, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
     '../../../assets/css/general.css',
     '../../../assets/css/header.css',
   ],
+  encapsulation: ViewEncapsulation.None,
 })
 export class NavbarDesComponent {
     isCoverVisible = false;

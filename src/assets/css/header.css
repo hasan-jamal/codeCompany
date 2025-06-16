@@ -174,7 +174,7 @@
 #sidenav-active .navbar-mobile .flex-head{display: none;}
 /* Header */
 header .fx-header{
-  padding: 90px 0 0 0;
+  padding: 50px 0 0 0;
   gap: 90px;
   position: relative;
 }
@@ -316,13 +316,12 @@ header .btnServicesHeader .fx-listServices a:hover{
 @media (max-width:1396.36px) {
   header .fx-header .links-header .linkStyle{font-size: 18px;}
   header .fx-header .btn-header button{font-size: 18px;}
-  header .fx-header{padding: 70px 0 0px 0;}
 }
 @media (max-width:1228.8px) {
   header .fx-header .links-header .linkStyle{font-size: 16px;}
   header .fx-header .btn-header button{width: 130px;font-size: 16px;}
   header .fx-header .logo-header img{width: 130px;}
-  header .fx-header{padding: 50px 0 0px 0;}
+  header .fx-header{padding: 40px 0 0px 0;}
   header .btnServicesHeader .listServicesHeader .listPart{width:185px;}
   header .btnServicesHeader .fx-listServices a{font-size: 12px;}
   .header .btnServicesHeader .listServicesHeader .backService span{font-size: 15px;}
