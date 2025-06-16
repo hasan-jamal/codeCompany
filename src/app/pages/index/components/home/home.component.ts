@@ -17,7 +17,8 @@ import { PeopleSayingComponent } from '../../../../shared/people-saying/people-s
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css',
                     '../../../../../assets/css/sections/sectionSix.css',
-                  '../../../../../assets/css/style.css'
+                  '../../../../../assets/css/style.css',
+                   '../../../../../assets/css/general.css'
   ],  
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
  encapsulation: ViewEncapsulation.None,

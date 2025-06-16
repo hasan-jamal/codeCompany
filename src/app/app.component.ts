@@ -23,16 +23,19 @@ export class AppComponent implements OnInit  {
     if (isPlatformBrowser(this.platformId)) {
       const AOS = (await import('aos')).default;
       AOS.init();
-      const appRoot = document.querySelector('app-root') as HTMLElement;
-      appRoot.style.opacity = '1';
-    setTimeout(() => {
-      const appRoot = document.querySelector('app-root') as HTMLElement;
-      const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
-      appRoot.style.opacity = '1';
-      splashScreen.style.opacity = '0';
-      splashScreen.style.display = 'none';
-      console.log(appRoot.style.visibility)
-    }, 5000);
+      setTimeout(() => {
+        const appRoot = document.querySelector('app-root') as HTMLElement;
+        const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
+      
+        // إخفاء شاشة البداية
+        splashScreen.style.opacity = '0';
+        splashScreen.style.display = 'none';
+      
+        // إظهار التطبيق
+        appRoot.style.opacity = '1';
+      
+        console.log('App Root is now visible:', appRoot.style.visibility);
+      }, 5000);
   }
 
   this.titleService.setTitle(this.pageTitle);
