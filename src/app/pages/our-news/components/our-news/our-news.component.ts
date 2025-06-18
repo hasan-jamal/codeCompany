@@ -113,4 +113,10 @@ export class OurNewsComponent {
   nextSlideStory(){
     this.sliderStories.slickNext()
   }
+  scrollToSection() {
+    const element = document.getElementById('targetSection');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

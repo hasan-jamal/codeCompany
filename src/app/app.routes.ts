@@ -1,7 +1,8 @@
-import { Routes ,CanActivate} from '@angular/router';
+import { Routes ,CanActivate, RouterModule, ExtraOptions} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { authGuard } from './auth.guard';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
       {
@@ -59,3 +60,13 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/notFound/not-found.module').then(m => m.NotFoundModule)
     }
 ];
+const routerOptions: ExtraOptions = {
+    scrollPositionRestoration: 'top',
+    anchorScrolling: 'enabled'
+  };
+  
+  @NgModule({
+    imports: [RouterModule.forRoot(routes, routerOptions)],
+    exports: [RouterModule]
+  })
+  export class AppRoutingModule {}

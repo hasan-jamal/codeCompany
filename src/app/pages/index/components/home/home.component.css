@@ -22,9 +22,9 @@
     width: 80%;
 }
 .sectionOne .part1-sectionOne .texts-side{
-    padding: 51px 12px;
+    padding:40px 48px;
     background: #EEF3F7;
-    width: 33%;
+    width: 35%;
     border-radius: 0px 20px 0 0 ;
     position: relative;
 }
@@ -34,8 +34,8 @@
     width: 48px;
     height: 48px;
     background: transparent;
-    top: -46px;
-    right: 5.1rem;
+    top: -43px;
+    right: 6.29rem;
     transform: rotate(90deg);
     border-radius: 0 0 30px 0;
     z-index: 1;
@@ -64,12 +64,20 @@
     border-radius: 20px;
     object-fit: cover;
 }
-.sectionOne .texts-side .fxHead-texts{gap: 8px;margin-bottom: 16px;}
+.sectionOne .texts-side .fxHead-texts{
+    gap: 8px;
+    margin-bottom: 16px;
+
+    justify-content: space-between;
+}
 .sectionOne .texts-side .fxHead-texts span{
     font-size: 20px;
+    width: auto;
+    display: block;
+    white-space: pre;
 }
 .sectionOne .texts-side .fxHead-texts .border{
-    width: 57%;
+    width: -webkit-fill-available;
     height: 2px;
     background-color: #2B2D43;
 }
@@ -158,6 +166,7 @@
     .sectionOne .part1-sectionOne .button-side button { width: 280px;height: 64px;}
     .sectionOne .part1-sectionOne .texts-side::after{right: 4.5rem;}
     .sectionOne h1{font-size: 52px;}
+    .sectionOne .part1-sectionOne .texts-side::after {right: 5.6rem;top: -46px;}
 }
 @media (max-width:1228.8px) {
     .sectionOne .fx-sectionOne{font-size: 50px;}
@@ -165,6 +174,7 @@
     .sectionOne .part1-sectionOne .texts-side::after{right: 3.7rem;top: -44px;}
     .sectionOne .fx-sectionOne{margin-top: 6rem;}
     .sectionOne h1{font-size: 48px;}
+    .sectionOne .part1-sectionOne .texts-side::after {right: 4.8rem;top: -46px;}
 }
 @media (max-width:1024px) {
     .sectionOne h1{font-size: 40px;}
@@ -175,7 +185,7 @@
     .sectionOne .part1-sectionOne .button-side button { width: 220px;height: 45px;font-size: 14px;}
     .sectionOne .fxLast-texts{margin-top: 8px;}
     .sectionOne .part1-sectionOne .button-side{padding-top: 20px;padding-left: 20px;}
-    .sectionOne .part1-sectionOne .texts-side::after {right: 4.9rem;top: -43px;}
+    .sectionOne .part1-sectionOne .texts-side::after {right: 5rem;top: -46px;}
     .sectionOne{margin-top: 56px;}
 }
 @media (max-width:877.71px) {
@@ -215,7 +225,7 @@
 @media (max-width:512px) {}
 /* Section Two */
 .sectionTwo{margin: 120px 0;}
-.sectionTwo .fx-sectionTwo{gap: 83px;}
+.sectionTwo .fx-sectionTwo{gap: 83px;align-items: end;}
 .sectionTwo .fx-sectionTwo .part1-sectionTwo{width: 34%;}
 .sectionTwo .fx-sectionTwo h4{margin-bottom: 24px;}
 .sectionTwo .fx-sectionTwo p{

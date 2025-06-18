@@ -5,7 +5,9 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-our-clients',
-  imports: [PeopleSayingComponent,CommonModule],
+  imports: [
+    // PeopleSayingComponent,
+    CommonModule],
   templateUrl: './our-clients.component.html',
   styleUrls: ['./our-clients.component.css',
                   '../../../../assets/css/general.css',

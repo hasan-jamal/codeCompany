@@ -34,8 +34,8 @@
   padding: 0;
   box-sizing: border-box;
   outline: none !important;
-  -webkit-tap-highlight-color: transparent; /* لإزالة التحديد الأزرق في الموبايل */
-  -webkit-focus-ring-color: transparent;    /* لإزالة تأثير الحلقات الزرقاء في كروم */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;  
 }
 :focus,
 :active {

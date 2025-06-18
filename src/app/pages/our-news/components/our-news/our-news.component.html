@@ -3,13 +3,13 @@
         <div class="blogPageS1-back">
             <div class="boxEmpty"></div>
             <h1 class="colorWhite font-bold subtitle64px text-center">Explore the <span
-                    class="color-linearGradient">Thinking</span>
-                help you to Find
-                <br>
-                Behind the<span class="color-linearGradient">Transformation</span>
+                    class="color-linearGradient">Thinking</span> <br>
+                Behind the <span class="color-linearGradient">Transformation</span>
             </h1>
-            <div class="boxButton"><button class="btn-hover bgNone"><img src="assets/images/btnLinear-45deg.svg"
-                        alt=""></button>
+            <div class="boxButton">
+                <button type="button" class="btn-hover bgNone" (click)="scrollToSection()">
+                    <img src="assets/images/btnLinear-45deg.svg" alt="">
+                </button>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
         </div>
     </div>
 </section> -->
-<section class="blogPageS4">
+<section class="blogPageS4" id="targetSection">
     <div class="blogPageS4-container">
         <div class="blogPageS4-titles  ">
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">Explore <span

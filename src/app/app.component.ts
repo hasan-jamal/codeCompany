@@ -1,11 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {RouterOutlet } from '@angular/router';
+import {RouterOutlet,Router, NavigationEnd } from '@angular/router';
 import { NavbarDesComponent } from "./shared/navbar-des/navbar-des.component";
 import { NavbarMbComponent } from "./shared/navbar-mb/navbar-mb.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { Meta, Title } from '@angular/platform-browser';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+import { filter } from 'rxjs/operators';
 
 
 @Component({
@@ -18,7 +19,16 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 export class AppComponent implements OnInit  {
   public pageTitle = 'Code Information';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object,private titleService: Title,private meta: Meta) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,private titleService: Title,private meta: Meta,private router: Router) {
+    if (isPlatformBrowser(this.platformId)) {
+    this.router.events
+    .pipe(filter(event => event instanceof NavigationEnd))
+    .subscribe(() => {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    });
+  }
+  }
+
   async ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
       const AOS = (await import('aos')).default;
@@ -26,14 +36,9 @@ export class AppComponent implements OnInit  {
       setTimeout(() => {
         const appRoot = document.querySelector('app-root') as HTMLElement;
         const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
-      
-        // إخفاء شاشة البداية
-        splashScreen.style.opacity = '0';
+        splashScreen.style.opacity = '0'; 
         splashScreen.style.display = 'none';
-      
-        // إظهار التطبيق
         appRoot.style.opacity = '1';
-      
         console.log('App Root is now visible:', appRoot.style.visibility);
       }, 5000);
   }
@@ -46,5 +51,4 @@ export class AppComponent implements OnInit  {
     this.meta.updateTag({ property: 'og:url', content: 'https://code.sa/new/' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
 }
-
 }

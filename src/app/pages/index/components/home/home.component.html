@@ -1,7 +1,8 @@
 <section class="sectionOne">
     <div class="sectionOne-container px-120">
-        <h1 class="font-bold text-center">AI & Digital <span class="color-linearGradient">Transformation </span>Built
-            for Saudi Arabia</h1>
+        <h1 class="font-bold text-center">
+            <span [innerHTML]="typedText"></span>
+        </h1>
         <!-- <p class=" font-medium p-head text-center">Inspire your
             vision</p> -->
         <div class="d-flex fx-sectionOne">
@@ -9,12 +10,13 @@
                 <img src="assets/images/img-sectionOne.png" alt="img section One" class="img-sectionOne">
                 <div class="texts-side">
                     <div class="d-flex fxHead-texts align-items-center">
-                        <span class="font-bold colorThree">Our story</span>
+                        <span class="font-bold colorThree">AI With Purpose</span>
                         <div class="border"></div>
                     </div>
-                    <p class="style-font subtitle20px colorBlack">We live in a world where competition in the business
-                        world is constantly rising & the need to be the best is greater
-                        than ever before.</p>
+                    <p class="style-font subtitle20px colorBlack text-justify">CODE designs intelligent platforms that
+                        solve real
+                        problems, serve national priorities, and deliver performance that
+                        lasts.</p>
                     <!-- <div class="d-flex fxLast-texts">
                         <img src="assets/images/arrow-linear.svg" alt="arrow linear"
                             class="arrow-linear">
@@ -86,10 +88,15 @@
 <section class="sectionThree">
     <div class="sectionThree-container px-120">
         <div class="d-flex flex-column gap24 sectionThree-titles">
-            <span class="font-medium text-center subtitle24px color-linearGradient">What we do?</span>
-            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Bring your imagination to life with AI
-                power</h1>
-            <p class="mb-0 text-center subtitle24px style-font">We love helping you bring ideas to life.</p>
+            <span class="font-medium text-center subtitle24px color-linearGradient">Our Flagship Services</span>
+            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Real-Time AI for <span
+                    class="color-linearGradient">Smarter, Safer,</span> <br> and <span
+                    class="color-linearGradient">Scalable Infrastructure</span></h1>
+            <p class=" text-center subtitle20px style-font">Our flagship services give you <b> live operational
+                    visibility,
+                    intelligent automation, and faster decision-making. </b></p>
+            <p class="mb-0 text-center subtitle20px style-font">Designed for mission-critical environments, they help
+                you run smarter, respond faster, and scale with confidence.</p>
         </div>
         <div class="d-flex fx-sectionThree">
             <div *ngFor="let box of boxes; let i = index" class="d-flex sectionThree-box"
@@ -104,7 +111,7 @@
                     <p class="style-font subtitle24px">{{box.content}}</p>
                     <button routerLink="" routerLinkActive="" type="button"
                         class="font-medium d-flex align-items-center justify-content-center">
-                        Search
+                        Learn More
                     </button>
                 </div>
             </div>
@@ -116,11 +123,11 @@
         <div class="divTitles">
             <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">Our Trend solution
                 with AI Power</span>
-            <h1 class="text-center font-bold subtitle48px h1-head"><span class="color-linearGradient">AI Digital twin
-                </span>
-                In video</h1>
-            <p class="mb-0 text-center subtitle24px style-font">Design the digital twin architecture tailored to the
-                specific needs of the buildings.</p>
+            <h1 class="text-center font-bold subtitle48px h1-head">How Our <span class="color-linearGradient">AI Digital
+                    Twin</span> Brings <span class="color-linearGradient">Environment to Life</span></h1>
+            <p class="mb-0 text-center subtitle20px style-font">Discover how CODE’s AI Digital Twin delivers real-time
+                visibility, predictive analytics, and intelligent automation —
+                turning complex operations into smart, responsive systems.</p>
         </div>
         <div class="divVideo px-120">
             <img src="assets/images/AL-POWER.svg" alt="AL POWER Word" class="AL-POWER">
@@ -174,7 +181,7 @@
 
     </div>
 </section>
-<app-people-saying></app-people-saying>
+<!-- <app-people-saying></app-people-saying> -->
 <section class="sectionFour">
     <div class="sectionFour-container px-120">
         <div class="d-flex fx-sectionFour">

@@ -5,6 +5,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 // import type Player from 'video.js/dist/types/player';
 import 'video.js/dist/video-js.css';
 import { PeopleSayingComponent } from '../../../../shared/people-saying/people-saying.component';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ import { PeopleSayingComponent } from '../../../../shared/people-saying/people-s
   imports: [
     CommonModule, 
     SlickCarouselModule,
-    PeopleSayingComponent
+    // PeopleSayingComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css',
@@ -35,7 +36,13 @@ import { PeopleSayingComponent } from '../../../../shared/people-saying/people-s
   ],
 })
 export class HomeComponent  implements OnInit ,AfterViewInit{
-constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platformId: Object) {}
+constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platformId: Object,private router: Router) {
+  this.router.events.subscribe(event => {
+    if (event instanceof NavigationEnd && event.urlAfterRedirects === '/home') {
+      this.resetTyping();
+    }
+  });
+}
   @ViewChild('slickModalBlogs', { static: false }) slickModalBlogs!: SlickCarouselComponent;
   @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
 
@@ -45,7 +52,9 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
   @ViewChild('slideActive', { static: true }) slideActive!: ElementRef;
   @ViewChild('imgActive', { static: false }) imgActive!: ElementRef;
 
-
+  fullText: string = `Driving <span class="color-linearGradient">AI-Powered Digital </span><span class="color-linearGradient"> Transformation</span> in Saudi Arabia`;
+  typedText: string = '';
+  currentIndex: number = 0;
   currentSlideIndex = 0;
   mainVideo: any;
   plyrList : any[]= [
@@ -92,7 +101,82 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
      this.mainVideo = this.plyrList[0];
      this.plyrList = this.plyrList.slice(1)
 
- 
+     setTimeout(() => {
+      this.startTyping();
+    }, 5000);
+  }
+  resetTyping() {
+    this.typedText = '';
+    this.currentIndex = 0;
+    this.startTyping();
+  }
+
+  startTyping() {
+    if (isPlatformBrowser(this.platformId)) {
+    const typingSpeed = 50;
+
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = this.fullText;
+    const nodes = Array.from(tempDiv.childNodes);
+
+    let output = '';
+
+    const typeNode = (node: ChildNode, done: () => void) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const text = node.textContent || '';
+        let charIndex = 0;
+
+        const typeChar = () => {
+          if (charIndex < text.length) {
+            output += text[charIndex];
+            this.typedText = output;
+            charIndex++;
+            setTimeout(typeChar, typingSpeed);
+          } else {
+            done();
+          }
+        };
+
+        typeChar();
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const element = node as HTMLElement;
+        const tag = element.tagName.toLowerCase();
+        const openTag = `<${tag}${this.getAttributesAsString(element)}>`;
+        const closeTag = `</${tag}>`;
+
+        const innerText = element.textContent || '';
+        let charIndex = 0;
+
+        const typeChar = () => {
+          if (charIndex < innerText.length) {
+            const partial = innerText.slice(0, charIndex + 1);
+            this.typedText = output + openTag + partial + closeTag;
+            charIndex++;
+            setTimeout(typeChar, typingSpeed);
+          } else {
+            output += openTag + innerText + closeTag;
+            done();
+          }
+        };
+
+        typeChar();
+      }
+    };
+
+    const typeAllNodes = (i: number) => {
+      if (i < nodes.length) {
+        typeNode(nodes[i], () => {
+          typeAllNodes(i + 1);
+        });
+      }
+    };
+
+    typeAllNodes(0);
+  }
+  }
+
+  getAttributesAsString(el: HTMLElement): string {
+    return Array.from(el.attributes).map(attr => ` ${attr.name}="${attr.value}"`).join('');
   }
   changeVideo(video: any) {
     const updatedList = this.plyrList.filter(v => v.src !== video.src);
@@ -122,20 +206,20 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
        showPart2: false, 
        isAnimating: false,
         isActive: false,
-        title:"AI Digital Twin",
-        subTitle:"Monitor your facility in real time",
-        content:"Build a smart digital replica of your site to monitor performance, predict issues, and optimize efficiency powered by seamless integration of BIM, GIS, and IoT for instant insights and smarter decisions." 
+        title:"AI Digital Twin Solution",
+        subTitle:"Turn Physical Spaces Into Live, Intelligent Systems",
+        content:"CODE’s AI Digital Twin creates a real-time, data-driven replica of your facility — giving you full operational visibility, predictive insight, and automated control across your environment." 
       },
     { id: 2, showPart2: false, isAnimating: false, isActive: false,
-      title:"AI Computer Vision",
-      subTitle:"Smarter eyes. Better security.",
-      content:"Transform regular surveillance cameras into intelligent systems that analyze behavior, detect risks, and trigger real-time alerts including facial recognition, crowd analytics, and perimeter monitoring." 
-     },
+      title: "AI Computer Vision",
+      subTitle: "Empowering Machines to Understand the Visual World",
+      content: "Our AI Computer Vision solution enables real-time image and video analysis, allowing systems to detect, classify, and interpret visual data with high precision. From automated inspections to smart surveillance, we help you unlock actionable insights from every frame."
+           },
     { id: 3, showPart2: false, isAnimating: false, isActive: false,
-      title:"AI Innovation Hub",
-      subTitle:"Intelligent spaces for innovation",
-      content:"Design immersive, AI-driven environments for training, planning, and showcasing ideas tailored to your needs and optimized for local deployment." 
-     },
+      title: "AI Innovation Hub",
+      subTitle: "Accelerate Breakthroughs with Centralized AI Intelligence",
+      content: "The AI Innovation Hub is your central platform for developing, testing, and deploying cutting-edge AI solutions. It unifies data, tools, and expertise to fast-track innovation — empowering your teams to turn ideas into real-world impact faster than ever."
+           },
   ];
 
   activateFirstBox(): void {
