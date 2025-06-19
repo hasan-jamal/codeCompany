@@ -46,10 +46,10 @@ export class AppComponent implements OnInit  {
 
   this.titleService.setTitle(this.pageTitle);
 
-    this.meta.updateTag({ property: 'og:title', content: 'Code Information' });
-    this.meta.updateTag({ property: 'og:description', content: 'AI & Digital Transformation Built for Saudi Arabia.' });
-    this.meta.updateTag({ property: 'og:image', content: 'assets/images/favicon.png' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://code.sa/new/' });
-    this.meta.updateTag({ property: 'og:type', content: 'website' });
+  this.meta.updateTag({ property: 'og:title', content: 'Code Information' });
+  this.meta.updateTag({ property: 'og:description', content: 'AI & Digital Transformation Built for Saudi Arabia.' });
+  this.meta.updateTag({ property: 'og:image', content: 'https://code.sa/assets/images/logoWhitebgBlack.png' });
+  this.meta.updateTag({ property: 'og:url', content: 'https://code.sa' });
+  this.meta.updateTag({ property: 'og:type', content: 'website' });
 }
 }

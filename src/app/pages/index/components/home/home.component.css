@@ -24,7 +24,7 @@
 .sectionOne .part1-sectionOne .texts-side{
     padding:40px 48px;
     background: #EEF3F7;
-    width: 35%;
+    width: 34%;
     border-radius: 0px 20px 0 0 ;
     position: relative;
 }
@@ -134,7 +134,7 @@
 @media (min-width:1706.67px) {
     .sectionOne .fx-sectionOne{margin-top: 180px;}
     .sectionOne .fxLast-texts{margin-top: 8px;}
-    .sectionOne .part1-sectionOne .texts-side{bottom: 0rem;padding: 2rem 24px;}
+    .sectionOne .part1-sectionOne .texts-side{bottom: 0rem;padding: 2rem 24px;width: 28%;}
     .sectionOne .texts-side .fxHead-texts span{font-size: 22px;}
     .sectionOne .part1-sectionOne .texts-side::after{right: 6.3rem;}
 }
