@@ -117,6 +117,7 @@ export class ModalJoinUsComponent implements OnInit, OnDestroy{
         text: 'Your application has been sent successfully.',
         icon: 'success'
       });
+      this.isOpen = false;
       form.resetForm();
       this.resumeFileName = '';
       this.resumeFile = undefined;

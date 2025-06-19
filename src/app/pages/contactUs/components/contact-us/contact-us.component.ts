@@ -83,6 +83,23 @@ export class ContactUsComponent {
         }
       );
   }
-  
+    onCancel(): void {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: 'Your data will be cleared.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, clear it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.formData = {
+            fullName: '',
+            email: '',
+            subject: '',
+            message: ''
+          };
+        }
+      });
+    }
   
 }

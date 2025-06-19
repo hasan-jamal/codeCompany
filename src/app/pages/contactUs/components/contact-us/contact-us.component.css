@@ -217,6 +217,7 @@ padding-top: 4rem;}
   .sectionMap iframe{
     width: 100%;
   }
+  .text-danger{font-size: 12px;}
   @media (max-width:614.4px) {
     .sectionMap{margin-bottom: 2rem;}
   }

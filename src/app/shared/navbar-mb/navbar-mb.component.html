@@ -23,13 +23,16 @@
                 <div class="border"></div>
                 <div class="btnServicesMb">
                     <button type="button" class="link d-flex align-items-center justify-content-between w-100"
-                        (click)="toggleAboutUsList()" routerLink="aboutUs" routerLinkActive="dropDownActive">
-                        <span class="font-medium linkStyle" (click)="closeSidenav()">About us</span>
+                        (click)="toggleAboutUsList()">
+                        <span class="font-medium linkStyle" (click)="closeSidenav()">About CODE</span>
                         <img src="assets/images/arrowDown.svg" alt="arrowDown icon" [class.rotated]="aboutUsListOpen" />
                     </button>
                     <div class="listServices" [class.active]="aboutUsListOpen">
                         <div class="listPart">
                             <div class="d-flex flex-column fx-listServices gap20">
+                                <a routerLink="aboutUs" routerLinkActive="active" class="font-medium"
+                                    (click)="closeSidenav()">Our
+                                    clients</a>
                                 <a routerLink="/aboutUs/ourClients" routerLinkActive="active" class="font-medium"
                                     (click)="closeSidenav()">Our clients</a>
                                 <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium"
