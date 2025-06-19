@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-servcies',
@@ -10,5 +11,5 @@ import { Component } from '@angular/core';
                   '../../../../../assets/css/sections/ourServiceFlow.css']
 })
 export class ServciesComponent {
-
+  constructor(public router:Router){}
 }

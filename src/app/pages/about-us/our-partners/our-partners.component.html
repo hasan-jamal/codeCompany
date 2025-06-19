@@ -1,4 +1,21 @@
-<section class="ourDatacenterPartnersS1">
+<section class="partnerOne">
+    <div class="partnerOne-container px-120">
+        <div class="partnerOne-content">
+            <h1 class="font-bold colorWhite text-center subtitle48px" data-aos="fade-down">Built on <span
+                    class="color-linearGradient">Collaboration.</span><br>
+                Backed by <span class="color-linearGradient">Innovation.</span>
+            </h1>
+            <p class="mb-0 style-font colorWhite subtitle20px text-center">
+                At CODE, partnership means alignment — with your mission, your environment, and your goals.
+                <br><br>
+                We work with visionary leaders to design AI-driven solutions that solve strategic challenges, enhance
+                performance, and
+                deliver long-term national value.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- <section class="ourDatacenterPartnersS1">
     <div class="ourDatacenterPartnersS1-container px-120">
         <div class="d-flex fx-ourDatacenterPartnersS1">
             <div class="d-flex box" *ngFor="let box of boxes; let i = index" [ngClass]="{'active': activeIndex === i}"
@@ -14,17 +31,40 @@
         </div>
 
     </div>
-</section>
+</section> -->
 <section class="mapSection">
     <div class="mapSection-container">
         <div class="d-flex flex-column divTitles">
-            <span class="font-medium text-center subtitle24px color-linearGradient">Success Partners</span>
-            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Explore our<span
-                    class="color-linearGradient">data center partners </span></h1>
-            <p class="mb-0 text-center subtitle20px style-font">You can see how we leading organizations to solve
-                complex IT challenges & enhance their systems.</p>
+            <span class="font-medium text-center subtitle24px color-linearGradient">Our Partner Network Spans the
+                World</span>
+            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Global <span
+                    class="color-linearGradient">Global</span> Partnerships. <span
+                    class="color-linearGradient">Local</span> Impact.
+            </h1>
+            <p class="mb-0 text-center subtitle20px style-font">We collaborate with leading software and technology
+                providers to deliver integrated solutions built for <b> performance,
+                    scale </b>, and <b>security</b>. Every partnership strengthens our ability to meet complex <b>local
+                    challenges </b> with <b>
+                    globally proven</b>
+                innovation — tailored to your environment.</p>
         </div>
         <div id="mapInLocation"></div>
+    </div>
+</section>
+<section class="sectionFive">
+    <div class="sectionFive-container px-120">
+        <ngx-slick-carousel class="sliderLogos sliderLogos1 m-sliderLogos" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let logo of logos" class="slide">
+                <img [src]="logo" alt="logo" />
+            </div>
+        </ngx-slick-carousel>
+
+        <ngx-slick-carousel class="sliderLogos sliderLogos2" [config]="slideConfiglogos2">
+            <div ngxSlickItem *ngFor="let logo of logos2" class="slide">
+                <img [src]="logo" alt="logo" />
+            </div>
+        </ngx-slick-carousel>
+
     </div>
 </section>
 <!-- <section class="ourDatacenterPartnersS2">
@@ -104,17 +144,20 @@
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <span class="subtitle24px d-block color-linearGradient font-medium mb24">Be always in touch</span>
-                <h1 class=" subtitle48px font-bold mb-0" data-aos="fade-down">Let's <span
-                        class="color-linearGradient">Empower</span> your <br>brand & business</h1>
+                <span class="subtitle24px d-block color-linearGradient font-medium mb24">Your Next Move Starts
+                    Here</span>
+                <h1 class=" subtitle48px font-bold mb-0" data-aos="fade-down">Backed by the Best. <br>
+                    <span class="color-linearGradient">Built for You.</span>
+                </h1>
             </div>
             <div class="contactSection-buttons d-flex">
-                <button class="btn-linearGradient" type="button" onclick="window.location.href=''">
-                    <span class="font-semiBold colorWhite subtitle20px">Contact us</span>
+                <button class="btn-linearGradient" type="button" (click)="router.navigate(['contactUs'])">
+                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle22px">Let's talk about your needs for business IT services</p>
+        <p class="mb-0 colorTwo style-font subtitle22px">We integrate world-class platforms into solutions tailored to
+            your needs.</p>
     </div>
 </section>

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
@@ -15,24 +16,18 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 })
 export class AboutUsComponent {
   @ViewChild('slickModallogos',{ static:false}) slickModallogos!:SlickCarouselComponent;
+  constructor(public router:Router){}
   isHovered = false;
   // Second slider logos
  logos = [
-  "assets/images/Partners logos/Austria.png",
-  "assets/images/Partners logos/Germany (2).png",
-  "assets/images/Partners logos/Germany.png",
-  "assets/images/Partners logos/India (2).png",
-  "assets/images/Partners logos/India (3).png",
-  "assets/images/Partners logos/India (4).png",
-  "assets/images/Partners logos/India (5).png",
-  "assets/images/Partners logos/India.jpeg",
-  "assets/images/Partners logos/India.png",
-  "assets/images/Partners logos/Switzerland (2).png",
-  "assets/images/Partners logos/Switzerland.png",
-  "assets/images/Partners logos/Turkey.png",
-  "assets/images/Partners logos/United Arab Emirates (UAE).png",
-  "assets/images/Partners logos/United Arab Emirates..png",
-  "assets/images/Partners logos/United Kingdom..png"
+  "assets/images/aboutUsLogos/imgLogo1.png",
+  "assets/images/aboutUsLogos/imgLogo2.png",
+  "assets/images/aboutUsLogos/imgLogo3.png",
+  "assets/images/aboutUsLogos/imgLogo4.png",
+  "assets/images/aboutUsLogos/imgLogo5.png",
+  "assets/images/aboutUsLogos/imgLogo6.png",
+  "assets/images/aboutUsLogos/imgLogo7.png",
+  "assets/images/aboutUsLogos/imgLogo8.png",
 ];
 
   slideConfig = {

@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
-declare const anychart: any;
-
+import { AboutUsComponent } from "../components/about-us/about-us.component";
+declare var anychart: any;
+import { Router } from '@angular/router';
+import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-our-partners',
-  imports: [CommonModule],
+  imports: [CommonModule,    SlickCarouselModule,],
   templateUrl: './our-partners.component.html',
   styleUrls:['./our-partners.component.css',
                   '../../../../assets/css/general.css',
@@ -15,7 +17,7 @@ declare const anychart: any;
 })
 export class OurPartnersComponent implements AfterViewInit{
   activeIndex: number = 0;
-
+  constructor(public router:Router){}
   boxes = [
     {
       title: 'Datacenter Partners',
@@ -93,5 +95,75 @@ export class OurPartnersComponent implements AfterViewInit{
     map.draw();
   });
 }
+  // First slider logos
+  logos = [
+    "assets/images/aboutUsLogos/imgLogo1.png",
+    "assets/images/aboutUsLogos/imgLogo2.png",
+    "assets/images/aboutUsLogos/imgLogo3.png",
+    "assets/images/aboutUsLogos/imgLogo4.png",
+    "assets/images/aboutUsLogos/imgLogo5.png",
+    "assets/images/aboutUsLogos/imgLogo6.png",
+    "assets/images/aboutUsLogos/imgLogo7.png",
+    "assets/images/aboutUsLogos/imgLogo8.png",
+  ];
+  slideConfig = {
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 800,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    rtl: false, // This makes it move from left to right
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2.6
+        }
+      }
+    ]
+  };
+
+  // Second slider logos
+  logos2 = [
+    "assets/images/aboutUsLogos/imgLogo8.png",
+    "assets/images/aboutUsLogos/imgLogo7.png",
+    "assets/images/aboutUsLogos/imgLogo6.png",
+    "assets/images/aboutUsLogos/imgLogo5.png",
+    "assets/images/aboutUsLogos/imgLogo4.png",
+    "assets/images/aboutUsLogos/imgLogo3.png",
+    "assets/images/aboutUsLogos/imgLogo2.png",
+    "assets/images/aboutUsLogos/imgLogo1.png",
+  ];
+  slideConfiglogos2 = {
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2.5
+        }
+      }
+    ]
+  };
 
 }

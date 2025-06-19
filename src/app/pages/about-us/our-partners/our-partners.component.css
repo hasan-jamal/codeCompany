@@ -15,18 +15,6 @@
     border-radius: 20px;
     background-repeat: no-repeat;
 }
-.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack1{
-    
-} 
-.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack2{
-    
-} 
-.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack3{
-    
-} 
-.ourDatacenterPartnersS1 .fx-ourDatacenterPartnersS1 .boxBack4{
-    
-} 
 .scale-animation {
   transform: scale(1.05);
   background-color: #f0f0f0; /* Change the background color as desired */
@@ -224,7 +212,7 @@
      margin: auto;
      height: 700px;
   }
-  .mapSection .divTitles p{width: 60%;margin: auto;}
+  .mapSection .divTitles p{width: 100%;margin: auto;}
 
   /* Just for copy */
   @media (min-width:1706.67px) {
@@ -256,3 +244,121 @@
   @media (max-width:614.4px) {
     .mapSection .divTitles p{width: 100%;}
   }
+
+.partnerOne{margin: 60px 0;}
+.partnerOne .partnerOne-content{
+    background-image: url("/assets/images/imageAI-2.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 525px;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.partnerOne .partnerOne-content::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-radius: 20px;
+}
+.partnerOne .partnerOne-content h1{
+    position: relative;
+    z-index: 3;
+}
+.partnerOne .partnerOne-content p{
+  margin: auto;
+  margin-top: 1rem;
+  width: 80%;
+
+}
+.partnerOne .partnerOne-content h2{
+    background: linear-gradient(270deg, #FDE0CE 0%, #FAA26B 33.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    padding-right: 73px;
+}
+.partnerOne .partnerOne-content .fx-buttons{gap: 38px;align-items: end;}
+@media (min-width:1706.67px) {
+    .partnerOne .partnerOne-content{height: 600px;}
+}
+@media (min-width:1920px) {
+    .partnerOne .partnerOne-content{height: 650px;}
+}
+@media (min-width:2048px) { 
+    .partnerOne .partnerOne-content{height: 740px;}
+}
+@media (min-width:2304px) {}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+    .partnerOne .partnerOne-content{height: 460px;}
+     .partnerOne .partnerOne-content h2{font-size: 35px;}
+}
+@media (max-width:1024px) {
+    .partnerOne .partnerOne-content{height: 400px;}
+    .partnerOne{margin-top: 40px;}
+}
+@media (max-width:877.71px) {
+    .partnerOne .partnerOne-content{height: 350px;}
+    .partnerOne{margin-top: 30px;}
+}
+@media (max-width:768px) {
+    .partnerOne .fx-partnerOne{flex-wrap: wrap;}
+    .partnerOne .partnerOne-content h1 br{display: none;}
+}
+@media (max-width:614.4px) {
+  .partnerOne .partnerOne-content p{width: 100%;margin-top: 12px;}
+}
+@media (max-width:512px) {}
+
+/* Section Five Style  */
+.sectionFive{margin-top: 128px;margin-bottom: 10rem;}
+.sectionFive h1{margin-bottom: 74px;}
+.sectionFive .m-sliderLogos{margin-bottom: 24px;}
+.sectionFive .slide{
+ padding: 0 8px;
+  height: 176px;
+}
+.sectionFive .slide img{
+    width: 100%;
+   height: 100%;
+    padding:24px;
+    border-radius: 20px;
+    border: 2px solid #D9D9D9;
+    background: #FFF;
+    object-fit: contain;
+}
+@media (min-width:1706.67px) {}
+@media (min-width:1920px) {}
+@media (min-width:2048px) { }
+@media (min-width:2304px) {}
+@media (max-width:1396.36px) {}
+@media (max-width:1228.8px) {
+    .sectionFive h1{margin-bottom: 60px;}
+}
+@media (max-width:1024px) {
+     .sectionFive h1{margin-bottom: 40px;}
+    .sectionFive .slide{padding: 0 4px;height: 150px;}
+    .sectionFive .slide img{padding:10px 32px;}
+}
+@media (max-width:877.71px) {
+    .sectionFive h1{margin-bottom: 40px;}
+}
+@media (max-width:768px) {}
+@media (max-width:614.4px) {
+    .sectionFive{margin: 90px 0;}
+    .sectionFive h1{margin-bottom: 32px;}
+    .sectionFive .slide{padding: 0 4px;height: 110px;}
+    .sectionFive .slide img{padding:10px 16px;}
+    .sectionFive .m-sliderLogos{margin-bottom: 16px;}
+}
+@media (max-width:512px) {}

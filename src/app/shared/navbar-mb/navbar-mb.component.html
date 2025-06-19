@@ -31,7 +31,7 @@
                         <div class="listPart">
                             <div class="d-flex flex-column fx-listServices gap20">
                                 <a routerLink="aboutUs" routerLinkActive="active" class="font-medium"
-                                    (click)="closeSidenav()">About CODE</a>
+                                    (click)="closeSidenav()" [routerLinkActiveOptions]="{ exact: true }">About CODE</a>
                                 <a routerLink="/aboutUs/ourClients" routerLinkActive="active" class="font-medium"
                                     (click)="closeSidenav()">Our clients</a>
                                 <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium"

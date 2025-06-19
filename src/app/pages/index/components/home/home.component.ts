@@ -109,9 +109,9 @@ constructor(
       isFirstLoad = false;
       setTimeout(() => {
         this.startTyping();
-      }, 4000); // تأخير أول مرة فقط
+      }, 4000); 
     } else {
-      this.startTyping(); // لا تأخير في التنقل بين الصفحات
+      this.startTyping();
     }
   }
   resetTyping() {
@@ -198,7 +198,7 @@ constructor(
     setTimeout(() => {
       if (this.videoPlayer) {
         this.videoPlayer.nativeElement.load();
-        this.videoPlayer.nativeElement.play().catch(() => {}); // optional: handle autoplay error
+        this.videoPlayer.nativeElement.play().catch(() => {}); 
       } 
     });
   }
@@ -215,18 +215,13 @@ constructor(
        isAnimating: false,
         isActive: false,
         title:"AI Digital Twin Solution",
-        subTitle:"Turn Physical Spaces Into Live, Intelligent Systems",
-        content:"CODE’s AI Digital Twin creates a real-time, data-driven replica of your facility — giving you full operational visibility, predictive insight, and automated control across your environment." 
+        subTitle:"See Your Building in Real Time. Predict What’s Next.",
+        content:"CODE’s AI Digital Twin creates a live, data-driven model of your facility — helping you monitor performance, prevent downtime, and plan smarter. It's the future of infrastructure, made visible." 
       },
     { id: 2, showPart2: false, isAnimating: false, isActive: false,
-      title: "AI Computer Vision",
-      subTitle: "Empowering Machines to Understand the Visual World",
-      content: "Our AI Computer Vision solution enables real-time image and video analysis, allowing systems to detect, classify, and interpret visual data with high precision. From automated inspections to smart surveillance, we help you unlock actionable insights from every frame."
-           },
-    { id: 3, showPart2: false, isAnimating: false, isActive: false,
-      title: "AI Innovation Hub",
-      subTitle: "Accelerate Breakthroughs with Centralized AI Intelligence",
-      content: "The AI Innovation Hub is your central platform for developing, testing, and deploying cutting-edge AI solutions. It unifies data, tools, and expertise to fast-track innovation — empowering your teams to turn ideas into real-world impact faster than ever."
+      title: "AI Computer Vision Solution",
+      subTitle: "Smarter Surveillance. Instant Insight.",
+      content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior, and alerts your team in real time — so nothing critical slips through the cracks.."
            },
   ];
 
@@ -319,14 +314,22 @@ constructor(
 
   // First slider logos
   logos = [
-    'assets/images/pageOneLogos/imgLogo1.svg',
-    'assets/images/pageOneLogos/imgLogo2.png',
-    'assets/images/pageOneLogos/imgLogo3.png',
-    'assets/images/pageOneLogos/imgLogo4.png',
-    'assets/images/pageOneLogos/imgLogo5.png',
-    'assets/images/pageOneLogos/imgLogo6.svg',
-    'assets/images/pageOneLogos/imgLogo7.png',
-    'assets/images/pageOneLogos/imgLogo8.png',
+    // 'assets/images/pageOneLogos/imgLogo1.svg',
+    // 'assets/images/pageOneLogos/imgLogo2.png',
+    // 'assets/images/pageOneLogos/imgLogo3.png',
+    // 'assets/images/pageOneLogos/imgLogo4.png',
+    // 'assets/images/pageOneLogos/imgLogo5.png',
+    // 'assets/images/pageOneLogos/imgLogo6.svg',
+    // 'assets/images/pageOneLogos/imgLogo7.png',
+    // 'assets/images/pageOneLogos/imgLogo8.png',
+    "assets/images/aboutUsLogos/imgLogo1.png",
+    "assets/images/aboutUsLogos/imgLogo2.png",
+    "assets/images/aboutUsLogos/imgLogo3.png",
+    "assets/images/aboutUsLogos/imgLogo4.png",
+    "assets/images/aboutUsLogos/imgLogo5.png",
+    "assets/images/aboutUsLogos/imgLogo6.png",
+    "assets/images/aboutUsLogos/imgLogo7.png",
+    "assets/images/aboutUsLogos/imgLogo8.png",
   ];
   slideConfig = {
     slidesToShow: 7.2,
@@ -355,14 +358,22 @@ constructor(
 
   // Second slider logos
   logos2 = [
-    'assets/images/pageOneLogos/imgLogo9.png',
-    'assets/images/pageOneLogos/imgLogo10.png',
-    'assets/images/pageOneLogos/imgLogo11.png',
-    'assets/images/pageOneLogos/imgLogo12.png',
-    'assets/images/pageOneLogos/imgLogo13.png',
-    'assets/images/pageOneLogos/imgLogo14.png',
-    'assets/images/pageOneLogos/imgLogo4.png',
-    'assets/images/pageOneLogos/imgLogo8.png',
+    // 'assets/images/pageOneLogos/imgLogo9.png',
+    // 'assets/images/pageOneLogos/imgLogo10.png',
+    // 'assets/images/pageOneLogos/imgLogo11.png',
+    // 'assets/images/pageOneLogos/imgLogo12.png',
+    // 'assets/images/pageOneLogos/imgLogo13.png',
+    // 'assets/images/pageOneLogos/imgLogo14.png',
+    // 'assets/images/pageOneLogos/imgLogo4.png',
+    // 'assets/images/pageOneLogos/imgLogo8.png',
+    "assets/images/aboutUsLogos/imgLogo8.png",
+    "assets/images/aboutUsLogos/imgLogo7.png",
+    "assets/images/aboutUsLogos/imgLogo6.png",
+    "assets/images/aboutUsLogos/imgLogo5.png",
+    "assets/images/aboutUsLogos/imgLogo4.png",
+    "assets/images/aboutUsLogos/imgLogo3.png",
+    "assets/images/aboutUsLogos/imgLogo2.png",
+    "assets/images/aboutUsLogos/imgLogo1.png",
   ];
   slideConfiglogos2 = {
     slidesToShow: 7.2,
