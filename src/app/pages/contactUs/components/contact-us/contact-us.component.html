@@ -138,18 +138,25 @@
 
                         <div class="form-group">
                             <textarea name="message" [(ngModel)]="formData.message" #message="ngModel"
-                                class="style-font subtitle16px" placeholder="Briefly describe your goal,  project, or question — and we’ll  get back to you with a focused 
-                                response." required></textarea>
+                                class="style-font subtitle16px"
+                                placeholder="Briefly describe your goal, project, or question — and we’ll  get back to you with a focused response."
+                                required></textarea>
                             <div *ngIf="message.invalid && message.touched" class="text-danger font-medium">
                                 Message is required
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" [disabled]="loading || contactForm.invalid"
-                                class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
-                                {{ loading ? 'Sending...' : 'Send Now' }}
-                            </button>
+                            <div class="d-flex fxButtonsForm">
+                                <button type="submit" [disabled]="loading || contactForm.invalid"
+                                    class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
+                                    {{ loading ? 'Sending...' : 'Send Now' }}
+                                </button>
+                                <button type="submit" [disabled]="loading || contactForm.invalid"
+                                    class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
+                                    {{ loading ? 'Sending...' : 'Send Now' }}
+                                </button>
+                            </div>
                         </div>
                     </form>
 

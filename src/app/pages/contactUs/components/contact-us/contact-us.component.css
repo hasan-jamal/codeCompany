@@ -173,6 +173,12 @@ padding-top: 4rem;}
     align-items: center;
     border-radius: 5px;
 }
+.fxButtonsForm{
+  justify-content: space-between;
+}
+.fxButtonsForm button{
+  width: 33.3%;
+}
   @media (min-width:1706.67px) {
     .contactUsS3 .boxContact .fx-boxContact .boxContact-form form input,
     .contactUsS3 .boxContact .fx-boxContact .boxContact-form form button{height: 60px;}
