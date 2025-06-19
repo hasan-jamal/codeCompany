@@ -6,6 +6,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import 'video.js/dist/video-js.css';
 import { PeopleSayingComponent } from '../../../../shared/people-saying/people-saying.component';
 import { Router, NavigationEnd } from '@angular/router';
+let isFirstLoad = true;
 
 @Component({
   selector: 'app-home',
@@ -36,7 +37,10 @@ import { Router, NavigationEnd } from '@angular/router';
   ],
 })
 export class HomeComponent  implements OnInit ,AfterViewInit{
-constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platformId: Object,private router: Router) {
+constructor(
+  private elementRef: ElementRef,
+  @Inject(PLATFORM_ID) private platformId: Object,
+  public router: Router) {
   this.router.events.subscribe(event => {
     if (event instanceof NavigationEnd && event.urlAfterRedirects === '/home') {
       this.resetTyping();
@@ -61,39 +65,39 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
     {
         src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4',
         type: 'video/mp4',
-      title: 'AI vs Human: The Results Will Shock You!',
-      subTitle: 'Lorem ipsum dolor sit amet...',
+      title: 'AI Digital Twin: Live Insight. Smarter Control.',
+      subTitle: 'Watch how CODE turns buildings into live, intelligent systems — with real-time insight and automation in every layer.',
       img:'assets/images/Frame-398-min.png'
     },
-  {
-    src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881638/videoTwo_v86h3s.mp4',
-    type: 'video/mp4',
-    title: 'Real Estate Touch TV App',
-    subTitle: 'Lorem ipsum dolor sit amet...',
-          img:'assets/images/Frame-399-min.png'
-  },
-  {
-    src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881692/videoFour_entojn.mp4',
-    type: 'video/mp4',
-    title: 'Construction WIP Monitoring',
-    subTitle: 'Lorem ipsum dolor sit amet...',
-          img:'assets/images/Frame-397-min.png'
-  },
-    {
-      src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881805/videoFive_h68de2.mp4',
-        type: 'video/mp4',
-      title: 'Sustainability via Digital Twin',
-      subTitle: 'Lorem ipsum dolor sit amet...',
-            img:'assets/images/Frame-396-min.png'
-    },
-    {
-      src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746882191/videoThree_g4vcgu.mp4',
-      type: 'video/mp4',
-      title: 'Monitoring Sustainable Environments',
-      subTitle: 'Lorem ipsum dolor sit amet...',
-      id: 'monitoring-sustainable',
-    img:'assets/images/Frame-398-min.png' 
-    }
+  // {
+  //   src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881638/videoTwo_v86h3s.mp4',
+  //   type: 'video/mp4',
+  //   title: 'Real Estate Touch TV App',
+  //   subTitle: 'Lorem ipsum dolor sit amet...',
+  //         img:'assets/images/Frame-399-min.png'
+  // },
+  // {
+  //   src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881692/videoFour_entojn.mp4',
+  //   type: 'video/mp4',
+  //   title: 'Construction WIP Monitoring',
+  //   subTitle: 'Lorem ipsum dolor sit amet...',
+  //         img:'assets/images/Frame-397-min.png'
+  // },
+  //   {
+  //     src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881805/videoFive_h68de2.mp4',
+  //       type: 'video/mp4',
+  //     title: 'Sustainability via Digital Twin',
+  //     subTitle: 'Lorem ipsum dolor sit amet...',
+  //           img:'assets/images/Frame-396-min.png'
+  //   },
+    // {
+    //   src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746882191/videoThree_g4vcgu.mp4',
+    //   type: 'video/mp4',
+    //   title: 'Monitoring Sustainable Environments',
+    //   subTitle: 'Lorem ipsum dolor sit amet...',
+    //   id: 'monitoring-sustainable',
+    // img:'assets/images/Frame-398-min.png' 
+    // }
   ];
 
   ngOnInit(): void {
@@ -101,9 +105,14 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
      this.mainVideo = this.plyrList[0];
      this.plyrList = this.plyrList.slice(1)
 
-     setTimeout(() => {
-      this.startTyping();
-    }, 5000);
+     if (isFirstLoad) {
+      isFirstLoad = false;
+      setTimeout(() => {
+        this.startTyping();
+      }, 4000); // تأخير أول مرة فقط
+    } else {
+      this.startTyping(); // لا تأخير في التنقل بين الصفحات
+    }
   }
   resetTyping() {
     this.typedText = '';
@@ -113,68 +122,67 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
 
   startTyping() {
     if (isPlatformBrowser(this.platformId)) {
-    const typingSpeed = 50;
+      const typingSpeed = 50;
 
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = this.fullText;
-    const nodes = Array.from(tempDiv.childNodes);
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = this.fullText;
+      const nodes = Array.from(tempDiv.childNodes);
 
-    let output = '';
+      let output = '';
 
-    const typeNode = (node: ChildNode, done: () => void) => {
-      if (node.nodeType === Node.TEXT_NODE) {
-        const text = node.textContent || '';
-        let charIndex = 0;
+      const typeNode = (node: ChildNode, done: () => void) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const text = node.textContent || '';
+          let charIndex = 0;
 
-        const typeChar = () => {
-          if (charIndex < text.length) {
-            output += text[charIndex];
-            this.typedText = output;
-            charIndex++;
-            setTimeout(typeChar, typingSpeed);
-          } else {
-            done();
-          }
-        };
+          const typeChar = () => {
+            if (charIndex < text.length) {
+              output += text[charIndex];
+              this.typedText = output;
+              charIndex++;
+              setTimeout(typeChar, typingSpeed);
+            } else {
+              done();
+            }
+          };
 
-        typeChar();
-      } else if (node.nodeType === Node.ELEMENT_NODE) {
-        const element = node as HTMLElement;
-        const tag = element.tagName.toLowerCase();
-        const openTag = `<${tag}${this.getAttributesAsString(element)}>`;
-        const closeTag = `</${tag}>`;
+          typeChar();
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          const element = node as HTMLElement;
+          const tag = element.tagName.toLowerCase();
+          const openTag = `<${tag}${this.getAttributesAsString(element)}>`;
+          const closeTag = `</${tag}>`;
 
-        const innerText = element.textContent || '';
-        let charIndex = 0;
+          const innerText = element.textContent || '';
+          let charIndex = 0;
 
-        const typeChar = () => {
-          if (charIndex < innerText.length) {
-            const partial = innerText.slice(0, charIndex + 1);
-            this.typedText = output + openTag + partial + closeTag;
-            charIndex++;
-            setTimeout(typeChar, typingSpeed);
-          } else {
-            output += openTag + innerText + closeTag;
-            done();
-          }
-        };
+          const typeChar = () => {
+            if (charIndex < innerText.length) {
+              const partial = innerText.slice(0, charIndex + 1);
+              this.typedText = output + openTag + partial + closeTag;
+              charIndex++;
+              setTimeout(typeChar, typingSpeed);
+            } else {
+              output += openTag + innerText + closeTag;
+              done();
+            }
+          };
 
-        typeChar();
-      }
-    };
+          typeChar();
+        }
+      };
 
-    const typeAllNodes = (i: number) => {
-      if (i < nodes.length) {
-        typeNode(nodes[i], () => {
-          typeAllNodes(i + 1);
-        });
-      }
-    };
+      const typeAllNodes = (i: number) => {
+        if (i < nodes.length) {
+          typeNode(nodes[i], () => {
+            typeAllNodes(i + 1);
+          });
+        }
+      };
 
-    typeAllNodes(0);
+      typeAllNodes(0);
+    }
   }
-  }
-
   getAttributesAsString(el: HTMLElement): string {
     return Array.from(el.attributes).map(attr => ` ${attr.name}="${attr.value}"`).join('');
   }
@@ -311,19 +319,14 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
 
   // First slider logos
   logos = [
-    '../../../assets/images/logo1.svg',
-    '../../../assets/images/logo2.svg',
-    '../../../assets/images/logo3.svg',
-    '../../../assets/images/logo4.svg',
-    '../../../assets/images/logo5.svg',
-    '../../../assets/images/logo6.svg',
-    '../../../assets/images/logo7.svg',
-    '../../../assets/images/Partners logos/Germany (2).png',
-    '../../../assets/images/Partners logos/Germany.png',
-    '../../../assets/images/Partners logos/India (2).png',
-    '../../../assets/images/Partners logos/India (3).png',
-    '../../../assets/images/Partners logos/India (4).png',
-    '../../../assets/images/Partners logos/India (5).png'
+    'assets/images/pageOneLogos/imgLogo1.svg',
+    'assets/images/pageOneLogos/imgLogo2.png',
+    'assets/images/pageOneLogos/imgLogo3.png',
+    'assets/images/pageOneLogos/imgLogo4.png',
+    'assets/images/pageOneLogos/imgLogo5.png',
+    'assets/images/pageOneLogos/imgLogo6.svg',
+    'assets/images/pageOneLogos/imgLogo7.png',
+    'assets/images/pageOneLogos/imgLogo8.png',
   ];
   slideConfig = {
     slidesToShow: 7.2,
@@ -352,15 +355,14 @@ constructor(private elementRef: ElementRef,@Inject(PLATFORM_ID) private platform
 
   // Second slider logos
   logos2 = [
-    '../../../assets/images/Partners logos/Austria.png',
-    '../../../assets/images/Partners logos/United States (2).png',
-    '../../../assets/images/Partners logos/United States1.png',
-    '../../../assets/images/Partners logos/United States.png',
-    '../../../assets/images/Partners logos/United States-US.png',
-    '../../../assets/images/Partners logos/United States(US).png',
-    '../../../assets/images/Partners logos/India.jpeg',
-     '../../../assets/images/Partners logos/United States (2).png',
-    '../../../assets/images/Partners logos/United States1.png',
+    'assets/images/pageOneLogos/imgLogo9.png',
+    'assets/images/pageOneLogos/imgLogo10.png',
+    'assets/images/pageOneLogos/imgLogo11.png',
+    'assets/images/pageOneLogos/imgLogo12.png',
+    'assets/images/pageOneLogos/imgLogo13.png',
+    'assets/images/pageOneLogos/imgLogo14.png',
+    'assets/images/pageOneLogos/imgLogo4.png',
+    'assets/images/pageOneLogos/imgLogo8.png',
   ];
   slideConfiglogos2 = {
     slidesToShow: 7.2,

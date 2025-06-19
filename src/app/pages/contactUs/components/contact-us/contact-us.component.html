@@ -2,7 +2,8 @@
     <div class="contactUsS1-container px-120">
         <div class="d-flex fx-contactUsS1">
             <div class="contactUsS1-text">
-                <span class="font-medium text-center subtitle24px color-linearGradient">Powering what’s next.</span>
+                <span class="font-medium text-start subtitle24px color-linearGradient mb12 d-block">Powering what’s
+                    next.</span>
                 <h1 class="font-bold subtitle64px colorBlack" data-aos="fade-down" data-aos-easing="linear"><span
                         class="color-linearGradient">Transformation</span> <br>Starts Here
                 </h1>
@@ -137,7 +138,8 @@
 
                         <div class="form-group">
                             <textarea name="message" [(ngModel)]="formData.message" #message="ngModel"
-                                class="style-font subtitle16px" placeholder="Message" required></textarea>
+                                class="style-font subtitle16px" placeholder="Briefly describe your goal,  project, or question — and we’ll  get back to you with a focused 
+                                response." required></textarea>
                             <div *ngIf="message.invalid && message.touched" class="text-danger font-medium">
                                 Message is required
                             </div>

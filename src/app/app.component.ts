@@ -7,11 +7,12 @@ import { Meta, Title } from '@angular/platform-browser';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { filter } from 'rxjs/operators';
+import { ModalJoinUsComponent } from './shared/modal-join-us/modal-join-us.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarDesComponent, NavbarMbComponent, FooterComponent],
+  imports: [RouterOutlet, NavbarDesComponent, NavbarMbComponent, FooterComponent,ModalJoinUsComponent],
   templateUrl: './app.component.html',
    encapsulation: ViewEncapsulation.None,
   styleUrl: './app.component.css',

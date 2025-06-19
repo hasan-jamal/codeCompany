@@ -27,7 +27,7 @@
                     </div> -->
                 </div>
                 <div class="button-side">
-                    <button class="btn-linearGradient" type="button">
+                    <button class="btn-linearGradient" type="button" (click)="router.navigate(['ourServices'])">
                         <span class="font-semiBold colorWhite subtitle20px">Explore AI Solutions</span>
                         <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                     </button>
@@ -135,7 +135,7 @@
                 <div class="divMainVideo" *ngIf="mainVideo">
                     <div class="mainVideo-text">
                         <h3 class="subtitle36px font-bold color-two">{{ mainVideo.title }}</h3>
-                        <p class="subtitle16px style-font color-two">{{ mainVideo.subTitle }}</p>
+                        <p class="subtitle16px style-font color-two mb-0">{{ mainVideo.subTitle }}</p>
                     </div>
 
                     <video #videoPlayer class="mainVideo" [attr.src]="mainVideo.src" controls muted
@@ -231,7 +231,7 @@
             <div class="d-flex flex-column gap24 sectionSeven-part2">
                 <div *ngFor="let faq of faqs; let i = index" class="faqBox" [class.active]="activeIndex === i">
                     <div class="d-flex justify-content-between faqBox-head transition3s" (click)="toggleFaq(i)">
-                        <h4 class="subtitle24px font-semiBold">{{ faq.question }}</h4>
+                        <h4 class="subtitle20px font-semiBold">{{ faq.question }}</h4>
                         <img [src]="activeIndex === i ? 'assets/images/minus-circle.svg' : 'assets/images/plus-circle.svg'"
                             alt="icon" class="faq-icon"
                             [style.transform]="activeIndex === i ? 'rotate(180deg)' : 'rotate(0deg)'" />

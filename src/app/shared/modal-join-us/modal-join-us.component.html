@@ -1,0 +1,103 @@
+<div class="coverBack" id="coverBack" [class.show]="isOpen" (click)="close()"></div>
+<div class="modal modalJoinUs" id="modalJoinUs" [class.show]="isOpen" (click)="$event.stopPropagation()">
+    <div class="modal-content">
+        <form class="fxModal d-flex" (ngSubmit)="onSubmit(form)" #form="ngForm">
+            <div class="part1">
+                <img src="assets/images/laptopUser.svg" alt="">
+                <div class="lineProgress"></div>
+            </div>
+            <div class="part2">
+                <div class="d-flex justify-content-between fxMobile">
+                    <h1 class="subtitle36px font-bold mb16">
+                        Build Saudi Arabia’s Digital <br>
+                        Future with <span class="color-linearGradient">CODE</span>
+                    </h1>
+                    <button type="button" (click)="close()"><img src="assets/images/closeIcon.svg" alt="closeIcon.svg"
+                            class="closeIcon inMobile"></button>
+
+                </div>
+
+                <p class="colorOne subtitle20px style-font mb24">
+                    We hire with purpose — to grow a team that reflects the future of innovation in Saudi Arabia and
+                    beyond. You
+                    could be next.
+                </p>
+
+                <div class="fxInputs fxGeneral-cards">
+                    <!-- Full Name -->
+                    <div class="form-group w50 fxCard">
+                        <input type="text" class="inputDesign" placeholder="Full Name" [(ngModel)]="formData.fullName"
+                            name="fullName" required #fullName="ngModel">
+                        <div *ngIf="(fullName.invalid && fullName.touched) || (form.submitted && fullName.invalid)"
+                            class="text-danger font-medium mt-1">
+                            Full Name is required
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group w50 fxCard">
+                        <input type="email" class="inputDesign" placeholder="Email" [(ngModel)]="formData.email"
+                            name="email" required email #email="ngModel">
+                        <div *ngIf="(email.invalid && email.touched) || (form.submitted && email.invalid)"
+                            class="text-danger font-medium mt-1">
+                            Valid Email is required
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group w50 fxCard">
+                        <input type="tel" class="inputDesign" placeholder="Phone Number" [(ngModel)]="formData.phone"
+                            name="phone">
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="form-group w50 fxCard">
+                        <input type="text" class="inputDesign" placeholder="LinkedIn Profile"
+                            [(ngModel)]="formData.linkedin" name="linkedin">
+                    </div>
+
+                    <!-- Resume Upload -->
+                    <div class="form-group w50">
+                        <div class=" d-flex fxFormGroup ">
+                            <input type="text" [value]="resumeFileName" placeholder="Resume" readonly
+                                class="inputDesign">
+                            <img src="assets/images/share.svg" alt="Choose Resume" (click)="fileInput.click()"
+                                style="cursor: pointer;">
+                            <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)">
+                        </div>
+                        <div *ngIf="form.submitted && resumeFileName === ''" class="text-danger font-medium mt-1">
+                            Resume is required
+                        </div>
+                    </div>
+                    <!-- Portfolio -->
+                    <div class="form-group w50 fxCard">
+                        <input type="text" class="inputDesign" placeholder="Portfolio link"
+                            [(ngModel)]="formData.portfolio" name="portfolio">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group w100 fxCard">
+                        <textarea placeholder="Tell us why you are a fit..." class="textAreaDesign"
+                            [(ngModel)]="formData.message" name="message" required #message="ngModel"></textarea>
+                        <div *ngIf="(message.invalid && message.touched) || (form.submitted && message.invalid)"
+                            class="text-danger font-medium mt-1">
+                            Message is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part3">
+                <img src="assets/images/closeIcon.svg" alt="closeIcon.svg" class="closeIcon" (click)="close()">
+                <img src="assets/images/joinUsImage.png" alt="join Us Image" class="joinUsImage">
+                <div class="d-flex fxButtonsForm">
+                    <button type="button" class="btnCancel subtitle16px font-medium btn-hover"
+                        (click)="close()">Cancel</button>
+                    <button type="submit" class="font-medium btn-linearGradient colorWhite subtitle16px"
+                        [disabled]="loading || resumeUploading">
+                        {{ loading ? 'Sending...' : (resumeUploading ? 'Uploading...' : 'Apply Now') }} </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
