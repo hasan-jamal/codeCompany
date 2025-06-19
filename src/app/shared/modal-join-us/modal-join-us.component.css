@@ -123,6 +123,8 @@
 }
 .inMobile{
     display: none;
+    background: none;
+    height: min-content;
 }
 /* Just for copy */
 @media (min-width:1706.67px) {
@@ -178,7 +180,10 @@
     .modalJoinUs .fxModal .part1{width: 10%;}
     .modalJoinUs .fxModal .part2{width: 82%;}
     .modalJoinUs .fxModal .part3{width: 100%;}
-    .inMobile{display: block;width: 25px;height: 100%;}
+    .inMobile{display: block;}
+    .inMobile img{
+        width: 25px;height: 100%;
+    }
     .fxMobile{gap: 4px;}
     .modalJoinUs .fxModal .part1 img{width: 35px;}
     .modalJoinUs .fxModal .part3 .joinUsImage{display: none;}

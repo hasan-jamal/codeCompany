@@ -58,10 +58,9 @@ export class ModalJoinUsComponent implements OnInit, OnDestroy{
       const uploadData = new FormData();
       uploadData.append('file', this.resumeFile);
       uploadData.append('upload_preset', 'resumeFile');
-      uploadData.append('resource_type', 'raw');
 
-      const cloudName = 'donrt3nj4';
-      const uploadURL = `https://api.cloudinary.com/v1_1/${cloudName}/raw/upload`;
+        const cloudName = 'donrt3nj4';
+        const uploadURL = `https://api.cloudinary.com/v1_1/${cloudName}/raw/upload`;
   
       this.resumeUploading = true;
   
