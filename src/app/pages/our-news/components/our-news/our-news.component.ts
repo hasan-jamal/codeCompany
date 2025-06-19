@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-our-news',
@@ -12,6 +13,7 @@ import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel'
 })
 export class OurNewsComponent {
  @ViewChild('sliderStories',{static:false})  sliderStories!:SlickCarouselComponent
+ constructor(public router:Router){}
  stories=[
       {
           title:'Strategic Partnerships Conference',
