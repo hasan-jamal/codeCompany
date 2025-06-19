@@ -14,7 +14,7 @@ export class PeopleSayingComponent implements AfterViewInit{
   ngAfterViewInit() {
 
     setTimeout(() => {
-      if (isPlatformBrowser(this.platformId)) {
+      if (isPlatformBrowser(this.platformId)) { 
 
       const dots = document.querySelector('.sectionSix .slick-dots');
     
