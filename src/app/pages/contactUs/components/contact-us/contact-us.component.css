@@ -179,6 +179,10 @@ padding-top: 4rem;}
 .fxButtonsForm button{
   width: 33.3%;
 }
+.fxButtonsForm .btnCancel{
+  background: #FEEFE6;
+  color: #FFAB86;
+}
   @media (min-width:1706.67px) {
     .contactUsS3 .boxContact .fx-boxContact .boxContact-form form input,
     .contactUsS3 .boxContact .fx-boxContact .boxContact-form form button{height: 60px;}

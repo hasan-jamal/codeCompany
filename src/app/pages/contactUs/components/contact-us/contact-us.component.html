@@ -152,10 +152,8 @@
                                     class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
                                     {{ loading ? 'Sending...' : 'Send Now' }}
                                 </button>
-                                <button type="submit" [disabled]="loading || contactForm.invalid"
-                                    class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
-                                    {{ loading ? 'Sending...' : 'Send Now' }}
-                                </button>
+                                <button type="button"
+                                    class="btnCancel subtitle16px font-medium btn-hover">Cancel</button>
                             </div>
                         </div>
                     </form>
