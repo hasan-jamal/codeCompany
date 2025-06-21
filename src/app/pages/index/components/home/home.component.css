@@ -131,6 +131,7 @@
     color: #000;
     line-height: normal;
 }
+.sectionOne .part2-sectionOne .fxBox-num .fx-number img{width: 25px;}
 @media (min-width:1706.67px) {
     .sectionOne .fx-sectionOne{margin-top: 180px;}
     .sectionOne .fxLast-texts{margin-top: 8px;}
@@ -749,10 +750,12 @@
 @media (min-width:1706.67px) {
     .sectionVideos .divVideo .mainVideo{height:530px;}
     .video-thumbnails .thumbnail{height: 200px;}
+    .sectionOne .part2-sectionOne .fxBox-num .fx-number img{width: 30px;}
 }
 @media (min-width:1920px) {
     .sectionVideos .divVideo .mainVideo{height:580px;}
     .video-thumbnails .thumbnail{height: 240px;}
+    .sectionOne .part2-sectionOne .fxBox-num .fx-number img{width: 35px;}
 }
 @media (min-width:2048px) { 
     .sectionVideos .divVideo .mainVideo{height:660px;}
@@ -770,6 +773,7 @@
     .video-thumbnails .thumbnail{height: 140px;}
     .video-thumbnails .thumbnail .imgVideo{border-radius: 20px;}
     .play-button{width: 15%;}
+    .sectionOne .part2-sectionOne .fxBox-num .fx-number img{width: 20px;}
 }
 @media (max-width:877.71px) {
     .sectionVideos .divVideo .mainVideo{height: 320px;}
