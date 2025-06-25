@@ -1,0 +1,68 @@
+<div class="coverBack" id="coverBack" [class.show]="isOpen" (click)="close()"></div>
+
+<div class="modal modalTalkCode" id="modalTalkCode" [class.show]="isOpen" (click)="$event.stopPropagation()">
+    <div class="modal-content">
+        <div class="boxContact">
+            <div class="d-flex fx-boxContact">
+                <div class="boxContact-text">
+                    <img src="assets/images/talkCodeModal.svg" alt="mailbox icon">
+                    <h1 class="font-bold colorBlack subtitle36px text-center">Let’s Start the<br>
+                        <span class="color-linearGradient">Conversation!</span>
+                    </h1>
+                    <p class="style-font mb-0 subtitle16px colorOne  text-center">You’re just one message away from
+                        turning <b> interest into impact. </b></p>
+                </div>
+                <div class="boxContact-form">
+                    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                        <div class="form-group">
+                            <input type="text" name="fullName" [(ngModel)]="formData.fullName" #fullName="ngModel"
+                                class="style-font subtitle16px" placeholder="Your Name" required />
+                            <div *ngIf="fullName.invalid && fullName.touched" class="text-danger font-medium">
+                                Name is required
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" [(ngModel)]="formData.email" #email="ngModel"
+                                class="style-font subtitle16px" placeholder="Your Email" required />
+                            <div *ngIf="email.invalid && email.touched" class="text-danger font-medium">
+                                Valid email is required
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="subject" [(ngModel)]="formData.subject" #subject="ngModel"
+                                class="style-font subtitle16px" placeholder="Subject" required />
+                            <div *ngIf="subject.invalid && subject.touched" class="text-danger font-medium">
+                                Subject is required
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" [(ngModel)]="formData.message" #message="ngModel"
+                                class="style-font subtitle16px"
+                                placeholder="Briefly describe your goal, project, or question — and we’ll  get back to you with a focused response."
+                                required></textarea>
+                            <div *ngIf="message.invalid && message.touched" class="text-danger font-medium">
+                                Message is required
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="d-flex fxButtonsForm">
+                                <button type="button" class="btnCancel subtitle16px font-medium btn-hover"
+                                    (click)=" close()">Cancel</button>
+                                <button type="submit" [disabled]="loading || contactForm.invalid"
+                                    class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
+                                    {{ loading ? 'Sending...' : 'Send Now' }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
