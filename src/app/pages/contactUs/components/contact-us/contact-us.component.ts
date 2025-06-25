@@ -3,6 +3,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
+import { ModalService } from '../../../../services/ModalService';
+import { TalkCodeComponent } from '../../../../shared/modals/talk-code/talk-code.component';
 
 
 @Component({
@@ -10,7 +12,6 @@ import emailjs from '@emailjs/browser';
   imports: [CommonModule,FormsModule],
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css',
-                     '../../../../../assets/css/general.css',
                   '../../../../../assets/css/sections/contactSection.css',
   ],
   encapsulation: ViewEncapsulation.None,

@@ -178,6 +178,9 @@ header .fx-header{
   gap: 90px;
   position: relative;
 }
+header .fx-header .links-header{
+  gap: 20px;
+}
 header .fx-header .links-header .linkStyle{
   text-decoration: none;
   color: #001C33;
@@ -195,10 +198,10 @@ header .btnServicesHeader{
   z-index: 97;
 }
 header .btnServicesHeader .listServicesHeader{
-  padding: 24px;
   border-radius: 10px;
   background: #FFF;
   gap: 30px;
+  width: 865px;
   left: 50%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   opacity: 0;
@@ -217,8 +220,6 @@ header .btnServicesHeader:hover .listServicesHeader {
   opacity: 1;
   visibility: visible;
 }
-
-
 .coverBack.active {
   opacity: 1;
   visibility: visible;
@@ -227,37 +228,51 @@ header .btnServicesHeader:hover ~ .coverBackHeader {
   opacity: 1 !important;
   visibility: visible !important;
 }
+header .btnServicesHeader .listServicesHeader .fxListPart{
+  flex-wrap: wrap;
+  width:100%;
+  gap: 20px;
+}
 header .btnServicesHeader .listServicesHeader .listPart{
-  width:215px;
+  flex: 1 1 calc(30.3% - 20px);
+  max-width: calc(30.3% - 0px);
+}
+header .btnServicesHeader .listServicesHeader .listPart.listPartCenter{
+  padding: 0 20px;
+  border-left: 1px solid #D9D9D9;
+  border-right:1px solid #D9D9D9;
+  flex: 1 1 calc(36.3% - 20px);
+  max-width: calc(36.3% - 0px);
 }
 .header .btnServicesHeader .listServicesHeader .backService{
   background-image: url(../images/back-listService.svg);
   background-position: bottom left;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 91px;
-  margin-bottom: 32px;
+  height: 79px;
+  margin-bottom: 20px;
   position: relative;
   border-radius: 10px;
 }
 .header .btnServicesHeader .listServicesHeader .backService span{
   position: absolute;
-  bottom: 1.4rem;
+  bottom: 1.7rem;
   left: 1rem;
   color: #FFF;
-  font-size: 18px;
 }
 .header .btnServicesHeader .listServicesHeader .backServiceActive{
   background-image: url(../images/backServiceActive.svg);
 }
 header .btnServicesHeader .fx-listServices a{
   color: #4F4F4F;
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   text-decoration: none;
   transition: 0.2s;
-
+  margin-bottom: 10px;
 }
+header .btnServicesHeader .fx-listServices a:last-child{margin-bottom: 0;}
 header .btnServicesHeader .fx-listServices a.active,
 header .btnServicesHeader .fx-listServices a:hover{
   border-radius: 5px 0px 5px 5px;
@@ -265,19 +280,6 @@ header .btnServicesHeader .fx-listServices a:hover{
   transform: scale(0.96);
   padding: 8px;
 }
-
-/* header .btnServicesHeader .fx-listServices a:hover{
-  background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-/* header .btnServicesHeader .fx-listServices a.active{
-  background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 .dropDownActive span{
     background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
     background-clip: text;
@@ -291,11 +293,17 @@ header .btnServicesHeader .fx-listServices a:hover{
 @media (min-width:1706.67px) {
   header .fx-header .links-header{gap: 20px;}
   header .fx-header .btn-header button{height: 50px;font-size: 22px;width: 190px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 16px;margin-bottom: 14px;}
+  header .btnServicesHeader .listServicesHeader{width: 930px;}
+  .header .btnServicesHeader .listServicesHeader .backService{height: 100px;}
 }
 @media (min-width:1920px) {
   header .fx-header .links-header .linkStyle{font-size: 27px;}
   header .fx-header .links-header{gap: 28px;}
   header .fx-header .btn-header button{height: 60px;font-size: 24px;width: 210px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 18px;margin-bottom: 16px;}
+  header .btnServicesHeader .listServicesHeader{width: 980px;}
+  .header .btnServicesHeader .listServicesHeader .backService{height: 121px;}
 }
 @media (min-width:2048px) {
   header .fx-header .links-header .linkStyle{font-size: 29px;}
@@ -305,6 +313,8 @@ header .btnServicesHeader .fx-listServices a:hover{
 @media (max-width:1396.36px) {
   header .fx-header .links-header .linkStyle{font-size: 18px;}
   header .fx-header .btn-header button{font-size: 18px;}
+  .header .btnServicesHeader .listServicesHeader .backService{margin-bottom: 18px;}
+  header .btnServicesHeader .listServicesHeader{width: 800px;}
 }
 @media (max-width:1228.8px) {
   header .fx-header .links-header .linkStyle{font-size: 16px;}
@@ -312,11 +322,15 @@ header .btnServicesHeader .fx-listServices a:hover{
   header .fx-header .logo-header img{width: 130px;}
   header .fx-header{padding: 40px 0 0px 0;}
   header .btnServicesHeader .listServicesHeader .listPart{width:185px;}
-  header .btnServicesHeader .fx-listServices a{font-size: 12px;}
-  .header .btnServicesHeader .listServicesHeader .backService span{font-size: 15px;}
-  .header .btnServicesHeader .listServicesHeader .backService{height: 80px;margin-bottom: 16px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 11px;margin-bottom: 8px;}
+  .header .btnServicesHeader .listServicesHeader .backService{
+    height: 70px;
+    margin-bottom: 16px;
+  }
   header .btnServicesHeader .listServicesHeader{gap: 25px;}
   header .fx-header .links-header button img{width: 20px;}
+  header .btnServicesHeader .listServicesHeader{width: 750px;}
+  .header .btnServicesHeader .listServicesHeader .backService span{bottom: 1.3rem;}
 }
 @media (max-width:1024px) {
   .hamburger{display: block;}
@@ -325,11 +339,11 @@ header .btnServicesHeader .fx-listServices a:hover{
   header .fx-header .logo-header img{width: 100px;}
   header .fx-header{padding: 30px 0 0px 0;}
   header .btnServicesHeader .listServicesHeader .listPart{width:160px;}
-  header .btnServicesHeader .fx-listServices a{font-size: 10px;}
-  .header .btnServicesHeader .listServicesHeader .backService span{font-size: 13px;}
-  .header .btnServicesHeader .listServicesHeader .backService{height: 70px;}
-  header .btnServicesHeader .listServicesHeader{gap: 20px;}
+  header .btnServicesHeader .fx-listServices a{font-size: 9px;margin-bottom: 6px;}
+  .header .btnServicesHeader .listServicesHeader .backService{height: 60px;margin-bottom: 12px;}
     header .fx-header .links-header button img{width: 15px;}
+    header .btnServicesHeader .listServicesHeader{width: 650px;}
+    .header .btnServicesHeader .listServicesHeader .backService span{bottom: 1.1rem;}
 }
 @media (max-width:877.71px) {
   header .fx-header .links-header .linkStyle{font-size: 12px;}
@@ -337,9 +351,7 @@ header .btnServicesHeader .fx-listServices a:hover{
   header .fx-header .logo-header img{width: 80px;}
   header .fx-header{gap: 70px;}
   header .btnServicesHeader .listServicesHeader .listPart{width: 125px;}
-  .header .btnServicesHeader .listServicesHeader .backService span{font-size: 11px;}
-  header .btnServicesHeader .fx-listServices a{font-size: 9px;}
-  header .btnServicesHeader .listServicesHeader{gap: 15px;}
+  header .btnServicesHeader .listServicesHeader{width: 600px;padding: 12px;overflow-y:auto ;}
 }
 @media (max-width:768px) {
   header .fx-header .links-header .linkStyle{font-size: 10px;}

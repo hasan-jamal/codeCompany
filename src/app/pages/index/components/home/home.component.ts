@@ -5,7 +5,8 @@ import { trigger, transition, style, animate } from '@angular/animations';
 // import type Player from 'video.js/dist/types/player';
 import 'video.js/dist/video-js.css';
 import { PeopleSayingComponent } from '../../../../shared/people-saying/people-saying.component';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterLink } from '@angular/router';
+import { ModalService } from '../../../../services/ModalService';
 let isFirstLoad = true;
 
 @Component({
@@ -14,13 +15,14 @@ let isFirstLoad = true;
   imports: [
     CommonModule, 
     SlickCarouselModule,
+    RouterLink
     // PeopleSayingComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css',
                     '../../../../../assets/css/sections/sectionSix.css',
                   '../../../../../assets/css/style.css',
-                   '../../../../../assets/css/general.css'
+                  '../../../../../assets/css/sections/contactSection.css',
   ],  
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
  encapsulation: ViewEncapsulation.None,
@@ -38,6 +40,7 @@ let isFirstLoad = true;
 })
 export class HomeComponent  implements OnInit ,AfterViewInit{
 constructor(
+  private modalService: ModalService,
   private elementRef: ElementRef,
   @Inject(PLATFORM_ID) private platformId: Object,
   public router: Router) {
@@ -216,13 +219,15 @@ constructor(
         isActive: false,
         title:"AI Digital Twin Solution",
         subTitle:"See Your Building in Real Time. Predict What’s Next.",
-        content:"CODE’s AI Digital Twin creates a live, data-driven model of your facility — helping you monitor performance, prevent downtime, and plan smarter. It's the future of infrastructure, made visible." 
+        content:"CODE’s AI Digital Twin creates a live, data-driven model of your facility — helping you monitor performance, prevent downtime, and plan smarter. It's the future of infrastructure, made visible.",
+        pathBtn:"AISolutions/AIDigitalTwin"
       },
     { id: 2, showPart2: false, isAnimating: false, isActive: false,
       title: "AI Computer Vision Solution",
       subTitle: "Smarter Surveillance. Instant Insight.",
-      content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior, and alerts your team in real time — so nothing critical slips through the cracks.."
-           },
+      content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior, and alerts your team in real time — so nothing critical slips through the cracks.",
+      pathBtn:""
+    },
   ];
 
   activateFirstBox(): void {
@@ -314,22 +319,18 @@ constructor(
 
   // First slider logos
   logos = [
-    // 'assets/images/pageOneLogos/imgLogo1.svg',
-    // 'assets/images/pageOneLogos/imgLogo2.png',
-    // 'assets/images/pageOneLogos/imgLogo3.png',
-    // 'assets/images/pageOneLogos/imgLogo4.png',
-    // 'assets/images/pageOneLogos/imgLogo5.png',
-    // 'assets/images/pageOneLogos/imgLogo6.svg',
-    // 'assets/images/pageOneLogos/imgLogo7.png',
-    // 'assets/images/pageOneLogos/imgLogo8.png',
-    "assets/images/aboutUsLogos/imgLogo1.png",
-    "assets/images/aboutUsLogos/imgLogo2.png",
-    "assets/images/aboutUsLogos/imgLogo3.png",
-    "assets/images/aboutUsLogos/imgLogo4.png",
-    "assets/images/aboutUsLogos/imgLogo5.png",
-    "assets/images/aboutUsLogos/imgLogo6.png",
-    "assets/images/aboutUsLogos/imgLogo7.png",
-    "assets/images/aboutUsLogos/imgLogo8.png",
+    "assets/images/Partners-logos/Austria.png",
+    "assets/images/Partners-logos/Germany (2).png",
+    "assets/images/Partners-logos/Germany.png",
+    "assets/images/Partners-logos/India (2).png",
+    "assets/images/Partners-logos/India (3).png",
+    "assets/images/Partners-logos/India (4).png",
+    "assets/images/Partners-logos/India (5).png",
+    "assets/images/Partners-logos/India.jpeg",
+    "assets/images/Partners-logos/India.png",
+    "assets/images/Partners-logos/Switzerland (2).png",
+    "assets/images/Partners-logos/Switzerland.png",
+    "assets/images/Partners-logos/Turkey.png"
   ];
   slideConfig = {
     slidesToShow: 7.2,
@@ -358,22 +359,17 @@ constructor(
 
   // Second slider logos
   logos2 = [
-    // 'assets/images/pageOneLogos/imgLogo9.png',
-    // 'assets/images/pageOneLogos/imgLogo10.png',
-    // 'assets/images/pageOneLogos/imgLogo11.png',
-    // 'assets/images/pageOneLogos/imgLogo12.png',
-    // 'assets/images/pageOneLogos/imgLogo13.png',
-    // 'assets/images/pageOneLogos/imgLogo14.png',
-    // 'assets/images/pageOneLogos/imgLogo4.png',
-    // 'assets/images/pageOneLogos/imgLogo8.png',
-    "assets/images/aboutUsLogos/imgLogo8.png",
-    "assets/images/aboutUsLogos/imgLogo7.png",
-    "assets/images/aboutUsLogos/imgLogo6.png",
-    "assets/images/aboutUsLogos/imgLogo5.png",
-    "assets/images/aboutUsLogos/imgLogo4.png",
-    "assets/images/aboutUsLogos/imgLogo3.png",
-    "assets/images/aboutUsLogos/imgLogo2.png",
-    "assets/images/aboutUsLogos/imgLogo1.png",
+    "assets/images/Partners-logos/United Arab Emirates (UAE).png",
+    "assets/images/Partners-logos/United Arab Emirates..png",
+    "assets/images/Partners-logos/United Kingdom..png",
+    "assets/images/Partners-logos/United State.png",
+    "assets/images/Partners-logos/United States (2).png",
+    "assets/images/Partners-logos/United States (3).png",
+    "assets/images/Partners-logos/United States(US).png",
+    "assets/images/Partners-logos/United States.png",
+    "assets/images/Partners-logos/United States1.png",
+    "assets/images/Partners-logos/United States2.png",
+    "assets/images/Partners-logos/United States-US.png"
   ];
   slideConfiglogos2 = {
     slidesToShow: 7.2,
@@ -518,4 +514,7 @@ constructor(
   // End Slider Blog
 
 
+  openTalkCodeModal() {
+      this.modalService.open('modalTalkCode');
+    }
   }

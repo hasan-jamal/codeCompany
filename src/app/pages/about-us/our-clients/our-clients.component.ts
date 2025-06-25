@@ -3,6 +3,8 @@ import { PeopleSayingComponent } from '../../../shared/people-saying/people-sayi
 import { trigger, transition, style, animate } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { ModalService } from '../../../services/ModalService';
+import { TalkCodeComponent } from '../../../shared/modals/talk-code/talk-code.component';
 
 @Component({
   selector: 'app-our-clients',
@@ -11,14 +13,13 @@ import { Router } from '@angular/router';
     CommonModule],
   templateUrl: './our-clients.component.html',
   styleUrls: ['./our-clients.component.css',
-                  '../../../../assets/css/general.css',
                   '../../../../assets/css/sections/contactSection.css',
                 '../../../../assets/css/sections/sectionSix.css'],
   encapsulation: ViewEncapsulation.None,
 })
 export class OurClientsComponent {
   activeTab: string = 'government';
-  constructor(public router:Router){}
+  constructor(public router:Router,private modalService: ModalService){}
   tabs = [
     { key: 'government', label: 'Government', bgColor: '#FCE8EB' },
     { key: 'pif', label: 'PIF', bgColor: '#FFEEE3' },
@@ -106,4 +107,7 @@ export class OurClientsComponent {
       [`active-${tabKey}`]: this.activeTab === tabKey
     };
   }
+    openTalkCodeModal() {
+      this.modalService.open('modalTalkCode');
+    }
 }

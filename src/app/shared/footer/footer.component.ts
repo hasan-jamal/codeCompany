@@ -7,8 +7,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [RouterLink, RouterLinkActive,CommonModule],
   templateUrl: './footer.component.html',
     styleUrls:[ 
-      './footer.component.css',
-      '../../../assets/css/general.css'
+      './footer.component.css'
   ],
   encapsulation: ViewEncapsulation.None,
 })

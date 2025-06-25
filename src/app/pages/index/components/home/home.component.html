@@ -27,7 +27,8 @@
                     </div> -->
                 </div>
                 <div class="button-side">
-                    <button class="btn-linearGradient" type="button" (click)="router.navigate(['ourServices'])">
+                    <button class="btn-linearGradient" type="button"
+                        (click)="router.navigate(['/ourServices/AISolutions'])">
                         <span class="font-semiBold colorWhite subtitle20px">Explore AI Solutions</span>
                         <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                     </button>
@@ -39,21 +40,21 @@
                         <h2 class="font-semiBold subtitle48px">10</h2>
                         <img src="assets/images/plusLinear.svg" alt="plusLinear icon" class="">
                     </div>
-                    <p class="font-light mb-0 subtitle16px colorBlack">years of experience</p>
+                    <p class="font-light mb-0 subtitle16px colorBlack text-capitalize">years of experience</p>
                 </div>
                 <div class="d-flex flex-column fxBox-num">
                     <div class="d-flex fx-number">
                         <h2 class="font-semiBold subtitle48px">97</h2>
                         <img src="assets/images/plusLinear.svg" alt="plusLinear icon" class="">
                     </div>
-                    <p class="font-light mb-0 subtitle16px colorBlack">Projects done</p>
+                    <p class="font-light mb-0 subtitle16px colorBlack text-capitalize">Projects done</p>
                 </div>
                 <div class="d-flex flex-column fxBox-num">
                     <div class="d-flex fx-number">
                         <h2 class="font-semiBold subtitle48px">85</h2>
                         <img src="assets/images/plusLinear.svg" alt="plusLinear icon" class="">
                     </div>
-                    <p class="font-light mb-0 subtitle16px colorBlack">Happy clients</p>
+                    <p class="font-light mb-0 subtitle16px colorBlack text-capitalize">Happy clients</p>
                 </div>
             </div>
         </div>
@@ -70,7 +71,7 @@
             <p class="style-font mb-0 subtitle24px">CODE delivers <b> real-time visibility, smarter automation, and
                     data-driven control </b>— all built for scale, speed, and
                 security. From <span class="color-linearGradient">Digital Twins</span> to <span
-                    class="color-linearGradient">Computer Vision</span> , our AI
+                    class="color-linearGradient">Computer Vision</span>, our AI
                 platforms help you solve complex challenges,
                 improve operations,
                 and unlock measurable impact across your environment.</p>
@@ -113,10 +114,11 @@
                     <h2 class="font-medium subtitle32px colorWhite">{{box.title}}</h2>
                     <h1 class="font-bold subtitle48px" data-aos="fade-down"> {{box.subTitle}} </h1>
                     <p class="style-font subtitle24px">{{box.content}}</p>
-                    <button routerLink="" routerLinkActive="" type="button"
+                    <button [routerLink]="'/ourServices/' + box.pathBtn" type="button"
                         class="font-medium d-flex align-items-center justify-content-center">
                         Learn More
                     </button>
+
                 </div>
             </div>
         </div>
@@ -125,8 +127,8 @@
 <section class="sectionVideos">
     <div class="sectionVideos-container ">
         <div class="divTitles">
-            <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">Our Trend solution
-                with AI Power</span>
+            <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">See It in
+                Action</span>
             <h1 class="text-center font-bold subtitle48px h1-head">How Our <span class="color-linearGradient">AI Digital
                     Twin</span> Brings <span class="color-linearGradient">Environment to Life</span></h1>
             <p class="mb-0 text-center subtitle20px style-font">Discover how CODE’s AI Digital Twin delivers real-time
@@ -169,8 +171,11 @@
 
 <section class="sectionFive">
     <div class="sectionFive-container">
-        <h1 class="text-center font-bold subtitle48px">Our
-            integration <span class="color-linearGradient">Partners</span></h1>
+        <h1 class="text-center font-bold subtitle48px">
+            <span class="color-linearGradient">Partnered</span>
+            With the Best to
+            <span class="color-linearGradient">Deliver the Best</span>
+        </h1>
         <ngx-slick-carousel class="sliderLogos sliderLogos1 m-sliderLogos" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let logo of logos" class="slide">
                 <img [src]="logo" alt="logo" />
@@ -251,3 +256,24 @@
     </div>
 </section>
 <!-- @slideFade -->
+<section class="contactSection">
+    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+    <div class="contactSection-container px-120">
+        <div class="contactSection-div d-flex">
+            <div class="contactSection-texts">
+                <span class="subtitle24px d-block color-linearGradient font-medium mb24"> Join CODE. Shape What’s
+                    Next.</span>
+                <h1 class=" subtitle48px font-bold mb-0">Let’s <span class="color-linearGradient">Build <br> Smarter
+                    </span>Together</h1>
+            </div>
+            <div class="contactSection-buttons d-flex">
+                <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
+                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                </button>
+            </div>
+        </div>
+        <p class="mb-0 colorTwo style-font subtitle20px">Connect with our team to explore AI solutions built around your
+            goals, challenges, and infrastructure.</p>
+    </div>
+</section>

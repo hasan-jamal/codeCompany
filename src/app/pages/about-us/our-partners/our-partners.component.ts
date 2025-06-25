@@ -4,12 +4,16 @@ import { AboutUsComponent } from "../components/about-us/about-us.component";
 declare var anychart: any;
 import { Router } from '@angular/router';
 import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
+import { ModalService } from '../../../services/ModalService';
+import { TalkCodeComponent } from '../../../shared/modals/talk-code/talk-code.component';
 @Component({
   selector: 'app-our-partners',
-  imports: [CommonModule,    SlickCarouselModule,],
+  imports: [
+          CommonModule,
+          SlickCarouselModule
+              ],
   templateUrl: './our-partners.component.html',
   styleUrls:['./our-partners.component.css',
-                  '../../../../assets/css/general.css',
                   '../../../../assets/css/pages/ourDatacenterPartners.css',
                   '../../../../assets/css/sections/contactSection.css',
                   '../../../../assets/css/sections/ourServiceFlow.css'],
@@ -17,7 +21,7 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 })
 export class OurPartnersComponent implements AfterViewInit{
   activeIndex: number = 0;
-  constructor(public router:Router){}
+  constructor(public router:Router,private modalService: ModalService){}
   boxes = [
     {
       title: 'Datacenter Partners',
@@ -165,5 +169,7 @@ export class OurPartnersComponent implements AfterViewInit{
       }
     ]
   };
-
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
+  }
 }

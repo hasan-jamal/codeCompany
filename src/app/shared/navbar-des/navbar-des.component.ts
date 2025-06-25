@@ -9,23 +9,19 @@ import { ModalService } from '../../services/ModalService';
   templateUrl: './navbar-des.component.html',
   styleUrls: [
      './navbar-des.component.css',
-    '../../../assets/css/general.css',
     '../../../assets/css/header.css',
   ],
   encapsulation: ViewEncapsulation.None,
 })
 export class NavbarDesComponent {
-    isCoverVisible = false;
-
+  isCoverVisible = false;
   showCover() {
     this.isCoverVisible = true;
   }
-
   hideCover() {
     this.isCoverVisible = false;
   }
   constructor(private modalService: ModalService) {}
-
   openJoinUsModal() {
     this.modalService.open('modalJoinUs');
   }

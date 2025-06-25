@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
 import { Router } from '@angular/router';
+import { ModalService } from '../../../../services/ModalService';
 
 @Component({
   selector: 'app-our-news',
@@ -13,7 +14,7 @@ import { Router } from '@angular/router';
 })
 export class OurNewsComponent {
  @ViewChild('sliderStories',{static:false})  sliderStories!:SlickCarouselComponent
- constructor(public router:Router){}
+ constructor(public router:Router,private modalService: ModalService){}
  stories=[
       {
           title:'Strategic Partnerships Conference',
@@ -120,5 +121,8 @@ export class OurNewsComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
   }
 }

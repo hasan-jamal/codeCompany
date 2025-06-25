@@ -10,7 +10,6 @@ import { ModalService } from '../../services/ModalService';
     templateUrl: './navbar-mb.component.html',
     styleUrls: [
         './navbar-mb.component.css',
-        '../../../assets/css/general.css',
         '../../../assets/css/header.css',
     ],
      encapsulation: ViewEncapsulation.None,

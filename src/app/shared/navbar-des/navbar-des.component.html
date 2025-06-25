@@ -1,7 +1,7 @@
 <header class="header px-120">
     <div class="d-flex align-items-center justify-content-between fx-header">
         <a class="logo-header" routerLink="/"><img src="assets/images/logo.svg" alt="logo image"></a>
-        <div class="d-flex links-header gap20 align-items-center">
+        <div class="d-flex links-header  align-items-center">
             <a routerLink="/" routerLinkActive="color-linearGradient" [routerLinkActiveOptions]="{exact:true}"
                 class="font-medium  linkStyle">Home</a>
             <a routerLink="aboutUs" routerLinkActive="color-linearGradient" class="font-medium linkStyle"></a>
@@ -9,7 +9,7 @@
                 class="font-medium linkStyle">newsDetails</a> -->
             <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
                 <button type="button" class="link d-flex align-items-center" data-target="Industries-list">
-                    <span class="font-medium linkStyle">About Us</span>
+                    <span class="font-medium linkStyle">About us</span>
                     <img src="assets/images/arrowDown.svg" alt="arrowDown icon">
                 </button>
                 <div class="listAboutHeader">
@@ -21,62 +21,78 @@
                         partners</a>
                 </div>
             </div>
-            <a routerLink="ourServices" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
-                services</a>
-            <!-- <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
+            <!-- <a routerLink="ourServices" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
+                services</a> -->
+            <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
                 <button type="button" class="link d-flex align-items-center" data-target="Industries-list"
                     routerLink="/ourServices" routerLinkActive="dropDownActive">
                     <span class="font-medium linkStyle">Our services</span>
                     <img src="assets/images/arrowDown.svg" alt="arrowDown icon">
                 </button>
                 <div class="listServicesHeader" id="Industries-list">
-                    <div class="listPart">
-                        <div class="backService backServiceActive"><span class="font-medium">IT management</span>
+                    <div class="d-flex fxListPart">
+                        <div class="listPart">
+                            <div class="backService backServiceActive"><span class="font-bold subtitle16px">IT
+                                    management</span>
+                            </div>
+                            <div class="d-flex flex-column fx-listServices ">
+                                <a class="font-medium">AI Digital Twin</a>
+                                <a routerLink="/ourServices/serviceDetails/1" routerLinkActive="active"
+                                    class="font-medium">AI Computer Vision</a>
+                                <a class="font-medium">Voicebots / Chatbots</a>
+                                <a class="font-medium">AI Innovation Hub</a>
+                                <a class="font-medium">Indoor Wayfinding</a>
+                                <a class="font-medium">Smart Cabinets</a>
+                            </div>
                         </div>
-                        <div class="d-flex flex-column fx-listServices gap20">
-                            <a class="font-medium">Database Consulting</a>
-                            <a routerLink="/ourServices/serviceDetails/1" routerLinkActive="active"
-                                class="font-medium">Cloud
-                                Integration Support</a>
-                            <a class="font-medium">Clouding Storage</a>
-                            <a class="font-medium">Remote Onsite Support</a>
-                            <a class="font-medium">IT Consulting</a>
-                            <a class="font-medium">Cyber Security</a>
-                            <a class="font-medium">Internet & voip</a>
-                            <a class="font-medium">Network Setup & Support</a>
-                            <a class="font-medium">System Management</a>
-                            <a class="font-medium">Disaster Recovery</a>
+                        <div class="listPart listPartCenter">
+                            <div class="backService"><span class="font-bold subtitle16px">IT infrastructure</span></div>
+                            <div class="d-flex flex-column fx-listServices ">
+                                <a class="font-medium">DEVOPS</a>
+                                <a class="font-medium">Infrastructure Management</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="listPart">
-                        <div class="backService"><span class="font-medium">IT infrastructure</span></div>
-                        <div class="d-flex flex-column fx-listServices gap20">
-                            <a class="font-medium">DEVOPS</a>
-                            <a class="font-medium">Infrastructure Management</a>
+                        <div class="listPart">
+                            <div class="backService"><span class="font-bold subtitle16px">Data Services</span></div>
+                            <div class="d-flex flex-column fx-listServices ">
+                                <a class="font-medium">Analysis Services</a>
+                                <a class="font-medium">Custom Analysis Service</a>
+                                <a class="font-medium">Advanced Analytics</a>
+                                <a class="font-medium">BIG DATA</a>
+                                <a class="font-medium">Data Warehouse Modernization</a>
+                                <a class="font-medium">Advanced Analytics</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="listPart">
-                        <div class="backService"><span class="font-medium">Data Services</span></div>
-                        <div class="d-flex flex-column fx-listServices gap20">
-                            <a class="font-medium">Analysis Services</a>
-                            <a class="font-medium">Custom Analysis Service</a>
-                            <a class="font-medium">Advanced Analytics</a>
-                            <a class="font-medium">BIG DATA</a>
-                            <a class="font-medium">Data Warehouse Modernization</a>
-                            <a class="font-medium">Advanced Analytics</a>
+                        <div class="listPart">
+                            <div class="backService"><span class="font-bold subtitle16px">Development</span></div>
+                            <div class="d-flex flex-column fx-listServices ">
+                                <a class="font-medium">Web Development</a>
+                                <a class="font-medium">Mobile App Development</a>
+                                <a class="font-medium">Social Media Solutions</a>
+                                <a class="font-medium">E-commerce Solutions</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="listPart">
-                        <div class="backService"><span class="font-medium">Development</span></div>
-                        <div class="d-flex flex-column fx-listServices gap20">
-                            <a class="font-medium">Web Development</a>
-                            <a class="font-medium">Mobile App Development</a>
-                            <a class="font-medium">Social Media Solutions</a>
-                            <a class="font-medium">E-commerce Solutions</a>
+                        <div class="listPart listPartCenter">
+                            <div class="backService"><span class="font-bold subtitle16px">Development</span></div>
+                            <div class="d-flex flex-column fx-listServices ">
+                                <a class="font-medium">Web Development</a>
+                                <a class="font-medium">Mobile App Development</a>
+                                <a class="font-medium">Social Media Solutions</a>
+                                <a class="font-medium">E-commerce Solutions</a>
+                            </div>
+                        </div>
+                        <div class="listPart">
+                            <div class="backService"><span class="font-bold subtitle16px">Development</span></div>
+                            <div class="d-flex flex-column fx-listServices ">
+                                <a class="font-medium">Web Development</a>
+                                <a class="font-medium">Mobile App Development</a>
+                                <a class="font-medium">Social Media Solutions</a>
+                                <a class="font-medium">E-commerce Solutions</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- <a routerLink="ourPartners" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
                 partners</a> -->
             <a routerLink="news" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Insights</a>

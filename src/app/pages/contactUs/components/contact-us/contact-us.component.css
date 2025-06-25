@@ -98,6 +98,9 @@ padding-top: 4rem;}
   }
   @media (max-width:512px) {}
 /* contact Us S3 Style */
+.contactUsS3{
+  margin-bottom: 7rem;
+}
 .contactUsS3 .contactUsS3-titles{
     width: 70%;
     margin: auto;

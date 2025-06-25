@@ -7,12 +7,20 @@ import { Meta, Title } from '@angular/platform-browser';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { filter } from 'rxjs/operators';
-import { ModalJoinUsComponent } from './shared/modal-join-us/modal-join-us.component';
+import { ModalJoinUsComponent } from './shared/modals/modal-join-us/modal-join-us.component';
+import { TalkCodeComponent } from './shared/modals/talk-code/talk-code.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarDesComponent, NavbarMbComponent, FooterComponent,ModalJoinUsComponent],
+  imports: [
+    RouterOutlet, 
+    NavbarDesComponent, 
+    NavbarMbComponent, 
+    FooterComponent,
+    ModalJoinUsComponent,
+    TalkCodeComponent
+  ],
   templateUrl: './app.component.html',
    encapsulation: ViewEncapsulation.None,
   styleUrl: './app.component.css',
@@ -34,14 +42,14 @@ export class AppComponent implements OnInit  {
     if (isPlatformBrowser(this.platformId)) {
       const AOS = (await import('aos')).default;
       AOS.init();
-      setTimeout(() => {
-        const appRoot = document.querySelector('app-root') as HTMLElement;
-        const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
-        splashScreen.style.opacity = '0'; 
-        splashScreen.style.display = 'none';
-        appRoot.style.opacity = '1';
-        console.log('App Root is now visible:', appRoot.style.visibility);
-      }, 5000);
+      // setTimeout(() => {
+      //   const appRoot = document.querySelector('app-root') as HTMLElement;
+      //   const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
+      //   splashScreen.style.opacity = '0'; 
+      //   splashScreen.style.display = 'none';
+      //   appRoot.style.opacity = '1';
+      //   console.log('App Root is now visible:', appRoot.style.visibility);
+      // }, 5000);
   }
 
   this.titleService.setTitle(this.pageTitle);
@@ -52,4 +60,5 @@ export class AppComponent implements OnInit  {
   this.meta.updateTag({ property: 'og:url', content: 'https://code.sa' });
   this.meta.updateTag({ property: 'og:type', content: 'website' });
 }
+
 }

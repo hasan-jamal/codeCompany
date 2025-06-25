@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
   imports: [],
   templateUrl: './service-details.component.html',
   styleUrls: ['./service-details.component.css',
-                  '../../../../assets/css/general.css',
                   '../../../../assets/css/sections/contactSection.css',
                   '../../../../assets/css/sections/ourServiceFlow.css'
   ],

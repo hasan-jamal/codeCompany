@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { ModalService } from '../../../../services/ModalService';
 
 @Component({
   selector: 'app-servcies',
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './servcies.component.html',
   styleUrls: ['./servcies.component.css',
-                      '../../../../../assets/css/general.css',
+                  '../../../../../assets/css/pages/ourServcies.css',
                   '../../../../../assets/css/sections/contactSection.css',
-                  '../../../../../assets/css/sections/ourServiceFlow.css']
+                  '../../../../../assets/css/sections/ourServiceFlow.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ServciesComponent {
-  constructor(public router:Router){}
+  constructor(public router:Router,private modalService: ModalService){}
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
+  }
 }

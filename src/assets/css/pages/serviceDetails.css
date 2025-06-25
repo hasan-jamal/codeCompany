@@ -15,12 +15,6 @@
   @media (min-width:1920px) {
     .serviceDetailsS1 img{height: 360px;}
   }
-  @media (min-width:2048px) { }
-  @media (min-width:2304px) {}
-@media (max-width:1228.8px) {
-}
-@media (max-width:1024px) {
-}
 @media (max-width:614.4px) {
     .serviceDetailsS1 .fx-serviceDetailsS1{flex-direction: column;align-items: start;gap: 12px;margin-bottom: 24px;}
     .serviceDetailsS1 img{border-radius: 20px;}
@@ -32,7 +26,8 @@
     gap: 50px;
     justify-content: space-between;
 }
-.serviceDetailsS2 .serviceDetailsS2-part1{width: 60%;}
+.serviceDetailsS2 .serviceDetailsS2-part1{width: 55%;}
+.serviceDetailsS2 .serviceDetailsS2-part2{width: 45%;}
 .serviceDetailsS2 .serviceDetailsS2-part1 .spanHead{margin-bottom: 24px;display: block;}
 .serviceDetailsS2 .serviceDetailsS2-part1 h1{margin-bottom: 16px;}
 .serviceDetailsS2 .serviceDetailsS2-part2{width:40%;}
@@ -51,6 +46,9 @@
     .serviceDetailsS2 .fx-serviceDetailsS2{gap: 24px;}
 }
 /* Service Details Section 3 */
+.serviceDetailsS3{
+    margin-bottom: 2rem;
+}
 .serviceDetailsS3 .serviceDetailsS3-titles{
     width: 50%;
     margin: auto;
@@ -58,11 +56,12 @@
 .serviceDetailsS3 .fx-serviceDetailsS3{
     gap: 40px;
     margin-top: 64px;
+    align-items: center;
 }
-.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts{width: 50%;}
-.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs{width: 50%;position: relative;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts{width: 55%;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs{width: 45%;position: relative;}
 .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
-    height: 100%;
+    height: 450px;
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
@@ -142,9 +141,7 @@ top: -3rem;
     z-index: 1;
     box-shadow: 9px 9px #f2f9ff;
 }
-.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts h4{
-    margin-bottom: 10px;
-}
+
 .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts p b{
     margin-top: 10px;
 }
@@ -155,7 +152,7 @@ top: -3rem;
  border-radius: 0 0 0px 30px;
 }
 .fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs .boxTop::after {
-top: auto;
+    top: auto;
     bottom: -3rem;
     right: -1.5px;
     transform: rotate(-95deg);
@@ -183,14 +180,31 @@ top: auto;
     right: auto;
     transform: rotate(-7deg);
 }
-  @media (min-width:1706.67px) {}
-  @media (min-width:1920px) {}
-  @media (min-width:2048px) { }
+  @media (min-width:1706.67px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 500px;}
+  }
+  @media (min-width:1920px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 550px;}
+  }
+  @media (min-width:2048px) { 
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 600px;}
+  }
   @media (min-width:2304px) {}
-  @media (max-width:1396.36px) {}
-  @media (max-width:1228.8px) {}
-  @media (max-width:1024px) {}
-  @media (max-width:877.71px) {}
+  @media (max-width:1396.36px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 400px;}
+  }
+  @media (max-width:1228.8px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 350px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop,
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom{width: 80px;height: 80px;}
+  }
+  @media (max-width:1024px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop,
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom{width: 70px;height: 70px;}
+  }
+  @media (max-width:877.71px) {
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 300px;}
+  }
   @media (max-width:768px) {}
   @media (max-width:614.4px) {
     .serviceDetailsS3 .fx-serviceDetailsS3{flex-direction: column;gap:16px;margin-top: 48px;}
@@ -201,5 +215,11 @@ top: auto;
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop,
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom {width: 70px;height: 70px;}
 .serviceDetailsS3 .serviceDetailsS3-titles{width: 95%;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 100%;}
   }
   @media (max-width:512px) {}
+  .serviceDetailsS3 .serviceDetailsS3-texts .subtitle18px{margin-bottom:8px;}
+  .serviceDetailsS3 .serviceDetailsS3-texts .subtitle16px{margin-bottom: 16px;}
+  .serviceDetailsS3 .serviceDetailsS3-texts p:last-child{
+    margin-bottom: 0;
+  }

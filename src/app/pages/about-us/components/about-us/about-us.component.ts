@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
+import { TalkCodeComponent } from '../../../../shared/modals/talk-code/talk-code.component';
+import { ModalService } from '../../../../services/ModalService';
 
 @Component({
   selector: 'app-about-us',
   imports: [    SlickCarouselModule,CommonModule],
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css',
-                  '../../../../../assets/css/general.css',
                   '../../../../../assets/css/sections/contactSection.css',
   ],
     encapsulation: ViewEncapsulation.None
@@ -16,7 +17,7 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 })
 export class AboutUsComponent {
   @ViewChild('slickModallogos',{ static:false}) slickModallogos!:SlickCarouselComponent;
-  constructor(public router:Router){}
+
   isHovered = false;
   // Second slider logos
  logos = [
@@ -29,7 +30,6 @@ export class AboutUsComponent {
   "assets/images/aboutUsLogos/imgLogo7.png",
   "assets/images/aboutUsLogos/imgLogo8.png",
 ];
-
   slideConfig = {
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -95,8 +95,6 @@ export class AboutUsComponent {
   prevSlidelogo() {
     this.slickModallogos.slickPrev();
   }
-
-
   teamCards = [
     {
       id: 1,
@@ -115,12 +113,14 @@ export class AboutUsComponent {
       imageUrl: "assets/images/person.jpeg"
     }
   ];
-
   onMouseEnter(card: any) {
     card.isHovered = true;
   }
-
   onMouseLeave(card: any) {
     card.isHovered = false;
+  }
+  constructor(public router:Router,private modalService: ModalService){}
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
   }
 }
