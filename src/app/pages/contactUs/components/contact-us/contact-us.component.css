@@ -101,6 +101,12 @@ padding-top: 4rem;}
 .contactUsS3{
   margin-bottom: 7rem;
 }
+.contactUsS3 .contactWord{
+  width: 100%;
+}
+.contactUsS3 .contactUsS3-container{
+  margin-top: -7rem;
+}
 .contactUsS3 .contactUsS3-titles{
     width: 70%;
     margin: auto;
@@ -212,6 +218,7 @@ padding-top: 4rem;}
     .contactUsS3 .boxContact .fx-boxContact .boxContact-text p{width: 95%;text-align: center;}
     .contactUsS3 .boxContact .fx-boxContact .boxContact-text,
     .contactUsS3 .boxContact .fx-boxContact .boxContact-form{width: 100%;}
+    .contactUsS3 .contactUsS3-container{margin-top: -1rem;}
   }
   /* Section Map */
   .sectionMap{

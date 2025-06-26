@@ -237,6 +237,9 @@
     .blogPageS2 .fx-blogPageS2 .fxCard .fxCard-text h3{font-size: 18px;}
 }
 /* blog Page Section 3 Style  */
+.blogPageS3 .divTitles{
+    margin-bottom: 48px;
+}
 .blogPageS3 .fxColumns-gap{
     gap: 72px;
 }
@@ -388,8 +391,7 @@
 
   /* Blog Page S4 Style */
   .blogPageS4{
-    margin-bottom: 62px;
-
+    margin-bottom: 112px;
   }
   .blogPageS4-titles{
     width: 55%;
@@ -513,7 +515,7 @@
     .blogPageS4 .divSlider .sliderStories .cardStory .divButton::after {width: 40px;right: -2.3rem;box-shadow: 12px 12px #f6fafd;}
 }
 @media (max-width:614.4px) {
-
+    .blogPageS4{margin-bottom: 70px;}
     .blogPageS4 .divSlider .sliderStories .cardStory{height: 150px;padding:16px;}
     .blogPageS4 .arrowsStories .leftStory{width: 35px;}
     .blogPageS4 .arrowsStories .rightStory{width: 60px;}
