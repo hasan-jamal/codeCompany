@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { AboutUsComponent } from "../components/about-us/about-us.component";
 declare var anychart: any;
 import { Router } from '@angular/router';
@@ -63,6 +63,7 @@ export class OurPartnersComponent implements AfterViewInit{
   { "lat": -23.219750, "long": 128.711468, "flag": "assets/images/flags/Australia.jpg", "Name": "Australia" },
  ]
  ngAfterViewInit(): void {
+  this.calculateDots();
   anychart.onDocumentReady(() => {
     const data = this.locations;
     if (!data || data.length === 0) {
@@ -110,65 +111,73 @@ export class OurPartnersComponent implements AfterViewInit{
     "assets/images/aboutUsLogos/imgLogo7.png",
     "assets/images/aboutUsLogos/imgLogo8.png",
   ];
+
+  logos2 = [...this.logos].reverse();
+
   slideConfig = {
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 800,
+    autoplay: false,
     infinite: true,
     arrows: false,
     dots: false,
-    rtl: false, // This makes it move from left to right
+    rtl: false,
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2.6
-        }
-      }
+      {breakpoint: 1920, settings: { slidesToShow: 7 } },
+      { breakpoint: 1288, settings: { slidesToShow: 5 } },
+      { breakpoint: 1024, settings: { slidesToShow: 4 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 480, settings: { slidesToShow: 2.6 } }
     ]
   };
 
-  // Second slider logos
-  logos2 = [
-    "assets/images/aboutUsLogos/imgLogo8.png",
-    "assets/images/aboutUsLogos/imgLogo7.png",
-    "assets/images/aboutUsLogos/imgLogo6.png",
-    "assets/images/aboutUsLogos/imgLogo5.png",
-    "assets/images/aboutUsLogos/imgLogo4.png",
-    "assets/images/aboutUsLogos/imgLogo3.png",
-    "assets/images/aboutUsLogos/imgLogo2.png",
-    "assets/images/aboutUsLogos/imgLogo1.png",
-  ];
   slideConfiglogos2 = {
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 500,
+    autoplay: false,
     infinite: true,
     arrows: false,
     dots: false,
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2.5
-        }
-      }
+      { breakpoint: 1288, settings: { slidesToShow: 5 } },
+      { breakpoint: 1024, settings: { slidesToShow: 4 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 480, settings: { slidesToShow: 2.5 } }
     ]
   };
+
+  currentSlide = 0;
+  dots: number[] = [];
+
+  @ViewChild('slickModal1') slickModal1!: SlickCarouselComponent;
+  @ViewChild('slickModal2') slickModal2!: SlickCarouselComponent;
+
+  calculateDots() {
+    const totalSlides = Math.ceil(this.logos.length / this.slideConfig.slidesToShow);
+    this.dots = Array(totalSlides).fill(0);
+  }
+
+  nextSlide() {
+    this.slickModal1.slickNext();
+    this.slickModal2.slickPrev();
+    this.updateCurrentSlide(1);
+  }
+  
+  prevSlide() {
+    this.slickModal1.slickPrev();
+    this.slickModal2.slickNext();
+    this.updateCurrentSlide(-1);
+  }
+  goToSlide(index: number) {
+    this.slickModal1.slickGoTo(index);
+    this.slickModal2.slickGoTo(index);
+    this.currentSlide = index;
+  }
+
+  updateCurrentSlide(direction: number) {
+    const total = this.dots.length;
+    this.currentSlide = (this.currentSlide + direction + total) % total;
+  }
   openTalkCodeModal() {
     this.modalService.open('modalTalkCode');
   }

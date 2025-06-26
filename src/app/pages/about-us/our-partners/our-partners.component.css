@@ -258,6 +258,7 @@
     justify-content: center;
     position: relative;
     align-items: center;
+    z-index: 5;
 }
 .partnerOne .partnerOne-content::after{
     position: absolute;
@@ -265,7 +266,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 2;
+    z-index: -1;
     border-radius: 20px;
 }
 .partnerOne .partnerOne-content h1{
@@ -322,6 +323,7 @@
 
 /* Section Five Style  */
 .sectionFive{margin-top: 128px;margin-bottom: 10rem;}
+.sectionFive .sliderLogos{margin-bottom: 1rem;}
 .sectionFive h1{margin-bottom: 74px;}
 .sectionFive .m-sliderLogos{margin-bottom: 24px;}
 .sectionFive .slide{
@@ -336,6 +338,33 @@
     border: 2px solid #D9D9D9;
     background: #FFF;
     object-fit: contain;
+}
+.fxArrowsSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ margin-top: 2rem;
+}
+.fxArrowsSlider button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.points {
+  display: flex;
+  gap: 8px;
+}
+.points span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 165, 0, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.points span.active {
+  background-color: #FF8C00;
 }
 @media (min-width:1706.67px) {}
 @media (min-width:1920px) {}
@@ -360,5 +389,6 @@
     .sectionFive .slide{padding: 0 4px;height: 110px;}
     .sectionFive .slide img{padding:10px 16px;}
     .sectionFive .m-sliderLogos{margin-bottom: 16px;}
+    .fxArrowsSlider button img{width: 40px;}
 }
 @media (max-width:512px) {}

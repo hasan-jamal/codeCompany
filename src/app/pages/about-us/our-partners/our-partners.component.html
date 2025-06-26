@@ -7,7 +7,7 @@
             </h1>
             <p class="mb-0 style-font colorWhite subtitle20px text-center">
                 At CODE, partnership means alignment — with your mission, your environment, and your goals.
-                <br><br>
+                <br>
                 We work with visionary leaders to design AI-driven solutions that solve strategic challenges, enhance
                 performance, and
                 deliver long-term national value.
@@ -43,7 +43,7 @@
             </h1>
             <p class="mb-0 text-center subtitle20px style-font">We collaborate with leading software and technology
                 providers to deliver integrated solutions built for <b> performance,
-                    scale </b>, and <b>security</b>. Every partnership strengthens our ability to meet complex <b>local
+                    scale</b>, and <b>security</b>. Every partnership strengthens our ability to meet complex <b>local
                     challenges </b> with <b>
                     globally proven</b>
                 innovation — tailored to your environment.</p>
@@ -53,18 +53,29 @@
 </section>
 <section class="sectionFive">
     <div class="sectionFive-container px-120">
-        <ngx-slick-carousel class="sliderLogos sliderLogos1 m-sliderLogos" [config]="slideConfig">
+        <ngx-slick-carousel #slickModal1="slick-carousel" class="sliderLogos sliderLogos1" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let logo of logos" class="slide">
                 <img [src]="logo" alt="logo" />
             </div>
         </ngx-slick-carousel>
-
-        <ngx-slick-carousel class="sliderLogos sliderLogos2" [config]="slideConfiglogos2">
+        <ngx-slick-carousel #slickModal2="slick-carousel" class="sliderLogos sliderLogos2" [config]="slideConfiglogos2">
             <div ngxSlickItem *ngFor="let logo of logos2" class="slide">
                 <img [src]="logo" alt="logo" />
             </div>
         </ngx-slick-carousel>
-
+        <div class="d-flex fxArrowsSlider">
+            <button class="arrowLeft" (click)="prevSlide()">
+                <img src="assets/images/arrowLeftOrange.svg" alt="arrow Left Orange">
+            </button>
+            <div class="points">
+                <span *ngFor="let dot of dots; let i = index" [class.active]="i === currentSlide"
+                    (click)="goToSlide(i)">
+                </span>
+            </div>
+            <button class="arrowRight" (click)="nextSlide()">
+                <img src="assets/images/arrowRightOrange.svg" alt="arrow Right Orange">
+            </button>
+        </div>
     </div>
 </section>
 <!-- <section class="ourDatacenterPartnersS2">
@@ -111,8 +122,8 @@
         <div class="ourServiceFlow-titles">
             <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">Our Service
                 Flow</span>
-            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">Our
-                Step-by-Step Work Process <br>at <span class="color-linearGradient">Code</span> from start to
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center">Our
+                Step-by-Step Work Process at <span class="color-linearGradient text-uppercase">Code</span> from start to
                 finish
             </h1>
             <p class="style-font text-center colorTwo subtitle24px p-head">At CODE, we follow a structured and
