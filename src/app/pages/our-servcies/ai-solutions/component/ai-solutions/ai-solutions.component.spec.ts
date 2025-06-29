@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AISolutionsComponent } from './ai-solutions.component';
+import { AiSolutionsComponent } from './ai-solutions.component';
 
-describe('AISolutionsComponent', () => {
-  let component: AISolutionsComponent;
-  let fixture: ComponentFixture<AISolutionsComponent>;
+describe('AiSolutionsComponent', () => {
+  let component: AiSolutionsComponent;
+  let fixture: ComponentFixture<AiSolutionsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AISolutionsComponent]
+      imports: [AiSolutionsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AISolutionsComponent);
+    fixture = TestBed.createComponent(AiSolutionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

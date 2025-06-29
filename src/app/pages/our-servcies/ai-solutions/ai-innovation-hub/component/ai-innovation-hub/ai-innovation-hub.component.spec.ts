@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AIInnovationHubComponent } from './ai-innovation-hub.component';
+import { AiInnovationHubComponent } from './ai-innovation-hub.component';
 
-describe('AIInnovationHubComponent', () => {
-  let component: AIInnovationHubComponent;
-  let fixture: ComponentFixture<AIInnovationHubComponent>;
+describe('AiInnovationHubComponent', () => {
+  let component: AiInnovationHubComponent;
+  let fixture: ComponentFixture<AiInnovationHubComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AIInnovationHubComponent]
+      imports: [AiInnovationHubComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AIInnovationHubComponent);
+    fixture = TestBed.createComponent(AiInnovationHubComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

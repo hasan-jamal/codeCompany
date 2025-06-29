@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AIComputerVisionComponent } from './ai-computer-vision.component';
+import { AiComputerVisionComponent } from './ai-computer-vision.component';
 
-describe('AIComputerVisionComponent', () => {
-  let component: AIComputerVisionComponent;
-  let fixture: ComponentFixture<AIComputerVisionComponent>;
+describe('AiComputerVisionComponent', () => {
+  let component: AiComputerVisionComponent;
+  let fixture: ComponentFixture<AiComputerVisionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AIComputerVisionComponent]
+      imports: [AiComputerVisionComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AIComputerVisionComponent);
+    fixture = TestBed.createComponent(AiComputerVisionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
