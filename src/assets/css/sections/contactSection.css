@@ -120,7 +120,7 @@
      .contactSection .contactSection-texts {padding: 0 43px 27px 0;}
 }
 @media (max-width:768px) {
-    .contactSection .contactSection-texts{width: 50%;}
+    .contactSection .contactSection-texts{width: max-content;}
 }
 @media (max-width:614.4px) {
     .contactSection .contactSection-div{

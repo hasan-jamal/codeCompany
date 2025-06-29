@@ -8116,7 +8116,7 @@
           woe_id: 23424846,
           id: "ID",
           abbrev: "Indo.",
-          subregion: "South-Eastern Asia",
+          subregion: "South-Easterne Asia",
           region_wb: "East Asia & Pacific",
           iso_a3: "IDN",
           iso_a2: "ID",

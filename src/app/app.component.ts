@@ -27,8 +27,7 @@ import { TalkCodeComponent } from './shared/modals/talk-code/talk-code.component
 })
 export class AppComponent implements OnInit  {
   public pageTitle = 'Code Information';
-
-  constructor(@Inject(PLATFORM_ID) private platformId: Object,private titleService: Title,private meta: Meta,private router: Router) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object,private title: Title,private meta: Meta,private router: Router) {
     if (isPlatformBrowser(this.platformId)) {
     this.router.events
     .pipe(filter(event => event instanceof NavigationEnd))
@@ -51,14 +50,25 @@ export class AppComponent implements OnInit  {
         console.log('App Root is now visible:', appRoot.style.visibility);
       }, 5000);
   }
+  this.title.setTitle('الرئيسية | موقعي');
 
-  this.titleService.setTitle(this.pageTitle);
+  this.meta.addTags([
+    { name: 'description', content: 'شركة كود المتقدمة لتقنية المعلومات هي شركة سعودية تأسست عام 2015، وتعمل في قطاع استشارات تقنية المعلومات وخدمات تكامل الأنظمة. يقع مقرها في الرياض – حي الملقا، وتُعرف بتقديم حلول تقنية متكاملة تدعم التحول الرقمي في المملكة، بما يتماشى مع رؤية السعودية 2030' },
+    { name: 'author', content: 'Code Advanced for Information Technology' },
+    { name: 'keywords', content: 'خدمات مدارة, خدمات مدارة لقواعد البيانات, خدمات البنية التحتية, خدمات التصميم والتكامل,  خدمات تصميم البوابات والشيربوينت, Managed Services, Consulting, Database Managed Services, Infrastructure Managed Services, Networking, DWH, Power BI, BI' },
+    { name: 'robots', content: 'index, follow' },
 
-  this.meta.updateTag({ property: 'og:title', content: 'Code Information' });
-  this.meta.updateTag({ property: 'og:description', content: 'AI & Digital Transformation Built for Saudi Arabia.' });
-  this.meta.updateTag({ property: 'og:image', content: 'https://code.sa/assets/images/logoWhitebgBlack.png' });
-  this.meta.updateTag({ property: 'og:url', content: 'https://code.sa' });
-  this.meta.updateTag({ property: 'og:type', content: 'website' });
+    { property: 'og:title', content: 'مرحبا بكم في شركة كود المتقدمة لتقنية المعلومات' },
+    { property: 'og:description', content: 'شركة كود المتقدمة لتقنية المعلومات هي شركة سعودية تأسست عام 2015، وتعمل في قطاع استشارات تقنية المعلومات وخدمات تكامل الأنظمة. يقع مقرها في الرياض – حي الملقا، وتُعرف بتقديم حلول تقنية متكاملة تدعم التحول الرقمي في المملكة، بما يتماشى مع رؤية السعودية 2030' },
+    { property: 'og:image', content: 'https://code.sa/assets/images/ogLogo.jpg' },
+    { property: 'og:url', content: 'https://code.sa/' },
+
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'مرحبا بكم في شركة كود المتقدمة لتقنية المعلومات' },
+    { name: 'twitter:description', content: 'مرحبا بكم في شركة كود المتقدمة لتقنية المعلومات' },
+    { name: 'twitter:image', content: 'https://code.sa/assets/images/ogLogo.jpg'},
+   ]);
+
 }
 
 }

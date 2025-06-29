@@ -9,19 +9,22 @@
     width: 100%;
 }
 .serviceDetailsS1 .fx-serviceDetailsS1{align-items: end;justify-content: space-between;}
-  @media (min-width:1706.67px) {
-    .serviceDetailsS1 img{height: 300px;}
-  }
-  @media (min-width:1920px) {
-    .serviceDetailsS1 img{height: 360px;}
-  }
+@media (min-width:1706.67px) {
+  .serviceDetailsS1 img{height: 300px;}
+}
+@media (min-width:1920px) {
+  .serviceDetailsS1 img{height: 360px;}
+}
+@media (max-width:877.71px) {
+  .serviceDetailsS1{margin: 50px 0;}
+}
 @media (max-width:614.4px) {
     .serviceDetailsS1 .fx-serviceDetailsS1{flex-direction: column;align-items: start;gap: 12px;margin-bottom: 24px;}
     .serviceDetailsS1 img{border-radius: 20px;}
     .serviceDetailsS1{margin: 50px 0;}
 }
 /* Service Details Section 2 */
-.serviceDetailsS2{margin-bottom: 146px;}
+.serviceDetailsS2{margin-bottom: 32px;}
 .serviceDetailsS2 .fx-serviceDetailsS2{
     gap: 50px;
     justify-content: space-between;
@@ -61,7 +64,8 @@
 .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-texts{width: 55%;}
 .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs{width: 45%;position: relative;}
 .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
-    height: 450px;
+    min-height: 450px;
+    height: max-content;
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
@@ -181,20 +185,20 @@ top: -3rem;
     transform: rotate(-7deg);
 }
   @media (min-width:1706.67px) {
-    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 500px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 500px;}
   }
   @media (min-width:1920px) {
-    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 550px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 550px;}
   }
   @media (min-width:2048px) { 
-    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 600px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 600px;}
   }
   @media (min-width:2304px) {}
   @media (max-width:1396.36px) {
-    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 400px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 400px;}
   }
   @media (max-width:1228.8px) {
-    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 350px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 350px;}
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop,
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom{width: 80px;height: 80px;}
   }
@@ -203,7 +207,7 @@ top: -3rem;
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom{width: 70px;height: 70px;}
   }
   @media (max-width:877.71px) {
-    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 300px;}
+    .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 300px;}
   }
   @media (max-width:768px) {}
   @media (max-width:614.4px) {
@@ -215,7 +219,7 @@ top: -3rem;
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxTop,
     .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs .boxBootom {width: 70px;height: 70px;}
 .serviceDetailsS3 .serviceDetailsS3-titles{width: 95%;}
-.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{height: 100%;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height: 100%;}
   }
   @media (max-width:512px) {}
   .serviceDetailsS3 .serviceDetailsS3-texts .subtitle18px{margin-bottom:8px;}

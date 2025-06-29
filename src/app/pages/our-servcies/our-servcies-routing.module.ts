@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServciesComponent } from './components/servcies/servcies.component';
-import { ServiceDetailsComponent } from './service-details/service-details.component';
-import { AISolutionsComponent } from './ai-solutions/ai-solutions.component';
 import { AutomationSecurityComponent } from './automation-security/automation-security.component';
 import { DataCloudEngineeringComponent } from './data-cloud-engineering/data-cloud-engineering.component';
 import { PassiveCivilWorkComponent } from './passive-civil-work/passive-civil-work.component';
@@ -37,7 +35,8 @@ const routes: Routes = [
   {
     path:'Automation&Security',
     component:AutomationSecurityComponent
-  }
+  },
+  
 ];
 
 @NgModule({
