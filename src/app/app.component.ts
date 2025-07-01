@@ -50,7 +50,7 @@ export class AppComponent implements OnInit  {
         console.log('App Root is now visible:', appRoot.style.visibility);
       }, 5000);
   }
-  this.title.setTitle('الرئيسية | موقعي');
+  this.title.setTitle('CODE Info tech');
 
   this.meta.addTags([
     { name: 'description', content: 'شركة كود المتقدمة لتقنية المعلومات هي شركة سعودية تأسست عام 2015، وتعمل في قطاع استشارات تقنية المعلومات وخدمات تكامل الأنظمة. يقع مقرها في الرياض – حي الملقا، وتُعرف بتقديم حلول تقنية متكاملة تدعم التحول الرقمي في المملكة، بما يتماشى مع رؤية السعودية 2030' },
