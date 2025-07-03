@@ -26,6 +26,16 @@ const routes: Routes = [
     path: 'AiInnovationHub',
     loadChildren: () =>
       import('./ai-innovation-hub/ai-innovation-hub.module').then(m => m.AiInnovationHubModule)
+  },
+  {
+    path: 'IndoorWayfinding',
+    loadChildren: () =>
+      import('./indoor-wayfinding/indoor-wayfinding.module').then(m => m.IndoorWayfindingModule)
+  },
+  {
+    path: 'smartCabins',
+    loadChildren: () =>
+      import('./smart-cabins/smart-cabins.module').then(m => m.SmartCabinsModule)
   }
 ];
 @NgModule({

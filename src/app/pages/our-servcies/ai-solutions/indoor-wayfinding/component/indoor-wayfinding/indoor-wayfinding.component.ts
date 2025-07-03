@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { ModalService } from '../../../../../../services/ModalService';
 
 @Component({
   selector: 'app-indoor-wayfinding',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './indoor-wayfinding.component.html',
-  styleUrl: './indoor-wayfinding.component.css'
+  styleUrls: ['./indoor-wayfinding.component.css',
+                    '../../../../../../../assets/css/pages/serviceDetails.css',
+                    '../../../../../../../assets/css/sections/contactSection.css',
+                    '../../../../../../../assets/css/pages/ourServcies.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class IndoorWayfindingComponent {
-
+constructor(private modalService: ModalService){}
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
+  }
 }

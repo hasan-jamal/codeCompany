@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServciesComponent } from './components/servcies/servcies.component';
-import { AutomationSecurityComponent } from './automation-security/automation-security.component';
 import { DataCloudEngineeringComponent } from './data-cloud-engineering/data-cloud-engineering.component';
 import { PassiveCivilWorkComponent } from './passive-civil-work/passive-civil-work.component';
 import { SoftwareDevelopmentComponent } from './software-development/software-development.component';
+import { AutomationSecurityComponent } from './automation-security/component/automation-security/automation-security.component';
 
 const routes: Routes = [
   {
