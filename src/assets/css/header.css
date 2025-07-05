@@ -245,7 +245,7 @@ header .btnServicesHeader .listServicesHeader .listPart.listPartCenter{
   max-width: calc(36.3% - 0px);
 }
 .header .btnServicesHeader .listServicesHeader .backService{
-  background-image: url(../images/back-listService.svg);
+  background-image: url('/assets/images/back-listService.svg');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,7 +262,7 @@ header .btnServicesHeader .listServicesHeader .listPart.listPartCenter{
   color: #FFF;
 }
 .header .btnServicesHeader .listServicesHeader .backServiceActive{
-  background-image: url(../images/backServiceActive.svg);
+  background-image: url('/assets/images/backServiceActive.svg');
 }
 header .btnServicesHeader .fx-listServices a{
   color: #4F4F4F;

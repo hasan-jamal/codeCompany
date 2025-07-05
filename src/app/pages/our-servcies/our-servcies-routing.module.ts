@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServciesComponent } from './components/servcies/servcies.component';
-import { DataCloudEngineeringComponent } from './data-cloud-engineering/data-cloud-engineering.component';
 import { PassiveCivilWorkComponent } from './passive-civil-work/passive-civil-work.component';
-import { SoftwareDevelopmentComponent } from './software-development/software-development.component';
 import { AutomationSecurityComponent } from './automation-security/component/automation-security/automation-security.component';
+import { SoftwareDevelopmentComponent } from './software-development/component/software-development/software-development.component';
 
 const routes: Routes = [
   {
@@ -17,8 +16,9 @@ const routes: Routes = [
       import('./ai-solutions/ai-solutions.module').then(m => m.AiSolutionsModule)
   },
   {
-    path:'Automation&Security',
-    component:AutomationSecurityComponent
+    path:'AutomationAndSecurity',
+    loadChildren: () =>
+      import('./automation-security/automation-security.module').then(m => m.AutomationSecurityModule)
   },
   {
     path:'Passive&CivilWork',
@@ -26,11 +26,13 @@ const routes: Routes = [
   },
   {
     path:'Data&CloudEngineering',
-    component:DataCloudEngineeringComponent
+    loadChildren: () =>
+      import('./data-cloud-engineering/data-cloud-engineering.module').then(m => m.DataCloudEngineeringModule)
   },
   {
     path:'Software&Development',
-    component:SoftwareDevelopmentComponent
+    loadChildren: () =>
+      import('./software-development/software-development.module').then(m => m.SoftwareDevelopmentModule)
   },
   {
     path:'Automation&Security',

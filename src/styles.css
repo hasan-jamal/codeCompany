@@ -146,6 +146,9 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
     .px-90{padding: 0 20px;}
     .mb16{margin-bottom:14px;}  
 }
+@media (max-width:614px) {
+ .fxColumnMb{flex-direction: column;}
+}
 .pre-whiteSpace{white-space: pre;}
 .btn-linearGradient{
   border-radius: 15px;
@@ -409,7 +412,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
     align-items: center;
     justify-content: center;
     opacity: 1;
-
+display: none;
   }
   
   .logo-wrapper {

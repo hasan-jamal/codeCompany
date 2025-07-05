@@ -9,18 +9,20 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 import { filter } from 'rxjs/operators';
 import { ModalJoinUsComponent } from './shared/modals/modal-join-us/modal-join-us.component';
 import { TalkCodeComponent } from './shared/modals/talk-code/talk-code.component';
+import { ChatWidgetComponent } from "./shared/sectionsPublic/chat-widget/chat-widget.component";
 
 
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet, 
-    NavbarDesComponent, 
-    NavbarMbComponent, 
+    RouterOutlet,
+    NavbarDesComponent,
+    NavbarMbComponent,
     FooterComponent,
     ModalJoinUsComponent,
-    TalkCodeComponent
-  ],
+    TalkCodeComponent,
+    ChatWidgetComponent
+],
   templateUrl: './app.component.html',
    encapsulation: ViewEncapsulation.None,
   styleUrl: './app.component.css',
@@ -41,16 +43,16 @@ export class AppComponent implements OnInit  {
     if (isPlatformBrowser(this.platformId)) {
       const AOS = (await import('aos')).default;
       AOS.init();
-      setTimeout(() => {
-        const appRoot = document.querySelector('app-root') as HTMLElement;
-        const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
-        splashScreen.style.opacity = '0'; 
-        splashScreen.style.display = 'none';
-        appRoot.style.opacity = '1';
-        console.log('App Root is now visible:', appRoot.style.visibility);
-      }, 5000);
+      // setTimeout(() => {
+      //   const appRoot = document.querySelector('app-root') as HTMLElement;
+      //   const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
+      //   splashScreen.style.opacity = '0'; 
+      //   splashScreen.style.display = 'none';
+      //   appRoot.style.opacity = '1';
+      //   console.log('App Root is now visible:', appRoot.style.visibility);
+      // }, 5000);
   }
-  this.title.setTitle('CODE Info tech');
+  this.title.setTitle('CODE for Information Technology | روّاد التحول الرقمي وخدمات تقنية متكاملة');
 
   this.meta.addTags([
     { name: 'description', content: 'شركة كود المتقدمة لتقنية المعلومات هي شركة سعودية تأسست عام 2015، وتعمل في قطاع استشارات تقنية المعلومات وخدمات تكامل الأنظمة. يقع مقرها في الرياض – حي الملقا، وتُعرف بتقديم حلول تقنية متكاملة تدعم التحول الرقمي في المملكة، بما يتماشى مع رؤية السعودية 2030' },

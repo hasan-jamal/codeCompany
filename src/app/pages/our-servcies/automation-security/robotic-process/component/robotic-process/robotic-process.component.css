@@ -1,0 +1,9 @@
+.serviceDetailsS3 .serviceDetailsS3-texts p:last-child{
+    line-height: 170%;
+}
+.servicesS6 .fxTextsStyle{
+    gap: 1rem;
+}
+.servicesS6 .fxTextsStyle .fxUl{
+    gap: 3rem;
+}

@@ -7,16 +7,16 @@ const routes: Routes = [
     path: '',
     component: AutomationSecurityComponent
   },
-  // {
-  //   path: 'AIDigitalTwin',
-  //   loadChildren: () =>
-  //     import('./ai-digital-twin/ai-digital-twin.module').then(m => m.AiDigitalTwinModule)
-  // },
-  // {
-  //   path: 'AiComputerVision',
-  //   loadChildren: () =>
-  //     import('./ai-computer-vision/ai-computer-vision.module').then(m => m.AiComputerVisionModule)
-  // }
+  {
+    path: 'digitalSignature',
+    loadChildren: () =>
+      import('./digital-signature/digital-signature.module').then(m => m.DigitalSignatureModule)
+  },
+  {
+    path: 'roboticProcess',
+    loadChildren: () =>
+      import('./robotic-process/robotic-process.module').then(m => m.RoboticProcessModule)
+  }
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

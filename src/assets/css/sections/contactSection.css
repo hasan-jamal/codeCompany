@@ -123,12 +123,8 @@
     .contactSection .contactSection-texts{width: max-content;}
 }
 @media (max-width:614.4px) {
-    .contactSection .contactSection-div{
-        flex-direction: column;
-        background-size: cover;
-        background-position: right;
-    }
-    .contactSection .contactSection-div .contactSection-texts{width: 70%;padding: 0 23px 27px 0;}
+    .contactSection .contactSection-div{flex-direction: column;background-size: cover;background-position: right;}
+    .contactSection .contactSection-div .contactSection-texts{width: 72%;padding: 0 23px 27px 0;}
     .contactSection .contactSection-div .contactSection-buttons{height: max-content;}
     .contactSection p{margin-top: 24px;}
     .contactSection-container{padding-top: 3rem;}

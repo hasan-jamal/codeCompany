@@ -226,7 +226,7 @@ constructor(
       title: "AI Computer Vision Solution",
       subTitle: "Smarter Surveillance. Instant Insight.",
       content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior, and alerts your team in real time — so nothing critical slips through the cracks.",
-      pathBtn:""
+      pathBtn:"AISolutions/AiComputerVision"
     },
   ];
 
