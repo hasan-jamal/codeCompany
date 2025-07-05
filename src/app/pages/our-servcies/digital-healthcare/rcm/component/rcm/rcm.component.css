@@ -1,0 +1,7 @@
+body .serviceDetailsS3 .fx-serviceDetailsS3{
+    align-items: normal;
+}
+body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
+min-height: 100%;
+height: 100%;
+}

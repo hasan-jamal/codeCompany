@@ -1,0 +1,8 @@
+.mb24{
+    margin-bottom: 1.5rem !important;
+}
+@media (max-width:614px) {
+    .mb24{
+        margin-bottom: 0.7rem !important;
+    }
+}

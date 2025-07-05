@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServciesComponent } from './components/servcies/servcies.component';
-import { PassiveCivilWorkComponent } from './passive-civil-work/passive-civil-work.component';
-import { AutomationSecurityComponent } from './automation-security/component/automation-security/automation-security.component';
-import { SoftwareDevelopmentComponent } from './software-development/component/software-development/software-development.component';
 
 const routes: Routes = [
   {
@@ -22,7 +19,8 @@ const routes: Routes = [
   },
   {
     path:'Passive&CivilWork',
-    component:PassiveCivilWorkComponent
+    loadChildren: () =>
+      import('./passive-civil-work/passive-civil-work.module').then(m => m.PassiveCivilWorkModule)
   },
   {
     path:'Data&CloudEngineering',
@@ -35,8 +33,9 @@ const routes: Routes = [
       import('./software-development/software-development.module').then(m => m.SoftwareDevelopmentModule)
   },
   {
-    path:'Automation&Security',
-    component:AutomationSecurityComponent
+    path:'DigitalHealthcare',
+    loadChildren: () =>
+      import('./digital-healthcare/digital-healthcare.module').then(m => m.DigitalHealthcareModule)
   },
   
 ];
