@@ -7,12 +7,31 @@ const routes: Routes = [
     path: '',
     component: PassiveCivilWorkComponent
   },
-  // {
-  //   path: 'Diagnosis-RelatedGroups',
-  //   loadChildren: () =>
-  //     import('./drg/drg.module').then(m => m.DrgModule)
-  // },
-
+  {
+    path: 'businessResearch',
+    loadChildren: () =>
+      import('./business-research/business-research.module').then(m => m.BusinessResearchModule)
+  },
+  {
+    path: 'commandCenter',
+    loadChildren: () =>
+      import('./command-center/command-center.module').then(m => m.CommandCenterModule)
+  },
+  {
+    path: 'mediaCenter',
+    loadChildren: () =>
+      import('./media-center/media-center.module').then(m => m.MediaCenterModule)
+  },
+  {
+    path: 'smartMeetingRooms',
+    loadChildren: () =>
+      import('./smart-meeting-rooms/smart-meeting-rooms.module').then(m => m.SmartMeetingRoomsModule)
+  },
+  {
+    path: 'socNocenvironments',
+    loadChildren: () =>
+      import('./soc-nocenvironments/soc-nocenvironments.module').then(m => m.SocNocenvironmentsModule)
+  },
 ];
 
 

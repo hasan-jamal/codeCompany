@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { ModalService } from '../../../../../../services/ModalService';
 
 @Component({
   selector: 'app-business-research',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './business-research.component.html',
-  styleUrl: './business-research.component.css'
+  styleUrls: ['./business-research.component.css',
+    '../../../../../../../assets/css/pages/serviceDetails.css',
+    '../../../../../../../assets/css/sections/contactSection.css',
+    '../../../../../../../assets/css/pages/ourServcies.css'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class BusinessResearchComponent {
-
+  constructor(private modalService: ModalService){}
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
+  }
 }

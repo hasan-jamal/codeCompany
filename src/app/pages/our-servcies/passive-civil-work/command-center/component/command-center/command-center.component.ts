@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { ModalService } from '../../../../../../services/ModalService';
 
 @Component({
   selector: 'app-command-center',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './command-center.component.html',
-  styleUrl: './command-center.component.css',
+  styleUrls: ['./command-center.component.css',
+  '../../../../../../../assets/css/pages/serviceDetails.css',
+  '../../../../../../../assets/css/sections/contactSection.css',
+  '../../../../../../../assets/css/pages/ourServcies.css'],
+  encapsulation: ViewEncapsulation.None,
   
 })
 export class CommandCenterComponent {
-
+  constructor(private modalService: ModalService){}
+  openTalkCodeModal() {
+    this.modalService.open('modalTalkCode');
+  }
 }
