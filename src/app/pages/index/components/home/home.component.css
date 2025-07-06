@@ -741,7 +741,6 @@
 }
 /* Just for copy */
 @media (min-width:1706.67px) {
-    .sectionVideos .divVideo .mainVideo{height:530px;}
     .video-thumbnails .thumbnail{height: 200px;}
     .sectionOne .part2-sectionOne .fxBox-num .fx-number img{width: 30px;}
 }

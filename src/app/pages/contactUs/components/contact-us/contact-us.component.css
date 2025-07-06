@@ -6,6 +6,7 @@ padding-top: 4rem;}
 .contactUsS1 .contactUsS1-text p{width: 70%;}
 .contactUsS1 .contactUsS1-img{width: 50%;}
 .contactUsS1 .contactUsS1-img img{width: 100%;}
+.contactInfo .fxCard{margin: 0 !important;}
   @media (min-width:1706.67px) {
     .contactUsS1 .contactUsS1-text{padding-top: 6rem;}
     .contactUsS1 .contactUsS1-text p{line-height: 45px;}
