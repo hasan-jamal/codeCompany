@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
 
@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
   '../../../../../../../assets/css/pages/serviceDetails.css',
   '../../../../../../../assets/css/sections/contactSection.css',
   '../../../../../../../assets/css/pages/ourServcies.css'],
+    encapsulation: ViewEncapsulation.None,
+
 })
 export class DataEngineeringComponent {
   constructor(private modalService: ModalService){}

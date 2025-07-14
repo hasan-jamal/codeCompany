@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../services/ModalService';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { ServicesS4Component } from '../../../../../shared/sectionsPublic/services-s4/services-s4.component';
@@ -11,7 +11,8 @@ import { OurServiceFlowComponent } from '../../../../../shared/sectionsPublic/ou
   styleUrls: ['./data-cloud-engineering.component.css',
                   '../../../../../../assets/css/pages/ourServcies.css',
                   '../../../../../../assets/css/sections/contactSection.css',
-                  '../../../../../../assets/css/sections/ourServiceFlow.css']
+                  '../../../../../../assets/css/sections/ourServiceFlow.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class DataCloudEngineeringComponent {
   constructor(public router:Router,private modalService: ModalService){}

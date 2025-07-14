@@ -7,3 +7,5 @@
 .servicesS6 .fxTextsStyle .fxUl{
     gap: 3rem;
 }
+.serviceDetailsS3 .fx-serviceDetailsS3{align-items: normal;}
+.serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{min-height:100%;}

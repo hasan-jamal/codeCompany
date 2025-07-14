@@ -4,4 +4,9 @@ body .serviceDetailsS3 .fx-serviceDetailsS3{
 body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
 min-height: 100%;
 height: 100%;
+}.serviceDetailsS2 .serviceDetailsS2-part1{
+    width: 40%;
+}
+.serviceDetailsS2 .serviceDetailsS2-part2{
+    width: 60%;
 }

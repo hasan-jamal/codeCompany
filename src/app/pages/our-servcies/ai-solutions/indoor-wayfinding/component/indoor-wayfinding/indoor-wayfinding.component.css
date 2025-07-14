@@ -1,0 +1,30 @@
+body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
+    min-height: 320px;
+    height: auto;
+    max-height: 320px;
+}
+.fxColumnMb{gap: 70px;}
+@media (min-width:1706.67px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 400px;}
+  }
+  @media (min-width:1920px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 450px;}
+  }
+  @media (min-width:2048px) { 
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 500px;}
+  }
+  @media (max-width:1396.36px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 300px;}
+  }
+  @media (max-width:1228.8px) {
+    .fxColumnMb{gap: 50px;}
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 250px;}
+  }
+  @media (max-width:877.71px) {
+    .fxColumnMb{gap: 32px;}
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 200px;}
+  }
+  @media (max-width:614.4px) {
+    .fxColumnMb{gap: 1rem;}
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 100%;min-height: 100%;}
+  }

@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: -1; 
 }
 .servicesS1 .servicesS1-texts{
@@ -62,6 +62,7 @@
 }
 .servicesS1 .servicesS1-texts p{line-height: 140%;}
 .servicesS1 .servicesS1-texts h1{margin-bottom: 19px;}
+.fxWrapMb{flex-direction: column;gap: 6px;}
 @media (min-width:1706.67px) {
 }
 @media (min-width:1920px) {
@@ -99,6 +100,9 @@
     .servicesS1 .servicesS1-texts::after {
         border-radius: 0 0 20px 0;
     }
+    .fxWrapMb{flex-direction: row;flex-wrap: wrap;width: 100%;gap: 6px;}
+    .fxWrapMb svg{transform: rotate(-90deg);}
+    .serviceDetailsS1 .subtitle18px{font-size: 14px;}
 }
 /* Section Services 2 Style */
 .servicesS2 .fx-servicesS2{gap: 20px;}
@@ -381,6 +385,10 @@
     z-index: 2;
 }
 .servicesS6 .servicesS6-container h1{margin-bottom: 40px;}
+.servicesS6 .servicesS6-container .d-flex{
+    width: 90%;
+    margin: auto;
+}
 .servicesS6 .servicesS6-container .fxTexts{
     gap: 32px;
 }
@@ -414,5 +422,6 @@
     .servicesS6 .servicesS6-container .fxTexts p{width: 100%;}
     .servicesS6 .backSection{padding: 48px 0;}
     .servicesS6 .servicesS6-container .fxTexts{gap: 1rem;flex-direction: column;}
+    .servicesS6 .servicesS6-container .d-flex{width: 100%;}
 }
 @media (max-width:512px) {}

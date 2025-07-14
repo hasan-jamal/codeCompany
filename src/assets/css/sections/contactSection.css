@@ -88,7 +88,7 @@
     width: 322px;
     height: 74px;
 }
-.contactSection p{margin-top: 36px;}
+.contactSection p{margin-top: 32px;width: 65%;}
 
 @media (min-width:1706.67px) {
     .contactSection .contactSection-div{height: 457px;}
@@ -126,7 +126,7 @@
     .contactSection .contactSection-div{flex-direction: column;background-size: cover;background-position: right;}
     .contactSection .contactSection-div .contactSection-texts{width: 72%;padding: 0 23px 27px 0;}
     .contactSection .contactSection-div .contactSection-buttons{height: max-content;}
-    .contactSection p{margin-top: 24px;}
+    .contactSection p{margin-top: 24px;width: 100%;}
     .contactSection-container{padding-top: 3rem;}
 }
 @media (max-width:512px) {}
