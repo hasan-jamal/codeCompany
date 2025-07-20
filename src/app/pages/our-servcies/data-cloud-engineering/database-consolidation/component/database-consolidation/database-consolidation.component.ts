@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-database-consolidation',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './database-consolidation.component.html',
   styleUrls: ['./database-consolidation.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

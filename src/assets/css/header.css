@@ -254,6 +254,7 @@ header .btnServicesHeader .listServicesHeader .listPart.listPartCenter{
   margin-bottom: 20px;
   position: relative;
   border-radius: 10px;
+  cursor: pointer;
 }
 .header .btnServicesHeader .listServicesHeader .backService span{
   position: absolute;

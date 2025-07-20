@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-robotic-process',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './robotic-process.component.html',
   styleUrls: ['./robotic-process.component.css',
                   '../../../../../../../assets/css/pages/serviceDetails.css',

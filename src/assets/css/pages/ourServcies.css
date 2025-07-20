@@ -63,6 +63,7 @@
 .servicesS1 .servicesS1-texts p{line-height: 140%;}
 .servicesS1 .servicesS1-texts h1{margin-bottom: 19px;}
 .fxWrapMb{flex-direction: column;gap: 6px;}
+.fxWrapMb a{text-decoration: none;}
 @media (min-width:1706.67px) {
 }
 @media (min-width:1920px) {
@@ -170,15 +171,29 @@
     justify-content: start;
 }
 .servicesS3 .fx-servicesS3 .box{
-    background-position: top;
-    background-size: cover;
-    border-radius: 30px;
-    height: 386px;
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% - 0px);
     position: relative;
 }
-.servicesS3 .fx-servicesS3 .box::before {
+.servicesS3 .fx-servicesS3 .box .divOne{
+    background-position: top;
+    background-size: cover;
+    border-radius: 30px;    
+    height: 386px;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: end;
+
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.servicesS3 .fx-servicesS3 .box .divOne.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.servicesS3 .fx-servicesS3 .box .divOne::before{
     content: "";
     position: absolute;
     top: 0;
@@ -189,11 +204,14 @@
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 0; 
 }
-.servicesS3 .fx-servicesS3 .box h3{
+.servicesS3 .fx-servicesS3 .box .divOne h3{
     padding: 0 16px 30px 16px;
     position: relative;
+    width: 85%;
     z-index: 2;
+    height: max-content;
 }
+
 .servicesS3 .fx-servicesS3 .box .divArrow{
     position: absolute;
     bottom: 0;
@@ -201,7 +219,6 @@
     padding: 16px 0px 0 16px;
     background: #FFF;
     border-radius: 30px 0px 0 0 ;
-    position: relative;
 }
 .servicesS3 .fx-servicesS3 .box .divArrow::after {
     content: "";
@@ -235,11 +252,45 @@
     height: 100%;
     width: 100%;
 }
-
 .servicesS3 .fx-servicesS3 .box .divArrow img{
     width: 66px;
     height: 66px;
 }
+.servicesS3 .fx-servicesS3 .box .divTwo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+   background: linear-gradient(109deg, #FAA26B 14.67%, #E74B62 110.18%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+  }
+.servicesS3 .fx-servicesS3 .box .divTwo.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+.servicesS3 .fx-servicesS3 .box .divTwo .fxDescription{
+  border-radius: 30px;
+  position: relative;
+  margin-top: auto;
+  width: 100%;
+}
+.servicesS3 .fx-servicesS3 .box .divTwo h3{
+    width: 85%;
+    padding: 1rem 1rem 2rem 1rem;
+}
+.servicesS3 .fx-servicesS3 .box .divTwo p{
+    text-align: start;
+    line-height: 150%;
+    padding: 24px 24px 6px 24px;
+}
+
   @media (min-width:1706.67px) {}
   @media (min-width:1920px) {
     .servicesS3 .fx-servicesS3 .box{height:410px;}

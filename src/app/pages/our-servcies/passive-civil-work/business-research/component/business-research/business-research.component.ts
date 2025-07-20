@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-business-research',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './business-research.component.html',
   styleUrls: ['./business-research.component.css',
     '../../../../../../../assets/css/pages/serviceDetails.css',

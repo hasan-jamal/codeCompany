@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-drg',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './drg.component.html',
   styleUrls: ['./drg.component.css',
                   '../../../../../../../assets/css/pages/serviceDetails.css',

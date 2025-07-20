@@ -31,40 +31,25 @@
                 Vision 2030 and built for long-term impact.</p>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
-
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/Digital Healthcare/HIS.jpg');">
-                <h3 class="font-bold subtitle24px colorWhite">Hospital Information Systems (HIS)</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/DigitalHealthcare/Hospital-InformationSystems"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
+                <div class="divOne" [style.backgroundImage]="'url('+ card.imageUrl +')'"
+                    [class.hidden]="card.isHovered">
+                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <div class="divArrow">
+                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
+                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/Digital Healthcare/RCM-min.jpg');">
-                <h3 class="font-bold subtitle24px colorWhite">Revenue Cycle Management (RCM)</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/DigitalHealthcare/Revenue-CycleManagement"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
-                </div>
-            </div>
-
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/Digital Healthcare/DRG-min.jpg');">
-                <h3 class="font-bold subtitle24px colorWhite">Diagnosis-Related Groups (DRG)</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/DigitalHealthcare/Diagnosis-RelatedGroups"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
-                </div>
-            </div>
-
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/Digital Healthcare/Telemedicine-min.jpg');">
-                <h3 class="font-bold subtitle24px colorWhite">Telemedicine</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/DigitalHealthcare/Tele-medicine"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                <div class="divTwo" [class.visible]="card.isHovered ">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{card.description}}</p>
+                    <div class="d-flex fxDescription align-items-center justify-content-between">
+                        <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                        <div class=" divArrow">
+                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
+                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

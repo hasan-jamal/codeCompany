@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-disaster-recovery-solutions',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './disaster-recovery-solutions.component.html',
   styleUrls: ['./disaster-recovery-solutions.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

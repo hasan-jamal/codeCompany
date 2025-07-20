@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-data-engineering',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './data-engineering.component.html',
   styleUrls: ['./data-engineering.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

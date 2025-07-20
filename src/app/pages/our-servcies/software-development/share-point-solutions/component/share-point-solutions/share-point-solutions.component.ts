@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-share-point-solutions',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './share-point-solutions.component.html',
   styleUrls: ['./share-point-solutions.component.css',
                     '../../../../../../../assets/css/pages/serviceDetails.css',

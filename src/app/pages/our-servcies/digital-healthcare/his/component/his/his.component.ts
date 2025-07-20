@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-his',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './his.component.html',
   styleUrls: ['./his.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

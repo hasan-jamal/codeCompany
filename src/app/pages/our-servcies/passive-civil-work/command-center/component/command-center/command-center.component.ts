@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-command-center',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './command-center.component.html',
   styleUrls: ['./command-center.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-smart-cabins',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './smart-cabins.component.html',
   styleUrls: ['./smart-cabins.component.css',
                   '../../../../../../../assets/css/pages/serviceDetails.css',

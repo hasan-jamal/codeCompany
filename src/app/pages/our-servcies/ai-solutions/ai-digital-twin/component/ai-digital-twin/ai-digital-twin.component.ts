@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ModalService } from '../../../../../../services/ModalService';
 
 @Component({
   selector: 'app-ai-digital-twin',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './ai-digital-twin.component.html',
   styleUrls: ['./ai-digital-twin.component.css',
            '../../../../../../../assets/css/pages/serviceDetails.css',

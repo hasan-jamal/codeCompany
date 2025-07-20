@@ -22,7 +22,41 @@
         </div>
     </div>
 </section>
-<app-services-s4></app-services-s4>
+<section class="servicesS4">
+    <div class="servicesS4-container px-120">
+        <div class="fxServicesS4 fxGeneral-cards ">
+            <a class="d-flex align-items-center fxCardPublic active" routerLink="/ourServices/AISolutions">
+                <img src="assets/images/servicesIcons/AISolutions.svg" alt="AI Solutions icon">
+                <span class="subtitle20px style-font">AI solutions</span>
+            </a>
+            <a class="d-flex align-items-center fxCardPublic" routerLink="/ourServices/AutomationAndSecurity"
+                routerLinkActive="active">
+                <img src="assets/images/servicesIcons/Automation&Security.svg" alt="AI Solutions icon">
+                <span class="subtitle20px style-font">Automation & Security</span>
+            </a>
+            <a class="d-flex align-items-center fxCardPublic" routerLink="/ourServices/DigitalHealthcare"
+                routerLinkActive="active">
+                <img src="assets/images/servicesIcons/DigitalHealthcare.svg" alt="AI Solutions icon">
+                <span class="subtitle20px style-font">Digital Healthcare</span>
+            </a>
+            <a class="d-flex align-items-center fxCardPublic" routerLink="/ourServices/Passive&CivilWork"
+                routerLinkActive="active">
+                <img src="assets/images/servicesIcons/Passive&CivilWork.svg" alt="AI Solutions icon">
+                <span class="subtitle20px style-font">Passive & Civil Work</span>
+            </a>
+            <a class="d-flex align-items-center fxCardPublic" routerLink="/ourServices/Data&CloudEngineering"
+                routerLinkActive="active">
+                <img src="assets/images/servicesIcons/Data&CloudEngineering.svg" alt="AI Solutions icon">
+                <span class="subtitle20px style-font">Data & Cloud Engineering</span>
+            </a>
+            <a class="d-flex align-items-center fxCardPublic " routerLink="/ourServices/Software&Development"
+                routerLinkActive="active">
+                <img src="assets/images/servicesIcons/Software&Development.svg" alt="AI Solutions icon">
+                <span class="subtitle20px style-font">Software & Development</span>
+            </a>
+        </div>
+    </div>
+</section>
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
         <div class="ourServiceFlow-titles">
@@ -41,54 +75,24 @@
                 in tangible improvements in performance and service quality.</p>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
-
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/AIDigitalTwin-min.png');">
-                <h3 class="font-bold subtitle24px colorWhite">AI Digital Twin</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/AISolutions/AIDigitalTwin"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
+                <div class="divOne" [style.background]="'url('+ card.imageUrl +')'" [class.hidden]="card.isHovered">
+                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <div class="divArrow">
+                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
+                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/AIComputerVisionmin.jpeg');">
-                <h3 class="font-bold subtitle24px colorWhite">AI Computer Vision</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/AISolutions/AiComputerVision"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
-                </div>
-            </div>
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/AIVoicebotsChatbots-min.jpeg');">
-                <h3 class="font-bold subtitle24px colorWhite">AI Voicebots & Chatbots</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/AISolutions/AiVoicebotChatbot"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
-                </div>
-            </div>
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/AIInnovationHub-min.png');">
-                <h3 class="font-bold subtitle24px colorWhite">AI Innovation Hub</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/AISolutions/AiInnovationHub"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
-                </div>
-            </div>
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/IndoorWayfinding-min.jpeg');">
-                <h3 class="font-bold subtitle24px colorWhite">Indoor Wayfinding</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/AISolutions/IndoorWayfinding"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
-                </div>
-            </div>
-            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
-                style="background-image: url('assets/images/CodeServices/SmartCabinets.png');">
-                <h3 class="font-bold subtitle24px colorWhite">Smart Cabinets</h3>
-                <div class="divArrow">
-                    <a class="btn-hover" routerLink="/ourServices/AISolutions/smartCabins"
-                        routerLinkActive="active"><img src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                <div class="divTwo" [class.visible]="card.isHovered ">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{card.description}}</p>
+                    <div class="d-flex fxDescription align-items-center justify-content-between">
+                        <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                        <div class=" divArrow">
+                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
+                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,17 +101,17 @@
 <section class="servicesS6">
     <div class="backSection">
         <div class="servicesS6-container px-120">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">What the purpose of
-                Designed</span>
-            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">Built for <span
-                    class="color-linearGradient ">Saudi </span> Backed by Global Standards</h1>
-            <div class="d-flex fxTexts">
+            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">Purpose-Built
+                for <span class="color-linearGradient ">Saudi Institutions <br> </span> Backed by Global Standards</h1>
+            <div class="d-flex fxTexts ">
                 <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">Every CODE solution is
-                    purpose-built to align with local systems, the Arabic language, and national priorities — from
-                    Arabic NLP and smart infrastructure integration to full Vision 2030 compliance.</p>
-                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">These systems integrate with
-                    what you already have — enhancing workflows, improving service quality, and delivering
-                    value from day one.</p>
+                    purpose-built to align with local systems, the Arabic language and national priorities from
+                    Arabic NLP and smart infrastructure integration to full compliance with Saudi Arabia’s Vision 2030.
+                </p>
+                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">These solutions
+                    integrate seamlessly with your existing environment, enhancing workflows, elevating service quality
+                    and delivering value
+                    from day one.</p>
             </div>
         </div>
     </div>
@@ -118,8 +122,6 @@
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <span class="subtitle24px d-block color-linearGradient font-medium mb24">Your Next Move Starts
-                    Here</span>
                 <h1 class=" subtitle48px font-bold mb-0 " data-aos=" fade-down"> Let's Build <br>
                     <span class="color-linearGradient">What’s Next</span>
                 </h1>
