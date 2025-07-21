@@ -43,14 +43,14 @@ export class AppComponent implements OnInit  {
     if (isPlatformBrowser(this.platformId)) {
       const AOS = (await import('aos')).default;
       AOS.init();
-      // setTimeout(() => {
-      //   const appRoot = document.querySelector('app-root') as HTMLElement;
-      //   const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
-      //   splashScreen.style.opacity = '0'; 
-      //   splashScreen.style.display = 'none';
-      //   appRoot.style.opacity = '1';
-      //   console.log('App Root is now visible:', appRoot.style.visibility);
-      // }, 5000);
+      setTimeout(() => {
+        const appRoot = document.querySelector('app-root') as HTMLElement;
+        const splashScreen = document.querySelector('#splash-screen') as HTMLElement;
+        splashScreen.style.opacity = '0'; 
+        splashScreen.style.display = 'none';
+        appRoot.style.opacity = '1';
+        console.log('App Root is now visible:', appRoot.style.visibility);
+      }, 5000);
   }
   this.title.setTitle('CODE for Information Technology | روّاد التحول الرقمي وخدمات تقنية متكاملة');
 
