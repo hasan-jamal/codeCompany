@@ -226,12 +226,12 @@
 @media (max-width:512px) {}
 /* Section Two */
 .sectionTwo{margin: 120px 0;}
-.sectionTwo .fx-sectionTwo{gap: 83px;align-items: end;}
-.sectionTwo .fx-sectionTwo .part1-sectionTwo{width: 34%;}
-.sectionTwo .fx-sectionTwo h4{margin-bottom: 24px;}
+.sectionTwo .fx-sectionTwo{gap: 60px;align-items: end;}
+.sectionTwo .fx-sectionTwo .part1-sectionTwo{width: 40%;}
+.sectionTwo .fx-sectionTwo h4{margin-bottom: 1rem;}
 .sectionTwo .fx-sectionTwo p{
     color: #001C33;
-    width: 66%;
+    width: 60%;
     align-items: center;
 }
 .sectionTwo .fx-sectionTwoImgs{
@@ -258,12 +258,15 @@
     .sectionTwo .fx-sectionTwo{gap: 60px;}
     .sectionTwo .fx-sectionTwoImgs .sectionTwo-img2{height: 500px;}
     .sectionTwo .fx-sectionTwoImgs .sectionTwo-img1{height: 320px;}
+    .sectionTwo .fx-sectionTwo .part1-sectionTwo h1{font-size: 38px;}
 }
 @media (max-width:1024px) {
     .sectionTwo .fx-sectionTwoImgs{margin-top: 40px;}   
     .sectionTwo .fx-sectionTwo{gap:40px;}
     .sectionTwo .fx-sectionTwoImgs .sectionTwo-img2{height: 400px;}
     .sectionTwo .fx-sectionTwoImgs .sectionTwo-img1{height: 280px;}
+    .sectionTwo .fx-sectionTwo .part1-sectionTwo h1{font-size: 32px;}
+    .sectionTwo{margin-top: 70px;}
 }
 @media (max-width:877.71px) {
     .sectionTwo .fx-sectionTwoImgs{margin-top: 32px;}

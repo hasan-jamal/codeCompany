@@ -32,7 +32,7 @@ export class SoftwareDevelopmentComponent {
       isHovered: false,
       name: "Web and Mobile App Development",  
       description: "Modern digital experiences designed for performance and growth. We build scalable web platforms and high-capacity mobile apps that support everything from citizen engagement to enterprise automation. With integrated AI capabilities, our solutions personalize user experiences, enhance security and enable intelligent decision-making. Whether native or cross-platform, they deliver clean UX, robust backend integration and enterprise-grade performance across every screen.",
-      link:"/ourServices/Passive&CivilWork/commandCenter",
+      link:"/ourServices/Software&Development/webMobileAppDevelopment",
       imageUrl: "assets/images/CodeServices/Software%20%26%20Development/Web%20and%20Mobile%20Development-min.jpeg"
     },
      {
