@@ -62,7 +62,8 @@ export const routes: Routes = [
 ];
 const routerOptions: ExtraOptions = {
     scrollPositionRestoration: 'top',
-    anchorScrolling: 'enabled'
+    anchorScrolling: 'enabled',
+    useHash:true ,
   };
   
   @NgModule({
