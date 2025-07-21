@@ -17,7 +17,7 @@ import { ModalService } from '../../services/ModalService';
 export class NavbarMbComponent{
      isSidenavOpen = false;
     servicesListOpen = false;
-    aboutUsListOpen = true;    
+    aboutUsListOpen = false;    
   constructor(
     private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,

@@ -42,11 +42,9 @@
                     </div>
                 </div>
                 <div class="border"></div>
-                <a routerLink="ourServices" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">our
-                    Services</a>
-                <!-- <div class="btnServicesMb">
+                <div class="btnServicesMb">
                     <button type="button" class="link d-flex align-items-center justify-content-between w-100"
-                        (click)="toggleServicesList()" routerLink="/ourServices" routerLinkActive="dropDownActive">
+                        (click)="toggleServicesList()">
                         <span class="font-medium linkStyle" (click)="closeSidenav()">Our services</span>
                         <img src="assets/images/arrowDown.svg" alt="arrowDown icon"
                             [class.rotated]="servicesListOpen" />
@@ -54,21 +52,27 @@
                     <div class="listServices" [class.active]="servicesListOpen">
                         <div class="listPart">
                             <div class="d-flex flex-column fx-listServices gap20">
-                                <a class="font-medium">Database Consulting</a>
-                                <a routerLink="/ourServices/serviceDetails/1" routerLinkActive="active"
-                                    class="font-medium" (click)="closeSidenav()">Cloud Integration Support</a>
-                                <a class="font-medium">Clouding Storage</a>
-                                <a class="font-medium">Remote Onsite Support</a>
-                                <a class="font-medium">IT Consulting</a>
-                                <a class="font-medium">Cyber Security</a>
-                                <a class="font-medium">Internet & voip</a>
-                                <a class="font-medium">Network Setup & Support</a>
-                                <a class="font-medium">System Management</a>
-                                <a class="font-medium">Disaster Recovery</a>
+                                <a class="font-medium" routerLink="/ourServices/AISolutions" (click)="closeSidenav()">AI
+                                    Solutions</a>
+                                <a class="font-medium" routerLink="/ourServices/Data&CloudEngineering"
+                                    (click)="closeSidenav()">Data & Cloud
+                                    Engineering</a>
+                                <a class="font-medium" routerLink="/ourServices/DigitalHealthcare"
+                                    (click)="closeSidenav()">Digital
+                                    Healthcare</a>
+                                <a class="font-medium" routerLink="/ourServices/Passive&CivilWork"
+                                    (click)="closeSidenav()">Passive & Civil
+                                    Work</a>
+                                <a class="font-medium" routerLink="/ourServices/AutomationAndSecurity"
+                                    (click)="closeSidenav()">Automation &
+                                    Security</a>
+                                <a class="font-medium" routerLink="/ourServices/Software&Development"
+                                    (click)="closeSidenav()"> Software &
+                                    Development</a>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="border"></div>
                 <a routerLink="news" routerLinkActive="active" class="font-medium" (click)="closeSidenav()">Insights</a>
                 <div class="border"></div>
