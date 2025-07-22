@@ -174,12 +174,13 @@
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% - 0px);
     position: relative;
+    height: 386px;
 }
 .servicesS3 .fx-servicesS3 .box .divOne{
     background-position: top;
     background-size: cover;
     border-radius: 30px;    
-    height: 386px;
+    height: 100%;
     display: flex;
     justify-content: start;
     position: relative;
@@ -314,13 +315,12 @@
   }
   @media (max-width:877.71px) {
         .servicesS3 .fx-servicesS3 .box{height: 246px;}
+        .servicesS3 .fx-servicesS3 .box{
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 0px);}
   }
   @media (max-width:768px) {
     .servicesS3{margin-top: 70px;}
-    .servicesS3 .fx-servicesS3 .box{
-        flex: 1 1 calc(33.3% - 20px);
-        max-width: calc(33.3% - 0px);
-    }
     .servicesS3 .fx-servicesS3 .box{height:240px;}
   }
   @media (max-width:614.4px) {
