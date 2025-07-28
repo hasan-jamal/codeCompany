@@ -54,6 +54,7 @@
     z-index: 1;
     box-shadow: 9px 9px #EEF3F7;
 }
+.sectionOne .part1-sectionOne .texts-side p{line-height: 150%;}
 .sectionOne .part1-sectionOne .img-sectionOne{
     width: 80%;
     height:max-content;

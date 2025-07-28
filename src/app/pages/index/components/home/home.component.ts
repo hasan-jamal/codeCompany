@@ -52,7 +52,6 @@ constructor(
 }
   @ViewChild('slickModalBlogs', { static: false }) slickModalBlogs!: SlickCarouselComponent;
   @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
-
   @ViewChild('sliderBlogs', { static: true }) sliderBlogs!: ElementRef;
   @ViewChild('slideTitle', { static: true }) slideTitle!: ElementRef;
   @ViewChild('slideText', { static: true }) slideText!: ElementRef;
@@ -219,13 +218,13 @@ constructor(
         isActive: false,
         title:"AI Digital Twin Solution",
         subTitle:"See Your Building in Real Time. Predict What’s Next.",
-        content:"CODE’s AI Digital Twin creates a live, data-driven model of your facility — helping you monitor performance, prevent downtime, and plan smarter. It's the future of infrastructure, made visible.",
+        content:"CODE’s AI Digital Twin creates a live, data driven model of your facility helping you monitor performance, prevent downtime and plan smarter. It's the future of infrastructure, made visible.",
         pathBtn:"AISolutions/AIDigitalTwin"
       },
     { id: 2, showPart2: false, isAnimating: false, isActive: false,
       title: "AI Computer Vision Solution",
       subTitle: "Smarter Surveillance. Instant Insight.",
-      content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior, and alerts your team in real time — so nothing critical slips through the cracks.",
+      content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior and alerts your team in real time so nothing critical slips through the cracks.",
       pathBtn:"AISolutions/AiComputerVision"
     },
   ];
@@ -276,37 +275,37 @@ constructor(
     {
       question: 'What is an AI Digital Twin?',
       answer:
-        'An AI Digital Twin is a real-time, virtual replica of a physical environment. It provides live operational visibility, predictive analytics, and automated control — allowing organizations to monitor, simulate, and optimize performance instantly.',
+        'An AI Digital Twin is a real-time, virtual replica of a physical environment. It provides live operational visibility, predictive analytics and automated control allowing organizations to monitor, simulate and optimize performance instantly.',
     },
     {
       question: 'How does Computer Vision work in your solutions?',
       answer:
-        'Our AI Computer Vision systems turn ordinary cameras into intelligent sensors. They detect safety risks, analyze behavior patterns, and automate surveillance — enhancing situational awareness across facilities.',
+        'Our AI Computer Vision systems turn ordinary cameras into intelligent sensors. They detect safety risks, analyze behavior patterns and automate surveillance enhancing situational awareness across facilities.',
     },
     {
       question: 'Who are CODE’s solutions designed for?',
       answer:
-        'We work with government entities, public institutions, and enterprise organizations that require scalable, secure, and high-performing systems — especially those aligned with Vision 2030 initiatives.',
+        'We work with government entities, public institutions, and enterprise organizations that require scalable, secure and high-performing systems especially those aligned with Vision 2030 initiatives.',
     },
     {
       question: 'What makes CODE different from other AI providers?',
       answer:
-        'CODE combines local insight with global technology standards. We offer end-to-end delivery — from strategy and deployment to long-term support — with a track record of performance in mission-critical environments.',
+        'CODE combines local insight with global technology standards. We offer end-to-end delivery from strategy and deployment to long-term support with a track record of performance in mission critical environments.',
     },
     {
       question: 'How scalable are CODE’s solutions?',
       answer:
-        'Our platforms are designed to scale — from a single building to nationwide infrastructure. Whether you’re managing a campus, hospital, or city-wide system, CODE delivers solutions that grow with your operations.',
+        'Our platforms are designed to scale from a single building to nationwide infrastructure. Whether you’re managing a campus, hospital, or city wide system, CODE delivers solutions that grow with your operations.',
     },
     {
       question: 'Can CODE integrate with our existing systems?',
       answer:
-        'Yes. CODE’s solutions are designed for integration with legacy platforms and modern infrastructure alike — using open standards and modular architecture for smooth deployment.',
+        'Yes. CODE’s solutions are designed for integration with legacy platforms and modern infrastructure alike using open standards and modular architecture for smooth deployment.',
     },
     {
       question: 'Can CODE integrate with our existing systems?',
       answer:
-        'Reach out to our team to discuss your goals. We’ll assess your environment, recommend the right AI solutions, and support you through every stage — from planning to rollout and beyond.',
+        'Reach out to our team to discuss your goals. We’ll assess your environment, recommend the right AI solutions and support you through every stage  from planning to rollout and beyond.',
     },
   ];
   toggleFaq(index: number) {
