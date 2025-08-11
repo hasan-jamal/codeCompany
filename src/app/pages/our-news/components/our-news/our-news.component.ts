@@ -1,50 +1,54 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ModalService } from '../../../../services/ModalService';
+import { NewsService } from '../../../../services/news.service';
+import { NewsResponse } from '../../../../models/News.Response';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { NewsInterface } from '../../../../models/News';
 
 @Component({
   selector: 'app-our-news',
-  imports: [SlickCarouselModule,CommonModule],
   templateUrl: './our-news.component.html',
   styleUrls: ['./our-news.component.css',
           '../../../../../assets/css/sections/contactSection.css'],
-          encapsulation: ViewEncapsulation.None
+          encapsulation: ViewEncapsulation.None,
+          standalone:false
 })
-export class OurNewsComponent {
- @ViewChild('sliderStories',{static:false})  sliderStories!:SlickCarouselComponent
- constructor(public router:Router,private modalService: ModalService){}
- stories=[
-      {
-          title:'Strategic Partnerships Conference',
-          imgBackground:'assets/images/backStories.png'
-      },
-      {
-        title:'Strategic Partnerships Conference',
-        imgBackground:'assets/images/backStories.png'
-    },
-    {
-      title:'Strategic Partnerships Conference',
-      imgBackground:'assets/images/backStories.png'
-    },
-    {
-      title:'Strategic Partnerships Conference',
-      imgBackground:'assets/images/backStories.png'
-    },
-    {
-      title:'Strategic Partnerships Conference',
-      imgBackground:'assets/images/backStories.png'
-    },
-    {
-      title:'Strategic Partnerships Conference',
-      imgBackground:'assets/images/backStories.png'
-    },
-    {
-      title:'Strategic Partnerships Conference',
-      imgBackground:'assets/images/backStories.png'
-    },
- ]
+export class OurNewsComponent implements OnInit {
+ @ViewChild('sliderStories',{static:false})  sliderStories!:SlickCarouselComponent;
+   response: NewsResponse | undefined;
+  selectedSort: string = '';
+  searchText:string = '';
+  currentPage: number = 1;
+  pageSize: number = 5;
+  newsDetails: NewsInterface; 
+ constructor(
+  public router:Router,
+  private modalService: ModalService,
+  private _newsService: NewsService){}
+  ngOnInit(): void {
+    this.getAllNews();
+  }
+  getAllNews(): void {
+    this._newsService
+      .getAllNews(
+        this.selectedSort,
+        this.currentPage, 
+        this.pageSize,
+        this.searchText,
+      )
+      .subscribe((data) => {
+        this.response = data;
+        console.log(data);
+        
+      });
+    }
+
+  onDetailsButtonClick(newsId: number) {
+        this.router.navigate(['/newsDetails', newsId]);
+  }
  slideConfig = {
   slidesToShow: 4.5,
   slidesToScroll: 1,

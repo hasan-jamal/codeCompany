@@ -304,9 +304,9 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
   .subtitle48px{font-size: 32px;}
   .subtitle24px{font-size: 14px;}
   .subtitle36px{font-size: 24px;}
-  .subtitle16px{font-size: 11px;}
+  .subtitle16px{font-size: 14px;}
   .subtitle20px{font-size: 13px;} 
-  .subtitle18px{font-size: 11px;}
+  .subtitle18px{font-size: 14px;}
   .subtitle32px{font-size: 20px;}
   .subtitle22px{font-size: 13px;}
   .subtitle28px{font-size: 16px;}
@@ -314,13 +314,13 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
 @media (max-width:768px) {
   .subtitle64px{font-size: 35px;}
   .subtitle48px{font-size: 20px;}
-  .subtitle20px{font-size: 12px;} 
+  .subtitle20px{font-size: 15px;} 
 }
 @media (max-width:614.4px) {
    .subtitle36px{font-size: 20px;line-height: 30px;}
   .subtitle24px{font-size: 17px;}  
   .subtitle64px{font-size: 32px;}
-  .subtitle18px{font-size: 13px;}
+  .subtitle18px{font-size: 14px;}
   .subtitle48px{font-size: 24px;}
   .subtitle72px{font-size: 40px;}
 }
@@ -353,6 +353,13 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
   width: 62%;
   margin: auto;
   gap: 16px;
+}
+.numberLines {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 4; */
+  /* line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (min-width:1706.67px) {
 }
@@ -412,6 +419,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
     align-items: center;
     justify-content: center;
     opacity: 1;
+    display: none;
   }
   
   .logo-wrapper {

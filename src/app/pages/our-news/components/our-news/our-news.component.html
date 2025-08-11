@@ -71,12 +71,25 @@
                         class="leftStory transition3s">
                 </div>
             </div>
-            <ngx-slick-carousel #sliderStories class="sliderStories" [config]="slideConfig">
-                <div ngxSlickItem class="slide" *ngFor="let story of stories ">
-                    <div [style.background-image]="'url(' + story.imgBackground + ')'" class="cardStory">
+            <ngx-slick-carousel *ngIf="response?.news?.data" #sliderStories class="sliderStories"
+                [config]="slideConfig">
+                <div ngxSlickItem class="slide" *ngFor="
+                                    let story of this.response!.news.data
+                                        | paginate
+                                        : {
+                                            id: 'server',
+                                            itemsPerPage: response?.news?.pagination?.pageSize ,
+                                            currentPage: response?.news?.pagination?.currentPage,
+                                            totalItems: response?.news?.pagination?.rowCount
+                                            }
+                                            ;let i = index;">
+                    <div class="cardStory"
+                        [style.backgroundImage]="'url(https://localhost:7265/images/' + story.imageService + ')'">
                         <h4 class="font-semiBold subtitle18px colorWhite">{{story.title}}</h4>
-                        <div class="divButton">
-                            <img src="assets/images/btnDetailsStory.svg" alt="btn Details Story">
+                        <div class="divButton btn-hover">
+                            <a [routerLink]="['/news', story.id]" class="btn-hover d-block">
+                                <img src="assets/images/btnDetailsStory.svg" alt="btn Details Story">
+                            </a>
                         </div>
                     </div>
                 </div>
