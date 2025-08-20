@@ -6,6 +6,8 @@ import { UpdateComponent } from './update/component/update/update.component';
 import { CreateComponent } from './create/component/create/create.component';
 import { TableComponent } from './table/component/table/table.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
   imports: [
     CommonModule,
     NewsRoutingModule,
-    NgxPaginationModule
-  ]
+    NgxPaginationModule,
+    ReactiveFormsModule,
+    RouterLink
+    ]
 })
 export class NewsModule { }

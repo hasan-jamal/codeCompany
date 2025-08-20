@@ -32,8 +32,30 @@ export class NewsService {
     const url = `${this.baseApi}/GetAllNews?sort=${sort}&page=${page}&pageSize=${pageSize}&searchText=${searchText}`;
     return this._http.get<NewsResponse>(url);
   }
+   GetNews(
+    sort: string,
+    page: number = 1,
+    pageSize: number = 10,
+    searchText: string = '',
+  ): Observable<NewsResponse> {
+    const url = `${this.baseApi}/GetNews?sort=${sort}&page=${page}&pageSize=${pageSize}&searchText=${searchText}`;
+    return this._http.get<NewsResponse>(url,
+    {
+        headers: { Authorization: ''+ localStorage.getItem("token") } 
+    });
+  }
   getNewsDetails(newsId: number) {
       const url = `${this.baseApi}/DetailsNews?id=${newsId}`;
       return this._http.get<NewsInterface>(url);
+  } 
+  changeNotAvailable(newsId: number): Observable<any>{
+    return this._http.patch<any>(`${this.baseApi}/ArchiveNews/${newsId}`, {}, {
+      headers: { Authorization: localStorage.getItem("token") || '' }
+    })
+  }
+  changeAvailable(newsId: number): Observable<any> {
+    return this._http.patch<any>(`${this.baseApi}/UnArchiveNews/${newsId}`, {}, {
+      headers: { Authorization: localStorage.getItem("token") || '' }
+    })
   }
 }

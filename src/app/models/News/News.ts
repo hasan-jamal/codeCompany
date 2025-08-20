@@ -8,7 +8,7 @@ export interface NewsInterface{
   user: string,
   userName :string,
   createdAt:string,
-   hashtags?: string[]
+   hashtags?: string[],
 }
 export interface NewsDto{
  id: number,
