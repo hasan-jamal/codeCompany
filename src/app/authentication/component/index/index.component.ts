@@ -18,7 +18,6 @@ export class IndexComponent implements OnInit{
       this.loadCss('assets/css/tailwind/perfect-scrollbar.css');
       this.loadCss('assets/css/tailwind/argon-dashboard-tailwind.min.css');
 
-      this.loadScript('assets/js/plugins/chartjs.min.js');
       this.loadScript('assets/js/plugins/perfect-scrollbar.min.js');
       this.loadScript('assets/js/plugins/argon-dashboard-tailwind.min.js');
     }

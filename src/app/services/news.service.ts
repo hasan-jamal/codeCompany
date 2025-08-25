@@ -58,4 +58,22 @@ export class NewsService {
       headers: { Authorization: localStorage.getItem("token") || '' }
     })
   }
+  updateNews(newsId: number, formData: FormData) {
+    const url = `${this.baseApi}/UpdateNews/${newsId}`;
+    return this._http.put<NewsInterface>(url, formData, {
+      headers: { Authorization: '' + localStorage.getItem("token") }
+    });
+  }
+  deleteNews(newsId: number) {
+    const url = `${this.baseApi}/DeleteNews/${newsId}`;
+    return this._http.delete<NewsInterface>(url, {
+      headers: { Authorization: '' + localStorage.getItem("token") }
+    });
+  }
+  createNews(formData: FormData) {
+    const url = `${this.baseApi}/CreateNews`;
+    return this._http.post<NewsInterface>(url, formData, {
+      headers: { Authorization: '' + localStorage.getItem("token") }
+    });
+  }
 }

@@ -15,11 +15,12 @@
 }
 .sectionOne .fx-sectionOne{
     gap: 35px;
-    margin-top: 8rem;
+    margin-top: 2rem;
 }
 .sectionOne .part1-sectionOne{
     position: relative;
     width: 80%;
+    padding-top: 6rem;
 }
 .sectionOne .part1-sectionOne .texts-side{
     padding:40px 48px;
@@ -57,7 +58,7 @@
 .sectionOne .part1-sectionOne .texts-side p{line-height: 150%;}
 .sectionOne .part1-sectionOne .img-sectionOne{
     width: 80%;
-    height:max-content;
+    height:100%;
     position: absolute;
     right: 0;
     z-index: 0;
@@ -134,14 +135,14 @@
 }
 .sectionOne .part2-sectionOne .fxBox-num .fx-number img{width: 25px;}
 @media (min-width:1706.67px) {
-    .sectionOne .fx-sectionOne{margin-top: 180px;}
     .sectionOne .fxLast-texts{margin-top: 8px;}
     .sectionOne .part1-sectionOne .texts-side{bottom: 0rem;padding: 2rem 24px;width: 28%;}
     .sectionOne .texts-side .fxHead-texts span{font-size: 22px;}
     .sectionOne .part1-sectionOne .texts-side::after{right: 6.3rem;}
 }
 @media (min-width:1920px) {
-    .sectionOne .fx-sectionOne{margin-top: 220px;}
+    .sectionOne .fx-sectionOne{margin-top: 3rem;}
+    .sectionOne .part1-sectionOne{padding-top: 10rem;}
     .sectionOne .part1-sectionOne .texts-side::after {
     content: "";
     position: absolute;
@@ -158,8 +159,6 @@
     .sectionOne .texts-side .fxHead-texts span{font-size: 22px;}
 }
 @media (min-width:2048px) {
-    .sectionOne .fx-sectionOne{margin-top: 260px;}
-   .sectionOne .part1-sectionOne .img-sectionOne{height: 500px;}
     .sectionOne .part1-sectionOne .texts-side::after{right: 8.8rem;}
  }
 @media (min-width:2304px) {}
@@ -171,17 +170,17 @@
     .sectionOne .part1-sectionOne .texts-side::after {right: 5.6rem;top: -46px;}
 }
 @media (max-width:1228.8px) {
-    .sectionOne .fx-sectionOne{font-size: 50px;}
+    .sectionOne .fx-sectionOne{font-size: 50px;margin-top: 2rem;}
     .sectionOne .part1-sectionOne .button-side button { width: 260px;height: 60px;}
     .sectionOne .part1-sectionOne .texts-side::after{right: 3.7rem;top: -44px;}
-    .sectionOne .fx-sectionOne{margin-top: 6rem;}
     .sectionOne h1{font-size: 48px;}
     .sectionOne .part1-sectionOne .texts-side::after {right: 4.8rem;top: -46px;}
+    .sectionOne .part1-sectionOne .texts-side{padding: 1.5rem;}
 }
 @media (max-width:1024px) {
     .sectionOne h1{font-size: 40px;}
     .sectionOne .p-head{font-size: 24px;}
-    .sectionOne .fx-sectionOne{font-size: 30px;}
+    .sectionOne .fx-sectionOne{font-size: 30px;margin-top: 1.5rem;}
     .sectionOne .texts-side .fxHead-texts span{font-size: 16px;}
     .sectionOne .part1-sectionOne .texts-side{padding: 40px 12px;width: 38%;}
     .sectionOne .part1-sectionOne .button-side button { width: 220px;height: 45px;font-size: 14px;}
@@ -195,8 +194,8 @@
     .sectionOne .part1-sectionOne .button-side button { width: 180px;height: 40px;font-size: 13px;border-radius: 10px;}
     .sectionOne .part1-sectionOne .button-side{padding-top: 15px;padding-left: 15px;}
     .sectionOne .part1-sectionOne .texts-side::after {right: 4rem;}
-    .sectionOne .fx-sectionOne{margin-top: 3rem;}
     .sectionOne .part1-sectionOne .texts-side{padding: 32px 12px;}
+    .sectionOne .fx-sectionOne{font-size: 30px;margin-top: 1.5rem;}
 }
 @media (max-width:768px) {
     .sectionOne .part1-sectionOne .texts-side{padding: 41px 12px;width: 44%;}

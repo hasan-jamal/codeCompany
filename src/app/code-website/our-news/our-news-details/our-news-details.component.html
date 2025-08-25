@@ -22,7 +22,8 @@
     <div class="sectionContent-container px-120">
         <div class="d-flex fxSectionContent">
             <div class="divText style-font subtitle16px">
-                <p>{{ newsDetails.description }}</p>
+                <div [innerHTML]="safeDescription" class="prose max-w-full"></div>
+
             </div>
             <div class="divSide">
                 <h2 class="colorBlack subtitle20px font-semiBold mb16">Search by article</h2>

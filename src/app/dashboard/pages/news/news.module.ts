@@ -8,6 +8,7 @@ import { TableComponent } from './table/component/table/table.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { QuillModule } from 'ngx-quill';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { RouterLink } from '@angular/router';
     NewsRoutingModule,
     NgxPaginationModule,
     ReactiveFormsModule,
-    RouterLink
+    RouterLink,
+    QuillModule.forRoot(),
     ]
 })
 export class NewsModule { }

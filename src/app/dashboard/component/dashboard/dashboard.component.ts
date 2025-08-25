@@ -19,12 +19,13 @@ export class DashboardComponent implements OnInit{
   constructor(@Inject(PLATFORM_ID) private platformId: any) {}
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
+          this.loadCss('https://fonts.googleapis.com/icon?family=Material+Icons');
+
       this.loadCss('assets/css/tailwind/nucleo-icons.css');
       this.loadCss('assets/css/tailwind/nucleo-svg.css');
-          this.loadCss('assets/css/tailwind/perfect-scrollbar.css');
+      this.loadCss('assets/css/tailwind/perfect-scrollbar.css');
       this.loadCss('assets/css/tailwind/argon-dashboard-tailwind.min.css');
 
-      this.loadScript('assets/js/plugins/chartjs.min.js');
       this.loadScript('assets/js/plugins/perfect-scrollbar.min.js');
       this.loadScript('assets/js/plugins/argon-dashboard-tailwind.min.js');
     }

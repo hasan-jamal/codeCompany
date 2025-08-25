@@ -4,6 +4,7 @@
   import Swal from 'sweetalert2';
 import { LoginUserResponse } from '../../../../../models/User/User.modal';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-sign-in',
@@ -17,7 +18,10 @@ loginDto = {
   Password: ''
 };
 
-constructor(private _authService: AuthService,private router: Router) { }
+constructor(
+  private _authService: AuthService,
+  private router: Router,
+private toastr:ToastrService) { }
 
 onSubmit() {
   const payload = {
@@ -29,20 +33,14 @@ onSubmit() {
     (response: LoginUserResponse) => {
       this._authService.saveUserDetails(response);
 
-         Swal.fire({
-        title: `Welcome! ${response.fullName}`,
-        icon: "success",
-        draggable: true
-      }).then(() => {
-        this.router.navigateByUrl('/dashboard/home');
-      });
+    this.toastr.success('Welcome back!', 'Login Successful!');
+    this.router.navigateByUrl('/dashboard/home');
+     
     },
     (error) => {
       console.error('Login failed:', error);
-      Swal.fire({
-        title: error.error?.message || 'Login failed',
-        icon: "error"
-      });
+    this.toastr.error('Invalid email or password', 'Login Failed!');
+
     }
   );
 }

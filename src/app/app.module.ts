@@ -12,9 +12,9 @@ import { AppComponent } from './app.component';
   imports: [
    BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    ToastrModule.forRoot()
-  ],
+    ToastrModule.forRoot(),
+    AppRoutingModule 
+   ],
     providers: [],
 })
 export class AppModule {}

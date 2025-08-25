@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { NewsService } from '../../../services/news.service';
 import { NewsInterface } from '../../../models/News/News';
 import { NewsResponse } from '../../../models/News/News.Response';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-our-news-details',
@@ -19,11 +20,13 @@ export class OurNewsDetailsComponent implements OnInit {
   searchText:string = '';
   currentPage: number = 1;
   pageSize: number = 5;
+  safeDescription: SafeHtml | null = null;
 
 
   constructor(
     private route: ActivatedRoute,
-    private _newsService: NewsService
+    private _newsService: NewsService,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -34,6 +37,7 @@ export class OurNewsDetailsComponent implements OnInit {
         this.getDetails();
       }
     });
+
     this.getAllNews();
   }
   getAllNews(): void {
@@ -55,8 +59,13 @@ export class OurNewsDetailsComponent implements OnInit {
     this._newsService.getNewsDetails(this.storyId).subscribe({
       next: (data) => {
         this.newsDetails = data;
+
+        if (this.newsDetails?.description) {
+          this.safeDescription = this.sanitizer.bypassSecurityTrustHtml(this.newsDetails.description);
+        }
       },
       error: (err) => {
+        console.error('Error loading news details:', err);
       }
     });
   }

@@ -3,6 +3,7 @@ import { NewsService } from '../../../../../../services/news.service';
 import { NewsInterface } from '../../../../../../models/News/News';
 import { NewsResponse } from '../../../../../../models/News/News.Response';
 import Swal from 'sweetalert2';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-table',
@@ -16,48 +17,42 @@ export class TableComponent implements OnInit {
   searchText: string = '';
   currentPage: number = 1;
   pageSize: number = 10;
+  totalPages: number = 1;
   newsDetails!: NewsInterface;
   newsId: number; 
-  constructor(private _newsService: NewsService) {}
+  isDeleteModalOpen = false;
+  newsToDelete!: NewsInterface;
+  constructor(private _newsService: NewsService,private toastr: ToastrService) {}
 
    ngOnInit(): void {
     this.getNews();
   }
 
-  getNews(): void {
-    this._newsService
-      .GetNews(this.selectedSort, this.currentPage, this.pageSize, this.searchText)
-      .subscribe({
-        next: (data) => {
-          this.response = data;
-          console.log('News loaded:', data);
-        },
-        error: (err) => {
-          console.error('Error loading news:', err);
-        },
-      });
-  }
+getNews(): void {
+  this._newsService
+    .GetNews(this.selectedSort, this.currentPage, this.pageSize, this.searchText)
+    .subscribe({
+      next: (data) => {
+        this.response = data;
+        // حساب عدد الصفحات
+        this.totalPages = Math.ceil(data.news.pagination.rowCount / this.pageSize);
+      },
+      error: (err) => {
+        console.error('Error loading news:', err);
+      },
+    });
+}
 //  changeActivation
 changeNotActivation(newsId: number, story: any) {
   this._newsService.changeAvailable(newsId).subscribe({
     next: (res) => {
-      Swal.fire({
-        title: "Success!",
-        text: "The item has been archived successfully.",
-        icon: "success",
-        draggable: true
-      });
+      this.toastr.success('The item has been removed from archived items', 'Item Archived!');
       story.archived = false; 
       this.getNews();
     },
     error: (err) => {
       console.log(err);
-      Swal.fire({
-        title: "Welcome!",
-        text: 'You need to wait for the admins approval',
-        icon: "error",
-        draggable: true
-      });
+      this.toastr.error(err.err, 'Error!');
     }
   });
 }
@@ -65,20 +60,42 @@ changeNotActivation(newsId: number, story: any) {
 changeActivation(newsId: number,story: any) {
   this._newsService.changeNotAvailable(newsId).subscribe({
     next: (res) => {
-      Swal.fire({
-        title: "Item Restored!",
-        text: "The item has been removed from archived items.",
-        icon: "success",
-        draggable: true
-      });
+      this.toastr.success('The item has been added from archived items', 'Item Archived!');
       story.archived = false; 
       this.getNews();
     },
-    error: (err) => console.error(err)
+    error: (err) =>   this.toastr.error(err.err, 'Error!')
   });
 }
 
 
+openDeleteModal(story: NewsInterface) {
+  this.newsToDelete = story;
+  this.isDeleteModalOpen = true;
+}
 
+closeDeleteModal() {
+  this.isDeleteModalOpen = false;
+}
+confirmDelete() {
+  if (!this.newsToDelete) return;
+  console.log(this.newsToDelete);
+  this._newsService.deleteNews(this.newsToDelete.id).subscribe({
+next: () => {
+  this.toastr.success('The news item has been deleted successfully', 'Success');
+  this.getNews();
+  this.closeDeleteModal();
+},
+error: (err) => {
+  this.toastr.error('An error occurred while deleting the news item', 'Error');
+  console.error(err);
+}
+  });
+}
+changePage(page: number) {
+  if (page < 1 || page > this.totalPages) return;
+  this.currentPage = page;
+  this.getNews();
+}
 
 }
