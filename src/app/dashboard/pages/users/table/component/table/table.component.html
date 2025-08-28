@@ -4,10 +4,10 @@
             class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
             <div
                 class="p-6 pb-0 mb-4 border-b-0 border-b-solid rounded-t-2xl border-b-transparent flex items-center justify-between">
-                <h6 class="dark:text-white">News And Articles Table</h6>
-                <button type="button" routerLink="/dashboard/news/create"
+                <h6 class="dark:text-white">Users Table</h6>
+                <button type="button" routerLink="/auth/signup"
                     class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition">
-                    Add News
+                    Add New User
                 </button>
             </div>
             <div class="flex-auto px-0 pt-0 pb-2">
@@ -18,14 +18,25 @@
                             <tr>
                                 <th
                                     class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                                    Titles</th>
+                                    FullName</th>
 
                                 <th
                                     class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                                    Hashtags</th>
+                                    Email</th>
+
+                                <th
+                                    class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Phone Number</th>
+
+                                <th
+                                    class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Date Of Birth</th>
+                                <th
+                                    class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
+                                    Location</th>
                                 <th
                                     class="px-6 py-3 font-bold text-center uppercase  bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                                    Archived</th>
+                                    Activation</th>
                                 <th
                                     class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-collapse shadow-none dark:border-white/40 dark:text-white text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
                                     Create Date</th>
@@ -34,51 +45,78 @@
                                     Actions</th>
                             </tr>
                         </thead>
-                        <tbody *ngIf="response?.news?.data">
-                            <tr *ngFor="
-                                    let story of this.response!.news.data
-                                        | paginate
-                                        : {
-                                            id: 'server',
-                                            itemsPerPage: response?.news?.pagination?.pageSize ,
-                                            currentPage: response?.news?.pagination?.currentPage,
-                                            totalItems: response?.news?.pagination?.rowCount
-                                            }
-                                            ;let i = index;">
+                        <tbody *ngIf="response?.user?.data">
+                            <tr *ngFor="let user of response!.user.data; let i = index">
                                 <td
                                     class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                     <div class="flex px-2 py-1">
                                         <div>
-                                            <img [src]="'https://localhost:7265/images/' + story.imageService"
-                                                class="inline-flex items-center justify-center mr-4 text-sm text-white transition-all duration-200 ease-in-out h-9 w-9 rounded-xl"
-                                                alt="user1" />
+
+                                            <img *ngIf="user.imageUrl; else showSvg"
+                                                [src]="'https://localhost:7265/images/' + user.imageUrl"
+                                                alt="User Image">
+                                            <ng-template #showSvg>
+                                                <svg width="42px" height="42px" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round"></g>
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <path
+                                                            d="M12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4Z"
+                                                            fill="#000000"></path>
+                                                        <path
+                                                            d="M4 18C4 15.34 9.33 14 12 14C14.67 14 20 15.34 20 18V20H4V18Z"
+                                                            fill="#000000"></path>
+                                                    </g>
+                                                </svg>
+                                            </ng-template>
+
+
                                         </div>
                                         <div class="flex flex-col justify-center">
-                                            <h6 class="mb-0 text-sm leading-normal dark:text-white">{{story.title}}</h6>
+                                            <h6 class="mb-0 text-sm leading-normal dark:text-white">{{user.fullName}}
+                                            </h6>
                                             <p
                                                 class="mb-0 text-xs leading-tight dark:text-white dark:opacity-80 text-slate-400">
-                                                by {{story.userName}}</p>
+                                                <!-- {{ user.gender | genderText }} -->
+                                                {{user.isAdmin ? 'Admin' : 'User'}}
+                                            </p>
                                         </div>
                                     </div>
                                 </td>
 
                                 <td
-                                    class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
-                                    <div class="flex items-center gap-2">
-                                        <button *ngFor="let tag of story.hashtags | slice:0:3" class="px-3 py-1 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
-                                         dark:text-white text-sm font-medium shadow-md hover:opacity-90 transition">
-                                            {{ tag }}
-                                        </button> ...
-                                    </div>
+                                    class="p-2 bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                    <span
+                                        class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{{user.email}}</span>
+                                </td>
+                                <td
+                                    class="p-2 bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                    <span
+                                        class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{{user.phoneNumber}}</span>
+                                </td>
+                                <td
+                                    class="p-2 bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                    <span
+                                        class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{{user.dateOfBirth
+                                        | date:'yyyy MMMM dd'}}</span>
+                                </td>
+                                <td
+                                    class="p-2 bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
+                                    <span
+                                        class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">
+                                        {{ user.city | locationText }}
+                                    </span>
                                 </td>
                                 <td>
-                                    <span *ngIf="story.archived" (click)="  changeNotActivation(story.id,story)"
+                                    <span *ngIf="user.archived" (click)="  changeDeactivation(user.id,user)"
                                         class="bg-gradient-to-tl from-emerald-500 to-teal-400 px-2.5 text-xs rounded-1.8 
                                         py-1.4 block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white m-auto " style="width: max-content;">
                                         <img src="../../../../../../assets/dashboardImages/lock.svg" alt="lock"
                                             class="lock block m-auto">
                                     </span>
-                                    <span (click)="changeActivation(story.id,story)" *ngIf="!story.archived"
+                                    <span (click)="changeActivation(user.id,user)" *ngIf="!user.archived"
                                         class="bg-gradient-to-tl from-slate-600 to-slate-300 px-2.5 text-xs rounded-1.8 py-1.4 block m-auto whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white"
                                         style="width: max-content;">
                                         <img src="../../../../../../assets/dashboardImages/lock-off.svg" alt="lock-off"
@@ -91,19 +129,13 @@
                                     class="p-2 text-center align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                     <span
                                         class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-slate-400">{{
-                                        story.createdAt | date:'yyyy MMMM dd' }}</span>
+                                        user.createdAt | date:'yyyy MMMM dd' }}</span>
                                 </td>
                                 <td
                                     class="p-2 align-middle bg-transparent border-b dark:border-white/40 whitespace-nowrap shadow-transparent">
                                     <div
                                         class="flex items-center justify-center  gap-3 text-xs font-semibold leading-tight text-slate-400 transition-all duration-200 ease-in-out hover:text-slate-600 dark:hover:text-white">
-                                        <a [routerLink]="['../update', story.id]"
-                                            class="text-xs font-semibold leading-tight dark:text-white  text-slate-400">
-                                            <span class="material-icons text-2xl">
-                                                edit_square
-                                            </span>
-                                        </a>
-                                        <a (click)="openDeleteModal(story)"
+                                        <a (click)="openDeleteModal(user)"
                                             class="text-xs font-semibold leading-tight dark:text-white dark:opacity-80 text-red-600"><span
                                                 class="material-icons text-2xl">
                                                 delete

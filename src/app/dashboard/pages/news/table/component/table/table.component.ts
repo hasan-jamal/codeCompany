@@ -4,6 +4,7 @@ import { NewsInterface } from '../../../../../../models/News/News';
 import { NewsResponse } from '../../../../../../models/News/News.Response';
 import Swal from 'sweetalert2';
 import { ToastrService } from 'ngx-toastr';
+import { CurrentUserService } from '../../../../../../services/currentUser.service';
 
 @Component({
   selector: 'app-table',
@@ -22,19 +23,21 @@ export class TableComponent implements OnInit {
   newsId: number; 
   isDeleteModalOpen = false;
   newsToDelete!: NewsInterface;
-  constructor(private _newsService: NewsService,private toastr: ToastrService) {}
+  constructor(private _newsService: NewsService,private toastr: ToastrService
+    , private currentUserService: CurrentUserService
+  ) {}
 
    ngOnInit(): void {
     this.getNews();
   }
 
 getNews(): void {
-  this._newsService
-    .GetNews(this.selectedSort, this.currentPage, this.pageSize, this.searchText)
+  console.log(this.currentUserService.getToken());
+
+  this._newsService.getNews(this.selectedSort, this.currentPage, this.pageSize, this.searchText)
     .subscribe({
       next: (data) => {
         this.response = data;
-        // حساب عدد الصفحات
         this.totalPages = Math.ceil(data.news.pagination.rowCount / this.pageSize);
       },
       error: (err) => {

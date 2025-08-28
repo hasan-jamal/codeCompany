@@ -1,7 +1,5 @@
   import { Component } from '@angular/core';
-  import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   import { AuthService } from '../../../../../services/auth.service';
-  import Swal from 'sweetalert2';
 import { LoginUserResponse } from '../../../../../models/User/User.modal';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -21,7 +19,7 @@ loginDto = {
 constructor(
   private _authService: AuthService,
   private router: Router,
-private toastr:ToastrService) { }
+private toastr: ToastrService) { }
 
 onSubmit() {
   const payload = {
@@ -40,7 +38,6 @@ onSubmit() {
     (error) => {
       console.error('Login failed:', error);
     this.toastr.error('Invalid email or password', 'Login Failed!');
-
     }
   );
 }

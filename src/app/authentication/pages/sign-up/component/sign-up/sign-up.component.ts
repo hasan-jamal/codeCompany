@@ -2,6 +2,8 @@
   import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   import { AuthService } from '../../../../../services/auth.service';
 import Swal from 'sweetalert2';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
   @Component({
     selector: 'app-sign-up',
@@ -43,6 +45,8 @@ import Swal from 'sweetalert2';
     constructor(
       private fb: FormBuilder,
       private _authService:AuthService,
+      private toastr: ToastrService,
+      private router: Router
     ) {
       this.registerForm = this.fb.group({
         fullName: ['', Validators.required],
@@ -85,13 +89,8 @@ import Swal from 'sweetalert2';
           this.imageUrl = undefined;
           // this.toastr.success('User registered successfully', 'Success');
 
-            Swal.fire({
-            title: "Welcome!",
-            text: 'You need to wait for the admins approval',
-            icon: "success",
-            draggable: true
-          });
-          console.log(res);
+        this.toastr.success('Welcome back!', 'Add New User Successful!');
+        this.router.navigateByUrl('/dashboard/users');
         },
         error: (err) => {
               console.error('Login failed:', err);
@@ -105,10 +104,7 @@ import Swal from 'sweetalert2';
                 errorMsg = 'Login failed. Please try again.';
               }
 
-              Swal.fire({
-                title: errorMsg,
-                icon: 'error'
-              });
+                this.toastr.error('Invalid email or password', 'Login Failed!');
         }
       });
     }

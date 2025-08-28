@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../../services/auth.service';
 import { CommonModule } from '@angular/common';
+import { CurrentUserService } from '../../../services/currentUser.service';
 
 @Component({
   selector: 'app-nav',
@@ -9,12 +9,23 @@ import { CommonModule } from '@angular/common';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  isServiceProvider : string| null;
-  isAdmin : string| null;
+isServiceProvider: boolean | null = null;
+isAdmin: boolean | null = null;
+userName: string | null = null;
 
-  constructor(protected _authService: AuthService) {}
-   ngOnInit(): void {
-      this._authService.name = localStorage.getItem('fullName');
-      this.isAdmin = localStorage.getItem('isAdmin');
-  }
+constructor(private currentUserService: CurrentUserService) {}
+
+ngOnInit(): void {
+  this.currentUserService.currentUser$.subscribe(user => {
+    if (user) {
+      this.userName = user.username;
+      this.isAdmin = user.isAdmin || false;
+    } else {
+      this.userName = null;
+      this.isAdmin = null;
+    }
+  });
+}
+
+
 }

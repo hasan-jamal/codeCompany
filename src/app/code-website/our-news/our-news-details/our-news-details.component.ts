@@ -40,20 +40,24 @@ export class OurNewsDetailsComponent implements OnInit {
 
     this.getAllNews();
   }
-  getAllNews(): void {
-    this._newsService
-      .getAllNews(
-        this.selectedSort,
-        this.currentPage, 
-        this.pageSize,
-        this.searchText,
-      )
-      .subscribe((data) => {
+getAllNews(): void {
+  this._newsService
+    .getAllNews(
+      this.selectedSort,
+      this.currentPage, 
+      this.pageSize,
+      this.searchText
+    )
+    .subscribe({
+      next: (data) => {
         this.response = data;
-        console.log(data);
-        
-      });
-    }
+        console.log("✅ News loaded:", data);
+      },
+      error: (err) => {
+        console.error("❌ Error loading news:", err);
+      }
+    });
+}
 
   getDetails(): void {
     this._newsService.getNewsDetails(this.storyId).subscribe({

@@ -1,4 +1,6 @@
-export interface NewsInterface{
+import { BaseEntity } from "../base-entity";
+
+export interface NewsInterface extends BaseEntity{
   id: number,
   title: string,
   description: string,
@@ -9,7 +11,7 @@ export interface NewsInterface{
   userId: number,
   user: string,
   userName :string,
-  createdAt:string,
+  createdAt:Date,
    hashtags?: string[],
 }
 export interface NewsDto{

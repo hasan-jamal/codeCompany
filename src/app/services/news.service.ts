@@ -1,79 +1,80 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { NewsResponse } from '../models/News/News.Response';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { NewsInterface } from '../models/News/News';
+import { CurrentUserService } from './currentUser.service';
+import { BaseService } from './repo/base.service';
+import { NewsResponse } from '../models/News/News.Response';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NewsService {
-    baseApi: string = "https://localhost:7265/api/News";
-    constructor(private _http:HttpClient) {}
-    search:string ="";
-    news: NewsResponse = {
-      news: {
-        data: [],
-        sortable: {},
-        pagination: {
-          currentPage: 0,
-          pageCount: 0,
-          pageSize: 0,
-          rowCount: 0
-        }
-      }
-    };
- getAllNews(
-    sort: string,
-    page: number = 1,
-    pageSize: number = 10,
-    searchText: string = '',
-  ): Observable<NewsResponse> {
-    const url = `${this.baseApi}/GetAllNews?sort=${sort}&page=${page}&pageSize=${pageSize}&searchText=${searchText}`;
-    return this._http.get<NewsResponse>(url);
+export class NewsService extends BaseService<NewsInterface> {
+  
+  constructor(http: HttpClient, private currentUserService: CurrentUserService) {
+    super(http, "News"); // endpoint
   }
-   GetNews(
-    sort: string,
-    page: number = 1,
-    pageSize: number = 10,
-    searchText: string = '',
-  ): Observable<NewsResponse> {
-    const url = `${this.baseApi}/GetNews?sort=${sort}&page=${page}&pageSize=${pageSize}&searchText=${searchText}`;
-    return this._http.get<NewsResponse>(url,
-    {
-        headers: { Authorization: ''+ localStorage.getItem("token") } 
-    });
+
+ private getAuthHeaders(): HttpHeaders {
+  const token = this.currentUserService.getToken();
+  let headers = new HttpHeaders();
+  if (token) {
+    headers = headers.set('Authorization', token); 
   }
+  return headers;
+}
+
+getAllNews(sort: string, page: number = 1, pageSize: number = 10, searchText: string = ''): Observable<NewsResponse> {
+  const url = `${this.baseURL}${this.endPoint}/GetAllNews?sort=${sort}&page=${page}&pageSize=${pageSize}&searchText=${searchText}`;
+  return this.http.get<NewsResponse>(url);
+}
+getNews(sort: string, page: number = 1, pageSize: number = 10, searchText: string = ''): Observable<NewsResponse> {
+  const url = `${this.baseURL}${this.endPoint}/GetNews?sort=${sort}&page=${page}&pageSize=${pageSize}&searchText=${searchText}`;
+  return this.http.get<NewsResponse>(url, { headers: this.getAuthHeaders() });
+}
   getNewsDetails(newsId: number) {
-      const url = `${this.baseApi}/DetailsNews?id=${newsId}`;
-      return this._http.get<NewsInterface>(url);
-  } 
-  changeNotAvailable(newsId: number): Observable<any>{
-    return this._http.patch<any>(`${this.baseApi}/ArchiveNews/${newsId}`, {}, {
-      headers: { Authorization: localStorage.getItem("token") || '' }
-    })
+    return this.http.get<NewsInterface>(
+      `${this.baseURL}${this.endPoint}/DetailsNews?id=${newsId}`,
+      { headers: this.getAuthHeaders() }
+    );
   }
-  changeAvailable(newsId: number): Observable<any> {
-    return this._http.patch<any>(`${this.baseApi}/UnArchiveNews/${newsId}`, {}, {
-      headers: { Authorization: localStorage.getItem("token") || '' }
-    })
+
+  changeNotAvailable(newsId: number) {
+    return this.http.patch(
+      `${this.baseURL}${this.endPoint}/ArchiveNews/${newsId}`,
+      {},
+      { headers: this.getAuthHeaders() }
+    );
   }
+
+  changeAvailable(newsId: number) {
+    return this.http.patch(
+      `${this.baseURL}${this.endPoint}/UnArchiveNews/${newsId}`,
+      {},
+      { headers: this.getAuthHeaders() }
+    );
+  }
+
   updateNews(newsId: number, formData: FormData) {
-    const url = `${this.baseApi}/UpdateNews/${newsId}`;
-    return this._http.put<NewsInterface>(url, formData, {
-      headers: { Authorization: '' + localStorage.getItem("token") }
-    });
+    return this.http.put<NewsInterface>(
+      `${this.baseURL}${this.endPoint}/UpdateNews/${newsId}`,
+      formData,
+      { headers: this.getAuthHeaders() }
+    );
   }
-  deleteNews(newsId: number) {
-    const url = `${this.baseApi}/DeleteNews/${newsId}`;
-    return this._http.delete<NewsInterface>(url, {
-      headers: { Authorization: '' + localStorage.getItem("token") }
-    });
-  }
+
   createNews(formData: FormData) {
-    const url = `${this.baseApi}/CreateNews`;
-    return this._http.post<NewsInterface>(url, formData, {
-      headers: { Authorization: '' + localStorage.getItem("token") }
-    });
+    return this.http.post<NewsInterface>(
+      `${this.baseURL}${this.endPoint}/CreateNews`,
+      formData,
+      { headers: this.getAuthHeaders() }
+    );
   }
+
+    deleteNews(newsId: number): Observable<any> {
+      return this.http.delete<any>(`${this.baseURL}/DeleteNews/${newsId}`, {
+        headers: this.getAuthHeaders()
+      });
+    }
+
 }

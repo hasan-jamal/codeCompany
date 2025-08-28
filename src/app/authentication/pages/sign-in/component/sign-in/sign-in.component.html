@@ -25,19 +25,26 @@
                             for="rememberMe">Remember
                             me</label>
                     </div> -->
-                    <div class="text-center">
+                    <div class="text-center flex flex-col gap-3">
                         <button type="submit"
-                            class="inline-block w-full px-16 py-3.5 mt-6 mb-0 font-bold leading-normal text-center text-white align-middle transition-all bg-blue-500 border-0 rounded-lg cursor-pointer hover:-translate-y-px active:opacity-85 hover:shadow-xs text-sm ease-in tracking-tight-rem shadow-md bg-150 bg-x-25">
+                            class="inline-block w-full px-16 py-3.5 mt-3 mb-0 font-bold leading-normal text-center text-white align-middle transition-all bg-blue-500 border-0 rounded-lg cursor-pointer hover:-translate-y-px active:opacity-85 hover:shadow-xs text-sm ease-in tracking-tight-rem shadow-md bg-150 bg-x-25">
                             Sign in
+                        </button>
+                        <button routerLink="/" type="button"
+                            class="inline-block w-full px-16 py-3.5 mt-0 mb-0 font-bold leading-normal text-center text-white align-middle transition-all bg-slate-700 border-0 rounded-lg cursor-pointer hover:-translate-y-px active:opacity-85 hover:shadow-xs text-sm ease-in tracking-tight-rem shadow-md bg-150 bg-x-25">
+                            Back to Home Page
                         </button>
                     </div>
                 </form>
 
             </div>
             <div class="border-black/12.5 rounded-b-2xl border-t-0 border-solid p-6 text-center pt-0 px-1 sm:px-6">
-                <p class="mx-auto mb-6 leading-normal text-sm">Don't have an account? <a routerLink="/auth/signup"
-                        class="font-semibold text-transparent bg-clip-text bg-gradient-to-tl from-blue-500 to-violet-500">Sign
-                        up</a></p>
+                <p class="mx-auto mb-6 leading-normal text-sm">Don't have an account?
+                    <a routerLink="/auth/signup"
+                        class="font-semibold text-transparent bg-clip-text bg-gradient-to-tl from-blue-500 to-violet-500">
+                        Sign up
+                    </a>
+                </p>
             </div>
         </div>
     </div>

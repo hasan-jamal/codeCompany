@@ -19,7 +19,8 @@ import { RouterLink } from '@angular/router';
     AuthenticationRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterLink
+    RouterLink,
+    ToastrModule  
   ]
 })
 export class AuthenticationModule { }

@@ -150,8 +150,9 @@
             <a routerLink="news" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Insights</a>
             <a routerLink="contactUs" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Contact
                 us</a>
-            <a routerLink="/dashboard/home" class="font-medium linkStyle" *ngIf="this._authService.name">dashboard</a>
-            <a routerLink="/auth/signIn" class="font-medium linkStyle" *ngIf="!this._authService.name">signIn</a>
+            <a routerLink="/dashboard/home" class="font-medium linkStyle"
+                *ngIf="(currentUser$ | async) as user">dashboard</a>
+            <a routerLink="/auth/signIn" class="font-medium linkStyle" *ngIf="!(currentUser$ | async)">signIn</a>
 
         </div>
         <div class="btn-header"><button type="button" (click)="openJoinUsModal()"

@@ -34,10 +34,8 @@
                 <li class="flex items-center">
                     <a
                         class="flex items-center gap-2 py-2 text-sm font-semibold text-white transition-all ease-nav-brand">
-                        <img *ngIf="_authService.name" [src]="_authService.image || '/assets/images/default-user.png'"
-                            alt="User Image" width="40">
-                        <span class="hidden sm:inline" *ngIf="this._authService.name">Welcome
-                            {{this._authService.name}}</span>
+                        <img *ngIf="userName" src="/assets/images/default-user.png" alt="User Image" width="40">
+                        <span class="hidden sm:inline" *ngIf="userName">Welcome {{ userName }}</span>
                     </a>
                 </li>
                 <li class="flex items-center pl-4 xl:hidden">

@@ -1,6 +1,12 @@
+import { BaseEntity } from "../base-entity";
 import { ServiceInterface } from "../Service/Service.modal";
-
-export interface UserInterface {
+export interface User {
+  id: number;
+  username: string;
+  token?: string;
+  isAdmin?: boolean;
+}
+export interface UserInterface  extends BaseEntity{
     fullName: string,
     password: string,
     phoneNumber: string,
@@ -8,15 +14,16 @@ export interface UserInterface {
     dateOfBirth: string,
     gender: number,
     email: string,
-    city: string,
+    city: number,
     fullAddress: string,
-    createdAt:string,
-    updatedAt: string,
+    createdAt:Date,
+    updatedAt: Date,
     archived: string,
     id: number,
     serviceName:string[],
     services:ServiceInterface[],
     isUser: boolean,
+    isAdmin: boolean,   
 }
 export interface UserDto {
     fullName: string,
@@ -50,7 +57,7 @@ export interface UserRegistrationModel {
 }
 export interface LoginUserResponse {
     id: number;
-    fullName: string | null;
+    fullName: string;
     image: string | null;
     phoneNumber: string;
     password: string,
