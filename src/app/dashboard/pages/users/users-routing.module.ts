@@ -8,7 +8,8 @@ const routes: Routes = [
     component: UsersComponent,
     children: [
       {
-        path: 'table',
+      path: 'table',
+      data: { title: 'Dashboard', subtitle: 'Users Page' },
         loadChildren: () =>
           import('./table/table.module').then(m => m.TableModule)
       },

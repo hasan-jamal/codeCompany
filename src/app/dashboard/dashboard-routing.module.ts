@@ -6,6 +6,7 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+
     children: [
       {
         path: '',
@@ -13,10 +14,12 @@ const routes: Routes = [
       },
       {
         path: 'home',
+        data: { title: 'Dashboard', subtitle: 'Home Page' },
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'profile',
+        data: { title: 'Dashboard', subtitle: 'News Page' },
         loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
       },
       {

@@ -5,6 +5,8 @@ import { NewsService } from '../../../../../services/news.service';
 import { CurrentUserService } from '../../../../../services/currentUser.service';
 import { NewsResponse } from '../../../../../models/News/News.Response';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { DashboardStats } from '../../../../../models/HomeDashboard/DashboardStats';
+import { DashboardService } from '../../../../../services/DashboardService';
 
 @Component({
   selector: 'app-home-page',
@@ -22,30 +24,41 @@ export class HomePageComponent implements OnInit {
   currentPage: number = 1;
   pageSize: number = 10;
   totalPages: number = 1;
+  stats?: DashboardStats;
+ curSlide = 0;
+
     constructor(
       private _newsService: NewsService,
-      private currentUserService: CurrentUserService
+      private currentUserService: CurrentUserService,
+      private dashboardService: DashboardService
     ) {}
 
    ngOnInit(): void {
     this.getNews();
+
+    this.dashboardService.getDashboardStats().subscribe({
+        next: (data) => this.stats = data,
+        error: (err) => console.error(err)
+      });
   }
 
-getNews(): void {
-  this._newsService.getNews(this.selectedSort, this.currentPage, this.pageSize, this.searchText)
-    .subscribe({
-      next: (data) => {
-        this.response = data;
-        this.totalPages = Math.ceil(data.news.pagination.rowCount / this.pageSize);
-      },
-      error: (err) => {
-        console.error('Error loading news:', err);
-      },
-    });
-}
+  
+
+  getNews(): void {
+    this._newsService.getNews(this.selectedSort, this.currentPage, this.pageSize, this.searchText)
+      .subscribe({
+        next: (data) => {
+          this.response = data;
+          this.totalPages = Math.ceil(data.news.pagination.rowCount / this.pageSize);
+        },
+        error: (err) => {
+          console.error('Error loading news:', err);
+        },
+      });
+  }
 
 
-    curSlide = 0;
+   
 
     get maxSlide() {
       return this.response!.news.data.length - 1;

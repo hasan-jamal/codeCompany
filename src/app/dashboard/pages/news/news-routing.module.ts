@@ -7,19 +7,23 @@ const routes: Routes = [
   {
     path: '',
     component: NewsComponent,
+
     children: [
       {
         path: 'table',
+       data: { title: 'Dashboard', subtitle: 'News Page' },
         loadChildren: () =>
           import('./table/table.module').then(m => m.TableModule)
       },
       {
         path: 'create',
+        data: { title: 'Users', subtitle: 'Create User' },
         loadChildren: () =>
           import('./create/create.module').then(m => m.CreateModule)
       },
       {
         path: 'update/:id',
+        data: { title: 'Users', subtitle: 'Update User' },
         loadChildren: () =>
           import('./update/update.module').then(m => m.UpdateModule)
       },
