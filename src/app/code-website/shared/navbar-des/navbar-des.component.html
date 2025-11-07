@@ -3,161 +3,238 @@
         <a class="logo-header" routerLink="/"><img src="assets/images/logo.svg" alt="logo image"></a>
         <div class="d-flex links-header  align-items-center">
             <a routerLink="/" routerLinkActive="color-linearGradient" [routerLinkActiveOptions]="{exact:true}"
-                class="font-medium  linkStyle">Home</a>
+                class="font-medium  linkStyle">{{ 'Navbar.Links.Home' | translate}}</a>
             <a routerLink="aboutUs" routerLinkActive="color-linearGradient" class="font-medium linkStyle"></a>
             <!-- <a routerLink="/news/newsDetails/1" routerLinkActive="color-linearGradient"
                 class="font-medium linkStyle">newsDetails</a> -->
             <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
                 <button type="button" class="link d-flex align-items-center" data-target="Industries-list">
-                    <span class="font-medium linkStyle">About us</span>
+                    <span class="font-medium linkStyle">{{ 'Navbar.Links.AboutUs.Title' | translate}}</span>
                     <img src="assets/images/arrowDown.svg" alt="arrowDown icon">
                 </button>
                 <div class="listAboutHeader">
                     <a routerLink="aboutUs" routerLinkActive="active" class="font-medium subtitle16px "
-                        [routerLinkActiveOptions]="{ exact: true }">About CODE</a>
-                    <a routerLink="/aboutUs/ourClients" routerLinkActive="active" class="font-medium subtitle16px ">Our
-                        clients</a>
-                    <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium subtitle16px">Our
-                        partners</a>
+                        [routerLinkActiveOptions]="{ exact: true }">{{ 'Navbar.Links.AboutUs.AboutCODE' |
+                        translate}}</a>
+                    <a routerLink="/aboutUs/ourClients" routerLinkActive="active" class="font-medium subtitle16px ">{{
+                        'Navbar.Links.AboutUs.OurClients' | translate}}</a>
+                    <a routerLink="/aboutUs/ourPartners" routerLinkActive="active" class="font-medium subtitle16px">{{
+                        'Navbar.Links.AboutUs.OurPartners' | translate}}</a>
                 </div>
             </div>
             <!-- <a routerLink="ourServices" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
                 services</a> -->
             <div class="btnServicesHeader" (mouseenter)="showCover()" (mouseleave)="hideCover()">
-                <button type="button" class="link d-flex align-items-center" data-target="Industries-list"
-                    routerLink="/ourServices" routerLinkActive="dropDownActive">
-                    <span class="font-medium linkStyle">Our services</span>
+                <button type="button" class="link d-flex align-items-center" routerLink="/ourServices"
+                    routerLinkActive="dropDownActive">
+                    <span class="font-medium linkStyle">{{ 'Navbar.Links.OurServices' | translate }}</span>
                     <img src="assets/images/arrowDown.svg" alt="arrowDown icon">
                 </button>
                 <div class="listServicesHeader" id="Industries-list">
                     <div class="d-flex fxListPart">
                         <div class="listPart">
                             <div class="backService backServiceActive" routerLink="/ourServices/AISolutions">
-                                <span class="font-medium subtitle16px">AISolutions</span>
+                                <span class="font-medium subtitle16px">{{ 'SERVICES.AISolutions.title' | translate
+                                    }}</span>
                             </div>
-                            <div class="d-flex flex-column fx-listServices ">
+                            <div class="d-flex flex-column fx-listServices">
                                 <a class="font-medium" routerLink="/ourServices/AISolutions/AIDigitalTwin"
-                                    routerLinkActive="active">AI Digital
-                                    Twin</a>
-                                <a routerLink="/ourServices/AISolutions/AiComputerVision" class="font-medium"
-                                    routerLinkActive="active">AI
-                                    Computer Vision</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AISolutions.items.digitalTwin' | translate }}
+                                </a>
+                                <a class="font-medium" routerLink="/ourServices/AISolutions/AiComputerVision"
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AISolutions.items.computerVision' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/AISolutions/AiVoicebotChatbot"
-                                    routerLinkActive="active">Voicebots
-                                    / Chatbots</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AISolutions.items.voiceChatbots' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/AISolutions/AiInnovationHub"
-                                    routerLinkActive="active">AI
-                                    Innovation Hub</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AISolutions.items.innovationHub' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/AISolutions/IndoorWayfinding"
-                                    routerLinkActive="active">Indoor
-                                    Wayfinding</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AISolutions.items.indoorWayfinding' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/AISolutions/smartCabins"
-                                    routerLinkActive="active">Smart Cabins</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AISolutions.items.smartCabins' | translate }}
+                                </a>
                             </div>
                         </div>
+
                         <div class="listPart listPartCenter">
                             <div class="backService">
-                                <span class="font-medium subtitle16px"
-                                    routerLink="/ourServices/Data&CloudEngineering">Data & Cloud
-                                    Engineering</span>
+                                <span class="font-medium subtitle16px" routerLink="/ourServices/Data&CloudEngineering">
+                                    {{ 'SERVICES.DataCloudEngineering.title' | translate }}
+                                </span>
                             </div>
-                            <div class="d-flex flex-column fx-listServices ">
+                            <div class="d-flex flex-column fx-listServices">
                                 <a class="font-medium" routerLink="/ourServices/Data&CloudEngineering/dataEngineering"
-                                    routerLinkActive="active">Data
-                                    Engineering & Management</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DataCloudEngineering.items.dataEngineering' | translate }}
+                                </a>
                                 <a class="font-medium"
                                     routerLink="/ourServices/Data&CloudEngineering/databaseConsolidation"
-                                    routerLinkActive="active">Database
-                                    Consolidation & Centralization</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DataCloudEngineering.items.databaseConsolidation' | translate }}
+                                </a>
                                 <a class="font-medium"
                                     routerLink="/ourServices/Data&CloudEngineering/disasterRecoverySolutions"
-                                    routerLinkActive="active">Disaster
-                                    Recovery Solutions</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DataCloudEngineering.items.disasterRecovery' | translate }}
+                                </a>
                                 <a class="font-medium"
                                     routerLink="/ourServices/Data&CloudEngineering/ItServiceManagement"
-                                    routerLinkActive="active">ITSM</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DataCloudEngineering.items.ITSM' | translate }}
+                                </a>
                             </div>
                         </div>
+
                         <div class="listPart">
                             <div class="backService" routerLink="/ourServices/DigitalHealthcare">
-                                <span class="font-medium subtitle16px">Digital Healthcare</span>
+                                <span class="font-medium subtitle16px">{{ 'SERVICES.DigitalHealthcare.title' | translate
+                                    }}</span>
                             </div>
-                            <div class="d-flex flex-column fx-listServices ">
+                            <div class="d-flex flex-column fx-listServices">
                                 <a class="font-medium"
                                     routerLink="/ourServices/DigitalHealthcare/Hospital-InformationSystems"
-                                    routerLinkActive="active">HIS
-                                    (Hospital Information Systems)</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DigitalHealthcare.items.HIS' | translate }}
+                                </a>
                                 <a class="font-medium"
                                     routerLink="/ourServices/DigitalHealthcare/Revenue-CycleManagement"
-                                    routerLinkActive="active">RCM
-                                    (Revenue Cycle Management)</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DigitalHealthcare.items.RCM' | translate }}
+                                </a>
                                 <a class="font-medium"
                                     routerLink="/ourServices/DigitalHealthcare/Diagnosis-RelatedGroups"
-                                    routerLinkActive="active">DRG
-                                    (Diagnosis-Related Groups)</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DigitalHealthcare.items.DRG' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/DigitalHealthcare/Tele-medicine"
-                                    routerLinkActive="active">Tele-medicine</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.DigitalHealthcare.items.teleMedicine' | translate }}
+                                </a>
                             </div>
                         </div>
+
                         <div class="listPart">
                             <div class="backService" routerLink="/ourServices/Passive&CivilWork">
-                                <span class="font-medium subtitle16px">Passive & Civil Work</span>
+                                <span class="font-medium subtitle16px">{{ 'SERVICES.PassiveCivil.title' | translate
+                                    }}</span>
                             </div>
-                            <div class="d-flex flex-column fx-listServices ">
+                            <div class="d-flex flex-column fx-listServices">
                                 <a class="font-medium" routerLink="/ourServices/Passive&CivilWork/commandCenter"
-                                    routerLinkActive="active">Command
-                                    Center</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.PassiveCivil.items.commandCenter' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/Passive&CivilWork/mediaCenter"
-                                    routerLinkActive="active">Media
-                                    Center</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.PassiveCivil.items.mediaCenter' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/Passive&CivilWork/socNocenvironments"
-                                    routerLinkActive="active">NOC & SOC</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.PassiveCivil.items.NOC_SOC' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/Passive&CivilWork/smartMeetingRooms"
-                                    routerLinkActive="active">Meeting Rooms</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.PassiveCivil.items.meetingRooms' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/Passive&CivilWork/businessResearch"
-                                    routerLinkActive="active">Business Research Center</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.PassiveCivil.items.businessResearch' | translate }}
+                                </a>
                             </div>
                         </div>
+
                         <div class="listPart listPartCenter">
                             <div class="backService" routerLink="/ourServices/AutomationAndSecurity">
-                                <span class="font-medium subtitle16px">Automation & Security</span>
+                                <span class="font-medium subtitle16px">{{ 'SERVICES.AutomationSecurity.title' |
+                                    translate }}</span>
                             </div>
-                            <div class="d-flex flex-column fx-listServices ">
+                            <div class="d-flex flex-column fx-listServices">
                                 <a class="font-medium" routerLink="/ourServices/AutomationAndSecurity/digitalSignature"
-                                    routerLinkActive="active">Digital Signature</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AutomationSecurity.items.digitalSignature' | translate }}
+                                </a>
                                 <a class="font-medium" routerLink="/ourServices/AutomationAndSecurity/roboticProcess"
-                                    routerLinkActive="active">RPA (UiPath)</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.AutomationSecurity.items.RPA' | translate }}
+                                </a>
                             </div>
                         </div>
+
                         <div class="listPart">
                             <div class="backService" routerLink="/ourServices/Software&Development">
-                                <span class="font-medium subtitle16px">Software & Development</span>
+                                <span class="font-medium subtitle16px">{{ 'SERVICES.SoftwareDevelopment.title' |
+                                    translate }}</span>
                             </div>
-                            <div class="d-flex flex-column fx-listServices ">
+                            <div class="d-flex flex-column fx-listServices">
                                 <a class="font-medium"
                                     routerLink="/ourServices/Software&Development/webMobileAppDevelopment"
-                                    routerLinkActive="active"> Web & Mobile App Development</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.SoftwareDevelopment.items.webMobile' | translate }}
+                                </a>
                                 <a class="font-medium"
                                     routerLink="/ourServices/Software&Development/sharePointSolutions"
-                                    routerLinkActive="active">SharePoint Solutions</a>
+                                    routerLinkActive="active">
+                                    {{ 'SERVICES.SoftwareDevelopment.items.sharePoint' | translate }}
+                                </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+            <!-- <div class="listServicesHeader">
+                    <div class="d-flex flex-wrap fxListPart">
+                        <div class="listPart" *ngFor="let service of services; let i = index"
+                            [class.listPartCenter]="(i+1) % 3 === 2">
+                            <div class="backService" [routerLink]="['/ourServices', service.slug]">
+                                <img *ngIf="service.imageService" [src]="service.imageService" alt="{{service.title}}"
+                                    class="service-img">
+                                <span class="font-medium subtitle16px">
+                                    {{ service.title }}
+                                </span>
+                            </div>
+
+                            <div class="d-flex flex-column fx-listServices">
+                                <a *ngFor="let sub of service.subServices" class="font-medium"
+                                    [routerLink]="['/ourServices', service.slug, sub.slug]" routerLinkActive="active">
+                                    {{ sub.title }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
             <!-- <a routerLink="ourPartners" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Our
                 partners</a> -->
-            <a routerLink="news" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Insights</a>
-            <a routerLink="contactUs" routerLinkActive="color-linearGradient" class="font-medium linkStyle">Contact
-                us</a>
-            <a routerLink="/dashboard/home" class="font-medium linkStyle"
+            <a routerLink="news" routerLinkActive="color-linearGradient" class="font-medium linkStyle">{{
+                'Navbar.Links.Insights' | translate}}</a>
+            <a routerLink="contactUs" routerLinkActive="color-linearGradient" class="font-medium linkStyle">{{
+                'Navbar.Links.ContactUs' | translate}}</a>
+            <!-- <a routerLink="services" routerLinkActive="color-linearGradient" class="font-medium linkStyle">{{
+                'Navbar.Links.ContactUs' | translate}}</a> -->
+            <!-- <a routerLink="/dashboard/home" class="font-medium linkStyle"
                 *ngIf="(currentUser$ | async) as user">dashboard</a>
-            <a routerLink="/auth/signIn" class="font-medium linkStyle" *ngIf="!(currentUser$ | async)">signIn</a>
+            <a routerLink="/auth/signIn" class="font-medium linkStyle" *ngIf="!(currentUser$ | async)">signIn</a> -->
 
         </div>
-        <div class="btn-header"><button type="button" (click)="openJoinUsModal()"
-                class="font-medium btn-linearGradient colorWhite" type="button">Join
-                us</button></div>
+        <div class="btn-header d-flex">
+            <button type="button" (click)="openJoinUsModal()" class="font-medium btn-linearGradient colorWhite"
+                type="button">{{ 'Navbar.Links.JoinUs' | translate}}</button>
+            <button type="button" class="font-medium btn-linearGradient colorWhite btnLang" type="button"
+                (click)="switchLanguage('ar')" *ngIf="lang == 'en'">Ar</button>
+            <button type="button" class="font-medium btn-linearGradient colorWhite btnLang" type="button"
+                (click)="switchLanguage('en')" *ngIf="lang == 'ar'">En</button>
+        </div>
     </div>
 </header>
 <div class="coverBack" [ngClass]="{ 'active': isCoverVisible }"></div>

@@ -6,6 +6,7 @@ import { OurNewsComponent } from './components/our-news/our-news.component';
 import { OurNewsDetailsComponent } from './our-news-details/our-news-details.component';
 import { RouterLink } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     OurNewsRoutingModule,
     NgxPaginationModule,   
     SlickCarouselModule,
-    RouterLink
+    RouterLink,
+    TranslateModule
   ]
 })
 export class OurNewsModule { }

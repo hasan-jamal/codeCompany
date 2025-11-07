@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CurrentUserService } from './currentUser.service';
 import { BaseService } from './repo/base.service';
 import { Observable } from 'rxjs';
-import { UserInterface } from '../models/User/User.modal';
+import { UserDto, UserInterface } from '../models/User/User.modal';
 import { UserResponse } from '../models/User/UserResponce';
 
 @Injectable({
@@ -48,5 +48,12 @@ export class UserService extends BaseService<UserInterface> {
         headers: this.getAuthHeaders()
       });
     }
-
+    getUserDetails(id: number): Observable<UserDto> {
+      const url = `${this.baseURL}${this.endPoint}/GetUserDetails/${id}`;
+      return this.http.get<UserDto>(url, { headers: this.getAuthHeaders() });
+  }
+    updateProfile(formData: FormData): Observable<UserDto> {
+      const url = `${this.baseURL}${this.endPoint}/updateMyProfile/${formData.get('id')}`;
+      return this.http.put<UserDto>(url, formData, { headers: this.getAuthHeaders() });
+    }
 }

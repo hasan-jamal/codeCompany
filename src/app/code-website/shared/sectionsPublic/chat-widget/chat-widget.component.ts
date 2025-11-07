@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-chat-widget',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './chat-widget.component.html',
   styleUrl: './chat-widget.component.css'
 })

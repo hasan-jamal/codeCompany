@@ -1,51 +1,80 @@
 <footer>
     <div class="footer-container px-120">
         <div class="fxGeneral-cards fxFooter">
+            <!-- Logo & Intro -->
             <div class="fxFooter-part2 fxGeneral-cards-st d-flex flex-column text-center">
-                <img src="assets/images/logo.svg" alt="code logo" class="logo">
-                <p class="style-font subtitle20px">Your Partner for AI Solutions That Connect Vision with
-                    Real-World Impact</p>
-                <div class="d-flex align-items-center fxFooter-icons ">
-                    <a href="https://www.linkedin.com/company/advance-code-it/posts/?feedView=all"
-                        class="transition3s"><img src="assets/images/linkedInFooter.svg" alt="linkedIn icon"></a>
+                <img src="assets/images/logo.svg" alt="code logo" class="logo" />
+                <p class="style-font subtitle20px">
+                    {{ 'FOOTER.INTRO' | translate }}
+                </p>
 
-                    <!-- <a href="" class="transition3s"><img src="assets/images/facebook-icon.svg" alt="facebook icon"></a>
-                    <a href="" class="transition3s"><img src="assets/images/instgram-icon.svg" alt="facebook icon"></a>
-                    <a href="" class="transition3s"><img src="assets/images/twitter-icon.svg" alt="twitter icon"></a>
-                    <a href="" class="transition3s"><img src="assets/images/linkedin-icon.svg" alt="linkedin icon"></a> -->
+                <div class="d-flex align-items-center fxFooter-icons">
+                    <a href="https://www.linkedin.com/company/advance-code-it/posts/?feedView=all" class="transition3s"
+                        target="_blank" rel="noopener">
+                        <img src="assets/images/linkedInFooter.svg" alt="LinkedIn icon" />
+                    </a>
                 </div>
             </div>
+
+            <!-- Quick Links -->
             <div class="fxFooter-part1">
-                <h1 class="colorTwo subtitle32px font-medium">Quick links</h1>
+                <h1 class="colorTwo subtitle32px font-medium">
+                    {{ 'FOOTER.QUICK_LINKS.TITLE' | translate }}
+                </h1>
                 <div class="d-flex flex-column fxLinksFooter">
                     <a routerLink="/" routerLinkActive="color-linearGradient" class="subtitle20px colorTwo style-font"
-                        [routerLinkActiveOptions]="{exact:true}">Home</a>
+                        [routerLinkActiveOptions]="{ exact: true }">
+                        {{ 'FOOTER.QUICK_LINKS.HOME' | translate }}
+                    </a>
+
                     <a routerLink="aboutUs" routerLinkActive="color-linearGradient"
-                        class="subtitle20px colorTwo style-font">About us</a>
+                        class="subtitle20px colorTwo style-font">
+                        {{ 'FOOTER.QUICK_LINKS.ABOUT' | translate }}
+                    </a>
+
                     <a routerLink="ourServices" routerLinkActive="color-linearGradient"
-                        class="subtitle20px colorTwo style-font">Our services</a>
+                        class="subtitle20px colorTwo style-font">
+                        {{ 'FOOTER.QUICK_LINKS.SERVICES' | translate }}
+                    </a>
+
                     <a routerLink="news" routerLinkActive="color-linearGradient"
-                        class="subtitle20px colorTwo style-font">Insights</a>
+                        class="subtitle20px colorTwo style-font">
+                        {{ 'FOOTER.QUICK_LINKS.INSIGHTS' | translate }}
+                    </a>
+
                     <a routerLink="contactUs" routerLinkActive="color-linearGradient"
-                        class="subtitle20px colorTwo style-font">Contact us</a>
+                        class="subtitle20px colorTwo style-font">
+                        {{ 'FOOTER.QUICK_LINKS.CONTACT' | translate }}
+                    </a>
                 </div>
             </div>
+
+            <!-- Contact Info -->
             <div class="fxFooter-part3 fxGeneral-cards-st">
-                <h2 class="font-medium subtitle32px">Contact</h2>
-                <p class="subtitle20px style-font">Intersection of Al Khair Street <br>
-                    Anas bin Malik Road <br>
-                    Al Malqa District – Riyadh 13524 <br>
-                    Saudi Arabia <br>
-                </p>
+                <h2 class="font-medium subtitle32px">
+                    {{ 'FOOTER.CONTACT.TITLE' | translate }}
+                </h2>
+
                 <p class="subtitle20px style-font">
-                    Need help? Contact us: <br>
-                    Phone: +966 11 471 0010 <br>
-                    Email: sales&#64;code.sa
+                    {{ 'FOOTER.CONTACT.ADDRESS_LINE1' | translate }} <br />
+                    {{ 'FOOTER.CONTACT.ADDRESS_LINE2' | translate }} <br />
+                    {{ 'FOOTER.CONTACT.ADDRESS_LINE3' | translate }} <br />
+                    {{ 'FOOTER.CONTACT.COUNTRY' | translate }}
+                </p>
+
+                <p class="subtitle20px style-font">
+                    {{ 'FOOTER.CONTACT.HELP' | translate }} <br />
+                    {{ 'FOOTER.CONTACT.PHONE' | translate }} <br />
+                    {{ 'FOOTER.CONTACT.EMAIL' | translate }}
                 </p>
             </div>
         </div>
+
+        <!-- Copyright -->
         <div class="copyright">
-            <p class="text-center color-two subtitle20px style-font">Copyright © 2025 CODE. All rights reserved</p>
+            <p class="text-center color-two subtitle20px style-font">
+                {{ 'FOOTER.COPYRIGHT' | translate }}
+            </p>
         </div>
     </div>
 </footer>

@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tele-medicine',
-  imports: [RouterLink],
+  imports: [RouterLink,TranslateModule],
   templateUrl: './tele-medicine.component.html',
   styleUrls: ['./tele-medicine.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

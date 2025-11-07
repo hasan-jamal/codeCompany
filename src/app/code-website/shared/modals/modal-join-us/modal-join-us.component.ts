@@ -6,10 +6,11 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 import { ModalService } from '../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-modal-join-us',
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,TranslateModule],
     standalone: true,
   templateUrl: './modal-join-us.component.html',
   styleUrls: ['./modal-join-us.component.css'],

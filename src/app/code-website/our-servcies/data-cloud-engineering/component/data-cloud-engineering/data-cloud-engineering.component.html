@@ -3,51 +3,52 @@
         <div class="back-servicesS1"
             style="background-image:url('assets/images/CodeServices/Data & Cloud Engineering/Data & Cloud Engineering-min.png');">
             <div class="servicesS1-texts">
-                <h1 class="subtitle48px colorThree font-bold">Turn Data Into<br>
-                    <span class="color-linearGradient">a Strategic Asset</span>
+                <h1 class="subtitle48px colorThree font-bold">
+                    {{ 'DATA_CLOUD.S1.TITLE' | translate }}
                 </h1>
-                <p class="mb-0 colorThree subtitle18px font-medium text-justify">Smarter decisions start with trusted
-                    data. CODE’s
-                    Data & Cloud Engineering services help you modernize infrastructure,
-                    accelerate AI adoption, and build a scalable foundation for innovation.We help you unify, secure and
-                    activate your
-                    entire data ecosystem empowering you to deliver faster digital services, drive intelligent
-                    analytics, and adapt with
-                    agility.</p>
+                <p class="mb-0 colorThree subtitle18px font-medium text-justify">
+                    {{ 'DATA_CLOUD.S1.TEXT' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-services-s4></app-services-s4>
+
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
         <div class="ourServiceFlow-titles">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">What we offer</span>
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">
+                {{ 'DATA_CLOUD.S3.SUBTITLE' | translate }}
+            </span>
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
-                <span class="color-linearGradient">Smart</span> Solutions. <span
-                    class="color-linearGradient">Real</span> Solutions
+                {{ 'DATA_CLOUD.S3.TITLE' | translate }}
             </h1>
-            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">Explore modular services that scale with
-                you built to integrate or stand alone.</p>
+            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">
+                {{ 'DATA_CLOUD.S3.TEXT' | translate }}
+            </p>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
                 *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
                 <div class="divOne" [style.backgroundImage]="'url('+ card.imageUrl +')'"
                     [class.hidden]="card.isHovered">
-                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
                     <div class="divArrow">
-                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                            <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                        </a>
                     </div>
                 </div>
-                <div class="divTwo" [class.visible]="card.isHovered ">
-                    <p class="mb-0 font-medium colorWhite subtitle20px">{{card.description}}</p>
+                <div class="divTwo" [class.visible]="card.isHovered">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{ card.descKey | translate }}</p>
                     <div class="d-flex fxDescription align-items-center justify-content-between">
-                        <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
-                        <div class=" divArrow">
-                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
+                        <div class="divArrow">
+                            <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                                <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -55,41 +56,47 @@
         </div>
     </div>
 </section>
+
 <section class="servicesS6">
     <div class="backSection">
         <div class="servicesS6-container px-120">
-            <h1 class="font-bold subtitle40px colorWhite mb24 aos-init text-center" data-aos="fade-down">Empowering
-                <span class="color-linearGradient ">Saudi Vision </span> Through Purpose-Built Solutions
+            <h1 class="font-bold subtitle40px colorWhite mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'DATA_CLOUD.S6.TITLE' | translate }}
             </h1>
             <div class="d-flex flex-column">
-                <p class="mb-0 colorWhite  style-font text-center subtitle18px p-head text-center">At CODE, every
-                    solution is designed to meet the Kingdom’s digital priorities with full Arabic support, seamless
-                    local
-                    integration and alignment with national strategies and compliance standards.</p>
+                <p class="mb-0 colorWhite style-font text-center subtitle18px p-head">
+                    {{ 'DATA_CLOUD.S6.TEXT' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-our-service-flow></app-our-service-flow>
-<section class=" contactSection">
+
+<section class="contactSection">
     <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <span class="subtitle20px d-block color-linearGradient font-medium mb24">Your Next Move
-                    Starts
-                    Here</span>
-                <h1 class=" subtitle40px font-bold mb-0 " data-aos=" fade-down"> LetLet’s Build a <span
-                        class="color-linearGradient">Smarter <br> Data Ecosystem</span></h1>
+                <span class="subtitle20px d-block color-linearGradient font-medium mb24">
+                    {{ 'DATA_CLOUD.CONTACT.SUBTITLE' | translate }}
+                </span>
+                <h1 class="subtitle40px font-bold mb-0">
+                    {{ 'DATA_CLOUD.CONTACT.TITLE' | translate }}
+                </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <span class="font-semiBold colorWhite subtitle20px">
+                        Talk to the CODE Team
+                    </span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Data doesn’t just power your operations it defines your
-            future. <br> Let’s make sure it’s working for you.</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'DATA_CLOUD.CONTACT.TEXT' | translate }}
+        </p>
     </div>
 </section>

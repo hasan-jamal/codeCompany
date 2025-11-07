@@ -23,6 +23,8 @@
     "@angular/ssr": "^19.2.14",
     "@emailjs/browser": "^4.4.1",
     "@nguniversal/express-engine": "^7.0.2",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^17.0.0",
     "anychart": "^8.13.0",
     "aos": "^2.3.4",
     "dialogflow": "^1.2.0",

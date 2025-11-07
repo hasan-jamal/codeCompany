@@ -8,11 +8,13 @@ import { RouterLink } from '@angular/router';
 import { TableComponent } from './table/component/table/table.component';
 import { GenderTextPipe } from '../../../shared/pipes/gender-text.pipe';
 import { LocationTextPipe } from '../../../shared/pipes/location-text.pipe';
+import { UpdateProfileComponent } from './update/component/update/update.component';
 
 
 @NgModule({
   declarations: [
     TableComponent,
+    UpdateProfileComponent
   ],
   imports: [
     CommonModule,

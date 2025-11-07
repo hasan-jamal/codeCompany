@@ -1,20 +1,124 @@
 <section class="partnerOne">
     <div class="partnerOne-container px-120">
         <div class="partnerOne-content">
-            <h1 class="font-bold colorWhite text-center subtitle48px" data-aos="fade-down">Built on <span
-                    class="color-linearGradient">Collaboration.</span><br>
-                Backed by <span class="color-linearGradient">Innovation.</span>
+            <h1 class="font-bold colorWhite text-center subtitle48px" data-aos="fade-down">
+                {{ 'PARTNER.MainTitle' | translate }}
             </h1>
             <p class="mb-0 style-font colorWhite subtitle20px text-center">
-                At CODE, partnership means alignment with your mission, your environment and your goals.
-                <br>
-                We work with visionary leaders to design AI driven solutions that solve strategic challenges, enhance
-                performance and
-                deliver long-term national value.
+                {{ 'PARTNER.MainP' | translate }}
             </p>
         </div>
     </div>
 </section>
+
+<section class="mapSection">
+    <div class="mapSection-container">
+        <div class="d-flex flex-column divTitles">
+            <span class="font-medium text-center subtitle24px color-linearGradient">
+                {{ 'PARTNER.MapSubTitle' | translate }}
+            </span>
+            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">
+                {{ 'PARTNER.MapTitle' | translate }}
+            </h1>
+            <p class="mb-0 text-center subtitle20px style-font">
+                {{ 'PARTNER.MapP' | translate }}
+            </p>
+        </div>
+        <div id="mapInLocation"></div>
+    </div>
+</section>
+
+<section class="sectionFive">
+    <div class="sectionFive-container px-120">
+        <ngx-slick-carousel #slickModal1="slick-carousel" class="sliderLogos sliderLogos1" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let logo of logos" class="slide">
+                <img [src]="logo" alt="logo" />
+            </div>
+        </ngx-slick-carousel>
+
+        <ngx-slick-carousel #slickModal2="slick-carousel" class="sliderLogos sliderLogos2" [config]="slideConfiglogos2">
+            <div ngxSlickItem *ngFor="let logo of logos2" class="slide">
+                <img [src]="logo" alt="logo" />
+            </div>
+        </ngx-slick-carousel>
+
+        <div class="d-flex fxArrowsSlider">
+            <button class="arrowLeft" (click)="prevSlide()">
+                <img src="assets/images/arrowLeftOrange.svg" alt="arrow Left Orange" />
+            </button>
+            <div class="points">
+                <span *ngFor="let dot of dots; let i = index" [class.active]="i === currentSlide"
+                    (click)="goToSlide(i)"></span>
+            </div>
+            <button class="arrowRight" (click)="nextSlide()">
+                <img src="assets/images/arrowRightOrange.svg" alt="arrow Right Orange" />
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="ourServiceFlow">
+    <div class="ourServiceFlow-container px-120">
+        <div class="ourServiceFlow-titles">
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">
+                {{ 'PARTNER.ServiceFlowSubTitle' | translate }}
+            </span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center">
+                {{ 'PARTNER.ServiceFlowTitle' | translate }}
+            </h1>
+            <p class="style-font text-center colorTwo subtitle24px p-head">
+                {{ 'PARTNER.ServiceFlowP' | translate }}
+            </p>
+        </div>
+
+        <div class="d-flex fx-ourServiceFlow fxGeneral-cards">
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack1">
+                <img src="assets/images/Research-icon.svg" alt="Research icon" />
+                <h3 class="font-medium subtitle20px">{{ 'PARTNER.Research' | translate }}</h3>
+            </div>
+
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack2">
+                <img src="assets/images/Brainstorm-icon.svg" alt="Brainstorm icon" />
+                <h3 class="font-medium subtitle20px">{{ 'PARTNER.Brainstorm' | translate }}</h3>
+            </div>
+
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack3">
+                <img src="assets/images/Development-icon.svg" alt="Development icon" />
+                <h3 class="font-medium subtitle20px">{{ 'PARTNER.Development' | translate }}</h3>
+            </div>
+
+            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack4">
+                <img src="assets/images/Delivery-icon.svg" alt="Delivery icon" />
+                <h3 class="font-medium subtitle20px">{{ 'PARTNER.Delivery' | translate }}</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contactSection">
+    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text" />
+    <div class="contactSection-container px-120">
+        <div class="contactSection-div d-flex">
+            <div class="contactSection-texts">
+                <h1 class="subtitle48px font-bold mb-0" data-aos="fade-down">
+                    {{ 'PARTNER.ContactTitle' | translate }}
+                </h1>
+            </div>
+            <div class="contactSection-buttons d-flex">
+                <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
+                    <span class="font-semiBold colorWhite subtitle20px">
+                        {{ 'PARTNER.ContactButton' | translate }}
+                    </span>
+                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right" />
+                </button>
+            </div>
+        </div>
+        <p class="mb-0 colorTwo style-font subtitle22px">
+            {{ 'PARTNER.ContactP' | translate }}
+        </p>
+    </div>
+</section>
+
 <!-- <section class="ourDatacenterPartnersS1">
     <div class="ourDatacenterPartnersS1-container px-120">
         <div class="d-flex fx-ourDatacenterPartnersS1">
@@ -32,52 +136,6 @@
 
     </div>
 </section> -->
-<section class="mapSection">
-    <div class="mapSection-container">
-        <div class="d-flex flex-column divTitles">
-            <span class="font-medium text-center subtitle24px color-linearGradient">Our Partner Network Spans the
-                World</span>
-            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Global <span
-                    class="color-linearGradient">Global</span> Partnerships. <span
-                    class="color-linearGradient">Local</span> Impact.
-            </h1>
-            <p class="mb-0 text-center subtitle20px style-font">We collaborate with leading software and technology
-                providers to deliver integrated solutions built for <b> performance,
-                    scale</b> and <b>security</b>. Every partnership strengthens our ability to meet complex <b>local
-                    challenges </b> with <b>
-                    globally proven</b>
-                innovation tailored to your environment.</p>
-        </div>
-        <div id="mapInLocation"></div>
-    </div>
-</section>
-<section class="sectionFive">
-    <div class="sectionFive-container px-120">
-        <ngx-slick-carousel #slickModal1="slick-carousel" class="sliderLogos sliderLogos1" [config]="slideConfig">
-            <div ngxSlickItem *ngFor="let logo of logos" class="slide">
-                <img [src]="logo" alt="logo" />
-            </div>
-        </ngx-slick-carousel>
-        <ngx-slick-carousel #slickModal2="slick-carousel" class="sliderLogos sliderLogos2" [config]="slideConfiglogos2">
-            <div ngxSlickItem *ngFor="let logo of logos2" class="slide">
-                <img [src]="logo" alt="logo" />
-            </div>
-        </ngx-slick-carousel>
-        <div class="d-flex fxArrowsSlider">
-            <button class="arrowLeft" (click)="prevSlide()">
-                <img src="assets/images/arrowLeftOrange.svg" alt="arrow Left Orange">
-            </button>
-            <div class="points">
-                <span *ngFor="let dot of dots; let i = index" [class.active]="i === currentSlide"
-                    (click)="goToSlide(i)">
-                </span>
-            </div>
-            <button class="arrowRight" (click)="nextSlide()">
-                <img src="assets/images/arrowRightOrange.svg" alt="arrow Right Orange">
-            </button>
-        </div>
-    </div>
-</section>
 <!-- <section class="ourDatacenterPartnersS2">
     <div class="ourDatacenterPartnersS2-container px-120">
         <div class="ourDatacenterPartnersS2-titles">
@@ -117,57 +175,3 @@
         </div>
     </div>
 </section> -->
-<section class="ourServiceFlow">
-    <div class="ourServiceFlow-container px-120">
-        <div class="ourServiceFlow-titles">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">Our Service
-                Flow</span>
-            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center">Our
-                Step-by-Step Work Process at <span class="color-linearGradient text-uppercase">Code</span> from start to
-                finish
-            </h1>
-            <p class="style-font text-center colorTwo subtitle24px p-head">At CODE, we follow a structured and
-                efficient workflow to ensure the highest quality of service for our customers</p>
-        </div>
-        <div class="d-flex fx-ourServiceFlow fxGeneral-cards">
-            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack1">
-                <img src="assets/images/Research-icon.svg" alt="Research icon">
-                <h3 class="font-medium subtitle20px">Research</h3>
-            </div>
-            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack2">
-                <img src="assets/images/Brainstorm-icon.svg" alt="Brainstorm icon">
-                <h3 class="font-medium subtitle20px">Brainstorm</h3>
-            </div>
-            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack3">
-                <img src="assets/images/Development-icon.svg" alt="Development icon">
-                <h3 class="font-medium subtitle20px">Development</h3>
-            </div>
-            <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack4">
-                <img src="assets/images/Delivery-icon.svg" alt="Delivery icon">
-                <h3 class="font-medium subtitle20px">Delivery</h3>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="contactSection">
-    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
-    <div class="contactSection-container px-120">
-        <div class="contactSection-div d-flex">
-            <div class="contactSection-texts">
-
-                <h1 class=" subtitle48px font-bold mb-0" data-aos="fade-down">Backed by the Best. <br>
-                    <span class="color-linearGradient">Built for You.</span>
-                </h1>
-            </div>
-            <div class="contactSection-buttons d-flex">
-                <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
-                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
-                </button>
-            </div>
-        </div>
-        <p class="mb-0 colorTwo style-font subtitle22px">We integrate world class platforms into solutions tailored to
-            your needs.</p>
-    </div>
-</section>

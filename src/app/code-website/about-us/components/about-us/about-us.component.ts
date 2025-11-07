@@ -3,16 +3,16 @@ import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 import { ModalService } from '../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-us',
-  imports: [    SlickCarouselModule,CommonModule],
+  imports: [    SlickCarouselModule,CommonModule,TranslateModule],
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css',
                   '../../../../../assets/css/sections/contactSection.css',
   ],
-    encapsulation: ViewEncapsulation.None
-  
+  encapsulation: ViewEncapsulation.None
 })
 export class AboutUsComponent {
   @ViewChild('slickModallogos',{ static:false}) slickModallogos!:SlickCarouselComponent;

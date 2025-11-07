@@ -8,7 +8,7 @@ import { IndexRoutingModule } from './index-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    IndexRoutingModule
+    IndexRoutingModule,
   ]
 })
 export class IndexModule { }

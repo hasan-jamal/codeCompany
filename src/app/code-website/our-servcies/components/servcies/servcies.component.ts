@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ModalService } from '../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
 import { OurServiceFlowComponent } from '../../../shared/sectionsPublic/our-service-flow/our-service-flow.component';
@@ -7,10 +7,11 @@ import { OurServiceFlowComponent } from '../../../shared/sectionsPublic/our-serv
 @Component({
   selector: 'app-servcies',
   imports: [
-    RouterLink,
-    RouterLinkActive,
-    OurServiceFlowComponent,
-    CommonModule
+    // RouterLink,
+    // RouterLinkActive,
+    // OurServiceFlowComponent,
+    CommonModule,
+    RouterOutlet
 ],
   templateUrl: './servcies.component.html',
   styleUrls: ['./servcies.component.css',

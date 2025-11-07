@@ -3,50 +3,53 @@
         <div class="back-servicesS1"
             style="background-image:url('assets/images/CodeServices/Passive & Civil Work/Passive & Civil Work.png');">
             <div class="servicesS1-texts">
-                <h1 class="subtitle36px colorThree font-bold"> <span class="color-linearGradient">Smart Spaces</span>
-                    Engineered for
-                    <span class="color-linearGradient">Strategic Impact</span>
+                <h1 class="subtitle36px colorThree font-bold">
+                    <span class="color-linearGradient">{{ 'PassiveCivilWork.Sec1.Part1' | translate }}</span>
+                    {{ 'PassiveCivilWork.Sec1.Part2' | translate }}
+                    <span class="color-linearGradient">{{ 'PassiveCivilWork.Sec1.Part3' | translate }}</span>
                 </h1>
-                <p class="mb-0 colorThree subtitle16px font-medium">At CODE, our Passive & Civil Work services create
-                    the physical foundation for intelligent operations from secure command
-                    centers and collaborative war rooms to fully integrated spaces that support real-time
-                    decision-making. These
-                    environments aren’t just built they’re engineered for resilience, performance and alignment with
-                    Saudi Arabia’s Vision
-                    2030.</p>
+                <p class="mb-0 colorThree subtitle16px font-medium">
+                    {{ 'PassiveCivilWork.Sec1.Paragraph' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-services-s4></app-services-s4>
+
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
         <div class="ourServiceFlow-titles">
-            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down"> What We
-                <span class="color-linearGradient">Deliver</span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'PassiveCivilWork.Sec2.Title1' | translate }}
+                <span class="color-linearGradient">{{ 'PassiveCivilWork.Sec2.Title2' | translate }}</span>
             </h1>
-            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">We deliver turnkey spaces that combine
-                infrastructure, audiovisual systems, data integration and environmental controls
-                enabling your teams to operate smarter, communicate clearly and act decisively.</p>
+            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">
+                {{ 'PassiveCivilWork.Sec2.Paragraph' | translate }}
+            </p>
         </div>
+
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
                 *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
                 <div class="divOne" [style.backgroundImage]="'url('+ card.imageUrl +')'"
                     [class.hidden]="card.isHovered">
-                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
                     <div class="divArrow">
-                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                            <img src="assets/images/arrow-linear.svg" alt="arrow-linear" />
+                        </a>
                     </div>
                 </div>
-                <div class="divTwo" [class.visible]="card.isHovered ">
-                    <p class="mb-0 font-medium colorWhite subtitle20px">{{card.description}}</p>
+                <div class="divTwo" [class.visible]="card.isHovered">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{ card.descKey | translate }}</p>
                     <div class="d-flex fxDescription align-items-center justify-content-between">
-                        <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
-                        <div class=" divArrow">
-                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
+                        <div class="divArrow">
+                            <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                                <img src="assets/images/arrow-linear.svg" alt="arrow-linear" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -54,81 +57,90 @@
         </div>
     </div>
 </section>
+
 <section class="servicesS5">
     <div class="servicesS5-container px-120">
         <div class="ourServiceFlow-titles">
-            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">One Partner.
-                <span class="color-linearGradient">Total Integration.</span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'PassiveCivilWork.Sec3.Title1' | translate }}
+                <span class="color-linearGradient">{{ 'PassiveCivilWork.Sec3.Title2' | translate }}</span>
             </h1>
-            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">CODE handles the full scope from
-                architectural layout and cabling to AV systems, power continuity and smart technology
-                integration. Every space is custom-designed and locally adapted for your use case, risk profile and
-                operational goals.</p>
+            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">
+                {{ 'PassiveCivilWork.Sec3.Paragraph' | translate }}
+            </p>
         </div>
-        <div class="fxServicesS5 fxGeneral-cards ">
+
+        <div class="fxServicesS5 fxGeneral-cards">
             <div class="fxCardPublic align-items-center d-flex flex-column">
-                <img src="assets/images/CodeServices/Passive & Civil Work/img1.svg"
-                    alt=" Fully integrated infrastructure">
-                <p class="text-center  subtitle18px style-font mb-0">Fully integrated infrastructure with centralized
-                    dashboards</p>
+                <img src="assets/images/CodeServices/Passive & Civil Work/img1.svg" alt="img1" />
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'PassiveCivilWork.Sec3.Card1' | translate }}
+                </p>
             </div>
+
             <div class="fxCardPublic align-items-center d-flex flex-column">
-                <img src="assets/images/CodeServices/Passive & Civil Work/img2.svg" alt="UPS, access control">
-                <p class="text-center  subtitle18px style-font mb-0">UPS, access control, and environmental management
-                    built-in</p>
+                <img src="assets/images/CodeServices/Passive & Civil Work/img2.svg" alt="img2" />
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'PassiveCivilWork.Sec3.Card2' | translate }}
+                </p>
             </div>
+
             <div class="fxCardPublic align-items-center d-flex flex-column">
-                <img src="assets/images/CodeServices/Passive & Civil Work/img3.svg" alt="Seamless connection">
-                <p class="text-center  subtitle18px style-font mb-0">Seamless connection to Digital Twins, Command
-                    Centers, and AI platforms</p>
+                <img src="assets/images/CodeServices/Passive & Civil Work/img3.svg" alt="img3" />
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'PassiveCivilWork.Sec3.Card3' | translate }}
+                </p>
             </div>
+
             <div class="fxCardPublic align-items-center d-flex flex-column">
-                <img src="assets/images/CodeServices/Passive & Civil Work/img4.svg" alt="Implemented for entities">
-                <p class="text-center  subtitle18px style-font mb-0">Implemented for entities across both public  and
-                    private sectors</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="servicesS6">
-    <div class="backSection">
-        <div class="servicesS6-container px-120">
-            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">
-                Built to Serve <span class="color-linearGradient ">Vision 2030 </span></h1>
-            <div class="d-flex align-items-center">
-                <p class="mb-0 colorWhite  style-font text-center subtitle20px p-head">CODE’s Passive & Civil Work
-                    environments are active enablers of national transformation helping ministries, institutions
-                    and enterprises enhance service delivery, public trust and operational excellence. From critical
-                    response to strategic
-                    communication, we build the spaces where impact begins.
+                <img src="assets/images/CodeServices/Passive & Civil Work/img4.svg" alt="img4" />
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'PassiveCivilWork.Sec3.Card4' | translate }}
                 </p>
             </div>
         </div>
     </div>
 </section>
+
+<section class="servicesS6">
+    <div class="backSection">
+        <div class="servicesS6-container px-120">
+            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'PassiveCivilWork.Sec4.Title1' | translate }}
+                <span class="color-linearGradient">{{ 'PassiveCivilWork.Sec4.Title2' | translate }}</span>
+            </h1>
+            <div class="d-flex align-items-center">
+                <p class="mb-0 colorWhite style-font text-center subtitle20px p-head">
+                    {{ 'PassiveCivilWork.Sec4.Paragraph' | translate }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <app-our-service-flow></app-our-service-flow>
-<section class=" contactSection">
-    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+
+<section class="contactSection">
+    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text" />
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-
-                <h1 class=" subtitle40px font-bold mb-0" data-aos=" fade-down"> Let’s Build the Environment
-                    Your
-                    <span class="color-linearGradient">Mission Deserves</span>
+                <h1 class="subtitle40px font-bold mb-0" data-aos="fade-down">
+                    {{ 'PassiveCivilWork.Sec5.Title1' | translate }}
+                    <span class="color-linearGradient">{{ 'PassiveCivilWork.Sec5.Title2' | translate }}</span>
                 </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
-                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                    <span class="font-semiBold colorWhite subtitle20px">
+                        {{ 'PassiveCivilWork.Sec5.Button' | translate }}
+                    </span>
+                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right" />
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">CODE’s Passive & Civil Work environments are active enablers of
-            national transformation helping ministries, institutions
-            and enterprises enhance service delivery, public trust and operational excellence. From critical response to
-            strategic
-            communication, we build the spaces where impact begins..</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'PassiveCivilWork.Sec5.Paragraph' | translate }}
+        </p>
     </div>
 </section>

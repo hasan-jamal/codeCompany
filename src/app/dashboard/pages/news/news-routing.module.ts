@@ -17,13 +17,13 @@ const routes: Routes = [
       },
       {
         path: 'create',
-        data: { title: 'Users', subtitle: 'Create User' },
+        data: { title: 'News', subtitle: 'Create News' },
         loadChildren: () =>
           import('./create/create.module').then(m => m.CreateModule)
       },
       {
         path: 'update/:id',
-        data: { title: 'Users', subtitle: 'Update User' },
+        data: { title: 'News', subtitle: 'Update News' },
         loadChildren: () =>
           import('./update/update.module').then(m => m.UpdateModule)
       },

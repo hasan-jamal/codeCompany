@@ -6,96 +6,109 @@
                 <img src="assets/images/laptopUser.svg" alt="">
                 <div class="lineProgress"></div>
             </div>
+
             <div class="part2">
                 <div class="d-flex justify-content-between fxMobile">
                     <h1 class="subtitle36px font-bold mb16">
-                        Build Saudi Arabia’s Digital <br>
-                        Future with <span class="color-linearGradient text-uppercase">CODE</span>
+                        {{ 'JOIN_US.TITLE' | translate }}
                     </h1>
-                    <button type="button" class="inMobile" (click)="close()"><img src="assets/images/closeIcon.svg"
-                            alt="closeIcon.svg" class="closeIcon "></button>
-
+                    <button type="button" class="inMobile" (click)="close()">
+                        <img src="assets/images/closeIcon.svg" alt="closeIcon.svg" class="closeIcon">
+                    </button>
                 </div>
 
                 <p class="colorOne subtitle20px style-font mb24">
-                    We hire with purpose — to grow a team that reflects the future of innovation in Saudi Arabia and
-                    beyond. You
-                    could be next.
+                    {{ 'JOIN_US.DESCRIPTION' | translate }}
                 </p>
 
                 <div class="fxInputs fxGeneral-cards">
                     <!-- Full Name -->
                     <div class="form-group w50 fxCard">
-                        <input type="text" class="inputDesign" placeholder="Full Name" [(ngModel)]="formData.fullName"
-                            name="fullName" required #fullName="ngModel">
+                        <input type="text" class="inputDesign"
+                            placeholder="{{ 'JOIN_US.FORM.FULLNAME_PLACEHOLDER' | translate }}"
+                            [(ngModel)]="formData.fullName" name="fullName" required #fullName="ngModel" />
                         <div *ngIf="(fullName.invalid && fullName.touched) || (form.submitted && fullName.invalid)"
                             class="text-danger font-medium mt-1">
-                            Full Name is required
+                            {{ 'JOIN_US.FORM.FULLNAME_REQUIRED' | translate }}
                         </div>
                     </div>
 
                     <!-- Email -->
                     <div class="form-group w50 fxCard">
-                        <input type="email" class="inputDesign" placeholder="Email" [(ngModel)]="formData.email"
-                            name="email" required email #email="ngModel">
+                        <input type="email" class="inputDesign"
+                            placeholder="{{ 'JOIN_US.FORM.EMAIL_PLACEHOLDER' | translate }}"
+                            [(ngModel)]="formData.email" name="email" required email #email="ngModel" />
                         <div *ngIf="(email.invalid && email.touched) || (form.submitted && email.invalid)"
                             class="text-danger font-medium mt-1">
-                            Valid Email is required
+                            {{ 'JOIN_US.FORM.EMAIL_REQUIRED' | translate }}
                         </div>
                     </div>
 
                     <!-- Phone -->
                     <div class="form-group w50 fxCard">
-                        <input type="tel" class="inputDesign" placeholder="Phone Number" [(ngModel)]="formData.phone"
-                            name="phone">
+                        <input type="tel" class="inputDesign"
+                            placeholder="{{ 'JOIN_US.FORM.PHONE_PLACEHOLDER' | translate }}"
+                            [(ngModel)]="formData.phone" name="phone" />
                     </div>
 
                     <!-- LinkedIn -->
                     <div class="form-group w50 fxCard">
-                        <input type="text" class="inputDesign" placeholder="LinkedIn Profile"
-                            [(ngModel)]="formData.linkedin" name="linkedin">
+                        <input type="text" class="inputDesign"
+                            placeholder="{{ 'JOIN_US.FORM.LINKEDIN_PLACEHOLDER' | translate }}"
+                            [(ngModel)]="formData.linkedin" name="linkedin" />
                     </div>
 
                     <!-- Resume Upload -->
                     <div class="form-group w50">
-                        <div class=" d-flex fxFormGroup ">
-                            <input type="text" [value]="resumeFileName" placeholder="Resume" readonly
-                                class="inputDesign">
+                        <div class="d-flex fxFormGroup">
+                            <input type="text" [value]="resumeFileName"
+                                placeholder="{{ 'JOIN_US.FORM.RESUME_PLACEHOLDER' | translate }}" readonly
+                                class="inputDesign" />
                             <img src="assets/images/share.svg" alt="Choose Resume" (click)="fileInput.click()"
-                                style="cursor: pointer;">
-                            <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)">
+                                style="cursor: pointer;" />
+                            <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)" />
                         </div>
                         <div *ngIf="form.submitted && resumeFileName === ''" class="text-danger font-medium mt-1">
-                            Resume is required
+                            {{ 'JOIN_US.FORM.RESUME_REQUIRED' | translate }}
                         </div>
                     </div>
+
                     <!-- Portfolio -->
                     <div class="form-group w50 fxCard">
-                        <input type="text" class="inputDesign" placeholder="Portfolio link"
-                            [(ngModel)]="formData.portfolio" name="portfolio">
+                        <input type="text" class="inputDesign"
+                            placeholder="{{ 'JOIN_US.FORM.PORTFOLIO_PLACEHOLDER' | translate }}"
+                            [(ngModel)]="formData.portfolio" name="portfolio" />
                     </div>
 
                     <!-- Message -->
                     <div class="form-group w100 fxCard">
-                        <textarea placeholder="Tell us why you are a fit..." class="textAreaDesign"
-                            [(ngModel)]="formData.message" name="message" required #message="ngModel"></textarea>
+                        <textarea placeholder="{{ 'JOIN_US.FORM.MESSAGE_PLACEHOLDER' | translate }}"
+                            class="textAreaDesign" [(ngModel)]="formData.message" name="message" required
+                            #message="ngModel"></textarea>
                         <div *ngIf="(message.invalid && message.touched) || (form.submitted && message.invalid)"
                             class="text-danger font-medium mt-1">
-                            Message is required
+                            {{ 'JOIN_US.FORM.MESSAGE_REQUIRED' | translate }}
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="part3">
-                <img src="assets/images/closeIcon.svg" alt="closeIcon.svg" class="closeIcon" (click)="close()">
-                <img src="assets/images/joinUsImage.png" alt="join Us Image" class="joinUsImage">
+                <img src="assets/images/closeIcon.svg" alt="closeIcon.svg" class="closeIcon" (click)="close()" />
+                <img src="assets/images/joinUsImage.png" alt="join Us Image" class="joinUsImage" />
+
                 <div class="d-flex fxButtonsForm">
-                    <button type="button" class="btnCancel subtitle16px font-medium btn-hover"
-                        (click)="close()">Cancel</button>
+                    <button type="button" class="btnCancel subtitle16px font-medium btn-hover" (click)="close()">
+                        {{ 'JOIN_US.FORM.CANCEL' | translate }}
+                    </button>
                     <button type="submit" class="font-medium btn-linearGradient colorWhite subtitle16px"
                         [disabled]="loading || resumeUploading">
-                        {{ loading ? 'Sending...' : (resumeUploading ? 'Uploading...' : 'Apply Now') }} </button>
+                        {{ loading
+                        ? ('JOIN_US.FORM.SENDING' | translate)
+                        : (resumeUploading
+                        ? ('JOIN_US.FORM.UPLOADING' | translate)
+                        : ('JOIN_US.FORM.APPLY_NOW' | translate)) }}
+                    </button>
                 </div>
             </div>
         </form>

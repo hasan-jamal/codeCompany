@@ -1,10 +1,11 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-people-saying',
-  imports: [   CommonModule, SlickCarouselModule],
+  imports: [   CommonModule, SlickCarouselModule,TranslateModule],
   templateUrl: './people-saying.component.html',
   styleUrl: './people-saying.component.css'
 })

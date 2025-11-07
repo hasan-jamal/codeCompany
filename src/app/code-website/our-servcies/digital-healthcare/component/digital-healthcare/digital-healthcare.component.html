@@ -1,33 +1,26 @@
 <section class="servicesS1">
     <div class="servicesS1-container px-120">
         <div class="back-servicesS1"
-            style="background-image:url('assets/images/CodeServices/Digital Healthcare/Digital Healthcare.jpg');">
+            style="background-image:url('assets/images/CodeServices/Digital Healthcare/Digital-Healthcare.jpg');">
             <div class="servicesS1-texts">
-                <h1 class="subtitle40px colorThree font-bold">Powering <span class="color-linearGradient">Smarter</span>
-                    Hospitals Enabling
-                    <span class="color-linearGradient">Better Care. </span>
+                <h1 class="subtitle40px colorThree font-bold">
+                    {{ 'digitalHealthcare.title' | translate }}
                 </h1>
-                <p class="mb-0 colorThree subtitle16px font-medium">Healthcare is evolving and CODE is helping lead that
-                    change. Our Digital Healthcare solutions give providers in Saudi
-                    Arabia the tools to deliver faster, safer and more connected care. From cloud-based hospital
-                    platforms to AI-assisted
-                    billing and virtual consultations, we unify systems and data to unlock efficiency, transparency and
-                    growth. Whether
-                    you're improving service delivery or expanding access across regions, CODE helps turn complex
-                    healthcare operations into
-                    intelligent, patient-centered ecosystems fully aligned with Vision 2030 and built for long-term
-                    impact.</p>
+                <p class="mb-0 colorThree subtitle16px font-medium">
+                    {{ 'digitalHealthcare.description' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-services-s4></app-services-s4>
+
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
         <div class="ourServiceFlow-titles">
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
-                What
-                <span class="color-linearGradient">We Offer</span>
+                {{ 'digitalHealthcare.whatWeOffer' | translate }}
             </h1>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
@@ -35,19 +28,21 @@
                 *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
                 <div class="divOne" [style.backgroundImage]="'url('+ card.imageUrl +')'"
                     [class.hidden]="card.isHovered">
-                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
                     <div class="divArrow">
-                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                            <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                        </a>
                     </div>
                 </div>
-                <div class="divTwo" [class.visible]="card.isHovered ">
-                    <p class="mb-0 font-medium colorWhite subtitle20px">{{card.description}}</p>
+                <div class="divTwo" [class.visible]="card.isHovered">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{ card.descKey | translate }}</p>
                     <div class="d-flex fxDescription align-items-center justify-content-between">
-                        <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
-                        <div class=" divArrow">
-                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
+                        <div class="divArrow">
+                            <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                                <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -55,56 +50,62 @@
         </div>
     </div>
 </section>
+
 <section class="servicesS6">
     <div class="backSection">
         <div class="servicesS6-container px-120">
-            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">Designed for
-                <span class="color-linearGradient ">Saudi Arabia’s </span>Healthcare Vision
+            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'digitalHealthcare.builtForTitle' | translate }}
             </h1>
             <div class="d-flex flex-column align-items-center fxTextsStyle">
-                <p class="colorWhite  style-font text-center subtitle20px p-head text-center ">CODE’s Digital Healthcare
-                    solutions are built for what matters most better patient experiences, sustainable operations,
-                    and data-driven decisions. We combine global health IT best practices with local expertise,
-                    enabling:</p>
-                <div class="d-flex justify-content-center fxUl ">
+                <p class="colorWhite style-font text-center subtitle20px p-head text-center">
+                    {{ 'digitalHealthcare.builtForDesc' | translate }}
+                </p>
+                <div class="d-flex justify-content-center fxUl">
                     <ul>
-                        <li class="colorWhite  style-font text-center subtitle20px p-head text-center">Faster diagnosis,
-                            treatment, & discharge</li>
-                        <li class="colorWhite  style-font text-center subtitle20px p-head text-center">Improved
-                            transparency & financial control</li>
+                        <li class="colorWhite style-font text-center subtitle20px p-head">{{
+                            'digitalHealthcare.benefit1' | translate }}</li>
+                        <li class="colorWhite style-font text-center subtitle20px p-head">{{
+                            'digitalHealthcare.benefit2' | translate }}</li>
                     </ul>
                     <ul>
-                        <li class="colorWhite  style-font text-center subtitle20px p-head text-center"> Greater reach to
-                            underserved communities </li>
-                        <li class="colorWhite  style-font text-center subtitle20px p-head text-center">Seamless
-                            coordination across departments</li>
+                        <li class="colorWhite style-font text-center subtitle20px p-head">{{
+                            'digitalHealthcare.benefit3' | translate }}</li>
+                        <li class="colorWhite style-font text-center subtitle20px p-head">{{
+                            'digitalHealthcare.benefit4' | translate }}</li>
                     </ul>
                 </div>
-                <p class="mb-0 colorWhite  style-font text-center subtitle20px p-head text-center">All with Arabic
-                    language support, Saudi-compliant infrastructure, and world-class data security.</p>
+                <p class="mb-0 colorWhite style-font text-center subtitle20px p-head text-center">
+                    {{ 'digitalHealthcare.benefit5' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-our-service-flow></app-our-service-flow>
-<section class=" contactSection">
-    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+
+<section class="contactSection">
+    <img src="assets/images/CONTACT-text.svg" alt="{{ 'digitalHealthcare.contactAlt' | translate }}"
+        class="contact-text">
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-
-                <h1 class=" subtitle40px font-bold mb-0 " data-aos=" fade-down"> Let's <span
-                        class="color-linearGradient">Transform</span> Healthcare Together</h1>
+                <h1 class="subtitle40px font-bold mb-0" data-aos="fade-down">
+                    {{ 'digitalHealthcare.contactTitle' | translate }}
+                </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <span class="font-semiBold colorWhite subtitle20px">
+                        {{ 'digitalHealthcare.contactBtn' | translate }}
+                    </span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Whether you're digitizing a clinic or scaling a hospital
-            network, CODE gives you the platform, support and flexibility
-            to lead in a new era of healthcare.</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'digitalHealthcare.contactDesc' | translate }}
+        </p>
     </div>
 </section>

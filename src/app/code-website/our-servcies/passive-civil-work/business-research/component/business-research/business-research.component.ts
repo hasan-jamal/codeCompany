@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-business-research',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,TranslateModule],
   templateUrl: './business-research.component.html',
   styleUrls: ['./business-research.component.css',
     '../../../../../../../assets/css/pages/serviceDetails.css',

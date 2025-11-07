@@ -3,58 +3,49 @@
         <div class="back-servicesS1"
             style="background-image:url('assets/images/CodeServices/Software & Development/Software & Development-min.png');">
             <div class="servicesS1-texts">
-                <h1 class="subtitle48px colorThree font-bold">Build <span class="color-linearGradient">Smarter.</span>
-                    Scale <span class="color-linearGradient">Faster.</span> Transform <span
-                        class="color-linearGradient">Digitally.</span>
+                <h1 class="subtitle48px colorThree font-bold">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS1.subtitle' | translate }}
                 </h1>
-                <p class="mb-0 colorThree subtitle16px font-medium">In a connected world, software is more than
-                    infrastructure it’s how your business speaks, operates and grows. CODE’s
-                    Software & Development services empower organizations across Saudi Arabia to move from ideas to
-                    impact with powerful web
-                    platforms, mobile applications and collaboration tools tailored for performance, security and scale.
-                    <br>
-                    Whether you're launching a new customer experience, streamlining workflows, or enabling seamless
-                    collaboration, we
-                    develop solutions that are as intuitive as they are intelligent. Designed for public and private
-                    sector needs, our
-                    platforms combine flexibility, speed and enterprise-grade reliability all aligned with Vision 2030’s
-                    digital
-                    transformation goals.
-
+                <p class="mb-0 colorThree subtitle16px font-medium">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS1.description' | translate }}
                 </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-services-s4></app-services-s4>
+
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
-        <div class="ourServiceFlow-titles d-flex flex-column align-items-center ">
-            <span class=" subtitle20px color-linearGradient font-medium text-center mb16">From Concept to Code — We
-                Build What Moves You Forward <br>
-                Web. Mobile. SharePoint. Custom Solutions. Intelligent Integration.
+        <div class="ourServiceFlow-titles d-flex flex-column align-items-center">
+            <span class="subtitle20px color-linearGradient font-medium text-center mb16">
+                {{ 'SOFTWARE_DEVELOPMENT.servicesS3.subtitle' | translate }}
             </span>
             <h1 class="font-bold subtitle40px colorOne mb24 aos-init text-center" data-aos="fade-down">
-                What <span class="color-linearGradient">We</span> Offer</h1>
+                {{ 'SOFTWARE_DEVELOPMENT.servicesS3.title' | translate }}
+            </h1>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
                 *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
                 <div class="divOne" [style.backgroundImage]="'url('+ card.imageUrl +')'"
                     [class.hidden]="card.isHovered">
-                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
                     <div class="divArrow">
-                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                            <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                        </a>
                     </div>
                 </div>
-                <div class="divTwo" [class.visible]="card.isHovered ">
-                    <p class="mb-0 font-medium colorWhite subtitle16px mb-0">{{card.description}}</p>
+                <div class="divTwo" [class.visible]="card.isHovered">
+                    <p class="mb-0 font-medium colorWhite subtitle16px mb-0">{{ card.descKey | translate }}</p>
                     <div class="d-flex fxDescription align-items-center justify-content-between">
-                        <h3 class="font-bold subtitle18px colorWhite">{{card.name}}</h3>
-                        <div class=" divArrow">
-                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <h3 class="font-bold subtitle18px colorWhite">{{ card.nameKey | translate }}</h3>
+                        <div class="divArrow">
+                            <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                                <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -62,68 +53,83 @@
         </div>
     </div>
 </section>
+
 <section class="servicesS5">
     <div class="servicesS5-container px-120">
         <div class="ourServiceFlow-titles mb24">
-            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">Why <span
-                    class="color-linearGradient">CODE?</span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'SOFTWARE_DEVELOPMENT.servicesS5.title' | translate }}
             </h1>
-            <p class="text-center colorBlack subtitle20px font-medium ">Technology That Delivers. People Who
-                Understand.</p>
+            <p class="text-center colorBlack subtitle20px font-medium">
+                {{ 'SOFTWARE_DEVELOPMENT.servicesS5.subtitle' | translate }}
+            </p>
         </div>
-        <div class="fxServicesS5 fxGeneral-cards ">
+        <div class="fxServicesS5 fxGeneral-cards">
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/Client-AlignedArchitecture.svg" alt="">
-                <h3 class="font-semiBold subtitle20px text-center ">Purpose-Driven Architecture</h3>
-                <p class="text-center  subtitle18px style-font mb-0">Solutions engineered around your specific business
-                    goals scalable, secure and centered on user experience.</p>
+                <h3 class="font-semiBold subtitle20px text-center">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.Client-AlignedArchitecture.title' | translate }}
+                </h3>
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.Client-AlignedArchitecture.description' | translate }}
+                </p>
             </div>
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/BuiltforSaudiInfrastructure.svg" alt="">
-                <h3 class="font-semiBold subtitle20px text-center ">Tailored for Saudi Arabia</h3>
-                <p class="text-center  subtitle18px style-font mb-0">Arabic-enabled, aligned with Vision 2030 and
-                    designed to integrate seamlessly with local platforms, regulations and
-                    digital strategies.</p>
+                <h3 class="font-semiBold subtitle20px text-center">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.BuiltforSaudiInfrastructure.title' | translate }}
+                </h3>
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.BuiltforSaudiInfrastructure.description' | translate }}
+                </p>
             </div>
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/FullLifecycleSupport.svg" alt="">
-                <h3 class="font-semiBold subtitle20px text-center ">End-to-End Partnership</h3>
-                <p class="text-center  subtitle18px style-font mb-0">From strategic planning to continuous improvement
-                    after launch, our teams walk with you every step of the way.</p>
+                <h3 class="font-semiBold subtitle20px text-center">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.FullLifecycleSupport.title' | translate }}
+                </h3>
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.FullLifecycleSupport.description' | translate }}
+                </p>
             </div>
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/Enterprise-GradeSecurity.svg" alt="">
-                <h3 class="font-semiBold subtitle20px text-center ">Security at the Core</h3>
-                <p class="text-center  subtitle18px style-font mb-0">Enterprise-grade protection built into every layer
-                    from data privacy and access controls to performance and compliance
-                    safeguards.</p>
+                <h3 class="font-semiBold subtitle20px text-center">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.Enterprise-GradeSecurity.title' | translate }}
+                </h3>
+                <p class="text-center subtitle18px style-font mb-0">
+                    {{ 'SOFTWARE_DEVELOPMENT.servicesS5.cards.Enterprise-GradeSecurity.description' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
 
 <app-our-service-flow></app-our-service-flow>
-<section class=" contactSection">
+
+<section class="contactSection">
     <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <span class="subtitle24px d-block text-center color-linearGradient font-medium mb24">Your Next Move
-                    Starts
-                    Here</span>
-                <h1 class=" subtitle48px font-bold mb-0 text-center" data-aos=" fade-down"> <span
-                        class="color-linearGradient">Let’s Build</span> <br> What’s <span class="color-linearGradient">
-                        Next</span></h1>
+                <span class="subtitle24px d-block text-center color-linearGradient font-medium mb24">
+                    {{ 'SOFTWARE_DEVELOPMENT.contactSection.subtitle' | translate }}
+                </span>
+                <h1 class="subtitle48px font-bold mb-0 text-center">
+                    {{ 'SOFTWARE_DEVELOPMENT.contactSection.title' | translate }}
+                </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <span class="font-semiBold colorWhite subtitle20px">
+                        {{ 'SOFTWARE_DEVELOPMENT.contactSection.button' | translate }}
+                    </span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Whether you're creating a digital platform, enabling internal
-            agility, or transforming citizen services CODE is your
-            trusted development partner.</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'SOFTWARE_DEVELOPMENT.contactSection.description' | translate }}
+        </p>
     </div>
 </section>

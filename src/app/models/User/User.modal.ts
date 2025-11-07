@@ -34,7 +34,6 @@ export interface UserDto {
     gender: number,
     email: string,
     city: string,
-    fullAddress: string,
     createdAt:string,
     updatedAt: string,
     archived: string,
@@ -63,4 +62,15 @@ export interface LoginUserResponse {
     password: string,
     isAdmin: boolean;
     token: string;
+}
+export interface UpdateUserProfileVM{
+    fullName: string,
+    password: string,
+    phoneNumber: string,
+    imageUrl: string,
+    dateOfBirth: string,
+    gender: number,
+    email: string,
+    city: string,
+    id: number,
 }

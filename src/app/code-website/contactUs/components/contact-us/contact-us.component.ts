@@ -4,11 +4,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 import { ModalService } from '../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact-us',
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,TranslateModule],
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css',
                   '../../../../../assets/css/sections/contactSection.css',

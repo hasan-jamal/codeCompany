@@ -1,11 +1,14 @@
 <section class="sectionSix">
     <div class="sectionSix-container px-120">
         <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">
-            What people are saying?
+            {{ 'TESTIMONIALS.section1.question' | translate }}
         </span>
         <h1 class="text-center font-bold subtitle48px h1-head">
-            We brought <span class="color-linearGradient">their ideas</span> to life
+            {{ 'TESTIMONIALS.section1.titlePart1' | translate }} <span class="color-linearGradient">
+                {{ 'TESTIMONIALS.section1.titlePart2' | translate }}
+            </span> {{ 'TESTIMONIALS.section1.titlePart3' | translate }}
         </h1>
+
 
         <ngx-slick-carousel #slickPeopleSaying [config]="sliderpeopleSaying">
             <div ngxSlickItem *ngFor="let say of peopleSaying" class="sliderpeopleSaying">

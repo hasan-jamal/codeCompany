@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-smart-meeting-rooms',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,TranslateModule],
   templateUrl: './smart-meeting-rooms.component.html',
   styleUrls: ['./smart-meeting-rooms.component.css',
   '../../../../../../../assets/css/pages/serviceDetails.css',

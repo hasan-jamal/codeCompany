@@ -14,6 +14,12 @@ const routes: Routes = [
           import('./table/table.module').then(m => m.TableModule)
       },
       {
+      path: 'update/:id',
+      data: { title: 'Dashboard', subtitle: 'Update Profile' },
+        loadChildren: () =>
+          import('./update/update.module').then(m => m.UpdateModule)
+      },
+      {
         path: '',
         redirectTo: 'table',
         pathMatch: 'full'

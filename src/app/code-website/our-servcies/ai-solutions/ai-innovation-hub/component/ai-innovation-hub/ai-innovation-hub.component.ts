@@ -2,10 +2,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-ai-innovation-hub',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,TranslateModule],
   templateUrl: './ai-innovation-hub.component.html',
   styleUrls: ['./ai-innovation-hub.component.css',
                   '../../../../../../../assets/css/pages/serviceDetails.css',

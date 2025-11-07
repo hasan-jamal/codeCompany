@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-indoor-wayfinding',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,TranslateModule],
   templateUrl: './indoor-wayfinding.component.html',
   styleUrls: ['./indoor-wayfinding.component.css',
                     '../../../../../../../assets/css/pages/serviceDetails.css',

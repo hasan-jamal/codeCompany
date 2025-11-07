@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NewsService } from '../../../../../../services/news.service';
 import { NewsInterface } from '../../../../../../models/News/News';
-import Swal from 'sweetalert2';
 import { ToastrService } from 'ngx-toastr';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -21,7 +20,7 @@ storyId!: number;
 newsDetails: NewsInterface | null = null;
 hashtagsString = '';
 newHashtag: string = '';
-  safeDescription: SafeHtml | null = null;
+safeDescription: SafeHtml | null = null;
 constructor(
   private fb: FormBuilder,
   private route: ActivatedRoute,
@@ -84,7 +83,6 @@ addHashtag(event: Event) {
   }
   this.updateForm.get('newHashtag')?.reset('');
 }
-
 removeHashtag(index: number) {
   const list: string[] = this.updateForm.get('hashtags')?.value || [];
   list.splice(index, 1);

@@ -2,18 +2,12 @@
     <div class="contactUsS1-container px-120">
         <div class="d-flex fx-contactUsS1">
             <div class="contactUsS1-text">
-                <span class="font-medium text-start subtitle24px color-linearGradient mb12 d-block">Powering what’s
-                    next.</span>
-                <h1 class="font-bold subtitle64px colorBlack" data-aos="fade-down" data-aos-easing="linear"><span
-                        class="color-linearGradient">Transformation</span> <br>Starts Here
-                </h1>
-                <p class="mb-0 colorOne subtitle20px style-font">From national institutions to innovative teams, our
-                    clients count on CODE to deliver intelligent systems <b> that perform,
-                        scale and last. </b>
-                    <br> <br>
-                    Whether you're exploring new possibilities or solving complex challenges, our team is here to help
-                    with <b> tailored
-                        solutions backed by global technologyand local expertise.</b>
+                <span class="font-medium text-start subtitle24px color-linearGradient mb12 d-block">
+                    {{ 'CONTACT.HERO.subTitle' | translate}}</span>
+                <h1 class="font-bold subtitle64px colorBlack" data-aos="fade-down" data-aos-easing="linear">{{
+                    'CONTACT.HERO.TITLE' | translate}}</h1>
+                <p class="mb-0 colorOne subtitle20px style-font">
+                    {{ 'CONTACT.HERO.Description' | translate}}
                 </p>
             </div>
             <div class="contactUsS1-img">
@@ -41,41 +35,45 @@
             </div>
         </div> -->
         <div class="d-flex flex-column divTitles">
-            <span class="font-medium text-center subtitle24px color-linearGradient">Let’s Connect</span>
-            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">Lead the <span
-                    class="color-linearGradient">Change.</span> Start <span class="color-linearGradient">Here.</span>
+            <span class="font-medium text-center subtitle24px color-linearGradient">
+                {{ 'CONTACT.Sec1.subTitle' | translate}}</span>
+            <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">
+                {{ 'CONTACT.Sec1.TITLE' | translate}}
             </h1>
-            <p class="mb-0 text-center subtitle22px style-font">Whether you’re ready to start a project or just
-                exploring possibilities, our team is here to answer your questions and
-                guide you forward.</p>
+            <p class="mb-0 text-center subtitle22px style-font">{{ 'CONTACT.Sec1.Description' | translate}}</p>
         </div>
         <div class="d-flex fxGeneral-cards align-items-start contactInfo">
             <div class="box fxCard">
                 <img src="assets/images/Address-icon.svg" alt="Address icon" class="Icon">
                 <div class="boxText">
-                    <h3 class="colorBlack subtitle20px font-semiBold">Address</h3>
-                    <span class="colorBlack font-bold subtitle16px spanOne  d-block">HQ Office</span>
-                    <span class="colorBlack style-font subtitle16px">Intersection of Al Khair Street <br>
-                        Anas bin Malik Road <br>
-                        Al Malqa District – Riyadh 13524 <br>
-                        Saudi Arabia<br></span>
+                    <h3 class="colorBlack subtitle20px font-semiBold">{{ 'CONTACT.Sec1.Details1.TITLE' | translate}}
+                    </h3>
+                    <!-- <span class="colorBlack font-bold subtitle16px spanOne  d-block">HQ Office</span> -->
+                    <span class="colorBlack style-font subtitle16px">
+                        {{ 'CONTACT.Sec1.Details1.Description' | translate}}</span>
                 </div>
             </div>
             <div class="box fxCard">
                 <img src="assets/images/GetInTouch-icon.svg" alt="Get In Touch icon" class="Icon">
                 <div class="boxText">
-                    <h3 class="colorBlack subtitle20px font-semiBold">Get In Touch</h3>
-                    <span class="colorBlack style-font subtitle16px spanOne d-block"><b> Mobile: </b>
-                        +966 11 471 0010</span>
-                    <span class="colorBlack style-font subtitle16px"><b> E-mail:</b> sales&#64;code.sa</span>
+                    <h3 class="colorBlack subtitle20px font-semiBold">{{ 'CONTACT.Sec1.Details2.TITLE' | translate}}
+                    </h3>
+                    <span class="colorBlack style-font subtitle16px spanOne d-block">
+                        {{ 'CONTACT.Sec1.Details2.Mobile' | translate}}</span>
+                    <span class="colorBlack style-font subtitle16px">
+                        {{ 'CONTACT.Sec1.Details2.E-mail' | translate}}
+                    </span>
                 </div>
             </div>
             <div class="box fxCard">
                 <img src="assets/images/HourOfOperation-icon.svg" alt="Hour of operation icon" class="Icon">
                 <div class="boxText">
-                    <h3 class="colorBlack subtitle20px font-semiBold">Business Hours</h3>
-                    <span class="colorBlack style-font subtitle16px spanOne d-block">Saturday-Thursday: 8am-5pm </span>
-                    <span class="colorBlack style-font subtitle16px">Friday: Closed</span>
+                    <h3 class="colorBlack subtitle20px font-semiBold">{{ 'CONTACT.Sec1.Details3.TITLE' | translate}}
+                    </h3>
+                    <span class="colorBlack style-font subtitle16px spanOne d-block">
+                        {{ 'CONTACT.Sec1.Details3.dayOpen' | translate}}</span>
+                    <span class="colorBlack style-font subtitle16px">
+                        {{ 'CONTACT.Sec1.Details3.dayClosed' | translate}}</span>
                 </div>
             </div>
         </div>
@@ -92,76 +90,82 @@
     <img src="assets/images/CONTACT-WORD.svg" alt="CONTACT WORD" class="contactWord">
     <div class="contactUsS3-container">
         <div class="contactUsS3-titles">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">Send Us a
-                Message</span>
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">{{
+                'CONTACT.Sec2.subTitle' | translate}}</span>
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center " data-aos="fade-down"
-                data-aos-easing="linear" data-aos-duration="500">Looking for Answers? <span
-                    class="color-linearGradient">Let’s Build Them.</span> </h1>
-            <p class="style-font text-center colorTwo subtitle18px p-head">Tell us about your goals or requirements
-                and we’ll help you shape the right solution.</p>
+                data-aos-easing="linear" data-aos-duration="500">{{ 'CONTACT.Sec2.TITLE' | translate}}</h1>
+            <p class="style-font text-center colorTwo subtitle18px p-head">{{ 'CONTACT.Sec2.Description' | translate}}
+            </p>
         </div>
         <div class="boxContact">
             <img src="assets/images/back-boxContact.png" alt="back boxContact" class="back-boxContact">
             <div class="d-flex fx-boxContact">
                 <div class="boxContact-text">
                     <img src="assets/images/mailbox.svg" alt="mailbox icon">
-                    <h1 class="font-bold colorBlack subtitle36px text-center">Let’s Start the<br>
-                        <span class="color-linearGradient">Conversation!</span>
+                    <h1 class="font-bold colorBlack subtitle36px text-center">
+                        {{ 'CONTACT.Sec2.titleContactBox' | translate }}
                     </h1>
-                    <p class="style-font mb-0 subtitle16px colorOne  text-center">You’re just one message away from
-                        turning <b> interest into impact. </b></p>
+                    <p class="style-font mb-0 subtitle16px colorOne text-center">
+                        {{ 'CONTACT.Sec2.subtitleContactBox' | translate }}
+                    </p>
                 </div>
+
                 <div class="boxContact-form">
                     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
                         <div class="form-group">
                             <input type="text" name="fullName" [(ngModel)]="formData.fullName" #fullName="ngModel"
-                                class="style-font subtitle16px" placeholder="Your Name" required />
+                                class="style-font subtitle16px"
+                                placeholder="{{ 'CONTACT.Sec2.FORM.NAME_PLACEHOLDER' | translate }}" required />
                             <div *ngIf="fullName.invalid && fullName.touched" class="text-danger font-medium">
-                                Name is required
+                                {{ 'CONTACT.Sec2.FORM.NAME_REQUIRED' | translate }}
                             </div>
                         </div>
 
                         <div class="form-group">
                             <input type="email" name="email" [(ngModel)]="formData.email" #email="ngModel"
-                                class="style-font subtitle16px" placeholder="Your Email" required />
+                                class="style-font subtitle16px"
+                                placeholder="{{ 'CONTACT.Sec2.FORM.EMAIL_PLACEHOLDER' | translate }}" required />
                             <div *ngIf="email.invalid && email.touched" class="text-danger font-medium">
-                                Valid email is required
+                                {{ 'CONTACT.Sec2.FORM.EMAIL_REQUIRED' | translate }}
                             </div>
                         </div>
 
                         <div class="form-group">
                             <input type="text" name="subject" [(ngModel)]="formData.subject" #subject="ngModel"
-                                class="style-font subtitle16px" placeholder="Subject" required />
+                                class="style-font subtitle16px"
+                                placeholder="{{ 'CONTACT.Sec2.FORM.SUBJECT_PLACEHOLDER' | translate }}" required />
                             <div *ngIf="subject.invalid && subject.touched" class="text-danger font-medium">
-                                Subject is required
+                                {{ 'CONTACT.Sec2.FORM.SUBJECT_REQUIRED' | translate }}
                             </div>
                         </div>
 
                         <div class="form-group">
                             <textarea name="message" [(ngModel)]="formData.message" #message="ngModel"
                                 class="style-font subtitle16px"
-                                placeholder="Briefly describe your goal, project or question  and we’ll  get back to you with a focused response."
+                                placeholder="{{ 'CONTACT.Sec2.FORM.MESSAGE_PLACEHOLDER' | translate }}"
                                 required></textarea>
                             <div *ngIf="message.invalid && message.touched" class="text-danger font-medium">
-                                Message is required
+                                {{ 'CONTACT.Sec2.FORM.MESSAGE_REQUIRED' | translate }}
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="d-flex fxButtonsForm">
                                 <button type="button" class="btnCancel subtitle16px font-medium btn-hover"
-                                    (click)=" onCancel()">Cancel</button>
+                                    (click)="onCancel()">
+                                    {{ 'CONTACT.Sec2.FORM.CANCEL' | translate }}
+                                </button>
                                 <button type="submit" [disabled]="loading || contactForm.invalid"
                                     class="subtitle16px font-medium colorWhite btn-linearGradient w-100">
-                                    {{ loading ? 'Sending...' : 'Send Now' }}
+                                    {{ loading ? ('CONTACT.Sec2.FORM.SENDING' | translate) : ('CONTACT.Sec2.FORM.SEND' |
+                                    translate) }}
                                 </button>
                             </div>
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
+
     </div>
 </section>

@@ -1,76 +1,82 @@
 <section class="serviceDetailsS1">
     <div class="serviceDetailsS1-container px-120">
         <div class="d-flex fx-serviceDetailsS1 mb24">
-            <h1 class="colorThree  subtitle48px font-bold">AI Digital Twin</h1>
+            <h1 class="colorThree subtitle48px font-bold">
+                {{ 'AIDigitalTwin.Sec1.Title' | translate }}
+            </h1>
             <div class="d-flex fxWrapMb">
-                <div class="font-medium  subtitle18px colorBlack d-flex gap-2">
-                    <a routerLink="/ourServices/AISolutions" class="font-medium mb-0 subtitle20px colorBlack">AI
-                        Solutions</a>
+                <div class="font-medium subtitle18px colorBlack d-flex gap-2">
+                    <a routerLink="/ourServices/AISolutions" class="font-medium mb-0 subtitle20px colorBlack">
+                        {{ 'AIDigitalTwin.Sec1.Breadcrumb1' | translate }}
+                    </a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M5 7.5L10 12.5L15 7.5" stroke="black" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
                 </div>
-                <span class="mb-0 color-linearGradient font-medium  subtitle18px">AI
-                    Digital Twin</span>
+                <span class="mb-0 color-linearGradient font-medium subtitle18px">
+                    {{ 'AIDigitalTwin.Sec1.Breadcrumb2' | translate }}
+                </span>
             </div>
         </div>
         <img src="assets/images/CodeServices/AI solutions/AI Digital Twin/AI Digital Twin-min.png" alt="service image"
-            data-aos="zoom-in">
+            data-aos="zoom-in" />
     </div>
 </section>
+
 <section class="serviceDetailsS2">
     <div class="serviceDetailsS2-container px-120">
         <div class="d-flex fx-serviceDetailsS2 align-items-end">
-            <div class=" serviceDetailsS2-part1">
-
+            <div class="serviceDetailsS2-part1">
                 <h1 class="font-bold subtitle40px colorBlack" data-aos="fade-down" data-aos-easing="linear"
-                    data-aos-duration="500"><span class="color-linearGradient">Transforming</span> Buildings <br>
-                    and Infrastructure into <br>
-                    <span class="color-linearGradient ">Smart, Responsive Systems</span>
+                    data-aos-duration="500">
+                    {{ 'AIDigitalTwin.Sec2.MainTitle' | translate }}
                 </h1>
-                <p class="subtitle18px mb-0 style-font colorTwo">CODE’s AI-powered Digital Twin technology creates a
-                    living, dynamic digital replica of your physical assets whether
-                    buildings, campuses, or even entire city infrastructure.</p>
+                <p class="subtitle18px mb-0 style-font colorTwo">
+                    {{ 'AIDigitalTwin.Sec2.Paragraph1' | translate }}
+                </p>
             </div>
             <div class="serviceDetailsS2-part2">
-                <p class="mb16 colorOne subtitle18px style-font">Unlike traditional 3D models, a Digital Twin is
-                    connected to real-time data, enabling you to continuously monitor,
-                    analyze, and optimize operations.</p>
-                <p class="mb16 colorOne subtitle18px style-font">It helps you understand what’s happening inside your
-                    facilities right now, anticipate issues before they occur, and plan
-                    smarter for the future.</p>
-                <p class="mb-0 colorOne subtitle18px style-font">Whether you're managing energy, safety, space
-                    utilization, or system performance, the Digital Twin brings all your
-                    insights into one place: live, visual, and easily accessible.</p>
+                <p class="mb16 colorOne subtitle18px style-font">
+                    {{ 'AIDigitalTwin.Sec2.Paragraph2' | translate }}
+                </p>
+                <p class="mb16 colorOne subtitle18px style-font">
+                    {{ 'AIDigitalTwin.Sec2.Paragraph3' | translate }}
+                </p>
+                <p class="mb-0 colorOne subtitle18px style-font">
+                    {{ 'AIDigitalTwin.Sec2.Paragraph4' | translate }}
+                </p>
             </div>
         </div>
     </div>
 </section>
+
 <section class="sectionVideos">
-    <div class="sectionVideos-container ">
+    <div class="sectionVideos-container">
         <div class="divTitles">
-            <span class="font-medium text-center subtitle20px color-linearGradient d-block span-head">See It in
-                Action</span>
-            <h1 class="text-center font-bold subtitle40px h1-head">Developing and Operating a <span
-                    class="color-linearGradient">Live Digital Replica </span> of Your Building</h1>
+            <span class="font-medium text-center subtitle20px color-linearGradient d-block span-head">
+                {{ 'AIDigitalTwin.Sec3.VideoSection.Title' | translate }}
+            </span>
+            <h1 class="text-center font-bold subtitle40px h1-head">
+                {{ 'AIDigitalTwin.Sec3.VideoSection.Subtitle' | translate }}
+            </h1>
         </div>
-        <div class="divVideo  px-120">
+        <div class="divVideo px-120">
             <div class="fx-Videos">
                 <div class="divMainVideo" *ngIf="mainVideo">
                     <video #videoPlayer class="mainVideo" [attr.src]="mainVideo.src" controls muted
                         crossorigin="anonymous">
-                        Your browser does not support the video tag. </video>
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="mainVideo-text">
                         <h3 class="subtitle32px font-bold color-two">{{ mainVideo.title }}</h3>
                         <p class="subtitle20px style-font color-two mb-0">{{ mainVideo.subTitle }}</p>
                     </div>
                 </div>
-                <!-- Thumbnails -->
                 <div class="d-flex video-thumbnails fxGeneral-cards">
                     <div class="thumbnail" *ngFor="let video of plyrList" (click)="changeVideo(video)">
-                        <img src="assets/images/play-button.svg" alt="play-button" class="play-button">
-                        <img [src]="video.img" alt="{{ video.title }}" class="imgVideo">
+                        <img src="assets/images/play-button.svg" alt="play-button" class="play-button" />
+                        <img [src]="video.img" alt="{{ video.title }}" class="imgVideo" />
                         <div class="thumbnail-text">
                             <h3 class="subtitle16px font-bold colorWhite">{{ video.title }}</h3>
                         </div>
@@ -79,110 +85,134 @@
             </div>
         </div>
     </div>
-
 </section>
+
 <section class="serviceDetailsS3">
     <div class="serviceDetailsS3-container px-120">
-        <!-- <div class="serviceDetailsS3-titles">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">What we
-                offer</span>
-            <h1 class="font-bold subtitle40px colorOne mb24 aos-init text-center" data-aos="fade-down"><span
-                    class="color-linearGradient">Cloud
-                    Integration </span>services</h1>
-            <p class="style-font text-center colorTwo subtitle24px p-head mb-0">Our team ensures ensuring
-                scalability, efficiency, and long-term success</p>
-        </div> -->
         <div class="d-flex fx-serviceDetailsS3">
             <div class="serviceDetailsS3-texts">
                 <h4 class="colorThree subtitle36px font-bold mb24">
-                    <span class="color-linearGradient ">Smarter </span> Operations. <span
-                        class="color-linearGradient ">Fewer</span> Disruptions.
+                    {{ 'AIDigitalTwin.Sec3.Features.0.Title' | translate }}
                 </h4>
-                <p class="font-bold subtitle18px colorBlack">Know what’s happening in real time</p>
-                <p class="style-font subtitle16px colorBlack">Track temperature, air quality, equipment status, and more
-                    — all from a single interface.</p>
-                <p class="font-bold subtitle18px colorBlack">Prevent problems before they happen</p>
-                <p class="style-font subtitle16px colorBlack">Predict maintenance issues, detect inefficiencies, and
-                    avoid unexpected downtime.</p>
-                <p class="font-bold subtitle18px colorBlack">Make better decisions, faster</p>
-                <p class="style-font subtitle16px colorBlack">Use accurate data to support budgeting, asset planning,
-                    and emergency response.</p>
-                <p class="font-bold subtitle18px colorBlack">Connect what you already have</p>
-                <p class="style-font subtitle16px colorBlack">CODE’s solution integrates with BIM, GIS, and IoT
-                    technologies bringing together 3D building models, spatial data, and
-                    live sensor inputs into one real-time platform.</p>
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.0.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.0.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.1.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.1.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.2.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.2.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.3.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.3.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.4.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.4.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.5.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.5.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.6.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.6.Desc' | translate }}
+                </p>
+
+                <p class="font-bold subtitle18px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.7.Title' | translate }}
+                </p>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.7.Desc' | translate }}
+                </p>
             </div>
             <div class="serviceDetailsS3-imgs" data-aos="zoom-in">
                 <div class="boxTop"></div>
                 <div class="boxBootom"></div>
                 <img src="assets/images/CodeServices/AI solutions/AI Digital Twin/AI Digital Twin1-min.jpg"
-                    alt="image AI">
+                    alt="image AI" />
             </div>
         </div>
+
         <div class="d-flex fx-serviceDetailsS3">
             <div class="serviceDetailsS3-texts">
-                <h4 class="colorThree subtitle36px font-bold mb24"> Designed to <span class="color-linearGradient">Grow
-                    </span> With You</h4>
-                <p class="style-font subtitle16px colorBlack">Smarter decisions, safer buildings, and better long-term
-                    planning — that’s what an AI Digital Twin makes possible.</p>
-                <p class="font-bold subtitle18px colorBlack">Tailored to your business needs</p>
-                <p class="style-font subtitle16px colorBlack">Every Digital Twin is configured to align with your
-                    operational environment and specific requirements regardless of your
-                    sector or facility type.</p>
-                <p class="font-bold subtitle18px colorBlack">Future-ready and scalable</p>
-                <p class="style-font subtitle16px colorBlack">Easily expand the solution across additional sites or
-                    departments as your organization evolves.</p>
-                <p class="font-bold subtitle18px colorBlack">Operational from day one</p>
-                <p class="style-font subtitle16px colorBlack">We integrate seamlessly with your existing systems and
-                    data sources no need to rebuild or start from scratch.</p>
+                <h4 class="colorThree subtitle36px font-bold mb24">
+                    {{ 'AIDigitalTwin.Sec3.Features.4.Title' | translate }}
+                </h4>
+                <p class="style-font subtitle16px colorBlack">
+                    {{ 'AIDigitalTwin.Sec3.Features.4.Desc' | translate }}
+                </p>
             </div>
             <div class="serviceDetailsS3-imgs" data-aos="zoom-in">
                 <div class="boxTop"></div>
                 <div class="boxBootom"></div>
                 <img src="assets/images/CodeServices/AI solutions/AI Digital Twin/AI Digital Twin2-min.png"
-                    alt="image AI">
+                    alt="image AI" />
             </div>
         </div>
     </div>
 </section>
+
 <section class="servicesS6">
     <div class="backSection">
         <div class="servicesS6-container px-120">
-            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">
-                Designed to Support Saudi Arabia’s <span class="color-linearGradient ">Vision 2030 </span>Goals</h1>
-            <div class="d-flex fxTexts">
-                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">CODE’s AI-powered Digital Twin
-                    solutions are actively contributing to strategic projects across the Kingdom enhancing
-                    life safety, enabling environmental monitoring, and driving infrastructure dد evelopment in
-                    alignment with Vision 2030.</p>
-                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">Whether you’re modernizing
-                    schools, improving government facility efficiency, or managing large-scale real estate
-                    assets, we equip you with intelligent tools and data-driven insights to build environments that are
-                    smarter, safer, and
-                    more sustainable.</p>
-            </div>
+            <h1 class="font-bold subtitle48px colorWhite mb24 text-center" data-aos="fade-down">
+                {{ 'AIDigitalTwin.Sec4.MainTitle' | translate }}
+            </h1>
+            <p class="mb-0 colorWhite style-font text-justify subtitle20px p-head">
+                {{ 'AIDigitalTwin.Sec4.Paragraph1' | translate }}
+            </p>
+            <p class="mb-0 colorWhite style-font text-justify subtitle20px p-head">
+                {{ 'AIDigitalTwin.Sec4.Paragraph2' | translate }}
+            </p>
         </div>
     </div>
 </section>
+
 <section class="contactSection">
-    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text" />
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex" style="background-image: url(assets/images/Subtract.png);">
             <div class="contactSection-texts">
-
-                <h1 class=" subtitle48px font-bold mb-0" data-aos="fade-down">Let's Build Your <br>
-                    <span class="color-linearGradient">Smart Digital Mirror</span>
+                <h1 class="subtitle48px font-bold mb-0" data-aos="fade-down">
+                    {{ 'AIDigitalTwin.Sec5.MainTitle' | translate }}
                 </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
-                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                    <span class="font-semiBold colorWhite subtitle20px">
+                        {{ 'AIDigitalTwin.Sec5.Button' | translate }}
+                    </span>
+                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right" />
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Smarter decisions، Safer buildings، and better long-term
-            planning that’s what an AI Digital Twin makes possible. Let’s
-            talk about how CODE can help bring that to your operations.</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'AIDigitalTwin.Sec5.Paragraph' | translate }}
+        </p>
     </div>
 </section>

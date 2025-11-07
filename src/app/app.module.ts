@@ -1,26 +1,27 @@
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { HTTP_INTERCEPTORS, HttpClient } from '@angular/common/http';
+import { AuthInterceptor } from './services/authInterceptor';
 import { AppRoutingModule } from './app.routes';
-import { ToastrModule } from 'ngx-toastr';
-import { AuthInterceptor } from './services/AuthInterceptor';
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { AppComponent } from './app.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
+
 
 @NgModule({
-    declarations: [],
-
   imports: [
-   BrowserModule,
+    BrowserModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot({
-      positionClass: 'toast-top-right',
-      timeOut: 3000,
-      preventDuplicates: true,
-    }),
-    AppRoutingModule 
-   ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    AppRoutingModule,
+    DashboardModule,
+    AppComponent,
   ],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+  ],
+  bootstrap: [],
 })
 export class AppModule {}

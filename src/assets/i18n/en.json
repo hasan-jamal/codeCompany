@@ -1,0 +1,1947 @@
+{
+"NAV": {
+    "HOME": "Home",
+    "ABOUT_US": {
+      "TITLE": "About us",
+      "CODE": "About CODE",
+      "CLIENTS": "Our clients",
+      "PARTNERS": "Our partners"
+    },
+    "SERVICES": {
+      "TITLE": "Our services",
+      "AI_SOLUTIONS": "AI Solutions",
+      "DATA_CLOUD": "Data & Cloud Engineering",
+      "DIGITAL_HEALTHCARE": "Digital Healthcare",
+      "PASSIVE_CIVIL": "Passive & Civil Work",
+      "AUTOMATION_SECURITY": "Automation & Security",
+      "SOFTWARE_DEV": "Software & Development"
+    },
+    "INSIGHTS": "Insights",
+    "CONTACT": "Contact us",
+    "JOIN_US": "Join us"
+  },
+"Navbar":{
+    "Links":{
+        "Home":"Home",
+        "AboutUs":{
+			"Title":"About Us",
+			"AboutCODE":"About CODE",
+			"OurClients":"Our Clients",
+			"OurPartners":"Our Partners"
+        },
+        "OurServices":"Our Services",
+        "Insights":"Insights",
+        "ContactUs":"Contact Us",
+        "JoinUs":"JoinUs"
+    }
+  },
+   "FOOTER": {
+    "INTRO": "Your Partner for AI Solutions That Connect Vision with Real-World Impact",
+    "QUICK_LINKS": {
+      "TITLE": "Quick links",
+      "HOME": "Home",
+      "ABOUT": "About us",
+      "SERVICES": "Our services",
+      "INSIGHTS": "Insights",
+      "CONTACT": "Contact us"
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "ADDRESS_LINE1": "Intersection of Al Khair Street",
+      "ADDRESS_LINE2": "Anas bin Malik Road",
+      "ADDRESS_LINE3": "Al Malqa District – Riyadh 13524",
+      "COUNTRY": "Saudi Arabia",
+      "HELP": "Need help? Contact us:",
+      "PHONE": "Phone: +966 11 471 0010",
+      "EMAIL": "Email: sales@code.sa"
+    },
+    "COPYRIGHT": "Copyright © 2025 CODE. All rights reserved"
+  },
+  "JOIN_US": {
+    "TITLE": "Build Saudi Arabia’s Digital Future with CODE",
+    "DESCRIPTION": "We hire with purpose — to grow a team that reflects the future of innovation in Saudi Arabia and beyond. You could be next.",
+    "FORM": {
+      "FULLNAME_PLACEHOLDER": "Full Name",
+      "FULLNAME_REQUIRED": "Full Name is required",
+      "EMAIL_PLACEHOLDER": "Email",
+      "EMAIL_REQUIRED": "Valid Email is required",
+      "PHONE_PLACEHOLDER": "Phone Number",
+      "LINKEDIN_PLACEHOLDER": "LinkedIn Profile",
+      "RESUME_PLACEHOLDER": "Resume",
+      "RESUME_REQUIRED": "Resume is required",
+      "PORTFOLIO_PLACEHOLDER": "Portfolio link",
+      "MESSAGE_PLACEHOLDER": "Tell us why you are a fit...",
+      "MESSAGE_REQUIRED": "Message is required",
+      "CANCEL": "Cancel",
+      "APPLY_NOW": "Apply Now",
+      "SENDING": "Sending...",
+      "UPLOADING": "Uploading..."
+    }
+  },
+  "HOME": {
+    "HERO": {
+      "TITLE": "Driving AI-Powered Digital Transformation in Saudi Arabia",
+      "subTitle":"AI With Purpose",
+      "Description": "CODE designs intelligent platforms that solve real problems, serve national priorities, and deliver performance that lasts.",
+      "BUTTON": "Explore AI Solutions",
+      "Statistic": {
+		"YearsOfExperience" : "Years of Experience",
+		"CompletedProjects" : "Projects done",
+		"HappyClients" : "Happy clients"
+	  }
+    	},
+ "Sec1": {
+      "TITLE": "For Leaders Ready to Build What’s Next",
+      "subTitle":"Intelligence That Performs",
+      "Description": "CODE delivers real-time visibility, smarter automation, and data-driven control all built for scale, speed and security. From Digital Twins to Computer Vision, our AI platforms help you solve complex challenges, improve operations and unlock measurable impact across your environment."
+	},
+   "Sec2": {
+      "TITLE": "Real-Time AI for Smarter, Safer and Scalable Infrastructure",
+      "subTitle":"Our Flagship Services",
+      "Description": "Our flagship services give you live operational visibility, intelligent automation and faster decision-making. Designed for mission critical environments, they help you run smarter, respond faster and scale with confidence."
+	},
+   "Sec3": {
+      "TITLE": "How Our AI Digital Twin Brings Environment to Life",
+      "subTitle":"See It in Action",
+      "Description": "Discover how CODE’s AI Digital Twin delivers real-time visibility, predictive analytics and intelligent automation turning complex operations into smart, responsive systems."
+	},
+   "Sec4": {
+      "TITLE": "Partnered With the Best to Deliver the Best"
+	},
+	  "Sec5": {
+		"TITLE": "Let’s Build Smarter, Together",
+		"Description": "Connect with our team to explore AI solutions built around your goals, challenges, and infrastructure."
+		}
+    },
+  "ABOUT": {
+    "AboutCode": "About CODE",
+    "MainTitle": "Your AI One-Stop-Shop for Smart Digital Transformation",
+    "TrustedTitle": "Trusted by Leading Institutions in Saudi Arabia and Beyond",
+    "WhoWeAre": "Who We Are",
+    "WhoWeAreTitle": "Saudi Expertise. Global Standard. Smarter Outcomes.",
+    "WhoWeAreP1": "CODE is a Saudi technology company delivering end-to-end AI and digital solutions for smart infrastructure. As a one-stop-shop, we support organizations from strategy to scale with tailored platforms, local expertise, and international standards.",
+    "WhoWeAreP2": "We work with government entities, critical facilities, and enterprises to design and deploy intelligent systems that deliver measurable outcomes. Our team includes over 80 technical experts and holds certifications in ISO 9001, 27001, and 20000 ensuring every solution meets the highest standards of quality and security.",
+    "WhoWeAreSince": "Since",
+    "WhoWeAreSinceYear": "2016",
+    "FlagshipP1": "Our flagship solutions, including AI Digital Twin and AI Computer Vision are already powering over 20,000 buildings across the Kingdom, bringing real-time insight and automation to complex environments.",
+    "FlagshipP2": "With CODE, you're not just adopting new technology. You're building a smarter, more connected future one solution at a time.",
+    "Vision": "Our Vision",
+    "VisionTitle": "Building Smarter Systems for a Smarter Nation",
+    "VisionP": "We envision a future where every building, system and service in Saudi Arabia is intelligent, connected and adaptive. Through AI and digital innovation, CODE empowers institutions to lead the Kingdom’s transformation sustainably, securely and at scale.",
+    "Mission": "Our Mission",
+    "MissionTitle": "Delivering Real Impact Through AI",
+    "MissionP": "Our mission is to help organizations unlock the full potential of AI by designing, developing and deploying secure, scalable and locally tailored solutions that drive performance, enhance decision-making, and support Vision 2030 goals.",
+    "Certificates": "Our Certificates",
+    "CertificatesTitle": "Proven Excellence. Trusted Standards.",
+    "CertificatesP": "CODE meets global standards for quality, service, and security ensuring every solution is built to perform, protect and grow with you.",
+    "Timeline": "Project Timeline",
+    "TimelineTitle": "AI Projects Delivered Through Meaningful Milestones",
+    "TimelineP": "CODE meets global standards for quality, service and security ensuring every solution is built to perform, protect and grow with you.",
+    "Founding": "Founding",
+    "KeyProjects": "Key Projects",
+    "Partnerships": "Partnerships",
+    "ContactStart": "Your Next Move Starts Here",
+    "ContactTitle": "Let’s Build Smarter Together",
+    "ContactButton": "Talk to the CODE Team",
+    "ContactP": "Connect with our team to explore AI solutions built around your goals, challenges and infrastructure."
+  },
+  "PARTNER": {
+    "MainTitle": "Built on Collaboration. Backed by Innovation.",
+    "MainP": "At CODE, partnership means alignment with your mission, your environment and your goals. We work with visionary leaders to design AI driven solutions that solve strategic challenges, enhance performance and deliver long-term national value.",
+
+    "MapSubTitle": "Our Partner Network Spans the World",
+    "MapTitle": "Global Partnerships. Local Impact.",
+    "MapP": "We collaborate with leading software and technology providers to deliver integrated solutions built for performance, scale and security. Every partnership strengthens our ability to meet complex local challenges with globally proven innovation tailored to your environment.",
+
+    "ServiceFlowSubTitle": "Our Service Flow",
+    "ServiceFlowTitle": "Our Step-by-Step Work Process at CODE from start to finish",
+    "ServiceFlowP": "At CODE, we follow a structured and efficient workflow to ensure the highest quality of service for our customers.",
+    "Research": "Research",
+    "Brainstorm": "Brainstorm",
+    "Development": "Development",
+    "Delivery": "Delivery",
+
+    "ContactTitle": "Backed by the Best. Built for You.",
+    "ContactButton": "Talk to the CODE Team",
+    "ContactP": "We integrate world class platforms into solutions tailored to your needs."
+  },
+  "OurClients": {
+    "HERO": {
+      "TITLE": "Innovating to Create Impact Where Reliability Makes the Difference",
+      "Description": "CODE is the preferred partner for institutions that demand high performance, security, and long-term sustainable value."
+    },
+    "Sec1": {
+      "TITLE": "Chosen by Exceptional Clients for Impactful Experiences",
+      "subTitle": "Trusted Where Results Matter Most",
+      "Description": "Working with us reflects our commitment to delivering scalable technologies, reliable solutions, and sustainable results. We are here to ensure outstanding performance that supports your success today and in the future."
+    },
+"Sec2": {
+    "TITLE": "Join CODE’s Success and Manage Your Business with Confidence",
+    "subTitle": "Talk to our team about future-ready solutions tailored specifically to your organization’s needs.",
+    "Description": "Talk to our team about future-ready solutions tailored specifically to your organization’s needs.",
+    "Button": "Talk to the CODE Team"
+}
+
+  },
+  "BlogPage": {
+    "S1": {
+      "TITLE": "Explore the Thinking Behind the Transformation"
+    },
+    "S4": {
+      "Title": "Explore Insights, Strategies and Stories From the CODE Team",
+      "Description": "From expert articles to real world case studies, this is where we share the thinking, results and innovation behind our work.",
+      "SliderTitle": "Latest News"
+    },
+ "S3": {
+      "SubTitle": "Featured Articles",
+      "Title": "Insights That Lead The Way",
+      "Description": "Explore expert perspectives, breakthrough strategies and real world stories shaping the future of intelligent systems.",
+      "Article1": {
+        "Date": "November 29, 2023",
+        "Title": "The Future of AI power at Digital world, Key Trends Impacting Businesses",
+        "Description": "In the digital business world, striking visuals are everything. Having strong graphics is always great for promoting your consistent branding."
+      },
+      "Article2": {
+        "Date": "November 29, 2023",
+        "Title": "The Future of AI power at Digital world, Key Trends Impacting Businesses",
+        "Description": "In the digital business world, striking visuals are everything. Having strong graphics is always great for promoting your consistent branding."
+      },
+      "Article3": {
+        "Date": "November 29, 2023",
+        "Title": "The Future of AI power at Digital world, Key Trends Impacting Businesses",
+        "Description": "In the digital business world, striking visuals are everything. Having strong graphics is always great for promoting your consistent branding."
+      },
+      "PaginationNext": "Next"
+    }
+    },
+    "Contact": {
+      "Title": "Turn Insight Into Action",
+      "Button": "Talk to the CODE Team",
+      "Description": "You’ve seen what’s possible, now let’s build it together."
+    },
+    "SERVICES ": {
+      "TITLE": "خدماتنا",
+      "ITEM1": {
+        "TITLE": "تطوير المواقع",
+        "DESCRIPTION": "نصمم ونطور مواقع احترافية وسريعة الاستجابة."
+      },
+      "ITEM2": {
+        "TITLE": "الذكاء الاصطناعي",
+        "DESCRIPTION": "نربط الأنظمة بالذكاء الاصطناعي لتحسين الأداء."
+      },
+      "ITEM3": {
+        "TITLE": "الدعم الفني",
+        "DESCRIPTION": "فريقنا متواجد دائمًا لخدمتك."
+      }
+    },
+      "Insights": {
+  	 "HERO": {
+     	 	"TITLE": "Explore the Thinking Behind the Transformation"
+    		},
+ 	"Sec1": {
+      		"TITLE": "Explore Insights, Strategies and Stories From the CODE Team",
+      		"Description": "From expert articles to real world case studies, this is where we share the thinking, results and innovation behind our work."
+		},
+ 	"Sec2": {
+      		"TITLE": "Insights That Lead The Way",
+      		"subTitle":"Featured Articles",
+      		"Description": "Explore expert perspectives, breakthrough strategies and real world stories shaping the future of intelligent systems."
+		},
+ 	"Sec3": {
+      		"TITLE": "Turn Insight Into Action",
+      		"Description": "You’ve seen what’s possible now let’s build it together."
+		}
+	},
+
+    "CONTACT": {
+  	"HERO": {
+      		"TITLE": "Transformation Starts Here",
+      		"subTitle":"Powering what’s next.",
+      		"Description": "From national institutions to innovative teams, our clients count on CODE to deliver intelligent systems that perform, scale and last.Whether you're exploring new possibilities or solving complex challenges, our team is here to help with tailored solutions backed by global technology and local expertise."
+    		},
+ 	"Sec1": {
+      		"TITLE": "Lead the Change. Start Here.",
+      		"subTitle":"Let’s Connect.",
+      		"Description": "Whether you’re ready to start a project or just exploring possibilities, our team is here to answer your questions and guide you forward.",
+		"Details1":{
+      			"TITLE": "Address HQ Office",
+      			"Description": "Intersection of Al Khair Street Anas bin Malik Road Al Malqa District – Riyadh 13524 Saudi Arabia"
+		},
+		"Details2":{
+      			"TITLE": "Get In Touch",
+      			"Mobile": "Mobile: +966 11 471 0010",
+				"E-mail": "E-mail: sales@code.sa"
+		},
+		"Details3":{
+      			"TITLE": "Business Hours",
+      			"dayOpen": "Saturday-Thursday: 8am-5pm",
+				"dayClosed": "Friday: Closed"
+		}
+    },
+	"Sec2": {
+		"TITLE": "Looking for Answers? Let’s Build Them.",
+		"subTitle":"Send Us a Message",
+		"Description": "Tell us about your goals or requirements and we’ll help you shape the right solution.",
+		"titleContactBox": "Let’s Start the Conversation!",
+      	"subtitleContactBox": "You’re just one message away from turning interest into impact.",
+		"FORM": {
+        "NAME_PLACEHOLDER": "Your Name",
+        "EMAIL_PLACEHOLDER": "Your Email",
+        "SUBJECT_PLACEHOLDER": "Subject",
+        "MESSAGE_PLACEHOLDER": "Briefly describe your goal, project or question and we’ll get back to you with a focused response.",
+        "NAME_REQUIRED": "Name is required",
+        "EMAIL_REQUIRED": "Valid email is required",
+        "SUBJECT_REQUIRED": "Subject is required",
+        "MESSAGE_REQUIRED": "Message is required",
+        "CANCEL": "Cancel",
+        "SEND": "Send Now",
+        "SENDING": "Sending..."
+      }
+	}
+  },
+  "btnTalk":"Talk to the CODE Team",
+  "AI_SOLUTIONS": {
+    "Sec1": {
+      "Title": "AI Solutions That Deliver Clarity and Control",
+      "Description": "CODE’s AI solutions empower organizations across the Kingdom to enhance operational efficiency by automating processes, analyzing data in real time, and enabling faster, more accurate decision-making ultimately improving service quality, agility and sustainability. These solutions are developed in alignment with the goals of Saudi Arabia’s Vision 2030, serving a wide range of government entities, authorities and large enterprises across diverse sectors whether industrial, commercial, real estate, or technology through scalable technologies and trusted local expertise."
+    },
+    "Sec3": {
+      "SubTitle": "What We Offer.",
+      "Title": "Smarter Infrastructure. Faster Decisions. Real Impact.",
+      "Description": "Organizations across the Kingdom face growing pressure to deliver services that are faster, safer, and more efficient. CODE’s AI solutions support this transformation by combining automation, real-time data analysis and intelligent tools that enhance integration between systems, facilities and people resulting in tangible improvements in performance and service quality."
+    },
+    "Sec6": {
+      "Title": "Purpose-Built for Saudi Institutions Backed by Global Standards",
+      "Paragraph1": "Every CODE solution is purpose-built to align with local systems, the Arabic language and national priorities from Arabic NLP and smart infrastructure integration to full compliance with Saudi Arabia’s Vision 2030.",
+      "Paragraph2": "These solutions integrate seamlessly with your existing environment, enhancing workflows, elevating service quality and delivering value from day one."
+    },
+    "Contact": {
+      "Title": "Let's Build What’s Next",
+      "Description": "Explore, test, or implement — all with local context and trusted support.",
+      "Button": "Talk to the CODE Team"
+    }
+  },
+    "AIComputerVision": {
+    "Sec1": {
+      "Title": "AI Computer Vision",
+      "Breadcrumb1": "AI Solutions",
+      "Breadcrumb2": "AI Computer Vision"
+    },
+    "Sec2": {
+      "MainTitle": "Turn Visual Data into Real-Time Intelligence",
+      "Paragraph1": "CODE’s AI Computer Vision transforms traditional camera systems into intelligent, automated observers helping you detect risks, understand behavior, and respond faster.",
+      "Paragraph2": "By combining artificial intelligence with advanced video analytics, we elevate surveillance from simply watching to truly understanding and reacting.",
+      "Paragraph3": "From safety violations to unauthorized access and crowding, the system continuously monitors predefined conditions in real time enabling timely, informed action.",
+      "Paragraph4": "No matter what type of facility you operate whether it’s an administrative building, a commercial property, a service site, or an industrial environment CODE equips you with a smart monitoring layer that never blinks, never stops and constantly learns.",
+      "Paragraph5": "You gain the power to monitor with precision, detect what others miss, and prevent small issues from becoming costly disruptions."
+    },
+    "Sec3": {
+      "MainTitle": "Smarter Surveillance. Faster Response.",
+      "Features": {
+        "FaceRecognition": {
+          "Title": "Face Recognition",
+          "Desc": "Identify and verify individuals instantly — useful for access control, visitor management, and security clearance zones."
+        },
+        "PerimeterDetection": {
+          "Title": "Perimeter Detection",
+          "Desc": "Monitor specific environmental or behavioral conditions, such as entry into restricted zones or abnormal movements."
+        },
+        "BehaviorDetection": {
+          "Title": "Behavior Detection",
+          "Desc": "Recognize unusual actions — such as loitering, fighting, rapid movements, or restricted area breaches — to support security, automation, and incident prevention."
+        },
+        "FireDetection": {
+          "Title": "Smoke and Fire Detection",
+          "Desc": "Automatically detect hazards and send alerts early, reducing emergency response time and preventing escalation."
+        },
+        "DensityDetection": {
+          "Title": "Person Density Detection",
+          "Desc": "Monitor crowd levels in real time to support safety, comfort, and space optimization in public or high-traffic areas."
+        }
+      }
+    },
+    "Sec4": {
+      "MainTitle": "AI Computer Vision Solutions Built for Real-World Impact",
+      "Paragraph": "CODE’s AI Computer Vision solutions are redefining safety and security across public and private sector facilities in Saudi Arabia. From preventing unauthorized access and monitoring compliance to managing occupancy levels, this technology supports the safety and efficiency goals outlined in Vision 2030. It’s a powerful solution for any organization looking to enhance physical security, reduce manual workload, and shift toward intelligent, proactive facility management."
+    },
+    "Sec5": {
+      "MainTitle": "Why This Technology Makes a Difference",
+      "SubText": "Your cameras see a lot — CODE helps you make sense of it.",
+      "Cards": {
+        "Card1": {
+          "Title": "Precisely tailored to your environment",
+          "Desc": "Each system is carefully configured to align your site layout, operational protocols, and specific goals regardless of the type of facility or nature of your operations."
+        },
+        "Card2": {
+          "Title": "Trained for high accuracy",
+          "Desc": "Our AI models are built on real-world scenarios and continuously optimized to minimize false alarms and eliminate blind spots."
+        },
+        "Card3": {
+          "Title": "Fast to deploy, easy to scale",
+          "Desc": "The solution integrates seamlessly with your existing infrastructure and gives you the flexibility to expand across multiple locations or departments as needed."
+        }
+      }
+    },
+    "Sec6": {
+      "MainTitle": "Make Every Frame Count",
+      "Button": "Talk to the CODE Team",
+      "Paragraph": "Let’s explore how AI Computer Vision can help you prevent incidents, increase safety, and make operations more intelligent."
+    }
+  },
+  "AIDigitalTwin": {
+    "Sec1": {
+      "Title": "AI Digital Twin",
+      "Breadcrumb1": "AI Solutions",
+      "Breadcrumb2": "AI Digital Twin"
+    },
+    "Sec2": {
+      "MainTitle": "Transforming Buildings and Infrastructure into Smart, Responsive Systems",
+      "Paragraph1": "CODE’s AI-powered Digital Twin technology creates a living, dynamic digital replica of your physical assets whether buildings, campuses, or even entire city infrastructure.",
+      "Paragraph2": "Unlike traditional 3D models, a Digital Twin is connected to real-time data, enabling you to continuously monitor, analyze, and optimize operations.",
+      "Paragraph3": "It helps you understand what’s happening inside your facilities right now, anticipate issues before they occur, and plan smarter for the future.",
+      "Paragraph4": "Whether you're managing energy, safety, space utilization, or system performance, the Digital Twin brings all your insights into one place: live, visual, and easily accessible."
+    },
+    "Sec3": {
+      "VideoSection": {
+        "Title": "See It in Action",
+        "Subtitle": "Developing and Operating a Live Digital Replica of Your Building"
+      },
+      "Features": [
+        {
+          "Title": "Know what’s happening in real time",
+          "Desc": "Track temperature, air quality, equipment status, and more — all from a single interface."
+        },
+        {
+          "Title": "Prevent problems before they happen",
+          "Desc": "Predict maintenance issues, detect inefficiencies, and avoid unexpected downtime."
+        },
+        {
+          "Title": "Make better decisions, faster",
+          "Desc": "Use accurate data to support budgeting, asset planning, and emergency response."
+        },
+        {
+          "Title": "Connect what you already have",
+          "Desc": "CODE’s solution integrates with BIM, GIS, and IoT technologies bringing together 3D building models, spatial data, and live sensor inputs into one real-time platform."
+        },
+        {
+          "Title": "Designed to Grow With You",
+          "Desc": "Smarter decisions, safer buildings, and better long-term planning — that’s what an AI Digital Twin makes possible."
+        },
+        {
+          "Title": "Tailored to your business needs",
+          "Desc": "Every Digital Twin is configured to align with your operational environment and specific requirements regardless of your sector or facility type."
+        },
+        {
+          "Title": "Future-ready and scalable",
+          "Desc": "Easily expand the solution across additional sites or departments as your organization evolves."
+        },
+        {
+          "Title": "Operational from day one",
+          "Desc": "We integrate seamlessly with your existing systems and data sources no need to rebuild or start from scratch."
+        }
+      ]
+    },
+    "Sec4": {
+      "MainTitle": "Designed to Support Saudi Arabia’s Vision 2030 Goals",
+      "Paragraph1": "CODE’s AI-powered Digital Twin solutions are actively contributing to strategic projects across the Kingdom enhancing life safety, enabling environmental monitoring, and driving infrastructure development in alignment with Vision 2030.",
+      "Paragraph2": "Whether you’re modernizing schools, improving government facility efficiency, or managing large-scale real estate assets, we equip you with intelligent tools and data-driven insights to build environments that are smarter, safer, and more sustainable."
+    },
+    "Sec5": {
+      "MainTitle": "Let's Build Your Smart Digital Mirror",
+      "Button": "Talk to the CODE Team",
+      "Paragraph": "Smarter decisions, Safer buildings, and better long-term planning that’s what an AI Digital Twin makes possible. Let’s talk about how CODE can help bring that to your operations."
+    }
+  },
+  "AIInnovationHub": {
+    "Sec1": {
+      "Title": "AI Innovation Hub",
+      "Breadcrumb1": "AI Solutions",
+      "Breadcrumb2": "AI Innovation Hub"
+    },
+    "Sec2": {
+      "MainTitle": "Designing Immersive, AI Ready Spaces for Smarter Engagement",
+      "Paragraph1": "CODE’s Innovation Hub is a flexible, integrated concept that empowers organizations to rethink how they plan, train, and present.",
+      "Paragraph2": "These interactive spaces combine 3D holography, immersive simulation, and digital tools creating an environment where ideas come to life.",
+      "Paragraph3": "Whether used for training, simulation, planning, or interactive presentations, each Hub is tailored to the organization’s goals and built to deliver real-world impact within its operational environment."
+    },
+    "Sec3": {
+      "MainTitle": "What It Enables",
+      "Features": [
+        {
+          "Title": "Immersive Learning and Training",
+          "Desc": "Simulate advanced scenarios across various domains using high-resolution 3D models and gesture-based interaction enhancing training and skill development."
+        },
+        {
+          "Title": "Interactive Project and Concept Visualization",
+          "Desc": "Present plans, services, or technical designs through visually rich, engaging formats that support better stakeholder understanding and faster decision-making."
+        },
+        {
+          "Title": "Operational Mockups and Scenario Testing",
+          "Desc": "Test workflows or service delivery models in a virtual environment without affecting live operations powered by CODE’s intelligent platform."
+        },
+        {
+          "Title": "Dynamic Demonstration of Data and Digital Products",
+          "Desc": "Showcase digital solutions and insights through interactive 3D experiences ideal for expos, executive presentations and strategic engagement settings."
+        }
+      ]
+    },
+    "Sec4": {
+      "MainTitle": "Built for Vision 2030 Priorities",
+      "Paragraph": "Each CODE Innovation Hub is locally contextualized, AI-powered, and purpose-built to support Saudi Arabia’s national transformation; from smart city development to future-ready learning environments. It offers a scalable, practical way to embed innovation where it matters most: at the heart of operations, people, and progress."
+    },
+    "Sec5": {
+      "MainTitle": "Let's Build a Space That Brings Ideas to Life",
+      "Button": "Talk to the CODE Team",
+      "Paragraph": "Ready to explore what a tailored Innovation Hub could look like for your organization? CODE can help design and deliver a space that blends immersive technology with strategic purpose."
+    }
+  },
+  "AIVoiceChatbot": {
+    "Sec1": {
+      "Title": "AI Voicebot & Chatbot",
+      "Breadcrumb1": "AI Solutions",
+      "Breadcrumb2": "AI Voicebot & Chatbot"
+    },
+    "Sec2": {
+      "MainTitle": "Automating Conversations with Intelligence and Local Relevance",
+      "Paragraph1": "CODE’s AI-powered Voicebot and Chatbot solutions help you automate conversations, accelerate response times, and scale communication all without compromising user experience.",
+      "Paragraph2": "Built with Arabic Natural Language Processing (NLP) at their core, our bots understand and respond naturally in both Arabic and English, making them ideal for service providers across both public and private sectors in Saudi Arabia. Whether you're handling service inquiries, internal IT requests, or customer support, CODE’s conversational AI agents free up your teams to focus on complex tasks while ensuring users always receive fast, accurate and reliable answers."
+    },
+    "Sec3": {
+      "MainTitle": "Smarter Conversations, Less Manual Work",
+      "Features": [
+        {
+          "Title": "24/7 Support Without Expanding Your Team",
+          "Desc": "Deliver instant responses, process requests and resolve issues around the clock no delays, no added staffing costs."
+        },
+        {
+          "Title": "Natural Language Processing with Native Arabic Support",
+          "Desc": "Communicate seamlessly in both Arabic and English, with culturally-aware, contextually accurate conversations from day one."
+        },
+        {
+          "Title": "Seamless Escalation to Human Agents",
+          "Desc": "Automatically transfer complex or sensitive inquiries to the right person at the right moment keeping your service human when it matters most."
+        },
+        {
+          "Title": "Multi-Channel Deployment",
+          "Desc": "Easily deploy across websites, mobile apps, smart devices and internal platforms wherever your users are."
+        },
+        {
+          "Title": "Secure, Scalable, and Adaptive",
+          "Desc": "A flexible solution that grows with your organization, adapts to user behavior and protects your data with enterprise-grade security."
+        },
+        {
+          "Title": "Built-In Analytics for Continuous Improvement",
+          "Desc": "Track performance, understand user interactions and enhance content and response quality over time."
+        }
+      ]
+    },
+    "Sec4": {
+      "MainTitle": "Built for Real Impact",
+      "Paragraph": "CODE’s conversational AI solutions are helping organizations across Saudi Arabia automate repetitive tasks, accelerate service delivery and improve user accessibility. For entities driving digital transformation in line with Saudi Arabia’s Vision 2030, these solutions offer a practical and scalable way to reduce operational load while enhancing engagement and user experience."
+    },
+    "Sec5": {
+      "MainTitle": "Why It Works",
+      "Subtitle": "A faster, more consistent way to serve your users starts with smarter conversations.",
+      "Cards": [
+        {
+          "Title": "Tailored to your workflows",
+          "Desc": "Whether it's HR inquiries, IT support, citizen engagement, or client onboarding, we adapt the bot experience to your use case."
+        },
+        {
+          "Title": "Language-aware and locally optimized",
+          "Desc": "Designed to understand dialects, respond politely and support government or enterprise tone of voice."
+        },
+        {
+          "Title": "No-code, no hassle",
+          "Desc": "Our system is easy to configure, update, and scale with full visibility and analytics on how your bot is performing."
+        }
+      ]
+    },
+    "Sec6": {
+      "MainTitle": "Let’s Talk Smart Automation",
+      "Button": "Talk to the CODE Team",
+      "Paragraph": "A faster, more consistent way to serve your users starts with smarter conversations. Let’s explore how CODE’s Arabic-friendly Voicebots and Chatbots can help your team save time, reduce costs, and stay responsive."
+    }
+  },
+  "IndoorWayfinding": {
+    "Sec1": {
+      "Title": "Indoor Wayfinding",
+      "Breadcrumb1": "AI Solutions",
+      "Breadcrumb2": "Indoor Wayfinding"
+    },
+    "Sec2": {
+      "MainTitle": "Precision Navigation Inside Complex Facilities",
+      "Paragraph1": "CODE’s Smart Indoor Wayfinding solution provides precise and seamless navigation within large facilities even in areas where GPS doesn’t work.",
+      "Paragraph2": "Using advanced 3D laser scanning and a user-friendly digital assistant, the system delivers personalized, real-time guidance through hospitals, universities, service centers, and other complex environments. With implementation possible in less than six months, this solution offers a fast and scalable way to enhance user experience, reduce staff workload and improve operational flow."
+    },
+    "Sec3": {
+      "MainTitle1": "How It Works",
+      "Features1": [
+        {
+          "Title": "3D Laser Scanning & Digital Twin Creation",
+          "Desc": "We scan your entire facility using LiDAR technology, generating a high-accuracy (5–30 mm) 3D model and digital map."
+        },
+        {
+          "Title": "Location Tagging & Map Integration",
+          "Desc": "Points of interest — such as departments, rooms, or service desks — are tagged and embedded into the navigation system."
+        },
+        {
+          "Title": "System Integration",
+          "Desc": "The wayfinding map connects with existing building management systems, forming a unified operational layer."
+        }
+      ],
+      "MainTitle2": "Meet NaviBuddy — Your Digital Guide",
+      "Features2": [
+        {
+          "Title": "Personalized Navigation Experience",
+          "Desc": "Visitors choose their destination from a directory and are guided step-by-step using NaviBuddy, a friendly AR-enabled mascot."
+        },
+        {
+          "Title": "Augmented Reality Overlay",
+          "Desc": "Through a smartphone camera, NaviBuddy appears in the real-world space to lead users visually and audibly."
+        },
+        {
+          "Title": "Voice & Visual Sync",
+          "Desc": "Clear voice instructions and visual animations help reduce navigation anxiety and ensure smooth movement."
+        }
+      ]
+    },
+    "Sec4": {
+      "MainTitle": "Designed for Accessibility and Safety",
+      "Features": [
+        {
+          "Title": "Multi-Sensory Guidance",
+          "Desc": "Augmented reality, voice prompts, and visual cues work together to support all users — including those with visual impairments."
+        },
+        {
+          "Title": "Real-Time Emergency Routing",
+          "Desc": "Automatically adapts routes during emergencies to guide users safely and efficiently."
+        },
+        {
+          "Title": "Insight-Driven Analytics Dashboard",
+          "Desc": "Leverage usage data and traffic patterns to optimize facility operations and enhance user flow."
+        }
+      ]
+    },
+    "Sec5": {
+      "MainTitle": "Proven Impact.",
+      "Subtitle": "See how CODE’s Indoor Wayfinding delivers real value from efficiency gains to higher user satisfaction.",
+      "Cards": [
+        {
+          "Title": "Navigation Accuracy",
+          "Desc": "Achieved through real-world deployments, the system delivers near-perfect wayfinding precision across complex facilities."
+        },
+        {
+          "Title": "Boost in Visitor Satisfaction",
+          "Desc": "A smoother, less stressful journey results in significantly higher satisfaction scores and positive visitor feedback."
+        },
+        {
+          "Title": "Minutes Saved Per Shift",
+          "Desc": "Frontline staff spend less time giving directions and more time focusing on meaningful tasks and care delivery."
+        },
+        {
+          "Title": "Fewer Navigation Inquiries",
+          "Desc": "Dramatic drop in location-related questions, reducing interruptions and improving operational efficiency."
+        }
+      ]
+    },
+    "Sec6": {
+      "MainTitle": "Let's Make Navigation Simple",
+      "Button": "Talk to the CODE Team",
+      "Paragraph": "Ready to turn your building into a smarter, easier place to navigate? Let’s talk about how CODE can help implement Indoor Wayfinding using laser scanning and AI-powered guidance."
+    }
+  },
+  "SERVICE": {
+    "Sec1": {
+      "Title": "Smart Cabins",
+      "Breadcrumb": {
+        "Link": "AI Solutions",
+        "Current": "Smart Cabins"
+      }
+    },
+    "Sec2": {
+      "Title": "Secure, Private, and Digitally Managed Micro-Environments",
+      "Paragraph1": "CODE’s Smart Cabins are compact, digitally managed environments designed for privacy, precision, and performance.",
+      "Paragraph2": "Whether you’re conducting exams, holding interviews, or delivering sensitive citizen services, these AI-powered units ensure secure access, environmental control, and full digital traceability.",
+      "Paragraph3": "Integrated with biometric authentication, real-time monitoring, and acoustic insulation, Smart Cabins create the ideal micro-environment for education, healthcare, government, or enterprise use wherever control and confidentiality matter most."
+    },
+    "Sec3": {
+      "Title1": "Private. Secured. Always Connected.",
+      "Feature1": {
+        "Title": "Smart Access via Biometrics or QR",
+        "Description": "Authenticate users through fingerprint, ID card, or QR code with full logging of access time, duration and user identity."
+      },
+      "Feature2": {
+        "Title": "Real-Time Visibility & Traceability",
+        "Description": "Integrated camera, microphone and motion sensors provide full monitoring and session accountability."
+      },
+      "Feature3": {
+        "Title": "Intelligent Environmental Monitoring",
+        "Description": "Continuously track temperature, air quality, CO₂, and humidity with instant alerts for any irregularities."
+      },
+      "Feature4": {
+        "Title": "Built for Continuity",
+        "Description": "Equipped with onboard UPS and edge computing to ensure uninterrupted operation, even during power or network outages."
+      },
+      "Feature5": {
+        "Title": "Seamless AI Integration",
+        "Description": "Connects directly to CODE’s Digital Twin or Command Center for centralized control, advanced analytics and automated alert handling."
+      },
+      "Tailored": {
+        "Title": "Tailored to Your Use Case",
+        "Description": "CODE’s Smart Cabin adapts seamlessly to your environment, with customizable layouts and smart features tailored for:",
+        "UseCases": {
+          "DigitalExams": {
+            "Title": "Digital Exams",
+            "Description": "Secure, isolated spaces with full monitoring ideal for academic testing and professional certification."
+          },
+          "EGov": {
+            "Title": "E-Government Services",
+            "Description": "Private booths for secure ID verification, digital form submission, or in-person interviews."
+          },
+          "Telemedicine": {
+            "Title": "Telemedicine & Virtual Care",
+            "Description": "Controlled settings for remote consultations, health screenings, or virtual doctor sessions."
+          },
+          "HighSecurity": {
+            "Title": "High-Security Operations",
+            "Description": "Trusted environments for sensitive data handling, IT maintenance, or field operations requiring full control and traceability."
+          }
+        }
+      }
+    },
+    "Sec6": {
+      "Title": "Empowering Vision 2030 with Smart Spaces",
+      "Description": "CODE’s Smart Cabins are aligned with Saudi Arabia’s Vision 2030 enabling secure, automated and intelligent service delivery across physical environments. Whether deployed in education, government, healthcare, or corporate settings, these cabins bring AI-powered control and efficiency to the heart of everyday interactions."
+    },
+    "Videos": {
+      "Title": "See It in Action",
+      "Subtitle": "Designed for Practical Deployment",
+      "List1": [
+        "Available in single, double, or multi-user formats",
+        "Ready for cloud or on-prem integration",
+        "Soundproof and ventilated, with filtered air circulation"
+      ],
+      "List2": [
+        "Data displayed and managed via CODE’s real-time dashboard",
+        "Equipped with smart lighting and internal displays"
+      ]
+    },
+      "CONTACT": {
+    "Sec1": {
+      "Title": "Ready to Deploy, Built to Adapt",
+      "Button": "Talk to the CODE Team",
+      "Description": "Explore how CODE’s Smart Cabin can help your organization deliver smarter, safer, and more efficient services – in spaces that think for themselves."
+    }
+  }
+  },
+  "AutomationSecurity": {
+    "Hero": {
+      "Title": "Less Manual Work. More Control. Greater Confidence.",
+      "Description": "Modern organizations don’t just need to move fast they need to move securely, accurately, and at scale. CODE’s Automation & Security services are built to make that possible."
+    },
+    "Solutions": {
+      "Title": "Powerful Solutions for Automation and Security",
+      "Description": "Whether you’re looking to reduce repetitive tasks or ensure document integrity, we help you streamline operations while protecting what matters most. From process automation with RPA to secure, compliant digital signatures — we bring together efficiency and accountability in one seamless offering. Fully aligned with Saudi regulatory standards and Vision 2030 priorities, our solutions are built for real-world impact."
+    },
+    "Cards": {
+      "CardNamePlaceholder": {
+        "Description": "Card description goes here"
+      }
+    },
+    "BuiltForSaudi": {
+      "Title": "Built for Saudi Organizations",
+      "Description": "CODE’s solutions are already empowering public institutions, enterprises and service providers across the Kingdom. With local infrastructure, Arabic-language support and full regulatory compliance, we make sure your digital transformation is not just powerful but practical. Whether you're looking to streamline approvals, lighten your team’s workload, or mitigate operational risks, our Automation & Security services provide the secure, efficient tools to make it happen."
+    },
+    "Contact": {
+      "Title": "Let's Unlock Smarter, Safer Workflows",
+      "Button": "Talk to the CODE Team",
+      "Description": "Automate the repetitive. Secure the critical. Focus on what moves you forward."
+    }
+  },
+  "DigitalSignature": {
+    "Hero": {
+      "Title": "Digital Signature",
+      "Breadcrumb": {
+        "Parent": "Automation Security",
+        "Current": "Digital Signature"
+      },
+      "ImageAlt": "service image"
+    },
+    "Intro": {
+      "Title": "Sign with Confidence. Comply with Ease. Move at the Speed of Business.",
+      "Description": "CODE’s Digital Signature solution empowers Saudi organizations to complete approvals, close contracts and manage transactions faster with full legal validity and security."
+    },
+    "Details": {
+      "Paragraph": "Whether you're onboarding employees or signing agreements, our platform offers encrypted, compliant and verifiable signing experiences tailored to both public and private sector needs. Fully aligned with local laws and regulatory standards, it ensures your documents remain trusted, traceable and tamper-proof from anywhere, at any time."
+    },
+    "Features": {
+      "Regulations": {
+        "Title": "Compliant with Saudi Regulations",
+        "Description": "All signatures are legally binding and aligned with national standards, including support for digital certificates, SAMA compliance and secure long-term archiving."
+      },
+      "Verification": {
+        "Title": "Flexible Signer Verification",
+        "Description": "Authenticate users via Absher, Nafath, SMS, or certificate-based methods with detailed audit logs and full traceability for every signature."
+      },
+      "Security": {
+        "Title": "Enterprise-Ready Security",
+        "Description": "End-to-end encryption (TLS 1.3, 256-bit), two-factor authentication and advanced document sealing protect every interaction from start to finish."
+      },
+      "NoAccount": {
+        "Title": "No Account Needed to Sign",
+        "Description": "Remove friction for external partners, clients, or citizens. Digital signature allows anyone to complete documents without creating an account."
+      },
+      "Integration": {
+        "Title": "Multi-Channel Integration",
+        "Description": "Deploy via API or web interface, integrate with your existing CRM, HR, or ERP tools — or embed into mobile apps and portals."
+      },
+      "Branding": {
+        "Title": "Custom Workflows & Branding",
+        "Description": "Automate approvals, use ready-made templates and apply your visual identity for a seamless, on-brand signing experience."
+      }
+    },
+    "BuiltForSaudi": {
+      "Title": "Built for Saudi Business and Government",
+      "Description": "CODE’s digital signature solution is designed to meet the security, compliance and language requirements of organizations across Saudi Arabia. With support for Arabic, local hosting and integration-ready features, it helps streamline agreements and reduce reliance on paper-based processes. Whether you’re digitizing procurement, legal workflows, or citizen-facing services, CODE delivers a secure, scalable solution tailored to your operational needs backed by local expertise."
+    },
+    "Contact": {
+      "Title": "Let’s Take the Paper Out of Progress",
+      "Button": "Talk to the CODE Team",
+      "Description": "Secure, seamless, and fully compliant digital signatures, the CODE way."
+    }
+  },
+  "RoboticProcessAutomation": {
+    "Hero": {
+      "Title": "Robotic Process Automation",
+      "Breadcrumb": {
+        "Parent": "Automation Security",
+        "Current": "Robotic Process Automation"
+      },
+      "ImageAlt": "service image"
+    },
+    "Intro": {
+      "Title": "Automate with Precision. Empower Your Team to Do More.",
+      "Description": "Repetitive, rule-based tasks slow down innovation and drain valuable time."
+    },
+    "Details": {
+      "Paragraph": "CODE’s Robotic Process Automation (RPA) services developed in collaboration with global leaders deploy intelligent bots to handle routine processes quickly, accurately and around the clock. From data entry and report generation to system integration and compliance tasks, RPA allows your teams to focus on high-value work that drives business growth. Designed for organizations in Saudi Arabia, our solution aligns with Vision 2030 by delivering secure, scalable and easily integrated automation across departments."
+    },
+    "CaseStudy": {
+      "Title": "Real-World Impact",
+      "Subtitle": "Case Study: Logistics & Supply Chain Data Entry",
+      "Paragraph1": "A leading global logistics company automated its manual data entry processes achieving a 95% reduction in errors and cutting processing time by half.",
+      "Paragraph2": "The result? Substantial cost savings, improved employee satisfaction and enhanced scalability all accomplished without replacing existing systems."
+    },
+    "BuiltForSaudi": {
+      "Title": "Built for Saudi Organizations",
+      "Description": "CODE’s RPA solutions are purpose-built to drive measurable impact across both public and private sectors in Saudi Arabia. We enable digital transformation with a strong focus on operational efficiency, workforce optimization, Vision 2030 alignment, process standardization and scalable automation. Whether you’re optimizing logistics, enhancing citizen services, streamlining finance, or automating back-office tasks we help eliminate repetitive work and unlock your team’s full potential."
+    },
+    "WhatRpaDelivers": {
+      "Title": "What RPA Delivers",
+      "Subtitle": "Streamline the Mundane. Empower the Essential.",
+      "Card1": {
+        "Title": "Smart Task Automation",
+        "Description": "Automate repetitive and time-consuming tasks like form filling, data entry, invoice matching and system updates freeing up your team for high-value work."
+      },
+      "Card2": {
+        "Title": "High Accuracy & Speed",
+        "Description": "Eliminate manual errors and accelerate processes with 24/7 bots operating at consistent speed and precision."
+      },
+      "Card3": {
+        "Title": "Seamless Integration",
+        "Description": "Connect with legacy systems, ERPs and modern cloud platforms without disrupting existing infrastructure."
+      },
+      "Card4": {
+        "Title": "Real-Time Monitoring & Optimization",
+        "Description": "Track bot performance with built-in dashboards, diagnose issues instantly and fine-tune workflows for continuous improvement."
+      },
+      "Card5": {
+        "Title": "Scalable Deployment",
+        "Description": "Start small and scale fast across departments like finance, HR, logistics and customer service with centralized management and rapid onboarding."
+      },
+      "Card6": {
+        "Title": "Secure & Compliant",
+        "Description": "Ensure full compliance and data protection with access control, detailed audit logs and adherence to local and international standards."
+      }
+    },
+    "Contact": {
+      "Title": "Let’s Automate What Slows You Down",
+      "Button": "Talk to the CODE Team",
+      "Description": "Ready to reduce costs, eliminate errors and unlock team potential? Let’s talk about how CODE can deliver an RPA solution that meets your goals today and tomorrow."
+    }
+  },
+  "DATA_CLOUD": {
+    "S1": {
+      "TITLE": "Turn Data Into a Strategic Asset",
+      "TEXT": "Smarter decisions start with trusted data. CODE’s Data & Cloud Engineering services help you modernize infrastructure, accelerate AI adoption, and build a scalable foundation for innovation. We help you unify, secure and activate your entire data ecosystem empowering you to deliver faster digital services, drive intelligent analytics, and adapt with agility."
+    },
+    "S3": {
+      "SUBTITLE": "What we offer",
+      "TITLE": "Smart Solutions. Real Solutions",
+      "TEXT": "Explore modular services that scale with you built to integrate or stand alone."
+    },
+    "S6": {
+      "TITLE": "Empowering Saudi Vision Through Purpose-Built Solutions",
+      "TEXT": "At CODE, every solution is designed to meet the Kingdom’s digital priorities with full Arabic support, seamless local integration and alignment with national strategies and compliance standards."
+    },
+    "CONTACT": {
+      "SUBTITLE": "Your Next Move Starts Here",
+      "TITLE": "Let’s Build a Smarter Data Ecosystem",
+      "TEXT": "Data doesn’t just power your operations it defines your future. Let’s make sure it’s working for you."
+    }
+  },
+  "dataEngineering": {
+    "title": "Data Engineering & Management",
+    "parent": "Data & Cloud Engineering",
+    "subtitle": "Data Engineering & Management",
+    "heading": "Turn Raw Data into Instant Results",
+    "description1": "At CODE, we help you turn scattered, unstructured data into trusted, scalable assets. Our Data Engineering & Management solutions cover the full data lifecycle from advanced preparation to automated model deployment ensuring every step adds value.",
+    "description2": "With secure platforms and intuitive tools, both technical teams and business users can collaborate, accelerate insights, and enforce governance with ease.",
+    "description3": "Whether you're building ML pipelines or standardizing reporting, CODE helps you stay agile, compliant and impact-driven.",
+    "whatItDelivers": {
+      "title": "What It Delivers",
+      "unifiedDataAccess": {
+        "title": "Unified Data Access",
+        "description": "Connect, clean, and work with structured and unstructured data across your entire cloud or on-premise infrastructure with 30+ connectors and custom integration."
+      },
+      "selfServiceAnalytics": {
+        "title": "Self-Service Analytics",
+        "description": "Empower both technical and non-technical teams to run their own analysis with code optional interfaces, visual workflows, and AI-driven recommendations."
+      },
+      "collaborativeML": {
+        "title": "Collaborative Machine Learning",
+        "description": "Build, deploy, and monitor predictive models using visual workflows or your preferred code environment with full version control, automation, and A/B testing support."
+      },
+      "governanceCataloging": {
+        "title": "Governance & Cataloging",
+        "description": "Track lineage, manage access rights, and catalog every asset to improve data quality, visibility, and collaboration across departments."
+      },
+      "realTimeDeployment": {
+        "title": "Real-Time Deployment & Monitoring",
+        "description": "Automate workflows, retrain models, and monitor performance in real time using built-in dashboards and alerting tools."
+      }
+    },
+    "builtFor": {
+      "title": "Built for Vision 2030 Transformation",
+      "description": "From predictive maintenance to smarter public services, data is the foundation of digital transformation. CODE enables Saudi organizations to scale safely, collaborate efficiently, and operationalize data science projects that deliver impact."
+    },
+    "contact": {
+      "title": "Let's Simplify How You Work with Data",
+      "button": "Talk to the CODE Team",
+      "description": "Looking to connect your teams, improve data quality, or deploy AI at scale? Let’s talk about how CODE’s Data Engineering & Management solutions can help."
+    }
+  },
+   "databaseConsolidation": {
+      "title": "Database Consolidation & Centralization",
+      "parentLink": "Data & Cloud Engineering",
+      "current": "Database Consolidation & Centralization",
+      "alt": "Service Image",
+      "span": "Turning Data into Actionable Advantage",
+      "heading": "Bring Your Data Together — Simplify Access, Improve Governance, and Enable Trust",
+      "description1": "In today’s distributed environments, critical data is scattered across cloud platforms, internal servers, spreadsheets and legacy databases.",
+      "description2": "CODE’s Database Consolidation & Centralization solution brings these sources into one governed, discoverable environment so teams can spend less time searching and more time solving.",
+      "description3": "By connecting systems through a unified catalog and access layer and enriching them with metadata, governance rules, and quality controls, we help you establish a trusted foundation for analytics, AI and operational decision making.",
+      "delivers": "What It Delivers",
+      "point1": {
+        "title": "Centralized Data Visibility",
+        "desc": "Index and understand all your data assets structured and unstructured from data lakes, data warehouses, legacy platforms and modern non-relational databases."
+      },
+      "point2": {
+        "title": "Streamlined Access Management",
+        "desc": "Apply standardized access policies across platforms with role-based controls and full audit trails."
+      },
+      "point3": {
+        "title": "Improved Data Quality",
+        "desc": "Detect duplicates, track lineage, and enforce quality rules at the source improving trust and accuracy in every report."
+      },
+      "point4": {
+        "title": "Metadata-Driven Governance",
+        "desc": "Tag, classify, and monitor your data estate with business glossaries, lineage maps and impact analysis tools."
+      },
+      "point5": {
+        "title": "Compliance Support",
+        "desc": "Ensure sensitive data is cataloged, classified, and protected according to your internal policies and applicable regulatory requirements."
+      },
+      "point6": {
+        "title": "Scalable, Cloud-Ready Architecture",
+        "desc": "Built to consolidate data from a wide range of systems including traditional SQL databases, cloud data platforms and modern non-relational databases."
+      },
+      "imgAlt": "Database Centralization Image",
+      "builtForTitle": "Built for Saudi Infrastructure",
+      "builtForDesc": "CODE’s solutions integrate seamlessly with local infrastructure strategies and national priorities enabling government entities, healthcare systems and private sector organizations to take full control of their data landscape in alignment with Vision 2030.",
+      "contactAlt": "Contact Image",
+      "contactTitle": "Let’s Build a Unified Data Backbone",
+      "contactBtn": "Talk to the CODE Team",
+      "contactDesc": "Ready to consolidate and centralize your fragmented data systems? Let’s talk about how CODE can help establish a secure, intelligent foundation for smarter operations."
+    },
+    "disasterRecovery": {
+      "title": "Disaster Recovery Solutions",
+      "parentLink": "Data & Cloud Engineering",
+      "current": "Disaster Recovery Solutions",
+      "alt": "Service Image",
+      "heading": "Protect What Matters. Minimize Downtime. Restore with Confidence",
+      "description1": "Every second of disruption can cost organizations trust, money, and momentum.",
+      "description2": "CODE’s Disaster Recovery Solutions help ensure your data, systems and workflows are resilient in the face of unexpected failures from cyberattacks and human error to infrastructure outages. Our approach combines platform-native automation, robust scenario management and centralized data lineage helping you recover quickly while maintaining full compliance and operational continuity.",
+      "deliversTitle": "What It Delivers",
+      "point1": {
+        "title": "Automated Backup & Restore Scenarios",
+        "desc": "Define recovery scenarios with time-based or event-based triggers. Automate workflows that ensure reliable data and model backups across environments."
+      },
+      "point2": {
+        "title": "Version History & Rollback",
+        "desc": "Keep a full log of workflow and model changes, with the ability to restore a previous state instantly in case of failure or corruption."
+      },
+      "point3": {
+        "title": "Full Data Lineage",
+        "desc": "Trace every data source, transformation and access point from start to finish improving auditability, impact analysis and recovery clarity."
+      },
+      "point4": {
+        "title": "Collaborative Root-Cause Analysis",
+        "desc": "Monitor pipeline behavior and log failures in real time, making it easier for technical and business teams to resolve issues together."
+      },
+      "point5": {
+        "title": "Secure & Scalable by Design",
+        "desc": "Compatible with cloud and hybrid environments. Supports complex recovery paths across SQL databases, data lakes, NoSQL stores and big data ecosystems."
+      },
+      "imgAlt": "Disaster Recovery Image",
+      "builtForTitle": "Ready for KSA's Resilience Mandates",
+      "builtForDesc": "CODE’s disaster recovery approach supports digital continuity for critical services in alignment with Saudi Arabia’s Vision 2030. Whether you manage infrastructure, healthcare, education, or public services, we help you plan, prepare and recover with control and confidence.",
+      "contactAlt": "Contact Image",
+      "contactTitle": "Let’s Build Your Recovery Readiness",
+      "contactBtn": "Talk to the CODE Team",
+      "contactDesc": "Disruption is inevitable. Downtime doesn’t have to be. Let’s talk about how CODE can help you safeguard your operations and get back online fast."
+    },
+    "itsm": {
+      "title": "IT Service Management",
+      "parentLink": "Data & Cloud Engineering",
+      "current": "IT Service Management",
+      "alt": "Service Image",
+      "heading": "Smarter, Standardized IT Operations",
+      "description1": "CODE’s IT Service Management (ITSM) solutions help organizations standardize service delivery, automate key workflows and gain full visibility into their IT and business operations.",
+      "description2": "Whether you're managing a government helpdesk, overseeing enterprise infrastructure, or coordinating multi-department support, our ITSM offering combines AI-powered automation, unified endpoint control and real-time infrastructure monitoring all aligned with ISO and ITIL best practices.",
+      "deliversTitle": "What It Delivers",
+      "point1": {
+        "title": "Enterprise Service Management (ESM)",
+        "desc": "Extend service management beyond IT. Enable HR, facilities and business units to deliver consistent, trackable services through a unified platform."
+      },
+      "point2": {
+        "title": "AI-Driven Automation",
+        "desc": "Leverage smart triggers, chatbot assistants and automated workflows to resolve incidents faster and reduce manual effort."
+      },
+      "point3": {
+        "title": "Visual Workflow Management",
+        "desc": "Design, deploy and adapt service processes with no-code tools and visual designers helping you stay agile and compliant."
+      },
+      "point4": {
+        "title": "Endpoint Management & Patch Control",
+        "desc": "Manage and secure endpoints and mobile devices with remote control, OS deployment, and automated patching for Windows, Mac, Linux, and 1,000+ third-party apps."
+      },
+      "point5": {
+        "title": "Identity & Access Management",
+        "desc": "Centralize control over Active Directory, Azure, file servers, and email access with role-based permissions, session audits and self-service options."
+      },
+      "point6": {
+        "title": "Privileged Access Governance",
+        "desc": "Secure high-level credentials with session recording, access approvals and compliance-ready audit logs."
+      },
+      "point7": {
+        "title": "Real-Time IT Operations Monitoring",
+        "desc": "Gain complete visibility into network, servers, applications and hybrid environments with alerts, dashboards and REST API integrations."
+      },
+      "imgAlt1": "ITSM Overview Image",
+      "imgAlt2": "ITSM Details Image",
+      "builtForTitle": "Built for Vision 2030 IT Priorities",
+      "builtForDesc": "CODE’s ITSM offering enables public institutions and enterprises in Saudi Arabia to deliver smarter, faster and more accountable services across IT and business operations. Whether you’re targeting ISO compliance, enhancing digital services, or improving internal response times, we provide a scalable platform to get there.",
+      "contactAlt": "Contact Image",
+      "contactTitle": "Let’s Redefine How You Deliver IT",
+      "contactBtn": "Talk to the CODE Team",
+      "contactDesc": "Ready to modernize your IT service desk, consolidate tools, or enable cross-functional service management? Let’s explore how CODE can help implement an ITSM strategy built for growth and governance."
+    },
+    "digitalHealthcare": {
+    "title": "Powering Smarter Hospitals Enabling Better Care.",
+    "description": "Healthcare is evolving and CODE is helping lead that change. Our Digital Healthcare solutions give providers in Saudi Arabia the tools to deliver faster, safer and more connected care. From cloud-based hospital platforms to AI-assisted billing and virtual consultations, we unify systems and data to unlock efficiency, transparency and growth. Whether you're improving service delivery or expanding access across regions, CODE helps turn complex healthcare operations into intelligent, patient-centered ecosystems fully aligned with Vision 2030 and built for long-term impact.",
+    "whatWeOffer": "What We Offer",
+    "builtForTitle": "Designed for Saudi Arabia’s Healthcare Vision",
+    "builtForDesc": "CODE’s Digital Healthcare solutions are built for what matters most: better patient experiences, sustainable operations, and data-driven decisions. We combine global health IT best practices with local expertise, enabling:",
+    "benefit1": "Faster diagnosis, treatment, & discharge",
+    "benefit2": "Improved transparency & financial control",
+    "benefit3": "Greater reach to underserved communities",
+    "benefit4": "Seamless coordination across departments",
+    "benefit5": "All with Arabic language support, Saudi-compliant infrastructure, and world-class data security.",
+    "contactAlt": "Contact Image",
+    "contactTitle": "Let's Transform Healthcare Together",
+    "contactBtn": "Talk to the CODE Team",
+    "contactDesc": "Whether you're digitizing a clinic or scaling a hospital network, CODE gives you the platform, support and flexibility to lead in a new era of healthcare."
+  },
+   "drg": {
+    "title": "Diagnosis-Related Groups (DRG)",
+    "category": "Digital Healthcare",
+    "subtitle": "Diagnosis-Related Groups (DRG)",
+    "imageAlt": "DRG service image",
+    "heading1": "Automated DRG Coding for Accurate Claims and Faster Reimbusement",
+    "description1": "DRG classification is a vital step in the hospital billing cycle linking clinical activity to revenue recognition.",
+    "description2": "CODE’s platform supports automated DRG generation as part of an integrated healthcare IT ecosystem, helping hospitals reduce manual effort, accelerate reimbursement and improve claim accuracy. Real-time access to patient diagnoses, procedures and treatment details from the Hospital Information System (HIS), DRG codes are automatically generated and aligned with billing workflows minimizing errors and supporting a seamless revenue cycle.",
+    "heading2": "Faster Coding. Smoother Claims.",
+    "feature1": {
+      "title": "Automatic DRG Assignment",
+      "desc": "Based on diagnosis, procedures, and clinical records, DRG codes are generated automatically and linked directly to billing workflows."
+    },
+    "feature2": {
+      "title": "Integrated with EHR and Billing",
+      "desc": "All data is unified across departments ensuring clinical inputs flow seamlessly into the DRG classification and claims process."
+    },
+    "feature3": {
+      "title": "Streamlined for Speed and Accuracy",
+      "desc": "Reduce human error and manual delays. The system supports faster claims preparation by consolidating patient data and billing requirements in one place."
+    },
+    "feature4": {
+      "title": "Audit-Friendly and Transparent",
+      "desc": "Maintain full traceability from admission to discharge. DRG codes and billing history are linked with patient records for simplified audits and accountability."
+    },
+    "imageAlt1": "DRG workflow image",
+    "builtForTitle": "Built for Operational Excellence",
+    "builtForDesc": "CODE’s DRG solution is seamlessly integrated into a unified digital health stack combining HIS, EHR, LIS, RIS, and RCM. This convergence streamlines clinical and financial workflows, enabling providers to maximize cost recovery, enhance financial sustainability and minimize manual effort for medical teams.",
+    "contactAlt": "Contact Image",
+    "contactTitle": "Let’s Modernize Your Claims Process",
+    "contactBtn": "Talk to the CODE Team",
+    "contactDesc": "CODE’s DRG solution is seamlessly integrated into a unified digital health stack combining HIS, EHR, LIS, RIS, and RCM. This convergence streamlines clinical and financial workflows, enabling providers to maximize cost recovery, enhance financial sustainability and minimize manual effort for medical teams."
+  },
+ "HIS": {
+    "Sections": {
+      "S1": {
+        "Title": "Hospital Information System (HIS)",
+        "Breadcrumb1": "Digital Healthcare",
+        "Breadcrumb2": "Hospital Information System (HIS)"
+      },
+      "S2": {
+        "MainTitle": "One Platform. Intelligent Operation. Future-Ready Care.",
+        "Description1": "CODE’s Hospital Information System (HIS) provides a unified digital foundation for modern healthcare delivery enabling full patient lifecycle management, real-time operational visibility and data-driven clinical decisions.",
+        "Description2": "Built on a secure, scalable, and cloud-native architecture, the platform simplifies every hospital function from admission and triage to labs, pharmacy, HR and discharge creating seamless collaboration across all departments.",
+        "Description3": "By empowering Saudi hospitals to deliver high-impact care, improve outcomes and scale confidently, CODE’s HIS supports sustainable growth and digital transformation in line with Vision 2030."
+      },
+      "S5": {
+        "MainTitle": "Your Hospital, Digitally Unified",
+        "Subtitle": "60+ Modules. 48+ Specialties. 1 Platform.",
+        "Cards": {
+          "Card1": {
+            "Title": "End-to-End Patient Journey",
+            "Description": "Digitally manage appointments, triage, registration, OP/IP billing, discharge summaries and longitudinal EMR/EHR all in one place."
+          },
+          "Card2": {
+            "Title": "Clinical & Diagnostic Integration",
+            "Description": "Connect your emergency, daycare, LIS, RIS, OT, ICU, cath lab, and ambulance systems with built-in support for digital imaging, lab reporting and medication administration."
+          },
+          "Card3": {
+            "Title": "Pharmacy & Supply Chain Management",
+            "Description": "Track inventory, manage prescriptions and oversee procurement with integrated modules for both IP and OP pharmacies."
+          },
+          "Card4": {
+            "Title": "Non-Clinical Operations",
+            "Description": "Digitally manage kitchen, diet, laundry, linen, housekeeping, HRMS, duty rosters and equipment maintenance everything needed for hospital efficiency."
+          },
+          "Card5": {
+            "Title": "Patient & Staff Engagement",
+            "Description": "Access everything from one unified interface including patient apps, doctor/nurse dashboards, call center tools, phlebotomist views, and admin control panels."
+          },
+          "Card6": {
+            "Title": "Fully Cloud-Native Architecture",
+            "Description": "Built on microservices and Kubernetes, this HIS platform is ready to serve millions with high availability, fast deployment, and monthly auto-updates."
+          }
+        }
+      },
+      "S3": {
+        "SecurityTitle": "Secure, Compliant, Saudi-Ready",
+        "SecuritySubtitle": "Built to Meet Local Needs and Global Standards",
+        "SecurityPoints": {
+          "DataSecurity": "Data Security & Privacy",
+          "DataSecurityDesc": "HIPAA- and GDPR-aligned architecture with TLS 1.3 encryption, RBAC, audit logs, IP whitelisting, and role-based session control.",
+          "FlexibleDeployment": "Flexible Deployment",
+          "FlexibleDeploymentDesc": "Run in public cloud, private cloud, or on-premise based on your compliance or performance needs.",
+          "ArabicEnabled": "Arabic-Enabled and Customizable",
+          "ArabicEnabledDesc": "Arabic language support and flexible configurations to align with operational norms across the Kingdom."
+        },
+        "AI": {
+          "Title": "Analytics & AI, Built In",
+          "Subtitle": "From Insights to Action in Real Time",
+          "List": [
+            "Unified data lake with smart ingestion from clinical, operational and financial systems",
+            "BI dashboards ready for Power BI, Tableau, and QuickSight",
+            "Predictive insights for pharmacy, admissions, discharge, and patient behavior",
+            "AI modules including Patient AI, Disease AI, Inventory AI, and Finance AI"
+          ]
+        }
+      },
+      "S6": {
+        "Title": "Fast to Deploy. Easy to Scale.",
+        "Description": "Whether you're running a multi-specialty hospital, diagnostic center, or healthcare network, CODE’s HIS platform adapts to your size, structure and workflows. With plug-and-play modules and support for legacy system migration, it’s designed for fast onboarding and long-term growth."
+      },
+      "Contact": {
+        "Title": "Let’s Build the Digital Core of Your Hospital",
+        "Button": "Talk to the CODE Team",
+        "Description": "Ready to connect departments, improve outcomes, and scale without limits? Let’s talk about how CODE can help digitize your entire hospital securely and sustainably."
+      }
+    }
+  },
+   "RCM": {
+    "Sections": {
+      "S1": {
+        "Title": "Revenue Cycle Management (RCM)",
+        "Breadcrumb1": "Digital Healthcare",
+        "Breadcrumb2": "Revenue Cycle Management (RCM)"
+      },
+      "S2": {
+        "MainTitle": "Optimize Financial Performance. Streamline Patient Billing.",
+        "Subtitle1": "In modern healthcare, administrative efficiency is just as vital as clinical care.",
+        "Description1": "CODE’s Revenue Cycle Management (RCM) solution transforms how healthcare providers manage billing, insurance claims, and collections ensuring seamless financial operations from patient registration to final reimbursement.",
+        "Description2": "Built for hospitals, clinics and diagnostic chains in Saudi Arabia, our digital-first platform integrates every touchpoint of the revenue cycle into one unified workflow.",
+        "Description3": "The result? Shorter billing cycles, reduced errors and predictable cash flows all fully compliant and tailored for scalable operations."
+      },
+      "S3": {
+        "SecurityTitle": "Secure. Compliant. Scalable.",
+        "SecurityDescription": "Built on microservices and hosted on a HiTrust-certified cloud, CODE’s solution ensures secure, end-to-end transactions with seven-layer protection. It’s fully compliant with global standards like HIPAA and GDPR and offers local deployment and data residency options for public and private institutions across Saudi Arabia.",
+        "AutomationTitle": "From Admission to Reimbursement Without Friction",
+        "AutomationPoints": {
+          "Point1Title": "Comprehensive Financial Automation",
+          "Point1Desc": "Digitize the entire billing lifecycle, from OP/IP billing and discharge planning to claim submissions, follow-ups, and final settlements. Built-in modules handle insurance pre-authorization, co-payments and due alerts automatically.",
+          "Point2Title": "High Accuracy, Real-Time Processing",
+          "Point2Desc": "Minimize delays and manual errors with intelligent billing tools, real-time patient account updates, and audit-ready documentation powered by cloud-based automation.",
+          "Point3Title": "Insurance and Claims Integration",
+          "Point3Desc": "Manage private and public insurance workflows, payer rules, and reimbursement timelines with built-in support for national and third-party health schemes.",
+          "Point4Title": "Account Receivables & Doctor Payouts",
+          "Point4Desc": "Track outstanding balances, generate statements and ensure transparency in doctor revenue sharing and payout cycles.",
+          "Point5Title": "Seamless Interoperability",
+          "Point5Desc": "Integrated with clinical modules (EMR, pharmacy, diagnostics, OT) and administrative systems (inventory, appointments, patient app), our RCM platform ensures financial data is always in sync no duplication no silos."
+        },
+        "ResultsTitle": "Real Results, Measurable ROI",
+        "ResultsDescription": "A single, integrated platform connecting OP/IP billing, pharmacy, insurance, and inventory minimizing revenue leakage and uncovering new growth opportunities.",
+        "ResultsPoints": {
+          "Point1Title": "Accelerated Cash Flow",
+          "Point1Desc": "Shorten collection cycles with real-time tracking, automated alerts and digital payment workflows.",
+          "Point2Title": "Fewer Claim Denials",
+          "Point2Desc": "Submit cleaner, more accurate claims using verified patient data and automated pre-authorization processes.",
+          "Point3Title": "Actionable Insights",
+          "Point3Desc": "Access real-time BI dashboards covering revenue trends, inventory use, and patient financial activity.",
+          "Point4Title": "Lower Administrative Burden",
+          "Point4Desc": "Streamline financial operations and reduce manual work across billing, reconciliation, and reporting."
+        }
+      },
+      "S6": {
+        "Title": "Built for Healthcare in Saudi Arabia",
+        "Description": "CODE’s RCM offering is part of a broader digital healthcare transformation strategy supporting providers in delivering excellent care while running financially sound operations. Whether you're a multi-specialty hospital or a regional clinic, our local experts ensure fast implementation, training and long-term support."
+      },
+      "Contact": {
+        "Title": "Let’s Redefine Financial Efficiency in Healthcare",
+        "Button": "Talk to the CODE Team",
+        "Description": "Fast, connected, and future-proof revenue cycle management, the CODE way."
+      }
+    },
+     "Telemedicine": {
+    "Sec1": {
+      "Title": "Tele-medicine",
+      "Breadcrumb1": "Digital Healthcare",
+      "Breadcrumb2": "Tele-medicine"
+    },
+    "Sec2": {
+      "Title": "Care Without Borders. Connection Without Delay",
+      "Desc1": "CODE’s Telemedicine solution brings hospitals to the cloud enabling real-time virtual care that’s secure, flexible and fully integrated.",
+      "Desc2": "Whether it’s routine consultations, follow-ups, or remote diagnostics, your care professionals stay connected with patients anytime, anywhere.",
+      "Desc3": "Designed for healthcare providers in the Kingdom, our cloud-based platform transforms traditional care models into modern, digital-first experiences reducing physical footfall while enhancing care accessibility and convenience."
+    },
+    "Sec3": {
+      "Title": "Connected Care, Redefined",
+      "Item1": {
+        "Title": "Secure Virtual Consultations",
+        "Desc": "Easily define and manage time slots for remote consultations. Patients can book appointments online, receive reminders, and connect with doctors through an intuitive and secure interface."
+      },
+      "Item2": {
+        "Title": "Digital Health Records & Prescriptions",
+        "Desc": "Doctors and patients can upload, access, and share digital records including e-prescriptions with detailed treatment plans, lab test orders and medication dosages."
+      },
+      "Item3": {
+        "Title": "Online Payments, Simplified",
+        "Desc": "Collect consultation fees seamlessly through various payment modes, including debit/credit cards and popular local gateways like UPI and Paytm."
+      },
+      "Item4": {
+        "Title": "Cloud-Based Convenience",
+        "Desc": "From online scheduling to document access everything is centralized in one mobile-friendly platform, accessible across devices."
+      },
+      "Item5": {
+        "Title": "Real-Time Coordination",
+        "Desc": "Empower doctors, nurses, and care staff with always-on access to patient data and workflows via the Super App boosting responsiveness and care quality."
+      }
+    },
+    "Sec4": {
+      "Title": "Built for Saudi Digital Healthcare",
+      "Desc1": "Our Telemedicine solution is part of a comprehensive, cloud-native healthcare stack designed to serve public and private hospitals across Saudi Arabia. Fully localizable, secure, and ready for rapid deployment it brings together everything you need to extend your reach and deliver exceptional care remotely.",
+      "Desc2": "From chronic condition management to urgent consultations, telemedicine helps your teams:",
+      "List1": {
+        "Item1": "Increase operational efficiency",
+        "Item2": "Reduce hospital congestion"
+      },
+      "List2": {
+        "Item1": "Expand service access to underserved regions",
+        "Item2": "Improve patient satisfaction and continuity of care"
+      }
+    },
+    "Sec5": {
+      "Title": "Healthcare Without Walls",
+      "Button": "Talk to the CODE Team",
+      "Desc": "Whether you’re a hospital, clinic, or multi-specialty chain CODE enables you to offer smart, connected care that meets today’s patient expectations and tomorrow’s digital mandates."
+    }
+  }
+  },
+   "Telemedicine": {
+    "Sec1": {
+      "Title": "Tele-medicine",
+      "Breadcrumb1": "Digital Healthcare",
+      "Breadcrumb2": "Tele-medicine"
+    },
+    "Sec2": {
+      "Title": "Care Without Borders. Connection Without Delay",
+      "Desc1": "CODE’s Telemedicine solution brings hospitals to the cloud enabling real-time virtual care that’s secure, flexible and fully integrated.",
+      "Desc2": "Whether it’s routine consultations, follow-ups, or remote diagnostics, your care professionals stay connected with patients anytime, anywhere.",
+      "Desc3": "Designed for healthcare providers in the Kingdom, our cloud-based platform transforms traditional care models into modern, digital-first experiences reducing physical footfall while enhancing care accessibility and convenience."
+    },
+    "Sec3": {
+      "Title": "Connected Care, Redefined",
+      "Item1": {
+        "Title": "Secure Virtual Consultations",
+        "Desc": "Easily define and manage time slots for remote consultations. Patients can book appointments online, receive reminders, and connect with doctors through an intuitive and secure interface."
+      },
+      "Item2": {
+        "Title": "Digital Health Records & Prescriptions",
+        "Desc": "Doctors and patients can upload, access, and share digital records including e-prescriptions with detailed treatment plans, lab test orders and medication dosages."
+      },
+      "Item3": {
+        "Title": "Online Payments, Simplified",
+        "Desc": "Collect consultation fees seamlessly through various payment modes, including debit/credit cards and popular local gateways like UPI and Paytm."
+      },
+      "Item4": {
+        "Title": "Cloud-Based Convenience",
+        "Desc": "From online scheduling to document access everything is centralized in one mobile-friendly platform, accessible across devices."
+      },
+      "Item5": {
+        "Title": "Real-Time Coordination",
+        "Desc": "Empower doctors, nurses, and care staff with always-on access to patient data and workflows via the Super App boosting responsiveness and care quality."
+      }
+    },
+    "Sec4": {
+      "Title": "Built for Saudi Digital Healthcare",
+      "Desc1": "Our Telemedicine solution is part of a comprehensive, cloud-native healthcare stack designed to serve public and private hospitals across Saudi Arabia. Fully localizable, secure, and ready for rapid deployment it brings together everything you need to extend your reach and deliver exceptional care remotely.",
+      "Desc2": "From chronic condition management to urgent consultations, telemedicine helps your teams:",
+      "List1": {
+        "Item1": "Increase operational efficiency",
+        "Item2": "Reduce hospital congestion"
+      },
+      "List2": {
+        "Item1": "Expand service access to underserved regions",
+        "Item2": "Improve patient satisfaction and continuity of care"
+      }
+    },
+    "Sec5": {
+      "Title": "Healthcare Without Walls",
+      "Button": "Talk to the CODE Team",
+      "Desc": "Whether you’re a hospital, clinic, or multi-specialty chain CODE enables you to offer smart, connected care that meets today’s patient expectations and tomorrow’s digital mandates."
+    }
+  },
+   "TheatresBRC": {
+    "Sec1": {
+      "Title": "Theatres & Business Research Centers",
+      "BreadcrumbParent": "Passive & Civil Work",
+      "BreadcrumbCurrent": "Theatres & Business Research Centers"
+    },
+    "Sec2": {
+      "Title": "Spaces Designed for Insight, Influence and Engagement",
+      "Desc1": "At CODE, we create purpose-built environments that empower strategic dialogue, executive collaboration and immersive research experiences.",
+      "Desc2": "Whether you're welcoming dignitaries, leading foresight workshops, or delivering high-stakes briefings, our Theatres & Business Research Centers are engineered for impact.",
+      "Desc3": "From tiered auditoriums and adaptable briefing rooms to fully equipped research hubs, each space is designed to enhance clarity, interaction and decision-making.",
+      "Desc4": "Integrated AV systems, smart content delivery tools and ergonomic layouts ensure your message resonates and drives action."
+    },
+    "Sec3": {
+      "Title": "These are not just spaces for sharing insight — they’re platforms for activating it."
+    },
+    "Sec4": {
+      "Title": "What It Delivers",
+      "Sub1": {
+        "Title": "Immersive Presentation Theatres",
+        "Desc": "Purpose-built with tiered seating, acoustic optimization and high-resolution AV delivering your message with impact, whether for executive briefings, keynote sessions, or official announcements."
+      },
+      "Sub2": {
+        "Title": "Smart Research Environments",
+        "Desc": "Tailored for analysts and decision-makers, with real-time data access, flexible work zones and digital tools for collaborative, insight-driven research."
+      },
+      "Sub3": {
+        "Title": "Interactive Visualization Tools",
+        "Desc": "Empower stakeholders to see the full picture from policy impact to scenario planning through 3D projections, dynamic dashboards and simulation capabilities."
+      },
+      "Sub4": {
+        "Title": "Operator-Friendly Infrastructure",
+        "Desc": "Centralized control systems, intuitive interfaces, and modular content integration ensure smooth operations across functions and teams."
+      },
+      "Sub5": {
+        "Title": "Built-In Security & Continuity",
+        "Desc": "Equipped with UPS power, controlled access, and resilient systems — supporting secure, uninterrupted sessions even at the highest level."
+      }
+    },
+    "Sec5": {
+      "Title": "Built for Saudi Decision-Makers",
+      "Desc": "From public institutions and government agencies to think tanks and corporate strategy teams, CODE’s Theatres & Business Research Centers are purpose-built to support Saudi Arabia’s Vision 2030."
+    },
+    "Sec6": {
+      "Title": "Be Ready to Lead with Impact",
+      "Button": "Talk to the CODE Team",
+      "Desc": "Let’s talk about how CODE’s high-impact spaces can help."
+    }
+  },
+   "CommandCenter": {
+    "Sec1": {
+      "Title": "Command Center",
+      "BreadcrumbParent": "Passive & Civil Work",
+      "BreadcrumbCurrent": "Command Center"
+    },
+    "Sec2": {
+      "Title": "Real-Time Control. Informed Decisions. Unified Response.",
+      "Desc1": "CODE’s Command & Control Center solutions empower your teams to respond with clarity and speed whether managing crises, monitoring infrastructure, or securing vital systems.",
+      "Desc2": "By unifying data streams, communications and visualization in one dynamic environment, we simplify complexity and enable confident decision-making.",
+      "Desc3": "Designed for mission-critical operations across government, defense, telecom, transportation and enterprise sectors — each center is fully tailored, delivered turnkey and built to perform when it matters most."
+    },
+    "Sec3": {
+      "Title": "See More. Decide Faster.",
+      "Sub1": {
+        "Title": "Centralized Monitoring",
+        "Desc": "Visualize live data from multiple systems on a unified dashboard with high-resolution video walls, ergonomic consoles, and smart displays."
+      },
+      "Sub2": {
+        "Title": "Real-Time Response",
+        "Desc": "Enable faster decision-making with integrated alerts, AI-powered analytics, and seamless communication between teams and stakeholders."
+      },
+      "Sub3": {
+        "Title": "Secure, Scalable Infrastructure",
+        "Desc": "CODE’s Command Centers are designed to adapt with access control, surveillance integration, and support for growing operational needs."
+      },
+      "Sub4": {
+        "Title": "Multi-Use Applications",
+        "Desc": "From emergency management and security operations to traffic monitoring and network control — every deployment is tailored to your mission."
+      }
+    },
+    "Sec4": {
+      "Title": "Designed for Saudi Environments",
+      "Desc": "Every CODE Command Center supports the priorities of Vision 2030, enhancing public service delivery, resilience, and digital readiness across sectors. Built with scalability, compliance, and integration in mind, they help transform oversight into proactive action."
+    },
+    "Sec5": {
+      "Title": "Let’s Build the Nerve Center of Your Operations",
+      "Button": "Talk to the CODE Team",
+      "Desc": "Explore how CODE can design and deliver a Command Center that empowers your teams and secures your infrastructure."
+    }
+  },
+  "PassiveCivilWork": {
+    "Sec1": {
+      "Part1": "Smart Spaces",
+      "Part2": "Engineered for",
+      "Part3": "Strategic Impact",
+      "Paragraph": "At CODE, our Passive & Civil Work services create the physical foundation for intelligent operations from secure command centers and collaborative war rooms to fully integrated spaces that support real-time decision-making. These environments aren’t just built they’re engineered for resilience, performance and alignment with Saudi Arabia’s Vision 2030."
+    },
+    "Sec2": {
+      "Title1": "What We",
+      "Title2": "Deliver",
+      "Paragraph": "We deliver turnkey spaces that combine infrastructure, audiovisual systems, data integration and environmental controls enabling your teams to operate smarter, communicate clearly and act decisively."
+    },
+    "Sec3": {
+      "Title1": "One Partner.",
+      "Title2": "Total Integration.",
+      "Paragraph": "CODE handles the full scope from architectural layout and cabling to AV systems, power continuity and smart technology integration. Every space is custom-designed and locally adapted for your use case, risk profile and operational goals.",
+      "Card1": "Fully integrated infrastructure with centralized dashboards",
+      "Card2": "UPS, access control, and environmental management built-in",
+      "Card3": "Seamless connection to Digital Twins, Command Centers, and AI platforms",
+      "Card4": "Implemented for entities across both public and private sectors"
+    },
+    "Sec4": {
+      "Title1": "Built to Serve",
+      "Title2": "Vision 2030",
+      "Paragraph": "CODE’s Passive & Civil Work environments are active enablers of national transformation helping ministries, institutions and enterprises enhance service delivery, public trust and operational excellence. From critical response to strategic communication, we build the spaces where impact begins."
+    },
+    "Sec5": {
+      "Title1": "Let’s Build the Environment Your",
+      "Title2": "Mission Deserves",
+      "Button": "Talk to the CODE Team",
+      "Paragraph": "CODE’s Passive & Civil Work environments are active enablers of national transformation helping ministries, institutions and enterprises enhance service delivery, public trust and operational excellence. From critical response to strategic communication, we build the spaces where impact begins."
+    }
+  },
+  "MediaCenter": {
+      "Sec1": {
+        "Title": "Media Center",
+        "BreadcrumbParent": "Passive & Civil Work",
+        "BreadcrumbCurrent": "Media Center"
+      },
+      "Sec2": {
+        "Title": "Where Communication Meets Capability",
+        "Paragraph1": "CODE’s Media Center solutions are designed for organizations that need to communicate clearly, securely and at scale.",
+        "Paragraph2": "Whether you're delivering public broadcasts, internal briefings, or high-stakes updates, our custom-built Media Centers combine resilient infrastructure with cutting-edge AV technology to ensure every message lands without delay or disruption.",
+        "Paragraph3": "Built for use in government, public institutions and enterprise settings, each solution is tailored from the ground up to support strategic communication goals."
+      },
+      "Sec3": {
+        "Title": "Communicate Smarter. Broadcast with Confidence.",
+        "Item1Title": "Integrated AV & Display Systems",
+        "Item1Desc": "Deliver professional-grade audio and video with built-in broadcast tools, smart switching, and synchronized visual outputs — optimized for control, clarity, and reach.",
+        "Item2Title": "Real-Time Content Management",
+        "Item2Desc": "Support live communication through multi-channel feeds, internal dashboards and connected presentation systems all operated from a secure control suite.",
+        "Item3Title": "Purpose-Built for High Impact",
+        "Item3Desc": "Each space is designed for both content creators and decision-makers with acoustic optimization, presenter zones and seamless operator workflows.",
+        "Item4Title": "Secure, Always-On Environment",
+        "Item4Desc": "Resilient infrastructure with controlled access, UPS-backed continuity and IT system integration supporting operations when they matter most."
+      },
+      "Sec4": {
+        "Title": "Built for Vision 2030 Engagement",
+        "Paragraph": "From public announcements to internal strategy rollouts, CODE’s Media Centers help institutions across Saudi Arabia communicate with speed, authority and precision. Designed for transparency, coordination and digital transformation, they support the national drive toward smarter, more responsive public service."
+      },
+      "Sec5": {
+        "Title": "Let's Build a Space That Amplifies Your Message",
+        "Button": "Talk to the CODE Team",
+        "Paragraph": "See how CODE can design and deliver a Media Center that brings your voice to the people — with clarity, security, and purpose."
+      }
+    },
+      "SmartMeetingRooms": {
+    "Sec1": {
+      "Title": "Smart Meeting Rooms",
+      "Breadcrumb1": "Passive & Civil Work",
+      "Breadcrumb2": "Smart Meeting Rooms",
+      "Alt": "Smart Meeting Rooms image"
+    },
+    "Sec2": {
+      "Title": "Where Collaboration Meets Intelligence",
+      "Desc": "CODE’s Smart Meeting Rooms elevate everyday meetings into dynamic, high-performance collaboration spaces.",
+      "Point1": "Whether hosting strategic workshops, executive board sessions, or multi-location video calls, these rooms integrate intelligent controls, seamless connectivity and user-centric design all optimized for productivity, comfort and confidentiality.",
+      "Point2": "From government entities and corporate headquarters to academic institutions and innovation hubs, each room is tailored to meet the operational needs and expectations of modern leadership in Saudi Arabia."
+    },
+    "Sec3": {
+      "Title": "Purpose-Built for Better Decisions",
+      "Point1": {
+        "Title": "Effortless Connectivity",
+        "Desc": "Plug-and-play access to content sharing, conferencing, and screen mirroring without delays or technical complexity."
+      },
+      "Point2": {
+        "Title": "Smart AV & Environmental Controls",
+        "Desc": "Automated control of lighting, audio, temperature and blinds via central panels or voice command for a comfortable, distraction-free experience."
+      },
+      "Point3": {
+        "Title": "Seamless Hybrid Collaboration",
+        "Desc": "Integrated high-quality video and audio systems for hybrid meetings, remote participation, and global communication."
+      },
+      "Point4": {
+        "Title": "Privacy & Security by Design",
+        "Desc": "Built-in acoustic insulation, controlled access and encrypted AV infrastructure to safeguard sensitive discussions and data."
+      },
+      "Point5": {
+        "Title": "Modular and Scalable by Nature",
+        "Desc": "Whether a compact huddle space or a large executive chamber, each room can be tailored in layout, equipment and user experience to fit your unique needs."
+      },
+      "Alt": "Detailed Smart Meeting Rooms image"
+    },
+    "Sec4": {
+      "Title": "Aligned with Vision 2030 Collaboration Goals",
+      "Desc": "As Saudi Arabia advances digital governance and embraces knowledge-based decision-making, CODE’s Smart Meeting Rooms play a key role in this transformation enabling connected, efficient, and future-ready environments for communication and collaboration."
+    },
+    "Contact": {
+      "Alt": "Contact image",
+      "Title": "Let's Upgrade How You Meet",
+      "Button": "Talk to the CODE Team",
+      "Desc": "Modern meetings need more than a screen and a table. Let’s create a space that brings your people and ideas together smarter."
+    }
+  },
+   "SOCNOC": {
+    "Sec1": {
+      "Title": "SOC & NOC Environments",
+      "Breadcrumb1": "Passive & Civil Work",
+      "Breadcrumb2": "SOC & NOC Environments",
+      "Alt": "SOC & NOC Environments image"
+    },
+    "Sec2": {
+      "Title": "Comprehensive Visibility. Instant Response. Built-In Resilience.",
+      "Desc": "CODE’s Network Operations Center (NOC) and Security Operations Center (SOC) solutions are purpose-built environments for real-time monitoring, risk management and infrastructure control.",
+      "Point1": "Whether it's detecting cybersecurity threats, ensuring IT performance, or maintaining network health, these centers deliver the situational awareness required for swift and accurate action.",
+      "Point2": "Tailored for Saudi Arabia’s critical infrastructure and high-priority services, each deployment is customized to provide unified visibility, operational resilience and actionable intelligence 24/7."
+    },
+    "Sec3": {
+      "Title": "Monitor Smarter. Respond Faster.",
+      "Point1": {
+        "Title": "Centralized Monitoring Environments",
+        "Desc": "Gain unified visibility across IT, cybersecurity, and operational domains with ergonomic workstations, interactive dashboards, and secure control zones."
+      },
+      "Point2": {
+        "Title": "Multi-Layered Threat Detection",
+        "Desc": "Detect and respond to physical and cyber threats using AI-powered analytics, automated alerts, and structured escalation protocols."
+      },
+      "Point3": {
+        "Title": "Integrated Performance Oversight",
+        "Desc": "Track uptime, server health, bandwidth utilization, and application performance through real-time metrics and intelligent alerting."
+      },
+      "Point4": {
+        "Title": "Continuity Built-In",
+        "Desc": "Ensure operational resilience with UPS-backed infrastructure, environmental control systems and secure access protocols designed for peak performance, even in times of crisis."
+      },
+      "Alt": "SOC & NOC detailed image"
+    },
+    "Sec4": {
+      "Title": "Built for Vision 2030 Infrastructure Goals",
+      "Point1": "CODE’s SOC and NOC solutions empower Saudi institutions to uphold operational integrity, strengthen digital resilience and ensure secure, reliable service delivery.",
+      "Point2": "From government ministries and smart cities to enterprise networks, these centers play a critical role in advancing Vision 2030’s mission to build secure, efficient and future-ready infrastructure."
+    },
+    "Contact": {
+      "Alt": "Contact image",
+      "Title": "Let’s Build Your Nerve Center for Smarter Operations",
+      "Button": "Talk to the CODE Team",
+      "Desc": "Talk to CODE about designing and delivering a fully integrated SOC or NOC environment tailored to your mission."
+    }
+  },
+
+    "SOFTWARE_DEVELOPMENT": {
+    "servicesS1": {
+      "subtitle": "Build Smarter. Scale Faster. Transform Digitally.",
+      "description": "In a connected world, software is more than infrastructure it’s how your business speaks, operates and grows. CODE’s Software & Development services empower organizations across Saudi Arabia to move from ideas to impact with powerful web platforms, mobile applications and collaboration tools tailored for performance, security and scale.Whether you're launching a new customer experience, streamlining workflows, or enabling seamless collaboration, we develop solutions that are as intuitive as they are intelligent. Designed for public and private sector needs, our platforms combine flexibility, speed and enterprise-grade reliability all aligned with Vision 2030’s digital transformation goals."
+    },
+    "servicesS3": {
+      "subtitle": "From Concept to Code — We Build What Moves You Forward. Web. Mobile. SharePoint. Custom Solutions. Intelligent Integration.",
+      "title": "What We Offer"
+    },
+    "servicesS5": {
+      "title": "Why CODE?",
+      "subtitle": "Technology That Delivers. People Who Understand.",
+      "cards": {
+        "Client-AlignedArchitecture": {
+          "title": "Purpose-Driven Architecture",
+          "description": "Solutions engineered around your specific business goals scalable, secure and centered on user experience."
+        },
+        "BuiltforSaudiInfrastructure": {
+          "title": "Tailored for Saudi Arabia",
+          "description": "Arabic-enabled, aligned with Vision 2030 and designed to integrate seamlessly with local platforms, regulations and digital strategies."
+        },
+        "FullLifecycleSupport": {
+          "title": "End-to-End Partnership",
+          "description": "From strategic planning to continuous improvement after launch, our teams walk with you every step of the way."
+        },
+        "Enterprise-GradeSecurity": {
+          "title": "Security at the Core",
+          "description": "Enterprise-grade protection built into every layer from data privacy and access controls to performance and compliance safeguards."
+        }
+      }
+    },
+    "contactSection": {
+      "subtitle": "Your Next Move Starts Here",
+      "title": "Let’s Build  What’s Next",
+      "button": "Talk to the CODE Team",
+      "description": "Whether you're creating a digital platform, enabling internal agility, or transforming citizen services CODE is your trusted development partner."
+    }
+  },
+   "SHAREPOINT_SOLUTIONS": {
+    "servicesS1": {
+      "title": "SharePoint Solutions",
+      "breadcrumbSoftware": "Software & Development",
+      "breadcrumbCurrent": "SharePoint Solutions"
+    },
+    "servicesS2": {
+      "title": "Connect. Collaborate. Take Control. All in One Place.",
+      "description1": "In today’s decentralized, digital-first world, SharePoint empowers organizations to bring their teams, content and communications together in one powerful platform.",
+      "description2": "At CODE, we help you maximize this potential through secure, scalable and fully tailored SharePoint environments.",
+      "description3": "From smart document management and automated workflows to custom intranets and digital workplace solutions, our SharePoint experts build platforms that streamline operations, enhance collaboration and support your business transformation goals.",
+      "description4": "Whether you're migrating to the cloud or modernizing legacy systems, we build for resilience, efficiency and long-term impact."
+    },
+    "servicesS3": {
+      "subtitle": "Enterprise Collaboration. Reimagined. Smart Portals. Secure Access. Seamless Experience.",
+      "title": "What We Deliver",
+      "items": {
+        "Intranet": {
+          "title": "Intranet & Departmental Portals",
+          "description": "Build intuitive internal hubs where teams can access essential tools, resources and updates all wrapped in a branded, permission-aware experience."
+        },
+        "DocumentManagement": {
+          "title": "Document & Knowledge Management",
+          "description": "Organize content in structured libraries with automated versioning, permission controls and approval workflows reducing redundancy and improving audit readiness."
+        },
+        "WorkflowAutomation": {
+          "title": "Workflow Automation",
+          "description": "Automate routine processes such as reviews, approvals and alerts with SharePoint-powered workflows accelerating decisions and freeing up your team’s time."
+        },
+        "CustomSolutions": {
+          "title": "Custom Solutions & Integrations",
+          "description": "Go beyond the basics with tailored SharePoint solutions including custom web parts, dynamic forms and seamless integration with Microsoft Teams, Power BI and Dynamics 365."
+        },
+        "Migration": {
+          "title": "Migration & Modernization",
+          "description": "Upgrade from legacy platforms to SharePoint Online or hybrid environments with zero data loss, minimal downtime and maximum future readiness."
+        },
+        "Security": {
+          "title": "Security, Governance & Compliance",
+          "description": "Implement robust access controls, usage policies and compliance frameworks keeping your data secure and aligned with internal and regulatory requirements."
+        }
+      }
+    },
+    "servicesS6": {
+      "title": "Built for Saudi Institutions and Enterprises",
+      "description": "Whether you're a government agency, or a large-scale enterprise, CODE delivers SharePoint solutions engineered for secure collaboration, efficiency and growth while aligning with Vision 2030’s ambitions for a digitally empowered, connected nation."
+    },
+    "contactSection": {
+      "title": "Let’s Build Your SharePoint Ecosystem",
+      "button": "Talk to the CODE Team",
+      "description": "Ready to improve collaboration, reduce friction, and make your information work harder for you? Let’s talk about how CODE can design and deliver a SharePoint solution tailored to your environment."
+    }
+  },
+   "WEB_MOBILE_DEVELOPMENT": {
+    "servicesS1": {
+      "title": "Web & Mobile App Development",
+      "breadcrumbSoftware": "Software & Development",
+      "breadcrumbCurrent": "Web & Mobile App Development"
+    },
+    "servicesS2": {
+      "title1": "Modern Digital",
+      "highlight1": "Experiences.",
+      "title2": "Built for",
+      "highlight2": "Performance.",
+      "title3": "Designed for",
+      "highlight3": "Growth.",
+      "description1": "In today’s digital-first economy, your web and mobile presence defines your brand, reach and impact.",
+      "description2": "CODE’s Web & Mobile App Development services empower organizations to build future-ready platforms that are fast, secure, and user-centric.",
+      "description3": "Whether launching a customer-facing app, digitizing internal operations, or enabling end-to-end service delivery, we combine strategy, UX design, and modern engineering to deliver solutions that scale.",
+      "description4": "Our native-first, security-by-design approach ensures seamless performance across devices, regions and user segments enabling your business to grow without limits."
+    },
+    "servicesS3": {
+      "title": "Your Digital Presence,",
+      "highlight": "Elevated",
+      "subtitle": "Websites. Mobile Apps. Admin Dashboards — Seamlessly Connected.",
+      "sectionTitle": "What",
+      "sectionHighlight": "We",
+      "items": {
+        "mobileApps": {
+          "title": "Native & Cross-Platform Mobile Apps",
+          "description": "We build high-performance mobile applications using native technologies for iOS and Android delivering speed, reliability and exceptional UX. Prefer cross-platform? We deliver seamless solutions using modern frameworks without compromising quality."
+        },
+        "webApps": {
+          "title": "Web Applications & Admin Portals",
+          "description": "From engaging websites to powerful dashboards, we develop scalable, fast-loading web platforms using cloud-ready technologies designed for ease of use, flexibility and growth."
+        },
+        "architecture": {
+          "title": "Business-Aligned Architecture",
+          "description": "Your goals drive our designs. We architect web and mobile solutions tailored to your workflows, audience and objectives whether you're a startup, SME, or enterprise."
+        },
+        "security": {
+          "title": "Security & Performance by Design",
+          "description": "Our platforms are built with security, speed and scalability at their core. Expect enterprise-grade backend systems, responsive design and high availability all by default."
+        },
+        "userExperience": {
+          "title": "User-First Experience",
+          "description": "We design beautiful, intuitive interfaces that users love. Every click, swipe and scroll is optimized for clarity, engagement and conversion from frontend to backend."
+        }
+      }
+    },
+    "servicesS6": {
+      "title": "Backed by CODE Care Services",
+      "description": "From strategic consultation to post-launch optimization, CODE is with you every step of the way. Our expert teams handle system integration, seamless deployment and proactive performance monitoring ensuring reliability, continuity and lasting impact."
+    },
+    "contactSection": {
+      "title": "Build Your Digital Flagship",
+      "button": "Talk to the CODE Team",
+      "description": "Whether you're launching a new service, digitizing operations, or creating a standout user experience our web and mobile development team is here to turn your vision into reality."
+    }
+  },
+   "SERVICES": {
+    "AISolutions": {
+      "title": "AI Solutions",
+      "items": {
+        "digitalTwin": "AI Digital Twin",
+        "computerVision": "AI Computer Vision",
+        "voiceChatbots": "Voicebots / Chatbots",
+        "innovationHub": "AI Innovation Hub",
+        "indoorWayfinding": "Indoor Wayfinding",
+        "smartCabins": "Smart Cabins"
+      }
+    },
+    "DataCloudEngineering": {
+      "title": "Data & Cloud Engineering",
+      "items": {
+        "dataEngineering": "Data Engineering & Management",
+        "databaseConsolidation": "Database Consolidation & Centralization",
+        "disasterRecovery": "Disaster Recovery Solutions",
+        "ITSM": "ITSM"
+      }
+    },
+    "DigitalHealthcare": {
+      "title": "Digital Healthcare",
+      "items": {
+        "HIS": "HIS (Hospital Information Systems)",
+        "RCM": "RCM (Revenue Cycle Management)",
+        "DRG": "DRG (Diagnosis-Related Groups)",
+        "teleMedicine": "Tele-medicine"
+      }
+    },
+    "PassiveCivil": {
+      "title": "Passive & Civil Work",
+      "items": {
+        "commandCenter": "Command Center",
+        "mediaCenter": "Media Center",
+        "NOC_SOC": "NOC & SOC",
+        "meetingRooms": "Meeting Rooms",
+        "businessResearch": "Business Research Center"
+      }
+    },
+    "AutomationSecurity": {
+      "title": "Automation & Security",
+      "items": {
+        "digitalSignature": "Digital Signature",
+        "RPA": "RPA (UiPath)"
+      }
+    },
+    "SoftwareDevelopment": {
+      "title": "Software & Development",
+      "items": {
+        "webMobile": "Web & Mobile App Development",
+        "sharePoint": "SharePoint Solutions"
+      }
+    }
+  },
+   "TESTIMONIALS": {
+    "section1": {
+      "question": "What people are saying?",
+      "titlePart1": "We brought",
+      "titlePart2": "their ideas",
+      "titlePart3": "to life"
+    }
+  },
+   "CHATBOT": {
+    "buttonOpen": "💬 Let’s Connect.",
+    "greeting": "👋 We’d love to hear from you. Whether you have a question, need a quote, or want to explore a partnership, we're here to help.",
+    "instruction": "Choose the best way to reach our team:",
+    "whatsapp": "WhatsApp",
+    "callUs": "Call us",
+    "email": "Email",
+    "buttonClose": "❌ Close"
+  },
+    "SERVICESNAMES": {
+    "servicesS4": {
+      "AISolutions": "AI solutions",
+      "AutomationAndSecurity": "Automation & Security",
+      "DigitalHealthcare": "Digital Healthcare",
+      "PassiveCivilWork": "Passive & Civil Work",
+      "DataCloudEngineering": "Data & Cloud Engineering",
+      "SoftwareDevelopment": "Software & Development"
+    }
+  },
+    "SERVICE_CARDS": {
+    "AISolutions": {
+      "AIDigitalTwin": {
+        "name": "AI Digital Twin",
+        "description": "Build a live, intelligent digital replica of your facility to track performance, anticipate problems, and optimize operations powered by seamless integration of BIM, GIS, and IoT for real-time insight and smarter decisions."
+      },
+      "AIComputerVision": {
+        "name": "AI Computer Vision",
+        "description": "Turn your cameras into smart observers. Use AI-powered video analytics to detect behavior, identify risks and automate security including facial recognition, crowd analysis and perimeter alerts."
+      },
+      "AIVoicebotsChatbots": {
+        "name": "AI Voicebots & Chatbots",
+        "description": "Automate support and engagement with Arabic-enabled AI bots that are available 24/7 across your digital channels delivering instant responses, seamless escalation and built-in analytics."
+      },
+      "AIInnovationHub": {
+        "name": "AI Innovation Hub",
+        "description": "Create immersive, AI-powered environments for training, planning and showcasing innovation designed around your use case and optimized for local deployment."
+      },
+      "IndoorWayfinding": {
+        "name": "Indoor Wayfinding",
+        "description": "Help visitors navigate complex spaces with ease using LiDAR-precise 3D maps, voice guidance and augmented reality improving flow, accessibility and visitor satisfaction."
+      },
+      "SmartCabins": {
+        "name": "Smart Cabins",
+        "description": "Deploy secure, sensor-enabled cabins designed for exams, interviews, or sensitive tasks featuring biometric access, real-time monitoring and environmental control."
+      }
+    },
+    "READ_MORE": "Read More"
+  },
+   "AUTOMATION": {
+    "servicesS1": {
+      "robProcess": {
+        "name": "Robotic Process Automation",
+        "description": "Automate routine tasks across departments using intelligent bots that never sleep, never forget, and never make mistakes. From data entry and report generation to cross-platform syncing, our RPA solutions help you reduce cost, improve speed and unlock your team’s full potential."
+      },
+      "digitalSignature": {
+        "name": "Digital Signature",
+        "description": "Sign contracts, approve documents, and complete transactions securely from anywhere. CODE’s digital signature solution, compliant with Saudi law, supports multiple verification methods and integrates seamlessly into your existing systems."
+      }
+    }
+  },
+  "DATA_CLOUDCARDS": {
+    "servicesS1": {
+      "dataEngineering": {
+        "name": "Data Engineering & Management",
+        "description": "Turn raw data into reliable, analytics-ready assets with tools for governance, machine learning and real-time insights."
+      },
+      "databaseCentralization": {
+        "name": "Database Centralization",
+        "description": "Unify your data in a secure, compliant environment improving access, quality and auditability."
+      },
+      "disasterRecovery": {
+        "name": "Disaster Recovery",
+        "description": "Safeguard your data and operations with automated backups, version control and fast recovery strategies."
+      },
+      "ITSM": {
+        "name": "IT Service Management (ITSM)",
+        "description": "Automate support, standardize service delivery and gain real-time visibility across your IT environment aligned with international standards and ITIL best practices."
+      }
+    }
+  },
+   "DIGITAL_HEALTH": {
+    "servicesS1": {
+      "HIS": {
+        "name": "Hospital Information Systems (HIS)",
+        "description": "A fully integrated platform that digitizes every aspect of hospital operations from triage and treatment to pharmacy, labs, HR, and supply chain. Modular, cloud-native and ready to scale."
+      },
+      "RCM": {
+        "name": "Revenue Cycle Management (RCM)",
+        "description": "Accelerate reimbursements and reduce billing friction with a connected system for OP/IP billing, insurance workflows, and doctor payouts all fully automated, auditable and secure."
+      },
+      "DRG": {
+        "name": "Diagnosis-Related Groups (DRG)",
+        "description": "Link clinical activity to revenue with automated DRG coding powered by real-time hospital data. Improve claims accuracy, reduce delays and simplify audits without adding manual work."
+      },
+      "Telemedicine": {
+        "name": "Telemedicine",
+        "description": "Deliver care beyond hospital walls with secure, real-time virtual consultations, digital prescriptions, and online payments. One platform to extend access and reduce congestion."
+      }
+    }
+  },
+    "PASSIVE_CIVIL": {
+    "servicesS1": {
+      "commandCenter": {
+        "name": "Command & Control Centers",
+        "description": "Mission-critical environments where real-time data, alerts and communication tools come together enabling informed decisions, faster responses and unified oversight across sectors."
+      },
+      "mediaCenter": {
+        "name": "Media Centers",
+        "description": "Secure, always-on environments designed for professional broadcast, public messaging, and internal briefings with smart switching, synchronized displays and UPS-backed continuity built in."
+      },
+      "socNoc": {
+        "name": "SOC & NOC Environments",
+        "description": "Security and network operations hubs with 24/7 situational awareness, multi-layered threat detection and resilient infrastructure tailored for Saudi Arabia’s most vital systems and services."
+      },
+      "smartMeeting": {
+        "name": "Smart Meeting Rooms",
+        "description": "High-performance collaboration spaces equipped with intelligent AV controls, privacy safeguards and hybrid conferencing capabilities ready to support modern governance and executive workflows."
+      },
+      "businessResearch": {
+        "name": "Business Research Centers & Theatres",
+        "description": "Presentation-ready environments optimized for strategic briefings, foresight discussions and research-driven insight combining immersive visuals, ergonomic layouts and real-time data access."
+      }
+    }
+  },
+    "SOFTWARE_DEV": {
+    "servicesS1": {
+      "webMobile": {
+        "name": "Web and Mobile App Development",
+        "description": "Modern digital experiences designed for performance and growth. We build scalable web platforms and high-capacity mobile apps that support everything from citizen engagement to enterprise automation. With integrated AI capabilities, our solutions personalize user experiences, enhance security and enable intelligent decision-making. Whether native or cross-platform, they deliver clean UX, robust backend integration and enterprise-grade performance across every screen."
+      },
+      "sharePoint": {
+        "name": "SharePoint Solutions",
+        "description": "Simplify collaboration with tailored SharePoint environments. From intranet portals and document libraries to automated workflows and secure access controls, we design solutions that match your operational needs. AI-powered features like smart search, content tagging and process automation increase productivity and visibility. Fully integrated with Microsoft 365, our SharePoint solutions boost governance, agility and internal communication."
+      }
+    }
+  }
+  
+
+}

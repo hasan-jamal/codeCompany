@@ -22,6 +22,26 @@
   font-family: 'Inter ExtraBold';
   src: url("/assets/fonts/inter/Inter-ExtraBold.otf");
 }
+@font-face {
+  font-family: 'Tajawal';
+  src: url("/assets/fonts/Tajawal/Tajawal-Regular.ttf");
+}
+@font-face {
+  font-family: 'Tajawal Light';
+  src: url("/assets/fonts/Tajawal/Tajawal-Light.ttf");
+}
+@font-face {
+  font-family: 'Tajawal Medium';
+  src: url("/assets/fonts/Tajawal/Tajawal-Medium.ttf");
+}
+@font-face {
+  font-family: 'Tajawal Bold';
+  src: url("/assets/fonts/Tajawal/Tajawal-Bold.ttf");
+}
+@font-face {
+  font-family: 'Tajawal ExtraBold';
+  src: url("/assets/fonts/Tajawal/Tajawal-ExtraBold.ttf");
+}
 :root {
   --font-size-143: 143px;
   --line-height-110:110px;
@@ -95,6 +115,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
 .font-semiBold{font-family: "Inter SemiBold";font-weight: 600;}
 .font-medium{font-family: 'Inter Medium'; font-weight: 500;}
 .font-ExtraBold{font-family: 'Inter ExtraBold';}
+.font-Tajawal{font-family: 'Tajawal' !important;}
 .px-90{padding: 0 90px;}
 .px-100{padding: 0 100px;}
 .px-80{padding: 0 80px;}
@@ -469,4 +490,31 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.text-start{text-al
 .swal2-html-container{
   font-weight: 400;font-family: 'Inter';
 }
+/* Arabic Lang */
+body.rtl {
+  direction: rtl;
+}
+body.rtl .slide,body.rtl .slick-slider,
+body.rtl .slider,body.rtl .slick-current,body.rtl .slick-active
+body.rtl .slide__content
+{direction: ltr !important;}
+body.rtl .slick-slide{float: left !important;}
+body.rtl .sectionFour .arrows-blogs,
+body.rtl .sectionOne .fx-sectionOne,
+body.rtl .contactSection .contactSection-div{direction: ltr;}
+body.rtl .sectionOne .part1-sectionOne .texts-side,
+body.rtl .sectionOne .part1-sectionOne .button-side button,
+body.rtl .contactSection .contactSection-texts{direction: rtl;}
+body.rtl .font-light{font-family: "Tajawal Light";font-weight: 300;}
+body.rtl .style-font{font-family: "Tajawal";font-weight: 400;}
+body.rtl .font-bold{font-family: 'Tajawal Bold';font-weight: 700;}
+body.rtl .font-semiBold{font-family: "Tajawal";font-weight: 600;}
+body.rtl .font-medium{font-family: 'Tajawal Medium';}
+body.rtl .font-ExtraBold{font-family: 'Tajawal ExtraBold';}
+body.rtl .aboutSThree .aboutSThree-imgs{direction: ltr;margin-bottom: 6rem;}
+body.rtl .servicesS1-texts{direction: rtl;}
+body.rtl .servicesS3 .fx-servicesS3 .box{direction: ltr;}
+@media (max-width:614px) {
+  body.rtl .aboutSThree .aboutSThree-imgs{margin-bottom: 0rem;}
 
+}

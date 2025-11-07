@@ -1,13 +1,11 @@
 <section class="ourClientsS1">
     <div class="ourClientsS1-container px-120">
         <div class="ourClientsS1-content">
-            <h1 class="font-bold subtitle48px colorWhite text-center" data-aos="fade-down">Built for <span
-                    class="color-linearGradient">Impact. </span> Chosen for
-                <span class="color-linearGradient">Reliability.</span>
+            <h1 class="font-bold subtitle48px colorWhite text-center" data-aos="fade-down">
+                {{ 'OurClients.HERO.TITLE' | translate }}
             </h1>
-            <p class="mb-0 style-font text-center colorWhite subtitle20px p-head">CODE is the partner of choice for
-                institutions that demand performance, security and
-                long-term value.
+            <p class="mb-0 style-font text-center colorWhite subtitle20px p-head">
+                {{ 'OurClients.HERO.Description' | translate }}
             </p>
         </div>
     </div>
@@ -20,7 +18,6 @@
                 [style.background]="tab.bgColor" (click)="setActiveTab(tab.key)">
                 {{ tab.label }}
             </button>
-
         </div>
         <!-- Logos Content -->
         <div class="contentsTabs">
@@ -31,42 +28,43 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 <section class="sectionTitles">
-    <div class="d-flex flex-column divTitles"><span
-            class="font-medium text-center subtitle24px color-linearGradient text-capitalize">Trusted where it matters
-            most</span>
-        <h1 class="text-center font-bold subtitle48px aos-init aos-animate"> Chosen by <span
-                class="color-linearGradient"> Leaders. </span> Built for <span
-                class="color-linearGradient">Impact.</span></h1>
-        <p class="mb-0 text-center subtitle24px style-font">Every partnership reflects our commitment to scalable
-            technology, trusted delivery and long-term impact.
-            We work where performance matters most.</p>
+    <div class="d-flex flex-column divTitles">
+        <span class="font-medium text-center subtitle24px color-linearGradient text-capitalize">
+            {{ 'OurClients.Sec1.subTitle' | translate }}
+        </span>
+        <h1 class="text-center font-bold subtitle48px aos-init aos-animate">
+            {{ 'OurClients.Sec1.TITLE' | translate }}
+        </h1>
+        <p class="mb-0 text-center subtitle24px style-font">
+            {{ 'OurClients.Sec1.Description' | translate }}
+        </p>
     </div>
 </section>
-<!-- <app-people-saying></app-people-saying> -->
-
 <section class="contactSection">
     <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <span class="subtitle24px d-block color-linearGradient font-medium mb24"> Your Next Move Starts
-                    Here</span>
-                <h1 class=" subtitle48px font-bold mb-0">Partner with <span class="color-linearGradient">CODE</span>
-                    <br> Perform with <span class="color-linearGradient">Confidence.</span>
+                <span class="subtitle24px d-block color-linearGradient font-medium mb24">
+                    {{ 'OurClients.Sec2.subTitle' | translate }}
+                </span>
+                <h1 class="subtitle48px font-bold mb-0">
+                    {{ 'OurClients.Sec2.TITLE' | translate }}
                 </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <span class="font-semiBold colorWhite subtitle20px">{{ 'OurClients.Sec2.Button' | translate
+                        }}</span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Talk to our team about future-focused solutions tailored to
-            your organization’s needs.</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'OurClients.Sec2.Description' | translate }}
+        </p>
     </div>
 </section>

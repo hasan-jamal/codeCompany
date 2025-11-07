@@ -4,6 +4,7 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { OurServiceFlowComponent } from '../../../../shared/sectionsPublic/our-service-flow/our-service-flow.component';
 import { ServicesS4Component } from '../../../../shared/sectionsPublic/services-s4/services-s4.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-data-cloud-engineering',
@@ -11,6 +12,7 @@ import { ServicesS4Component } from '../../../../shared/sectionsPublic/services-
      RouterLinkActive,
      OurServiceFlowComponent,
       ServicesS4Component,
+      TranslateModule,
     CommonModule],
   templateUrl: './data-cloud-engineering.component.html',
   styleUrls: ['./data-cloud-engineering.component.css',
@@ -25,41 +27,41 @@ export class DataCloudEngineeringComponent {
     this.modalService.open('modalTalkCode');
   }
     isHovered = false;
-    serviceCards = [
-    {
-      id: 1,
-      isHovered: false,
-      name: "Data Engineering & Management",  
-      description: "Turn raw data into reliable, analytics-ready assets with tools for governance, machine learning and real-time insights.",
-      link:"/ourServices/Data&CloudEngineering/dataEngineering",
-      imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/image-min.png"
-    },
-     {
-      id: 1,
-      isHovered: false,
-      name: "Database Centralization",  
-      description: "Unify your data in a secure, compliant environment improving access, quality and auditability.",
-      link:"/ourServices/Data&CloudEngineering/dataEngineering",
-      imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/database%20centralization.png"
-    },
-     {
-      id: 1,
-      isHovered: false,
-      name: "Disaster Recovery",  
-      description: "Safeguard your data and operations with automated backups, version control and fast recovery strategies.",
-      link:"/ourServices/Data&CloudEngineering/dataEngineering",
-      imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/Disaster%20Recovery-min.png"
-    },
-     {
-      id: 1,
-      isHovered: false,
-      name: "IT Service Management (ITSM)",  
-      description: "Automate support, standardize service delivery and gain real-time visibility across your IT environment aligned with international standards and ITIL best practices.",
-      link:"/ourServices/Data&CloudEngineering/dataEngineering",
-      imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/ITSM-min.png"
-    },
+serviceCards = [
+  {
+    id: 1,
+    isHovered: false,
+    nameKey: "DATA_CLOUDCARDS.servicesS1.dataEngineering.name",
+    descKey: "DATA_CLOUDCARDS.servicesS1.dataEngineering.description",
+    link: "/ourServices/Data&CloudEngineering/dataEngineering",
+    imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/image-min.png"
+  },
+  {
+    id: 2,
+    isHovered: false,
+    nameKey: "DATA_CLOUDCARDS.servicesS1.databaseCentralization.name",
+    descKey: "DATA_CLOUDCARDS.servicesS1.databaseCentralization.description",
+    link: "/ourServices/Data&CloudEngineering/dataEngineering",
+    imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/database%20centralization.png"
+  },
+  {
+    id: 3,
+    isHovered: false,
+    nameKey: "DATA_CLOUDCARDS.servicesS1.disasterRecovery.name",
+    descKey: "DATA_CLOUDCARDS.servicesS1.disasterRecovery.description",
+    link: "/ourServices/Data&CloudEngineering/dataEngineering",
+    imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/Disaster%20Recovery-min.png"
+  },
+  {
+    id: 4,
+    isHovered: false,
+    nameKey: "DATA_CLOUDCARDS.servicesS1.ITSM.name",
+    descKey: "DATA_CLOUDCARDS.servicesS1.ITSM.description",
+    link: "/ourServices/Data&CloudEngineering/dataEngineering",
+    imageUrl: "assets/images/CodeServices/Data%20%26%20Cloud%20Engineering/ITSM-min.png"
+  }
+];
 
-  ];
   onMouseEnter(card: any) {
     card.isHovered = true;
   }

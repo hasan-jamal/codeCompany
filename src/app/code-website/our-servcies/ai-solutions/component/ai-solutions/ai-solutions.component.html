@@ -2,104 +2,92 @@
     <div class="servicesS1-container px-120">
         <div class="back-servicesS1" style="background-image:url('assets/images/CodeServices/AISolutions-min.png');">
             <div class="servicesS1-texts">
-                <h1 class="subtitle36px colorThree font-bold">AI Solutions That Deliver <br>
-                    <span class="color-linearGradient">Clarity</span> and <span
-                        class="color-linearGradient">Control</span>
-                </h1>
-                <p class="mb-0 colorThree subtitle16px font-medium">CODE’s AI solutions empower organizations across the
-                    Kingdom enhance operational efficiency by automating processes,
-                    analyzing data in real time, and enabling faster, more accurate decision-making ultimately
-                    improving service quality,
-                    agilityand sustainability.
-                    <br><br>
-                    These solutions are developed in alignment with the goals of Saudi Arabia’s Vision 2030, serving a
-                    wide range of
-                    government entities, authorities and large enterprises across diverse sectors whether industrial,
-                    commercial, real
-                    estate, or technology through scalable technologies and trusted local expertise.
+                <h1 class="subtitle36px colorThree font-bold">{{ 'AI_SOLUTIONS.Sec1.Title' | translate }}</h1>
+                <p class="mb-0 colorThree subtitle16px font-medium">{{ 'AI_SOLUTIONS.Sec1.Description' | translate }}
                 </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-services-s4></app-services-s4>
+
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
         <div class="ourServiceFlow-titles">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">What We Offer.</span>
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">{{
+                'AI_SOLUTIONS.Sec3.SubTitle' | translate }}</span>
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
-                <span class="color-linearGradient">Smarter</span> Infrastructure.
-                <span class="color-linearGradient">Faster </span> Decisions. <br>
-                <span class="color-linearGradient">Real</span> Impact.
+                {{ 'AI_SOLUTIONS.Sec3.Title' | translate }}
             </h1>
-            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">In light of this direction,
-                organizations across the Kingdom are facing growing pressure to deliver services that are
-                faster, saferand more efficient. CODE’s AI solutions are built to support this transformation by
-                combining automation,
-                real-time data analysis and intelligent tools that enhance integration between systems, facilities and
-                people resulting
-                in tangible improvements in performance and service quality.</p>
+            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">{{
+                'AI_SOLUTIONS.Sec3.Description' | translate }}</p>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
                 *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
+
+                <!-- الخلفية مع الاسم الأساسي -->
                 <div class="divOne" [style.background]="'url('+ card.imageUrl +')'" [class.hidden]="card.isHovered">
-                    <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
+                    <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
                     <div class="divArrow">
-                        <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                            <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                        </a>
                     </div>
                 </div>
-                <div class="divTwo" [class.visible]="card.isHovered ">
-                    <p class="mb-0 font-medium colorWhite subtitle20px">{{card.description}}</p>
+
+                <!-- المحتوى عند التحويم -->
+                <div class="divTwo" [class.visible]="card.isHovered">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{ card.descKey | translate }}</p>
                     <div class="d-flex fxDescription align-items-center justify-content-between">
-                        <h3 class="font-bold subtitle24px colorWhite">{{card.name}}</h3>
-                        <div class=" divArrow">
-                            <a class="btn-hover" [routerLink]="card.link " routerLinkActive="active"><img
-                                    src="assets/images/arrow-linear.svg" alt="arrow-linear"></a>
+                        <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
+                        <div class="divArrow">
+                            <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                                <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
+
 <section class="servicesS6">
     <div class="backSection">
         <div class="servicesS6-container px-120">
-            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">Purpose-Built
-                for <span class="color-linearGradient ">Saudi Institutions <br> </span> Backed by Global Standards</h1>
+            <h1 class="font-bold subtitle48px colorWhite mb24 aos-init text-center" data-aos="fade-down">{{
+                'AI_SOLUTIONS.Sec6.Title' | translate }}</h1>
             <div class="d-flex fxTexts ">
-                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">Every CODE solution is
-                    purpose-built to align with local systems, the Arabic language and national priorities from
-                    Arabic NLP and smart infrastructure integration to full compliance with Saudi Arabia’s Vision 2030.
-                </p>
-                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">These solutions
-                    integrate seamlessly with your existing environment, enhancing workflows, elevating service quality
-                    and delivering value
-                    from day one.</p>
+                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">{{
+                    'AI_SOLUTIONS.Sec6.Paragraph1' | translate }}</p>
+                <p class="mb-0 colorWhite  style-font text-justify subtitle20px p-head">{{
+                    'AI_SOLUTIONS.Sec6.Paragraph2' | translate }}</p>
             </div>
         </div>
     </div>
 </section>
+
 <app-our-service-flow></app-our-service-flow>
+
 <section class="contactSection">
     <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <h1 class=" subtitle48px font-bold mb-0 " data-aos=" fade-down"> Let's Build <br>
-                    <span class="color-linearGradient">What’s Next</span>
-                </h1>
+                <h1 class=" subtitle48px font-bold mb-0 " data-aos=" fade-down">{{ 'AI_SOLUTIONS.Contact.Title' |
+                    translate }}</h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <span class="font-semiBold colorWhite subtitle20px">{{ 'AI_SOLUTIONS.Contact.Button' | translate
+                        }}</span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Explore, test, or implement — all with local context and
-            trusted support.</p>
+        <p class="mb-0 colorTwo style-font subtitle20px">{{ 'AI_SOLUTIONS.Contact.Description' | translate }}</p>
     </div>
 </section>

@@ -3,10 +3,11 @@ import { Component, Renderer2, ViewEncapsulation,Inject, PLATFORM_ID } from '@an
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { } from '@angular/common';
 import { ModalService } from '../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-navbar-mb',
-    imports: [RouterLink, RouterLinkActive,CommonModule],
+    imports: [RouterLink, RouterLinkActive,CommonModule,TranslateModule],
     templateUrl: './navbar-mb.component.html',
     styleUrls: [
         './navbar-mb.component.css',

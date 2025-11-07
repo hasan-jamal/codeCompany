@@ -18,9 +18,9 @@ const routes: Routes = [
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
       },
       {
-        path: 'profile',
-        data: { title: 'Dashboard', subtitle: 'News Page' },
-        loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
+        path: 'updateProfile/:id',
+        data: { title: 'Dashboard', subtitle: 'Update User' },
+        loadChildren: () => import('./pages/users/update/update.module').then(m => m.UpdateModule)
       },
       {
         path: 'news',
@@ -29,6 +29,14 @@ const routes: Routes = [
       {
         path: 'users',
         loadChildren: () => import('./pages/users/users.module').then(m => m.UsersModule)
+      },
+      {
+        path: 'services',
+        loadChildren: () => import('./pages/services/services.module').then(m => m.ServicesModule)
+      },
+           {
+        path: 'sub-services',
+        loadChildren: () => import('./pages/sub-services/sub-services.module').then(m => m.SubServicesModule)
       }
     ]
   }

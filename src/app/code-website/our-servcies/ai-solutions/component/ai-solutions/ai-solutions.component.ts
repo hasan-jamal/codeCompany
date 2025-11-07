@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { link } from 'node:fs';
 import { OurServiceFlowComponent } from '../../../../shared/sectionsPublic/our-service-flow/our-service-flow.component';
 import { ServicesS4Component } from '../../../../shared/sectionsPublic/services-s4/services-s4.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-ai-solutions',
@@ -12,7 +13,8 @@ import { ServicesS4Component } from '../../../../shared/sectionsPublic/services-
     RouterLinkActive, 
     OurServiceFlowComponent,
      ServicesS4Component,
-     CommonModule
+     CommonModule,
+     TranslateModule
     ],
   templateUrl: './ai-solutions.component.html',
   styleUrls: ['./ai-solutions.component.css',
@@ -29,56 +31,57 @@ export class AiSolutionsComponent {
   }
 
   isHovered = false;
-    serviceCards = [
-    {
-      id: 1,
-      isHovered: false,
-      name: "AI Digital Twin ",
-      description: "Build a live, intelligent digital replica of your facility to track performance, anticipate problems, and optimize operations  powered by seamless integration of BIM, GIS, and IoT for real-time insight and smarter decisions.",
-      link:"/ourServices/AISolutions/AIDigitalTwin",
-      imageUrl: "assets/images/CodeServices/AIDigitalTwin-min.png"
-    },
-        {
-      id: 2,
-      isHovered: false,
-      name: "AI Computer Vision ",
-      description: "Turn your cameras into smart observers. Use AI-powered video analytics to detect behavior, identify risks and automate security  including facial recognition, crowd analysis and perimeter alerts.",
-      link:"/ourServices/AISolutions/AiComputerVision",
-      imageUrl: "assets/images/CodeServices/AIComputerVisionmin.jpeg"
-    },
-        {
-      id: 3,
-      isHovered: false,
-      name: "AI Voicebots & Chatbots ",
-      description: "Automate support and engagement with Arabic-enabled AI bots that are available 24/7 across your digital channels delivering instant responses, seamless escalation and built-in analytics.",
-      link:"/ourServices/AISolutions/AiVoicebotChatbot",
-      imageUrl: "assets/images/CodeServices/AIVoicebotsChatbots-min.jpeg"
-    },
-    {
-      id: 4,
-      isHovered: false,
-      name: "AI Innovation Hub",
-      description: "Create immersive, AI-powered environments for training, planning and showcasing innovation  designed around your use case and optimized for local deployment.",
-      link:"/ourServices/AISolutions/AiInnovationHub",
-      imageUrl: "assets/images/CodeServices/AIInnovationHub-min.png"
-    },
-    {
-      id: 5,
-      isHovered: false,
-      name: "Indoor Wayfinding ",
-      description: "Help visitors navigate complex spaces with ease using LiDAR-precise 3D maps, voice guidance and augmented reality improving flow, accessibility and visitor satisfaction.",
-      link:"/ourServices/AISolutions/IndoorWayfinding",
-      imageUrl: "assets/images/CodeServices/IndoorWayfinding-min.jpeg"
-    },
+serviceCards = [
+  {
+    id: 1,
+    isHovered: false,
+    nameKey: "SERVICE_CARDS.AISolutions.AIDigitalTwin.name",
+    descKey: "SERVICE_CARDS.AISolutions.AIDigitalTwin.description",
+    link: "/ourServices/AISolutions/AIDigitalTwin",
+    imageUrl: "assets/images/CodeServices/AIDigitalTwin-min.png"
+  },
+  {
+    id: 2,
+    isHovered: false,
+    nameKey: "SERVICE_CARDS.AISolutions.AIComputerVision.name",
+    descKey: "SERVICE_CARDS.AISolutions.AIComputerVision.description",
+    link: "/ourServices/AISolutions/AiComputerVision",
+    imageUrl: "assets/images/CodeServices/AIComputerVisionmin.jpeg"
+  },
+  {
+    id: 3,
+    isHovered: false,
+    nameKey: "SERVICE_CARDS.AISolutions.AIVoicebotsChatbots.name",
+    descKey: "SERVICE_CARDS.AISolutions.AIVoicebotsChatbots.description",
+    link: "/ourServices/AISolutions/AiVoicebotChatbot",
+    imageUrl: "assets/images/CodeServices/AIVoicebotsChatbots-min.jpeg"
+  },
+  {
+    id: 4,
+    isHovered: false,
+    nameKey: "SERVICE_CARDS.AISolutions.AIInnovationHub.name",
+    descKey: "SERVICE_CARDS.AISolutions.AIInnovationHub.description",
+    link: "/ourServices/AISolutions/AiInnovationHub",
+    imageUrl: "assets/images/CodeServices/AIInnovationHub-min.png"
+  },
+  {
+    id: 5,
+    isHovered: false,
+    nameKey: "SERVICE_CARDS.AISolutions.IndoorWayfinding.name",
+    descKey: "SERVICE_CARDS.AISolutions.IndoorWayfinding.description",
+    link: "/ourServices/AISolutions/IndoorWayfinding",
+    imageUrl: "assets/images/CodeServices/IndoorWayfinding-min.jpeg"
+  },
   {
     id: 6,
     isHovered: false,
-    name: "Smart Cabins ",
-    description: "Deploy secure, sensor-enabled cabins designed for exams, interviews, or sensitive tasks featuring biometric access, real-time monitoring and environmental control.",
-    link:"/ourServices/AISolutions/smartCabins",
+    nameKey: "SERVICE_CARDS.AISolutions.SmartCabins.name",
+    descKey: "SERVICE_CARDS.AISolutions.SmartCabins.description",
+    link: "/ourServices/AISolutions/smartCabins",
     imageUrl: "assets/images/CodeServices/SmartCabinets.png"
   }
-  ];
+];
+
   onMouseEnter(card: any) {
     card.isHovered = true;
   }

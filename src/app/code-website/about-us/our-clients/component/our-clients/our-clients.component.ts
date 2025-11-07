@@ -3,12 +3,13 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { ModalService } from '../../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-our-clients',
   imports: [
     // PeopleSayingComponent,
-    CommonModule],
+    CommonModule,TranslateModule],
   templateUrl: './our-clients.component.html',
   styleUrls: ['./our-clients.component.css',
                   '../../../../../../assets/css/sections/contactSection.css',

@@ -1,16 +1,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 <div id="code-chatbot">
-    <button (click)="toggleBot()">💬 Let’s Connect.</button>
+    <button (click)="toggleBot()">
+        {{ 'CHATBOT.buttonOpen' | translate }}
+    </button>
     <div id="botWindow" [class.show]="botVisible">
-        <p>👋 We’d love to hear from you. Whether you have a question, need a quote, or want to explore a partnership,
-            we're here to
-            help.</p>
-        <p><strong>Choose the best way to reach our team:</strong></p>
+        <p>
+            {{ 'CHATBOT.greeting' | translate }}
+        </p>
+        <p><strong>{{ 'CHATBOT.instruction' | translate }}</strong></p>
         <ul style="list-style:none;padding:0;">
-            <li>📱 <a href="https://wa.me/966546492332" target="_blank">WhatsApp: +966 54 649 2332</a></li>
-            <li>☎️ <a href="tel:+966114710010">Call us: +966 11 471 0010</a></li>
-            <li>✉️ <a href="mailto:sales@code.sa">Email: sales&#64;code.sa</a></li>
+            <li>📱
+                <a href="https://wa.me/966546492332" target="_blank">
+                    {{ 'CHATBOT.whatsapp' | translate }}: +966 54 282 8120
+                </a>
+            </li>
+            <li>☎️
+                <a href="tel:+966114710010">
+                    {{ 'CHATBOT.callUs' | translate }}: +966 11 471 0010
+                </a>
+            </li>
+            <li>✉️
+                <a href="mailto:sales@code.sa">
+                    {{ 'CHATBOT.email' | translate }}: sales&#64;code.sa
+                </a>
+            </li>
         </ul>
-        <button (click)="toggleBot()">❌ Close</button>
+        <button (click)="toggleBot()">
+            {{ 'CHATBOT.buttonClose' | translate }}
+        </button>
     </div>
 </div>

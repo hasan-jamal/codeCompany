@@ -1,0 +1,38 @@
+<div class="p-6 bg-gray-50 min-h-screen">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">
+        Sub Service Sections (Sub ServiceId: {{ subServiceId }})
+    </h2>
+
+    <div class="flex gap-4 w-full">
+        <div *ngFor="let section of sections"
+            class="bg-white shadow-md rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition"
+            style="width: 50%;">
+
+            <img [src]="'https://localhost:7265/images/' + section.imageUrl" alt="{{ section.title }}"
+                style="width: 100%;height:300px;object-fit: contain;">
+
+            <div class="p-4 space-y-2">
+                <h3 class="text-lg font-semibold text-gray-900">{{ section.title }}</h3>
+                <h4 class="text-sm text-gray-500 font-Tajawal">{{ section.title_ar }}</h4>
+
+                <p class="text-gray-700 text-sm">
+                    <span class="font-semibold">Subtitle:</span> {{ section.subtitle }}
+                </p>
+                <p class="text-gray-700 text-sm font-Tajawal">
+                    <span class="">Subtitle (AR):</span> {{ section.subtitle_ar }}
+                </p>
+                <p class="text-xs text-gray-500">
+                    <span class="font-semibold">Service:</span> {{ section.subServiceTitle }}
+                </p>
+            </div>
+
+            <!-- أزرار -->
+            <div class="flex justify-between items-center px-4 py-3 bg-gray-50 border-t">
+                <button [routerLink]="['/dashboard/sub-services/updateSections', section.id]"
+                    class="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition">
+                    Update
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

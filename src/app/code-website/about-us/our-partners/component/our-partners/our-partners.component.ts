@@ -4,11 +4,13 @@ declare var anychart: any;
 import { Router } from '@angular/router';
 import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 import { ModalService } from '../../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-our-partners',
   imports: [
           CommonModule,
-          SlickCarouselModule
+          SlickCarouselModule,
+          TranslateModule
               ],
   templateUrl: './our-partners.component.html',
   styleUrls:['./our-partners.component.css',

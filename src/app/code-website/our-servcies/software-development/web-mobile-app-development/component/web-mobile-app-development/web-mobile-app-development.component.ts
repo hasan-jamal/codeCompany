@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-web-mobile-app-development',
-  imports: [CommonModule,RouterLink],
+  imports: [CommonModule,RouterLink,TranslateModule],
   templateUrl: './web-mobile-app-development.component.html',
   styleUrls: ['./web-mobile-app-development.component.css',
                 '../../../../../../../assets/css/pages/serviceDetails.css',

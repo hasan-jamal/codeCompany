@@ -4,6 +4,8 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { ModalService } from '../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
+
 let isFirstLoad = true;
 
 @Component({
@@ -12,7 +14,8 @@ let isFirstLoad = true;
   imports: [
     CommonModule, 
     SlickCarouselModule,
-    RouterLink
+    RouterLink,
+    TranslateModule
     // PeopleSayingComponent
   ],
   templateUrl: './home.component.html',

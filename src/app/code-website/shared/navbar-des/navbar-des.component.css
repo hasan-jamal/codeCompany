@@ -45,6 +45,11 @@ header .btnServicesHeader .listAboutHeader{
   header .btnServicesHeader .listAboutHeader a:last-child{
     border-bottom: none;
   }
+  header .fx-header .btn-header{gap: 0.5rem;}
+header .fx-header .btn-header button.btnLang{
+  width: max-content;
+  padding: 0 1rem;
+}
   /* Just for copy */
   @media (min-width:1706.67px) {
     header .btnServicesHeader .listAboutHeader{width: 180px;}

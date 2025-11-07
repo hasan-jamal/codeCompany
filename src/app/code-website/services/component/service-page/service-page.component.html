@@ -1,0 +1,29 @@
+<div *ngIf="service; else loading" class="service-page">
+
+    <!-- عنوان الخدمة -->
+    <section class="service-header">
+        <h1>{{ service.title }}</h1>
+    </section>
+
+    <!-- صورة الخدمة -->
+    <section class="service-image" *ngIf="service.imageService">
+        <img [src]="service.imageService" [alt]="service.title" />
+    </section>
+
+    <!-- أقسام الخدمة -->
+    <section class="service-sections" *ngIf="service.sections?.length">
+        <div *ngFor="let section of service.sections" class="section">
+            <h2>{{ section.title }}</h2>
+            <h4 *ngIf="section.subtitle">{{ section.subtitle }}</h4>
+            <p>{{ section.description }}</p>
+
+            <img *ngIf="section.imageUrl" [src]="section.imageUrl" [alt]="section.title" />
+        </div>
+    </section>
+
+</div>
+
+<!-- حالة التحميل -->
+<ng-template #loading>
+    <div class="loading">Loading service details...</div>
+</ng-template>
