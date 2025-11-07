@@ -3,7 +3,7 @@ import { Component, Renderer2, ViewEncapsulation,Inject, PLATFORM_ID } from '@an
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { } from '@angular/common';
 import { ModalService } from '../../../services/ModalService';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-navbar-mb',
@@ -19,10 +19,12 @@ export class NavbarMbComponent{
      isSidenavOpen = false;
     servicesListOpen = false;
     aboutUsListOpen = false;    
+    lang : string = 'en';
   constructor(
     private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
-    private modalService: ModalService) {}
+    private modalService: ModalService,
+    private translate: TranslateService) {}
  toggleSidenav(open: boolean) {
     this.isSidenavOpen = open;
     if (isPlatformBrowser(this.platformId)) {
@@ -56,5 +58,16 @@ export class NavbarMbComponent{
       this.renderer.setStyle(body, 'overflow', 'auto');
     }
     this.modalService.open('modalJoinUs');
+  }
+    switchLanguage(lang: string) {
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
+    this.lang = lang;
+
+     if (lang === 'ar') {
+        document.body.classList.add('rtl');
+      } else {
+        document.body.classList.remove('rtl');
+      }
   }
 }

@@ -128,6 +128,10 @@
                     class="btn-linearGradient colorWhite font-bold" (click)="openJoinUsModal()">
                     {{ 'NAV.JOIN_US' | translate }}
                 </button>
+                <button type="button" class="btn-linearGradient colorWhite font-bold btnLang" type="button"
+                    (click)="switchLanguage('ar')" *ngIf="lang == 'en'">Ar</button>
+                <button type="button" class="btn-linearGradient colorWhite font-bold btnLang" type="button"
+                    (click)="switchLanguage('en')" *ngIf="lang == 'ar'">En</button>
             </div>
 
         </div>

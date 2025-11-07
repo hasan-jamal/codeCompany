@@ -1941,7 +1941,89 @@
         "description": "Simplify collaboration with tailored SharePoint environments. From intranet portals and document libraries to automated workflows and secure access controls, we design solutions that match your operational needs. AI-powered features like smart search, content tagging and process automation increase productivity and visibility. Fully integrated with Microsoft 365, our SharePoint solutions boost governance, agility and internal communication."
       }
     }
+  },
+    "AISOLUTIONS": {
+    "boxes": {
+      "digitalTwin": {
+        "title": "AI Digital Twin Solution",
+        "subTitle": "See Your Building in Real Time. Predict What’s Next.",
+        "content": "CODE’s AI Digital Twin creates a live, data driven model of your facility helping you monitor performance, prevent downtime and plan smarter. It's the future of infrastructure, made visible."
+      },
+      "computerVision": {
+        "title": "AI Computer Vision Solution",
+        "subTitle": "Smarter Surveillance. Instant Insight.",
+        "content": "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior and alerts your team in real time so nothing critical slips through the cracks."
+      }
+    }
+  },
+  "COMMON": {
+    "learnMore": "Learn More"
+  },
+  "FAQS": {
+    "q1": {
+      "question": "What does CODE do?",
+      "answer": "CODE is a Saudi technology company delivering AI-powered solutions for smart infrastructure. We specialize in real-time systems like Digital Twin and Computer Vision to help organizations operate more intelligently, securely, and efficiently."
+    },
+    "q2": {
+      "question": "What is an AI Digital Twin?",
+      "answer": "An AI Digital Twin is a real-time, virtual replica of a physical environment. It provides live operational visibility, predictive analytics and automated control allowing organizations to monitor, simulate and optimize performance instantly."
+    },
+    "q3": {
+      "question": "How does Computer Vision work in your solutions?",
+      "answer": "Our AI Computer Vision systems turn ordinary cameras into intelligent sensors. They detect safety risks, analyze behavior patterns and automate surveillance enhancing situational awareness across facilities."
+    },
+    "q4": {
+      "question": "Who are CODE’s solutions designed for?",
+      "answer": "We work with government entities, public institutions, and enterprise organizations that require scalable, secure and high-performing systems especially those aligned with Vision 2030 initiatives."
+    },
+    "q5": {
+      "question": "What makes CODE different from other AI providers?",
+      "answer": "CODE combines local insight with global technology standards. We offer end-to-end delivery from strategy and deployment to long-term support with a track record of performance in mission critical environments."
+    },
+    "q6": {
+      "question": "How scalable are CODE’s solutions?",
+      "answer": "Our platforms are designed to scale from a single building to nationwide infrastructure. Whether you’re managing a campus, hospital, or city wide system, CODE delivers solutions that grow with your operations."
+    },
+    "q7": {
+      "question": "Can CODE integrate with our existing systems?",
+      "answer": "Yes. CODE’s solutions are designed for integration with legacy platforms and modern infrastructure alike using open standards and modular architecture for smooth deployment."
+    },
+    "q8": {
+      "question": "How can we get started with CODE?",
+      "answer": "Reach out to our team to discuss your goals. We’ll assess your environment, recommend the right AI solutions and support you through every stage from planning to rollout and beyond."
+    }
+  },
+  "BLOGS": {
+    "featuredArticles":"Featured Articles",
+    "slide1": {
+      "title": "Infused is at the forefront of health innovation",
+      "fullText": "Enlightened Health AI takes your wellness journey to new heights with advanced predictive analytics. Gain access to intelligent health solutions that illuminate the path to a healthier, more informed you.",
+      "shortText": "Enlightened Health AI takes your wellness journey to new heights with advanced predictive analytics..."
+    },
+    "slide2": {
+      "title": "AI-Powered Wellness Solutions",
+      "fullText": "Discover AI-driven insights that help you take control of your health and well-being with personalized recommendations and actionable health data.",
+      "shortText": "Discover AI-driven insights that help you take control of your health and well-being..."
+    },
+    "slide3": {
+      "title": "Transforming Healthcare with AI",
+      "fullText": "Our cutting-edge AI technology is reshaping healthcare, providing smarter and faster solutions for both patients and medical professionals.",
+      "shortText": "Our cutting-edge AI technology is reshaping healthcare, providing smarter and faster solutions..."
+    },
+    "slide4": {
+      "title": "Next-Gen AI for a Healthier Future",
+      "fullText": "Explore the future of AI in healthcare and how it enhances daily life for a better tomorrow with advanced data analysis and predictive insights.",
+      "shortText": "Explore the future of AI in healthcare and how it enhances daily life for a better tomorrow..."
+    },
+    "readMore": "Read more"
+  },
+  "PLYR": {
+    "aiDigitalTwin": {
+      "title": "AI Digital Twin: Live Insight. Smarter Control.",
+      "subTitle": "Watch how CODE turns buildings into live, intelligent systems — with real-time insight and automation in every layer."
+    }
   }
+
   
 
 }

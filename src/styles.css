@@ -514,7 +514,9 @@ body.rtl .font-ExtraBold{font-family: 'Tajawal ExtraBold';}
 body.rtl .aboutSThree .aboutSThree-imgs{direction: ltr;margin-bottom: 6rem;}
 body.rtl .servicesS1-texts{direction: rtl;}
 body.rtl .servicesS3 .fx-servicesS3 .box{direction: ltr;}
+body.rtl .fxArrowsSlider{direction: ltr;}
+body.rtl .blogPageS3 .pagination .next img{transform: rotate(90deg);}
 @media (max-width:614px) {
   body.rtl .aboutSThree .aboutSThree-imgs{margin-bottom: 0rem;}
-
+.sectionOne .part1-sectionOne{padding-top: 0 !important;}
 }

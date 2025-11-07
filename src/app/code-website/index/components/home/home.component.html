@@ -102,19 +102,19 @@
                 [ngClass]="{'active': box.isActive}" (click)="onBoxClick(box)">
                 <div class="d-flex align-items-center sectionThree-part1">
                     <p class="font-medium mb-0">{{ i + 1 }}</p>
-                    <p class="font-medium mb-0 rotate-p">{{box.title}}</p>
+                    <p class="font-medium mb-0 rotate-p">{{ box.titleKey | translate }}</p>
                 </div>
                 <div class="sectionThree-part2" *ngIf="box.showPart2" [ngClass]="{'animate-part2': box.isAnimating}">
-                    <h2 class="font-medium subtitle32px colorWhite">{{box.title}}</h2>
-                    <h1 class="font-bold subtitle48px" data-aos="fade-down"> {{box.subTitle}} </h1>
-                    <p class="style-font subtitle24px">{{box.content}}</p>
+                    <h2 class="font-medium subtitle32px colorWhite">{{ box.titleKey | translate }}</h2>
+                    <h1 class="font-bold subtitle48px" data-aos="fade-down">{{ box.subTitleKey | translate }}</h1>
+                    <p class="style-font subtitle24px">{{ box.contentKey | translate }}</p>
                     <button [routerLink]="'/ourServices/' + box.pathBtn" type="button"
                         class="font-medium d-flex align-items-center justify-content-center">
-                        Learn More
+                        {{ 'COMMON.learnMore' | translate }}
                     </button>
-
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -186,10 +186,13 @@
                     id="imgActive">
             </div>
             <div class="sectionFour-part2">
-                <span class="color-linearGradient font-medium subtitle24px">Explore Featured Articles</span>
+                <span class="color-linearGradient font-medium subtitle24px">
+                    {{ 'BLOGS.featuredArticles' | translate }}
+                </span>
                 <h1 class="font-bold subtitle48px" #slideTitle id="slideTitle">
-                    {{ slidesBlogs[0].title }}
+                    {{ slidesBlogs[0].titleKey | translate }}
                 </h1>
+
                 <ngx-slick-carousel #slickModalBlogs="slick-carousel" class="sliderBlogs" [config]="slideBlog"
                     (beforeChange)="onBeforeChange($event)">
                     <div ngxSlickItem *ngFor="let slide of slidesBlogs">
@@ -202,8 +205,10 @@
                 <div class="d-flex fxTexts align-items-start mt-3">
                     <div class="fxTexts-part1">
                         <p class="style-font mb-0" #slideText id="slideText" (click)="onReadMoreClick($event)">
-                            {{ slidesBlogs[0].shortText }}
-                            <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">Read more</b>
+                            {{ slidesBlogs[0].shortTextKey | translate }}
+                            <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">
+                                {{ 'BLOGS.readMore' | translate }}
+                            </b>
                         </p>
                     </div>
                     <div class="arrows-blogs d-flex align-items-center ms-3">
@@ -215,6 +220,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 <section class="sectionSeven">
@@ -227,13 +233,13 @@
             <div class="d-flex flex-column gap24 sectionSeven-part2">
                 <div *ngFor="let faq of faqs; let i = index" class="faqBox" [class.active]="activeIndex === i">
                     <div class="d-flex justify-content-between faqBox-head transition3s" (click)="toggleFaq(i)">
-                        <h4 class="subtitle20px font-semiBold">{{ faq.question }}</h4>
+                        <h4 class="subtitle20px font-semiBold">{{ faq.questionKey | translate }}</h4>
                         <img [src]="activeIndex === i ? 'assets/images/minus-circle.svg' : 'assets/images/plus-circle.svg'"
                             alt="icon" class="faq-icon"
                             [style.transform]="activeIndex === i ? 'rotate(180deg)' : 'rotate(0deg)'" />
                     </div>
                     <div class="boxText" *ngIf="activeIndex === i">
-                        <p class="style-font mb-0">{{ faq.answer }}</p>
+                        <p class="style-font mb-0">{{ faq.answerKey | translate }}</p>
                     </div>
                 </div>
             </div>

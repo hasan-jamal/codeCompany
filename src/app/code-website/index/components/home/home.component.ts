@@ -4,7 +4,7 @@ import { SlickCarouselModule,SlickCarouselComponent } from 'ngx-slick-carousel';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { ModalService } from '../../../../services/ModalService';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 let isFirstLoad = true;
 
@@ -40,6 +40,7 @@ let isFirstLoad = true;
 })
 export class HomeComponent  implements OnInit ,AfterViewInit{
 constructor(
+  private translate: TranslateService,
   private modalService: ModalService,
   private elementRef: ElementRef,
   @Inject(PLATFORM_ID) private platformId: Object,
@@ -71,35 +72,7 @@ constructor(
       subTitle: 'Watch how CODE turns buildings into live, intelligent systems — with real-time insight and automation in every layer.',
       img:'assets/images/Frame-398-min.png'
     },
-  // {
-  //   src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881638/videoTwo_v86h3s.mp4',
-  //   type: 'video/mp4',
-  //   title: 'Real Estate Touch TV App',
-  //   subTitle: 'Lorem ipsum dolor sit amet...',
-  //         img:'assets/images/Frame-399-min.png'
-  // },
-  // {
-  //   src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881692/videoFour_entojn.mp4',
-  //   type: 'video/mp4',
-  //   title: 'Construction WIP Monitoring',
-  //   subTitle: 'Lorem ipsum dolor sit amet...',
-  //         img:'assets/images/Frame-397-min.png'
-  // },
-  //   {
-  //     src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881805/videoFive_h68de2.mp4',
-  //       type: 'video/mp4',
-  //     title: 'Sustainability via Digital Twin',
-  //     subTitle: 'Lorem ipsum dolor sit amet...',
-  //           img:'assets/images/Frame-396-min.png'
-  //   },
-    // {
-    //   src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746882191/videoThree_g4vcgu.mp4',
-    //   type: 'video/mp4',
-    //   title: 'Monitoring Sustainable Environments',
-    //   subTitle: 'Lorem ipsum dolor sit amet...',
-    //   id: 'monitoring-sustainable',
-    // img:'assets/images/Frame-398-min.png' 
-    // }
+
   ];
 
   ngOnInit(): void {
@@ -210,24 +183,29 @@ constructor(
   }
 
   // Start Section Three style
-  boxes = [
-    { 
-      id: 1,
-       showPart2: false, 
-       isAnimating: false,
-        isActive: false,
-        title:"AI Digital Twin Solution",
-        subTitle:"See Your Building in Real Time. Predict What’s Next.",
-        content:"CODE’s AI Digital Twin creates a live, data driven model of your facility helping you monitor performance, prevent downtime and plan smarter. It's the future of infrastructure, made visible.",
-        pathBtn:"AISolutions/AIDigitalTwin"
-      },
-    { id: 2, showPart2: false, isAnimating: false, isActive: false,
-      title: "AI Computer Vision Solution",
-      subTitle: "Smarter Surveillance. Instant Insight.",
-      content: "Turn existing cameras into intelligent observers. CODE’s AI Computer Vision detects threats, tracks behavior and alerts your team in real time so nothing critical slips through the cracks.",
-      pathBtn:"AISolutions/AiComputerVision"
-    },
-  ];
+boxes = [
+  { 
+    id: 1,
+    showPart2: false, 
+    isAnimating: false,
+    isActive: false,
+    titleKey: "AISOLUTIONS.boxes.digitalTwin.title",
+    subTitleKey: "AISOLUTIONS.boxes.digitalTwin.subTitle",
+    contentKey: "AISOLUTIONS.boxes.digitalTwin.content",
+    pathBtn: "AISolutions/AIDigitalTwin"
+  },
+  { 
+    id: 2,
+    showPart2: false, 
+    isAnimating: false, 
+    isActive: false,
+    titleKey: "AISOLUTIONS.boxes.computerVision.title",
+    subTitleKey: "AISOLUTIONS.boxes.computerVision.subTitle",
+    contentKey: "AISOLUTIONS.boxes.computerVision.content",
+    pathBtn: "AISolutions/AiComputerVision"
+  }
+];
+
 
   activateFirstBox(): void {
     const firstBox = this.boxes[0];
@@ -266,48 +244,41 @@ constructor(
   // End Section Three style
   // Section Seven style
   activeIndex = 1; 
-  faqs = [
-    {
-      question: 'What does CODE do?',
-      answer:
-        'CODE is a Saudi technology company delivering AI-powered solutions for smart infrastructure. We specialize in real-time systems like Digital Twin and Computer Vision to help organizations operate more intelligently, securely, and efficiently.',
-    },
-    {
-      question: 'What is an AI Digital Twin?',
-      answer:
-        'An AI Digital Twin is a real-time, virtual replica of a physical environment. It provides live operational visibility, predictive analytics and automated control allowing organizations to monitor, simulate and optimize performance instantly.',
-    },
-    {
-      question: 'How does Computer Vision work in your solutions?',
-      answer:
-        'Our AI Computer Vision systems turn ordinary cameras into intelligent sensors. They detect safety risks, analyze behavior patterns and automate surveillance enhancing situational awareness across facilities.',
-    },
-    {
-      question: 'Who are CODE’s solutions designed for?',
-      answer:
-        'We work with government entities, public institutions, and enterprise organizations that require scalable, secure and high-performing systems especially those aligned with Vision 2030 initiatives.',
-    },
-    {
-      question: 'What makes CODE different from other AI providers?',
-      answer:
-        'CODE combines local insight with global technology standards. We offer end-to-end delivery from strategy and deployment to long-term support with a track record of performance in mission critical environments.',
-    },
-    {
-      question: 'How scalable are CODE’s solutions?',
-      answer:
-        'Our platforms are designed to scale from a single building to nationwide infrastructure. Whether you’re managing a campus, hospital, or city wide system, CODE delivers solutions that grow with your operations.',
-    },
-    {
-      question: 'Can CODE integrate with our existing systems?',
-      answer:
-        'Yes. CODE’s solutions are designed for integration with legacy platforms and modern infrastructure alike using open standards and modular architecture for smooth deployment.',
-    },
-    {
-      question: 'Can CODE integrate with our existing systems?',
-      answer:
-        'Reach out to our team to discuss your goals. We’ll assess your environment, recommend the right AI solutions and support you through every stage  from planning to rollout and beyond.',
-    },
-  ];
+faqs = [
+  {
+    questionKey: 'FAQS.q1.question',
+    answerKey: 'FAQS.q1.answer',
+  },
+  {
+    questionKey: 'FAQS.q2.question',
+    answerKey: 'FAQS.q2.answer',
+  },
+  {
+    questionKey: 'FAQS.q3.question',
+    answerKey: 'FAQS.q3.answer',
+  },
+  {
+    questionKey: 'FAQS.q4.question',
+    answerKey: 'FAQS.q4.answer',
+  },
+  {
+    questionKey: 'FAQS.q5.question',
+    answerKey: 'FAQS.q5.answer',
+  },
+  {
+    questionKey: 'FAQS.q6.question',
+    answerKey: 'FAQS.q6.answer',
+  },
+  {
+    questionKey: 'FAQS.q7.question',
+    answerKey: 'FAQS.q7.answer',
+  },
+  {
+    questionKey: 'FAQS.q8.question',
+    answerKey: 'FAQS.q8.answer',
+  }
+];
+
   toggleFaq(index: number) {
     this.activeIndex = this.activeIndex === index ? -1 : index;
   }
@@ -395,32 +366,33 @@ constructor(
   };
 
   // Slider Blogs
-    slidesBlogs = [
-    {
-      title: "Infused is at the forefront of health innovation",
-      fullText: "Enlightened Health AI takes your wellness journey to new heights with advanced predictive analytics. Gain access to intelligent health solutions that illuminate the path to a healthier, more informed you.",
-      shortText: "Enlightened Health AI takes your wellness journey to new heights with advanced predictive analytics...",
-      img: '../../assets/images/sectionFour-slide1.png'
-    },
-    {
-      title: "AI-Powered Wellness Solutions",
-      fullText: "Discover AI-driven insights that help you take control of your health and well-being with personalized recommendations and actionable health data.",
-      shortText: "Discover AI-driven insights that help you take control of your health and well-being...",
-      img: '../../assets/images/sectionFour-slide2.png'
-    },
-    {
-      title: "Transforming Healthcare with AI",
-      fullText: "Our cutting-edge AI technology is reshaping healthcare, providing smarter and faster solutions for both patients and medical professionals.",
-      shortText: "Our cutting-edge AI technology is reshaping healthcare, providing smarter and faster solutions...",
-      img: '../../assets/images/sectionFour-slide3.png'
-    },
-    {
-      title: "Next-Gen AI for a Healthier Future",
-      fullText: "Explore the future of AI in healthcare and how it enhances daily life for a better tomorrow with advanced data analysis and predictive insights.",
-      shortText: "Explore the future of AI in healthcare and how it enhances daily life for a better tomorrow...",
-      img: '../../assets/images/sectionFour-slide4.png'
-    }
-  ];
+slidesBlogs = [
+  {
+    titleKey: "BLOGS.slide1.title",
+    fullTextKey: "BLOGS.slide1.fullText",
+    shortTextKey: "BLOGS.slide1.shortText",
+    img: '../../assets/images/sectionFour-slide1.png'
+  },
+  {
+    titleKey: "BLOGS.slide2.title",
+    fullTextKey: "BLOGS.slide2.fullText",
+    shortTextKey: "BLOGS.slide2.shortText",
+    img: '../../assets/images/sectionFour-slide2.png'
+  },
+  {
+    titleKey: "BLOGS.slide3.title",
+    fullTextKey: "BLOGS.slide3.fullText",
+    shortTextKey: "BLOGS.slide3.shortText",
+    img: '../../assets/images/sectionFour-slide3.png'
+  },
+  {
+    titleKey: "BLOGS.slide4.title",
+    fullTextKey: "BLOGS.slide4.fullText",
+    shortTextKey: "BLOGS.slide4.shortText",
+    img: '../../assets/images/sectionFour-slide4.png'
+  }
+];
+
   slideBlog = {
     slidesToShow:3,
     slidesToScroll: 1,
@@ -445,51 +417,71 @@ constructor(
       }
     ]
   };
-
-
     // عند تغيير الشريحة
-    onBeforeChange(event: any) {
-      const next = event.nextSlide;
-      this.currentSlideIndex = next;
-    
-      const slide = this.slidesBlogs[next];
-    
-      // Fade out ثم تحديث المحتوى ثم Fade in
-      this.fadeOut([
-        this.slideTitle.nativeElement,
-        this.slideText.nativeElement,
-        this.imgActive.nativeElement
-      ], 300, () => {
-        this.slideTitle.nativeElement.textContent = slide.title;
-        this.slideText.nativeElement.innerHTML = `
-          ${slide.shortText}
-          <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">Read more</b>
-        `;
-        this.imgActive.nativeElement.setAttribute('src', slide.img);
-    
-        this.fadeIn([
-          this.slideTitle.nativeElement,
-          this.slideText.nativeElement,
-          this.imgActive.nativeElement
-        ], 500);
-      });
-    }
-    updateSlideContent(index: number) {
-      const slide = this.slidesBlogs[index];
-      this.slideTitle.nativeElement.textContent = slide.title;
+ onBeforeChange(event: any) {
+  const next = event.nextSlide;
+  this.currentSlideIndex = next;
+  const slide = this.slidesBlogs[next];
+
+  this.fadeOut([
+    this.slideTitle.nativeElement,
+    this.slideText.nativeElement,
+    this.imgActive.nativeElement
+  ], 300, () => {
+    // ترجمة النصوص قبل عرضها
+    this.translate.get(slide.titleKey).subscribe(title => {
+      this.slideTitle.nativeElement.textContent = title;
+    });
+    this.translate.get(slide.shortTextKey).subscribe(shortText => {
       this.slideText.nativeElement.innerHTML = `
-        ${slide.shortText} <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">Read more</b>
+        ${shortText} 
+        <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">${this.translate.instant('BLOGS.readMore')}</b>
       `;
+    });
+    this.imgActive.nativeElement.setAttribute('src', slide.img);
+
+    this.fadeIn([
+      this.slideTitle.nativeElement,
+      this.slideText.nativeElement,
+      this.imgActive.nativeElement
+    ], 500);
+  });
+}
+
+  updateSlideContent(index: number) {
+  const slide = this.slidesBlogs[index];
+  this.translate.get(slide.titleKey).subscribe(title => {
+    this.slideTitle.nativeElement.textContent = title;
+  });
+  this.translate.get(slide.shortTextKey).subscribe(shortText => {
+    this.slideText.nativeElement.innerHTML = `
+      ${shortText} 
+      <b class="color-linearGradient readMoreBtn" style="cursor:pointer;">${this.translate.instant('BLOGS.readMore')}</b>
+    `;
+  });
+}
+onReadMoreClick(event: Event) {
+  const target = event.target as HTMLElement;
+  if (target.classList.contains('readMoreBtn')) {
+    const slide = this.slidesBlogs[this.currentSlideIndex];
+    this.translate.get(slide.fullTextKey).subscribe(fullText => {
+      this.slideText.nativeElement.innerHTML = fullText;
+    });
+  }
+}
+    nextSlideBlog() {
+      this.slickModalBlogs.slickNext();
     }
-    onReadMoreClick(event: Event) {
-      const target = event.target as HTMLElement;
-      if (target.classList.contains('readMoreBtn')) {
-        const fullText = this.slidesBlogs[this.currentSlideIndex].fullText;
-        this.slideText.nativeElement.innerHTML = fullText;
-      }
+    prevSlideBlog() {
+      this.slickModalBlogs.slickPrev();
     }
-  
-    fadeOut(elements: HTMLElement[], duration: number, callback: () => void) {
+  // End Slider Blog
+
+
+  openTalkCodeModal() {
+      this.modalService.open('modalTalkCode');
+    }
+        fadeOut(elements: HTMLElement[], duration: number, callback: () => void) {
       elements.forEach(el => {
         el.style.transition = `opacity ${duration}ms`;
         el.style.opacity = '0';
@@ -502,18 +494,5 @@ constructor(
         el.style.transition = `opacity ${duration}ms`;
         el.style.opacity = '1';
       });
-    }
-    nextSlideBlog() {
-      this.slickModalBlogs.slickNext();
-    }
-  
-    prevSlideBlog() {
-      this.slickModalBlogs.slickPrev();
-    }
-  // End Slider Blog
-
-
-  openTalkCodeModal() {
-      this.modalService.open('modalTalkCode');
     }
   }
