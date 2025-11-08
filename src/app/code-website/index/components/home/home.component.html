@@ -131,8 +131,8 @@
             <div class="fx-Videos">
                 <div class="divMainVideo" *ngIf="mainVideo">
                     <div class="mainVideo-text">
-                        <h3 class="subtitle36px font-bold color-two">{{ mainVideo.title }}</h3>
-                        <p class="subtitle16px style-font color-two mb-0">{{ mainVideo.subTitle }}</p>
+                        <h3 class="subtitle36px font-bold color-two">{{ 'VIDEOS.Video1.Title' | translate }}</h3>
+                        <p class="subtitle16px style-font color-two mb-0">{{ 'VIDEOS.Video1.SubTitle' | translate }}</p>
                     </div>
 
                     <video #videoPlayer class="mainVideo" [attr.src]="mainVideo.src" controls muted
@@ -150,7 +150,7 @@
                         <img src="assets/images/play-button.svg" alt="play-button" class="play-button">
                         <img [src]="video.img" alt="{{ video.title }}" class="imgVideo">
                         <div class="thumbnail-text">
-                            <h3 class="subtitle16px font-bold colorWhite">{{ video.title }}</h3>
+                            <h3 class="subtitle16px font-bold colorWhite">{{ 'VIDEOS.Video1.Title' | translate }}</h3>
                         </div>
                     </div>
                 </div>

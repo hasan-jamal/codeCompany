@@ -2017,10 +2017,10 @@
     },
     "readMore": "Read more"
   },
-  "PLYR": {
-    "aiDigitalTwin": {
-      "title": "AI Digital Twin: Live Insight. Smarter Control.",
-      "subTitle": "Watch how CODE turns buildings into live, intelligent systems — with real-time insight and automation in every layer."
+  "VIDEOS": {
+    "Video1": {
+      "Title": "AI Digital Twin: Live Insight. Smarter Control.",
+      "SubTitle": "Watch how CODE turns buildings into live, intelligent systems ; with real-time insight and automation in every layer."
     }
   }
 
