@@ -6,11 +6,12 @@ import emailjs from '@emailjs/browser';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ModalService } from '../../../../services/ModalService';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-talk-code',
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,TranslateModule],
   templateUrl: './talk-code.component.html',
   styleUrl: './talk-code.component.css',
   encapsulation: ViewEncapsulation.None,

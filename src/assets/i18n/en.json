@@ -269,7 +269,7 @@
 		},
 		"Details2":{
       			"TITLE": "Get In Touch",
-      			"Mobile": "Mobile: +966 11 471 0010",
+      			"Mobile": "Mobile: ",
 				"E-mail": "E-mail: sales@code.sa"
 		},
 		"Details3":{
@@ -2022,6 +2022,22 @@
       "Title": "AI Digital Twin: Live Insight. Smarter Control.",
       "SubTitle": "Watch how CODE turns buildings into live, intelligent systems ; with real-time insight and automation in every layer."
     }
+  },
+   "TALKMODAL": {
+    "Title": "Let’s Start the",
+    "Title2": "Conversation!",
+    "Desc": "You’re just one message away from turning <b> interest into impact. </b>",
+    "PlaceholderName": "Your Name",
+    "PlaceholderEmail": "Your Email",
+    "PlaceholderSubject": "Subject",
+    "PlaceholderMessage": "Briefly describe your goal, project, or question — and we’ll get back to you with a focused response.",
+    "ErrorName": "Name is required",
+    "ErrorEmail": "Valid email is required",
+    "ErrorSubject": "Subject is required",
+    "ErrorMessage": "Message is required",
+    "CancelBtn": "Cancel",
+    "SendNow": "Send Now",
+    "Sending": "Sending..."
   }
 
   
