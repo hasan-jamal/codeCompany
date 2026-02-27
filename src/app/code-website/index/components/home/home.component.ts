@@ -52,7 +52,6 @@ constructor(
     }
   });
 }
-  @ViewChild('videoAISmartSecurity') videoAISmartSecurity!: ElementRef<HTMLVideoElement>;
   @ViewChild('slickModalBlogs', { static: false }) slickModalBlogs!: SlickCarouselComponent;
   @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
   @ViewChild('sliderBlogs', { static: true }) sliderBlogs!: ElementRef;
@@ -65,7 +64,6 @@ constructor(
   typedText: string = '';
   currentIndex: number = 0;
   currentSlideIndex = 0;
-   isVideoPlaying: boolean = false;
   mainVideo: any;
   plyrList : any[]= [
     {
@@ -499,20 +497,47 @@ onReadMoreClick(event: Event) {
       });
     }
 
-    activeTab: string = 'security';
-
-    setActiveTab(tab: string) {
-      this.activeTab = tab;
-  }
 
 
-  AISmartSecurityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
-  playVideo() {
+@ViewChild('videoAISmartSecurity') videoAISmartSecurity!: ElementRef<HTMLVideoElement>;
+@ViewChild('videoAISmartFacility') videoAISmartFacility!: ElementRef<HTMLVideoElement>;
+
+activeTab: string = 'security';
+isVideoPlaying: boolean = false;
+isVideoAiSmartfacilityPlaying: boolean = false;
+
+AISmartSecurityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
+AISmartfacilityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
+
+setActiveTab(tab: string) {
+    this.activeTab = tab;
+    this.stopAllVideos();
+}
+
+stopAllVideos() {
+    if (this.videoAISmartSecurity?.nativeElement) {
+        this.videoAISmartSecurity.nativeElement.pause();
+        this.isVideoPlaying = false;
+    }
+    if (this.videoAISmartFacility?.nativeElement) {
+        this.videoAISmartFacility.nativeElement.pause();
+        this.isVideoAiSmartfacilityPlaying = false;
+    }
+}
+
+playVideo() {
     this.isVideoPlaying = true; 
     this.videoAISmartSecurity.nativeElement.play();
-  }
-  onVideoPause() {
+}
+onVideoPause() {
     this.isVideoPlaying = false; 
-  }
+}
 
+playVideoAISmartfacility() {
+    this.isVideoAiSmartfacilityPlaying = true; 
+    this.videoAISmartFacility.nativeElement.play();
+}
+onVideoAISmartfacilityPause() {
+    this.isVideoAiSmartfacilityPlaying = false; 
+}
 }

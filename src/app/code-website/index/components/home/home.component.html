@@ -195,9 +195,8 @@
             </div>
             <div class="video-card raduis30 position-relative">
                 <video #videoAISmartSecurity class="mainVideo" [attr.src]="AISmartSecurityVideo.src"
-                    [controls]="isVideoPlaying" muted crossorigin="anonymous" poster="assets/images/backVideo.jfif"
-                    (pause)="onVideoPause()" (ended)="onVideoPause()" crossorigin="anonymous"
-                    poster="assets/images/img-sectionOne.png">
+                    [controls]="isVideoPlaying" muted crossorigin="anonymous" (pause)="onVideoPause()"
+                    (ended)="onVideoPause()" poster="assets/images/img-sectionOne.png">
                     Your browser does not support the video tag.
                 </video>
 
@@ -253,20 +252,21 @@
                 </div>
             </div>
             <div class="video-card raduis30 position-relative">
-                <video #videoAISmartSecurity class="mainVideo" [attr.src]="AISmartSecurityVideo.src"
-                    [controls]="isVideoPlaying" muted crossorigin="anonymous" poster="assets/images/backVideo.jfif"
-                    (pause)="onVideoPause()" (ended)="onVideoPause()" crossorigin="anonymous"
+                <video #videoAISmartFacility class="mainVideo" [attr.src]="AISmartfacilityVideo.src"
+                    [controls]="isVideoAiSmartfacilityPlaying" muted crossorigin="anonymous"
+                    (pause)="onVideoAISmartfacilityPause()" (ended)="onVideoAISmartfacilityPause()"
                     poster="assets/images/img-sectionOne.png">
                     Your browser does not support the video tag.
                 </video>
 
-                <div class="divBtn-video" *ngIf="!isVideoPlaying">
-                    <button class="play-btn" (click)="playVideo()">
+                <div class="divBtn-video" *ngIf="!isVideoAiSmartfacilityPlaying">
+                    <button class="play-btn" (click)="playVideoAISmartfacility()">
                         <img src="assets/images/HomePage/palyVideoIcon.svg" alt="playVideo icon">
                     </button>
                 </div>
-                <div class="card-overlay" *ngIf="!isVideoPlaying"></div>
-                <div class="d-flex flex-column justify-content-end align-items-start card-text" *ngIf="!isVideoPlaying">
+                <div class="card-overlay" *ngIf="!isVideoAiSmartfacilityPlaying"></div>
+                <div class="d-flex flex-column justify-content-end align-items-start card-text"
+                    *ngIf="!isVideoAiSmartfacilityPlaying">
                     <h3 class="colorWhite font-bold subtitle36px">From Reactive to Predictive Operations</h3>
                     <p class="colorWhite subtitle16px font-medium">AI-powered facility intelligence that enables safer,
                         more efficient, and more resilient operations.</p>
