@@ -93,106 +93,118 @@
             <div class="partOne">
                 <div class="sectionNewOne-part1">
                     <h1 class="font-bold mb24 subtitle48px" data-aos="fade-down">
-                        How We Help
+                        {{ 'HOME.HOW_WE_HELP.TITLE' | translate }}
                     </h1>
                 </div>
-                <p class="style-font mb24 subtitle22px">CODE delivers AI-driven systems that turn fragmented
-                    environments
-                    into connected, intelligent operations.</p>
-                <p class="style-font mb-0 subtitle22px">We combine AI, real-time data, and operational platforms to help
-                    organizations:</p>
+                <p class="style-font mb24 subtitle22px">
+                    {{ 'HOME.HOW_WE_HELP.DESC_1' | translate }}
+                </p>
+                <p class="style-font mb-0 subtitle22px">
+                    {{ 'HOME.HOW_WE_HELP.DESC_2' | translate }}
+                </p>
             </div>
             <div class="partTwo style-font raduis30">
-                <div class="d-flex  justify-content-between fx-partTwo  raduis30 ">
+                <div class="d-flex justify-content-between fx-partTwo raduis30 ">
                     <div class="d-flex flex-column ulCustom">
+
                         <div class="d-flex align-items-center mb24 lineCheck">
                             <img src="assets/images/HomePage/check_icon.png" alt="check">
-                            <p class="subtitle20px font-medium colorGrey3 mb-0">reduce risk</p>
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">
+                                {{ 'HOME.HOW_WE_HELP.LIST.RISK' | translate }}
+                            </p>
                         </div>
 
                         <div class="d-flex align-items-center mb24 lineCheck">
                             <img src="assets/images/HomePage/check_icon.png" alt="check">
-                            <p class="subtitle20px font-medium colorGrey3 mb-0">improve response time</p>
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">
+                                {{ 'HOME.HOW_WE_HELP.LIST.RESPONSE' | translate }}
+                            </p>
                         </div>
 
                         <div class="d-flex align-items-center mb24 lineCheck">
                             <img src="assets/images/HomePage/check_icon.png" alt="check">
-                            <p class="subtitle20px font-medium colorGrey3 mb-0">operate more efficiently</p>
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">
+                                {{ 'HOME.HOW_WE_HELP.LIST.EFFICIENCY' | translate }}
+                            </p>
                         </div>
 
                         <div class="d-flex align-items-center mb24 lineCheck">
                             <img src="assets/images/HomePage/check_icon.png" alt="check">
-                            <p class="subtitle20px font-medium colorGrey3 mb-0">make decisions with confidence</p>
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">
+                                {{ 'HOME.HOW_WE_HELP.LIST.DECISIONS' | translate }}
+                            </p>
                         </div>
 
                     </div>
                     <div class="fxCardPublic">
                         <img src="assets/images/HomePage/sectionNewOne-img.png" alt="img" class="raduis30 w-100">
                     </div>
-
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </div>
 <section class="ai-impact-section px-120">
     <div class="container text-center">
         <h2 class="subtitle48px font-bold mb24">
-            Where AI Creates the <span class="color-linearGradient">Most Immediate Impact</span>
+            {{ 'HOME.IMPACT_SEC.TITLE' | translate }}
         </h2>
 
         <div class="tabs-nav d-flex justify-content-center">
             <button (click)="setActiveTab('security')"
                 [ngClass]="activeTab === 'security' ? 'btn-linearGradient colorWhite' : 'btn-light-inactive'"
                 class="subtitle24px font-semiBold ">
-                <span>AI Smart Security Management</span>
+                <span>{{ 'HOME.IMPACT_SEC.TABS.SECURITY' | translate }}</span>
             </button>
             <button (click)="setActiveTab('facility')"
                 [ngClass]="activeTab === 'facility' ? 'btn-linearGradient colorWhite' : 'btn-light-inactive'"
                 class="subtitle24px font-semiBold ">
-                <span>AI Smart Facility Management</span>
+                <span>{{ 'HOME.IMPACT_SEC.TABS.FACILITY' | translate }}</span>
             </button>
         </div>
 
         <div *ngIf="activeTab === 'security'" class="tab-content-wrapper d-flex flex-column">
-            <div class="d-flex  text-start securitySection">
+            <div class="d-flex text-start securitySection">
                 <div class="partOne d-flex flex-column">
-                    <p class="color-linearGradient font-medium subtitle22px">See It in Action</p>
+                    <p class="color-linearGradient font-medium subtitle22px">{{ 'HOME.IMPACT_SEC.COMMON.SEE_ACTION' |
+                        translate }}</p>
                     <h3 class="subtitle32px font-bold">
-                        Detect earlier. Respond faster. Stay ahead.
+                        {{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.HEADER' | translate }}
                     </h3>
                     <p class="subtitle18px colorBlack2 style-font">
-                        AI-powered security operations that help you move from reactive monitoring to proactive threat
-                        prevention.
+                        {{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.DESC' | translate }}
                     </p>
                 </div>
 
                 <div class="partTwo d-flex flex-column justify-content-between ">
-                    <h3 class="subtitle22px font-bold colorOne">Available in tiers to match your needs:</h3>
+                    <h3 class="subtitle22px font-bold colorOne">{{ 'HOME.IMPACT_SEC.COMMON.TIERS_TITLE' | translate }}
+                    </h3>
                     <div class="d-flex tier-items justify-content-between">
                         <div class="tier-item">
                             <span class="tier-number font-bold">1</span>
-                            <h4 class="font-semiBold subtitle22px colorTwo">Basic</h4>
-                            <p class="subtitle18px colorGrey3 colorTwo style-font">Compliance-ready visibility</p>
+                            <h4 class="font-semiBold subtitle22px colorTwo">{{ 'HOME.IMPACT_SEC.COMMON.TIER_1' |
+                                translate }}</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">{{
+                                'HOME.IMPACT_SEC.SECURITY_CONTENT.TIER_1_DESC' | translate }}</p>
                         </div>
                         <div class="tier-item">
                             <span class="tier-number font-bold">2</span>
-                            <h4 class="font-semiBold subtitle22px colorTwo">Advanced</h4>
-                            <p class="subtitle18px colorGrey3 colorTwo style-font">AI-driven detection and prevention
-                            </p>
+                            <h4 class="font-semiBold subtitle22px colorTwo">{{ 'HOME.IMPACT_SEC.COMMON.TIER_2' |
+                                translate }}</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">{{
+                                'HOME.IMPACT_SEC.SECURITY_CONTENT.TIER_2_DESC' | translate }}</p>
                         </div>
                         <div class="tier-item">
                             <span class="tier-number font-bold">3</span>
-                            <h4 class="font-semiBold subtitle22px colorTwo">Pro</h4>
-                            <p class="subtitle18px colorGrey3 colorTwo style-font">Predictive intelligence & automated
-                                response</p>
+                            <h4 class="font-semiBold subtitle22px colorTwo">{{ 'HOME.IMPACT_SEC.COMMON.TIER_3' |
+                                translate }}</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">{{
+                                'HOME.IMPACT_SEC.SECURITY_CONTENT.TIER_3_DESC' | translate }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="video-card raduis30 position-relative">
                 <video #videoAISmartSecurity class="mainVideo" [attr.src]="AISmartSecurityVideo.src"
                     [controls]="isVideoPlaying" muted crossorigin="anonymous" (pause)="onVideoPause()"
@@ -207,50 +219,55 @@
                 </div>
                 <div class="card-overlay" *ngIf="!isVideoPlaying"></div>
                 <div class="d-flex flex-column justify-content-end align-items-start card-text" *ngIf="!isVideoPlaying">
-                    <h3 class="colorWhite font-bold subtitle36px">See Threats Before They Escalate</h3>
-                    <p class="colorWhite subtitle16px font-medium">Real-time AI detection, behavior analysis, and
-                        coordinated response across complex security environments.
-                    </p>
+                    <h3 class="colorWhite font-bold subtitle36px">{{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_TITLE' |
+                        translate }}</h3>
+                    <p class="colorWhite subtitle16px font-medium">{{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_DESC' |
+                        translate }}</p>
                 </div>
             </div>
         </div>
 
         <div *ngIf="activeTab === 'facility'" class="tab-content-wrapper">
-            <div class="d-flex  text-start securitySection">
+            <div class="d-flex text-start securitySection">
                 <div class="partOne d-flex flex-column">
-                    <p class="color-linearGradient font-medium subtitle22px">See It in Action</p>
+                    <p class="color-linearGradient font-medium subtitle22px">{{ 'HOME.IMPACT_SEC.COMMON.SEE_ACTION' |
+                        translate }}</p>
                     <h3 class="subtitle32px font-bold">
-                        Operate smarter. Prevent failures. Optimize continuously.
+                        {{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.HEADER' | translate }}
                     </h3>
-                    <p class="subtitle18px colorBlack2 style-font">Real-time intelligence for buildings and assets that
-                        helps you reduce downtime, improve safety, and control costs.</p>
+                    <p class="subtitle18px colorBlack2 style-font">{{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.DESC' |
+                        translate }}</p>
                 </div>
 
                 <div class="partTwo d-flex flex-column justify-content-between ">
-                    <h3 class="subtitle22px font-bold colorOne">Available in tiers to match your needs:</h3>
+                    <h3 class="subtitle22px font-bold colorOne">{{ 'HOME.IMPACT_SEC.COMMON.TIERS_TITLE' | translate }}
+                    </h3>
                     <div class="d-flex tier-items justify-content-between">
                         <div class="tier-item">
                             <span class="tier-number font-bold">1</span>
-                            <h4 class="font-semiBold subtitle22px colorTwo">Basic</h4>
-                            <p class="subtitle18px colorGrey3 colorTwo style-font">Operational visibility and safety
-                                monitoring</p>
+                            <h4 class="font-semiBold subtitle22px colorTwo">{{ 'HOME.IMPACT_SEC.COMMON.TIER_1' |
+                                translate }}</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">{{
+                                'HOME.IMPACT_SEC.FACILITY_CONTENT.TIER_1_DESC' | translate }}</p>
                         </div>
                         <div class="tier-item">
                             <span class="tier-number font-bold">2</span>
-                            <h4 class="font-semiBold subtitle22px colorTwo">Advanced</h4>
-                            <p class="subtitle18px colorGrey3 colorTwo style-font">Predictive maintenance and
-                                optimization
-                            </p>
+                            <h4 class="font-semiBold subtitle22px colorTwo">{{ 'HOME.IMPACT_SEC.COMMON.TIER_2' |
+                                translate }}</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">{{
+                                'HOME.IMPACT_SEC.FACILITY_CONTENT.TIER_2_DESC' | translate }}</p>
                         </div>
                         <div class="tier-item">
                             <span class="tier-number font-bold">3</span>
-                            <h4 class="font-semiBold subtitle22px colorTwo">Pro</h4>
-                            <p class="subtitle18px colorGrey3 colorTwo style-font">Fully automated, intelligent facility
-                                control</p>
+                            <h4 class="font-semiBold subtitle22px colorTwo">{{ 'HOME.IMPACT_SEC.COMMON.TIER_3' |
+                                translate }}</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">{{
+                                'HOME.IMPACT_SEC.FACILITY_CONTENT.TIER_3_DESC' | translate }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="video-card raduis30 position-relative">
                 <video #videoAISmartFacility class="mainVideo" [attr.src]="AISmartfacilityVideo.src"
                     [controls]="isVideoAiSmartfacilityPlaying" muted crossorigin="anonymous"
@@ -267,9 +284,10 @@
                 <div class="card-overlay" *ngIf="!isVideoAiSmartfacilityPlaying"></div>
                 <div class="d-flex flex-column justify-content-end align-items-start card-text"
                     *ngIf="!isVideoAiSmartfacilityPlaying">
-                    <h3 class="colorWhite font-bold subtitle36px">From Reactive to Predictive Operations</h3>
-                    <p class="colorWhite subtitle16px font-medium">AI-powered facility intelligence that enables safer,
-                        more efficient, and more resilient operations.</p>
+                    <h3 class="colorWhite font-bold subtitle36px">{{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_TITLE' |
+                        translate }}</h3>
+                    <p class="colorWhite subtitle16px font-medium">{{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_DESC' |
+                        translate }}</p>
                 </div>
             </div>
         </div>
@@ -280,12 +298,13 @@
         <div class="d-flex fx-headSection align-items-center">
             <div class="part1Header">
                 <h1 class="font-bold mb-0 subtitle48px" data-aos="fade-down">
-                    Extending Intelligence Across Operations
+                    {{ 'HOME.EXTENDING_INTEL.TITLE' | translate }}
                 </h1>
             </div>
             <div class="part2Header">
-                <p class="style-font mb-0 subtitle24px">As operational needs expand, we support broader intelligence,
-                    integration, and transformation initiatives, including:</p>
+                <p class="style-font mb-0 subtitle24px">
+                    {{ 'HOME.EXTENDING_INTEL.SUBTITLE' | translate }}
+                </p>
             </div>
         </div>
         <div class="d-flex fx-sectionEight">
@@ -295,28 +314,32 @@
             <div class="partTwo">
                 <div class="d-flex align-items-start lineCheck">
                     <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">AI Packages for smart cities, command starts,
-                        and intelligent venues</p>
+                    <p class="subtitle22px style-font colorTwo mb-0">
+                        {{ 'HOME.EXTENDING_INTEL.LIST.PACKAGES' | translate }}
+                    </p>
                 </div>
                 <div class="d-flex align-items-start lineCheck">
                     <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">Core AI capabilities such as AI Digital Twins,
-                        AI Computer Vision, and automation</p>
+                    <p class="subtitle22px style-font colorTwo mb-0">
+                        {{ 'HOME.EXTENDING_INTEL.LIST.CORE' | translate }}
+                    </p>
                 </div>
                 <div class="d-flex align-items-start lineCheck">
                     <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">Digital Transformation Services covering
-                        Enterprise Architecture, NDMO-aligned data governance, and DGA consulting</p>
+                    <p class="subtitle22px style-font colorTwo mb-0">
+                        {{ 'HOME.EXTENDING_INTEL.LIST.TRANSFORMATION' | translate }}
+                    </p>
                 </div>
                 <div class="d-flex align-items-start lineCheck">
                     <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">ICT platforms & infrastructure designed for
-                        scalability, reliability, and secure integration</p>
+                    <p class="subtitle22px style-font colorTwo mb-0">
+                        {{ 'HOME.EXTENDING_INTEL.LIST.ICT' | translate }}
+                    </p>
                 </div>
-                <p class="subtitle22px style-font colorTwo mb-0">All solutions are designed to work independently or
-                    together, allowing organizations to expand
-                    capabilities without
-                    disruption, based on their priorities.</p>
+
+                <p class="subtitle22px style-font colorTwo mb-0">
+                    {{ 'HOME.EXTENDING_INTEL.FOOTNOTE' | translate }}
+                </p>
             </div>
         </div>
     </div>

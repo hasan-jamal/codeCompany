@@ -1,21 +1,24 @@
 <section class="sectionInsights">
     <div class="sectionInsights-container px-120">
         <div class="divTitles d-flex align-items-center flex-column">
-            <h1 class="font-bold subtitle40px text-center">Explore Insights From The CODE Team</h1>
-            <p class="mb-0 style-font subtitle18px colorOne text-center">From expert articles to real-world case
-                studies, this is
-                where we
-                share the thinking, results, and innovation behind our
-                work.</p>
+            <h1 class="font-bold subtitle40px text-center">
+                {{ 'INSIGHTS_SEC.MAIN_TITLE' | translate }}
+            </h1>
+            <p class="mb-0 style-font subtitle18px colorOne text-center">
+                {{ 'INSIGHTS_SEC.SUBTITLE' | translate }}
+            </p>
         </div>
-        <div class="d-flex justify-content-between align-items-center fxTitle">
-            <h3 class="font-medium subtitle24px color-linearGradient">Latest News</h3>
-            <div class="arrows-Insights d-flex align-items-center gap-2">
-                <img src="assets/images/rightBlog.svg" alt="Previous Slide" class="rightInsight transition3s ms-2"
-                    style="cursor:pointer;" (click)="prevSlideInsight()">
 
-                <img src="assets/images/leftBlog.svg" alt="Next Slide" class="leftInsight transition3s"
-                    style="cursor:pointer;" (click)="nextSlideInsight()">
+        <div class="d-flex justify-content-between align-items-center fxTitle">
+            <h3 class="font-medium subtitle24px color-linearGradient">
+                {{ 'INSIGHTS_SEC.LATEST_NEWS' | translate }}
+            </h3>
+            <div class="arrows-Insights d-flex align-items-center gap-2">
+                <img src="assets/images/rightBlog.svg" [attr.alt]="'INSIGHTS_SEC.SLIDER.PREV' | translate"
+                    class="rightInsight transition3s ms-2" style="cursor:pointer;" (click)="prevSlideInsight()">
+
+                <img src="assets/images/leftBlog.svg" [attr.alt]="'INSIGHTS_SEC.SLIDER.NEXT' | translate"
+                    class="leftInsight transition3s" style="cursor:pointer;" (click)="nextSlideInsight()">
             </div>
         </div>
 
@@ -38,7 +41,8 @@
                         <a [href]="Insight.linkPost" target="_blank"
                             class="readMoreBtn d-flex align-items-center justify-content-start">
                             <img src="assets/images/HomePage/arrow-up-right.svg" alt="arrow-up-right">
-                            <span class="colorOne font-bold text-uppercase subtitle14px">READ MORE</span>
+                            <span class="colorOne font-bold text-uppercase subtitle14px">{{ 'INSIGHTS_SEC.READ_MORE' |
+                                translate }}</span>
                         </a>
                     </div>
                 </div>

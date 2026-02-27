@@ -111,7 +111,61 @@
 	  "Sec5": {
 		"TITLE": "Let’s Solve What Matters Most in Your Operations",
 		"Description": "Explore AI solutions designed around your goals, constraints, and operational realities."
-		}
+		},
+    "IMPACT_SEC": {
+  "TITLE": "Where AI Creates the Most Immediate Impact",
+  "TABS": {
+    "SECURITY": "AI Smart Security Management",
+    "FACILITY": "AI Smart Facility Management"
+  },
+  "COMMON": {
+    "SEE_ACTION": "See It in Action",
+    "TIERS_TITLE": "Available in tiers to match your needs:",
+    "TIER_1": "Basic",
+    "TIER_2": "Advanced",
+    "TIER_3": "Pro"
+  },
+  "SECURITY_CONTENT": {
+    "HEADER": "Detect earlier. Respond faster. Stay ahead.",
+    "DESC": "AI-powered security operations that help you move from reactive monitoring to proactive threat prevention.",
+    "TIER_1_DESC": "Compliance-ready visibility",
+    "TIER_2_DESC": "AI-driven detection and prevention",
+    "TIER_3_DESC": "Predictive intelligence & automated response",
+    "VIDEO_TITLE": "See Threats Before They Escalate",
+    "VIDEO_DESC": "Real-time AI detection, behavior analysis, and coordinated response across complex security environments."
+  },
+  "FACILITY_CONTENT": {
+    "HEADER": "Operate smarter. Prevent failures. Optimize continuously.",
+    "DESC": "Real-time intelligence for buildings and assets that helps you reduce downtime, improve safety, and control costs.",
+    "TIER_1_DESC": "Operational visibility and safety monitoring",
+    "TIER_2_DESC": "Predictive maintenance and optimization",
+    "TIER_3_DESC": "Fully automated, intelligent facility control",
+    "VIDEO_TITLE": "From Reactive to Predictive Operations",
+    "VIDEO_DESC": "AI-powered facility intelligence that enables safer, more efficient, and more resilient operations."
+  }
+},
+  "HOW_WE_HELP": {
+  "TITLE": "How We Help",
+  "DESC_1": "CODE delivers AI-driven systems that turn fragmented environments into connected, intelligent operations.",
+  "DESC_2": "We combine AI, real-time data, and operational platforms to help organizations:",
+  "LIST": {
+    "RISK": "reduce risk",
+    "RESPONSE": "improve response time",
+    "EFFICIENCY": "operate more efficiently",
+    "DECISIONS": "make decisions with confidence"
+  }
+},
+"EXTENDING_INTEL": {
+  "TITLE": "Extending Intelligence Across Operations",
+  "SUBTITLE": "As operational needs expand, we support broader intelligence, integration, and transformation initiatives, including:",
+  "LIST": {
+    "PACKAGES": "AI Packages for smart cities, command centers, and intelligent venues",
+    "CORE": "Core AI capabilities such as AI Digital Twins, AI Computer Vision, and automation",
+    "TRANSFORMATION": "Digital Transformation Services covering Enterprise Architecture, NDMO-aligned data governance, and DGA consulting",
+    "ICT": "ICT platforms & infrastructure designed for scalability, reliability, and secure integration"
+  },
+  "FOOTNOTE": "All solutions are designed to work independently or together, allowing organizations to expand capabilities without disruption, based on their priorities."
+}
     },
   "ABOUT": {
     "AboutCode": "About CODE",
@@ -2041,8 +2095,16 @@
     "CancelBtn": "Cancel",
     "SendNow": "Send Now",
     "Sending": "Sending..."
+  },
+  "INSIGHTS_SEC": {
+  "MAIN_TITLE": "Explore Insights From The CODE Team",
+  "SUBTITLE": "From expert articles to real-world case studies, this is where we share the thinking, results, and innovation behind our work.",
+  "LATEST_NEWS": "Latest News",
+  "READ_MORE": "READ MORE",
+  "SLIDER": {
+    "PREV": "Previous Slide",
+    "NEXT": "Next Slide"
   }
-
-  
+}
 
 }

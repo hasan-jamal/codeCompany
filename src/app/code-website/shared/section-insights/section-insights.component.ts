@@ -1,10 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-section-insights',
-  imports: [SlickCarouselModule,CommonModule],
+  imports: [
+    SlickCarouselModule,
+    CommonModule,
+    TranslateModule
+  ],
   templateUrl: './section-insights.component.html',
   styleUrl: './section-insights.component.css'
 })
