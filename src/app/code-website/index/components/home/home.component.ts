@@ -5,6 +5,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { ModalService } from '../../../../services/ModalService';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { SectionInsightsComponent } from '../../../shared/section-insights/section-insights.component';
 
 let isFirstLoad = true;
 
@@ -14,7 +15,7 @@ let isFirstLoad = true;
   imports: [
     CommonModule, 
     SlickCarouselModule,
-    RouterLink,
+    SectionInsightsComponent,
     TranslateModule
     // PeopleSayingComponent
   ],
@@ -51,6 +52,7 @@ constructor(
     }
   });
 }
+  @ViewChild('videoAISmartSecurity') videoAISmartSecurity!: ElementRef<HTMLVideoElement>;
   @ViewChild('slickModalBlogs', { static: false }) slickModalBlogs!: SlickCarouselComponent;
   @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
   @ViewChild('sliderBlogs', { static: true }) sliderBlogs!: ElementRef;
@@ -63,6 +65,7 @@ constructor(
   typedText: string = '';
   currentIndex: number = 0;
   currentSlideIndex = 0;
+   isVideoPlaying: boolean = false;
   mainVideo: any;
   plyrList : any[]= [
     {
@@ -495,4 +498,21 @@ onReadMoreClick(event: Event) {
         el.style.opacity = '1';
       });
     }
+
+    activeTab: string = 'security';
+
+    setActiveTab(tab: string) {
+      this.activeTab = tab;
   }
+
+
+  AISmartSecurityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
+  playVideo() {
+    this.isVideoPlaying = true; 
+    this.videoAISmartSecurity.nativeElement.play();
+  }
+  onVideoPause() {
+    this.isVideoPlaying = false; 
+  }
+
+}

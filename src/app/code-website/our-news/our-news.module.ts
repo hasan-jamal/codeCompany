@@ -7,6 +7,7 @@ import { OurNewsDetailsComponent } from './our-news-details/our-news-details.com
 import { RouterLink } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TranslateModule } from '@ngx-translate/core';
+import { SectionInsightsComponent } from '../shared/section-insights/section-insights.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     OurNewsRoutingModule,
+    SectionInsightsComponent,
     NgxPaginationModule,   
     SlickCarouselModule,
     RouterLink,

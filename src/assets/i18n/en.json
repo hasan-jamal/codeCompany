@@ -109,8 +109,8 @@
       "TITLE": "Partnered With the Best to Deliver the Best"
 	},
 	  "Sec5": {
-		"TITLE": "Let’s Build Smarter, Together",
-		"Description": "Connect with our team to explore AI solutions built around your goals, challenges, and infrastructure."
+		"TITLE": "Let’s Solve What Matters Most in Your Operations",
+		"Description": "Explore AI solutions designed around your goals, constraints, and operational realities."
 		}
     },
   "ABOUT": {
@@ -131,6 +131,9 @@
     "Mission": "Our Mission",
     "MissionTitle": "Delivering Real Impact Through AI",
     "MissionP": "Our mission is to help organizations unlock the full potential of AI by designing, developing and deploying secure, scalable and locally tailored solutions that drive performance, enhance decision-making, and support Vision 2030 goals.",
+    "MapSectionSubTitle": "Where We Are Present?",
+  "MapSectionTitle": "Growing Presence Where The Market Need Us",
+  "MapSectionP": "We operate in strategic locations that keep us close to our customers and partners.",
     "Certificates": "Our Certificates",
     "CertificatesTitle": "Proven Excellence. Trusted Standards.",
     "CertificatesP": "CODE meets global standards for quality, service, and security ensuring every solution is built to perform, protect and grow with you.",

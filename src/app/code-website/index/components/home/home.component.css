@@ -528,6 +528,7 @@
      .sectionFour .slide{padding: 0;}
      .sectionFour .fxTexts .fxTexts-part1 p{margin-top: 1rem;font-size: 16px;line-height: 24px;}
      .sectionFour .fxTexts{gap: 16px;}
+     .sectionFour{margin-bottom: 4rem;}
 }
 @media (max-width:512px) {}
 /* Section Five Style  */
@@ -784,3 +785,281 @@
     .sectionVideos {margin: 100px 0;}
     .video-thumbnails{gap: 8px;}
 }
+
+.sectionNewOne{
+    margin: 100px 0;
+}
+.sectionNewOne .fx-sectionNewOne{gap: 3%}
+.sectionNewOne .partOne{width: 50%;}
+.sectionNewOne .partTwo{
+    background-color: #E5F4FF;
+    width: 50%;
+}
+.sectionNewOne .partTwo .ulCustom{
+    padding: 48px 0px 48px 48px;
+}
+.sectionNewOne .partTwo .ulCustom .lineCheck{gap: 5%;}
+.sectionNewOne .partTwo .ulCustom .lineCheck img{
+    width: 8%;
+}
+.sectionNewOne .partTwo .fxCardPublic{
+    border: 1rem solid #fff;
+    border-top: 0;
+    width: 40%;
+    height: 100%;
+    border-radius: 0 30px 0px 30px;
+    background-color: #fff;
+}
+  @media (min-width:1706.67px) {}
+  @media (min-width:1920px) {}
+  @media (min-width:2048px) { }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {}
+@media (max-width:1228.8px) {
+.sectionNewOne .partTwo .ulCustom{padding: 32px 0px 32px 32px;}
+}
+@media (max-width:1024px) {
+    .sectionNewOne .partTwo .ulCustom{padding: 24px 0px 24px 24px;}
+}
+  @media (max-width:877.71px) {}
+  @media (max-width:768px) {}
+@media (max-width: 614px) {
+  .custom-feature-card {
+    padding: 30px 20px !important;
+    text-align: center;
+  }
+  .custom-feature-card .d-flex {
+    justify-content: center;
+  }
+  .sectionNewOne .fx-sectionNewOne{ 
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sectionNewOne .partOne,
+  .sectionNewOne .partTwo{width: 100%;}
+  .sectionNewOne .partTwo .fxCardPublic img{border-radius: 10px;}
+  .sectionNewOne .partTwo .fxCardPublic{
+    border: 5px solid #fff;
+    border-radius: 0 10px 0px 10px;
+}
+}
+/* End Section */
+/* Start Section Video */
+.ai-impact-section{margin-bottom: 5rem;}
+.ai-impact-section .tabs-nav{gap: 1.2rem;}
+.ai-impact-section .tabs-nav button{
+    width: 50%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+}
+.ai-impact-section .btn-light-inactive {
+ background: linear-gradient(to bottom, #FEEFE6 0%, #FCE8EB 100%);
+}
+.ai-impact-section .btn-light-inactive span{
+    background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ai-impact-section .securitySection{
+    padding: 48px 0;
+    align-items: normal;
+    gap: 4%;
+}
+.ai-impact-section .securitySection .partOne{
+    gap: 0.7rem;
+    width: 40%;
+}
+.ai-impact-section .securitySection .partTwo{
+    min-height: 100%;
+    padding-bottom: 2rem;
+}
+.ai-impact-section .tier-number {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 60px;
+    font-weight: 800;
+    color:#FDE0CE ;
+    z-index: 0;
+}
+.ai-impact-section .tier-items{
+    gap: 2%;
+    margin-top: 4px;
+}
+.ai-impact-section .tier-item {
+    position: relative;
+    padding-top: 10px;
+    flex: 1;
+}
+.ai-impact-section .tier-item h4, .ai-impact-section .tier-item p {
+    position: relative;
+    z-index: 1;
+}
+.ai-impact-section .video-card {
+    aspect-ratio:4.7/2;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.ai-impact-section .video-card video{
+    width: 100%;
+    aspect-ratio:4.7/2;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.ai-impact-section .divBtn-video {
+    width: max-content;
+    background: transparent;
+    transition: 0.3s;
+    position: absolute;
+    right:0;
+    top: 0;
+    background: #fff;
+    border: 1.5rem solid #fff;
+    border-radius: 0 0 0 50%;
+    border-top: 0;
+    border-right: 0;
+    z-index: 11;
+}
+.ai-impact-section .divBtn-video .play-btn{
+    transition: 0.3s;
+    background: linear-gradient(109deg, #FAA26B 14.67%, #E74B62 110.18%);
+    padding: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.ai-impact-section .divBtn-video .play-btn:hover{transform: scale(1.01);}
+.ai-impact-section .divBtn-video::before {
+    bottom: auto;
+    top: -0.5px;
+    left: -4.6rem;
+    transform: rotate(-95deg);
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border-radius: 0 0 30px 0;
+    z-index: 99;
+    box-shadow: 9px 9px #fff;
+}
+.ai-impact-section .divBtn-video::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    bottom: -4.4rem;
+    right: 1px;
+    transform: rotate(-95deg);
+    border-radius: 0 0 30px 0;
+    z-index: 1;
+    box-shadow: 9px 9px #f2f9ff;
+}
+.ai-impact-section .divBtn-video img{
+    width: 100%;
+    height: 100%;
+}
+.ai-impact-section .card-text {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    background: transparent;
+    gap: 0.5rem;
+    width: 60%;
+    text-align: start;
+    z-index: 10;
+}
+.ai-impact-section .card-overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 30px;
+    z-index: 9;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+  @media (min-width:1706.67px) {
+        .ai-impact-section .divBtn-video .play-btn{padding: 3.5rem;}
+  }
+  @media (min-width:1920px) {
+      .ai-impact-section .divBtn-video .play-btn{padding: 4rem;}
+  }
+  @media (max-width:1228.8px) {
+    .ai-impact-section .divBtn-video .play-btn{padding: 2.5rem;}
+  }
+  @media (max-width:1024px) {
+       .ai-impact-section .divBtn-video .play-btn{padding: 2rem;}
+       .ai-impact-section .divBtn-video {width: 130px;}
+  }
+  @media (max-width:877.71px) {
+         .ai-impact-section .divBtn-video {width: 120px;}
+  }
+  @media (max-width:768px) {
+  }
+  @media (max-width:614.4px) {
+    .ai-impact-section .securitySection{flex-direction: column;gap: 2rem;}
+    .ai-impact-section .securitySection .partOne{width: 100%;}
+    .ai-impact-section .securitySection .partTwo{gap: 2rem;padding-bottom: 0;}
+    .ai-impact-section .tier-number{font-size: 48px;}
+    .ai-impact-section .tier-items{flex-wrap: wrap;gap: 2rem;}
+    .ai-impact-section .tier-items .tier-item{
+        width: calc(50% - 2rem); 
+        min-width: 120px; 
+        flex-grow: 1;
+    }
+    .ai-impact-section .divBtn-video{width: max-content;border: 1rem solid #fff;border-top: 0;border-right: 0;}
+    .ai-impact-section .video-card{aspect-ratio: 3/2;}
+    .ai-impact-section .card-text{width: 93%;}
+    .ai-impact-section .divBtn-video .play-btn{padding: 1rem;}
+    .ai-impact-section .divBtn-video img {width: 25px;height: 25px;}
+    .ai-impact-section .divBtn-video::before{top: -0.5px;left: -4rem;}
+    .ai-impact-section .divBtn-video::after{bottom: -3.9rem;right: 2px;}
+  }
+  @media (max-width:512px) {}
+/* End Section */
+/* Start Eight Section */
+.sectionEightNew{margin-bottom: 6rem;}
+.sectionEightNew .fx-headSection{
+    margin-bottom: 2rem;
+}
+.sectionEightNew .fx-headSection,
+.sectionEightNew .fx-sectionEight{gap: 3%;}
+.sectionEightNew .fx-sectionEight{
+    align-items: center;
+}
+.sectionEightNew .part1Header,
+.sectionEightNew .fx-sectionEight .partOne{
+    width: 45%;
+    height: 100%;
+}
+.sectionEightNew .fx-sectionEight .partOne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sectionEightNew .part2Header,
+.sectionEightNew .fx-sectionEight .partTwo{
+    width: 55%;
+}
+.sectionEightNew .fx-sectionEight .partTwo .lineCheck{
+    margin-bottom: 2.5%;
+    gap: 2%;
+}
+.sectionEightNew .fx-sectionEight .partTwo .lineCheck img{width: 3%;}
+.sectionEightNew .fx-sectionEight .partTwo p{line-height: 130%;}
+@media (max-width:614.4px) {
+    .sectionEightNew .fx-headSection,
+    .sectionEightNew .fx-sectionEight{gap: 1rem;flex-direction: column;}
+    .sectionEightNew .part1Header,
+    .sectionEightNew .fx-sectionEight .partOne,
+    .sectionEightNew .part2Header,
+    .sectionEightNew .fx-sectionEight .partTwo{width: 100%;}
+}
+/* End Eight Section */

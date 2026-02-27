@@ -63,7 +63,7 @@
     </div>
 </section>
 <section class="sectionTwo">
-    <div class="sectionTwo-container px-80">
+    <div class="sectionTwo-container px-120">
         <div class="d-flex fx-sectionTwo">
             <div class="part1-sectionTwo">
                 <h4 class="font-medium color-linearGradient subtitle24px">{{ 'HOME.Sec1.subTitle' | translate }}</h4>
@@ -73,7 +73,7 @@
             </div>
             <p class="style-font mb-0 subtitle24px">{{ 'HOME.Sec1.Description' | translate }}</p>
         </div>
-        <div class="fx-sectionTwoImgs d-flex align-items-center">
+        <!-- <div class="fx-sectionTwoImgs d-flex align-items-center">
             <img src="assets/images/sectionTwo-img1.png" alt="Who we are img" class="sectionTwo-img1"
                 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
             <img src="assets/images/sectionTwo-img2.png" alt="Who we are img" class="sectionTwo-img2"
@@ -84,10 +84,244 @@
                 <img src="assets/images/sectionTwo-img4.png" alt="Who we are img" class="sectionTwo-img4"
                     data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             </div>
+        </div> -->
+    </div>
+</section>
+<div class="sectionNewOne">
+    <div class="sectionNewOne-container px-120">
+        <div class="d-flex fx-sectionNewOne align-items-center">
+            <div class="partOne">
+                <div class="sectionNewOne-part1">
+                    <h1 class="font-bold mb24 subtitle48px" data-aos="fade-down">
+                        How We Help
+                    </h1>
+                </div>
+                <p class="style-font mb24 subtitle22px">CODE delivers AI-driven systems that turn fragmented
+                    environments
+                    into connected, intelligent operations.</p>
+                <p class="style-font mb-0 subtitle22px">We combine AI, real-time data, and operational platforms to help
+                    organizations:</p>
+            </div>
+            <div class="partTwo style-font raduis30">
+                <div class="d-flex  justify-content-between fx-partTwo  raduis30 ">
+                    <div class="d-flex flex-column ulCustom">
+                        <div class="d-flex align-items-center mb24 lineCheck">
+                            <img src="assets/images/HomePage/check_icon.png" alt="check">
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">reduce risk</p>
+                        </div>
+
+                        <div class="d-flex align-items-center mb24 lineCheck">
+                            <img src="assets/images/HomePage/check_icon.png" alt="check">
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">improve response time</p>
+                        </div>
+
+                        <div class="d-flex align-items-center mb24 lineCheck">
+                            <img src="assets/images/HomePage/check_icon.png" alt="check">
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">operate more efficiently</p>
+                        </div>
+
+                        <div class="d-flex align-items-center mb24 lineCheck">
+                            <img src="assets/images/HomePage/check_icon.png" alt="check">
+                            <p class="subtitle20px font-medium colorGrey3 mb-0">make decisions with confidence</p>
+                        </div>
+
+                    </div>
+                    <div class="fxCardPublic">
+                        <img src="assets/images/HomePage/sectionNewOne-img.png" alt="img" class="raduis30 w-100">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<section class="ai-impact-section px-120">
+    <div class="container text-center">
+        <h2 class="subtitle48px font-bold mb24">
+            Where AI Creates the <span class="color-linearGradient">Most Immediate Impact</span>
+        </h2>
+
+        <div class="tabs-nav d-flex justify-content-center">
+            <button (click)="setActiveTab('security')"
+                [ngClass]="activeTab === 'security' ? 'btn-linearGradient colorWhite' : 'btn-light-inactive'"
+                class="subtitle24px font-semiBold ">
+                <span>AI Smart Security Management</span>
+            </button>
+            <button (click)="setActiveTab('facility')"
+                [ngClass]="activeTab === 'facility' ? 'btn-linearGradient colorWhite' : 'btn-light-inactive'"
+                class="subtitle24px font-semiBold ">
+                <span>AI Smart Facility Management</span>
+            </button>
+        </div>
+
+        <div *ngIf="activeTab === 'security'" class="tab-content-wrapper d-flex flex-column">
+            <div class="d-flex  text-start securitySection">
+                <div class="partOne d-flex flex-column">
+                    <p class="color-linearGradient font-medium subtitle22px">See It in Action</p>
+                    <h3 class="subtitle32px font-bold">
+                        Detect earlier. Respond faster. Stay ahead.
+                    </h3>
+                    <p class="subtitle18px colorBlack2 style-font">
+                        AI-powered security operations that help you move from reactive monitoring to proactive threat
+                        prevention.
+                    </p>
+                </div>
+
+                <div class="partTwo d-flex flex-column justify-content-between ">
+                    <h3 class="subtitle22px font-bold colorOne">Available in tiers to match your needs:</h3>
+                    <div class="d-flex tier-items justify-content-between">
+                        <div class="tier-item">
+                            <span class="tier-number font-bold">1</span>
+                            <h4 class="font-semiBold subtitle22px colorTwo">Basic</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">Compliance-ready visibility</p>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-number font-bold">2</span>
+                            <h4 class="font-semiBold subtitle22px colorTwo">Advanced</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">AI-driven detection and prevention
+                            </p>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-number font-bold">3</span>
+                            <h4 class="font-semiBold subtitle22px colorTwo">Pro</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">Predictive intelligence & automated
+                                response</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card raduis30 position-relative">
+                <video #videoAISmartSecurity class="mainVideo" [attr.src]="AISmartSecurityVideo.src"
+                    [controls]="isVideoPlaying" muted crossorigin="anonymous" poster="assets/images/backVideo.jfif"
+                    (pause)="onVideoPause()" (ended)="onVideoPause()" crossorigin="anonymous"
+                    poster="assets/images/img-sectionOne.png">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="divBtn-video" *ngIf="!isVideoPlaying">
+                    <button class="play-btn" (click)="playVideo()">
+                        <img src="assets/images/HomePage/palyVideoIcon.svg" alt="playVideo icon">
+                    </button>
+                </div>
+                <div class="card-overlay" *ngIf="!isVideoPlaying"></div>
+                <div class="d-flex flex-column justify-content-end align-items-start card-text" *ngIf="!isVideoPlaying">
+                    <h3 class="colorWhite font-bold subtitle36px">See Threats Before They Escalate</h3>
+                    <p class="colorWhite subtitle16px font-medium">Real-time AI detection, behavior analysis, and
+                        coordinated response across complex security environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="activeTab === 'facility'" class="tab-content-wrapper">
+            <div class="d-flex  text-start securitySection">
+                <div class="partOne d-flex flex-column">
+                    <p class="color-linearGradient font-medium subtitle22px">See It in Action</p>
+                    <h3 class="subtitle32px font-bold">
+                        Operate smarter. Prevent failures. Optimize continuously.
+                    </h3>
+                    <p class="subtitle18px colorBlack2 style-font">Real-time intelligence for buildings and assets that
+                        helps you reduce downtime, improve safety, and control costs.</p>
+                </div>
+
+                <div class="partTwo d-flex flex-column justify-content-between ">
+                    <h3 class="subtitle22px font-bold colorOne">Available in tiers to match your needs:</h3>
+                    <div class="d-flex tier-items justify-content-between">
+                        <div class="tier-item">
+                            <span class="tier-number font-bold">1</span>
+                            <h4 class="font-semiBold subtitle22px colorTwo">Basic</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">Operational visibility and safety
+                                monitoring</p>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-number font-bold">2</span>
+                            <h4 class="font-semiBold subtitle22px colorTwo">Advanced</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">Predictive maintenance and
+                                optimization
+                            </p>
+                        </div>
+                        <div class="tier-item">
+                            <span class="tier-number font-bold">3</span>
+                            <h4 class="font-semiBold subtitle22px colorTwo">Pro</h4>
+                            <p class="subtitle18px colorGrey3 colorTwo style-font">Fully automated, intelligent facility
+                                control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card raduis30 position-relative">
+                <video #videoAISmartSecurity class="mainVideo" [attr.src]="AISmartSecurityVideo.src"
+                    [controls]="isVideoPlaying" muted crossorigin="anonymous" poster="assets/images/backVideo.jfif"
+                    (pause)="onVideoPause()" (ended)="onVideoPause()" crossorigin="anonymous"
+                    poster="assets/images/img-sectionOne.png">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="divBtn-video" *ngIf="!isVideoPlaying">
+                    <button class="play-btn" (click)="playVideo()">
+                        <img src="assets/images/HomePage/palyVideoIcon.svg" alt="playVideo icon">
+                    </button>
+                </div>
+                <div class="card-overlay" *ngIf="!isVideoPlaying"></div>
+                <div class="d-flex flex-column justify-content-end align-items-start card-text" *ngIf="!isVideoPlaying">
+                    <h3 class="colorWhite font-bold subtitle36px">From Reactive to Predictive Operations</h3>
+                    <p class="colorWhite subtitle16px font-medium">AI-powered facility intelligence that enables safer,
+                        more efficient, and more resilient operations.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<section class="sectionThree">
+<section class="sectionEightNew">
+    <div class="sectionEightNew-container px-120">
+        <div class="d-flex fx-headSection align-items-center">
+            <div class="part1Header">
+                <h1 class="font-bold mb-0 subtitle48px" data-aos="fade-down">
+                    Extending Intelligence Across Operations
+                </h1>
+            </div>
+            <div class="part2Header">
+                <p class="style-font mb-0 subtitle24px">As operational needs expand, we support broader intelligence,
+                    integration, and transformation initiatives, including:</p>
+            </div>
+        </div>
+        <div class="d-flex fx-sectionEight">
+            <div class="partOne">
+                <img src="assets/images/HomePage/Extending-Intelligence.png" alt="ExtendingIntelligence img">
+            </div>
+            <div class="partTwo">
+                <div class="d-flex align-items-start lineCheck">
+                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
+                    <p class="subtitle22px style-font colorTwo mb-0">AI Packages for smart cities, command starts,
+                        and intelligent venues</p>
+                </div>
+                <div class="d-flex align-items-start lineCheck">
+                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
+                    <p class="subtitle22px style-font colorTwo mb-0">Core AI capabilities such as AI Digital Twins,
+                        AI Computer Vision, and automation</p>
+                </div>
+                <div class="d-flex align-items-start lineCheck">
+                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
+                    <p class="subtitle22px style-font colorTwo mb-0">Digital Transformation Services covering
+                        Enterprise Architecture, NDMO-aligned data governance, and DGA consulting</p>
+                </div>
+                <div class="d-flex align-items-start lineCheck">
+                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
+                    <p class="subtitle22px style-font colorTwo mb-0">ICT platforms & infrastructure designed for
+                        scalability, reliability, and secure integration</p>
+                </div>
+                <p class="subtitle22px style-font colorTwo mb-0">All solutions are designed to work independently or
+                    together, allowing organizations to expand
+                    capabilities without
+                    disruption, based on their priorities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="sectionThree">
     <div class="sectionThree-container px-120">
         <div class="d-flex flex-column gap24 sectionThree-titles">
             <span class="font-medium text-center subtitle24px color-linearGradient">
@@ -95,7 +329,7 @@
             <h1 class="text-center font-bold subtitle48px" data-aos="fade-down">
                 {{ 'HOME.Sec2.TITLE' | translate }}
             </h1>
-            <p class=" text-center subtitle20px style-font">{{ 'HOME.Sec2.Description' | translate }}</p>
+            <p class=" text-center subtitle22px style-font">{{ 'HOME.Sec2.Description' | translate }}</p>
         </div>
         <div class="d-flex fx-sectionThree">
             <div *ngFor="let box of boxes; let i = index" class="d-flex sectionThree-box"
@@ -117,8 +351,8 @@
 
         </div>
     </div>
-</section>
-<section class="sectionVideos">
+</section> -->
+<!-- <section class="sectionVideos">
     <div class="sectionVideos-container ">
         <div class="divTitles">
             <span class="font-medium text-center subtitle24px color-linearGradient d-block span-head">{{
@@ -138,13 +372,12 @@
                     <video #videoPlayer class="mainVideo" [attr.src]="mainVideo.src" controls muted
                         crossorigin="anonymous" poster="assets/images/backVideo.jfif">
                         Your browser does not support the video tag. </video>
-                    <!-- <video #videoPlayer class="mainVideo" controls muted crossorigin="anonymous">
+                    <video #videoPlayer class="mainVideo" controls muted crossorigin="anonymous">
                         <source [attr.src]="mainVideo.src" [attr.type]="mainVideo.type">
                         Your browser does not support the video tag.
-                    </video> -->
+                    </video>
 
                 </div>
-                <!-- Thumbnails -->
                 <div class="d-flex video-thumbnails fxGeneral-cards">
                     <div class="thumbnail" *ngFor="let video of plyrList" (click)="changeVideo(video)">
                         <img src="assets/images/play-button.svg" alt="play-button" class="play-button">
@@ -158,7 +391,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
 <section class="sectionFive">
     <div class="sectionFive-container">
@@ -177,7 +410,6 @@
 
     </div>
 </section>
-<!-- <app-people-saying></app-people-saying> -->
 <section class="sectionFour">
     <div class="sectionFour-container px-120">
         <div class="d-flex fx-sectionFour">
@@ -223,6 +455,7 @@
 
     </div>
 </section>
+<app-section-insights></app-section-insights>
 <section class="sectionSeven">
     <div class="sectionSeven-container px-120">
         <div class="d-flex fx-sectionSeven">
@@ -255,7 +488,7 @@
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
 
-                <h1 class=" subtitle48px font-bold mb-0">{{ 'HOME.Sec5.TITLE' | translate }}</h1>
+                <h1 class=" subtitle40px font-bold mb-0">{{ 'HOME.Sec5.TITLE' | translate }}</h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">

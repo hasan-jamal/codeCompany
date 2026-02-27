@@ -1,0 +1,111 @@
+/* Start Insights Section  */
+.sectionInsights{
+    margin-bottom: 7rem;
+}
+.sectionInsights .sliderInsights .slide{
+  padding: 0 1.8rem;
+}
+.sectionInsights .fxTitle{
+    margin: 2rem 0;
+}
+.sectionInsights .divImage{
+    aspect-ratio:3/2;
+}
+.sectionInsights .divImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+}
+.sectionInsights .divContent{
+    padding: 1.7rem;
+    background: #fff;
+    border-radius: 11px;
+    top: -3rem;
+    left: 1.5rem;
+    position: relative;
+    aspect-ratio: 3.1/2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.sectionInsights .divContent .divBtns{
+    gap: 2%;
+    margin-bottom: 1.4rem;
+}
+.sectionInsights .divContent .divBtns button{
+   border-radius: 7px;
+    transition: 0.3s;
+    width: max-content;
+    padding: 0.5rem;
+}
+.sectionInsights .divContent .divBtns .btn-category{
+    border-radius: 7px; 
+    border: 1px solid transparent; 
+    background: 
+        linear-gradient(#fff, #fff) padding-box, 
+        linear-gradient(109deg, #FAA26B 14.67%, #E74B62 110.18%) border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.sectionInsights .divContent .divBtns .btn-category span{
+  background: linear-gradient(270deg, #E74B62 0%, #FAA26B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.sectionInsights .divContent .divBtns button:hover {
+    transform: translateY(-5px);
+}
+.sectionInsights .divContent h2{
+    margin-bottom: 1rem;
+      display: -webkit-box;
+  -webkit-line-clamp: 1;    
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.sectionInsights .divContent p{
+    margin-bottom: 1.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;    
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 140%;
+}
+.sectionInsights .divContent .readMoreBtn{
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: auto;
+}
+.sectionInsights .divContent .readMoreBtn:hover{
+    transform: translateY(-3px);
+}
+.sectionInsights .divContent .readMoreBtn:hover span{
+    color: #fb711b;
+}
+  @media (min-width:1706.67px) {}
+  @media (min-width:1920px) {}
+  @media (min-width:2048px) { }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {}
+  @media (max-width:1228.8px) {
+    .sectionInsights .divContent h2{margin-bottom: 0.5rem;}
+    .sectionInsights .divContent p{margin-bottom: 0.8rem;}
+    .sectionInsights .divContent .divBtns{gap: 0.8rem;}
+  }
+  @media (max-width:1024px) {}
+  @media (max-width:877.71px) {}
+  @media (max-width:768px) {}
+  @media (max-width:614.4px) {
+    .sectionInsights{margin-bottom: 3rem;}
+    .sectionInsights .divContent {
+    padding: 1rem;
+        top: -2rem;
+        left: 1rem;
+    }
+  }
+  @media (max-width:512px) {}

@@ -770,4 +770,18 @@
     .aboutSNine .fxCardsTeam .divTwo span{font-size: 13px;}
     .aboutSNine .fxCardsTeam{margin-top: 24px;}
 }
-@media (max-width:512px) {}
+/* Section Map */
+.sectionMap .divTitles{
+    margin: 0;
+    margin-left: -5rem;
+}
+.sectionMap .divImage{
+    width: 60%;
+    cursor: pointer;
+}
+.sectionMap .divImage img{width: 100%;object-fit: contain;}
+@media (max-width:614.4px) {
+    .sectionMap .divTitles{order: 1;margin-left: 0;}
+    .sectionMap .divImage{order: 2;width: 100%;}
+    .fx-sectionMap{flex-direction: column;gap: 1.5rem;}
+}
