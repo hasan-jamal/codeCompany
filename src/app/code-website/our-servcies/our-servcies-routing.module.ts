@@ -12,34 +12,24 @@ const routes: Routes = [
         loadChildren: () =>
           import('./ai-solutions/ai-solutions.module').then(m => m.AiSolutionsModule)
       },
-      {
-        path: 'AutomationAndSecurity',
+        {
+        path: 'ICT-Solutions',
         loadChildren: () =>
-          import('./automation-security/automation-security.module').then(m => m.AutomationSecurityModule)
+          import('./ict-solutions/ict-solutions.module').then(m => m.IctSolutionsModule)
       },
       {
-        path: 'Passive&CivilWork',
+        path: 'AI-Packages',
         loadChildren: () =>
-          import('./passive-civil-work/passive-civil-work.module').then(m => m.PassiveCivilWorkModule)
+          import('./ai-packages/ai-packages.module').then(m => m.AiPackagesModule)
       },
       {
-        path: 'Data&CloudEngineering',
+        path: 'DigitalTransformation',
         loadChildren: () =>
-          import('./data-cloud-engineering/data-cloud-engineering.module').then(m => m.DataCloudEngineeringModule)
-      },
-      {
-        path: 'Software&Development',
-        loadChildren: () =>
-          import('./software-development/software-development.module').then(m => m.SoftwareDevelopmentModule)
-      },
-      {
-        path: 'DigitalHealthcare',
-        loadChildren: () =>
-          import('./digital-healthcare/digital-healthcare.module').then(m => m.DigitalHealthcareModule)
+          import('./digital-transformation/digital-transformation.module').then(m => m.DigitalTransformationModule)
       },
       {
         path: '',
-        redirectTo: 'AISolutions',
+        redirectTo: 'AI-Packages',
         pathMatch: 'full'
       }
     ]

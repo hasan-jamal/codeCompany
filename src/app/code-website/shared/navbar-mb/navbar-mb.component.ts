@@ -60,6 +60,7 @@ export class NavbarMbComponent{
     this.modalService.open('modalJoinUs');
   }
     switchLanguage(lang: string) {
+      if (isPlatformBrowser(this.platformId)) {
     this.translate.use(lang);
     localStorage.setItem('lang', lang);
     this.lang = lang;
@@ -69,5 +70,6 @@ export class NavbarMbComponent{
       } else {
         document.body.classList.remove('rtl');
       }
+    }
   }
 }

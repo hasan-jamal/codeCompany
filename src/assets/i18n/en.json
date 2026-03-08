@@ -2105,6 +2105,85 @@
     "PREV": "Previous Slide",
     "NEXT": "Next Slide"
   }
-}
+},
+
+  "ServicesMenu": {
+    "KnowMore": "Know more",
+    "AIPackages": {
+      "Title": "AI Packages",
+      "Subtitle": "AI-powered systems for safer, smarter environments",
+      "Explore": "Explore our AI Packages",
+      "Cards": {
+        "Security": { "Name": "AI Smart Security Management", "Desc": "Proactive security driven by real-time intelligence" },
+        "Facility": { "Name": "AI Smart Facility Management", "Desc": "Predictive operations for efficient, resilient facilities" },
+        "City": { "Name": "AI Smart City Management", "Desc": "City-wide intelligence for scalable urban performance" },
+        "Theaters": { "Name": "Smart Hybrid Theaters", "Desc": "Intelligent venues designed for immersive public experiences" }
+      }
+    },
+    "AISolutions": {
+      "Title": "AI Solutions",
+      "Subtitle": "Scalable AI solutions for complex environments",
+      "Explore": "Explore our AI Solutions",
+      "Cards": {
+        "DigitalTwin": { "Name": "AI Digital Twin", "Desc": "Real-time digital replicas for predictive control" },
+        "ComputerVision": { "Name": "AI Computer Vision", "Desc": "Transform surveillance into real-time intelligence" },
+        "Voicebots": { "Name": "Voicebots / Chatbots", "Desc": "Automated communication with human-level clarity" },
+        "Wayfinding": { "Name": "Indoor Wayfinding", "Desc": "Precise guidance across complex environments" },
+        "SmartCabins": { "Name": "Smart Cabins", "Desc": "Secure, self-contained intelligent environments" }
+      }
+    },
+    "DigitalTransformation": {
+      "Title": "Digital Transformation",
+      "Subtitle": "Strategic foundations for sustainable digital growth",
+      "Explore": "Explore our Digital Services",
+      "Cards": {
+        "EA": { "Name": "EA Services", "Desc": "Architectural clarity for complex digital ecosystems" },
+        "NDMO": { "Name": "NDMO Services", "Desc": "Ensure national data governance compliance with confidence" },
+        "DGA": { "Name": "DGA Consulting Services", "Desc": "Advance digital maturity under DGA frameworks" },
+        "InnovationHub": { "Name": "Innovation Hub", "Desc": "From concept to deployment in controlled innovation spaces" }
+      }
+    },
+    "ICTSolutions": {
+      "Title": "ICT Solutions",
+      "Subtitle": "Scalable ICT systems built for performance and control",
+      "Explore": "Explore our ICT Solutions",
+      "SubCategories": {
+        "PassiveCivil": "Passive & Civil Work",
+        "Healthcare": "Digital Healthcare",
+        "DataCloud": "Data & Cloud Engineering",
+        "Automation": "Automation & Security",
+        "Software": "Software & Development"
+      },
+      "Cards": {
+        "PassiveCivil": {
+          "CommandCenter": { "Name": "Command Center", "Desc": "Centralized command for faster, informed decisions" },
+          "MediaCenter": { "Name": "Media Center", "Desc": "Secure environments for strategic communication" },
+          "NocSoc": { "Name": "NOC & SOC", "Desc": "Integrated oversight for network and threat control" },
+          "MeetingRooms": { "Name": "Meeting Rooms", "Desc": "Smart environments for secure, high-performance meetings" },
+          "BusinessResearch": { "Name": "Business Research Center", "Desc": "Immersive spaces for insight and strategic dialogue" }
+        },
+        "Healthcare": {
+          "HIS": { "Name": "HIS (Hospital Information Systems)", "Desc": "Centralized command for faster, informed decisions" },
+          "RCM": { "Name": "RCM (Revenue Cycle Management)", "Desc": "Secure environments for strategic communication" },
+          "DRG": { "Name": "DRG (Diagnosis-Related Group)", "Desc": "Structured reimbursement through accurate case classification" },
+          "TeleMedicine": { "Name": "Tele-medicine", "Desc": "Extend clinical services beyond physical facilities" }
+        },
+        "DataCloud": {
+          "DataEngineering": { "Name": "Data Engineering & Management", "Desc": "Centralized command for faster, informed decisions" },
+          "DatabaseConsolidation": { "Name": "Database Consolidation", "Desc": "Eliminate silos through structured data integration" },
+          "DisasterRecovery": { "Name": "Disaster Recovery Solutions", "Desc": "Rapid recovery to protect critical operations" },
+          "ITSM": { "Name": "ITSM", "Desc": "Structured IT governance for reliable service delivery" }
+        },
+        "Automation": {
+          "DigitalSignature": { "Name": "Digital Signature", "Desc": "Accelerate approvals with trusted digital authentication" },
+          "RPA": { "Name": "RPA (UiPath)", "Desc": "Automate repetitive processes with precision and control" }
+        },
+        "Software": {
+          "WebApp": { "Name": "Web & Mobile App Development", "Desc": "Secure, scalable web and mobile platforms" },
+          "SharePoint": { "Name": "SharePoint Solutions", "Desc": "Smart environments tailored to your workflows" }
+        }
+      }
+    }
+  }
 
 }

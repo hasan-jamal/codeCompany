@@ -50,6 +50,243 @@ header .fx-header .btn-header button.btnLang{
   width: max-content;
   padding: 0 1rem;
 }
+.nav-item-wrapper .btnOurService{
+  position: relative;
+  z-index: 100;
+}
+.solutions-drop-down{
+  padding: 1.5rem;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #E6F3FF;
+  box-sizing: border-box;
+ border-radius: 10px;
+ aspect-ratio: 5/2;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  background: linear-gradient(90deg, #E7F3FF 0%, #E5EDF6 100%);
+}
+.solutions-drop-down::-webkit-scrollbar {
+  width:3px;
+}
+.solutions-drop-down::-webkit-scrollbar-track {
+  background: transparent;
+}
+.solutions-drop-down::-webkit-scrollbar-thumb {
+  background: #FF5F29;
+  border-radius: 10px;
+}
+.solutions-drop-down::before {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1; 
+  background: linear-gradient(90deg, #E7F3FF 0%, #E5EDF6 100%);
+  filter: blur(4px);
+}
+.solutions-drop-down .fxDropDown{
+  gap: 14px;
+}
+.solutions-drop-down .fxDropDown .solutionsBtns{
+  gap: 10px;
+  width: 30%;
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns {
+  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent; 
+  transition: border-color 0.2s ease, background-color 0.2s ease; 
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns:hover,
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns.active {
+  border-color: #006DC6; 
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxOne{
+  gap: 1.5rem;
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxTow{
+  gap: 13px;
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxTow .serviceTitleImg{
+  width: 20%;
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxOne .arrowGrey{
+  width: 4%;
+}
+.solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxTow .divText{
+  gap: 4px;
+  align-items: start;
+  text-align: start;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions{
+  width: 70%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .fx-listServices{
+  margin-bottom: 20px;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .textTitle{
+  width: 80%;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .dropdownSubServices{position: relative;}
+.solutions-drop-down .fxDropDown .listServicesSolutions .mainSubService{
+  gap: 8px;
+  background: #FEEFE6;
+  padding: 0.5rem 1rem;
+  border: 1px solid #FF5F29;
+  border-radius: 93px;
+  width: max-content;
+  transition: 0.3s;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .mainSubService:hover{
+  transform: scale(1.01);
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .mainSubService span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .mainSubService img{width: 4%;}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 99;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices::-webkit-scrollbar {
+  width: 5px;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices::-webkit-scrollbar-track {
+  background: transparent;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices::-webkit-scrollbar-thumb {
+  background: #FF5F29;
+  border-radius: 10px;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices a {
+  display: block;
+  color: #FF5F29;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 95, 41, 0.15);
+  transition: all 0.3s ease;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices a:last-child {
+  border-bottom: none;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices a:hover {
+  background-color: rgba(255, 95, 41, 0.05);
+  letter-spacing: 0.5px;
+}
+.solutions-drop-down .fxDropDown .listServicesSolutions .subServices a:last-child{
+  border: none;
+}
+@media (max-width: 768px) {
+  .solutions-drop-down .fxDropDown .listServicesSolutions .subServices {
+    max-height: 250px;
+  }
+
+  .solutions-drop-down .fxDropDown .listServicesSolutions .subServices a {
+    padding: 1rem 1.2rem;
+    font-size: 16px;
+  }
+}
+.solutions-drop-down .listServicesSolutions .slide{
+  margin: 0 0.5rem;
+}
+.solutions-drop-down .listServicesSolutions .card-service{
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #EAEFF5;
+  width: 100%;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divImage{
+  aspect-ratio: 4/2;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divImage img{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divText{
+  padding: 20px 14px;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divText h4{
+  padding-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-align: start;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divText p{
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-align: start;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divText button{
+  margin-left: auto;
+  gap: 4px;
+  transition: 0.3s;
+}
+.solutions-drop-down .listServicesSolutions .card-service .divText button:hover{
+  transform: scale(1.03);
+}
+.solutions-drop-down .listServicesSolutions .fxExplore{
+  margin-top: 28px;
+}
+.solutions-drop-down .listServicesSolutions .fxExplore .btnExplore{
+  padding: 10px 1.5rem;
+  border-radius: 5px;
+}
+.solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader{
+  gap: 0.5rem;
+}
+.solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader button{
+  background: none;
+  border: none;
+  transition: 0.3s;
+  width: 50%;
+}
+.solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader button img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) saturate(100%) invert(95%) sepia(10%) saturate(92%) hue-rotate(170deg) brightness(90%) contrast(92%);
+}
+.solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader button:hover{
+  transform: scale(1.03);
+}
+.solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader button:hover img,
+.solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader button.active img{
+  filter: brightness(0) saturate(100%) invert(73%) sepia(34%) saturate(4956%) hue-rotate(333deg) brightness(100%) contrast(96%);
+}
   /* Just for copy */
   @media (min-width:1706.67px) {
     header .btnServicesHeader .listAboutHeader{width: 180px;}
@@ -65,9 +302,28 @@ header .fx-header .btn-header button.btnLang{
    }
   @media (min-width:2304px) {}
   @media (max-width:1396.36px) {}
-  @media (max-width:1228.8px) {}
-  @media (max-width:1024px) {}
-  @media (max-width:877.71px) {}
+  @media (max-width:1228.8px) {
+    .solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxOne{gap: 1rem;}
+    .solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns{padding: 1rem;}
+    .solutions-drop-down .listServicesSolutions .fxExplore{margin-top: 20px;}
+    .solutions-drop-down .fxDropDown .listServicesSolutions .fx-listServices{margin-bottom: 1rem;}
+    .solutions-drop-down .fxDropDown .listServicesSolutions{padding: 1rem;}
+  }
+  @media (max-width:1024px) {
+    .solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns .fxOne{gap: 0.5rem;}
+    .solutions-drop-down .fxDropDown .solutionsBtns .btn-solutionsBtns{padding: 0.6rem;}
+    .solutions-drop-down .listServicesSolutions .fxExplore{margin-top: 1rem;}
+    .solutions-drop-down .subtitle14px{font-size: 11px;}
+    .solutions-drop-down .subtitle16px{font-size: 13px;}
+    .solutions-drop-down .fxDropDown .listServicesSolutions .fx-listServices{margin-bottom: 0.7rem;}
+    .solutions-drop-down .listServicesSolutions .fxExplore .arrowsSliderHeader button{width: 35%;}
+  }
+  @media (max-width:877.71px) {
+    .solutions-drop-down .subtitle14px{font-size: 10px;}
+    .solutions-drop-down .subtitle16px{font-size: 12px;}
+    .solutions-drop-down .listServicesSolutions .fxExplore{margin-top: 0.5rem;}
+    .solutions-drop-down .fxDropDown .listServicesSolutions .fx-listServices{margin-bottom: 0.5rem;}
+  }
   @media (max-width:768px) {}
   @media (max-width:614.4px) {}
   @media (max-width:512px) {}

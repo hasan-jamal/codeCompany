@@ -186,7 +186,6 @@ header .fx-header .links-header .linkStyle{
   color: #001C33;
   font-size: 20px;
 }
-header .fx-header .links-header button{background: none;}
 header .fx-header .btn-header button{
   border-radius: 5px;
   height: 44px;
@@ -291,6 +290,7 @@ header .btnServicesHeader .fx-listServices a:hover{
 .dropDownActive img{
     filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(3766%) hue-rotate(332deg) brightness(100%) contrast(96%);
 }
+
 @media (min-width:1706.67px) {
   header .fx-header .links-header{gap: 20px;}
   header .fx-header .btn-header button{height: 50px;font-size: 22px;width: 190px;}
