@@ -16,7 +16,8 @@ let isFirstLoad = true;
     CommonModule, 
     SlickCarouselModule,
     SectionInsightsComponent,
-    TranslateModule
+    TranslateModule,
+    RouterLink
     // PeopleSayingComponent
   ],
   templateUrl: './home.component.html',
@@ -206,8 +207,6 @@ boxes = [
     pathBtn: "AISolutions/AiComputerVision"
   }
 ];
-
-
   activateFirstBox(): void {
     const firstBox = this.boxes[0];
     firstBox.isActive = true;

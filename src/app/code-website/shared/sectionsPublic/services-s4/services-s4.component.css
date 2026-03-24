@@ -6,10 +6,9 @@
     gap: 20px;
 }
 .servicesS4 .fxServicesS4 a{
-    flex: 1 1 calc(33.3% - 20px);
-    max-width: calc(33.3% - 0px);
-    padding: 0 40px;
-    height: 110px;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 0px);
+    padding: 0 1.5rem;
     border-radius: 15px;
     background: #FFF;
     gap: 8px;
@@ -17,40 +16,42 @@
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.07);
     transition: all 0.3s ease;
     text-decoration: none;
+    justify-content: center;
 }
 
 .servicesS4 .fxServicesS4 a:hover,
 .servicesS4 .fxServicesS4 a.active{
-    border: 1px solid #F83908;
+    border: 2px solid #0255a3;
 }
 .servicesS4 .fxServicesS4 a:hover span,
 .servicesS4 .fxServicesS4 a.active span{
-    color: #F83908;
+    color: #0255a3;
+    font-weight: 500;
 }
+.servicesS4 .fxServicesS4 a img{width: 20%;}
 @media (min-width:1706.67px) {
-    .servicesS4 .fxServicesS4 a{ height: 120px;gap: 12px;}
 }
 @media (min-width:1920px) {
-    .servicesS4 .fxServicesS4 a{height: 130px;gap: 1rem;}
-    .servicesS4 .fxServicesS4 a img{width:70px;}
 }
 @media (min-width:2048px) {
-    .servicesS4 .fxServicesS4 a{height: 140px;}
  }
 @media (min-width:2304px) {}
 @media (max-width:1396.36px) {
-    .servicesS4 .fxServicesS4 a{padding: 0 35px; height: 105px;}
+    .servicesS4 .fxServicesS4 a{padding: 0 20px;}
 }
 @media (max-width:1228.8px) {
-    .servicesS4 .fxServicesS4 a{padding: 0 30px; height: 100px;}
-    .servicesS4 .fxServicesS4 a img{width: 35px;}
+    .servicesS4 .fxServicesS4 a{padding: 0 1rem;}
+    .servicesS4 .fxServicesS4 a span{font-size: 15px;}
 }
-@media (max-width:1024px) {
-    .servicesS4 .fxServicesS4 a{padding: 0 20px; height: 90px;}
-    .servicesS4 .fxServicesS4 a img{width: 30px;}
+@media (max-width:1024px) {   
+    .servicesS4 .fxServicesS4 a{height: 70px;border-radius: 10px;}
+    .servicesS4 .fxServicesS4 a span{font-size: 13px;}
 }
 @media (max-width:877.71px) {
-    .servicesS4 .fxServicesS4 a img{width: 25px;}
+    .servicesS4 .fxServicesS4 a{
+        flex: 1 1 calc(33.3% - 20px);
+        max-width: calc(33.3% - 0px);
+    }
 }
 @media (max-width:768px) {}
 @media (max-width:614.4px) {
@@ -58,7 +59,6 @@
     .servicesS4 .fxServicesS4 a{
         flex: 1 1 calc(50% - 8px);
         max-width: calc(50% - 0px);
-        height: 73px;
         padding: 0 12px;
     }
     .servicesS4 .fxServicesS4 a img{width: 28px;}

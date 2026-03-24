@@ -162,6 +162,11 @@
 }
 /* Section Services 3 Style */
 .servicesS3{margin-top: 100px;}
+.servicesS3 .ourServiceFlow-titles h1{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
 .servicesS3 .ourServiceFlow-titles p{
     width: 70%;
     margin: auto;
@@ -175,7 +180,7 @@
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% - 0px);
     position: relative;
-    height: 386px;
+    aspect-ratio: 2.2/2;
 }
 .servicesS3 .fx-servicesS3 .box .divOne{
     background-position: top;
@@ -186,7 +191,6 @@
     justify-content: start;
     position: relative;
     align-items: end;
-
     opacity: 1;
     visibility: visible;
     width: 100%;
@@ -209,7 +213,7 @@
 .servicesS3 .fx-servicesS3 .box .divOne h3{
     padding: 0 16px 30px 16px;
     position: relative;
-    width: 85%;
+    width: 80%;
     z-index: 2;
     height: max-content;
 }
@@ -299,14 +303,11 @@
     .servicesS3 .fx-servicesS3 .box .divArrow img{width: 88px;height: 88px;}
   }
   @media (min-width:2048px) { 
-    .servicesS3 .fx-servicesS3 .box{height:460px;}
   }
   @media (min-width:2304px) {}
   @media (max-width:1396.36px) {
-        .servicesS3 .fx-servicesS3 .box{height: 336px;}
   }
   @media (max-width:1228.8px) {
-    .servicesS3 .fx-servicesS3 .box{height: 306px;}
     .servicesS3 .fx-servicesS3 .box .divArrow{padding: 12px;}
     .servicesS3 .fx-servicesS3 .box .divArrow img{width: 55px;height: 55px;}
   }
@@ -315,14 +316,12 @@
     .servicesS3 .fx-servicesS3 .box .divArrow img{width: 45px;height: 45px;}
   }
   @media (max-width:877.71px) {
-        .servicesS3 .fx-servicesS3 .box{height: 246px;}
         .servicesS3 .fx-servicesS3 .box{
             flex: 1 1 calc(50% - 20px);
             max-width: calc(50% - 0px);}
   }
   @media (max-width:768px) {
     .servicesS3{margin-top: 70px;}
-    .servicesS3 .fx-servicesS3 .box{height:240px;}
   }
   @media (max-width:614.4px) {
      .servicesS3 .fx-servicesS3{
@@ -331,6 +330,7 @@
         margin: auto;
         margin-top: 32px;
     }
+    .servicesS3 .ourServiceFlow-titles h1{width: 100%;margin-bottom: 1rem;}
      .servicesS3 .fx-servicesS3 .box{background-position: center;}
     .servicesS3 .fx-servicesS3 .box{
         flex: 1 1 calc(100% - 16px);
@@ -352,6 +352,7 @@
 .servicesS5 .ourServiceFlow-titles{
     width: 70%;
     margin: auto;
+    margin-bottom: 1.5rem;
 }
 .servicesS5 .fxServicesS5{
     gap: 38px;

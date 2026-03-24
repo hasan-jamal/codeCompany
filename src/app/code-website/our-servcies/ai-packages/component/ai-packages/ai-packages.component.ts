@@ -5,6 +5,7 @@ import { ServicesS4Component } from '../../../../shared/sectionsPublic/services-
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ModalService } from '../../../../../services/ModalService';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-ai-packages',
@@ -13,7 +14,8 @@ import { ModalService } from '../../../../../services/ModalService';
     OurServiceFlowComponent,
      ServicesS4Component,
      CommonModule,
-     TranslateModule
+     TranslateModule,
+     SlickCarouselModule
     ],
   templateUrl: './ai-packages.component.html',
     styleUrls: ['./ai-packages.component.css',
@@ -35,51 +37,35 @@ serviceCards = [
   {
     id: 1,
     isHovered: false,
-    nameKey: "SERVICE_CARDS.AISolutions.AIDigitalTwin.name",
-    descKey: "SERVICE_CARDS.AISolutions.AIDigitalTwin.description",
+    nameKey: "AI Smart Security Management",
+    descKey: "Turn raw data into reliable, analytics-ready assets with tools for governance, machine learning, and real-time insights.",
     link: "/ourServices/AISolutions/AIDigitalTwin",
-    imageUrl: "assets/images/CodeServices/AIDigitalTwin-min.png"
+    imageUrl: "assets/images/AIPackages-services/s1.jpeg"
   },
   {
     id: 2,
     isHovered: false,
-    nameKey: "SERVICE_CARDS.AISolutions.AIComputerVision.name",
-    descKey: "SERVICE_CARDS.AISolutions.AIComputerVision.description",
+    nameKey: "AI Smart Facility Management",
+    descKey: "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights.",
     link: "/ourServices/AISolutions/AiComputerVision",
-    imageUrl: "assets/images/CodeServices/AIComputerVisionmin.jpeg"
+    imageUrl: "assets/images/AIPackages-services/s2.jpg"
   },
   {
     id: 3,
     isHovered: false,
-    nameKey: "SERVICE_CARDS.AISolutions.AIVoicebotsChatbots.name",
-    descKey: "SERVICE_CARDS.AISolutions.AIVoicebotsChatbots.description",
+    nameKey: "AI Smart City Management",
+    descKey: "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights.",
     link: "/ourServices/AISolutions/AiVoicebotChatbot",
-    imageUrl: "assets/images/CodeServices/AIVoicebotsChatbots-min.jpeg"
+    imageUrl: "assets/images/AIPackages-services/s3.jpeg"
   },
   {
     id: 4,
     isHovered: false,
-    nameKey: "SERVICE_CARDS.AISolutions.AIInnovationHub.name",
-    descKey: "SERVICE_CARDS.AISolutions.AIInnovationHub.description",
+    nameKey: "Smart Hybrid Theaters",
+    descKey: "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights.",
     link: "/ourServices/AISolutions/AiInnovationHub",
-    imageUrl: "assets/images/CodeServices/AIInnovationHub-min.png"
+    imageUrl: "assets/images/AIPackages-services/s4.png"
   },
-  {
-    id: 5,
-    isHovered: false,
-    nameKey: "SERVICE_CARDS.AISolutions.IndoorWayfinding.name",
-    descKey: "SERVICE_CARDS.AISolutions.IndoorWayfinding.description",
-    link: "/ourServices/AISolutions/IndoorWayfinding",
-    imageUrl: "assets/images/CodeServices/IndoorWayfinding-min.jpeg"
-  },
-  {
-    id: 6,
-    isHovered: false,
-    nameKey: "SERVICE_CARDS.AISolutions.SmartCabins.name",
-    descKey: "SERVICE_CARDS.AISolutions.SmartCabins.description",
-    link: "/ourServices/AISolutions/smartCabins",
-    imageUrl: "assets/images/CodeServices/SmartCabinets.png"
-  }
 ];
 
   onMouseEnter(card: any) {
@@ -88,4 +74,38 @@ serviceCards = [
   onMouseLeave(card: any) {
     card.isHovered = false;
   }
+
+  slideConfig = {
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "arrows": false, 
+    "dots": false, 
+    "autoplay": true,
+    "autoplaySpeed": 3000,
+    "infinite": true
+  };
+
+  slidesData = [
+    {
+      features: [
+        'Continuous visibility and monitoring',
+        'Fast, coordinated response',
+        'Reliable, real-time data',
+        'Clear operational ownership',
+        'Scalable deployment'
+      ],
+      image: 'assets/images/AIPackages-services/2.jpeg',
+      altText: 'Operational Environment UI'
+    },
+    {
+      features: [
+        'Advanced AI Analytics',
+        'Automated reporting generation',
+        'Customizable dashboards',
+        '24/7 Support and maintenance'
+      ],
+      image: 'assets/images/AIPackages-services/2-1.jpg',
+      altText: 'Analytics Dashboard UI'
+    }
+  ];
 }

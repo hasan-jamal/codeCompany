@@ -1,0 +1,80 @@
+.ai-security-section {
+  background-color: #F4F8FA; 
+  margin-bottom: 140px;
+  gap: 2rem;
+}
+.ai-security-section-text-red {
+  color: #F05D5B;
+}
+.ai-security-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 24px;
+}
+.ai-security-section-icon-box {
+  width: 72px;
+  height: 72px;
+  background-color: #FEECE9;
+  border-radius: 16px; 
+}
+@media (max-width: 1228.8px) {
+  .ai-security-section-grid {
+    gap: 32px 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .ai-security-section {
+    flex-direction: column;
+  }
+  .ai-security-section-grid {
+    margin-top: 24px;
+  }
+  .ai-security-section{margin-bottom: 90px;}
+}
+@media (max-width: 614.4px) {
+  .ai-security-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ai-security-section{gap: 1rem;}
+  .ai-security-section-icon-box {
+    width: 64px;
+    height: 64px;
+  }
+    .ai-security-section{margin-bottom: 120px;}
+}
+
+
+
+body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{
+    height: auto;
+    max-height: 400px;
+}
+@media (min-width:1706.67px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 500px;}
+  }
+  @media (min-width:1920px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 550px;}
+  }
+  @media (min-width:2048px) { 
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 600px;}
+  }
+  @media (max-width:1396.36px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 350px;}
+  }
+  @media (max-width:1228.8px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 300px;}
+  }
+    @media (max-width:1024px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 250px;}
+  }
+  @media (max-width:877.71px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 230px;min-height: 230px;}
+  }
+  @media (max-width:614.4px) {
+    body .serviceDetailsS3 .fx-serviceDetailsS3 .serviceDetailsS3-imgs img{max-height: 100%;min-height: 100%;}
+  }
+
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-texts{order: 1;}
+.fx-serviceDetailsS3:nth-child(odd) .serviceDetailsS3-imgs{order: 2;}
+.fx-serviceDetailsS3:nth-child(even) .serviceDetailsS3-texts{order: 2;}
+.fx-serviceDetailsS3:nth-child(even) .serviceDetailsS3-imgs{order: 1;}

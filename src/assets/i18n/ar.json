@@ -1839,16 +1839,6 @@
     "email": "البريد الإلكتروني",
     "buttonClose": "❌ إغلاق"
   },
-    "SERVICESNAMES": {
-    "servicesS4": {
-      "AISolutions": "حلول الذكاء الاصطناعي",
-      "AutomationAndSecurity": "الأتمتة والأمن",
-      "DigitalHealthcare": "الرعاية الصحية الرقمية",
-      "PassiveCivilWork": "الأعمال المدنية والباسته",
-      "DataCloudEngineering": "هندسة البيانات والحوسبة السحابية",
-      "SoftwareDevelopment": "تطوير البرمجيات"
-    }
-  },
   "SERVICE_CARDS": {
     "AISolutions": {
       "AIDigitalTwin": {

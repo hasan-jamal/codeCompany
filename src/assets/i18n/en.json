@@ -1872,16 +1872,6 @@
     "email": "Email",
     "buttonClose": "❌ Close"
   },
-    "SERVICESNAMES": {
-    "servicesS4": {
-      "AISolutions": "AI solutions",
-      "AutomationAndSecurity": "Automation & Security",
-      "DigitalHealthcare": "Digital Healthcare",
-      "PassiveCivilWork": "Passive & Civil Work",
-      "DataCloudEngineering": "Data & Cloud Engineering",
-      "SoftwareDevelopment": "Software & Development"
-    }
-  },
     "SERVICE_CARDS": {
     "AISolutions": {
       "AIDigitalTwin": {
