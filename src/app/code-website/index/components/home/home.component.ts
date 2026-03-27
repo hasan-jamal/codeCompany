@@ -6,6 +6,7 @@ import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { ModalService } from '../../../../services/ModalService';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SectionInsightsComponent } from '../../../shared/section-insights/section-insights.component';
+import { YouTubePlayer, YouTubePlayerModule } from '@angular/youtube-player';
 
 let isFirstLoad = true;
 
@@ -17,7 +18,8 @@ let isFirstLoad = true;
     SlickCarouselModule,
     SectionInsightsComponent,
     TranslateModule,
-    RouterLink
+    RouterLink,
+    YouTubePlayerModule
     // PeopleSayingComponent
   ],
   templateUrl: './home.component.html',
@@ -78,11 +80,23 @@ constructor(
   ];
 
   ngOnInit(): void {
-     this.activateFirstBox();
-     this.mainVideo = this.plyrList[0];
-     this.plyrList = this.plyrList.slice(1)
+    this.activateFirstBox();
+    this.mainVideo = this.plyrList[0];
+    this.plyrList = this.plyrList.slice(1);
 
-     if (isFirstLoad) {
+    // --- التعديل هنا ---
+    if (isPlatformBrowser(this.platformId)) {
+      // التحقق مما إذا كان السكربت موجوداً مسبقاً لتجنب التكرار
+      if (!document.getElementById('youtube-iframe-api')) {
+        const tag = document.createElement('script');
+        tag.id = 'youtube-iframe-api'; // إضافة ID للسكربت
+        tag.src = "https://www.youtube.com/iframe_api";
+        document.body.appendChild(tag);
+      }
+    }
+    // -------------------
+
+    if (isFirstLoad) {
       isFirstLoad = false;
       setTimeout(() => {
         this.startTyping();
@@ -90,7 +104,7 @@ constructor(
     } else {
       this.startTyping();
     }
-  }
+}
   resetTyping() {
     this.typedText = '';
     this.currentIndex = 0;
@@ -498,45 +512,97 @@ onReadMoreClick(event: Event) {
 
 
 
-@ViewChild('videoAISmartSecurity') videoAISmartSecurity!: ElementRef<HTMLVideoElement>;
-@ViewChild('videoAISmartFacility') videoAISmartFacility!: ElementRef<HTMLVideoElement>;
+// @ViewChild('videoAISmartSecurity') videoAISmartSecurity!: ElementRef<HTMLVideoElement>;
+// @ViewChild('videoAISmartFacility') videoAISmartFacility!: ElementRef<HTMLVideoElement>;
 
-activeTab: string = 'security';
-isVideoPlaying: boolean = false;
-isVideoAiSmartfacilityPlaying: boolean = false;
+// activeTab: string = 'security';
+// isVideoPlaying: boolean = false;
+// isVideoAiSmartfacilityPlaying: boolean = false;
 
-AISmartSecurityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
-AISmartfacilityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
+// AISmartSecurityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
+// AISmartfacilityVideo = { src: 'https://res.cloudinary.com/dx2ah9foq/video/upload/v1746881529/videoOne_gpt6dw.mp4' }; 
 
-setActiveTab(tab: string) {
+// setActiveTab(tab: string) {
+//     this.activeTab = tab;
+//     this.stopAllVideos();
+// }
+
+// stopAllVideos() {
+//     if (this.videoAISmartSecurity?.nativeElement) {
+//         this.videoAISmartSecurity.nativeElement.pause();
+//         this.isVideoPlaying = false;
+//     }
+//     if (this.videoAISmartFacility?.nativeElement) {
+//         this.videoAISmartFacility.nativeElement.pause();
+//         this.isVideoAiSmartfacilityPlaying = false;
+//     }
+// }
+
+// playVideo() {
+//     this.isVideoPlaying = true; 
+//     this.videoAISmartSecurity.nativeElement.play();
+// }
+// onVideoPause() {
+//     this.isVideoPlaying = false; 
+// }
+
+// playVideoAISmartfacility() {
+//     this.isVideoAiSmartfacilityPlaying = true; 
+//     this.videoAISmartFacility.nativeElement.play();
+// }
+// onVideoAISmartfacilityPause() {
+//     this.isVideoAiSmartfacilityPlaying = false; 
+// }
+
+
+@ViewChild('youtubeSecurity') youtubeSecurity!: YouTubePlayer;
+  @ViewChild('youtubeFacility') youtubeFacility!: YouTubePlayer;
+
+  activeTab: string = 'security';
+  isVideoPlaying: boolean = false;
+  isVideoAiSmartfacilityPlaying: boolean = false;
+
+  // استخرج الـ ID الخاص بفيديو اليوتيوب (مثال: dQw4w9WgXcQ)
+  AISmartSecurityVideo = { videoId: 'DYw5zcyK4-Q' }; 
+  AISmartfacilityVideo = { videoId: 'kOHvcztXQfI' }; 
+
+  setActiveTab(tab: string) {
     this.activeTab = tab;
     this.stopAllVideos();
-}
+  }
 
-stopAllVideos() {
-    if (this.videoAISmartSecurity?.nativeElement) {
-        this.videoAISmartSecurity.nativeElement.pause();
-        this.isVideoPlaying = false;
+  stopAllVideos() {
+    if (this.youtubeSecurity) {
+      this.youtubeSecurity.pauseVideo();
+      this.isVideoPlaying = false;
     }
-    if (this.videoAISmartFacility?.nativeElement) {
-        this.videoAISmartFacility.nativeElement.pause();
-        this.isVideoAiSmartfacilityPlaying = false;
+    if (this.youtubeFacility) {
+      this.youtubeFacility.pauseVideo();
+      this.isVideoAiSmartfacilityPlaying = false;
     }
-}
+  }
 
-playVideo() {
+  playVideo() {
     this.isVideoPlaying = true; 
-    this.videoAISmartSecurity.nativeElement.play();
-}
-onVideoPause() {
-    this.isVideoPlaying = false; 
-}
+    this.youtubeSecurity.playVideo();
+  }
 
-playVideoAISmartfacility() {
+  playVideoAISmartfacility() {
     this.isVideoAiSmartfacilityPlaying = true; 
-    this.videoAISmartFacility.nativeElement.play();
-}
-onVideoAISmartfacilityPause() {
-    this.isVideoAiSmartfacilityPlaying = false; 
-}
+    this.youtubeFacility.playVideo();
+  }
+
+  // دالة واحدة للتعامل مع تغير حالة فيديوهات اليوتيوب (إيقاف أو انتهاء)
+  onYoutubeStateChange(event: any, type: string) {
+    // event.data يعيد رقم يعبر عن حالة الفيديو
+    // 0 = انتهى الفيديو (Ended)
+    // 2 = الفيديو متوقف (Paused)
+    if (event.data === 0 || event.data === 2) {
+      if (type === 'security') {
+        this.isVideoPlaying = false;
+      } else if (type === 'facility') {
+        this.isVideoAiSmartfacilityPlaying = false;
+      }
+    }
+  }
 }

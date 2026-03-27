@@ -206,23 +206,31 @@
             </div>
 
             <div class="video-card raduis30 position-relative">
-                <video #videoAISmartSecurity class="mainVideo" [attr.src]="AISmartSecurityVideo.src"
-                    [controls]="isVideoPlaying" muted crossorigin="anonymous" (pause)="onVideoPause()"
-                    (ended)="onVideoPause()" poster="assets/images/img-sectionOne.png">
-                    Your browser does not support the video tag.
-                </video>
+
+                <div [class.d-none]="!isVideoPlaying" class="mainVideo-wrapper" style="width: 100%; height: 100%;">
+                    <youtube-player #youtubeSecurity [videoId]="AISmartSecurityVideo.videoId"
+                        (stateChange)="onYoutubeStateChange($event, 'security')" width="100%" height="100%">
+                    </youtube-player>
+                </div>
+
+                <img *ngIf="!isVideoPlaying" src="assets/images/img-sectionOne.png" class="mainVideo poster-image"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Video Poster">
 
                 <div class="divBtn-video" *ngIf="!isVideoPlaying">
                     <button class="play-btn" (click)="playVideo()">
                         <img src="assets/images/HomePage/palyVideoIcon.svg" alt="playVideo icon">
                     </button>
                 </div>
+
                 <div class="card-overlay" *ngIf="!isVideoPlaying"></div>
+
                 <div class="d-flex flex-column justify-content-end align-items-start card-text" *ngIf="!isVideoPlaying">
-                    <h3 class="colorWhite font-bold subtitle36px">{{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_TITLE' |
-                        translate }}</h3>
-                    <p class="colorWhite subtitle16px font-medium">{{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_DESC' |
-                        translate }}</p>
+                    <h3 class="colorWhite font-bold subtitle36px">
+                        {{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_TITLE' | translate }}
+                    </h3>
+                    <p class="colorWhite subtitle16px font-medium">
+                        {{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_DESC' | translate }}
+                    </p>
                 </div>
             </div>
         </div>
@@ -269,25 +277,32 @@
             </div>
 
             <div class="video-card raduis30 position-relative">
-                <video #videoAISmartFacility class="mainVideo" [attr.src]="AISmartfacilityVideo.src"
-                    [controls]="isVideoAiSmartfacilityPlaying" muted crossorigin="anonymous"
-                    (pause)="onVideoAISmartfacilityPause()" (ended)="onVideoAISmartfacilityPause()"
-                    poster="assets/images/img-sectionOne.png">
-                    Your browser does not support the video tag.
-                </video>
+
+                <div [class.d-none]="!isVideoAiSmartfacilityPlaying" class="mainVideo-wrapper">
+                    <youtube-player #youtubeFacility [videoId]="AISmartfacilityVideo.videoId"
+                        (stateChange)="onYoutubeStateChange($event, 'facility')" width="100%" height="100%">
+                    </youtube-player>
+                </div>
+
+                <img *ngIf="!isVideoAiSmartfacilityPlaying" src="assets/images/img-sectionOne.png"
+                    class="mainVideo poster-image" alt="Video Poster">
 
                 <div class="divBtn-video" *ngIf="!isVideoAiSmartfacilityPlaying">
                     <button class="play-btn" (click)="playVideoAISmartfacility()">
                         <img src="assets/images/HomePage/palyVideoIcon.svg" alt="playVideo icon">
                     </button>
                 </div>
+
                 <div class="card-overlay" *ngIf="!isVideoAiSmartfacilityPlaying"></div>
+
                 <div class="d-flex flex-column justify-content-end align-items-start card-text"
                     *ngIf="!isVideoAiSmartfacilityPlaying">
-                    <h3 class="colorWhite font-bold subtitle36px">{{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_TITLE' |
-                        translate }}</h3>
-                    <p class="colorWhite subtitle16px font-medium">{{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_DESC' |
-                        translate }}</p>
+                    <h3 class="colorWhite font-bold subtitle36px">
+                        {{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_TITLE' | translate }}
+                    </h3>
+                    <p class="colorWhite subtitle16px font-medium">
+                        {{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_DESC' | translate }}
+                    </p>
                 </div>
             </div>
         </div>
