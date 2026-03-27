@@ -23,7 +23,7 @@ const routes: Routes = [
           import('./ai-packages/ai-packages.module').then(m => m.AiPackagesModule)
       },
       {
-        path: 'DigitalTransformation',
+        path: 'Digital-Transformation',
         loadChildren: () =>
           import('./digital-transformation/digital-transformation.module').then(m => m.DigitalTransformationModule)
       },

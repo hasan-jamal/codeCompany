@@ -2,16 +2,17 @@
     <div class="servicesS1-container px-120">
         <div class="back-servicesS1" style="background-image:url('assets/images/AIPackages-services/hero.jpeg');">
             <div class="servicesS1-texts">
-                <h1 class="subtitle44px colorThree font-bold">AI Packages Designed for Real-World Operations </h1>
-                <p class="mb-0 colorThree subtitle16px font-medium">Our AI Packages are ready-to-deploy solutions that
-                    help organizations monitor, manage, and control complex environments
-                    using artificial intelligence, real-time data, and centralized operations.
+                <h1 class="subtitle44px colorThree font-bold">{{ 'AI_PACKAGES.HERO.TITLE' | translate }}</h1>
+                <p class="mb-0 colorThree subtitle16px font-medium">
+                    {{ 'AI_PACKAGES.HERO.DESC' | translate }}
                 </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-services-s4></app-services-s4>
+
 <section class="sectionEightNew">
     <div class="sectionEightNew-container px-120">
         <div class="d-flex fx-sectionEight">
@@ -20,53 +21,37 @@
             </div>
             <div class="partTwo d-flex flex-column justify-content-between">
                 <h1 class="font-bold subtitle48px" data-aos="fade-down">
-                    What We Offer?
+                    {{ 'AI_PACKAGES.WHAT_WE_OFFER.TITLE' | translate }}
                 </h1>
                 <p class="style-font subtitle24px">
-                    We provide 4 AI Packages, each focused on a distinct operational domain:
+                    {{ 'AI_PACKAGES.WHAT_WE_OFFER.SUBTITLE' | translate }}
                 </p>
-                <div class="d-flex align-items-start lineCheck">
+
+                <div *ngFor="let item of 'AI_PACKAGES.WHAT_WE_OFFER.ITEMS' | translate"
+                    class="d-flex align-items-start lineCheck">
                     <img src="assets/images/HomePage/checkMark.svg" alt="check">
                     <p class="subtitle22px style-font colorTwo mb-0">
-                        Security operations
-                    </p>
-                </div>
-                <div class="d-flex align-items-start lineCheck">
-                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">
-                        Facility and asset management
-                    </p>
-                </div>
-                <div class="d-flex align-items-start lineCheck">
-                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">
-                        City-scale coordination and response
-                    </p>
-                </div>
-                <div class="d-flex align-items-start lineCheck">
-                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
-                    <p class="subtitle22px style-font colorTwo mb-0">
-                        Live and hybrid event environments
+                        {{ item }}
                     </p>
                 </div>
 
-                <p class="subtitle22px style-font colorTwo mb-0">
-                    All packages are designed to deliver immediate operational value, not experimental AI or isolated
-                    pilots.
+                <p class="subtitle22px style-font colorTwo mb-0 mt-3">
+                    {{ 'AI_PACKAGES.WHAT_WE_OFFER.FOOTER' | translate }}
                 </p>
             </div>
         </div>
     </div>
 </section>
+
 <section class="servicesS3">
     <div class="servicesS3-container px-120">
         <div class="ourServiceFlow-titles">
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
-                Our AI Packages
+                {{ 'AI_PACKAGES.OUR_PACKAGES.TITLE' | translate }}
             </h1>
-            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">Each package addresses a specific
-                operational need and can be deployed independently, while also supporting integration
-                into a broader AI-driven ecosystem.
+            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">
+                {{ 'AI_PACKAGES.OUR_PACKAGES.DESC' | translate }}
+            </p>
         </div>
         <div class="d-flex fx-servicesS3 fxGeneral-cards">
             <div class="box fxCardPublic d-flex align-items-end justify-content-between"
@@ -93,44 +78,48 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
+
 <section class="sectionTexts">
     <div class="backSection">
         <div class="sectionTexts-container px-120 h-100">
             <div class="d-flex fx-sectionTexts align-items-center justify-content-center h-100">
                 <div class="d-flex flex-column align-items-start fxTextTitles-one">
-                    <span class="color-linearGradient font-bold subtitle40px text-start">Independent Solutions</span>
+                    <span class="color-linearGradient font-bold subtitle40px text-start">{{
+                        'AI_PACKAGES.INDEPENDENT_SOLUTIONS.TITLE_1' | translate }}</span>
                     <h1 class="colorWhite mb24 aos-init text-center font-bold subtitle40px text-start"
                         data-aos="fade-down">
-                        with a Common Foundation
+                        {{ 'AI_PACKAGES.INDEPENDENT_SOLUTIONS.TITLE_2' | translate }}
                     </h1>
-                    <p class="mb-0 subtitle22px style-font colorWhite text-start">Each AI Package is delivered as a
-                        complete,
-                        self-contained
-                        solution that addresses a specific operational domain.</p>
+                    <p class="mb-0 subtitle22px style-font colorWhite text-start">
+                        {{ 'AI_PACKAGES.INDEPENDENT_SOLUTIONS.DESC_1' | translate }}
+                    </p>
                 </div>
                 <div class="d-flex fxTexts flex-column fxTextTitles-two">
-                    <p class="colorWhite  style-font  subtitle22px p-head">At the same time, the
-                        packages share compatible architectures and data foundations, allowing organizations to expand,
-                        integrate, and scale capabilities over time as operational needs evolve.</p>
-                    <p class="mb-0 colorWhite  style-font  subtitle22px p-head">This enables a controlled,
-                        low-risk approach to AI adoption without requiring a single, all-at-once transformation.</p>
+                    <p class="colorWhite style-font subtitle22px p-head">
+                        {{ 'AI_PACKAGES.INDEPENDENT_SOLUTIONS.DESC_2' | translate }}
+                    </p>
+                    <p class="mb-0 colorWhite style-font subtitle22px p-head">
+                        {{ 'AI_PACKAGES.INDEPENDENT_SOLUTIONS.DESC_3' | translate }}
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="operational-section px-120 pt-5 pb-5">
     <div class="d-flex justify-content-between align-items-end mb24 fxColumnMb header-wrapper">
         <div class="header-text">
             <h2 class="subtitle48px font-bold colorOne mb16">
-                Built for <span class="color-linearGradient">Operational</span><br>Environments
+                {{ 'AI_PACKAGES.OPERATIONAL_ENV.TITLE_1' | translate }} <span class="color-linearGradient">{{
+                    'AI_PACKAGES.OPERATIONAL_ENV.HIGHLIGHT' | translate }}</span><br>{{
+                'AI_PACKAGES.OPERATIONAL_ENV.TITLE_2' | translate }}
             </h2>
             <p class="subtitle20px colorThree style-font mb-0">
-                AI Packages are designed for environments<br>that require:
+                {{ 'AI_PACKAGES.OPERATIONAL_ENV.DESC' | translate }}
             </p>
         </div>
 
@@ -162,7 +151,7 @@
                                 <path d="M8 12.5L10.5 15L16 9" stroke="#E74B62" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                            {{ feature }}
+                            {{ feature | translate }}
                         </li>
                     </ul>
                 </div>
@@ -175,23 +164,23 @@
 
     <div class="footer-text">
         <p class="subtitle18px colorThree style-font">
-            The focus is on <span class="font-bold">day-to-day operational performance</span>, not theoretical AI use
-            cases.
+            {{ 'AI_PACKAGES.OPERATIONAL_ENV.FOOTER_1' | translate }} <span class="font-bold">{{
+                'AI_PACKAGES.OPERATIONAL_ENV.FOOTER_BOLD' | translate }}</span>{{ 'AI_PACKAGES.OPERATIONAL_ENV.FOOTER_2'
+            | translate }}
         </p>
     </div>
 </section>
+
 <section class="servicesS5">
     <div class="servicesS5-container px-120">
         <div class="ourServiceFlow-titles mb24 d-flex flex-column align-items-center">
             <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
-                Technology That
-                <span class="color-linearGradient"> Delivers People Who</span>
-                Understand
+                {{ 'AI_PACKAGES.TECH_DELIVERS.TITLE_1' | translate }}
+                <span class="color-linearGradient"> {{ 'AI_PACKAGES.TECH_DELIVERS.HIGHLIGHT' | translate }}</span>
+                {{ 'AI_PACKAGES.TECH_DELIVERS.TITLE_2' | translate }}
             </h1>
             <p class="text-center colorBlack subtitle20px style-font">
-                our platforms combineflexibility, speed and enterprise-grade reliability all aligned with Vision 2030’s
-                digital
-                transformation goals.
+                {{ 'AI_PACKAGES.TECH_DELIVERS.DESC' | translate }}
             </p>
         </div>
         <div class="fxServicesS5 fxGeneral-cards">
@@ -199,67 +188,64 @@
                 <img src="assets/images/servicesS5/BuiltforSaudiInfrastructure.svg"
                     alt="Built for Saudi Infrastructure">
                 <h3 class="font-semiBold subtitle20px text-center">
-                    Purpose-Driven Architecture
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.ARCHITECTURE.TITLE' | translate }}
                 </h3>
                 <p class="text-center subtitle18px style-font mb-0">
-                    Solutions engineered around your specific business goals scalable, secure and centered on user
-                    experience.
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.ARCHITECTURE.DESC' | translate }}
                 </p>
             </div>
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/Client-AlignedArchitecture.svg" alt="Client Aligned Architecture">
-
                 <h3 class="font-semiBold subtitle20px text-center">
-                    Tailored for Saudi Arabia
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.SAUDI.TITLE' | translate }}
                 </h3>
                 <p class="text-center subtitle18px style-font mb-0">
-                    Arabic-enabled, aligned with Vision 2030 and designed to integrate seamlessly with local platforms,
-                    regulations and
-                    digital strategies.
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.SAUDI.DESC' | translate }}
                 </p>
             </div>
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/FullLifecycleSupport.svg" alt="Full Life cycle Support">
                 <h3 class="font-semiBold subtitle20px text-center">
-                    End-to-End Partnership
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.PARTNERSHIP.TITLE' | translate }}
                 </h3>
                 <p class="text-center subtitle18px style-font mb-0">
-                    From strategic planning to continuous improvement after launch, our teams walk with you every step
-                    of the way.
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.PARTNERSHIP.DESC' | translate }}
                 </p>
             </div>
             <div class="fxCardPublic align-items-center d-flex flex-column">
                 <img src="assets/images/servicesS5/Enterprise-GradeSecurity.svg" alt="Enterprise GradeSecurity">
                 <h3 class="font-semiBold subtitle20px text-center">
-                    Security at the Core
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.SECURITY.TITLE' | translate }}
                 </h3>
                 <p class="text-center subtitle18px style-font mb-0">
-                    Enterprise-grade protection built into every layer from data privacy and access controls to
-                    performance and compliance
-                    safeguards.
+                    {{ 'AI_PACKAGES.TECH_DELIVERS.CARDS.SECURITY.DESC' | translate }}
                 </p>
             </div>
         </div>
     </div>
 </section>
+
 <app-our-service-flow></app-our-service-flow>
+
 <section class="contactSection">
     <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
     <div class="contactSection-container px-120">
         <div class="contactSection-div d-flex">
             <div class="contactSection-texts">
-                <h1 class=" subtitle48px font-bold mb-0 " data-aos=" fade-down">Deploy AI Where It Creates Value</h1>
+                <h1 class=" subtitle48px font-bold mb-0 " data-aos=" fade-down">
+                    {{ 'AI_PACKAGES.CONTACT.TITLE' | translate }}
+                </h1>
             </div>
             <div class="contactSection-buttons d-flex">
                 <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
-                    <span class="font-semiBold colorWhite subtitle20px">Talk to the CODE Team</span>
+                    <span class="font-semiBold colorWhite subtitle20px">{{ 'AI_PACKAGES.CONTACT.BTN' | translate
+                        }}</span>
                     <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
                 </button>
             </div>
         </div>
-        <p class="mb-0 colorTwo style-font subtitle20px">Explore how our AI Packages can support smarter security,
-            efficient facilities, coordinated cities, and modern event
-            environments.
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'AI_PACKAGES.CONTACT.DESC' | translate }}
         </p>
     </div>
 </section>

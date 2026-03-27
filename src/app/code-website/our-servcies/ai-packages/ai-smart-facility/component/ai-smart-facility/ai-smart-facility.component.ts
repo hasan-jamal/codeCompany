@@ -28,17 +28,17 @@ boxes = [
       showPart2: true,
       isAnimating: false,
       isActive: true, 
-      titleKey: "AI Vision Technology in Action",
-      subTitleKey: "Real-Time Awareness of Facilities and People",
-      contentKey: "AI Vision enables continuous visual analysis, including:",
+      titleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.TITLE",
+      subTitleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.SUBTITLE",
+      contentKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.CONTENT",
       listItems: [
-        "Safety monitoring and hazard detection",
-        "Intrusion detection and unauthorized access monitoring",
-        "Slip, trip, and fall detection with Instant alerts",
-        "Occupancy tracking and space utilization analysis",
-        "Fire and smoke detection through visual indicators"
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.0",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.1",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.2",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.3",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.4"
       ],
-      extraSection: null, // لا يوجد قسم إضافي هنا
+      extraSection: null,
       footerContentKey: "",
       pathBtn: ""
     },
@@ -47,23 +47,22 @@ boxes = [
       showPart2: false, 
       isAnimating: false,
       isActive: false,
-      titleKey: "AI Digital Twin in Action",
-      subTitleKey: "Unified 3D Interface for Facility Visibility",
-      contentKey: "The digital twin provides a live 3D representation of facility infrastructure and systems:",
+      titleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.TITLE",
+      subTitleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.SUBTITLE",
+      contentKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.CONTENT",
       listItems: [
-        "Structural Systems: floors, walls, foundations, and physical zones",
-        "Electrical Systems: power distribution panels, lighting circuits, and energy meters",
-        "Mechanical Systems: HVAC units, chillers, air handlers, ventilation ductwork",
-        "Plumbing Systems: water supply lines, drainage pipes, pumps, and valves."
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.ITEMS.0",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.ITEMS.1",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.ITEMS.2",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.ITEMS.3"
       ],
-      // تمت إضافة هذا القسم الفرعي ليتناسب مع الصورة
       extraSection: {
-        titleKey: "Why It Matters",
+        titleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.EXTRA.TITLE",
         listItems: [
-          "Single visual view replacing complex drawings",
-          "Live data visibility mapped directly to physical assets",
-          "Scalable and accessible for technical and non-technical users",
-          "Faster action through instant root-cause identification"
+          "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.EXTRA.ITEMS.0",
+          "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.EXTRA.ITEMS.1",
+          "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.EXTRA.ITEMS.2",
+          "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.2.EXTRA.ITEMS.3"
         ]
       },
       footerContentKey: "",
@@ -74,15 +73,15 @@ boxes = [
       showPart2: false, 
       isAnimating: false,
       isActive: false,
-      titleKey: "IoT Monitoring Coverage",
-      subTitleKey: "Real-Time, 24/7 Facility Monitoring",
-      contentKey: "",
+      titleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.TITLE",
+      subTitleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.SUBTITLE",
+      contentKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.CONTENT",
       listItems: [
-        "Environment: Air quality, temperature, humidity, noise level, light (lux), odor detection",
-        "Utilities: Gas leaks, water leaks, pipe pressure, tank levels, soap levels, waste levels",
-        "Space: Occupancy tracking, parking slots, asset tracking, desk usage, zone heat-maps",
-        "Safety: Smoke and fire detection, emergency exits, intrusion detection, fence breach, panic buttons",
-        "Systems: Door access, lift health, door status, HVAC status, lighting control"
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.ITEMS.0",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.ITEMS.1",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.ITEMS.2",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.ITEMS.3",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.3.ITEMS.4"
       ],
       extraSection: null,
       footerContentKey: "",
@@ -93,14 +92,14 @@ boxes = [
       showPart2: false, 
       isAnimating: false,
       isActive: false,
-      titleKey: "Robotics in Action",
-      subTitleKey: "Automation for Safer and More Efficient Operations",
-      contentKey: "",
+      titleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.TITLE",
+      subTitleKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.SUBTITLE",
+      contentKey: "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.CONTENT",
       listItems: [
-        "Autonomous robots perform routine cleaning and patrol.",
-        "Robots respond automatically when alarms are triggered.",
-        "Reduced human exposure during initial hazard verification.",
-        "Zero-fatigue operations with reduced manpower dependency."
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.0",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.1",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.2",
+        "AI_FACILITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.3"
       ],
       extraSection: null,
       footerContentKey: "",

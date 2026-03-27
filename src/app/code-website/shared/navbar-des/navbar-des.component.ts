@@ -68,7 +68,7 @@ export class NavbarDesComponent implements OnInit {
     this.hideMenuTimeout = setTimeout(() => {
       this.isServicesMenuOpen = false;
       this.isCoverVisible =false;
-    }, 50);
+    }, 100);
   }
   isCoverVisible = false;
   isAdmin: boolean | null = null;
@@ -82,7 +82,7 @@ export class NavbarDesComponent implements OnInit {
     currentPage: number = 1;
     pageSize: number = 10;
     totalPages: number = 1;
-
+showCarousel: boolean = true;
     
   constructor(
     private modalService: ModalService, 
@@ -180,10 +180,10 @@ mainServices: MainService[] = [
       exploreLink: '/ourServices/AI-Packages',
       exploreText: 'ServicesMenu.AIPackages.Explore',
       cards: [
-        { name: 'ServicesMenu.AIPackages.Cards.Security.Name', description: 'ServicesMenu.AIPackages.Cards.Security.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AI-Packages/AiSmartSecurity' },
-        { name: 'ServicesMenu.AIPackages.Cards.Facility.Name', description: 'ServicesMenu.AIPackages.Cards.Facility.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AI-Packages/AiSmartFacility' },
-        { name: 'ServicesMenu.AIPackages.Cards.City.Name', description: 'ServicesMenu.AIPackages.Cards.City.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AI-Packages/AiSmartCity' },
-        { name: 'ServicesMenu.AIPackages.Cards.Theaters.Name', description: 'ServicesMenu.AIPackages.Cards.Theaters.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AI-Packages/SmartHybridTheaters' }
+        { name: 'ServicesMenu.AIPackages.Cards.Security.Name', description: 'ServicesMenu.AIPackages.Cards.Security.Desc', img: 'assets/images/servicesS3-img1.png', route: '/ourServices/AI-Packages/AiSmartSecurity' },
+        { name: 'ServicesMenu.AIPackages.Cards.Facility.Name', description: 'ServicesMenu.AIPackages.Cards.Facility.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/AI-Packages/AiSmartFacility' },
+        { name: 'ServicesMenu.AIPackages.Cards.City.Name', description: 'ServicesMenu.AIPackages.Cards.City.Desc', img: 'assets/images/imageAI-3.png', route: '/ourServices/AI-Packages/AiSmartCity' },
+        { name: 'ServicesMenu.AIPackages.Cards.Theaters.Name', description: 'ServicesMenu.AIPackages.Cards.Theaters.Desc', img: 'assets/images/imageAI-1.png', route: '/ourServices/AI-Packages/SmartHybridTheaters' }
       ]
     },
     {
@@ -196,10 +196,10 @@ mainServices: MainService[] = [
       exploreText: 'ServicesMenu.AISolutions.Explore',
       cards: [
         { name: 'ServicesMenu.AISolutions.Cards.DigitalTwin.Name', description: 'ServicesMenu.AISolutions.Cards.DigitalTwin.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AISolutions/AIDigitalTwin' },
-        { name: 'ServicesMenu.AISolutions.Cards.ComputerVision.Name', description: 'ServicesMenu.AISolutions.Cards.ComputerVision.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AISolutions/AiComputerVision' },
-        { name: 'ServicesMenu.AISolutions.Cards.Voicebots.Name', description: 'ServicesMenu.AISolutions.Cards.Voicebots.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AISolutions/AiVoicebotChatbot' },
-        { name: 'ServicesMenu.AISolutions.Cards.Wayfinding.Name', description: 'ServicesMenu.AISolutions.Cards.Wayfinding.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AISolutions/IndoorWayfinding' },
-        { name: 'ServicesMenu.AISolutions.Cards.SmartCabins.Name', description: 'ServicesMenu.AISolutions.Cards.SmartCabins.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/AISolutions/smartCabins' }
+        { name: 'ServicesMenu.AISolutions.Cards.ComputerVision.Name', description: 'ServicesMenu.AISolutions.Cards.ComputerVision.Desc', img: 'assets/images/servicesS3-img5.png', route: '/ourServices/AISolutions/AiComputerVision' },
+        { name: 'ServicesMenu.AISolutions.Cards.Voicebots.Name', description: 'ServicesMenu.AISolutions.Cards.Voicebots.Desc', img: 'assets/images/servicesS3-img6.png', route: '/ourServices/AISolutions/AiVoicebotChatbot' },
+        { name: 'ServicesMenu.AISolutions.Cards.Wayfinding.Name', description: 'ServicesMenu.AISolutions.Cards.Wayfinding.Desc', img: 'assets/images/servicesS3-img1.png', route: '/ourServices/AISolutions/IndoorWayfinding' },
+        { name: 'ServicesMenu.AISolutions.Cards.SmartCabins.Name', description: 'ServicesMenu.AISolutions.Cards.SmartCabins.Desc', img: 'assets/images/imageAI-1.png', route: '/ourServices/AISolutions/smartCabins' }
       ]
     },
     {
@@ -211,10 +211,10 @@ mainServices: MainService[] = [
       exploreLink: '/ourServices/Digital-Transformation',
       exploreText: 'ServicesMenu.DigitalTransformation.Explore',
       cards: [
-        { name: 'ServicesMenu.DigitalTransformation.Cards.EA.Name', description: 'ServicesMenu.DigitalTransformation.Cards.EA.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/Digital-Transformation/EaServices' },
+        { name: 'ServicesMenu.DigitalTransformation.Cards.EA.Name', description: 'ServicesMenu.DigitalTransformation.Cards.EA.Desc', img: 'assets/images/servicesS3-img3.png', route: '/ourServices/Digital-Transformation/EaServices' },
         { name: 'ServicesMenu.DigitalTransformation.Cards.NDMO.Name', description: 'ServicesMenu.DigitalTransformation.Cards.NDMO.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/Digital-Transformation/NdmoServices' },
-        { name: 'ServicesMenu.DigitalTransformation.Cards.DGA.Name', description: 'ServicesMenu.DigitalTransformation.Cards.DGA.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/Digital-Transformation/DgaConsultingServices' },
-        { name: 'ServicesMenu.DigitalTransformation.Cards.InnovationHub.Name', description: 'ServicesMenu.DigitalTransformation.Cards.InnovationHub.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/Digital-Transformation/InnovationHub' }
+        { name: 'ServicesMenu.DigitalTransformation.Cards.DGA.Name', description: 'ServicesMenu.DigitalTransformation.Cards.DGA.Desc', img: 'assets/images/servicesS3-img2.png', route: '/ourServices/Digital-Transformation/DgaConsultingServices' },
+        { name: 'ServicesMenu.DigitalTransformation.Cards.InnovationHub.Name', description: 'ServicesMenu.DigitalTransformation.Cards.InnovationHub.Desc', img: 'assets/images/servicesS3-img8.png', route: '/ourServices/Digital-Transformation/InnovationHub' }
       ]
     },
     {
@@ -229,43 +229,43 @@ mainServices: MainService[] = [
         {
           name: 'ServicesMenu.ICTSolutions.SubCategories.PassiveCivil',
           cards: [
-            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.CommandCenter.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.CommandCenter.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/commandCenter' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MediaCenter.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MediaCenter.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/mediaCenter' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.NocSoc.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.NocSoc.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/NOC-SOC' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MeetingRooms.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MeetingRooms.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/SmartMeetingRooms' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.BusinessResearch.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.BusinessResearch.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/BusinessResearch' }
+            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.CommandCenter.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.CommandCenter.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/commandCenter' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MediaCenter.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MediaCenter.Desc', img: 'assets/images/sectionTwo-img1.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/mediaCenter' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.NocSoc.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.NocSoc.Desc', img: 'assets/images/servicesS3-img1.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/NOC-SOC' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MeetingRooms.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.MeetingRooms.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/SmartMeetingRooms' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.BusinessResearch.Name', description: 'ServicesMenu.ICTSolutions.Cards.PassiveCivil.BusinessResearch.Desc', img: 'assets/images/imageAI-1.png', route: '/ourServices/ICT-Solutions/PassiveAndCivilWork/BusinessResearch' }
           ]
         },
         {
           name: 'ServicesMenu.ICTSolutions.SubCategories.Healthcare',
           cards: [
-            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.HIS.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.HIS.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/HIS' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.RCM.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.RCM.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/RCM' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.DRG.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.DRG.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/DRG' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.TeleMedicine.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.TeleMedicine.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/TeleMedicine' }
+            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.HIS.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.HIS.Desc', img: 'assets/images/servicesS3-img2.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/HIS' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.RCM.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.RCM.Desc', img: 'assets/images/servicesS3-img8.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/RCM' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.DRG.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.DRG.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/DRG' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.Healthcare.TeleMedicine.Name', description: 'ServicesMenu.ICTSolutions.Cards.Healthcare.TeleMedicine.Desc', img: 'assets/images/sectionTwo-img1.png', route: '/ourServices/ICT-Solutions/DigitalHealthcare/TeleMedicine' }
           ]
         },
         {
           name: 'ServicesMenu.ICTSolutions.SubCategories.DataCloud',
           cards: [
-            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DataEngineering.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DataEngineering.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/dataEngineering' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DatabaseConsolidation.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DatabaseConsolidation.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/databaseConsolidation' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DisasterRecovery.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DisasterRecovery.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/disasterRecoverySolutions' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.ITSM.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.ITSM.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/ItServiceManagement' }
+            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DataEngineering.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DataEngineering.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/dataEngineering' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DatabaseConsolidation.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DatabaseConsolidation.Desc', img: 'assets/images/servicesS3-img6.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/databaseConsolidation' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DisasterRecovery.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.DisasterRecovery.Desc', img: 'assets/images/HeaderIcons/imageAI-3.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/disasterRecoverySolutions' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.DataCloud.ITSM.Name', description: 'ServicesMenu.ICTSolutions.Cards.DataCloud.ITSM.Desc', img: 'assets/images/servicesS3-img1.png', route: '/ourServices/ICT-Solutions/DataAndCloudEngineering/ItServiceManagement' }
           ]
         },
         {
           name: 'ServicesMenu.ICTSolutions.SubCategories.Automation',
           cards: [
-            { name: 'ServicesMenu.ICTSolutions.Cards.Automation.DigitalSignature.Name', description: 'ServicesMenu.ICTSolutions.Cards.Automation.DigitalSignature.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/AutomationAndSecurity/digitalSignature' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.Automation.RPA.Name', description: 'ServicesMenu.ICTSolutions.Cards.Automation.RPA.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/AutomationAndSecurity/roboticProcess' }
+            { name: 'ServicesMenu.ICTSolutions.Cards.Automation.DigitalSignature.Name', description: 'ServicesMenu.ICTSolutions.Cards.Automation.DigitalSignature.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/ICT-Solutions/AutomationAndSecurity/digitalSignature' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.Automation.RPA.Name', description: 'ServicesMenu.ICTSolutions.Cards.Automation.RPA.Desc', img: 'assets/images/servicesS3-img2.png', route: '/ourServices/ICT-Solutions/AutomationAndSecurity/roboticProcess' }
           ]
         },
         {
           name: 'ServicesMenu.ICTSolutions.SubCategories.Software',
           cards: [
-            { name: 'ServicesMenu.ICTSolutions.Cards.Software.WebApp.Name', description: 'ServicesMenu.ICTSolutions.Cards.Software.WebApp.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/SoftwareAndDevelopment/webMobileAppDevelopment' },
-            { name: 'ServicesMenu.ICTSolutions.Cards.Software.SharePoint.Name', description: 'ServicesMenu.ICTSolutions.Cards.Software.SharePoint.Desc', img: 'assets/images/HeaderIcons/backSlider-service.png', route: '/ourServices/ICT-Solutions/SoftwareAndDevelopment/sharePointSolutions' }
+            { name: 'ServicesMenu.ICTSolutions.Cards.Software.WebApp.Name', description: 'ServicesMenu.ICTSolutions.Cards.Software.WebApp.Desc', img: 'assets/images/sectionTwo-img1.png', route: '/ourServices/ICT-Solutions/SoftwareAndDevelopment/webMobileAppDevelopment' },
+            { name: 'ServicesMenu.ICTSolutions.Cards.Software.SharePoint.Name', description: 'ServicesMenu.ICTSolutions.Cards.Software.SharePoint.Desc', img: 'assets/images/imageAI-1.png', route: '/ourServices/ICT-Solutions/SoftwareAndDevelopment/sharePointSolutions' }
           ]
         }
       ]
@@ -277,23 +277,36 @@ mainServices: MainService[] = [
   currentCards: ServiceCard[] = [];
   isDropdownOpen = false;
 
-  selectMainService(service: MainService) {
-    this.activeMainService = service;
-    this.isDropdownOpen = false;
+ selectMainService(service: MainService) {
+  this.showCarousel = false;
+  
+  this.activeMainService = service;
+  this.isDropdownOpen = false;
 
-    if (service.hasSubCategories && service.subCategories) {
-      this.selectSubCategory(service.subCategories[0]);
-    } else {
-      this.activeSubCategory = null;
-      this.currentCards = service.cards || [];
-    }
+  if (service.hasSubCategories && service.subCategories) {
+    this.activeSubCategory = service.subCategories[0];
+    this.currentCards = service.subCategories[0].cards;
+  } else {
+    this.activeSubCategory = null;
+    this.currentCards = service.cards || [];
   }
 
-  selectSubCategory(sub: SubCategory) {
-    this.activeSubCategory = sub;
-    this.currentCards = sub.cards;
-    this.isDropdownOpen = false;
-  }
+  setTimeout(() => {
+    this.showCarousel = true;
+  }, 0);
+}
+
+selectSubCategory(sub: SubCategory) {
+  this.showCarousel = false; 
+
+  this.activeSubCategory = sub;
+  this.currentCards = sub.cards;
+  this.isDropdownOpen = false;
+
+  setTimeout(() => {
+    this.showCarousel = true;
+  }, 0);
+}
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;

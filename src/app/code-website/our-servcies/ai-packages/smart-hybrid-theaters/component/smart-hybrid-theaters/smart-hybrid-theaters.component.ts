@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ModalService } from '../../../../../../services/ModalService';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-smart-hybrid-theaters',
@@ -12,9 +13,8 @@ import { ModalService } from '../../../../../../services/ModalService';
                   standalone:false
 })
 export class SmartHybridTheatersComponent implements OnInit{
-constructor(private modalService: ModalService){}
+constructor(private modalService: ModalService,private cdr: ChangeDetectorRef){}
   activeCardId: number = 2;
-activeIndex: number = 0;
   openTalkCodeModal() {
     this.modalService.open('modalTalkCode');
   }
@@ -24,61 +24,61 @@ activeIndex: number = 0;
   }
 
 boxes = [
-  { 
-    id: 1,
-    showPart2: true,
-    isAnimating: false,
-    isActive: true,
-    titleKey: "Enterprise GIS Applications",
-    subTitleKey: "Multi-Layer System Connectivity",
-    contentKey: "",
-    listItems: [
-      "Traffic and transportation",
-      "Estate management",
-      "Education",
-      "Street lights",
-      "Land use",
-      "Public safety",
-      "Engineering",
-      "Sewerage",
-      "Property tax",
-      "Health",
-      "Town planning",
-      "Water supply",
-      "Solid waste",
-      "Disaster management"
-    ],
-    footerContentKey: "",
-    pathBtn: ""
-  },
-  { 
-    id: 2,
-    showPart2: false, 
-    isAnimating: false,
-    isActive: false,
-    titleKey: "GIS Platform Integration",
-    subTitleKey: "Multi-Layer System Connectivity", 
-    contentKey: "",
-    listItems: [
-      "Smart governance",
-      "E-governance",
-      "Building management (BMS)",
-      "Grievance redressal",
-      "Citizen connect app",
-      "Education and health care",
-      "Solid waste management",
-      "Auto vehicle location",
-      "Integrated city operations",
-      "Environment monitoring",
-      "Smart poles",
-      "Traffic management",
-      "Parking management",
-      "Smart tracking"
-    ],
-    footerContentKey: "",
-    pathBtn: ""
-  }
-];
+    { 
+      id: 1,
+      showPart2: true,
+      isAnimating: false,
+      isActive: true,
+      titleKey: "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.TITLE",
+      subTitleKey: "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.SUBTITLE",
+      contentKey: "",
+      listItems: [
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.0",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.1",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.2",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.3",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.4",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.5",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.6",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.7",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.8",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.9",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.10",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.11",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.12",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.1.ITEMS.13"
+      ],
+      footerContentKey: "",
+      pathBtn: ""
+    },
+    { 
+      id: 2,
+      showPart2: false, 
+      isAnimating: false,
+      isActive: false,
+      titleKey: "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.TITLE",
+      subTitleKey: "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.SUBTITLE", 
+      contentKey: "",
+      listItems: [
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.0",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.1",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.2",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.3",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.4",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.5",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.6",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.7",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.8",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.9",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.10",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.11",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.12",
+        "SMART_HYBRID_THEATERS.TS_DATA.BOXES.2.ITEMS.13"
+      ],
+      footerContentKey: "",
+      pathBtn: ""
+    }
+  ];
   activateFirstBox(): void {
     const firstBox = this.boxes[0];
     firstBox.isActive = true;
@@ -131,86 +131,83 @@ boxes = [
     "infinite": true
   };
 
-  slidesData = [
+ slidesData = [
     {
       features: [
-        'Parking revenue and occupancy.',
-        'Waste management efficiency.',
-        'Real-time system health across all city domains.'
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.1.F1',
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.1.F2',
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.1.F3'
       ],
       image: 'assets/images/AIPackages-services/AI-Driven-Smart-City-Management/4.jpg',
       altText: 'Operational Environment UI'
     },
     {
       features: [
-        'Advanced AI Analytics',
-        'Automated reporting generation',
-        'Customizable dashboards',
-        '24/7 Support and maintenance'
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.2.F1',
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.2.F2',
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.2.F3',
+        'SMART_HYBRID_THEATERS.TS_DATA.SLIDES.2.F4'
       ],
       image: 'assets/images/AIPackages-services/2-1.jpg',
       altText: 'Analytics Dashboard UI'
     }
   ];
 
+  @ViewChild('slickModal', { static: false }) slickModal!: SlickCarouselComponent;
 
-sliderConfig = {
+  activeIndex: number = 0;
+
+  sliderConfig = {
     slidesToShow: 1,       
     slidesToScroll: 1,     
-    dots: true,      
-    arrows: true,      
+    dots: false,      
+    arrows: false,      
     infinite: true,      
     autoplay: true,     
-    autoplaySpeed: 3000,  
+    autoplaySpeed: 1000,  
     rtl: false,       
-    responsive: [    
-      {
-        breakpoint: 1024, 
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 768,   
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false    
-        }
-      }
-    ]
   };
 
-   featuresArray = [
-  {
-    id: 1,
-    title: "Advanced LED Visual Systems.",
-    content: "High-brightness LED walls replace projection and small displays, ensuring crisp, vibrant visuals even with house lights on. Side displays support speaker close-ups, branding, and sponsor content without clutter."
-  },
-  {
-    id: 2,
-    title: "Premium Audio and Accessibility",
-    content: "Digitally optimized audio systems ensure even coverage and clear speech across the entire venue, supported by wireless microphones and assistive listening for inclusive experiences."
-  },
-  {
-    id: 3,
-    title: "Multi-Camera Video Production.",
-    content: "Integrated PTZ camera systems provide professional-grade coverage for presenters, panels, and audience interaction, enabling live IMAG, recording, and low-latency streaming."
-  },
-  {
-    id: 4,
-    title: "Intelligent Lighting.",
-    content: "Preset lighting scenes adapt instantly to presentations, panels, performances, or recording modes, ensuring presenters look natural on stage and on camera."
-  },
-  {
-    id: 5,
-    title: "Smart Control and Automation.",
-    content: "Scene-based control systems allow presenters to connect, tap, and present, while operators retain full control behind the scenes for complex productions."
-  }
-];
-
-setActiveIndex(index: number): void {
+featuresArray = [
+    {
+      id: 1,
+      title: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.1.TITLE",
+      content: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.1.CONTENT"
+    },
+    {
+      id: 2,
+      title: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.2.TITLE",
+      content: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.2.CONTENT"
+    },
+    {
+      id: 3,
+      title: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.3.TITLE",
+      content: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.3.CONTENT"
+    },
+    {
+      id: 4,
+      title: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.4.TITLE",
+      content: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.4.CONTENT"
+    },
+    {
+      id: 5,
+      title: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.5.TITLE",
+      content: "SMART_HYBRID_THEATERS.TS_DATA.FEATURES.5.CONTENT"
+    }
+  ];
+  setActiveIndex(index: number): void {
     this.activeIndex = index;
+    
+    if (this.slickModal && this.slickModal.slickGoTo) {
+      this.slickModal.slickGoTo(index);
+    }
+        this.cdr.detectChanges();
+  }
+
+  afterChange(event: any): void {
+    if (event && event.currentSlide !== undefined) {
+      this.activeIndex = event.currentSlide;
+      this.cdr.detectChanges();
+    }
   }
 }

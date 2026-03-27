@@ -34,39 +34,39 @@ export class AiPackagesComponent {
   
   isHovered = false;
 serviceCards = [
-  {
-    id: 1,
-    isHovered: false,
-    nameKey: "AI Smart Security Management",
-    descKey: "Turn raw data into reliable, analytics-ready assets with tools for governance, machine learning, and real-time insights.",
-    link: "/ourServices/AISolutions/AIDigitalTwin",
-    imageUrl: "assets/images/AIPackages-services/s1.jpeg"
-  },
-  {
-    id: 2,
-    isHovered: false,
-    nameKey: "AI Smart Facility Management",
-    descKey: "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights.",
-    link: "/ourServices/AISolutions/AiComputerVision",
-    imageUrl: "assets/images/AIPackages-services/s2.jpg"
-  },
-  {
-    id: 3,
-    isHovered: false,
-    nameKey: "AI Smart City Management",
-    descKey: "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights.",
-    link: "/ourServices/AISolutions/AiVoicebotChatbot",
-    imageUrl: "assets/images/AIPackages-services/s3.jpeg"
-  },
-  {
-    id: 4,
-    isHovered: false,
-    nameKey: "Smart Hybrid Theaters",
-    descKey: "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights.",
-    link: "/ourServices/AISolutions/AiInnovationHub",
-    imageUrl: "assets/images/AIPackages-services/s4.png"
-  },
-];
+    {
+      id: 1,
+      isHovered: false,
+      nameKey: "AI_PACKAGES.TS_DATA.CARDS.1.TITLE",
+      descKey: "AI_PACKAGES.TS_DATA.CARDS.1.DESC",
+      link: "/ourServices/AISolutions/AIDigitalTwin",
+      imageUrl: "assets/images/AIPackages-services/s1.jpeg"
+    },
+    {
+      id: 2,
+      isHovered: false,
+      nameKey: "AI_PACKAGES.TS_DATA.CARDS.2.TITLE",
+      descKey: "AI_PACKAGES.TS_DATA.CARDS.2.DESC",
+      link: "/ourServices/AISolutions/AiComputerVision",
+      imageUrl: "assets/images/AIPackages-services/s2.jpg"
+    },
+    {
+      id: 3,
+      isHovered: false,
+      nameKey: "AI_PACKAGES.TS_DATA.CARDS.3.TITLE",
+      descKey: "AI_PACKAGES.TS_DATA.CARDS.3.DESC",
+      link: "/ourServices/AISolutions/AiVoicebotChatbot",
+      imageUrl: "assets/images/AIPackages-services/s3.jpeg"
+    },
+    {
+      id: 4,
+      isHovered: false,
+      nameKey: "AI_PACKAGES.TS_DATA.CARDS.4.TITLE",
+      descKey: "AI_PACKAGES.TS_DATA.CARDS.4.DESC",
+      link: "/ourServices/AISolutions/AiInnovationHub",
+      imageUrl: "assets/images/AIPackages-services/s4.png"
+    },
+  ];
 
   onMouseEnter(card: any) {
     card.isHovered = true;
@@ -85,24 +85,24 @@ serviceCards = [
     "infinite": true
   };
 
-  slidesData = [
+slidesData = [
     {
       features: [
-        'Continuous visibility and monitoring',
-        'Fast, coordinated response',
-        'Reliable, real-time data',
-        'Clear operational ownership',
-        'Scalable deployment'
+        'AI_PACKAGES.TS_DATA.SLIDES.1.F1',
+        'AI_PACKAGES.TS_DATA.SLIDES.1.F2',
+        'AI_PACKAGES.TS_DATA.SLIDES.1.F3',
+        'AI_PACKAGES.TS_DATA.SLIDES.1.F4',
+        'AI_PACKAGES.TS_DATA.SLIDES.1.F5'
       ],
       image: 'assets/images/AIPackages-services/2.jpeg',
       altText: 'Operational Environment UI'
     },
     {
       features: [
-        'Advanced AI Analytics',
-        'Automated reporting generation',
-        'Customizable dashboards',
-        '24/7 Support and maintenance'
+        'AI_PACKAGES.TS_DATA.SLIDES.2.F1',
+        'AI_PACKAGES.TS_DATA.SLIDES.2.F2',
+        'AI_PACKAGES.TS_DATA.SLIDES.2.F3',
+        'AI_PACKAGES.TS_DATA.SLIDES.2.F4'
       ],
       image: 'assets/images/AIPackages-services/2-1.jpg',
       altText: 'Analytics Dashboard UI'

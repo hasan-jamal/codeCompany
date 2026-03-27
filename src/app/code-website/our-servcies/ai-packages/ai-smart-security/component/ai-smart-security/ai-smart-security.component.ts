@@ -28,74 +28,140 @@ export class AiSmartSecurityComponent  implements OnInit{
 
     // Start Section Three style
 boxes = [
-  { 
-    id: 1,
-    showPart2: true,
-    isAnimating: false,
-    isActive: true,
-    titleKey: "AI Computer Vision in Action",
-    subTitleKey: "Real-Time Awareness of People and Spaces",
-    contentKey: "The AI Vision layer continuously detects and analyzes:",
-    listItems: [
-      "Suspicious or abnormal behavior.",
-      "Loitering and tailgating.",
-      "Restricted zone breaches.",
-      "Violence and weapon presence.",
-      "Fire and smoke indicators.",
-      "Crowd density and occupancy levels."
-    ],
-    footerContentKey: "This enables faster decisions, fewer false alarms, and earlier intervention.",
-    pathBtn: ""
-  },
-  { 
-    id: 2,
-    showPart2: false, 
-    isAnimating: false,
-    isActive: false,
-    titleKey: "AI Digital Twin – Driven Security",
-    subTitleKey: "Subtitle for Box 2", 
-    contentKey: "Content for Box 2...",
-    listItems: [],
-    footerContentKey: "",
-    pathBtn: ""
-  },
-  { 
-    id: 3,
-    showPart2: false, 
-    isAnimating: false,
-    isActive: false,
-    titleKey: "IoT Sensors in Action",
-    subTitleKey: "Subtitle for Box 3",
-    contentKey: "Content for Box 3...",
-    listItems: [],
-    footerContentKey: "",
-    pathBtn: ""
-  },
-  { 
-    id: 4,
-    showPart2: false, 
-    isAnimating: false,
-    isActive: false,
-    titleKey: "Robotics and Drones",
-    subTitleKey: "Subtitle for Box 4",
-    contentKey: "Content for Box 4...",
-    listItems: [],
-    footerContentKey: "",
-    pathBtn: ""
-  },
-  { 
-    id: 5,
-    showPart2: false, 
-    isAnimating: false,
-    isActive: false,
-    titleKey: "Immersive AR/VR Training",
-    subTitleKey: "Subtitle for Box 5",
-    contentKey: "Content for Box 5...",
-    listItems: [],
-    footerContentKey: "",
-    pathBtn: ""
-  }
-];
+    { 
+      id: 1,
+      showPart2: true,
+      isAnimating: false,
+      isActive: true,
+      titleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.TITLE",
+      subTitleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.SUBTITLE",
+      contentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.CONTENT",
+      listItems: [
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.0",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.1",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.2",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.3",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.4",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.ITEMS.5"
+      ],
+      footerContentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.1.FOOTER",
+      pathBtn: ""
+    },
+    { 
+      id: 2,
+      showPart2: false, 
+      isAnimating: false,
+      isActive: false,
+      titleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.TITLE",
+      subTitleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.SUBTITLE", 
+      contentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CONTENT",
+      listItems: [],
+      categorizedLists: [
+        {
+          heading: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.1.HEADING",
+          items: [
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.1.ITEMS.0",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.1.ITEMS.1",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.1.ITEMS.2",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.1.ITEMS.3"
+          ]
+        },
+        {
+          heading: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.2.HEADING",
+          items: [
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.2.ITEMS.0",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.2.ITEMS.1",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.2.ITEMS.2",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.2.CATEGORIES.2.ITEMS.3"
+          ]
+        }
+      ],
+      footerContentKey: "",
+      pathBtn: ""
+    },
+    { 
+      id: 3,
+      showPart2: false, 
+      isAnimating: false,
+      isActive: false,
+      titleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.TITLE",
+      subTitleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.SUBTITLE",
+      contentKey: "",
+      listItems: [],
+      categorizedLists: [
+        {
+          heading: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.1.HEADING",
+          items: [
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.1.ITEMS.0",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.1.ITEMS.1"
+          ]
+        },
+        {
+          heading: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.2.HEADING",
+          items: [
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.2.ITEMS.0",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.2.ITEMS.1"
+          ]
+        },
+        {
+          heading: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.3.HEADING",
+          items: [
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.3.ITEMS.0",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.3.ITEMS.1",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.3.ITEMS.2"
+          ]
+        },
+        {
+          heading: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.4.HEADING",
+          items: [
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.4.ITEMS.0",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.4.ITEMS.1",
+            "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.CATEGORIES.4.ITEMS.2"
+          ]
+        }
+      ],
+      footerContentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.3.FOOTER",
+      pathBtn: ""
+    },
+    { 
+      id: 4,
+      showPart2: false, 
+      isAnimating: false,
+      isActive: false,
+      titleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.TITLE",
+      subTitleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.SUBTITLE",
+      contentKey: "",
+      listItems: [
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.0",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.1",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.2",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.3",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.4",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.ITEMS.5"
+      ],
+      footerContentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.4.FOOTER",
+      pathBtn: ""
+    },
+    { 
+      id: 5,
+      showPart2: false, 
+      isAnimating: false,
+      isActive: false,
+      titleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.TITLE",
+      subTitleKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.SUBTITLE",
+      contentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.CONTENT",
+      listItems: [
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.ITEMS.0",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.ITEMS.1",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.ITEMS.2",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.ITEMS.3",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.ITEMS.4",
+        "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.ITEMS.5"
+      ],
+      footerContentKey: "AI_SECURITY_MANAGEMENT.TS_DATA.BOXES.5.FOOTER",
+      pathBtn: ""
+    }
+  ];
   activateFirstBox(): void {
     const firstBox = this.boxes[0];
     firstBox.isActive = true;

@@ -259,7 +259,7 @@
                                 </div>
                                 }
                             </div>
-
+                            @if (showCarousel && currentCards.length > 0) {
                             <ngx-slick-carousel class="sliderServices" #slickModal="slick-carousel"
                                 [config]="slideConfigService">
                                 @for (card of currentCards; track card.name) {
@@ -290,7 +290,7 @@
                                 </div>
                                 }
                             </ngx-slick-carousel>
-
+                            }
                             <div class="d-flex align-items-center justify-content-between fxExplore">
                                 <div class="d-flex arrowsSliderHeader">
                                     <button class="arrowLeft" (click)="prevSlide()">

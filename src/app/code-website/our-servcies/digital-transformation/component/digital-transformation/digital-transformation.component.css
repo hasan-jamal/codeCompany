@@ -1,0 +1,146 @@
+/* Start Eight Section */
+.sectionEightNew{margin-bottom: 6rem;}
+.sectionEightNew .fx-sectionEight{gap: 3%;}
+.sectionEightNew .fx-sectionEight{
+    align-items: normal;
+}
+.sectionEightNew .fx-sectionEight .partOne{
+    width: 40%;
+    height: 100%;
+}
+.sectionEightNew .fx-sectionEight .partOne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/2;
+    border-radius: 20px;
+}
+.sectionEightNew .fx-sectionEight .partTwo{
+    width: 55%;
+}
+.sectionEightNew .fx-sectionEight .partTwo h1{margin-bottom: 1rem;}
+.sectionEightNew .fx-sectionEight .partTwo p{margin-bottom: 1.5rem;}
+.sectionEightNew .fx-sectionEight .partTwo .lineCheck{
+    margin-bottom: 2.5%;
+    gap: 2%;
+}
+.sectionEightNew .fx-sectionEight .partTwo .lineCheck img{width: 3%;}
+.sectionEightNew .fx-sectionEight .partTwo p{line-height: 130%;}
+@media (max-width:614.4px) {
+    .sectionEightNew .fx-sectionEight{gap: 1rem;flex-direction: column;}
+    .sectionEightNew .fx-sectionEight .partOne,
+    .sectionEightNew .fx-sectionEight .partTwo{width: 100%;}
+}
+/* End Eight Section */
+.sectionTexts{
+    margin: 100px 0 60px 0;
+}
+.sectionTexts .backSection{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 13, 33, 0.92), rgba(0, 13, 33, 0.8)), 
+        url('../../../../../../assets/images/CodeServices/backServicesS6.png');
+            aspect-ratio: 7/2;
+}
+.sectionTexts .fx-sectionTexts{gap: 1.5rem;}
+.sectionTexts .fxTextTitles-one{
+    width:100%;
+}
+.sectionTexts .fxTextTitles-two{
+    width:100%;
+    gap: 1rem;
+    align-items: end;
+    justify-content: end;
+}
+@media (max-width:614.4px) {
+.sectionTexts .backSection{aspect-ratio: 2/2;}
+.sectionTexts .fx-sectionTexts{flex-direction: column;gap: 1rem;}
+.sectionTexts .fxTextTitles-one{width:100%;}
+.sectionTexts .fxTextTitles-two{width:100%;}
+}
+/* End Section */
+.servicesS3 .fx-servicesS3 .box .divOne{background-position: center !important;}
+
+
+
+.ea-objectives-section {
+  margin: 90px auto;
+}
+.ea-objectives-section-header{margin-bottom: 3rem;}
+.fx-ea-objectives{
+    justify-content: center;
+    gap: 1.5rem;
+}
+.ea-objectives-section-grid {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.ea-objectives-section-item{
+    gap: 1.5rem;
+}
+.ea-objectives-section-grid .ea-objectives-part1{
+    flex: 1 1 calc(40% - 1.2rem);
+    max-width: calc(40% - 0px);
+}
+.ea-objectives-section-grid .ea-objectives-part2{
+    flex: 1 1 calc(60% - 1.2rem);
+    max-width: calc(60% - 0px);
+    justify-content: center;
+    gap: 1.5rem;
+    height: -webkit-fill-available;
+}
+.ea-objectives-section-icon {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+.ea-objectives-section-circle-large {
+  width: 70px;
+  height: 70px;
+  background-color: #F7EAE5;
+  border-radius: 50%;
+}
+.ea-objectives-section-circle-small {
+    position: absolute;
+    top: 11%;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(109deg, #FAA26B 14.67%, #E74B62 110.18%);
+    border-radius: 50%;
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 768px) {
+    .ea-objectives-section-grid{gap: 2rem;}
+    .ea-objectives-section-grid .ea-objectives-part1{
+        flex: 1 1 calc(100% - 1.2rem);
+        max-width: calc(100% - 0px);
+    }
+    .ea-objectives-section-grid .ea-objectives-part2{
+        flex: 1 1 calc(100% - 1.2rem);
+        max-width: calc(100% - 0px);
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .fx-ea-objectives{gap: 2rem;}
+    .ea-objectives-section-circle-large{width: 60px;height: 60px;}
+    .ea-objectives-section-circle-small{width: 20px;height: 20px;}
+}
+  @media (max-width:614.4px) {
+    .fx-ea-objectives .ea-objectives-section-item{width: 100%;}
+    .ea-objectives-section-grid .ea-objectives-part2{flex-direction: column;gap: 1rem;}
+    .fx-ea-objectives{flex-direction: column;gap: 1rem;}
+    .ea-objectives-section-grid{gap: 1rem;}
+    .ea-objectives-section {width: 100%;margin: 60px auto;}
+      .ea-objectives-section-item {   flex: 1 1 calc(100% - 1rem);
+    max-width: calc(100% - 0px);}
+    .ea-objectives-section-header{margin-bottom: 1.5rem;}
+  }

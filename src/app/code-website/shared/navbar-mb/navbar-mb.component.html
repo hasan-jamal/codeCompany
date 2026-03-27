@@ -74,33 +74,21 @@
                     <div class="listServices" [class.active]="servicesListOpen">
                         <div class="listPart">
                             <div class="d-flex flex-column fx-listServices gap20">
+                                <a class="font-medium" routerLink="/ourServices/AI-Packages" (click)="closeSidenav()">
+                                    {{ 'NAV.SERVICES.AI_PACKAGES' | translate }}
+                                </a>
+
                                 <a class="font-medium" routerLink="/ourServices/AISolutions" (click)="closeSidenav()">
                                     {{ 'NAV.SERVICES.AI_SOLUTIONS' | translate }}
                                 </a>
 
-                                <a class="font-medium" routerLink="/ourServices/Data&CloudEngineering"
-                                    (click)="closeSidenav()">
-                                    {{ 'NAV.SERVICES.DATA_CLOUD' | translate }}
+                                <a class="font-medium" routerLink="/ourServices/ICT-Solutions" (click)="closeSidenav()">
+                                    {{ 'NAV.SERVICES.ICT_SOLUTIONS' | translate }}
                                 </a>
 
-                                <a class="font-medium" routerLink="/ourServices/DigitalHealthcare"
+                                <a class="font-medium" routerLink="/ourServices/Digital-Transformation"
                                     (click)="closeSidenav()">
-                                    {{ 'NAV.SERVICES.DIGITAL_HEALTHCARE' | translate }}
-                                </a>
-
-                                <a class="font-medium" routerLink="/ourServices/Passive&CivilWork"
-                                    (click)="closeSidenav()">
-                                    {{ 'NAV.SERVICES.PASSIVE_CIVIL' | translate }}
-                                </a>
-
-                                <a class="font-medium" routerLink="/ourServices/AutomationAndSecurity"
-                                    (click)="closeSidenav()">
-                                    {{ 'NAV.SERVICES.AUTOMATION_SECURITY' | translate }}
-                                </a>
-
-                                <a class="font-medium" routerLink="/ourServices/Software&Development"
-                                    (click)="closeSidenav()">
-                                    {{ 'NAV.SERVICES.SOFTWARE_DEV' | translate }}
+                                    {{ 'NAV.SERVICES.DIGITAL_TRANSFORMATION' | translate }}
                                 </a>
                             </div>
                         </div>

@@ -24,61 +24,61 @@ export class AiSmartCityComponent implements OnInit{
   }
 
 boxes = [
-  { 
-    id: 1,
-    showPart2: true,
-    isAnimating: false,
-    isActive: true,
-    titleKey: "Enterprise GIS Applications",
-    subTitleKey: "Multi-Layer System Connectivity",
-    contentKey: "",
-    listItems: [
-      "Traffic and transportation",
-      "Estate management",
-      "Education",
-      "Street lights",
-      "Land use",
-      "Public safety",
-      "Engineering",
-      "Sewerage",
-      "Property tax",
-      "Health",
-      "Town planning",
-      "Water supply",
-      "Solid waste",
-      "Disaster management"
-    ],
-    footerContentKey: "",
-    pathBtn: ""
-  },
-  { 
-    id: 2,
-    showPart2: false, 
-    isAnimating: false,
-    isActive: false,
-    titleKey: "GIS Platform Integration",
-    subTitleKey: "Multi-Layer System Connectivity", 
-    contentKey: "",
-    listItems: [
-      "Smart governance",
-      "E-governance",
-      "Building management (BMS)",
-      "Grievance redressal",
-      "Citizen connect app",
-      "Education and health care",
-      "Solid waste management",
-      "Auto vehicle location",
-      "Integrated city operations",
-      "Environment monitoring",
-      "Smart poles",
-      "Traffic management",
-      "Parking management",
-      "Smart tracking"
-    ],
-    footerContentKey: "",
-    pathBtn: ""
-  }
-];
+    { 
+      id: 1,
+      showPart2: true,
+      isAnimating: false,
+      isActive: true,
+      titleKey: "AI_SMART_CITY.TS_DATA.BOXES.1.TITLE",
+      subTitleKey: "AI_SMART_CITY.TS_DATA.BOXES.1.SUBTITLE",
+      contentKey: "",
+      listItems: [
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.0",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.1",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.2",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.3",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.4",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.5",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.6",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.7",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.8",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.9",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.10",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.11",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.12",
+        "AI_SMART_CITY.TS_DATA.BOXES.1.ITEMS.13"
+      ],
+      footerContentKey: "",
+      pathBtn: ""
+    },
+    { 
+      id: 2,
+      showPart2: false, 
+      isAnimating: false,
+      isActive: false,
+      titleKey: "AI_SMART_CITY.TS_DATA.BOXES.2.TITLE",
+      subTitleKey: "AI_SMART_CITY.TS_DATA.BOXES.2.SUBTITLE", 
+      contentKey: "",
+      listItems: [
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.0",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.1",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.2",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.3",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.4",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.5",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.6",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.7",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.8",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.9",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.10",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.11",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.12",
+        "AI_SMART_CITY.TS_DATA.BOXES.2.ITEMS.13"
+      ],
+      footerContentKey: "",
+      pathBtn: ""
+    }
+  ];
   activateFirstBox(): void {
     const firstBox = this.boxes[0];
     firstBox.isActive = true;
@@ -130,23 +130,22 @@ boxes = [
     "autoplaySpeed": 3000,
     "infinite": true
   };
-
-  slidesData = [
+slidesData = [
     {
       features: [
-        'Parking revenue and occupancy.',
-        'Waste management efficiency.',
-        'Real-time system health across all city domains.'
+        'AI_SMART_CITY.TS_DATA.SLIDES.1.F1',
+        'AI_SMART_CITY.TS_DATA.SLIDES.1.F2',
+        'AI_SMART_CITY.TS_DATA.SLIDES.1.F3'
       ],
       image: 'assets/images/AIPackages-services/AI-Driven-Smart-City-Management/4.jpg',
       altText: 'Operational Environment UI'
     },
     {
       features: [
-        'Advanced AI Analytics',
-        'Automated reporting generation',
-        'Customizable dashboards',
-        '24/7 Support and maintenance'
+        'AI_SMART_CITY.TS_DATA.SLIDES.2.F1',
+        'AI_SMART_CITY.TS_DATA.SLIDES.2.F2',
+        'AI_SMART_CITY.TS_DATA.SLIDES.2.F3',
+        'AI_SMART_CITY.TS_DATA.SLIDES.2.F4'
       ],
       image: 'assets/images/AIPackages-services/2-1.jpg',
       altText: 'Analytics Dashboard UI'

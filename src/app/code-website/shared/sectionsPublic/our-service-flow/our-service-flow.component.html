@@ -1,32 +1,34 @@
 <section class="ourServiceFlow">
     <div class="ourServiceFlow-container px-120">
         <div class="ourServiceFlow-titles">
-            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">Our Service
-                Flow</span>
-            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos=" fade-down">Our
-                Step-by-Step Work Process <br>at <span class="color-linearGradient text-uppercase">Code</span> from
-                start to
-                finish
+            <span class="color-linearGradient font-medium text-center d-block subtitle24px mb24">
+                {{ 'OUR_SERVICE_FLOW.PRE_TITLE' | translate }}
+            </span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
+                <span [innerHTML]="'OUR_SERVICE_FLOW.TITLE_1' | translate"></span>
+                <span class="color-linearGradient text-uppercase">{{ 'OUR_SERVICE_FLOW.HIGHLIGHT' | translate }}</span>
+                {{ 'OUR_SERVICE_FLOW.TITLE_2' | translate }}
             </h1>
-            <p class="style-font text-center colorTwo subtitle20px p-head">At CODE, we follow a structured and
-                efficient workflow to ensure the highest quality of service for our customers</p>
+            <p class="style-font text-center colorTwo subtitle20px p-head">
+                {{ 'OUR_SERVICE_FLOW.DESC' | translate }}
+            </p>
         </div>
         <div class="d-flex fx-ourServiceFlow fxGeneral-cards">
             <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack1">
                 <img src="assets/images/Research-icon.svg" alt="Research icon">
-                <h3 class="font-medium subtitle20px">Research</h3>
+                <h3 class="font-medium subtitle20px">{{ 'OUR_SERVICE_FLOW.STEPS.RESEARCH' | translate }}</h3>
             </div>
             <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack2">
                 <img src="assets/images/Brainstorm-icon.svg" alt="Brainstorm icon">
-                <h3 class="font-medium subtitle20px">Brainstorm</h3>
+                <h3 class="font-medium subtitle20px">{{ 'OUR_SERVICE_FLOW.STEPS.BRAINSTORM' | translate }}</h3>
             </div>
             <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack3">
                 <img src="assets/images/Development-icon.svg" alt="Development icon">
-                <h3 class="font-medium subtitle20px">Development</h3>
+                <h3 class="font-medium subtitle20px">{{ 'OUR_SERVICE_FLOW.STEPS.DEVELOPMENT' | translate }}</h3>
             </div>
             <div class="box fxCard d-flex align-items-center justify-content-center flex-column boxBack4">
                 <img src="assets/images/Delivery-icon.svg" alt="Delivery icon">
-                <h3 class="font-medium subtitle20px">Delivery</h3>
+                <h3 class="font-medium subtitle20px">{{ 'OUR_SERVICE_FLOW.STEPS.DELIVERY' | translate }}</h3>
             </div>
         </div>
 

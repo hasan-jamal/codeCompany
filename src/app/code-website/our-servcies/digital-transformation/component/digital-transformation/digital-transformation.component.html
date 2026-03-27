@@ -1,1 +1,217 @@
-<p>digital-transformation works!</p>
+<section class="servicesS1">
+    <div class="servicesS1-container px-120">
+        <div class="back-servicesS1"
+            style="background-image:url('assets/images/Digital-Transformation-Services/hero.jpeg');">
+            <div class="servicesS1-texts">
+                <h1 class="subtitle44px colorThree font-bold">
+                    {{ 'DIGITAL_TRANSFORMATION.HERO.TITLE_1' | translate }}
+                    <span class="color-linearGradient">{{ 'DIGITAL_TRANSFORMATION.HERO.HIGHLIGHT' | translate }}</span>
+                    {{ 'DIGITAL_TRANSFORMATION.HERO.TITLE_2' | translate }}
+                </h1>
+                <p class="mb-0 colorThree subtitle16px font-medium">
+                    {{ 'DIGITAL_TRANSFORMATION.HERO.DESC' | translate }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-services-s4></app-services-s4>
+
+<section class="sectionEightNew">
+    <div class="sectionEightNew-container px-120">
+        <div class="d-flex fx-sectionEight">
+            <div class="partOne">
+                <img src="assets/images/Digital-Transformation-Services/Structured-Approach.png"
+                    alt="Structured Approach">
+            </div>
+            <div class="partTwo d-flex flex-column justify-content-between">
+                <h1 class="font-bold subtitle48px" data-aos="fade-down">
+                    {{ 'DIGITAL_TRANSFORMATION.STRUCTURED_APPROACH.TITLE_1' | translate }}
+                    <span class="color-linearGradient">{{ 'DIGITAL_TRANSFORMATION.STRUCTURED_APPROACH.HIGHLIGHT' |
+                        translate }}</span>
+                    {{ 'DIGITAL_TRANSFORMATION.STRUCTURED_APPROACH.TITLE_2' | translate }}
+                </h1>
+                <p class="style-font subtitle24px"
+                    [innerHTML]="'DIGITAL_TRANSFORMATION.STRUCTURED_APPROACH.DESC' | translate"></p>
+
+                <div *ngFor="let item of 'DIGITAL_TRANSFORMATION.STRUCTURED_APPROACH.ITEMS' | translate"
+                    class="d-flex align-items-start lineCheck">
+                    <img src="assets/images/HomePage/checkMark.svg" alt="check">
+                    <p class="subtitle22px style-font colorTwo mb-0">
+                        {{ item }}
+                    </p>
+                </div>
+
+                <p class="subtitle22px style-font colorTwo mb-0 mt-3">
+                    {{ 'DIGITAL_TRANSFORMATION.STRUCTURED_APPROACH.FOOTER' | translate }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="servicesS3">
+    <div class="servicesS3-container px-120">
+        <div class="ourServiceFlow-titles d-flex flex-column align-items-center">
+            <span class="font-medium subtitle20px color-linearGradient text-center">{{
+                'DIGITAL_TRANSFORMATION.SERVICES.PRE_TITLE' | translate }}</span>
+            <h1 class="font-bold subtitle48px colorOne mb24 aos-init text-center" data-aos="fade-down">
+                {{ 'DIGITAL_TRANSFORMATION.SERVICES.TITLE_1' | translate }}
+                <span class="color-linearGradient">{{ 'DIGITAL_TRANSFORMATION.SERVICES.HIGHLIGHT' | translate }}</span>
+                {{ 'DIGITAL_TRANSFORMATION.SERVICES.TITLE_2' | translate }}
+            </h1>
+            <p class="style-font text-center colorTwo subtitle20px p-head mb-0">
+                {{ 'DIGITAL_TRANSFORMATION.SERVICES.DESC' | translate }}
+            </p>
+        </div>
+        <div class="d-flex fx-servicesS3 fxGeneral-cards">
+            <div class="box fxCardPublic d-flex align-items-end justify-content-between"
+                *ngFor="let card of serviceCards" (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
+
+                <div class="divOne" [style.background]="'url('+ card.imageUrl +')'" [class.hidden]="card.isHovered">
+                    <h3 class="font-bold subtitle22px colorWhite">{{ card.nameKey | translate }}</h3>
+                    <div class="divArrow">
+                        <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                            <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="divTwo" [class.visible]="card.isHovered">
+                    <p class="mb-0 font-medium colorWhite subtitle20px">{{ card.descKey | translate }}</p>
+                    <div class="d-flex fxDescription align-items-center justify-content-between">
+                        <h3 class="font-bold subtitle24px colorWhite">{{ card.nameKey | translate }}</h3>
+                        <div class="divArrow">
+                            <a class="btn-hover" [routerLink]="card.link" routerLinkActive="active">
+                                <img src="assets/images/arrow-linear.svg" alt="arrow-linear">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="sectionTexts">
+    <div class="backSection">
+        <div class="sectionTexts-container px-120 h-100">
+            <div class="d-flex fx-sectionTexts align-items-center flex-column justify-content-center h-100">
+                <h1 class="colorWhite mb24 aos-init text-center font-bold subtitle40px text-start" data-aos="fade-down">
+                    {{ 'DIGITAL_TRANSFORMATION.REGULATED_ENV.TITLE_1' | translate }}
+                    <span class="color-linearGradient">{{ 'DIGITAL_TRANSFORMATION.REGULATED_ENV.HIGHLIGHT' | translate
+                        }}</span>
+                    {{ 'DIGITAL_TRANSFORMATION.REGULATED_ENV.TITLE_2' | translate }}
+                </h1>
+                <p class="mb-0 colorWhite style-font subtitle22px p-head text-center">
+                    {{ 'DIGITAL_TRANSFORMATION.REGULATED_ENV.DESC' | translate }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ea-objectives-section">
+    <div class="ea-objectives-section-container px-120">
+        <div class="ea-objectives-section-grid " data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+
+            <div class="ea-objectives-part1 d-flex flex-column">
+                <div class="ea-objectives-section-header text-start mb-2" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="500">
+                    <h2 class="font-bold subtitle48px colorOne mb16">
+                        {{ 'DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.TITLE_1' | translate }}
+                        <span class="color-linearGradient">{{ 'DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.HIGHLIGHT' |
+                            translate }}</span>
+                        {{ 'DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.TITLE_2' | translate }}
+                    </h2>
+                    <p class="subtitle20px colorThree style-font mb-0">
+                        {{ 'DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.DESC' | translate }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="ea-objectives-part2 d-flex">
+                <div class="d-flex flex-column fx-ea-objectives">
+                    <div class="ea-objectives-section-item d-flex align-items-center">
+                        <div class="ea-objectives-section-icon">
+                            <div class="ea-objectives-section-circle-large"></div>
+                            <div class="ea-objectives-section-circle-small"></div>
+                        </div>
+                        <div class="divText">
+                            <p class="subtitle20px colorOne font-medium mb-0">
+                                {{ ('DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.ITEMS' | translate)[0] }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ea-objectives-section-item d-flex align-items-center">
+                        <div class="ea-objectives-section-icon">
+                            <div class="ea-objectives-section-circle-large"></div>
+                            <div class="ea-objectives-section-circle-small"></div>
+                        </div>
+                        <div class="divText">
+                            <p class="subtitle20px colorOne font-medium mb-0">
+                                {{ ('DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.ITEMS' | translate)[1] }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column fx-ea-objectives">
+                    <div class="ea-objectives-section-item d-flex align-items-center">
+                        <div class="ea-objectives-section-icon">
+                            <div class="ea-objectives-section-circle-large"></div>
+                            <div class="ea-objectives-section-circle-small"></div>
+                        </div>
+                        <div class="divText">
+                            <p class="subtitle20px colorOne font-medium mb-0">
+                                {{ ('DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.ITEMS' | translate)[2] }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ea-objectives-section-item d-flex align-items-center">
+                        <div class="ea-objectives-section-icon">
+                            <div class="ea-objectives-section-circle-large"></div>
+                            <div class="ea-objectives-section-circle-small"></div>
+                        </div>
+                        <div class="divText">
+                            <p class="subtitle20px colorOne font-medium mb-0">
+                                {{ ('DIGITAL_TRANSFORMATION.MEASURABLE_IMPACT.ITEMS' | translate)[3] }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<app-our-service-flow></app-our-service-flow>
+
+<section class="contactSection">
+    <img src="assets/images/CONTACT-text.svg" alt="CONTACT-text" class="contact-text">
+    <div class="contactSection-container px-120">
+        <div class="contactSection-div d-flex">
+            <div class="contactSection-texts">
+                <h1 class="subtitle48px font-bold mb-0" data-aos="fade-down">
+                    {{ 'DIGITAL_TRANSFORMATION.CONTACT.TITLE_1' | translate }} <br>
+                    <span class="color-linearGradient">{{ 'DIGITAL_TRANSFORMATION.CONTACT.HIGHLIGHT' | translate
+                        }}</span>
+                    {{ 'DIGITAL_TRANSFORMATION.CONTACT.TITLE_2' | translate }}
+                </h1>
+            </div>
+            <div class="contactSection-buttons d-flex">
+                <button class="btn-linearGradient" type="button" (click)="openTalkCodeModal()">
+                    <span class="font-semiBold colorWhite subtitle20px">{{ 'DIGITAL_TRANSFORMATION.CONTACT.BTN' |
+                        translate }}</span>
+                    <img src="assets/images/arrow-up-right.svg" alt="arrow-up-right">
+                </button>
+            </div>
+        </div>
+        <p class="mb-0 colorTwo style-font subtitle20px">
+            {{ 'DIGITAL_TRANSFORMATION.CONTACT.DESC' | translate }}
+        </p>
+    </div>
+</section>

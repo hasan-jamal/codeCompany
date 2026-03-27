@@ -9,12 +9,10 @@
     },
     "SERVICES": {
       "TITLE": "Our services",
+ "AI_PACKAGES": "AI Packages",
       "AI_SOLUTIONS": "AI Solutions",
-      "DATA_CLOUD": "Data & Cloud Engineering",
-      "DIGITAL_HEALTHCARE": "Digital Healthcare",
-      "PASSIVE_CIVIL": "Passive & Civil Work",
-      "AUTOMATION_SECURITY": "Automation & Security",
-      "SOFTWARE_DEV": "Software & Development"
+      "ICT_SOLUTIONS": "ICT Solutions",
+      "DIGITAL_TRANSFORMATION": "Digital Transformation"
     },
     "INSIGHTS": "Insights",
     "CONTACT": "Contact us",
@@ -32,7 +30,7 @@
         "OurServices":"Our Services",
         "Insights":"Insights",
         "ContactUs":"Contact Us",
-        "JoinUs":"JoinUs"
+        "JoinUs":"Join Us"
     }
   },
    "FOOTER": {
@@ -2174,6 +2172,1843 @@
         }
       }
     }
+  },
+"AI_SMART_CITY": {
+  "TS_DATA": {
+    "BOXES": {
+      "1": {
+        "TITLE": "Enterprise GIS Applications",
+        "SUBTITLE": "Multi-Layer System Connectivity",
+        "ITEMS": [
+          "Traffic and transportation",
+          "Estate management",
+          "Education",
+          "Street lights",
+          "Land use",
+          "Public safety",
+          "Engineering",
+          "Sewerage",
+          "Property tax",
+          "Health",
+          "Town planning",
+          "Water supply",
+          "Solid waste",
+          "Disaster management"
+        ]
+      },
+      "2": {
+        "TITLE": "GIS Platform Integration",
+        "SUBTITLE": "Multi-Layer System Connectivity",
+        "ITEMS": [
+          "Smart governance",
+          "E-governance",
+          "Building management (BMS)",
+          "Grievance redressal",
+          "Citizen connect app",
+          "Education and health care",
+          "Solid waste management",
+          "Auto vehicle location",
+          "Integrated city operations",
+          "Environment monitoring",
+          "Smart poles",
+          "Traffic management",
+          "Parking management",
+          "Smart tracking"
+        ]
+      }
+    },
+    "SLIDES": {
+      "1": {
+        "F1": "Parking revenue and occupancy.",
+        "F2": "Waste management efficiency.",
+        "F3": "Real-time system health across all city domains."
+      },
+      "2": {
+        "F1": "Advanced AI Analytics",
+        "F2": "Automated reporting generation",
+        "F3": "Customizable dashboards",
+        "F4": "24/7 Support and maintenance"
+      }
+    }
+  },
+  "HERO": {
+    "TITLE": "AI-Driven Smart City Management"
+  },
+  "INTRO": {
+    "TITLE_1": "Integrated",
+    "HIGHLIGHT_1": "City Operations",
+    "TITLE_2": "Through an",
+    "HIGHLIGHT_2": "Intelligent",
+    "TITLE_3": "Command & Control Centre",
+    "DESC": "A centralized approach to managing city services with real-time visibility, faster response, and coordinated operations across urban domains."
+  },
+  "WHAT_IS": {
+    "TITLE_1": "What Is",
+    "HIGHLIGHT": "AI-Driven Smart City",
+    "TITLE_2": "Operations Solution?",
+    "DESC_1": "AI-Driven Smart City Operations combine artificial intelligence, GIS, IoT, and integrated city platforms to manage urban services with real-time visibility and data-driven control.",
+    "DESC_2_1": "A centralized",
+    "DESC_2_BOLD_1": "Integrated Command and Control Centre (ICCC)",
+    "DESC_2_2": "provides a single operational view by unifying",
+    "DESC_2_BOLD_2": "GIS data, AI analytics, IoT sensors, mobility systems, infrastructure, surveillance, and city services.",
+    "DESC_2_3": "This enables coordinated actions, faster incident response, and informed decision-making across city domains.",
+    "DESC_3": "Through this unified command environment, operators gain centralized visibility and control, supporting responsive, coordinated, and data-driven urban operations."
+  },
+  "OBJECTIVES": {
+    "PRE_TITLE": "Vision and Objectives",
+    "TITLE_1": "Key Drivers",
+    "TITLE_2": "for",
+    "HIGHLIGHT": "AI Smart City",
+    "TITLE_3": "Operations",
+    "DESC": "The ICCC enables:",
+    "ITEMS": {
+      "MOBILITY": { "TITLE": "Safer mobility", "DESC": "Clear alignment between strategy and execution" },
+      "VIEW": { "TITLE": "City-wide single view", "DESC": "Data-driven governance using integrated GIS and city portals" },
+      "LIGHTING": { "TITLE": "Smart lighting", "DESC": "Reduced energy costs and faster fault repair turnaround" },
+      "SERVICES": { "TITLE": "Efficient services", "DESC": "Streamlined parking and mobility services via smart cards" },
+      "OPERATIONS": { "TITLE": "Unified operations", "DESC": "Single command and control through ICCC integration" }
+    }
+  },
+  "CHALLENGES": {
+    "PRE_TITLE": "Vision and Objectives",
+    "TITLE_1": "Key Urban",
+    "HIGHLIGHT": "Challenges",
+    "DESC": "Addressing Critical Pain Points in City Operations",
+    "ITEMS": {
+      "PARKING": { "TITLE": "Parking Chaos and Revenue Leakage", "DESC": "Time wasted searching for parking and loss of on-street parking revenue" },
+      "TRAFFIC": { "TITLE": "Traffic Congestion and Safety Risks", "DESC": "Weak junction control and inconsistent violation enforcement" },
+      "EMERGENCY": { "TITLE": "Slow Emergency Response", "DESC": "Delayed reaction due to lack of real-time situational awareness" },
+      "LIGHTING": { "TITLE": "High Lighting Costs and Outages", "DESC": "Inefficient energy usage and slow fault resolution" },
+      "UTILITY": { "TITLE": "Poor Utility Visibility", "DESC": "Limited insight into pollution, waste management, and service performance" },
+      "FRAGMENTED": { "TITLE": "Fragmented City View", "DESC": "Siloed departmental data leading to inefficient decision-making" }
+    }
+  },
+  "COMPARISON": {
+    "TITLE_1": "From Fragmented Operations to",
+    "HIGHLIGHT": "Unified City Control",
+    "DESC_1": "The result is a shift from fragmented city management to",
+    "DESC_BOLD": "coordinated, real-time urban operations.",
+    "TRADITIONAL": {
+      "TITLE": "Traditional City Operations",
+      "ITEMS": [
+        "Siloed departmental systems",
+        "Limited real-time visibility",
+        "Manual coordination",
+        "Delayed response to incidents",
+        "Static reporting",
+        "Reactive decision-making"
+      ]
+    },
+    "SMART": {
+      "TITLE": "AI Smart City Operations",
+      "ITEMS": [
+        "Unified ICCC with single city view",
+        "Live data across various city domains",
+        "Automated workflows and SOPs",
+        "Real-time alerts and faster action",
+        "Continuous analytics and insights",
+        "Data-driven, proactive operations"
+      ]
+    }
+  },
+  "ICCC_MANAGED": {
+    "PRE_TITLE": "ICCC-Managed Components",
+    "TITLE_1": "Integrated and Managed",
+    "TITLE_2": "Through the Command Centre",
+    "DESC": "CODE's AI Security Management Solution is designed to support both security leadership and operational excellence:",
+    "ITEMS": [
+      "GIS and city GIS portal",
+      "GPS vehicle tracking (fleet / AVL)",
+      "Environmental monitoring sensors",
+      "Variable Message Signboards (VMS)",
+      "ICT-enabled solid waste management",
+      "Intelligent Traffic Management System (ITMS)",
+      "City surveillance (CCTV)",
+      "Energy-efficient smart street lighting",
+      "Smart parking management",
+      "Biometric attendance systems",
+      "Unified smart mobility card"
+    ]
+  },
+  "TECH_STACK": {
+    "PRE_TITLE": "Solution Architecture",
+    "TITLE_1": "End-to-End",
+    "TITLE_2": "Technology for",
+    "HIGHLIGHT": "Smart City",
+    "TITLE_3": "Operations",
+    "DESC": "Integrated Smart City Platform",
+    "ITEMS": {
+      "SENSORS": { "TITLE": "Devices and Sensors", "DESC": "CCTV, IoT sensors, GPS trackers, smart meters, ANPR, VMS" },
+      "ANALYTICS": { "TITLE": "Analytics and Processing", "DESC": "AI/ML engine, stream processing, rule engine, big data lake" },
+      "CONNECTIVITY": { "TITLE": "Connectivity", "DESC": "5G/4G, fiber backbone, LPWAN (LoRaWAN), Wi-Fi networks" },
+      "APPS": { "TITLE": "Applications", "DESC": "ICCC modules, GIS portal, SOP engine, citizen apps, dashboards" }
+    }
+  },
+  "UNIFIED_VIEW": {
+    "PRE_TITLE": "Platform at a Glance",
+    "TITLE_1": "Unified",
+    "HIGHLIGHT": "Multi-Layer",
+    "TITLE_2": "City View",
+    "DESC": "The platform provides an interactive city dashboard with:",
+    "ITEMS": [
+      "OpenStreetMap (OSM) base layer",
+      "Satellite imagery layer",
+      "Administrative boundaries (all layers)",
+      "Building and infrastructure layers"
+    ],
+    "FOOTER": "Real-time data overlays enable live operational visibility across the city."
+  },
+  "END_TO_END": {
+    "PRE_TITLE": "Command and Communication Centre",
+    "TITLE_1": "End-to-End Integration:",
+    "TITLE_2": "From Field Devices to",
+    "HIGHLIGHT": "City Dashboard",
+    "DESC": "A layered architecture integrating:",
+    "STEPS": [
+      "Vertical Apps and BI",
+      "Integration Bus",
+      "Smart Digital Platform",
+      "Device Integration",
+      "City Databases and Services"
+    ]
+  },
+  "WORKFLOW": {
+    "TITLE_1": "Alerts to Action:",
+    "HIGHLIGHT": "Streamlined Incident Response",
+    "TITLE_2": "Workflow",
+    "STEPS": {
+      "DETECT": { "TITLE": "Detect", "DESC": "Incidents appear in the alerts panel with severity indicators" },
+      "VALIDATE": { "TITLE": "Validate", "DESC": "Alert-action popups enable rapid verification" },
+      "ASSIGN": { "TITLE": "Assign", "DESC": "SOP engine automates response actions" },
+      "RESPOND": { "TITLE": "Respond", "DESC": "Teams act based on assigned duties and workflows" },
+      "CLOSE": { "TITLE": "Close", "DESC": "Incidents are verified and formally closed" }
+    }
+  },
+  "DETAILS": {
+    "PARKING": {
+      "PRE_TITLE": "Smart City Operations",
+      "TITLE_1": "AI-Powered",
+      "TITLE_2": "Parking and Lighting Management",
+      "ITEM_1": "Parking predictions: forecast occupancy to reduce congestion",
+      "ITEM_2": "Dynamic lighting policies: adjust streetlight intensity based on real-time usage",
+      "DESC": "Predictive AI improves traffic flow while optimizing energy consumption."
+    },
+    "ENVIRONMENT": {
+      "PRE_TITLE": "Environmental Monitoring",
+      "TITLE_1": "Real-Time",
+      "TITLE_2": "Air Quality and Pollution Tracking",
+      "ITEM_1": "Vehicular pollution monitoring",
+      "ITEM_2": "Color-coded environmental heatmaps",
+      "ITEM_3": "Detailed air quality drill-downs",
+      "DESC": "Provides actionable insights into city health and environmental conditions."
+    }
+  },
+  "OPERATIONAL": {
+    "PRE_TITLE": "City Operations Dashboard",
+    "TITLE_1": "Multi-Domain Management &",
+    "HIGHLIGHT": "Health",
+    "TITLE_2": "Monitoring",
+    "DESC": "Centralized monitoring of key urban indicators, including:",
+    "FOOTER_1": "The focus is on",
+    "FOOTER_BOLD": "day-to-day operational performance",
+    "FOOTER_2": ", not theoretical AI use cases."
+  },
+  "GIS": {
+    "PRE_TITLE": "GIS as the Digital Backbone",
+    "TITLE_1": "Core Platform for",
+    "HIGHLIGHT": "Integrated City",
+    "TITLE_2": "Operations",
+    "ITEMS": {
+      "COVERAGE": { "TITLE": "Enterprise GIS coverage", "DESC": "Desktop, enterprise, and mobile GIS" },
+      "CAPACITY": { "TITLE": "Capacity building", "DESC": "Training, operations, and maintenance support" },
+      "APPS": { "TITLE": "Web and mobile applications", "DESC": "Real-time access for field and office teams" },
+      "DB": { "TITLE": "Database management", "DESC": "Centralized spatial data creation and updates" },
+      "INTEGRATION": { "TITLE": "System integration", "DESC": "APIs and connectors for seamless interoperability" }
+    }
+  },
+  "BUILDING_GIS": {
+    "PRE_TITLE": "Building GIS Data",
+    "TITLE_1": "Foundation for",
+    "HIGHLIGHT": "City Intelligence",
+    "ITEMS": [
+      "Collect legacy maps and utility layers.",
+      "Perform QA/QC and centralize datasets.",
+      "Add high-resolution, geo-referenced imagery.",
+      "Digitize core layers including buildings, roads, utilities, parks, and water bodies."
+    ]
+  },
+  "MULTI_LAYER": {
+    "PRE_TITLE": "Deployment Architecture",
+    "TITLE_1": "Comprehensive Multi",
+    "TITLE_2": "-Layer System Stack",
+    "ITEMS": [
+      "Central command",
+      "Applications",
+      "Networks",
+      "Web services",
+      "Core GIS engine",
+      "Data and integrations"
+    ]
+  },
+  "IMPLEMENTATION": {
+    "PRE_TITLE": "Implementation Roadmap",
+    "TITLE_1": "3 Steps to Launch",
+    "HIGHLIGHT": "Your ICCC",
+    "STEPS": {
+      "STEP_1": { "TITLE": "Select Pilot Zones and Priority Domains", "DESC": "Traffic, parking, lighting, and other key services" },
+      "STEP_2": { "TITLE": "Confirm Modules and Integrations", "DESC": "GIS, ERP, SCADA, GPS/ AVL, and city systems" },
+      "STEP_3": { "TITLE": "Schedule Deployment and Training", "DESC": "Platform deployment, SOP configuration, and operator training" }
+    }
+  },
+  "CONTACT": {
+    "TITLE_1": "Smarter",
+    "HIGHLIGHT": "Cities. \n Unified",
+    "TITLE_2": "Control.",
+    "DESC": "Explore how real-time visibility, coordinated response, and data-driven city operations can support more effective urban management."
   }
-
+},
+"AI_FACILITY_MANAGEMENT": {
+"TS_DATA": {
+    "BOXES": {
+      "1": {
+        "TITLE": "AI Vision Technology in Action",
+        "SUBTITLE": "Real-Time Awareness of Facilities and People",
+        "CONTENT": "AI Vision enables continuous visual analysis, including:",
+        "ITEMS": [
+          "Safety monitoring and hazard detection",
+          "Intrusion detection and unauthorized access monitoring",
+          "Slip, trip, and fall detection with Instant alerts",
+          "Occupancy tracking and space utilization analysis",
+          "Fire and smoke detection through visual indicators"
+        ]
+      },
+      "2": {
+        "TITLE": "AI Digital Twin in Action",
+        "SUBTITLE": "Unified 3D Interface for Facility Visibility",
+        "CONTENT": "The digital twin provides a live 3D representation of facility infrastructure and systems:",
+        "ITEMS": [
+          "Structural Systems: floors, walls, foundations, and physical zones",
+          "Electrical Systems: power distribution panels, lighting circuits, and energy meters",
+          "Mechanical Systems: HVAC units, chillers, air handlers, ventilation ductwork",
+          "Plumbing Systems: water supply lines, drainage pipes, pumps, and valves."
+        ],
+        "EXTRA": {
+          "TITLE": "Why It Matters",
+          "ITEMS": [
+            "Single visual view replacing complex drawings",
+            "Live data visibility mapped directly to physical assets",
+            "Scalable and accessible for technical and non-technical users",
+            "Faster action through instant root-cause identification"
+          ]
+        }
+      },
+      "3": {
+        "TITLE": "IoT Monitoring Coverage",
+        "SUBTITLE": "Real-Time, 24/7 Facility Monitoring",
+        "CONTENT": "",
+        "ITEMS": [
+          "Environment: Air quality, temperature, humidity, noise level, light (lux), odor detection",
+          "Utilities: Gas leaks, water leaks, pipe pressure, tank levels, soap levels, waste levels",
+          "Space: Occupancy tracking, parking slots, asset tracking, desk usage, zone heat-maps",
+          "Safety: Smoke and fire detection, emergency exits, intrusion detection, fence breach, panic buttons",
+          "Systems: Door access, lift health, door status, HVAC status, lighting control"
+        ]
+      },
+      "4": {
+        "TITLE": "Robotics in Action",
+        "SUBTITLE": "Automation for Safer and More Efficient Operations",
+        "CONTENT": "",
+        "ITEMS": [
+          "Autonomous robots perform routine cleaning and patrol.",
+          "Robots respond automatically when alarms are triggered.",
+          "Reduced human exposure during initial hazard verification.",
+          "Zero-fatigue operations with reduced manpower dependency."
+        ]
+      }
+    }
+  }
+  ,
+  "HERO": {
+    "TITLE": "AI-Driven Smart Facility Management"
+  },
+  "INTRO": {
+    "TITLE_1": "Next-Generation",
+    "TITLE_2": "Facility Management,",
+    "HIGHLIGHT": "Powered",
+    "TITLE_3": "by AI",
+    "DESC": "A unified facility management solution that uses AI, IoT, and real-time data to automate operations, improve efficiency, and maintain continuous visibility across facilities.",
+    "STATS": {
+      "UPTIME": "System Uptime",
+      "COST": "Cost Reduction",
+      "ENERGY": "Energy Savings"
+    }
+  },
+  "WHAT_IS": {
+    "TITLE_1": "What Is",
+    "HIGHLIGHT": "AI Facility",
+    "TITLE_2": "Management?",
+    "DESC_1_1": "AI Facility Management uses",
+    "DESC_1_BOLD": "artificial intelligence, IoT sensors, and advanced data analytics",
+    "DESC_1_2": "to continuously monitor facility conditions and automate operational decisions in real time.",
+    "DESC_2": "From a single unified command centre, organizations can manage and optimize:",
+    "ITEMS": {
+      "OPERATIONS": { "TITLE": "Operations", "DESC": "Day-to-day facility workflows" },
+      "SAFETY": { "TITLE": "Safety", "DESC": "Continuous detection of risks and hazards" },
+      "MAINTENANCE": { "TITLE": "Maintenance", "DESC": "Predictive and condition-based upkeep" },
+      "SPACE": { "TITLE": "Space", "DESC": "Occupancy-based space utilization" },
+      "ENERGY": { "TITLE": "Energy", "DESC": "Monitoring and optimization of consumption" },
+      "ASSETS": { "TITLE": "Assets", "DESC": "Digital tracking of physical infrastructure" }
+    }
+  },
+  "COMPARISON": {
+    "TITLE_1": "Why",
+    "HIGHLIGHT_1": "Traditional",
+    "TITLE_2": "Facility Is",
+    "HIGHLIGHT_2": "No Longer",
+    "TITLE_3": "Enough?",
+    "DESC_1": "The result is a shift",
+    "DESC_BOLD": "from incident response to threat prevention",
+    "DESC_2": ".",
+    "TRADITIONAL": {
+      "TITLE": "Traditional Facility",
+      "ITEMS": [
+        "Manual on-site checks and scheduled inspections",
+        "Reactive maintenance after failures",
+        "Delayed action and manual workflows",
+        "Fragmented data across siloed systems",
+        "Experience-based decision making",
+        "On-site, location-dependent operations"
+      ]
+    },
+    "SMART": {
+      "TITLE": "AI Facility Management",
+      "ITEMS": [
+        "24/7 real-time monitoring via IoT sensors",
+        "Predictive maintenance to prevent downtime",
+        "Automated alerts and corrective actions",
+        "End-to-end unified operational visibility",
+        "Data-driven insights from real-time analytics",
+        "Remote, cloud-based, scalable access"
+      ]
+    }
+  },
+  "OBJECTIVES": {
+    "PRE_TITLE": "Enabling Business Objectives",
+    "HIGHLIGHT": "One Command Centre",
+    "TITLE": "for Facility Operations",
+    "DESC_1_1": "From a",
+    "DESC_1_BOLD_1": "single centralized command centre",
+    "DESC_1_2": ", the AI-Driven Smart Facility Management Solution enables organizations to",
+    "DESC_1_BOLD_2": "manage and optimize:",
+    "DESC_2": "This approach consolidates facility operations into one unified operational view.",
+    "ITEMS": {
+      "1": { "TITLE": "Predictive maintenance", "DESC": "Anticipate equipment failures before they occur" },
+      "2": { "TITLE": "Energy management", "DESC": "Optimize HVAC and lighting consumption" },
+      "3": { "TITLE": "Space optimization", "DESC": "Improved layout planning based on real-time occupancy data" },
+      "4": { "TITLE": "Safety and compliance", "DESC": "Automate hazard detection and monitoring" },
+      "5": { "TITLE": "Smart parking", "DESC": "Track parking bay availability in real time" },
+      "6": { "TITLE": "Asset management", "DESC": "Digital lifecycle tracking, including vendor details and warranties" },
+      "7": { "TITLE": "Smart cleaning", "DESC": "Data-driven identification of high-usage or dirty areas" },
+      "8": { "TITLE": "Operational efficiency", "DESC": "Reduced manual workflows through intelligent automation" }
+    }
+  },
+  "TECH_STACK": {
+    "PRE_TITLE": "Technology Stack",
+    "HIGHLIGHT": "Core Pillars",
+    "TITLE": "of the Intelligent facility Facility Management",
+    "ITEMS": {
+      "1": { "TITLE": "AI Vision", "DESC": "Computer vision systems for real-time visual monitoring and safety analysis." },
+      "2": { "TITLE": "Robotics", "DESC": "Autonomous units for cleaning, patrol, and maintenance operations." },
+      "3": { "TITLE": "Digital Twin", "DESC": "A virtual replica of physical infrastructure enabling simulation and system understanding" },
+      "4": { "TITLE": "IoT Sensors", "DESC": "Smart connected devices capturing granular environmental and operational data." }
+    }
+  },
+  "DETAILS": {
+    "COMMAND": {
+      "PRE_TITLE": "Unified Command Centre",
+      "HIGHLIGHT": "Centralized Control",
+      "TITLE": "Across All Facility Systems",
+      "DESC_1": "A single control interface integrating",
+      "DESC_BOLD": "AI, Digital Twin, IoT, and Robotics",
+      "DESC_2": ", providing:",
+      "ITEMS": [
+        "24/7 operational visibility",
+        "Real-time alerts and control",
+        "Integrated analytics across facility functions"
+      ]
+    },
+    "ROI": {
+      "PRE_TITLE": "Business Value and ROI",
+      "TITLE": "Quantifiable Impact on",
+      "HIGHLIGHT": "Facility Operation",
+      "ITEMS": [
+        "30% operational cost reduction",
+        "25% total energy savings",
+        "40% faster incident response",
+        "50% predictive accuracy",
+        "99.9% critical systems uptime",
+        "60% workforce efficiency gain"
+      ]
+    }
+  },
+  "PRICING": {
+    "PRE_TITLE": "Select Your Smart Facility Tiers",
+    "HIGHLIGHT": "Custom-Built",
+    "TITLE": "to Match Your Business Requirements?",
+    "RIBBON": "Top selling",
+    "BTN": "Request Consultation",
+    "INCLUDED_SCOPE": "Included scope",
+    "KEY_OUTCOMES": "Key outcomes",
+    "PACKAGES": {
+      "BASIC": {
+        "TITLE": "Basic Package",
+        "SUBTITLE": "Essential compliance-ready foundation",
+        "SENSORS": "229 sensors",
+        "FOCUS": "Primary focus: housekeeping and maintenance",
+        "DESIGN": "Designed for facilities requiring regulatory compliance and basic safety monitoring",
+        "SCOPE_DESC": "Smoke detectors, panic buttons, gas leak sensors, alarm controllers, heat detectors, one central gateway",
+        "OUTCOMES_DESC": "Regulatory assurance and real-time safety alerts"
+      },
+      "ADVANCE": {
+        "TITLE": "Advance Package",
+        "SUBTITLE": "Advanced preventive monitoring capabilities",
+        "SENSORS": "405 sensors",
+        "FOCUS": "Primary focus: energy and asset security",
+        "SCOPE_DESC": "All Basic sensors plus indoor ambience sensors, heat detectors, water leak detection, door contacts, tilt/move sensors",
+        "OUTCOMES_DESC": "Fewer incidents through proactive detection and improved real-time visibility"
+      },
+      "PRO": {
+        "TITLE": "Pro Package",
+        "SUBTITLE": "Complete smart building ecosystem",
+        "SENSORS": "681 sensors",
+        "FOCUS": "Primary focus: total smart building optimization",
+        "SCOPE_DESC": "Smart restrooms, motion and PIR sensors, people counters, AC control units, advanced sensors, energy meters",
+        "OUTCOMES_DESC": "Maximum efficiency through integrated energy, space, and facility optimization"
+      }
+    }
+  },
+  "CONTACT": {
+    "TITLE_1": "Smarter",
+    "HIGHLIGHT": "Facilities. Better",
+    "TITLE_2": "Control.",
+    "DESC": "Explore how clearer visibility, stronger control, and proactive facility management can support your operations."
+  }
+},
+"AI_SECURITY_MANAGEMENT": {
+"TS_DATA": {
+    "BOXES": {
+      "1": {
+        "TITLE": "AI Computer Vision in Action",
+        "SUBTITLE": "Real-Time Awareness of People and Spaces",
+        "CONTENT": "The AI Vision layer continuously detects and analyzes:",
+        "ITEMS": [
+          "Suspicious or abnormal behavior.",
+          "Loitering and tailgating.",
+          "Restricted zone breaches.",
+          "Violence and weapon presence.",
+          "Fire and smoke indicators.",
+          "Crowd density and occupancy levels."
+        ],
+        "FOOTER": "This enables faster decisions, fewer false alarms, and earlier intervention."
+      },
+      "2": {
+        "TITLE": "AI Digital Twin – Driven Security",
+        "SUBTITLE": "Context Changes Everything",
+        "CONTENT": "A digital twin provides a single visual representation of the entire facility, integrating physical and operational layers.",
+        "CATEGORIES": {
+          "1": {
+            "HEADING": "Why it Matters:",
+            "ITEMS": [
+              "One unified view across all systems",
+              "Full infrastructure context for decision-makers",
+              "Scalable architecture as facilities expand",
+              "Faster, more accurate response in critical moments"
+            ]
+          },
+          "2": {
+            "HEADING": "What It Covers:",
+            "ITEMS": [
+              "Structural systems: buildings, zones, perimeters",
+              "Electrical systems: power rooms, UPS, generators",
+              "Mechanical systems: HVAC and plant rooms",
+              "Plumbing systems: water tanks, pumps, drainage"
+            ]
+          }
+        }
+      },
+      "3": {
+        "TITLE": "IoT Sensors in Action",
+        "SUBTITLE": "Real-Time Monitoring Across Every Layer",
+        "CATEGORIES": {
+          "1": {
+            "HEADING": "Perimeter:",
+            "ITEMS": [
+              "Gate status and boundary monitoring",
+              "Motion detection, vibration, IR fence breaches"
+            ]
+          },
+          "2": {
+            "HEADING": "People and Crowd:",
+            "ITEMS": [
+              "Flow analysis and occupancy levels",
+              "Restricted entry detection"
+            ]
+          },
+          "3": {
+            "HEADING": "Safety:",
+            "ITEMS": [
+              "Fire and smoke detection",
+              "Gas leak alerts and emergency exits",
+              "Tamper detection"
+            ]
+          },
+          "4": {
+            "HEADING": "Systems:",
+            "ITEMS": [
+              "Door access and status",
+              "Elevator health monitoring",
+              "Asset tracking"
+            ]
+          }
+        },
+        "FOOTER": "All sensor data feeds directly into the command centre for immediate action."
+      },
+      "4": {
+        "TITLE": "Robotics and Drones",
+        "SUBTITLE": "Autonomous Security Operations at Scale",
+        "ITEMS": [
+          "24/7 autonomous patrols without human intervention",
+          "Rapid alarm response and on-site verification",
+          "Thermal night surveillance for low-light conditions",
+          "Forensic evidence recording with geo-tagged data",
+          "Aerial crowd monitoring for large or open spaces",
+          "Search-and-assist support during emergencies"
+        ],
+        "FOOTER": "Ideal for campuses, industrial zones, transport hubs, and critical infrastructure."
+      },
+      "5": {
+        "TITLE": "Immersive AR/VR Training",
+        "SUBTITLE": "Preparedness Without Real-World Risk",
+        "CONTENT": "Train teams using realistic, data-driven simulations:",
+        "ITEMS": [
+          "Surveillance and suspicious behavior scenarios.",
+          "Active threat containment protocols.",
+          "Crowd evacuation and density control.",
+          "Perimeter breach simulations.",
+          "Fire and hazard response drills.",
+          "Critical infrastructure protection procedures."
+        ],
+        "FOOTER": "Training is repeatable, measurable, and aligned with real facility conditions."
+      }
+    }
+  }
+  ,
+  "HERO": {
+    "TITLE": "AI Smart Security Management"
+  },
+  "INTRO": {
+    "TITLE_1": "Next-Generation",
+    "TITLE_2": "Security Management,",
+    "HIGHLIGHT": "Powered by AI",
+    "DESC": "A proactive, intelligent, and automated security solution designed to monitor, detect, predict, and respond to security events in real time through a unified system."
+  },
+  "WHAT_IS": {
+    "TITLE_1": "What Is",
+    "HIGHLIGHT": "AI Security",
+    "TITLE_2": "Management?",
+    "DESC_1_1": "AI Security Management uses artificial intelligence and advanced analytics to",
+    "DESC_1_BOLD": "continuously monitor, analyze, and respond",
+    "DESC_1_2": "to security events in real time, without human fatigue or delay.",
+    "DESC_2_1": "From a",
+    "DESC_2_BOLD": "single unified command centre",
+    "DESC_2_2": ", organizations can manage:",
+    "ITEMS": [
+      "24/7 Intelligent Surveillance",
+      "Smart Access Control & Entry Management",
+      "Automated Incident Response",
+      "Perimeter Intrusion Detection",
+      "Behavioral & Anomaly Analysis",
+      "Compliance Auditing & Event Logging"
+    ]
+  },
+  "COMPARISON": {
+    "TITLE_1": "Why",
+    "HIGHLIGHT_1": "Traditional",
+    "TITLE_2": "Security Is",
+    "HIGHLIGHT_2": "No Longer",
+    "TITLE_3": "Enough?",
+    "DESC_1": "The result is a shift",
+    "DESC_BOLD": "from incident response to threat prevention",
+    "DESC_2": ".",
+    "TRADITIONAL": {
+      "TITLE": "Traditional Security",
+      "ITEMS": [
+        "Periodic manual monitoring",
+        "Reactive response after incidents",
+        "Slow coordination and manual intervention",
+        "On-site operational dependency",
+        "Static coverage with blind spots"
+      ]
+    },
+    "SMART": {
+      "TITLE": "AI Security Management",
+      "ITEMS": [
+        "Continuous 24/7 automated AI surveillance",
+        "Predictive behavioral analysis",
+        "Automated alerts & orchestrated response",
+        "Centralized remote management control from anywhere, anytime",
+        "Dynamic tracking with full visibility"
+      ]
+    }
+  },
+  "OBJECTIVES": {
+    "PRE_TITLE": "One Command Centre. Total Control.",
+    "HIGHLIGHT_1": "Security",
+    "TITLE_1": "That Enables",
+    "HIGHLIGHT_2": "Business Objectives",
+    "DESC": "CODE's AI Security Management Solution is designed to support both security leadership and operational excellence:",
+    "ITEMS": {
+      "1": { "BOLD": "Always-on situational awareness", "TEXT": "across facilities" },
+      "2": { "BOLD": "Operational efficiency", "TEXT": "through zero-fatigue monitoring" },
+      "3": { "BOLD": "Multi-layer perimeter defense", "TEXT": "for sensitive boundaries" },
+      "4": { "BOLD": "Early threat identification", "TEXT": "before escalation" },
+      "5": { "BOLD": "Emergency readiness", "TEXT": "with fire, smoke, and evacuation intelligence" },
+      "6": { "BOLD": "Critical asset protection", "TEXT": "using layered security controls" },
+      "7": { "BOLD": "Automated incident workflows", "TEXT": "for faster resolution" }
+    }
+  },
+  "TECH_STACK": {
+    "PRE_TITLE": "Technology Stack",
+    "TITLE_1": "Core Pillars of the",
+    "HIGHLIGHT": "Intelligent",
+    "TITLE_2": "Security Ecosystem",
+    "ITEMS": {
+      "1": { "TITLE": "AI Computer Vision", "DESC": "Advanced behavior recognition and real-time intrusion detection." },
+      "2": { "TITLE": "Digital Twin", "DESC": "A live virtual replica of facilities enabling simulation, risk analysis, and faster decision-making." },
+      "3": { "TITLE": "IoT Sensors", "DESC": "Smart, connected devices delivering granular real-time data across zones and systems." },
+      "4": { "TITLE": "Robotics and Drones", "DESC": "Autonomous patrol, rapid verification, thermal surveillance, and evidence capture." },
+      "5": { "TITLE": "AR/VR Training", "DESC": "Immersive simulations for preparedness, response, and operational readiness." }
+    }
+  },
+  "DETAILS": {
+    "COMMAND": {
+      "PRE_TITLE": "Unified Command Centre",
+      "TITLE_1": "A Single Pane of Glass",
+      "HIGHLIGHT": "Control",
+      "DESC_1": "A centralized environment providing:",
+      "ITEMS": [
+        "24/7 continuous monitoring",
+        "Real-time control with < 20ms latency",
+        "Unified operational interface",
+        "Predictive AI-driven analytics"
+      ],
+      "DESC_2": "Leadership gains visibility and confidence, while operations teams act faster and with precision."
+    },
+    "ROI": {
+      "PRE_TITLE": "Business Value and ROI",
+      "TITLE_1": "Quantifiable Impact on",
+      "HIGHLIGHT": "Operational Excellence",
+      "ITEMS": [
+        "60% reduction in security incidents",
+        "45% faster incident response",
+        "30% operational cost savings",
+        "24/7 proactive risk mitigation",
+        "ROI break-even within 14–18 months"
+      ],
+      "DESC_2": "Security shifts from a reactive cost to a strategic investment."
+    }
+  },
+  "PRICING": {
+    "PRE_TITLE": "Select Your Smart Security Tiers",
+    "HIGHLIGHT": "Custom-Built",
+    "TITLE": "to Match Your Business Requirements",
+    "RIBBON": "Top selling",
+    "BTN": "Request Consultation",
+    "PACKAGES": {
+      "BASIC": {
+        "TITLE": "Basic – Compliance",
+        "SUBTITLE": "Essential security-ready foundation for standard facilities.",
+        "ITEMS": ["Essential surveillance", "Access control systems", "Compliance monitoring"]
+      },
+      "ADVANCE": {
+        "TITLE": "Advance – Threat Prevention",
+        "SUBTITLE": "Proactive monitoring with advanced threat detection.",
+        "ITEMS": ["Proactive threat detection", "Perimeter security", "Real-time anomaly alerts", "AI behavioral analysis"]
+      },
+      "PRO": {
+        "TITLE": "Pro – Total Intelligence",
+        "SUBTITLE": "A complete AI-driven security ecosystem.",
+        "ITEMS": ["Full command centre intel", "Predictive risk management", "Automated incident response", "Full system integration"]
+      }
+    }
+  },
+  "IMPLEMENTATION": {
+    "PRE_TITLE": "Implementation Process",
+    "TITLE_1": "Ready to",
+    "HIGHLIGHT": "Transform",
+    "TITLE_2": "Your Security?",
+    "STEPS": {
+      "1": { "TITLE": "Select Pilot Area", "DESC": "Identify high-priority or restricted zones for initial deployment." },
+      "2": { "TITLE": "Confirm Security Tier", "DESC": "Align capabilities with operational risks and requirements." },
+      "3": { "TITLE": "Schedule Site Visit", "DESC": "Conduct a comprehensive site survey and implementation roadmap with CODE’s technical team." }
+    }
+  },
+  "CONTACT": {
+    "TITLE_1": "Let’s Build Smarter,",
+    "HIGHLIGHT": "Safer Facilities",
+    "TITLE_2": "Together",
+    "DESC": "Explore how to gain clearer visibility, stronger control, and a more proactive approach to security operations."
+  }
+},
+"AI_PACKAGES": {
+"TS_DATA": {
+    "SLIDES": {
+      "1": {
+        "F1": "Continuous visibility and monitoring",
+        "F2": "Fast, coordinated response",
+        "F3": "Reliable, real-time data",
+        "F4": "Clear operational ownership",
+        "F5": "Scalable deployment"
+      },
+      "2": {
+        "F1": "Advanced AI Analytics",
+        "F2": "Automated reporting generation",
+        "F3": "Customizable dashboards",
+        "F4": "24/7 Support and maintenance"
+      }
+    },
+    "CARDS": {
+      "1": {
+        "TITLE": "AI Smart Security Management",
+        "DESC": "Turn raw data into reliable, analytics-ready assets with tools for governance, machine learning, and real-time insights."
+      },
+      "2": {
+        "TITLE": "AI Smart Facility Management",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "3": {
+        "TITLE": "AI Smart City Management",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "4": {
+        "TITLE": "Smart Hybrid Theaters",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      }
+    }
+  }
+  ,
+  "HERO": {
+    "TITLE": "AI Packages Designed for Real-World Operations",
+    "DESC": "Our AI Packages are ready-to-deploy solutions that help organizations monitor, manage, and control complex environments using artificial intelligence, real-time data, and centralized operations."
+  },
+  "WHAT_WE_OFFER": {
+    "TITLE": "What We Offer?",
+    "SUBTITLE": "We provide 4 AI Packages, each focused on a distinct operational domain:",
+    "ITEMS": [
+      "Security operations",
+      "Facility and asset management",
+      "City-scale coordination and response",
+      "Live and hybrid event environments"
+    ],
+    "FOOTER": "All packages are designed to deliver immediate operational value, not experimental AI or isolated pilots."
+  },
+  "OUR_PACKAGES": {
+    "TITLE": "Our AI Packages",
+    "DESC": "Each package addresses a specific operational need and can be deployed independently, while also supporting integration into a broader AI-driven ecosystem."
+  },
+  "INDEPENDENT_SOLUTIONS": {
+    "TITLE_1": "Independent Solutions",
+    "TITLE_2": "with a Common Foundation",
+    "DESC_1": "Each AI Package is delivered as a complete, self-contained solution that addresses a specific operational domain.",
+    "DESC_2": "At the same time, the packages share compatible architectures and data foundations, allowing organizations to expand, integrate, and scale capabilities over time as operational needs evolve.",
+    "DESC_3": "This enables a controlled, low-risk approach to AI adoption without requiring a single, all-at-once transformation."
+  },
+  "OPERATIONAL_ENV": {
+    "TITLE_1": "Built for",
+    "HIGHLIGHT": "Operational",
+    "TITLE_2": "Environments",
+    "DESC": "AI Packages are designed for environments that require:",
+    "FOOTER_1": "The focus is on",
+    "FOOTER_BOLD": "day-to-day operational performance",
+    "FOOTER_2": ", not theoretical AI use cases."
+  },
+  "TECH_DELIVERS": {
+    "TITLE_1": "Technology That",
+    "HIGHLIGHT": "Delivers People Who",
+    "TITLE_2": "Understand",
+    "DESC": "Our platforms combine flexibility, speed and enterprise-grade reliability all aligned with Vision 2030’s digital transformation goals.",
+    "CARDS": {
+      "ARCHITECTURE": {
+        "TITLE": "Purpose-Driven Architecture",
+        "DESC": "Solutions engineered around your specific business goals scalable, secure and centered on user experience."
+      },
+      "SAUDI": {
+        "TITLE": "Tailored for Saudi Arabia",
+        "DESC": "Arabic-enabled, aligned with Vision 2030 and designed to integrate seamlessly with local platforms, regulations and digital strategies."
+      },
+      "PARTNERSHIP": {
+        "TITLE": "End-to-End Partnership",
+        "DESC": "From strategic planning to continuous improvement after launch, our teams walk with you every step of the way."
+      },
+      "SECURITY": {
+        "TITLE": "Security at the Core",
+        "DESC": "Enterprise-grade protection built into every layer from data privacy and access controls to performance and compliance safeguards."
+      }
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Deploy AI Where It Creates Value",
+    "BTN": "Talk to the CODE Team",
+    "DESC": "Explore how our AI Packages can support smarter security, efficient facilities, coordinated cities, and modern event environments."
+  }
+},
+"SMART_HYBRID_THEATERS": {
+  "TS_DATA": {
+    "BOXES": {
+      "1": {
+        "TITLE": "Enterprise GIS Applications",
+        "SUBTITLE": "Multi-Layer System Connectivity",
+        "ITEMS": [
+          "Traffic and transportation",
+          "Estate management",
+          "Education",
+          "Street lights",
+          "Land use",
+          "Public safety",
+          "Engineering",
+          "Sewerage",
+          "Property tax",
+          "Health",
+          "Town planning",
+          "Water supply",
+          "Solid waste",
+          "Disaster management"
+        ]
+      },
+      "2": {
+        "TITLE": "GIS Platform Integration",
+        "SUBTITLE": "Multi-Layer System Connectivity",
+        "ITEMS": [
+          "Smart governance",
+          "E-governance",
+          "Building management (BMS)",
+          "Grievance redressal",
+          "Citizen connect app",
+          "Education and health care",
+          "Solid waste management",
+          "Auto vehicle location",
+          "Integrated city operations",
+          "Environment monitoring",
+          "Smart poles",
+          "Traffic management",
+          "Parking management",
+          "Smart tracking"
+        ]
+      }
+    },
+    "SLIDES": {
+      "1": {
+        "F1": "Parking revenue and occupancy.",
+        "F2": "Waste management efficiency.",
+        "F3": "Real-time system health across all city domains."
+      },
+      "2": {
+        "F1": "Advanced AI Analytics",
+        "F2": "Automated reporting generation",
+        "F3": "Customizable dashboards",
+        "F4": "24/7 Support and maintenance"
+      }
+    },
+    "FEATURES": {
+      "1": {
+        "TITLE": "Advanced LED Visual Systems.",
+        "CONTENT": "High-brightness LED walls replace projection and small displays, ensuring crisp, vibrant visuals even with house lights on. Side displays support speaker close-ups, branding, and sponsor content without clutter."
+      },
+      "2": {
+        "TITLE": "Premium Audio and Accessibility",
+        "CONTENT": "Digitally optimized audio systems ensure even coverage and clear speech across the entire venue, supported by wireless microphones and assistive listening for inclusive experiences."
+      },
+      "3": {
+        "TITLE": "Multi-Camera Video Production.",
+        "CONTENT": "Integrated PTZ camera systems provide professional-grade coverage for presenters, panels, and audience interaction, enabling live IMAG, recording, and low-latency streaming."
+      },
+      "4": {
+        "TITLE": "Intelligent Lighting.",
+        "CONTENT": "Preset lighting scenes adapt instantly to presentations, panels, performances, or recording modes, ensuring presenters look natural on stage and on camera."
+      },
+      "5": {
+        "TITLE": "Smart Control and Automation.",
+        "CONTENT": "Scene-based control systems allow presenters to connect, tap, and present, while operators retain full control behind the scenes for complex productions."
+      }
+    }
+  },
+  "HERO": {
+    "TITLE": "Smart Hybrid Theaters"
+  },
+  "INTRO": {
+    "TITLE_1": "Modern, Intelligent",
+    "TITLE_2": "Venues for High-Impact Live and",
+    "HIGHLIGHT": "Hybrid Events",
+    "TITLE_3": "Centre",
+    "DESC_1": "Smart Hybrid Theaters transform traditional auditoriums into",
+    "DESC_BOLD": "reliable, flexible, and broadcast-ready venues",
+    "DESC_2": ", enabling high-quality in-person and hybrid events with minimal operational complexity."
+  },
+  "WHAT_IS": {
+    "PRE_TITLE": "Platform at a Glance",
+    "TITLE_1": "What Are",
+    "HIGHLIGHT": "Smart Hybrid",
+    "TITLE_2": "Theaters?",
+    "DESC_P1": "Smart Hybrid Theaters are modernized performance and presentation spaces that combine advanced audiovisual systems, intelligent control, and future-ready infrastructure into a single, cohesive environment.",
+    "DESC_P2": "They enable organizations to host presentations, panels, performances, and hybrid events with consistent quality, minimal technical friction, and professional broadcast-level output, without relying on complex manual operation.",
+    "DESC_P3": "Rather than layering new tools onto aging infrastructure, Smart Hybrid Theaters introduce a fully integrated, end-to-end venue architecture built for today’s event standards."
+  },
+  "FROM_TRADITIONAL": {
+    "TITLE_1": "From",
+    "HIGHLIGHT_1": "Traditional",
+    "TITLE_2": "Theaters to",
+    "HIGHLIGHT_2": "Smart Hybrid",
+    "TITLE_3": "Venues",
+    "DESC_1": "In practice, the difference between legacy theater infrastructure and a Smart Hybrid Theater becomes visible across experience, operations, and scalability.",
+    "DESC_2": "Smart Hybrid Theaters deliver consistent quality, operational confidence, and scalable hybrid capability, not just for special events, but for everyday use."
+  },
+  "COMPARISON": {
+    "TRADITIONAL": {
+      "TITLE": "Traditional Theater",
+      "ITEMS": [
+        "Dim or outdated visuals with limited flexibility",
+        "Uneven audio coverage and limited speech clarity",
+        "Manual, technician-dependent operation",
+        "Limited or unreliable streaming & recording",
+        "Lighting optimized only for live audiences",
+        "Inconsistent experience across event types"
+      ]
+    },
+    "SMART": {
+      "TITLE": "Smart Hybrid Theater",
+      "ITEMS": [
+        "Bright, modular LED visuals designed for live and on-camera use",
+        "Clear, intelligible audio across every seat",
+        "Scene-based control with simplified, one-touch operation",
+        "Integrated, broadcast-ready video production",
+        "Intelligent lighting adapted for both live and hybrid events",
+        "Reliable, professional performance for every event"
+      ]
+    }
+  },
+  "VISION": {
+    "TITLE_1": "Our Vision:",
+    "HIGHLIGHT": "A Flexible, Intelligent",
+    "TITLE_2": "Theater",
+    "DESC_1": "A Smart Hybrid Theater is designed as a",
+    "DESC_BOLD": "performance-ready ecosystem",
+    "DESC_2": ", not a collection of disconnected technologies.",
+    "CHARACTERISTICS_TITLE": "Key characteristics include:",
+    "LIST_1_ITEM_1_BOLD": "LED visual systems",
+    "LIST_1_ITEM_1": "Bright, modular ",
+    "LIST_1_ITEM_1_END": " for content, branding, and IMAG",
+    "LIST_1_ITEM_2_BOLD": "Premium audio",
+    "LIST_1_ITEM_2": " delivering clear speech intelligibility in every seat",
+    "LIST_2_ITEM_1_BOLD": "Professional video production",
+    "LIST_2_ITEM_1": " for streaming and recording",
+    "LIST_2_ITEM_2_BOLD": "Intelligent lighting",
+    "LIST_2_ITEM_2": " optimized for both live & on-camera presentation",
+    "LIST_2_ITEM_3_BOLD": "Simple, scene-based control",
+    "LIST_2_ITEM_3": " enabling one- touch operation at the podium"
+  },
+  "CORE_FOCUS": {
+    "HIGHLIGHT": "Core",
+    "TITLE": "Focus Areas"
+  },
+  "HUMAN_EXP": {
+    "PRE_TITLE": "One Command Centre. Total Control.",
+    "TITLE_1": "Designed Around the",
+    "HIGHLIGHT": "Human Experience",
+    "PRESENTERS_TITLE": "For Presenters",
+    "PRESENTERS_ITEMS": [
+      "Simple laptop connection.",
+      "Clear, natural voice reproduction.",
+      "Camera-ready lighting presets.",
+      "No technical distractions."
+    ],
+    "PRESENTERS_FOOTER": "Presenters focus on delivery, the system handles the rest.",
+    "AUDIENCES_TITLE": "For Audiences",
+    "AUDIENCES_ITEMS": [
+      "Bright, clear visuals from every seat.",
+      "Effortless speech comprehension.",
+      "Smooth, professional transitions.",
+      "Engaging hybrid and on-screen content."
+    ],
+    "AUDIENCES_FOOTER": "Every seat becomes the best seat in the house."
+  },
+  "FUTURE_READY": {
+    "HIGHLIGHT": "Future-Ready",
+    "TITLE": "Technical Foundation",
+    "DESC_1": "Smart Hybrid Theaters are built on",
+    "DESC_BOLD": "robust, scalable infrastructure",
+    "DESC_2": ", including:",
+    "ITEMS": [
+      "High-speed Cat6A and fiber optic backbones",
+      "AV-over-IP ready architectures",
+      "Structured floor boxes for power, audio, network, and video",
+      "Organized, labeled cabling with UPS protection"
+    ],
+    "FOOTER": "Smart Hybrid Theaters are built on robust, scalable infrastructure, including:"
+  },
+  "BUSINESS_VALUE": {
+    "HIGHLIGHT": "Business Value",
+    "TITLE": "and Return on Investment",
+    "DESC_1": "Modernizing a theater is not just a technical upgrade, it is a strategic investment.",
+    "DESC_2": "Organizations typically benefit from:",
+    "ITEMS": {
+      "1": "Higher attendance and engagement through better experiences",
+      "2": "Faster event turnaround with digital presets and automation",
+      "3": "Stronger brand perception through a modern, professional venue",
+      "4": "Lower maintenance costs by replacing aging projection and analog systems",
+      "5": "New revenue opportunities via streaming and digital sponsorships"
+    }
+  },
+  "WORKFLOW": {
+    "TITLE_1": "Alerts to Action:",
+    "HIGHLIGHT": "Streamlined Incident Response",
+    "TITLE_2": "Workflow",
+    "STEPS": {
+      "1": { "TITLE": "Concept & budget", "DESC": "Scope definition & stakeholder approval" },
+      "2": { "TITLE": "Detailed design", "DESC": "Engineering, acoustics, and system architecture" },
+      "3": { "TITLE": "Procurement & preparation", "DESC": "Equipment and site readiness" },
+      "4": { "TITLE": "Installation & integration", "DESC": "Cabling, rigging, programming" },
+      "5": { "TITLE": "Training & launch", "DESC": "Staff enablement and live event readiness" }
+    }
+  },
+  "CONTACT": {
+    "TITLE_1": "Create a Theater That Performs",
+    "HIGHLIGHT": "Every Time",
+    "DESC": "Smart Hybrid Theaters provide the structure, technology, and control needed to deliver consistent, professional, and future-ready event experiences."
+  }
+},
+"DIGITAL_TRANSFORMATION": {
+  "TS_DATA": {
+    "CARDS": {
+      "1": {
+        "TITLE": "Enterprise Architecture",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "2": {
+        "TITLE": "NDMO Services",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "3": {
+        "TITLE": "DGA Consulting Services",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "4": {
+        "TITLE": "AI Innovation Hub",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      }
+    },
+    "SLIDES": {
+      "1": {
+        "F1": "Continuous visibility and monitoring",
+        "F2": "Fast, coordinated response",
+        "F3": "Reliable, real-time data",
+        "F4": "Clear operational ownership",
+        "F5": "Scalable deployment"
+      },
+      "2": {
+        "F1": "Advanced AI Analytics",
+        "F2": "Automated reporting generation",
+        "F3": "Customizable dashboards",
+        "F4": "24/7 Support and maintenance"
+      }
+    }
+  },
+  "HERO": {
+    "TITLE_1": "",
+    "HIGHLIGHT": "Digital Transformation",
+    "TITLE_2": "Solutions",
+    "DESC": "Digital progress depends on strong foundations. Through structured governance and clear execution frameworks, organizations can advance transformation initiatives with confidence and control."
+  },
+  "STRUCTURED_APPROACH": {
+    "TITLE_1": "A Structured Approach to",
+    "HIGHLIGHT": "Digital Transformation",
+    "TITLE_2": "",
+    "DESC": "Effective digital transformation depends on alignment across architecture, data, and governance. <br> <br> Designed around three strategic levels:",
+    "ITEMS": [
+      "Structural alignment through Enterprise Architecture",
+      "Data governance and trust through NDMO-aligned services",
+      "Transformation maturity and measurement through DGA-aligned consulting"
+    ],
+    "FOOTER": "Together, these capabilities strengthen governance, reduce risk, and enable sustainable digital advancement at scale."
+  },
+  "SERVICES": {
+    "PRE_TITLE": "What we offer",
+    "TITLE_1": "Our",
+    "HIGHLIGHT": "Services",
+    "TITLE_2": "",
+    "DESC": "A structured set of capabilities designed to govern and advance digital transformation."
+  },
+  "REGULATED_ENV": {
+    "TITLE_1": "Designed for Complex and",
+    "HIGHLIGHT": "Regulated Environments",
+    "TITLE_2": "",
+    "DESC": "Our Digital Transformation Services are particularly relevant for organizations operating at scale, across multiple entities, or within regulated environments. By combining architecture, data governance, and transformation measurement, we help organizations advance digital initiatives while maintaining control, compliance, and clarity."
+  },
+  "MEASURABLE_IMPACT": {
+    "TITLE_1": "From Foundations to",
+    "HIGHLIGHT": "Measurable Impact",
+    "TITLE_2": "",
+    "DESC": "Our approach enables organizations to:",
+    "ITEMS": [
+      "Build strong structural & governance foundations",
+      "Measure progress & maturity over time",
+      "Improve data quality, trust, & interoperability",
+      "Scale digital initiatives with confidence"
+    ]
+  },
+  "CONTACT": {
+    "TITLE_1": "Start with Structure,",
+    "HIGHLIGHT": "Govern with Clarity",
+    "TITLE_2": "",
+    "BTN": "Talk to the CODE Team",
+    "DESC": "Explore how our Digital Transformation Services can support structured, sustainable, and measurable transformation."
+  }
+},
+"DGA_CONSULTING": {
+  "TS_DATA": {
+    "FEATURES": {
+      "1": {
+        "TITLE": "Digital Transformation Governance.",
+        "CONTENT": "Establishes clear leadership, accountability, and decision-making for digital initiatives.",
+        "ITEMS": [
+          "Governance structures, committees, and roles",
+          "Transformation ownership and reporting models",
+          "Alignment between strategy, execution, and oversight"
+        ]
+      },
+      "2": {
+        "TITLE": "Digital Maturity & Readiness Assessment",
+        "CONTENT": "Evaluates current capabilities and identifies gaps against DGA standards and Qiyas perspectives.",
+        "ITEMS": [
+          "Current-state maturity assessment",
+          "Identification of strengths, gaps, and risks",
+          "Prioritized improvement opportunities"
+        ]
+      },
+      "3": {
+        "TITLE": "Architecture, Data, and Technology Alignment",
+        "CONTENT": "Ensures foundational capabilities support digital transformation objectives.",
+        "ITEMS": [
+          "Enterprise Architecture alignment (NORA-aligned)",
+          "Data governance and data enablement integration",
+          "Technology, platforms, and interoperability readiness"
+        ]
+      },
+      "4": {
+        "TITLE": "Digital Services & Beneficiary Experience",
+        "CONTENT": "Strengthens service quality, accessibility, and consistency across channels.",
+        "ITEMS": [
+          "Digital service standards and lifecycle alignment",
+          "Omnichannel service readiness",
+          "Beneficiary-centric design and performance considerations"
+        ]
+      },
+      "5": {
+        "TITLE": "Measurement, Reporting, & Continuous Improvement",
+        "CONTENT": "Supports ongoing improvement through structured measurement and feedback.",
+        "ITEMS": [
+          "KPI and indicator alignment with DGA frameworks",
+          "Evidence preparation and documentation",
+          "Roadmaps for continuous digital maturity improvement"
+        ]
+      }
+    }
+  },
+  "HERO": {
+    "TITLE": "Digital Government Authority (DGA) Consulting"
+  },
+  "INTRO": {
+    "TITLE_1": "Clarity, Readiness,",
+    "TITLE_2": "and Measurable Progress in",
+    "HIGHLIGHT": "Digital Transformation",
+    "DESC": "Support structured, compliant, and measurable digital transformation aligned with national standards, enabling organizations to improve maturity, performance, and service delivery with confidence."
+  },
+  "WHAT_IS": {
+    "TITLE_1": "What Are",
+    "HIGHLIGHT": "DGA Consulting Services?",
+    "DESC_1": "DGA consulting supports alignment of digital transformation initiatives with Digital Government Authority (DGA) standards and national measurement frameworks.",
+    "DESC_2": "It strengthens digital governance, operating models, architecture, data, and services to ensure readiness for assessments such as Qiyas.",
+    "DESC_3": "The approach links strategy, execution, and measurable outcomes across the organization."
+  },
+  "COMPARISON": {
+    "TITLE_1": "Why Digital Transformation",
+    "HIGHLIGHT_1": "Requires Structure",
+    "TITLE_2": "and",
+    "HIGHLIGHT_2": "Measurement",
+    "DESC": "In practice, the difference between informal and structured digital transformation becomes visible across governance, execution, and measurement.",
+    "TRADITIONAL": {
+      "TITLE": "Informal Approach",
+      "ITEMS": [
+        "Fragmented initiatives across departments",
+        "Unclear ownership and accountability",
+        "Limited visibility into progress & outcomes",
+        "Inconsistent digital service quality",
+        "Gaps between strategy and execution",
+        "Reactive improvement efforts"
+      ]
+    },
+    "STRUCTURED": {
+      "TITLE": "Structured DGA-Aligned Transformation",
+      "ITEMS": [
+        "Coordinated transformation under a unified governance model",
+        "Defined leadership, roles, & decision structures",
+        "Measurable progress aligned with Qiyas perspectives",
+        "Standardized, beneficiary-focused digital services",
+        "Clear linkage between strategy, execution, and measurement",
+        "Continuous, evidence-based improvement cycles"
+      ]
+    },
+    "FOOTER": "Structured digital transformation ensures progress is measurable, repeatable, and aligned with strategic & regulatory expectations."
+  },
+  "DIGITAL_READINESS": {
+    "TITLE_1": "DGA Consulting Services That Enable",
+    "HIGHLIGHT": "Digital Readiness",
+    "DESC": "DGA-aligned consulting translates digital government standards into practical, actionable transformation models, including:",
+    "ITEMS": [
+      "Alignment with DGA Digital Transformation Standards",
+      "Readiness for Qiyas measurement and continuous improvement",
+      "Digital governance and operating model design",
+      "Integration of enterprise architecture, data governance, & technology",
+      "Structuring evidence, metrics, & reporting for assessment cycles"
+    ],
+    "FOOTER": "Digital transformation becomes governed, measurable, & sustainable, not ad hoc or initiative-driven."
+  },
+  "CORE_FOCUS": {
+    "HIGHLIGHT": "Core",
+    "TITLE": "Focus Areas"
+  },
+  "ENGAGEMENT": {
+    "TITLE_1": "Engagement",
+    "TITLE_2": "Model",
+    "DESC": "A structured, phased approach that ensures digital transformation efforts are implemented, measured, and continuously improved.",
+    "STEPS": {
+      "1": { "TITLE": "Assess", "DESC": "Evaluate current digital maturity, governance structures, and readiness against DGA standards." },
+      "2": { "TITLE": "Define", "DESC": "Design target governance models, operating structures, and transformation roadmaps aligned with organizational priorities" },
+      "3": { "TITLE": "Enable", "DESC": "Support implementation, adoption, measurement, and continuous improvement across transformation cycles." }
+    }
+  },
+  "ALIGNMENT": {
+    "BLOCK_1": {
+      "TITLE_1": "Alignment with",
+      "HIGHLIGHT": "Digital Government",
+      "TITLE_2": "Standards",
+      "DESC_1": "The approach aligns with Digital Government Authority (DGA) standards and national measurement frameworks, including Qiyas.",
+      "DESC_2": "It strengthens governance consistency, maturity visibility, and readiness for formal assessments, while remaining adaptable to international best practices."
+    },
+    "BLOCK_2": {
+      "TITLE_1": "Designed for",
+      "HIGHLIGHT": "Complex and Regulated",
+      "TITLE_2": "Environments",
+      "DESC_1": "DGA-aligned transformation is particularly relevant for organizations operating at scale, managing cross-entity initiatives, or delivering mission-critical services.",
+      "DESC_2": "Structured governance and measurement ensure digital maturity advances with control, compliance, and service quality as complexity grows."
+    }
+  },
+  "REGULATED_BANNER": {
+    "TITLE_1": "Designed for Digital",
+    "HIGHLIGHT": "Regulated and High-Impact",
+    "TITLE_2": "Environments",
+    "DESC_1": "NDMO-aligned data governance is particularly relevant for organizations operating across multiple entities, managing sensitive or regulated data, and supporting analytics, AI, and digital government initiatives.",
+    "DESC_2": "Strong governance ensures that data initiatives remain trusted, compliant, and sustainable as scale and complexity increase."
+  },
+  "BUSINESS_VALUE": {
+    "HIGHLIGHT": "Business Value",
+    "TITLE": "& Impact",
+    "DESC_1": "Data governance shifts from a compliance burden to a",
+    "DESC_BOLD": "strategic capability.",
+    "DESC_2": "Organizations implementing structured NDMO-aligned governance typically achieve:",
+    "ITEMS": [
+      "Clear accountability for data across the organization",
+      "Reduced compliance and audit risk",
+      "Improved trust in reports, dashboards, and analytics",
+      "Faster enablement of AI and data-driven initiatives",
+      "Stronger alignment with national data strategies"
+    ]
+  },
+  "CONTACT": {
+    "HIGHLIGHT_1": "Build Trust",
+    "TITLE_1": "in Data Across the",
+    "HIGHLIGHT_2": "Organization",
+    "DESC": "NDMO-aligned data governance provides the structure needed to govern data responsibly, unlock value, and scale digital initiatives with confidence."
+  }
+},
+"ENTERPRISE_ARCHITECTURE": {
+  "HERO": {
+    "TITLE": "Enterprise Architecture Services"
+  },
+  "INTRO": {
+    "TITLE_1": "Clarity, Alignment, &",
+    "HIGHLIGHT": " Governance ",
+    "TITLE_2": "for Complex Organizations",
+    "DESC": "A structured approach to aligning strategy, systems, and technology, enabling organizations to manage complexity, reduce risk, and support long-term transformation"
+  },
+  "WHAT_IS": {
+    "TITLE_1": "What Is",
+    "HIGHLIGHT": " Enterprise Architecture?",
+    "DESC_1": "Enterprise Architecture (EA) defines how business strategy, data, applications, and technology operate as one coherent system.",
+    "DESC_2": "It establishes a structured framework for decision-making, ensuring digital initiatives remain aligned and scalable.",
+    "DESC_3": "Rather than isolated projects, EA provides the foundation for coordinated, long-term transformation."
+  },
+  "TRADITIONAL_VS_EA": {
+    "TITLE_1": "Why Traditional",
+    "HIGHLIGHT": " IT Planning ",
+    "TITLE_2": "Is No Longer Enough",
+    "DESC_1": "In complex organizations, technology environments often evolve organically across departments and entities. Over time, this can result in fragmented systems, inconsistent standards, limited visibility into dependencies, and increasing integration complexity.",
+    "DESC_2": "The result is a shift from disconnected IT efforts to ",
+    "DESC_BOLD": " coordinated, governed digital transformation."
+  },
+  "COMPARISON": {
+    "TRADITIONAL": {
+      "TITLE": "Traditional IT Planning",
+      "ITEMS": [
+        "Siloed systems and initiatives",
+        "Technology-driven decisions",
+        "Reactive modernization",
+        "Limited governance",
+        "High integration risk"
+      ]
+    },
+    "EA": {
+      "TITLE": "Enterprise Architecture",
+      "ITEMS": [
+        "Unified enterprise-wide view",
+        "Strategy-aligned architecture",
+        "Roadmap-driven evolution",
+        "Built-in standards and controls",
+        "Designed interoperability"
+      ]
+    }
+  },
+  "OBJECTIVES": {
+    "TITLE_1": "EA That Enables ",
+    "HIGHLIGHT": "Organizational Objectives",
+    "DESC_1": "EA becomes a ",
+    "DESC_BOLD_1": "strategic control mechanism",
+    "DESC_2": ", enabling ",
+    "DESC_BOLD_2": "confident decision-making",
+    "DESC_3": " at scale. Enterprise Architecture supports leadership by providing:",
+    "ITEMS": [
+      "Clear alignment between strategy and execution",
+      "Structured governance for digital & technology decisions",
+      "Reduced complexity across systems and platforms"
+    ]
+  },
+  "NORA_ALIGNMENT": {
+    "PRE_TITLE": "Platform at a Glance",
+    "TITLE_1": "Standards-Aligned and",
+    "HIGHLIGHT": " Governance-Ready",
+    "DESC_1": "Our approach is aligned with recognized national and international EA frameworks, including the National Enterprise Architecture (NORA) methodology in Saudi Arabia, supporting:",
+    "ITEMS": [
+      "Interoperability across systems and entities.",
+      "Standardization and architectural consistency.",
+      "Governance, audit readiness, and compliance alignment."
+    ],
+    "DESC_2": "This makes the approach particularly suitable for government, semi-government, and regulated enterprise environments, where structure and accountability are essential."
+  },
+  "IN_PRACTICE": {
+    "HIGHLIGHT": "EA in Practice:",
+    "TITLE_1": " From Vision to Execution",
+    "DESC_1": "Enterprise Architecture becomes ",
+    "DESC_BOLD": "a living framework",
+    "DESC_2": ", not static documentation.",
+    "STEPS": {
+      "1": {
+        "TITLE": "Architecture Baseline",
+        "ITEMS": [
+          "Current-state assessment",
+          "Mapping of systems, data, and processes",
+          "Identification of gaps, risks, and overlaps"
+        ]
+      },
+      "2": {
+        "TITLE": "Target Architecture",
+        "ITEMS": [
+          "Future-state architecture aligned with strategy",
+          "Reference models & architectural standards",
+          "Integration and scalability planning"
+        ]
+      },
+      "3": {
+        "TITLE": "Roadmap & Governance",
+        "ITEMS": [
+          "Phased transformation roadmap",
+          "Architecture governance framework",
+          "Decision, review, and change-control mechanisms"
+        ]
+      }
+    }
+  },
+  "INTEGRATED": {
+    "HIGHLIGHT": "Integrated",
+    "TITLE_1": " with Digital Platforms & Operational",
+    "DESC_1": "Where required, Enterprise Architecture can be connected with:",
+    "ITEMS": [
+      "Digital Twin representations for systems and assets.",
+      "Unified dashboards for architectural visibility.",
+      "Data-driven insights across domains."
+    ],
+    "DESC_2": "This bridges the gap between architectural design and operational reality, ensuring architecture supports real-world execution."
+  },
+  "BUSINESS_VALUE": {
+    "HIGHLIGHT": "Business Value",
+    "TITLE_1": " & Impact",
+    "DESC": "Organizations adopting a structured Enterprise Architecture approach typically achieve:",
+    "ITEMS": [
+      "Reduced system duplication and integration costs",
+      "Faster and more confident technology decisions",
+      "Improved coordination across departments or entities",
+      "Stronger governance and compliance posture",
+      "Scalable foundations for data, AI, and automation initiatives"
+    ]
+  },
+  "ENGAGEMENT": {
+    "HIGHLIGHT": "Engagement",
+    "TITLE_1": " Model",
+    "STEPS": {
+      "1": { "TITLE": "Discover", "DESC": "Assess current architecture, priorities, and constraints." },
+      "2": { "TITLE": "Design", "DESC": "Define target architecture, principles, and standards." },
+      "3": { "TITLE": "Govern", "DESC": "Establish governance structures to guide execution and change." }
+    }
+  },
+  "CONTACT": {
+    "TITLE_1": "Build Architecture That Supports",
+    "HIGHLIGHT": " Long-Term Transformation ",
+    "DESC": "Enterprise Architecture provides the structure needed to manage complexity, reduce risk, and scale transformation with confidence."
+  },
+  "TS_DATA": {
+    "SLIDES": {
+      "SLIDE_1": {
+        "F1": "Parking revenue and occupancy.",
+        "F2": "Waste management efficiency.",
+        "F3": "Real-time system health across all city domains."
+      },
+      "SLIDE_2": {
+        "F1": "Advanced AI Analytics",
+        "F2": "Automated reporting generation",
+        "F3": "Customizable dashboards",
+        "F4": "24/7 Support and maintenance"
+      }
+    },
+    "BOXES": {
+      "BOX_1": {
+        "TITLE": "Business Architecture",
+        "SUBTITLE": "Defines how the organization operates and delivers value.",
+        "ITEMS": [
+          "Capabilities and value streams",
+          "Operating and governance models",
+          "Process alignment with strategic objectives"
+        ]
+      },
+      "BOX_2": {
+        "TITLE": "Data Architecture",
+        "SUBTITLE": "Establishes structure, ownership, and trust in data.",
+        "ITEMS": [
+          "Data domains and data ownership models",
+          "Data flows and integration logic",
+          "Alignment with national and regulatory data governance principles"
+        ]
+      },
+      "BOX_3": {
+        "TITLE": "Application Architecture",
+        "SUBTITLE": "Brings clarity to complex application landscapes.",
+        "ITEMS": [
+          "Application portfolio assessment and rationalization",
+          "Integration and interoperability planning",
+          "Platform alignment and modernization support"
+        ]
+      },
+      "BOX_4": {
+        "TITLE": "Technology Architecture",
+        "SUBTITLE": "Provides a stable and scalable technical foundation.",
+        "ITEMS": [
+          "Infrastructure standards and reference architectures",
+          "Cloud, on-prem, and hybrid environments",
+          "Security, resilience, and continuity considerations"
+        ]
+      }
+    }
+  }
+},
+"NDMO": {
+  "HERO": {
+    "TITLE": "National Data Management Office (NDMO)"
+  },
+  "INTRO": {
+    "HIGHLIGHT_1": "Governance,",
+    "TITLE_1": " Trust, and Integrated Control for Data at ",
+    "HIGHLIGHT_2": "Scale",
+    "DESC": "Enable <span class=\"font-bold\">trusted, compliant, and high-quality data</span> across the organization, supporting better decisions, regulatory alignment, and sustainable digital transformation."
+  },
+  "WHAT_IS": {
+    "TITLE_1": "What Are",
+    "HIGHLIGHT_1": " NDMO- ",
+    "TITLE_2": "Aligned",
+    "HIGHLIGHT_2": " Data Management? ",
+    "DESC_1": "NDMO-aligned services define how data is governed, protected, and shared across the organization.",
+    "DESC_2": "They establish clear data ownership, policies, and standards to ensure consistent and compliant data management.",
+    "DESC_3": "Together, they create a coordinated foundation for reliable, trusted, and reusable data at scale."
+  },
+  "WHY_INFORMAL": {
+    "TITLE_1": "Why",
+    "HIGHLIGHT_1": " Data Governance ",
+    "TITLE_2": "Can No Longer Be",
+    "HIGHLIGHT_2": " Informal? ",
+    "DESC": "As organizations grow, data often outpaces governance. <br> <br> This results in unclear ownership, inconsistent handling, and elevated compliance exposure. Structured data stewardship becomes critical."
+  },
+  "COMPARISON": {
+    "TRADITIONAL": {
+      "TITLE": "Informal Data Management",
+      "ITEMS": [
+        "Ad hoc ownership",
+        "Inconsistent classification",
+        "Limited data trust",
+        "Reactive compliance",
+        "Siloed data usage"
+      ]
+    },
+    "SMART": {
+      "TITLE": "Aligned Data Governance",
+      "ITEMS": [
+        "Defined data roles & accountability",
+        "Standardized data classification",
+        "Governed, high-quality data",
+        "Policy-driven governance",
+        "Controlled & enabled data sharing"
+      ]
+    }
+  },
+  "OBJECTIVES": {
+    "HIGHLIGHT_1": "NDMO Services",
+    "TITLE_1": " That Enables ",
+    "HIGHLIGHT_2": "Organizational Control",
+    "DESC": "Our NDMO-aligned services support organizations in translating national data policies into practical, operational governance models, including:",
+    "ITEMS": [
+      "Data classification and handling models",
+      "Policies for data access, sharing, and retention",
+      "Data governance frameworks aligned with NDMO principles",
+      "Clear definition of data ownership, stewardship, and responsibilities",
+      "Governance structures that support audit readiness & compliance"
+    ]
+  },
+  "CORE_FOCUS": {
+    "HIGHLIGHT": "Core",
+    "TITLE": " Focus Areas"
+  },
+  "ENGAGEMENT": {
+    "HIGHLIGHT": "Engagement",
+    "TITLE": " Model",
+    "DESC": "A structured, phased approach that ensures data governance is <span class=\"font-bold\">adopted in practice</span>, not just documented.",
+    "STEPS": {
+      "1": {
+        "TITLE": "Assess",
+        "DESC": "Understand current data practices, governance maturity, and key risks."
+      },
+      "2": {
+        "TITLE": "Define",
+        "DESC": "Design governance structures, roles, policies, and standards aligned with organizational priorities & NDMO guidance."
+      },
+      "3": {
+        "TITLE": "Enable",
+        "DESC": "Support implementation, adoption, and long-term sustainability through alignment, change enablement, & ongoing support."
+      }
+    }
+  },
+  "ALIGNMENT": {
+    "BLOCK_1": {
+      "TITLE_1": "Alignment with ",
+      "HIGHLIGHT": "National Data Management",
+      "TITLE_2": " Principles",
+      "DESC_1": "Our approach is aligned with the National Data Management Office (NDMO) framework and guidance in Saudi Arabia.",
+      "DESC_2": "This alignment supports consistent data governance across entities, improved compliance and audit readiness, and trusted data exchange between systems and organizations.",
+      "DESC_3": "At the same time, the methodology remains adaptable to international data governance standards and best practices."
+    },
+    "BLOCK_2": {
+      "TITLE_1": "Alignment with ",
+      "HIGHLIGHT": "National Data Index (NDI)",
+      "DESC_1": "We support organizations in aligning with the National Data Index (NDI), the national framework used to assess data governance and data management maturity.",
+      "DESC_2": "NDI gives leadership a clear, objective view of how effectively data is governed, managed, protected, and shared across the organization.",
+      "DESC_3": "Our approach translates NDI indicators into concrete governance actions, enabling organizations to identify priority gaps, focus improvement efforts, & demonstrate measurable progress in line with national data management expectations."
+    }
+  },
+  "REGULATED_BANNER": {
+    "TITLE_1": "Designed for Digital ",
+    "HIGHLIGHT": "Regulated and High-Impact",
+    "TITLE_2": " Environments",
+    "DESC_1": "NDMO-aligned data governance is particularly relevant for organizations operating across multiple entities, managing sensitive or regulated data, and supporting analytics, AI, and digital government initiatives.",
+    "DESC_2": "Strong governance ensures that data initiatives remain trusted, compliant, and sustainable as scale and complexity increase."
+  },
+  "BUSINESS_VALUE": {
+    "HIGHLIGHT": "Business Value",
+    "TITLE": " & Impact",
+    "DESC": "Data governance shifts from a compliance burden to a <span class=\"font-bold\">strategic capability. </span> Organizations implementing structured NDMO-aligned governance typically achieve:",
+    "ITEMS": [
+      "Clear accountability for data across the organization",
+      "Reduced compliance and audit risk",
+      "Improved trust in reports, dashboards, and analytics",
+      "Faster enablement of AI and data-driven initiatives",
+      "Stronger alignment with national data strategies"
+    ]
+  },
+  "CONTACT": {
+    "HIGHLIGHT_1": " Build Trust ",
+    "TITLE_1": "in Data Across the",
+    "HIGHLIGHT_2": " Organization ",
+    "DESC": "NDMO-aligned data governance provides the structure needed to govern data responsibly, unlock value, and scale digital initiatives with confidence."
+  },
+  "TS_DATA": {
+    "FEATURES": {
+      "1": {
+        "TITLE": "Data Governance Framework.",
+        "CONTENT": "Defines how data is governed and managed across the organization, aligned with NDMO principles.",
+        "ITEMS": [
+          "Governance structures and roles",
+          "Data ownership and stewardship models",
+          "Policies, standards, and decision authorities"
+        ]
+      },
+      "2": {
+        "TITLE": "Data Classification & Protection",
+        "CONTENT": "Ensures data is handled according to its sensitivity, purpose, and regulatory requirements.",
+        "ITEMS": [
+          "Data classification models aligned with national guidance",
+          "Handling & protection requirements for sensitive data",
+          "Risk-aware data handling practices"
+        ]
+      },
+      "3": {
+        "TITLE": "Data Sharing and Interoperability.",
+        "CONTENT": "Enables secure, controlled, & trusted data exchange within and across organizations.",
+        "ITEMS": [
+          "Data sharing principles and access controls",
+          "Inter-entity and cross-platform alignment",
+          "Support for integrated digital services & analytics"
+        ]
+      },
+      "4": {
+        "TITLE": "Data Quality & Lifecycle Management",
+        "CONTENT": "Improves the reliability, consistency, and usability of data across systems.",
+        "ITEMS": [
+          "Data quality principles and controls",
+          "Data lifecycle and retention definitions",
+          "Consistency across platforms and data domains"
+        ]
+      }
+    }
+  }
+},
+"ICT_SOLUTIONS": {
+  "INTRO": {
+    "TITLE_1": "Scalable ICT Systems Built for",
+    "HIGHLIGHT": " Performance and Control",
+    "DESC_1": "ICT Solutions establish the physical infrastructure, digital platforms, and operational systems required for secure, connected, and high-performance environments.",
+    "DESC_2": "From command centers and healthcare platforms to enterprise data architectures and automation, these solutions provide reliable foundations for day-to-day operations and long-term scalability.",
+    "DESC_3": "Each domain can operate independently or integrate into broader digital and AI-driven ecosystems."
+  },
+  "WHAT_WE_OFFER": {
+    "TITLE_1": "What We ",
+    "HIGHLIGHT": "Offer",
+    "SUBTITLE": "All solutions are designed for operational reliability, scalable performance, and seamless integration, while remaining fully deployable as standalone capabilities.",
+    "SERVICES": {
+      "PASSIVE_CIVIL": {
+        "TITLE": "Passive & Civil Work",
+        "DESC": "Establishes the physical backbone of ICT environments, including structured cabling, network infrastructure, equipment rooms, and supporting civil works. Designed for reliability and expansion, it ensures digital systems operate on secure, future-ready foundations.",
+        "BTN": "Explore Passive & Civil Work"
+      },
+      "HEALTHCARE": {
+        "TITLE": "Digital Healthcare",
+        "DESC": "Integrates clinical, financial, and administrative systems into a unified, compliant ecosystem. By connecting patient workflows, revenue management, and telemedicine platforms, it enables operational efficiency, financial transparency, and improved service delivery.",
+        "BTN": "Explore Digital Healthcare"
+      },
+      "DATA_CLOUD": {
+        "TITLE": "Data & Cloud Engineering",
+        "DESC": "Delivers secure, resilient architectures that support analytics, AI, and mission-critical digital services. From structured data management to disaster recovery and IT service governance, it ensures continuity, performance, and controlled growth.",
+        "BTN": "Explore Data & Cloud Engineering"
+      },
+      "AUTOMATION_SECURITY": {
+        "TITLE": "Automation & Security",
+        "DESC": "Enhances operational efficiency while maintaining compliance and control. Through digital authentication and intelligent process automation, organizations reduce manual workload and strengthen governance across critical workflows.",
+        "BTN": "Explore Automation & Security"
+      },
+      "SOFTWARE_DEV": {
+        "TITLE": "Software & Development",
+        "DESC": "Provides scalable web, mobile, and enterprise collaboration platforms designed for seamless integration within complex ICT ecosystems. These solutions support usability, performance, and long-term digital sustainability.",
+        "BTN": "Explore Software & Development"
+      }
+    }
+  },
+  "REGULATED_ENV": {
+    "PRE_TITLE": "What the purpose of Designed",
+    "TITLE_1": "Built for ",
+    "HIGHLIGHT": "Enterprise and Regulated",
+    "TITLE_2": " Environments",
+    "DESC": "Our Digital Transformation ICT Solutions are designed for organizations operating at scale, across multiple entities, or within regulated sectors. By combining infrastructure, platforms, and operational systems, they enable reliable performance while supporting future expansion and integration with digital transformation initiatives."
+  },
+  "CONTACT": {
+    "HIGHLIGHT": "Strengthen the Foundations",
+    "TITLE_1": " of Your Digital Environment",
+    "DESC": "Explore how ICT Solutions can support secure infrastructure, centralized control, and scalable digital operations."
+  },
+  "TS_DATA": {
+    "CARDS": {
+      "1": {
+        "TITLE": "Enterprise Architecture ",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "2": {
+        "TITLE": "NDMO Services",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "3": {
+        "TITLE": "DGA Consulting Services",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "4": {
+        "TITLE": "AI Innovation Hub",
+        "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      }
+    },
+    "SLIDES": {
+      "1": {
+        "F1": "Continuous visibility and monitoring",
+        "F2": "Fast, coordinated response",
+        "F3": "Reliable, real-time data",
+        "F4": "Clear operational ownership",
+        "F5": "Scalable deployment"
+      },
+      "2": {
+        "F1": "Advanced AI Analytics",
+        "F2": "Automated reporting generation",
+        "F3": "Customizable dashboards",
+        "F4": "24/7 Support and maintenance"
+      }
+    }
+  }
+},
+"OUR_SERVICE_FLOW": {
+  "PRE_TITLE": "Our Service Flow",
+  "TITLE_1": "Our Step-by-Step Work Process <br>at ",
+  "HIGHLIGHT": "Code",
+  "TITLE_2": " from start to finish",
+  "DESC": "At CODE, we follow a structured and efficient workflow to ensure the highest quality of service for our customers",
+  "STEPS": {
+    "RESEARCH": "Research",
+    "BRAINSTORM": "Brainstorm",
+    "DEVELOPMENT": "Development",
+    "DELIVERY": "Delivery"
+  }
+},
+"SERVICES_S4": {
+  "AI_PACKAGES": "AI Packages",
+  "AI_SOLUTIONS": "AI Solutions",
+  "ICT_SOLUTIONS": "ICT Solutions",
+  "DIGITAL_TRANSFORMATION": "Digital Transformation"
+}
 }
