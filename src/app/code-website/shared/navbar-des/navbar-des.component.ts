@@ -183,7 +183,8 @@ mainServices: MainService[] = [
         { name: 'ServicesMenu.AIPackages.Cards.Security.Name', description: 'ServicesMenu.AIPackages.Cards.Security.Desc', img: 'assets/images/servicesS3-img1.png', route: '/ourServices/AI-Packages/AiSmartSecurity' },
         { name: 'ServicesMenu.AIPackages.Cards.Facility.Name', description: 'ServicesMenu.AIPackages.Cards.Facility.Desc', img: 'assets/images/sectionFour-slide4.png', route: '/ourServices/AI-Packages/AiSmartFacility' },
         { name: 'ServicesMenu.AIPackages.Cards.City.Name', description: 'ServicesMenu.AIPackages.Cards.City.Desc', img: 'assets/images/imageAI-3.png', route: '/ourServices/AI-Packages/AiSmartCity' },
-        { name: 'ServicesMenu.AIPackages.Cards.Theaters.Name', description: 'ServicesMenu.AIPackages.Cards.Theaters.Desc', img: 'assets/images/imageAI-1.png', route: '/ourServices/AI-Packages/SmartHybridTheaters' }
+        { name: 'ServicesMenu.AIPackages.Cards.Theaters.Name', description: 'ServicesMenu.AIPackages.Cards.Theaters.Desc', img: 'assets/images/imageAI-1.png', route: '/ourServices/AI-Packages/SmartHybridTheaters' },
+        { name: 'ServicesMenu.AIPackages.Cards.Dispatching.Name', description: 'ServicesMenu.AIPackages.Cards.Dispatching.Desc', img: 'assets/images/Frame-398-min.png', route: '/ourServices/AI-Packages/AiDispatchingCenter' }
       ]
     },
     {

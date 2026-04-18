@@ -5,6 +5,11 @@ import { Router } from '@angular/router';
 import { ModalService } from '../../../../../services/ModalService';
 import { TranslateModule } from '@ngx-translate/core';
 
+interface TabItem {
+  image: string;
+  label: string;
+  labelKey?: string;
+}
 @Component({
   selector: 'app-our-clients',
   imports: [
@@ -17,16 +22,18 @@ import { TranslateModule } from '@ngx-translate/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class OurClientsComponent {
-  activeTab: string = 'government';
-  constructor(public router:Router,private modalService: ModalService){}
+ activeTab: string = 'government';
+
+  constructor(public router: Router, private modalService: ModalService) {}
+
   tabs = [
-    { key: 'government', label: 'Government', bgColor: '#FCE8EB' },
-    { key: 'pif', label: 'PIF', bgColor: '#FFEEE3' },
-    { key: 'healthcare', label: 'Healthcare', bgColor: '#DBF0FF' },
-    { key: 'telecom', label: 'Telecom', bgColor: '#C9F4FB' }
+    { key: 'government', labelKey: 'OurClients.TABS_SEC.GOVERNMENT', bgColor: '#FCE8EB' },
+    { key: 'pif', labelKey: 'OurClients.TABS_SEC.PIF', bgColor: '#FFEEE3' },
+    { key: 'healthcare', labelKey: 'OurClients.TABS_SEC.HEALTHCARE', bgColor: '#DBF0FF' },
+    { key: 'telecom', labelKey: 'OurClients.TABS_SEC.TELECOM', bgColor: '#C9F4FB' }
   ];
 
-  tabContent: { [key: string]: { image: string; label: string }[] } = {
+  tabContent: { [key: string]: TabItem[] } = {
     government: [
       { image: 'assets/images/Government/Picture2.png', label: 'Government' },
       { image: 'assets/images/Government/Government1.png', label: 'Government' },
@@ -95,6 +102,7 @@ export class OurClientsComponent {
   setActiveTab(tabKey: string) {
     this.activeTab = tabKey;
   }
+
   getTabClasses(tabKey: string): { [key: string]: boolean } {
     return {
       'tabItem': true,

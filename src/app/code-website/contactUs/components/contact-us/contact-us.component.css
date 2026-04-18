@@ -232,3 +232,9 @@ padding-top: 4rem;}
   @media (max-width:614.4px) {
     .sectionMap{margin-bottom: 2rem;}
   }
+[dir="ltr"] .img-ar {
+    display: none;
+}
+[dir="rtl"] .img-en {
+    display: none;
+}

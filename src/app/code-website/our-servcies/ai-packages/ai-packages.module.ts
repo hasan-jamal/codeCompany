@@ -9,6 +9,7 @@ import { AiSmartFacilityComponent } from './ai-smart-facility/component/ai-smart
 import { AiSmartCityComponent } from './ai-smart-city/component/ai-smart-city/ai-smart-city.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SmartHybridTheatersComponent } from './smart-hybrid-theaters/component/smart-hybrid-theaters/smart-hybrid-theaters.component';
+import { AiDispatchingCenterComponent } from './ai-dispatching-center/component/ai-dispatching-center/ai-dispatching-center.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SmartHybridTheatersComponent } from './smart-hybrid-theaters/component/
     AiSmartSecurityComponent,
     AiSmartFacilityComponent,
     AiSmartCityComponent,
-    SmartHybridTheatersComponent
+    SmartHybridTheatersComponent,
+    AiDispatchingCenterComponent
   ],
   imports: [
     CommonModule,

@@ -39,7 +39,7 @@ serviceCards = [
       isHovered: false,
       nameKey: "AI_PACKAGES.TS_DATA.CARDS.1.TITLE",
       descKey: "AI_PACKAGES.TS_DATA.CARDS.1.DESC",
-      link: "/ourServices/AISolutions/AIDigitalTwin",
+      link: "/ourServices/AI-Packages/AiSmartCity",
       imageUrl: "assets/images/AIPackages-services/s1.jpeg"
     },
     {
@@ -47,7 +47,7 @@ serviceCards = [
       isHovered: false,
       nameKey: "AI_PACKAGES.TS_DATA.CARDS.2.TITLE",
       descKey: "AI_PACKAGES.TS_DATA.CARDS.2.DESC",
-      link: "/ourServices/AISolutions/AiComputerVision",
+      link: "/ourServices/AI-Packages/AiSmartFacility",
       imageUrl: "assets/images/AIPackages-services/s2.jpg"
     },
     {
@@ -55,7 +55,7 @@ serviceCards = [
       isHovered: false,
       nameKey: "AI_PACKAGES.TS_DATA.CARDS.3.TITLE",
       descKey: "AI_PACKAGES.TS_DATA.CARDS.3.DESC",
-      link: "/ourServices/AISolutions/AiVoicebotChatbot",
+      link: "/ourServices/AI-Packages/AiSmartSecurity",
       imageUrl: "assets/images/AIPackages-services/s3.jpeg"
     },
     {
@@ -63,8 +63,16 @@ serviceCards = [
       isHovered: false,
       nameKey: "AI_PACKAGES.TS_DATA.CARDS.4.TITLE",
       descKey: "AI_PACKAGES.TS_DATA.CARDS.4.DESC",
-      link: "/ourServices/AISolutions/AiInnovationHub",
+      link: "/ourServices/AI-Packages/SmartHybridTheaters",
       imageUrl: "assets/images/AIPackages-services/s4.png"
+    },
+        {
+      id: 5,
+      isHovered: false,
+      nameKey: "AI_PACKAGES.TS_DATA.CARDS.5.TITLE",
+      descKey: "AI_PACKAGES.TS_DATA.CARDS.5.DESC",
+      link: "/ourServices/AI-Packages/AiDispatchingCenter",
+      imageUrl: "assets/images/AIPackages-services/s5.png"
     },
   ];
 

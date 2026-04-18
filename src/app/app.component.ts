@@ -1,7 +1,8 @@
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 
 
@@ -14,7 +15,14 @@ import { filter } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit{
    public pageTitle = 'Code Information';
-  constructor(@Inject(PLATFORM_ID) private platformId: Object,private title: Title,private meta: Meta,private router: Router) {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private title: Title,
+    private meta: Meta,
+    private router: Router,
+    private translate: TranslateService,
+    @Inject(DOCUMENT) private document: Document
+  ) {
     if (isPlatformBrowser(this.platformId)) {
     this.router.events
     .pipe(filter(event => event instanceof NavigationEnd))
@@ -22,6 +30,13 @@ export class AppComponent implements OnInit{
       window.scrollTo({ top: 0, behavior: 'auto' });
     });
   }
+
+  this.translate.onLangChange.subscribe((event) => {
+      const dir = event.lang === 'en' ? 'ltr' : 'rtl';
+      this.document.documentElement.dir = dir;
+      this.document.documentElement.lang = event.lang;
+    });
+    this.translate.use('en');
   }
 
   async ngOnInit() {
@@ -35,7 +50,7 @@ export class AppComponent implements OnInit{
         splashScreen.style.display = 'none';
         appRoot.style.opacity = '1';
         console.log('App Root is now visible:', appRoot.style.visibility);
-      }, 5000);
+      }, 2000);
   }
   this.title.setTitle('CODE for Information Technology | روّاد التحول الرقمي وخدمات تقنية متكاملة');
 

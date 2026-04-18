@@ -27,6 +27,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./smart-hybrid-theaters/smart-hybrid-theaters.module').then(m => m.SmartHybridTheatersModule)
   },
+    {
+    path: 'AiDispatchingCenter',
+    loadChildren: () =>
+      import('./ai-dispatching-center/ai-dispatching-center.module').then(m => m.AiDispatchingCenterModule)
+  }
 ];
 
 @NgModule({

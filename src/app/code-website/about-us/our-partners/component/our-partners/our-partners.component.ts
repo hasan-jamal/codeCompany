@@ -11,12 +11,13 @@ import { TranslateModule } from '@ngx-translate/core';
           CommonModule,
           SlickCarouselModule,
           TranslateModule
-              ],
-  templateUrl: './our-partners.component.html',
-  styleUrls:['./our-partners.component.css',
-                  '../../../../../../assets/css/pages/ourDatacenterPartners.css',
-                  '../../../../../../assets/css/sections/contactSection.css',
-                  '../../../../../../assets/css/sections/ourServiceFlow.css'],
+     ],
+    templateUrl: './our-partners.component.html',
+    styleUrls:['./our-partners.component.css',
+    '../../../../../../assets/css/pages/ourDatacenterPartners.css',
+    '../../../../../../assets/css/sections/contactSection.css',
+    '../../../../../../assets/css/sections/ourServiceFlow.css'
+    ],
   encapsulation: ViewEncapsulation.None,
 })
 export class OurPartnersComponent implements AfterViewInit{

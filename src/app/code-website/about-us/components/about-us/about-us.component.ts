@@ -122,4 +122,25 @@ export class AboutUsComponent {
   openTalkCodeModal() {
     this.modalService.open('modalTalkCode');
   }
+
+
+  tooltipVisible = false;
+  tooltipText = '';
+  tooltipX = 0;
+  tooltipY = 0;
+
+  showTooltip(event: MouseEvent, cityName: string) {
+    this.tooltipVisible = true;
+    this.tooltipText = cityName;
+    this.updateTooltipPosition(event);
+  }
+
+  hideTooltip() {
+    this.tooltipVisible = false;
+  }
+
+  updateTooltipPosition(event: MouseEvent) {
+    this.tooltipX = event.clientX + 15;
+    this.tooltipY = event.clientY + 15;
+  }
 }

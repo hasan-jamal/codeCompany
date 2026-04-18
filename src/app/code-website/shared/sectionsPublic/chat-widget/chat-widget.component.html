@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 <div id="code-chatbot">
-    <button (click)="toggleBot()" class="subtitle20px">
+    <button (click)="toggleBot()" class="subtitle20px font-medium">
         {{ 'CHATBOT.buttonOpen' | translate }}
     </button>
     <div id="botWindow" [class.show]="botVisible">
@@ -25,7 +25,7 @@
                 </a>
             </li>
         </ul>
-        <button (click)="toggleBot()">
+        <button (click)="toggleBot()" class="subtitle20px font-medium">
             {{ 'CHATBOT.buttonClose' | translate }}
         </button>
     </div>

@@ -230,13 +230,18 @@
       "subTitle": "Trusted Where Results Matter Most",
       "Description": "Working with us reflects our commitment to delivering scalable technologies, reliable solutions, and sustainable results. We are here to ensure outstanding performance that supports your success today and in the future."
     },
-"Sec2": {
-    "TITLE": "Join CODE’s Success and Manage Your Business with Confidence",
-    "subTitle": "Talk to our team about future-ready solutions tailored specifically to your organization’s needs.",
-    "Description": "Talk to our team about future-ready solutions tailored specifically to your organization’s needs.",
-    "Button": "Talk to the CODE Team"
-}
-
+    "Sec2": {
+        "TITLE": "Join CODE’s Success and Manage Your Business with Confidence",
+        "subTitle": "Talk to our team about future-ready solutions tailored specifically to your organization’s needs.",
+        "Description": "Talk to our team about future-ready solutions tailored specifically to your organization’s needs.",
+        "Button": "Talk to the CODE Team"
+    },
+      "TABS_SEC": {
+      "GOVERNMENT": "Government",
+      "PIF": "PIF",
+      "HEALTHCARE": "Healthcare",
+      "TELECOM": "Telecom"
+  }
   },
   "BlogPage": {
     "S1": {
@@ -2005,6 +2010,8 @@
     "learnMore": "Learn More"
   },
   "FAQS": {
+    "HEADER_SUBTITLE": "Straight to the Point",
+    "HEADER_TITLE": "Frequently Asked Questions",
     "q1": {
       "question": "What does CODE do?",
       "answer": "CODE is a Saudi technology company delivering AI-powered solutions for smart infrastructure. We specialize in real-time systems like Digital Twin and Computer Vision to help organizations operate more intelligently, securely, and efficiently."
@@ -2105,7 +2112,8 @@
         "Security": { "Name": "AI Smart Security Management", "Desc": "Proactive security driven by real-time intelligence" },
         "Facility": { "Name": "AI Smart Facility Management", "Desc": "Predictive operations for efficient, resilient facilities" },
         "City": { "Name": "AI Smart City Management", "Desc": "City-wide intelligence for scalable urban performance" },
-        "Theaters": { "Name": "Smart Hybrid Theaters", "Desc": "Intelligent venues designed for immersive public experiences" }
+        "Theaters": { "Name": "Smart Hybrid Theaters", "Desc": "Intelligent venues designed for immersive public experiences" },
+        "Dispatching": { "Name": "AI Dispatching Center", "Desc": "Effective control over dispatching and coordination operations" }
       }
     },
     "AISolutions": {
@@ -2993,6 +3001,10 @@
       "4": {
         "TITLE": "Smart Hybrid Theaters",
         "DESC": "Turn raw data into reliable, analytics-ready assets, with tools for governance, machine learning, and real-time insights."
+      },
+      "5": {
+        "TITLE": "AI Dispatching Center",
+        "DESC": "A centralized AI-powered environment for validating events, coordinating response, and improving overall operational visibility."
       }
     }
   }
@@ -4010,5 +4022,187 @@
   "AI_SOLUTIONS": "AI Solutions",
   "ICT_SOLUTIONS": "ICT Solutions",
   "DIGITAL_TRANSFORMATION": "Digital Transformation"
+},
+  "INSIGHTS_SECTION": {
+    "READ_MORE": "Read More",
+    "ITEMS": {
+      "ITEM_1": {
+        "DATE": "Jan 21, 2026",
+        "CATEGORY": "AI Security",
+        "TITLE": "AI Security Management",
+        "DESC": "Modern security requires more than cameras. Explore how our integrated AI stack strengthens real-world security operations."
+      },
+      "ITEM_2": {
+        "DATE": "Feb 26, 2026",
+        "CATEGORY": "Facility Management",
+        "TITLE": "AI Facility Management",
+        "DESC": "Facility management is no longer manual. See how AI enables measurable improvements across operations, energy, and asset management."
+      },
+      "ITEM_3": {
+        "DATE": "Feb 14, 2026",
+        "CATEGORY": "Enterprise Architecture",
+        "TITLE": "Enterprise Architecture",
+        "DESC": "Enterprise Architecture without blind spots. Explore how dynamic modeling transforms decision-making."
+      },
+      "ITEM_4": {
+        "DATE": "Jan 13, 2026",
+        "CATEGORY": "Digital Twin",
+        "TITLE": "Digital Twin",
+        "DESC": "Your infrastructure deserves a live intelligence layer. Discover the end-to-end AI Digital Twin journey."
+      }
+    }
+  },
+    "CONTACT-IMG": {
+    "BANNER": {
+      "IMAGE": "assets/images/contactBanner.png"
+    }
+  },
+  "AI_DISPATCHING": {
+  "HERO_TITLE": "AI Dispatching Center",
+  "SEC2": {
+    "TITLE_P1": "Unified Operational",
+    "TITLE_GRADIENT_1": "Intelligence",
+    "TITLE_P2": "Faster",
+    "TITLE_GRADIENT_2": "Dispatching",
+    "TITLE_P3": "And Facility Response",
+    "DESC": "A centralized AI-powered environment for validating events, coordinating response, and improving visibility across secured and managed facilities."
+  },
+  "WHAT_IS": {
+    "TITLE_P1": "What Is the",
+    "TITLE_GRADIENT": "AI Dispatching Center",
+    "TITLE_P2": "Solution?",
+    "DESC_1": "The AI Dispatching Center brings sensors, AI Computer Vision, visitor management, infrastructure monitoring, predictive analytics, and chatbot analytics into one unified command environment.",
+    "DESC_2": "Instead of operating across disconnected systems, organizations gain faster response, stronger control, and full operational visibility across secured and managed facilities."
+  },
+  "COMPARISON": {
+    "HEADER_GRADIENT": "Why Fragmented Operations",
+    "HEADER_TEXT": "Are No Longer Enough",
+    "TRADITIONAL": {
+      "TITLE": "Traditional Operations Model",
+      "L1": "Cameras, sensors, access control, and analytics operate separately",
+      "L2": "Alerts create noise without clear prioritization",
+      "L3": "Teams respond through manual coordination",
+      "L4": "Leadership relies on delayed summaries",
+      "L5": "Operational issues are handled after escalation"
+    },
+    "AI": {
+      "TITLE": "AI Dispatching Center",
+      "L1": "Detection, validation, access, and analytics through one command center",
+      "L2": "Events are validated, contextualized, and routed for action",
+      "L3": "Operators work from one centralized dispatching environment",
+      "L4": "Leadership gains real-time visibility and on-demand insight",
+      "L5": "Risks are identified earlier and managed more proactively"
+    }
+  },
+  "IMPACT": {
+    "TITLE_GRADIENT": "Business",
+    "TITLE_TEXT": "Impact",
+    "L1": "Faster incident response",
+    "L2": "Stronger operational visibility",
+    "L3": "Better access governance",
+    "L4": "Lower monitoring complexity",
+    "L5": "Higher alert credibility",
+    "L6": "Smarter executive decision-making"
+  },
+  "TABS": {
+    "TAB_A_TITLE": "A. Data Collection Layer - The Foundation",
+    "TAB_A_DESC": "Real-time Data Capture & Input Systems",
+    "TAB_B_TITLE": "B. Processing & Intelligence Layer - The Brain:",
+    "TAB_B_DESC": "Real-time Data Capture & Input Systems"
+  },
+  "ACCORDION_A": {
+    "A1": {
+      "TITLE": "1. AI Digital Twin & Sensor Network",
+      "DESC": "190+ sensors connected through a single LoRaWAN gateway with SIM-based redundancy, designed for resilient detection in as little as 300 milliseconds. \n Covers proactive monitoring and interactive controls across safety, environment quality, and facility systems.",
+      "C1_TITLE": "Life/Safety",
+      "C1_L1": "Not WIFI",
+      "C1_L2": "Not Bluetooth",
+      "C1_L3": "Not Wire",
+      "C2_TITLE": "25 Proactive Sensors",
+      "C3_TITLE": "5 Interactive Sensors",
+      "C3_L1": "AC CONTROL",
+      "C3_L2": "LIGHT CONTROL",
+      "C3_L3": "WARNING LED",
+      "C3_L4": "DOOR CONTROL",
+      "C3_L5": "EMERGENCY DOORS"
+    },
+    "A2": {
+      "TITLE": "2. AI Computer Vision",
+      "DESC": "Adds real-time visual intelligence for fire and smoke, perimeter breaches, violence, weapons, and medical incidents.Extends detection coverage beyond sensors with faster visual verification & situational awareness in Real-Time .",
+      "C1_TITLE": "Life/Safety",
+      "C1_T1": "Fire/Smoke",
+      "C1_T2": "Wall Climbing",
+      "C2_TITLE": "Violence Issues",
+      "C2_T1": "Fighting",
+      "C2_T2": "Sharp Knives",
+      "C3_TITLE": "Medical Issues",
+      "C3_T1": "Falling Down",
+      "C3_T2": "Dizziness"
+    },
+    "A3": {
+      "TITLE": "3. Visitor Management System",
+      "DESC": "A centralized face-bank based access layer that distinguishes authorized individuals from unauthorized visitors in real time. \n Strengthens entry-point control and supports faster escalation of suspicious access events.",
+      "C1_TITLE": "Face Bank",
+      "C1_DESC": "Detect Unauthorized access",
+      "C2_TITLE": "Authorized",
+      "C2_L1": "Students",
+      "C2_L2": "Parents",
+      "C3_TITLE": "UnAuthorized",
+      "C3_L1": "Unregistered visitors",
+      "C3_L2": "Intrusion Alerts"
+    }
+  },
+  "ACCORDION_B": {
+    "B1": {
+      "TITLE": "1. AI SIEM Solutions",
+      "DESC": "Validates events across cameras and sensors to reduce false negatives and strengthen alert credibility. \n Helps operators act on intelligence that is more accurate, contextual, and actionable.",
+      "C1_TITLE": "False negative detection",
+      "C1_DESC": "Assure credibility of AI Dispatching Center",
+      "C2_T1": "Sensor input",
+      "C2_T2": "AI SIEM",
+      "C2_T3": "Validated"
+    },
+    "B2": {
+      "TITLE": "2. Infrastructure Monitors",
+      "DESC": "Tracks network and critical infrastructure availability in real time through a bandwidth-efficient operating model. \n Designed to support reliable performance while reducing operational overhead.",
+      "C1_TITLE": "Cut Cost of operations",
+      "C1_DESC": "Assure credibility of AI Dispatching Center",
+      "C2_T1": "99.9%",
+      "C2_T2": "UPTIME",
+      "C3_T1": "10 MB",
+      "C3_T2": "Network"
+    },
+    "B3": {
+      "TITLE": "3. Predictive Analytics",
+      "DESC": "Uses machine learning to forecast trends across safety, environmental quality, and asset performance for the next 6 to 12 months. \n Supports earlier planning around risks, recurring patterns, and operational priorities.",
+      "C1_L1": "Life safety",
+      "C1_L2": "Assets performance",
+      "C1_L3": "Education quality",
+      "C2_TITLE": "Historical Data Analysis"
+    },
+    "B4": {
+      "TITLE": "4. Executive Chatbot Analytics",
+      "DESC": "Uses machine learning to forecast trends across safety, environmental quality, and asset performance for the next 6 to 12 months. \n Supports earlier planning around risks, recurring patterns, and operational priorities.",
+      "BADGE": "★ 1st time unique feature",
+      "C1_TITLE": "Aggregative-results",
+      "C1_DESC": "Executive leaders chat directly with data",
+      "C2_T1": "Executive",
+      "C2_T2": "Chatbot",
+      "C2_T3": "Charts"
+    }
+  },
+"ARCHITECTURE": {
+    "TITLE_1": "Data",
+    "TITLE_GRADIENT": "Flow Architecture",
+    "IMAGE_PATH": "assets/images/AIPackages-services/ai-dispatching-center/Data-Flow-Architecture.png"
+  },
+  "CONTACT": {
+    "TITLE_1": "Smarter",
+    "TITLE_GRADIENT_1": "Facilities.",
+    "TITLE_GRADIENT_2": "Stronger",
+    "TITLE_2": "Control.",
+    "DESC": "Explore how the AI Dispatching Center helps create safer, more resilient, and better-managed facilities through unified real-time intelligence."
+  }
 }
+
 }

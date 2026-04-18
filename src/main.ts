@@ -2,10 +2,10 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { importProvidersFrom } from '@angular/core';
 import { AppComponent } from './app/app.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
 import { provideToastr } from 'ngx-toastr';
 
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { DashboardModule } from './app/dashboard/dashboard.module';
@@ -14,6 +14,7 @@ import { HTTP_INTERCEPTORS, HttpInterceptor, HttpRequest, HttpHandler, HttpEvent
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CurrentUserService } from './app/services/currentUser.service';
+import { HttpLoaderFactory } from './app/app.config';
 
 // ==================== AuthInterceptor ====================
 @Injectable()
@@ -55,11 +56,19 @@ export const appConfig = {
       DashboardModule,
       TranslateModule.forRoot({
         defaultLanguage: 'en',
-        loader: provideTranslateHttpLoader({
-          prefix: './assets/i18n/',
-          suffix: '.json',
-        }),
-      })
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          }
+        })
+      // TranslateModule.forRoot({
+      //   defaultLanguage: 'en',
+      //   loader: provideTranslateHttpLoader({
+      //     prefix: './assets/i18n/',
+      //     suffix: '.json',
+      //   }),
+      // })
     ),
   ],
 };

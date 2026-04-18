@@ -1,5 +1,6 @@
 <section class="sectionInsights">
     <div class="sectionInsights-container px-120">
+
         <div class="divTitles d-flex align-items-center flex-column">
             <h1 class="font-bold subtitle40px text-center">
                 {{ 'INSIGHTS_SEC.MAIN_TITLE' | translate }}
@@ -24,29 +25,41 @@
 
         <ngx-slick-carousel class="sliderInsights" #slickModalInsight="slick-carousel" [config]="slideConfigInsights">
 
-            <div ngxSlickItem *ngFor="let Insight of Insights" class="slide">
+            <div ngxSlickItem *ngFor="let Insight of translatedInsights" class="slide">
                 <div class="cardInsights m-2">
                     <div class="divImage">
                         <img [src]="Insight.image" alt="news-image" class="img-fluid" />
                     </div>
                     <div class="divContent">
                         <div class="d-flex divBtns">
-                            <button class="btn-date colorWhite subtitle14px font-semiBold btn-linearGradient">{{
-                                Insight.date }}</button>
+                            <button class="btn-date colorWhite subtitle14px font-semiBold btn-linearGradient">
+                                {{ Insight.date }}
+                            </button>
+
                             <button class="btn-category subtitle14px color-linearGradient font-semiBold">
-                                <span>{{Insight.category}}</span></button>
+                                <span>{{ Insight.category }}</span>
+                            </button>
                         </div>
-                        <h2 class="subtitle22px font-semiBold colorBlack2">{{ Insight.title }}</h2>
-                        <p class="style-font subtitle16px colorBlack2">{{ Insight.description }}</p>
+
+                        <h2 class="subtitle22px font-semiBold colorBlack2">
+                            {{ Insight.title }}
+                        </h2>
+
+                        <p class="style-font subtitle16px colorBlack2">
+                            {{ Insight.description }}
+                        </p>
+
                         <a [href]="Insight.linkPost" target="_blank"
                             class="readMoreBtn d-flex align-items-center justify-content-start">
                             <img src="assets/images/HomePage/arrow-up-right.svg" alt="arrow-up-right">
-                            <span class="colorOne font-bold text-uppercase subtitle14px">{{ 'INSIGHTS_SEC.READ_MORE' |
-                                translate }}</span>
+                            <span class="colorOne font-bold text-uppercase subtitle14px">
+                                {{ 'INSIGHTS_SEC.READ_MORE' | translate }}
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
+
         </ngx-slick-carousel>
 
     </div>

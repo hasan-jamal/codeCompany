@@ -209,6 +209,7 @@
 
                 <div [class.d-none]="!isVideoPlaying" class="mainVideo-wrapper" style="width: 100%; height: 100%;">
                     <youtube-player #youtubeSecurity [videoId]="AISmartSecurityVideo.videoId"
+                        [playerVars]="playerOptions" (ready)="onPlayerReady($event)"
                         (stateChange)="onYoutubeStateChange($event, 'security')" width="100%" height="100%">
                     </youtube-player>
                 </div>
@@ -222,7 +223,7 @@
                     </button>
                 </div>
 
-                <div class="card-overlay" *ngIf="!isVideoPlaying"></div>
+                <div class="card-overlay" *ngIf="!isVideoPlaying" (click)="playVideo()"></div>
 
                 <div class="d-flex flex-column justify-content-end align-items-start card-text" *ngIf="!isVideoPlaying">
                     <h3 class="colorWhite font-bold subtitle36px">
@@ -359,7 +360,7 @@
         </div>
     </div>
 </section>
-<section class="sectionThree">
+<!-- <section class="sectionThree">
     <div class="sectionThree-container px-120">
         <div class="d-flex flex-column gap24 sectionThree-titles">
             <span class="font-medium text-center subtitle24px color-linearGradient">
@@ -389,7 +390,7 @@
 
         </div>
     </div>
-</section>
+</section> -->
 <!-- <section class="sectionVideos">
     <div class="sectionVideos-container ">
         <div class="divTitles">
@@ -498,8 +499,12 @@
     <div class="sectionSeven-container px-120">
         <div class="d-flex fx-sectionSeven">
             <div class="sectionSeven-part1">
-                <span class="font-medium color-linearGradient subtitle24px d-block">Straight to the Point</span>
-                <h1 class="subtitle48px font-bold" data-aos=" fade-down">Frequently Asked Questions</h1>
+                <span class="font-medium color-linearGradient subtitle24px d-block">
+                    {{ 'FAQS.HEADER_SUBTITLE' | translate }}
+                </span>
+                <h1 class="subtitle48px font-bold" data-aos="fade-down">
+                    {{ 'FAQS.HEADER_TITLE' | translate }}
+                </h1>
             </div>
             <div class="d-flex flex-column gap24 sectionSeven-part2">
                 <div *ngFor="let faq of faqs; let i = index" class="faqBox" [class.active]="activeIndex === i">

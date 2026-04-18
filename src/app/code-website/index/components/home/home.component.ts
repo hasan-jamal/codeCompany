@@ -18,7 +18,6 @@ let isFirstLoad = true;
     SlickCarouselModule,
     SectionInsightsComponent,
     TranslateModule,
-    RouterLink,
     YouTubePlayerModule
     // PeopleSayingComponent
   ],
@@ -84,12 +83,10 @@ constructor(
     this.mainVideo = this.plyrList[0];
     this.plyrList = this.plyrList.slice(1);
 
-    // --- التعديل هنا ---
     if (isPlatformBrowser(this.platformId)) {
-      // التحقق مما إذا كان السكربت موجوداً مسبقاً لتجنب التكرار
       if (!document.getElementById('youtube-iframe-api')) {
         const tag = document.createElement('script');
-        tag.id = 'youtube-iframe-api'; // إضافة ID للسكربت
+        tag.id = 'youtube-iframe-api';
         tag.src = "https://www.youtube.com/iframe_api";
         document.body.appendChild(tag);
       }
@@ -110,7 +107,7 @@ constructor(
     this.currentIndex = 0;
     this.startTyping();
   }
-
+  
   startTyping() {
     if (isPlatformBrowser(this.platformId)) {
       const typingSpeed = 50;
@@ -562,13 +559,54 @@ onReadMoreClick(event: Event) {
   isVideoPlaying: boolean = false;
   isVideoAiSmartfacilityPlaying: boolean = false;
 
-  // استخرج الـ ID الخاص بفيديو اليوتيوب (مثال: dQw4w9WgXcQ)
   AISmartSecurityVideo = { videoId: 'DYw5zcyK4-Q' }; 
   AISmartfacilityVideo = { videoId: 'kOHvcztXQfI' }; 
+
+  // إعدادات المشغل (أفضل طريقة لتمرير الإعدادات)
+  playerOptions: YT.PlayerVars = {
+    rel: 0,           // عدم إظهار فيديوهات مقترحة من قنوات أخرى
+    modestbranding: 1 // تقليل شعار يوتيوب
+  };
 
   setActiveTab(tab: string) {
     this.activeTab = tab;
     this.stopAllVideos();
+  }
+
+  // هذه الدالة هي "الحل الأفضل" لضبط الجودة فور الجاهزية
+  onPlayerReady(event: YT.PlayerEvent) {
+    const player = event.target as any;
+    if (player && player.setPlaybackQuality) {
+      player.setPlaybackQuality('hd1080'); // يمكنك تغييرها لـ hd1080
+    }
+  }
+
+  playVideo() {
+    this.isVideoPlaying = true;
+    // نستخدم setTimeout لضمان أن العنصر ظهر في الـ DOM قبل محاولة تشغيله
+    setTimeout(() => {
+      if (this.youtubeSecurity) {
+        this.youtubeSecurity.playVideo();
+        // تجاوز خطأ النوع باستخدام any
+        const player = this.youtubeSecurity as any;
+        if (player.setPlaybackQuality) {
+          player.setPlaybackQuality('hd1080');
+        }
+      }
+    }, 100);
+  }
+
+  playVideoAISmartfacility() {
+    this.isVideoAiSmartfacilityPlaying = true; 
+    setTimeout(() => {
+      if (this.youtubeFacility) {
+        this.youtubeFacility.playVideo();
+        const player = this.youtubeFacility as any;
+        if (player.setPlaybackQuality) {
+          player.setPlaybackQuality('hd1080');
+        }
+      }
+    }, 100);
   }
 
   stopAllVideos() {
@@ -582,22 +620,8 @@ onReadMoreClick(event: Event) {
     }
   }
 
-  playVideo() {
-    this.isVideoPlaying = true; 
-    this.youtubeSecurity.playVideo();
-  }
-
-  playVideoAISmartfacility() {
-    this.isVideoAiSmartfacilityPlaying = true; 
-    this.youtubeFacility.playVideo();
-  }
-
-  // دالة واحدة للتعامل مع تغير حالة فيديوهات اليوتيوب (إيقاف أو انتهاء)
   onYoutubeStateChange(event: any, type: string) {
-    // event.data يعيد رقم يعبر عن حالة الفيديو
-    // 0 = انتهى الفيديو (Ended)
-    // 2 = الفيديو متوقف (Paused)
-    if (event.data === 0 || event.data === 2) {
+    if (event.data === YT.PlayerState.ENDED || event.data === YT.PlayerState.PAUSED) {
       if (type === 'security') {
         this.isVideoPlaying = false;
       } else if (type === 'facility') {
