@@ -1082,3 +1082,92 @@
     .sectionEightNew .part2Header, .sectionEightNew .fx-sectionEight .partTwo{width: 100%;}
 }
 /* End Eight Section */
+.tabs-Videos{
+    position: relative;
+    margin-bottom: 7rem;
+}
+.tabs-Videos .videos-list{
+    gap: 1.5rem;
+    align-items: normal;
+    flex-wrap: wrap;
+}
+.tabs-Videos .videoMain{
+    position: relative;
+    border-radius: 30px;
+    aspect-ratio: 4/2;
+    flex: 1 1 calc(75% - 1.5rem);
+    max-width: calc(75% - 0px);
+}
+.tabs-Videos .videoMain youtube-player{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.tabs-Videos .video-overlay{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    z-index: 1;
+}
+.tabs-Videos .list-videos{
+    flex: 1 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 0px);
+}
+.video-item {
+  cursor: pointer;
+  margin-bottom: 15px;
+  position: relative;
+}
+.player-wrapper-for-click {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.player-wrapper-for-click::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+}
+.tabs-Videos .video-text {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    background: transparent;
+    gap: 0.5rem;
+    width: 60%;
+    text-align: start;
+    z-index: 10;
+}
+.tabs-Videos  .mainVideo-wrapper,
+.tabs-Videos  youtube-player,
+.tabs-Videos  youtube-player iframe,
+.tabs-Videos  img.poster-image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3.7/2;
+    border-radius: 30px;
+    object-fit: cover;
+    border: none;
+    display: block;
+}
+.youtube-player-placeholder{
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.tabs-Videos .youtube-wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+    aspect-ratio: 3.7/2;
+    position: relative;
+}

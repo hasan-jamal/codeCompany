@@ -53,7 +53,7 @@
       "PHONE": "Phone: +966 11 471 0010",
       "EMAIL": "Email: sales@code.sa"
     },
-    "COPYRIGHT": "Copyright © 2025 CODE. All rights reserved"
+    "COPYRIGHT": "Copyright © 2026 CODE. All rights reserved"
   },
   "JOIN_US": {
     "TITLE": "Build Saudi Arabia’s Digital Future with CODE",
@@ -4023,35 +4023,65 @@
   "ICT_SOLUTIONS": "ICT Solutions",
   "DIGITAL_TRANSFORMATION": "Digital Transformation"
 },
-  "INSIGHTS_SECTION": {
-    "READ_MORE": "Read More",
-    "ITEMS": {
-      "ITEM_1": {
-        "DATE": "Jan 21, 2026",
-        "CATEGORY": "AI Security",
-        "TITLE": "AI Security Management",
-        "DESC": "Modern security requires more than cameras. Explore how our integrated AI stack strengthens real-world security operations."
-      },
-      "ITEM_2": {
-        "DATE": "Feb 26, 2026",
-        "CATEGORY": "Facility Management",
-        "TITLE": "AI Facility Management",
-        "DESC": "Facility management is no longer manual. See how AI enables measurable improvements across operations, energy, and asset management."
-      },
-      "ITEM_3": {
-        "DATE": "Feb 14, 2026",
-        "CATEGORY": "Enterprise Architecture",
-        "TITLE": "Enterprise Architecture",
-        "DESC": "Enterprise Architecture without blind spots. Explore how dynamic modeling transforms decision-making."
-      },
-      "ITEM_4": {
-        "DATE": "Jan 13, 2026",
-        "CATEGORY": "Digital Twin",
-        "TITLE": "Digital Twin",
-        "DESC": "Your infrastructure deserves a live intelligence layer. Discover the end-to-end AI Digital Twin journey."
-      }
+"INSIGHTS_SECTION": {
+  "READ_MORE": "Read More",
+  "ITEMS": {
+    "ITEM_1": {
+      "DATE": "29 November 2023",
+      "CATEGORY": "AI Digital Twin",
+      "TITLE": "AI Digital Twin: Real-Time Operations",
+      "DESC": "Discover how AI Digital Twin delivers real-time visibility and predictive analytics."
+    },
+    "ITEM_2": {
+      "DATE": "20 November 2023",
+      "CATEGORY": "AI Computer Vision",
+      "TITLE": "AI Computer Vision in Action",
+      "DESC": "Turn visual data into actionable intelligence for safety and operations."
+    },
+    "ITEM_3": {
+      "DATE": "15 October 2023",
+      "CATEGORY": "Smart Facilities",
+      "TITLE": "Smart Facility Management",
+      "DESC": "How intelligent facility systems improve performance, safety, and efficiency."
+    },
+    "ITEM_4": {
+      "DATE": "30 September 2023",
+      "CATEGORY": "Facility ROI",
+      "TITLE": "ROI of AI Facility Management",
+      "DESC": "Measuring the business impact of intelligent facility platforms."
+    },
+    "ITEM_5": {
+      "DATE": "10 September 2023",
+      "CATEGORY": "Facility Management",
+      "TITLE": "AI Facility Management",
+      "DESC": "Practical AI solutions for smarter, safer facility operations."
+    },
+    "ITEM_6": {
+      "DATE": "25 August 2023",
+      "CATEGORY": "AI Dispatching",
+      "TITLE": "AI Dispatching Center",
+      "DESC": "Coordinating response and operations through a centralized AI command center."
+    },
+    "ITEM_7": {
+      "DATE": "05 August 2023",
+      "CATEGORY": "Executive Chatbot Analytics",
+      "TITLE": "Executive Chatbot Analytics",
+      "DESC": "Use chatbot-driven analytics to turn leadership questions into smart operational insight."
+    },
+    "ITEM_8": {
+      "DATE": "12 July 2023",
+      "CATEGORY": "AI Sensors",
+      "TITLE": "AI & Digital Sensors",
+      "DESC": "Real-time sensor networks that feed AI systems for better facility awareness."
+    },
+    "ITEM_9": {
+      "DATE": "01 July 2023",
+      "CATEGORY": "Technology",
+      "TITLE": "Our Technology Stack",
+      "DESC": "An overview of the platforms and tools that power CODE’s AI solutions."
     }
-  },
+  }
+},
     "CONTACT-IMG": {
     "BANNER": {
       "IMAGE": "assets/images/contactBanner.png"

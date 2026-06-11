@@ -3,6 +3,7 @@
 import { LoginUserResponse } from '../../../../../models/User/User.modal';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-in',
@@ -12,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class SignInComponent {
 loginDto = {
-  PhoneNumber: '',
+  Email: '',
   Password: ''
 };
 
@@ -23,13 +24,13 @@ private toastr: ToastrService) { }
 
 onSubmit() {
   const payload = {
-    PhoneNumber: this.loginDto.PhoneNumber.toString(),
+    Email: this.loginDto.Email,
     Password: this.loginDto.Password
   };
 
   this._authService.login(payload).subscribe(
     (response: LoginUserResponse) => {
-      this._authService.saveUserDetails(response);
+      // this._authService.saveUserDetails(response);
 
     this.toastr.success('Welcome back!', 'Login Successful!');
     this.router.navigateByUrl('/dashboard/home');

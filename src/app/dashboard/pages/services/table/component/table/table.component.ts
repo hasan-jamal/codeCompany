@@ -1,7 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { NewsService } from '../../../../../../services/news.service';
 import { ToastrService } from 'ngx-toastr';
-import { CurrentUserService } from '../../../../../../services/currentUser.service';
 import { ServiceDto } from '../../../../../../models/Service/Service.modal';
 import { ServiceService } from '../../../../../../services/service.service';
 import { ServiceResponse } from '../../../../../../models/Service/Service.Response';

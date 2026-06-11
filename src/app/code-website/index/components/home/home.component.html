@@ -162,7 +162,6 @@
                 <span>{{ 'HOME.IMPACT_SEC.TABS.FACILITY' | translate }}</span>
             </button>
         </div>
-
         <div *ngIf="activeTab === 'security'" class="tab-content-wrapper d-flex flex-column">
             <div class="d-flex text-start securitySection">
                 <div class="partOne d-flex flex-column">
@@ -304,6 +303,40 @@
                     <p class="colorWhite subtitle16px font-medium">
                         {{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_DESC' | translate }}
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tabs-Videos">
+    <div class="tabs-Videos-container px-120">
+        <div class="d-flex videos-list">
+            <div class="videoMain" style="width: 100%; height: 100%;">
+                <div class="d-flex flex-column justify-content-end video-text">
+                    <h3 class="colorWhite font-bold subtitle36px">
+                        {{ mainVideoTabs.title }}
+                    </h3>
+                    <p class="colorWhite subtitle16px font-medium">
+                        {{ mainVideoTabs.description }}
+                    </p>
+                </div>
+                <div class="youtube-wrapper">
+                    <youtube-player #mainPlayer [videoId]="mainVideoTabs.videoId" width="100%" height="100%">
+                    </youtube-player>
+                    <div class="video-overlay"></div>
+                </div>
+            </div>
+            <div class="list-videos">
+                <div class="video-item" *ngFor="let vid of playlistVideos" (click)="onVideoSelect(vid)">
+                    <div class="video-text">
+                        <h5 class="subtitle14px font-bold colorWhite">{{ vid.title }}</h5>
+                    </div>
+                    <div class="player-wrapper-for-click">
+                        <youtube-player [videoId]="vid.videoId" width="100%" height="100%">
+                        </youtube-player>
+                        <div class="video-overlay"></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,7 +9,12 @@ import { SectionInsightsComponent } from '../../../shared/section-insights/secti
 import { YouTubePlayer, YouTubePlayerModule } from '@angular/youtube-player';
 
 let isFirstLoad = true;
-
+interface VideoData {
+  id: string;
+  title: string;
+  description: string;
+  videoId: string; // معرف يوتيوب للفيديو
+}
 @Component({
   selector: 'app-home',
   standalone:true,
@@ -78,11 +83,12 @@ constructor(
 
   ];
 
-  ngOnInit(): void {
+ngOnInit(): void {
     this.activateFirstBox();
     this.mainVideo = this.plyrList[0];
     this.plyrList = this.plyrList.slice(1);
 
+    // هذا الاستدعاء صحيح وممتاز
     if (isPlatformBrowser(this.platformId)) {
       if (!document.getElementById('youtube-iframe-api')) {
         const tag = document.createElement('script');
@@ -91,8 +97,7 @@ constructor(
         document.body.appendChild(tag);
       }
     }
-    // -------------------
-
+    
     if (isFirstLoad) {
       isFirstLoad = false;
       setTimeout(() => {
@@ -101,6 +106,15 @@ constructor(
     } else {
       this.startTyping();
     }
+
+    // ❌ احذف هذه الأسطر الثلاثة من كودك لأنها مكررة وتسبب مشاكل ❌
+    // const tag = document.createElement('script');
+    // tag.src = 'https://www.youtube.com/iframe_api';
+    // document.body.appendChild(tag);
+
+    // تهيئة قائمة الفيديوهات
+    this.mainVideoTabs = this.allVideos[0];
+    this.updatePlaylist();
 }
   resetTyping() {
     this.typedText = '';
@@ -553,7 +567,7 @@ onReadMoreClick(event: Event) {
 
 
 @ViewChild('youtubeSecurity') youtubeSecurity!: YouTubePlayer;
-  @ViewChild('youtubeFacility') youtubeFacility!: YouTubePlayer;
+@ViewChild('youtubeFacility') youtubeFacility!: YouTubePlayer;
 
   activeTab: string = 'security';
   isVideoPlaying: boolean = false;
@@ -573,21 +587,18 @@ onReadMoreClick(event: Event) {
     this.stopAllVideos();
   }
 
-  // هذه الدالة هي "الحل الأفضل" لضبط الجودة فور الجاهزية
   onPlayerReady(event: YT.PlayerEvent) {
     const player = event.target as any;
     if (player && player.setPlaybackQuality) {
-      player.setPlaybackQuality('hd1080'); // يمكنك تغييرها لـ hd1080
+      player.setPlaybackQuality('hd1080');
     }
   }
 
   playVideo() {
     this.isVideoPlaying = true;
-    // نستخدم setTimeout لضمان أن العنصر ظهر في الـ DOM قبل محاولة تشغيله
     setTimeout(() => {
       if (this.youtubeSecurity) {
         this.youtubeSecurity.playVideo();
-        // تجاوز خطأ النوع باستخدام any
         const player = this.youtubeSecurity as any;
         if (player.setPlaybackQuality) {
           player.setPlaybackQuality('hd1080');
@@ -629,4 +640,36 @@ onReadMoreClick(event: Event) {
       }
     }
   }
+
+
+
+  @ViewChild('mainPlayer') mainPlayer!: YouTubePlayer;
+
+allVideos: VideoData[] = [
+    { id: 'security', title: 'Security', description: 'وصف فيديو الأمان...', videoId: 'DYw5zcyK4-Q' },
+    { id: 'facility', title: 'Facility', description: 'وصف فيديو المنشأة...', videoId: 'kOHvcztXQfI' },
+    { id: 'ea', title: 'Enterprise Architecture', description: 'وصف بنية المؤسسة...', videoId: 'tgbNymZ7vqY' },
+    { id: 'dt', title: 'Digital Twin', description: 'وصف التوأم الرقمي...', videoId: 'aqz-KE-bpKQ' }
+  ];
+
+  mainVideoTabs!: VideoData;
+  playlistVideos: VideoData[] = [];
+
+
+  updatePlaylist() {
+    this.playlistVideos = this.allVideos.filter(v => v.id !== this.mainVideoTabs.id);
+  }
+
+  onVideoSelect(selectedVideo: VideoData) {
+    this.mainVideoTabs = selectedVideo;
+    
+    this.updatePlaylist();
+
+    setTimeout(() => {
+      if (this.mainPlayer) {
+        this.mainPlayer.playVideo();
+      }
+    }, 300); 
+  }
+  
 }

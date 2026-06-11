@@ -14,7 +14,7 @@
             <h3 class="font-medium subtitle24px color-linearGradient">
                 {{ 'INSIGHTS_SEC.LATEST_NEWS' | translate }}
             </h3>
-            <div class="arrows-Insights d-flex align-items-center gap-2">
+            <div class="arrows-Insights d-flex align-items-center gap-2" *ngIf="translatedInsights.length > 0">
                 <img src="assets/images/rightBlog.svg" [attr.alt]="'INSIGHTS_SEC.SLIDER.PREV' | translate"
                     class="rightInsight transition3s ms-2" style="cursor:pointer;" (click)="prevSlideInsight()">
 
@@ -23,44 +23,58 @@
             </div>
         </div>
 
-        <ngx-slick-carousel class="sliderInsights" #slickModalInsight="slick-carousel" [config]="slideConfigInsights">
+        <ng-container *ngIf="translatedInsights.length > 0; else loading">
+            <ngx-slick-carousel class="sliderInsights mt-4" #slickModalInsight="slick-carousel"
+                [config]="slideConfigInsights">
 
-            <div ngxSlickItem *ngFor="let Insight of translatedInsights" class="slide">
-                <div class="cardInsights m-2">
-                    <div class="divImage">
-                        <img [src]="Insight.image" alt="news-image" class="img-fluid" />
-                    </div>
-                    <div class="divContent">
-                        <div class="d-flex divBtns">
-                            <button class="btn-date colorWhite subtitle14px font-semiBold btn-linearGradient">
-                                {{ Insight.date }}
-                            </button>
-
-                            <button class="btn-category subtitle14px color-linearGradient font-semiBold">
-                                <span>{{ Insight.category }}</span>
-                            </button>
+                <div ngxSlickItem *ngFor="let Insight of translatedInsights" class="slide">
+                    <div class="cardInsights m-2">
+                        <div class="divImage">
+                            <img [src]="Insight.image" alt="news-image" class="img-fluid"
+                                style="width: 100%; object-fit: cover; border-radius: 12px; aspect-ratio: 16/9;" />
                         </div>
+                        <div class="divContent mt-3">
+                            <div class="d-flex divBtns mb-2 gap-2">
+                                <button
+                                    class="btn-date colorWhite subtitle14px font-semiBold btn-linearGradient border-0 rounded px-3 py-1">
+                                    {{ Insight.date | date:'dd MMM yyyy' }}
+                                </button>
 
-                        <h2 class="subtitle22px font-semiBold colorBlack2">
-                            {{ Insight.title }}
-                        </h2>
+                                <button
+                                    class="btn-category subtitle12px color-linearGradient font-semiBold border-0 bg-transparent">
+                                    <span>{{ Insight.category }}</span>
+                                </button>
+                            </div>
 
-                        <p class="style-font subtitle16px colorBlack2">
-                            {{ Insight.description }}
-                        </p>
+                            <h2 class="subtitle22px font-semiBold colorBlack2">
+                                {{ Insight.title }}
+                            </h2>
 
-                        <a [href]="Insight.linkPost" target="_blank"
-                            class="readMoreBtn d-flex align-items-center justify-content-start">
-                            <img src="assets/images/HomePage/arrow-up-right.svg" alt="arrow-up-right">
-                            <span class="colorOne font-bold text-uppercase subtitle14px">
-                                {{ 'INSIGHTS_SEC.READ_MORE' | translate }}
-                            </span>
-                        </a>
+                            <p class="style-font subtitle16px colorBlack2">
+                                {{ Insight.description }}
+                            </p>
+
+                            <a [href]="Insight.linkPost" target="_blank"
+                                class="readMoreBtn d-flex align-items-center justify-content-start mt-3 text-decoration-none">
+                                <img src="assets/images/HomePage/arrow-up-right.svg" alt="arrow-up-right" class="me-2">
+                                <span class="colorOne font-bold text-uppercase subtitle14px">
+                                    {{ 'INSIGHTS_SEC.READ_MORE' | translate }}
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </ngx-slick-carousel>
+            </ngx-slick-carousel>
+        </ng-container>
+
+        <ng-template #loading>
+            <div class="d-flex justify-content-center align-items-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </ng-template>
 
     </div>
 </section>

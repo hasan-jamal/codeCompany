@@ -1,7 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
+import { InsightService } from '../../../services/Insight.service';
+import { Subscription } from 'rxjs';
+import { InsightDto } from '../../../models/Insight/Insight.modal';
 
 @Component({
   selector: 'app-section-insights',
@@ -13,53 +16,20 @@ import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel'
   templateUrl: './section-insights.component.html',
   styleUrl: './section-insights.component.css'
 })
-export class SectionInsightsComponent {
-// Slider Insights
- @ViewChild('slickModalInsight') slickModalInsight!: SlickCarouselComponent;
+export class SectionInsightsComponent implements OnInit, OnDestroy {
+  @ViewChild('slickModalInsight') slickModalInsight!: SlickCarouselComponent;
 
-  Insights = [
-    { 
-      image: 'assets/images/HomePage/AISecurityManagement.png',
-      date: 'INSIGHTS_SECTION.ITEMS.ITEM_1.DATE',
-      category: 'INSIGHTS_SECTION.ITEMS.ITEM_1.CATEGORY',
-      title: 'INSIGHTS_SECTION.ITEMS.ITEM_1.TITLE',
-      description: 'INSIGHTS_SECTION.ITEMS.ITEM_1.DESC',
-      linkPost: 'https://www.linkedin.com/feed/update/urn:li:activity:7420095421529624576'
-    },
-    { 
-      image: 'assets/images/HomePage/AIFacilityManagement.png',
-      date: 'INSIGHTS_SECTION.ITEMS.ITEM_2.DATE',
-      category: 'INSIGHTS_SECTION.ITEMS.ITEM_2.CATEGORY',
-      title: 'INSIGHTS_SECTION.ITEMS.ITEM_2.TITLE',
-      description: 'INSIGHTS_SECTION.ITEMS.ITEM_2.DESC',
-      linkPost: 'https://www.linkedin.com/feed/update/urn:li:activity:7433132870883438592'
-    },
-    { 
-      image: 'assets/images/HomePage/EnterpriseArchitecture.png',
-      date: 'INSIGHTS_SECTION.ITEMS.ITEM_3.DATE',
-      category: 'INSIGHTS_SECTION.ITEMS.ITEM_3.CATEGORY',
-      title: 'INSIGHTS_SECTION.ITEMS.ITEM_3.TITLE',
-      description: 'INSIGHTS_SECTION.ITEMS.ITEM_3.DESC',
-      linkPost: 'https://www.linkedin.com/posts/advance-code-it_code-ea-modeling-with-abacus-tool-activity-7428865048657309697-8AsK?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvrFQ0Bm7FNLKoS8qTrLMiHNk6bvq-1Kts'
-    },
-    { 
-      image: 'assets/images/HomePage/DigitalTwin.png',
-      date: 'INSIGHTS_SECTION.ITEMS.ITEM_4.DATE',
-      category: 'INSIGHTS_SECTION.ITEMS.ITEM_4.CATEGORY',
-      title: 'INSIGHTS_SECTION.ITEMS.ITEM_4.TITLE',
-      description: 'INSIGHTS_SECTION.ITEMS.ITEM_4.DESC',
-      linkPost: 'https://www.linkedin.com/posts/advance-code-it_code-ai-digital-twin-end-to-end-delivery-activity-7417180625364738049-kuAL?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvrFQ0Bm7FNLKoS8qTrLMiHNk6bvq-1Kts'
-    }
-  ];
-
-  translatedInsights: any[] = [];
+  rawInsights: InsightDto[] = []; 
+  translatedInsights: any[] = []; 
+  
+  private langChangeSubscription!: Subscription;
 
   slideConfigInsights = {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false, 
+    autoplaySpeed: 5000,
+    arrows: false,
     dots: false,
     infinite: true,
     responsive: [
@@ -68,31 +38,55 @@ export class SectionInsightsComponent {
     ]
   };
 
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private insightService: InsightService
+  ) {}
 
   ngOnInit() {
-    this.translateInsights();
+    this.fetchInsights(); 
 
-    this.translate.onLangChange.subscribe(() => {
-      this.translateInsights();
+    this.langChangeSubscription = this.translate.onLangChange.subscribe(() => {
+      this.mapInsights();
     });
   }
 
-  translateInsights() {
-    this.translatedInsights = this.Insights.map(insight => ({
-      ...insight,
-      date: this.translate.instant(insight.date),
-      category: this.translate.instant(insight.category),
-      title: this.translate.instant(insight.title),
-      description: this.translate.instant(insight.description)
+  ngOnDestroy() {
+    if (this.langChangeSubscription) {
+      this.langChangeSubscription.unsubscribe();
+    }
+  }
+
+  fetchInsights() {
+    this.insightService.getAllInsights('', 1, 10, '').subscribe({
+      next: (res) => {
+        if (res && res.insights && res.insights.data) {
+          this.rawInsights = res.insights.data.filter(insight => !insight.archived);
+          this.mapInsights(); 
+        }
+      },
+      error: (err) => console.error('Error fetching insights:', err)
+    });
+  }
+
+  mapInsights() {
+    const currentLang = this.translate.currentLang || this.translate.defaultLang || 'en';
+
+    this.translatedInsights = this.rawInsights.map(insight => ({
+      image: `https://localhost:7265/images/${insight.imagePath}`,
+      date: insight.publishedDate,
+      category: currentLang === 'ar' ? insight.category_ar : insight.category,
+      title: currentLang === 'ar' ? insight.title_ar : insight.title,
+      description: currentLang === 'ar' ? insight.description_ar : insight.description,
+      linkPost: insight.linkPost
     }));
   }
 
   nextSlideInsight() {
-    this.slickModalInsight.slickNext();
+    if (this.slickModalInsight) this.slickModalInsight.slickNext();
   }
 
   prevSlideInsight() {
-    this.slickModalInsight.slickPrev();
+    if (this.slickModalInsight) this.slickModalInsight.slickPrev();
   }
 }

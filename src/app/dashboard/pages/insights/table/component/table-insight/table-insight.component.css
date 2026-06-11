@@ -1,0 +1,148 @@
+table .lock{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(200deg) brightness(107%) contrast(105%);
+}
+table .bg-gradient-to-tl{cursor: pointer;}
+
+/* الخلفية الشفافة للمودال */
+#myModal {
+  display: block; /* لتفعيل العرض عند *ngIf=true */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* صندوق المودال */
+.modal-dialog {
+  position: relative;
+  margin: 100px auto;
+  max-width: 400px;
+  animation: slide-down 0.3s ease-out;
+}
+
+/* دمج تصميم modal-confirm */
+.modal-confirm {		
+  color: #636363;
+  width: 100%;
+}
+
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-confirm .modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;   
+  position: relative;
+  padding: 20px;
+}
+
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 1rem 0 0 0;
+}
+
+.modal-confirm .close {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-confirm .modal-body {
+  color: #999;
+  padding: 0px 20px 20px 20px;
+  font-size: 16px;
+}
+.modal-confirm .modal-body p {margin-bottom: 0;}
+.modal-confirm .modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px 15px 25px;
+}
+
+.modal-confirm .modal-footer a {
+  color: #999;
+}
+
+/* أيقونة التحذير */
+.modal-confirm .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: 9;
+  text-align: center;
+  border: 3px solid #f15e5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-confirm .icon-box i {
+  color: #f15e5e;
+  font-size: 46px;
+  display: inline-block;
+}
+
+/* الأزرار */
+.modal-confirm .btn, .modal-confirm .btn:active {
+  color: #fff;
+  border-radius: 4px;
+  background: #60c7c1;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  min-width: 120px;
+  border: none;
+  min-height: 40px;
+  margin: 0 5px;
+}
+
+.modal-confirm .btn-secondary {
+  background: #c1c1c1;
+}
+
+.modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+  background: #a8a8a8;
+}
+
+.modal-confirm .btn-danger {
+  background: #f15e5e;
+}
+
+.modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+  background: #ee3535;
+}
+
+/* تأثير فتح المودال */
+@keyframes slide-down {
+  from {transform: translateY(-50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+/* زر التجربة */
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}

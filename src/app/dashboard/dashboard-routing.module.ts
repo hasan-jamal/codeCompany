@@ -37,7 +37,11 @@ const routes: Routes = [
            {
         path: 'sub-services',
         loadChildren: () => import('./pages/sub-services/sub-services.module').then(m => m.SubServicesModule)
-      }
+      },
+      {
+        path: 'Insights',
+        loadChildren: () => import('./pages/insights/insights.module').then(m => m.InsightsModule)
+      },
     ]
   }
 ];
