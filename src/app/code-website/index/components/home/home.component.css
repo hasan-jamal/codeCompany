@@ -1082,60 +1082,68 @@
     .sectionEightNew .part2Header, .sectionEightNew .fx-sectionEight .partTwo{width: 100%;}
 }
 /* End Eight Section */
-.tabs-Videos{
+/* Tabs Videos Section */
+.tabs-Videos {
     position: relative;
     margin-bottom: 7rem;
 }
-.tabs-Videos .videos-list{
+.tabs-Videos .videos-list {
+    display: flex;
     gap: 1.5rem;
-    align-items: normal;
+    align-items: center;
     flex-wrap: wrap;
 }
-.tabs-Videos .videoMain{
+.tabs-Videos .videoMain {
     position: relative;
-    border-radius: 30px;
-    aspect-ratio: 4/2;
-    flex: 1 1 calc(75% - 1.5rem);
-    max-width: calc(75% - 0px);
+    flex: 1 1 calc(77% - 1.5rem);
+    max-width: 77%;
+    border-radius: 20px;
 }
-.tabs-Videos .videoMain youtube-player{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
+.tabs-Videos .list-videos {
+    flex: 1 1 calc(23% - 1.5rem);
+    max-width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+.player-wrapper-for-click,
+.tabs-Videos .youtube-wrapper,
+.tabs-Videos .mainVideo-wrapper,
+.tabs-Videos youtube-player,
+.tabs-Videos youtube-player iframe,
+.tabs-Videos img.poster-image,
+.youtube-player-placeholder {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+.tabs-Videos youtube-player,
+.tabs-Videos youtube-player iframe,
+.tabs-Videos img.poster-image {
+    aspect-ratio: 3.5 / 2;
     object-fit: cover;
+    border: none;
 }
-.tabs-Videos .video-overlay{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    z-index: 1;
+.youtube-player-placeholder {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
-.tabs-Videos .list-videos{
-    flex: 1 1 calc(25% - 1.5rem);
-    max-width: calc(25% - 0px);
+.tabs-Videos .youtube-wrapper {
+    overflow: hidden;
+    position: relative;
 }
-.video-item {
-  cursor: pointer;
-  margin-bottom: 15px;
-  position: relative;
+.tabs-Videos .videoMain,
+.tabs-Videos .youtube-wrapper,
+.tabs-Videos youtube-player,
+.youtube-player-placeholder {
+    border-radius: 20px !important;
 }
-.player-wrapper-for-click {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.player-wrapper-for-click::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  cursor: pointer;
+
+.tabs-Videos .list-videos .youtube-player-placeholder,
+.tabs-Videos .list-videos .video-overlay,
+.player-wrapper-for-click::after,
+.player-wrapper-for-click youtube-player,
+.player-wrapper-for-click youtube-player iframe {
+    border-radius: 10px !important;
 }
 .tabs-Videos .video-text {
     position: absolute;
@@ -1145,29 +1153,132 @@
     gap: 0.5rem;
     width: 60%;
     text-align: start;
-    z-index: 10;
+    z-index: 20;
+    pointer-events: none;
 }
-.tabs-Videos  .mainVideo-wrapper,
-.tabs-Videos  youtube-player,
-.tabs-Videos  youtube-player iframe,
-.tabs-Videos  img.poster-image {
+.tabs-Videos .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    aspect-ratio: 3.7/2;
-    border-radius: 30px;
-    object-fit: cover;
-    border: none;
-    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    backdrop-filter: blur(2px);
 }
-.youtube-player-placeholder{
-    width: 100% !important;
-    height: 100% !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+.tabs-Videos .video-overlay.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
 }
-.tabs-Videos .youtube-wrapper {
-  border-radius: 30px;
-  overflow: hidden;
-    aspect-ratio: 3.7/2;
+.video-item {
+    cursor: pointer;
+    margin-bottom: 15px;
     position: relative;
 }
+.player-wrapper-for-click {
+    position: relative;
+}
+.player-wrapper-for-click::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+.video-item:hover .player-wrapper-for-click::after {
+    background: rgba(0, 0, 0, 0.3);
+}
+.custom-play-btn {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.custom-play-btn svg {
+    width: 28px;
+    height: 28px;
+}
+.tabs-Videos .video-overlay:hover .custom-play-btn {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    transform: scale(1.1);
+}
+.tabs-Videos .video-text {
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.tabs-Videos .video-text.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+}
+.tabs-Videos .video-text h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.tabs-Videos .video-text p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+  @media (min-width:1706.67px) {}
+  @media (min-width:1920px) {}
+  @media (min-width:2048px) { }
+  @media (min-width:2304px) {}
+  @media (max-width:1396.36px) {}
+  @media (max-width:1228.8px) {}
+  @media (max-width:1024px) {}  
+  @media (max-width:877.71px) {}
+  @media (max-width:768px) {
+    .tabs-Videos .videos-list{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .tabs-Videos .videoMain {
+        position: relative;
+        flex: 1 1 calc(100% - 1rem);
+        max-width: 100%;
+        border-radius: 20px;
+        width: 100%;
+    }
+    .tabs-Videos .list-videos {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: 100%;
+        width: 100%;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+     .video-item {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+    }
+    .tabs-Videos{margin-bottom: 4rem;}
+    .custom-play-btn{width: 60px;height: 60px;}
+  }
+  @media (max-width:614.4px) {}
+  @media (max-width:512px) {}
+
+
+  

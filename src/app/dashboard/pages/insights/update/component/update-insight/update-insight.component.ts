@@ -108,7 +108,7 @@ export class UpdateInsightComponent implements OnInit {
       this.insightService.updateInsight(formData).subscribe({
         next: (res) => {
           this.toastr.success('The insight has been updated successfully', 'Insight Updated!');
-          this.router.navigateByUrl('/dashboard/insights');
+          this.router.navigateByUrl('/dashboard/Insights');
         },
         error: (err) => {
           let errorMsg = 'Update failed. Please try again.';

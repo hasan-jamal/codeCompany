@@ -4233,6 +4233,24 @@
     "TITLE_2": "Control.",
     "DESC": "Explore how the AI Dispatching Center helps create safer, more resilient, and better-managed facilities through unified real-time intelligence."
   }
-}
+},
 
+  "VIDEOSSelected": {
+    "security": {
+      "title": "Code AI Smart Security",
+      "description": "Discover how CODE’s AI Smart Security redefines safety for modern environments. Utilizing advanced computer vision, real-time threat detection, and automated alerts, our intelligent systems provide proactive 24/7 protection, ensuring a secure and resilient infrastructure."
+    },
+    "facility": {
+      "title": "Code AI Smart Facility",
+      "description": "Transform your building management with CODE’s AI Smart Facility solutions. By integrating IoT sensors, predictive maintenance, and energy optimization, our platform creates sustainable, efficient, and intelligent operational ecosystems tailored to your business needs."
+    },
+    "infrastructure": {
+      "title": "Where Intelligence Meets Infrastructure",
+      "description": "Discover how CODE brings together AI Digital Twin, Computer Vision, smart sensors, and advanced analytics to create a fully intelligent ecosystem. From predictive monitoring and AI-powered security to indoor wayfinding, smart parking, and unified command & control, this solution is built for smart buildings, villa compounds, and residential communities."
+    },
+    "commandCenter": {
+      "title": "AI Command Center: The Future of Smart Security",
+      "description": "Introducing CODE’s AI Command Center — a unified platform that transforms security from reactive to predictive. Powered by AI Digital Twin, Computer Vision, sensor networks, predictive analytics, and executive chatbot analytics, it enables faster response, stronger reliability, and smarter operational decision-making at scale for Saudi Arabia’s smart environments."
+    }
+  }
 }

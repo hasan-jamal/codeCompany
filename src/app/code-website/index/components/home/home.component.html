@@ -204,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="video-card raduis30 position-relative">
+            <!-- <div class="video-card raduis30 position-relative">
 
                 <div [class.d-none]="!isVideoPlaying" class="mainVideo-wrapper" style="width: 100%; height: 100%;">
                     <youtube-player #youtubeSecurity [videoId]="AISmartSecurityVideo.videoId"
@@ -232,7 +232,7 @@
                         {{ 'HOME.IMPACT_SEC.SECURITY_CONTENT.VIDEO_DESC' | translate }}
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div *ngIf="activeTab === 'facility'" class="tab-content-wrapper">
@@ -276,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="video-card raduis30 position-relative">
+            <!-- <div class="video-card raduis30 position-relative">
 
                 <div [class.d-none]="!isVideoAiSmartfacilityPlaying" class="mainVideo-wrapper">
                     <youtube-player #youtubeFacility [videoId]="AISmartfacilityVideo.videoId"
@@ -304,7 +304,7 @@
                         {{ 'HOME.IMPACT_SEC.FACILITY_CONTENT.VIDEO_DESC' | translate }}
                     </p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -312,33 +312,48 @@
 <section class="tabs-Videos">
     <div class="tabs-Videos-container px-120">
         <div class="d-flex videos-list">
-            <div class="videoMain" style="width: 100%; height: 100%;">
-                <div class="d-flex flex-column justify-content-end video-text">
+
+            <div class="videoMain">
+                <div class="d-flex flex-column justify-content-end video-text" [class.is-hidden]="isMainPlaying">
                     <h3 class="colorWhite font-bold subtitle36px">
-                        {{ mainVideoTabs.title }}
+                        {{ mainVideoTabs.title | translate }}
                     </h3>
                     <p class="colorWhite subtitle16px font-medium">
-                        {{ mainVideoTabs.description }}
+                        {{ mainVideoTabs.description | translate }}
                     </p>
                 </div>
+
                 <div class="youtube-wrapper">
-                    <youtube-player #mainPlayer [videoId]="mainVideoTabs.videoId" width="100%" height="100%">
-                    </youtube-player>
-                    <div class="video-overlay"></div>
+                    <youtube-player #mainPlayer [videoId]="mainVideoTabs.videoId" [playerVars]="playerOptions"
+                        (stateChange)="onMainStateChange($event)" (ready)="onMainPlayerReady($event)"> </youtube-player>
+
+                    <div class="video-overlay" [class.is-hidden]="isMainPlaying" (click)="toggleMainVideo()">
+                        <div class="custom-play-btn">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 5.14V18.86C8 20.1 9.35 20.87 10.42 20.25L22.42 13.39C23.49 12.77 23.49 11.23 22.42 10.61L10.42 3.75C9.35 3.13 8 3.9 8 5.14Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="list-videos">
                 <div class="video-item" *ngFor="let vid of playlistVideos" (click)="onVideoSelect(vid)">
-                    <div class="video-text">
-                        <h5 class="subtitle14px font-bold colorWhite">{{ vid.title }}</h5>
+                    <div class="video-text" style="bottom: 10%; width: 90%;">
+                        <h5 class="subtitle14px font-bold colorWhite">{{ vid.title | translate }}</h5>
                     </div>
+
                     <div class="player-wrapper-for-click">
-                        <youtube-player [videoId]="vid.videoId" width="100%" height="100%">
+                        <youtube-player [videoId]="vid.videoId"
+                            [playerVars]="{ controls: 0, showinfo: 0, modestbranding: 1 }">
                         </youtube-player>
-                        <div class="video-overlay"></div>
+                        <div class="video-overlay list-overlay"></div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
