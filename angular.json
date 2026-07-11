@@ -13,7 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "allowedCommonJsDependencies": ["aos"],
+            "allowedCommonJsDependencies": [
+              "aos",
+              "quill-delta",
+              "quill"
+            ],
             "outputPath": "dist/code-website",
             "baseHref": "/",
             "index": "src/index.html",
@@ -63,8 +67,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "25kb",
-                  "maximumError": "30kb"
+                  "maximumWarning": "50kb",
+                  "maximumError": "100kb"
                 }
               ],
               "outputHashing": "all"
